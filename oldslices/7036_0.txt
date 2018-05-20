@@ -1,0 +1,6 @@
+return data;
+data = goodG2B2Source(data);
+data[0] = L'\0';
+return data;
+source[100-1] = L'\0';
+wcsncat(data, source, 100);

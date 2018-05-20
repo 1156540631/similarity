@@ -1,0 +1,25 @@
+static int v9fs_xattr_write(V9fsState *s, V9fsPDU *pdu, V9fsFidState *fidp,
+uint64_t off, uint32_t count,
+struct iovec *sg, int cnt)
+ssize_t err = 0;
+size_t offset = 7;
+int i, to_copy;
+int64_t xattr_len;
+int write_count;
+xattr_len = fidp->fs.xattr.len;
+write_count = xattr_len - off;
+err = pdu_marshal(pdu, offset, "d", write_count);
+to_copy = write_count;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+len = v9fs_co_pwritev(pdu, fidp, qiov.iov, qiov.niov, off);
+total += len;
+qemu_iovec_concat(&qiov, &qiov_full, total, qiov_full.size - total);
+err = pdu_marshal(pdu, offset, "d", total);
+trace_v9fs_write_return(pdu->tag, pdu->id, total, err);
+complete_pdu(s, pdu, err);
+static void complete_pdu(V9fsState *s, V9fsPDU *pdu, ssize_t len)
+V9fsString str;
+int err = -len;
+str.data = strerror(err);
+str.size = strlen(str.data);

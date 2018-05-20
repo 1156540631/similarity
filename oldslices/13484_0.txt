@@ -1,0 +1,26 @@
+static void * AnimationThread(void *)
+int32_t width, height, fps;
+const char *line = descCopy.c_str();
+const char *end;
+bool headerRead = true;
+vector<AnimationPart> parts;
+do {
+end = strstr(line, "\n");
+AnimationPart part;
+if (headerRead &&
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+headerRead = false;
+} else if (part.ReadFromString(line)) {
+parts.push_back(part);        }
+} while (end && *(line = end + 1));
+for (uint32_t i = 0; i < parts.size(); i++) {
+structType myStruct;
+myStruct.structFirst = parts;
+AnimationPart &part = func(myStruct, i);
+AnimationPart func(structType &myStruct, uint32_t i)
+parts = myStruct.structFirst;
+return parts[i];
+AnimationPart &part = func(myStruct, i);
+entry = nullptr;
+char search[256];
+snprintf(search, sizeof(search), "%s/", part.path);

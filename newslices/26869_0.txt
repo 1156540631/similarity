@@ -1,0 +1,3 @@
+char *VAR1;
+int VAR2;
+printf("FUN1(%s, 0x%x)\n", VAR1, VAR2);

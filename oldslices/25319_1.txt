@@ -1,0 +1,10 @@
+char stonesoup_buffer[8];
+int immodulated_tripleback = 1024;
+char *belate_sifflement;
+stonesoup_read_taint(&belate_sifflement,"1455",immodulated_tripleback);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+chitosan_cairene = ((char *)belate_sifflement);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(chitosan_cairene)+1, chitosan_cairene, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,chitosan_cairene,strlen(chitosan_cairene) + 1);

@@ -1,0 +1,34 @@
+static void v9fs_write(void *opaque)
+ssize_t err;
+int32_t fid;
+uint64_t off;
+uint32_t count;
+size_t offset = 7;
+V9fsPDU *pdu = opaque;
+err = pdu_unmarshal(pdu, offset, "dqd", &fid, &off, &count);
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+static void v9fs_init_qiov_from_pdu(QEMUIOVector *qiov, V9fsPDU *pdu, size_t skip, size_t size,
+qemu_iovec_concat(qiov, &elem, skip, size);
+trace_v9fs_write(pdu->tag, pdu->id, fid, off, count, qiov_full.niov);
+err = v9fs_xattr_write(s, pdu, fidp, off, count,qiov_full.iov, qiov_full.niov);
+static int v9fs_xattr_write(V9fsState *s, V9fsPDU *pdu, V9fsFidState *fidp,uint64_t off, uint32_t count,
+int write_count;
+int64_t xattr_len;
+xattr_len = fidp->fs.xattr.len;
+write_count = xattr_len - off;
+write_count = count;
+err = pdu_marshal(pdu, offset, "d", write_count);
+to_copy = write_count;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+err = v9fs_xattr_write(s, pdu, fidp, off, count,
+len = v9fs_co_pwritev(pdu, fidp, qiov.iov, qiov.niov, off);
+total += len;
+err = pdu_marshal(pdu, offset, "d", total);
+trace_v9fs_write_return(pdu->tag, pdu->id, total, err);
+complete_pdu(s, pdu, err);
+static void complete_pdu(V9fsState *s, V9fsPDU *pdu, ssize_t len)
+int err = -len;
+V9fsString str;
+str.data = strerror(err);
+str.size = strlen(str.data);

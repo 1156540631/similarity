@@ -1,0 +1,18 @@
+neatherd_mesomorph = getenv("SPHERULA_STOMATOTOMIES");
+if (neatherd_mesomorph != 0) {;
+humbugs_locofocos = ((int )(strlen(neatherd_mesomorph)));
+strictish_wormship = ((char *)(malloc(humbugs_locofocos + 1)));
+if (strictish_wormship == 0) {
+memset(strictish_wormship,0,humbugs_locofocos + 1);
+memcpy(strictish_wormship,neatherd_mesomorph,humbugs_locofocos);
+innocent_instantiations = &strictish_wormship;
+thessa_gryllotalpa = innocent_instantiations + 5;
+underbury_selaginella = ((char *)( *(thessa_gryllotalpa - 5)));
+tracepoint(stonesoup_trace, variable_buffer, "STONESOUP_TAINT_SOURCE", underbury_selaginella, "INITIAL-STATE");
+for (stonesoup_i = 0; stonesoup_i < strlen(underbury_selaginella); ++stonesoup_i) {
+s
+underbury_selaginella[stonesoup_i],
+stonesoup_data.buffer[(int) underbury_selaginella[stonesoup_i]]);
+tracepoint(stonesoup_trace, variable_signed_integral, "((int) STONESOUP_TAINT_SOURCE[stonesoup_i])", ((int) underbury_selaginella[stonesoup_i]), &(underbury_selaginella[stonesoup_i]), "TRIGGER-STATE");
+if ( *(thessa_gryllotalpa - 5) != 0)
+free(((char *)( *(thessa_gryllotalpa - 5))));

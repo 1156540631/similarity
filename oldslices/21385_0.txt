@@ -1,0 +1,6 @@
+outbanter_laggins = getenv("ROUMELIOTE_DEADWOOD");
+if (outbanter_laggins != 0) {;
+pleiomerous_memorate = ((void *)outbanter_laggins);
+potiphar_tropia = &pleiomerous_memorate;
+telergic_rethreaded(colourlessness_magnetooptics,potiphar_tropia);
+void telergic_rethreaded(int unbrutelike_linwood,void **colluder_dextroduction);

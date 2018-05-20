@@ -1,0 +1,63 @@
+return FUN1(VAR1);
+return sizeof(VAR2) + FUN2(VAR3) +
+FUN2(VAR4) + FUN3();
+return sizeof(VAR5) + FUN2(VAR3) +
+FUN2(VAR4) + FUN2(VAR6);
+if (((char *)VAR7 + VAR7->FUN4()) > VAR8 ||
+return VAR9;
+return VAR7;
+if (((char *)VAR10 + VAR10->FUN4()) > (char *)VAR11)
+return VAR9;
+return VAR10;
+VAR12.VAR13 = VAR14.VAR15;
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+((VAR12.VAR13 & 0xFC) << 3) |
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+return (VAR17 << 16) | VAR17;
+FUN5 ((VAR7 = VAR19.FUN6(VAR7))) {
+VAR20 = VAR19.FUN7(VAR7);
+VAR21 VAR22;
+VAR22.FUN8(VAR20->FUN9(), VAR7->FUN3());
+return VAR10 + FUN2(VAR3) + FUN2(VAR4);
+return FUN1(VAR23);
+VAR12.VAR24 = VAR14.VAR25;
+return VAR12.VAR26;
+return VAR12.VAR26;
+((VAR12.VAR13 & 0xFC) << 3) |
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+((VAR12.VAR24       ) >> 3);
+((VAR12.VAR13 & 0xFC) << 3) |
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+return (VAR17 << 16) | VAR17;
+return 0;
+VAR22.FUN8(VAR20->FUN9(), VAR7->FUN3());
+const char *VAR27 = VAR22.FUN10();
+VAR28<VAR29> VAR30;
+VAR31 = strstr(VAR27, "\n");
+VAR29 VAR32;
+sscanf(VAR27, "%d %d %d", &VAR33, &VAR34, &VAR35) == 3) {
+} else if (sscanf(VAR27, "VAR36 %d %d %s",
+&VAR32.VAR37, &VAR32.VAR38, VAR32.VAR39)) {
+VAR30.FUN11(VAR32);
+} FUN5 (VAR31 && *(VAR27 = VAR31 + 1));
+VAR31 = strstr(VAR27, "\n");
+sscanf(VAR27, "%d %d %d", &VAR33, &VAR34, &VAR35) == 3) {
+} else if (sscanf(VAR27, "VAR36 %d %d %s",
+&VAR32.VAR37, &VAR32.VAR38, VAR32.VAR39)) {
+VAR30.FUN11(VAR32);
+for (VAR40 VAR41 = 0; VAR41 < VAR30.FUN12(); VAR41++) {
+for (VAR40 VAR41 = 0; VAR41 < VAR30.FUN12(); VAR41++) {
+VAR29 &VAR32 = VAR30[VAR41];
+VAR42 &VAR43 = VAR32.VAR44[VAR45];
+void *VAR46;
+0, 0, VAR33, VAR34, &VAR46)) {
+wchar_t VAR47 = FUN13(VAR43.VAR48, VAR49);
+FUN14((wchar_t*)VAR46, VAR47,
+FUN13(const VAR50& VAR14, int VAR51)
+VAR12.VAR18 = VAR14.VAR52;
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+((VAR12.VAR13 & 0xFC) << 3) |
+VAR16 VAR17 = ((VAR12.VAR18 & 0xF8) << 8) |
+return (VAR17 << 16) | VAR17;
+wchar_t VAR47 = FUN13(VAR43.VAR48, VAR49);
+FUN14((wchar_t*)VAR46, VAR47,

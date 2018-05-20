@@ -1,0 +1,13 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int chloromycetin_updress = 40;
+char *pokorny_resiliate;;
+stonesoup_read_taint(&pokorny_resiliate,"3161",chloromycetin_updress);
+reconsoling_valours = ((int )(strlen(pokorny_resiliate)));
+prefixing_halloween = ((char *)(malloc(reconsoling_valours + 1)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&pokorny_resiliate,"3161",chloromycetin_updress);
+reconsoling_valours = ((int )(strlen(pokorny_resiliate)));
+prefixing_halloween = ((char *)(malloc(reconsoling_valours + 1)));

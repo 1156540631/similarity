@@ -1,0 +1,17 @@
+VAR5;
+char VAR1[1024];
+FUNC1(VAR5,VAR6);
+vsnprintf(VAR1,sizeof(VAR1),VAR6,VAR5);
+FUNC1(((void *)0));
+FUNC1("VAR14ode_audio %d.%d",VAR22 -> VAR3,VAR22 -> VAR23);
+FUNC1(((void *)0));
+FUNC1("VAR14ode_video %d.%d",VAR22 -> VAR3,VAR22 -> VAR23);
+FUNC1(((void *)0));
+FUNC1("flush %s %d.%d",desc,VAR22 -> VAR3,VAR22 -> VAR23);
+FUNC1(((void *)0));
+FUNC1("decode_audio %d.%d",VAR10 -> VAR3,VAR10 -> st -> index);
+FUNC1(((void *)0));
+FUNC1("decode_video %d.%d",VAR10 -> VAR3,VAR10 -> st -> index);
+static void FUNC1(const char *VAR6,... )
+FUNC1(VAR5,VAR6);
+vsnprintf(VAR1,sizeof(VAR1),VAR6,VAR5);

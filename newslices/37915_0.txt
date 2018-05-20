@@ -1,0 +1,14 @@
+static int VAR1 = 5;
+char * VAR2;
+char VAR3[100] = "";
+VAR2 = VAR3;
+if(VAR1!=5){}
+else
+strcpy(VAR2, "fixedstringtest");
+if(VAR1==5)
+FUN1(VAR2, VAR2);
+static void FUN1(char * VAR2, ...)
+char VAR4[100] = "";
+VAR5 VAR6;
+FUN2(VAR6, VAR2);
+FUN3(VAR4, 100-1, VAR2, VAR6);

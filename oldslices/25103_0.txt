@@ -1,0 +1,6 @@
+tussy_sdn = getenv("SULFURETTED_NOSOTROPHY");
+if (tussy_sdn != 0) {;
+charkhas_fibrilations[0] = tussy_sdn;
+prescribed_ricker = &charkhas_fibrilations;
+proliferated_gonytheca = &prescribed_ricker;
+plainsmen_overgird = ((char *)( *( *proliferated_gonytheca))[0]);

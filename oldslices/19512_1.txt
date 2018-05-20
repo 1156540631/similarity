@@ -1,0 +1,11 @@
+TwoIntsClass * dataArray[5];
+data = NULL;
+data = new TwoIntsClass[50];
+dataArray[2] = data;
+badSink(dataArray);
+void badSink(TwoIntsClass * dataArray[])
+TwoIntsClass * data = dataArray[2];
+TwoIntsClass source[100];
+source[i].intOne = 0;
+source[i].intTwo = 0;
+memcpy(data, source, 100*sizeof(TwoIntsClass));

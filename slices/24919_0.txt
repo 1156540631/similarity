@@ -1,0 +1,7 @@
+int FUNC1(const char *VAR125,FILE *VAR124)
+char VAR1[64];
+fprintf(VAR124,"%s: warning: cannot set LC_CTYPE VAR3ale\n%s: warning: environment variable %s is %s\n%s: warning: please check that your VAR3ale name is correct\n",VAR125,VAR125, *VAR123,VAR122,VAR125);
+strncpy(VAR1,VAR125,sizeof(VAR1) - 3);
+VAR1[sizeof(VAR1) - 3] = '\0';
+strcat(VAR1,": ");
+strncpy(VAR1,VAR125,sizeof(VAR1) - 3);

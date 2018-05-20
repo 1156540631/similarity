@@ -1,0 +1,6 @@
+stonesoup_input_len = strlen(paganically_arided);
+stonesoup_function_ptr = malloc(sizeof(void *));
+tracepoint(stonesoup_trace, trace_point, "TRIGGER-POINT: AFTER");
+stonesoup_printf("mod is true\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

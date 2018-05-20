@@ -1,0 +1,2 @@
+if ((env = (getenv("FFREPORT"))) || idx) {
+init_report(env);

@@ -1,0 +1,7 @@
+data = (char *)malloc(100*sizeof(char));
+data[100-1] = '\0';
+const CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_81_base& baseObject = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_81_bad();
+baseObject.action(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_81_bad::action(char * data) const
+char dest[50] = "";
+strncat(dest, data, strlen(data));

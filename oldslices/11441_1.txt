@@ -1,0 +1,5 @@
+nonaccordant_placodermal = getenv("COBLEMAN_UNWHIGLIKE");
+if (nonaccordant_placodermal != 0) {;
+munith_guacho = ((char *)nonaccordant_placodermal);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(munith_guacho)+1, munith_guacho, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, munith_guacho, strlen(munith_guacho) + 1);

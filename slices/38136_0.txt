@@ -1,0 +1,3 @@
+VAR1[VAR7 + VAR5 / sizeof(char)] = '\0';
+VAR8 = strchr(VAR1, '\r');
+VAR8 = strchr(VAR1, '\n');

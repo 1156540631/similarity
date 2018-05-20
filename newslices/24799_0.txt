@@ -1,0 +1,6 @@
+VAR1 = FUN1("FOSSILS_PRUNABLE");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = 4;
+VAR4 = malloc(65528);
+strncpy(VAR4, VAR2, VAR3);

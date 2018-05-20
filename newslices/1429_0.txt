@@ -1,0 +1,6 @@
+VAR1[50-1] = '\';
+char * VAR2 = VAR1;
+char * VAR1 = VAR2;
+strcat(VAR3, VAR1);
+FUN1(VAR1);
+free(VAR1);

@@ -1,0 +1,7 @@
+static void badSource(double * &data)
+data = NULL;
+badSource(data);
+data = (double *)malloc(sizeof(data));
+*data = 1.7E300;
+printDoubleLine(*data);
+free(data);

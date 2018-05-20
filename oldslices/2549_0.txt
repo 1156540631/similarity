@@ -1,0 +1,5 @@
+ep_strconcat(const gchar *string1, ...)
+l = 1 + strlen(string1);
+va_start(args, string1);
+ptr = g_stpcpy(ptr, string1);
+va_start(args, string1);

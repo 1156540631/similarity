@@ -1,0 +1,5 @@
+int main(int argc, char **argv)
+while ((c = getopt(argc, argv, "bBs:")) != EOF) {
+switch (c) {
+fprintf(stderr, "%s: %s: bad bleed size\n",argv[0], optarg);
+fprintf(stderr,"usage: %s [-s bleed_size] [-B] [-b]\n",argv[0]);

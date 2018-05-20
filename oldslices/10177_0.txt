@@ -1,0 +1,22 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *mamaroneck_agnominal;;
+stonesoup_read_taint(&mamaroneck_agnominal,"AYS_MOTE");
+sthenias_subcompact[5] = mamaroneck_agnominal;
+pyrrhotist_precleaning = 5;
+uncensorable_empyrean = &pyrrhotist_precleaning;
+nobut_insurrectory =  *(sthenias_subcompact +  *uncensorable_empyrean);
+GLANDES_STHENIAS(nobut_insurrectory);
+void sallee_semidecussation(char *contaminates_unfenestral)
+free(((char *)contaminates_unfenestral));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&mamaroneck_agnominal,"AYS_MOTE");
+sthenias_subcompact[5] = mamaroneck_agnominal;
+nobut_insurrectory =  *(sthenias_subcompact +  *uncensorable_empyrean);
+GLANDES_STHENIAS(nobut_insurrectory);

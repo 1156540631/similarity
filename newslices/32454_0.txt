@@ -1,0 +1,18 @@
+static int VAR1 = 5;
+char * VAR2;
+char VAR3[100] = "";
+VAR2 = VAR3;
+if(VAR1==5)
+VAR4 = FUN1(VAR5, (char *)(VAR2 + VAR6), sizeof(char) * (100 - VAR6 - 1), 0);
+if (VAR4 == VAR7 || VAR4 == 0)
+break;
+VAR2[VAR6 + VAR4 / sizeof(char)] = '\';
+VAR8 = strchr(VAR2, '\');
+if (VAR8)
+*VAR8 = '\';
+VAR8 = strchr(VAR2, '\');
+if (VAR8)
+*VAR8 = '\';
+if(VAR1!=5){}
+else
+fprintf(VAR9, "%s\n", VAR2);

@@ -1,0 +1,16 @@
+char * VAR1;
+char * VAR5 = (char *)ALLOCA(100*sizeof(char));
+VAR1 = VAR5;
+VAR1[0] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54b_FUN5(VAR1);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54b_FUN5(char * VAR1)
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54c_FUN5(VAR1);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54c_FUN5(char * VAR1)
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54d_FUN5(VAR1);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54d_FUN5(char * VAR1)
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54e_FUN5(VAR1);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_alloca_snprintf_54e_FUN5(char * VAR1)
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR4);

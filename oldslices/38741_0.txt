@@ -1,0 +1,15 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+switch(5)
+case 6:
+break;
+default:
+strcpy(data, "fixedstringtest");
+break;
+switch(7)
+case 7:
+printf(data);
+break;
+default:
+break;

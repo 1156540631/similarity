@@ -1,0 +1,16 @@
+static int FUN10()
+return 1;
+static int FUN11()
+return 0;
+char * VAR1;
+VAR1 = NULL;
+if(FUN11()){}
+else
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6;
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));

@@ -1,0 +1,3 @@
+syslog(LOG_INFO, "%s: user %s has bad shell %s, marked %s",shortenstring(fname, 203),pw->pw_name, sh, safechown ? "bogus" : "unsafe");
+syslog(LOG_INFO, "%s: world writable %s file, marked unsafe", shortenstring(fname, 203), forwarding ? "forward" : ":include:");
+syslog(LOG_INFO, "%s: forward %.200s => %s", e->e_id == NULL ? "NOQUEUE" : e->e_id, oldto, shortenstring(buf, 203));

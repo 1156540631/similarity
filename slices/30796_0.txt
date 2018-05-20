@@ -1,0 +1,15 @@
+#define VAR8 L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define VAR9 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+typedef struct _CLASS5
+void * VAR31;
+} CLASS5;
+CLASS5 CLASS6;
+VAR2 = NULL;
+VAR2 = (void *)VAR8;
+CLASS6.VAR31 = VAR2;
+FUN21(CLASS6);
+void FUN21(CLASS5 CLASS6)
+void * VAR2 = CLASS6.VAR31;
+size_t VAR12 = wcslen((wchar_t *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, sizeof(wchar_t));
+memcpy(VAR13, VAR2, (VAR12+1)*sizeof(wchar_t));

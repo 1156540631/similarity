@@ -1,0 +1,6 @@
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = -1;
+badSource(data);
+void badSource(int &data)
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)

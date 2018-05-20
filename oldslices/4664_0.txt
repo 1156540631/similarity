@@ -1,0 +1,10 @@
+if (fread((&tabbuf),1,sizeof(PgStat_StatTabEntry ),fpin) != sizeof(PgStat_StatTabEntry )) {
+switch(fgetc(fpin)){
+if (fread((&dbbuf),1,((size_t )(&((PgStat_StatDBEntry *)0) -> tables)),fpin) != ((size_t )(&((PgStat_StatDBEntry *)0) -> tables))) {
+dbentry = ((PgStat_StatDBEntry *)(hash_search(dbhash,((void *)(&dbbuf . databaseid)),HASH_ENTER,&found)));
+memcpy(dbentry,(&dbbuf),sizeof(PgStat_StatDBEntry ));
+if (dbbuf . databaseid != onlydb && dbbuf . databaseid != ((Oid )0)) {
+if (fread((&funcbuf),1,sizeof(PgStat_StatFuncEntry ),fpin) != sizeof(PgStat_StatFuncEntry )) {
+funcentry = ((PgStat_StatFuncEntry *)(hash_search(funchash,((void *)(&funcbuf . functionid)),HASH_ENTER,&found)));
+memcpy(funcentry,(&funcbuf),sizeof(funcbuf));
+FreeFile(fpin);

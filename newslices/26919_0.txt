@@ -1,0 +1,2 @@
+FUN1(VAR1, VAR2);
+printf("VAR3 VAR1 = %d\n", VAR1);

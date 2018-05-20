@@ -1,0 +1,13 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+goodG2BSink(data);
+static void goodG2BSink(char * data)
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

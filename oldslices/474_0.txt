@@ -1,0 +1,3 @@
+p_stream->fmt.psz_description[15] = 0;
+psz_desc = strdup(FindKateCategoryName(p_stream->fmt.psz_description));
+free( p_stream->fmt.psz_description );

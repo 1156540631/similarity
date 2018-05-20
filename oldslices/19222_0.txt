@@ -1,0 +1,5 @@
+data = goodG2B2Source(data);
+if(goodG2B2Global)
+data = new wchar_t[10+1];
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);

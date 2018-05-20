@@ -1,0 +1,4 @@
+null_pointer_016_gbl_doubleptr=NULL;
+if(null_pointer_016_func_001(flag)==ZERO)
+null_pointer_016_gbl_doubleptr[i] = NULL;
+free(null_pointer_016_gbl_doubleptr);

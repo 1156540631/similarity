@@ -1,0 +1,3 @@
+xiphoidal_blatted = getenv("AFFRICATED_MINGLED");
+if (xiphoidal_blatted != 0) {;
+rotting_hispanize . intersessions_belies = ((char *)xiphoidal_blatted);

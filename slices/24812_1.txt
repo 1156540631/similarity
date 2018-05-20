@@ -1,0 +1,5 @@
+void FUNC20(int VAR99,char **VAR100)
+VAR101 = ((char *)VAR100[40]);
+VAR27 = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+FUNC5(VAR17, VAR18, "VAR98", strlen(VAR101)+1, VAR101, "TAINTED-SOURCE");
+strncpy(VAR27->VAR1, VAR101, strlen(VAR101) + 1);

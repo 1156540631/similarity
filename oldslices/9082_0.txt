@@ -1,0 +1,14 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&jazziness_aroynted,"FAIL_PICHICIEGO");
+if (jazziness_aroynted != 0) {;
+columniferous_taborite = ((int )(strlen(jazziness_aroynted)));
+bushmaster_cachucho = ((char *)(malloc(columniferous_taborite + 1)));
+if (bushmaster_cachucho == 0) {
+memcpy(bushmaster_cachucho,jazziness_aroynted,columniferous_taborite);
+if (jazziness_aroynted != 0)
+free(((char *)jazziness_aroynted));
+viddhal_stamford[5] = bushmaster_cachucho;
+debarbarization_vichyssoise =  *(viddhal_stamford + conformers_hethen[1]);
+owens_insidiosity(debarbarization_vichyssoise);

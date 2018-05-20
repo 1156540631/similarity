@@ -1,0 +1,12 @@
+static void handle_satn(ESPState *s)
+uint8_t buf[32];
+len = get_cmd(s, buf);
+static uint32_t get_cmd(ESPState *s, uint8_t *buf)
+unionType myUnion;
+uint32_t dmalen;
+damlen = func(myUnion);
+uint32_t func(unionType myUnion)
+ESPState *s = myUnion.unionSecond;
+return s->ti_size;
+dmalen = func(myUnion);
+memcpy(buf, s->ti_buf, dmalen);

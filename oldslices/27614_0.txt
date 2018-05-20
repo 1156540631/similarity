@@ -1,0 +1,9 @@
+#define SRC_STRING "AAAAAAAAAA"
+const int GLOBAL_CONST_TRUE = 1;
+const int GLOBAL_CONST_FALSE = 0;
+char * data;
+data = NULL;
+if(GLOBAL_CONST_TRUE)
+data = (char *)malloc((10+1)*sizeof(char));
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

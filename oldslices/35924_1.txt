@@ -1,0 +1,8 @@
+void (*funcPtr) (char *) = badSink;
+data = NULL;
+data = (char *)malloc(50*sizeof(char));
+data[0] = '\0';
+funcPtr(data);
+static void badSink(char * data)
+source[100-1] = '\0';
+SNPRINTF(data, 100, "%s", source);

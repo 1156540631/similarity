@@ -1,0 +1,3 @@
+int *VAR75, VAR396;
+VAR396 = *(VAR75+1);
+printf("%d",VAR396);

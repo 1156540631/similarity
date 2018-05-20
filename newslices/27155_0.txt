@@ -1,0 +1,5 @@
+VAR1 VAR2;
+VAR2.VAR3[0] = 1;
+FUN1(&VAR2);
+void FUN1 (VAR1 *VAR2)
+int VAR4 = strlen(VAR2->VAR3) - 1;

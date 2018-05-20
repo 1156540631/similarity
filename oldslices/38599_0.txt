@@ -1,0 +1,7 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(5==5)
+strcpy(data, "fixedstringtest");
+if(5==5)
+printf(data);

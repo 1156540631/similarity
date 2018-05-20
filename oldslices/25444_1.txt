@@ -1,0 +1,2 @@
+char s[10] ;
+strcpy(s,invalid_memory_access_016_doubleptr_gbl[0]);

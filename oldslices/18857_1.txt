@@ -1,0 +1,11 @@
+char * data;
+map<int, char *> dataMap;
+data = NULL;
+data = new char[10];
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

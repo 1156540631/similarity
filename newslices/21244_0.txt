@@ -1,0 +1,1 @@
+strncpy(VAR1.VAR2, VAR3[1],VAR4-1);

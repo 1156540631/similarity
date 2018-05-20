@@ -1,0 +1,6 @@
+char VAR1[10+1] = VAR2;
+strcpy(VAR3, VAR1);
+VAR3 = new char[10+1];
+FUN1(VAR3);
+void FUN1(char * VAR3)
+strcpy(VAR3, VAR1);

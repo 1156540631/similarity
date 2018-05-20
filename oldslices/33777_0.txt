@@ -1,0 +1,8 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_82_base* baseObject = new CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_82_goodG2B;
+baseObject->action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_82_goodG2B::action(char * data)
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

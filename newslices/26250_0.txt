@@ -1,0 +1,32 @@
+VAR1 = FUN1(VAR2);
+VAR3 = fopen(VAR1,"rb");
+if (VAR3 != 0) {
+fseek(VAR3,0L,2);
+VAR4 = ftell(VAR3);
+rewind(VAR3);
+*VAR5 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+if (*VAR5 != 0) {
+VAR6 = fread(*VAR5,1,VAR4,VAR3);
+if (VAR3 != 0) {
+fclose(VAR3);
+FUN2(&VAR7,"SPECTERLIKE_SEMICARBAZONE");
+if (VAR7 != 0) {;
+VAR8 . VAR9 = VAR7;
+VAR10 = FUN3(VAR8);
+union VAR11 FUN3(union VAR11 VAR12)
+return VAR12;
+VAR10 = FUN3(VAR8);
+if (VAR10 . VAR9 != 0) {
+VAR13 = ((char *)VAR10 . VAR9);
+VAR14 = strlen(VAR13) + 1;
+VAR15 = VAR16 < VAR14 ? VAR16 : VAR14;
+for (VAR17 = 0; VAR17 < VAR15; VAR17++) {
+VAR13[VAR14 - VAR17 - 1];
+VAR18[VAR16 - VAR17 - 1] =
+for (VAR17 = 0; VAR17 < VAR14; VAR17++) {
+FUN4("%02x",VAR18[VAR16 - VAR17 - 1]);
+free (VAR18);
+FUN5(VAR19, VAR20, "VAR14", VAR14, &VAR14, "VAR21-VAR22");
+if (VAR10 . VAR9 != 0)
+free(((char *)VAR10 . VAR9));
+void FUN4(char * VAR23, ...) {

@@ -1,0 +1,7 @@
+for (VAR1 = (CLASS1 *)FUN1(VAR2);
+VAR1 = (CLASS1 *)VAR30(VAR2))
+free(VAR1->VAR1);
+free(VAR1->VAR3);
+free(VAR1->VAR2);
+free(VAR1->VAR4);
+free(VAR1);

@@ -1,0 +1,5 @@
+stonesoup_printf("%s\n",stonesoup_stack_buff_64);
+stonesoup_printf("strlen size = %d\n",strlen(monophonic_sheraton));
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

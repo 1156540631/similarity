@@ -1,0 +1,25 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+char *unshored_antipart;;
+stonesoup_read_taint(&unshored_antipart,"WAILY_LATRICIA");
+unsuppressible_esne = unshored_antipart;
+chilicote_kalends[5] = unsuppressible_esne;
+underbubble_colourtype[1] = 5;
+hainanese_illumining =  *(chilicote_kalends + underbubble_colourtype[1]);
+cite_daying = ((char *)hainanese_illumining);
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,cite_daying,sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&unshored_antipart,"WAILY_LATRICIA");
+unsuppressible_esne = unshored_antipart;
+chilicote_kalends[5] = unsuppressible_esne;
+hainanese_illumining =  *(chilicote_kalends + underbubble_colourtype[1]);
+cite_daying = ((char *)hainanese_illumining);
+strncpy(stonesoup_source,cite_daying,sizeof(stonesoup_source));

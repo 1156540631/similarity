@@ -1,0 +1,13 @@
+static char *
+asn1_get_string(
+unsigned char **buffer,
+unsigned char *bufend,
+int           length,
+char          *string,
+int           strsize)
+bool flag = func(&length, &strsize);
+bool func(int *length, int *strsize)
+return *length < *strsize;
+bool flag = func(&length, &strsize)
+if (flag)
+memcpy(string, *buffer, length);

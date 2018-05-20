@@ -1,0 +1,6 @@
+invalid_memory_access_016_doubleptr_gbl=(char**) malloc(10*sizeof(char*));
+invalid_memory_access_016_doubleptr_gbl[i]=(char*) malloc(10*sizeof(char));
+strcpy(invalid_memory_access_016_doubleptr_gbl[i],"STRING00");
+invalid_memory_access_016_func_002();
+free (invalid_memory_access_016_doubleptr_gbl[i]);
+free(invalid_memory_access_016_doubleptr_gbl);

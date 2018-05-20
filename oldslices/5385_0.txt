@@ -1,0 +1,5 @@
+int64_t * &dataRef = data;
+int64_t * data = dataRef;
+memcpy(data, source, 100*sizeof(int64_t));
+printLongLongLine(data[0]);
+free(data);

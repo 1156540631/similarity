@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&quatrefoliated_semicarbazone,"COCONINO_CONGLOBATION");
+if (quatrefoliated_semicarbazone != 0) {;
+annist_sempre . reparative_koah = quatrefoliated_semicarbazone;
+blandishing_refinds(annist_sempre);
+void blandishing_refinds(const union martinetish_musb aeolight_propagandism);

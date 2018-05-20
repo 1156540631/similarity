@@ -1,0 +1,13 @@
+char * VAR1;
+VAR2<char *> VAR3;
+VAR1 = new char[100];
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+FUN3(VAR3);
+void FUN3(VAR2<char *> VAR3)
+char * VAR1 = VAR3[2];
+char VAR4[50] = "";
+FUN4(VAR4, strlen(VAR1), "%s", VAR1);

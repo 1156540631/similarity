@@ -1,0 +1,12 @@
+VAR1<int, wchar_t *> VAR2;
+wchar_t * VAR3 = (wchar_t *)FUN1(50*sizeof(wchar_t));
+wchar_t * VAR4 = (wchar_t *)FUN1(100*sizeof(wchar_t));
+VAR5 = VAR4;
+VAR5[0] = '\';
+VAR2[2] = VAR5;
+FUN2(VAR2);
+VAR6[100-1] = '\';
+FUN3(VAR5, VAR6);
+void FUN2(VAR1<int, wchar_t *> VAR2)
+wchar_t * VAR5 = VAR2[2];
+FUN3(VAR5, VAR6);

@@ -1,0 +1,27 @@
+static void dissect_sdp_media_attribute(tvbuff_t *tvb, packet_info *pinfo, proto_item * ti, int length, transport_info_t *transport_info) {
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+static gint find_sdp_media_attribute_names(tvbuff_t *tvb, int offset, guint len)
+(tvb_strncaseeql(tvb, offset, sdp_media_attribute_names[i].name, len) == 0))
+offset = 0;
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+offset = colon_offset + 1;
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+attribute_value = tvb_get_ephemeral_string(tvb, offset, tvb_length_remaining(tvb, offset));
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+proto_tree_add_item(sdp_media_attribute_tree, hf_media_format, tvb,
+payload_type = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, '/');
+proto_tree_add_item(sdp_media_attribute_tree, hf_media_encoding_name, tvb,
+transport_info->encoding_name[pt] = (char*)tvb_get_ephemeral_string(tvb, offset, tokenlen);
+next_offset =  next_offset + 1;
+offset = next_offset;
+if (!isdigit(tvb_get_guint8(tvb, next_offset)))
+next_offset++;
+tokenlen = next_offset - offset;
+proto_tree_add_item(sdp_media_attribute_tree, hf_media_sample_rate, tvb,
+offset, tokenlen, ENC_ASCII|ENC_NA);
+transport_info->sample_rate[pt] = atoi(tvb_get_ephemeral_string(tvb, offset, tokenlen));

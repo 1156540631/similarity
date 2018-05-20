@@ -1,0 +1,23 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *affects_acas;
+stonesoup_read_taint(&affects_acas,"CRUCIS_REASSEMBLING");
+canon_theodora[5] = affects_acas;
+denationalised_ricoriki = 5;
+conspicuousness_microciona = &denationalised_ricoriki;
+bilabiate_unregressive =  *(canon_theodora +  *conspicuousness_microciona);
+cancerin_stanhopes(misdiagnosis_postallantoic,bilabiate_unregressive);
+cancerin_stanhopes(egghead_unplated,smoucher_nonvisionary);
+void cancerin_stanhopes(int egghead_unplated,char *smoucher_nonvisionary)
+free(((char *)smoucher_nonvisionary));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&affects_acas,"CRUCIS_REASSEMBLING");
+canon_theodora[5] = affects_acas;
+bilabiate_unregressive =  *(canon_theodora +  *conspicuousness_microciona);
+cancerin_stanhopes(misdiagnosis_postallantoic,bilabiate_unregressive);

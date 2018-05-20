@@ -1,0 +1,7 @@
+void FUNC32(const VAR182)
+FUNC34(VAR182);
+void FUNC35(reemission_cwrite VAR184)
+char VAR74[8];
+VAR183 = ((char *)((reemission_cwrite )VAR184));
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR183)+1, VAR183, "TRIGGER-STATE");
+strncpy(VAR74,VAR183,strlen(VAR183) + 1);

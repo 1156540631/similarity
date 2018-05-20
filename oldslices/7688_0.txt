@@ -1,0 +1,3 @@
+jmp_buf exposure_topesthesia;
+canty_sulfated = setjmp(exposure_topesthesia);
+longjmp(exposure_topesthesia,1);

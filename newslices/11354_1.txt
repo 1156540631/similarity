@@ -1,0 +1,3 @@
+free(VAR1->VAR2->VAR3);
+free(VAR1->VAR2);
+free(VAR1);

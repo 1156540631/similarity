@@ -1,0 +1,7 @@
+char * &VAR1 = VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR3;
+VAR2[0] = '\';
+char * VAR2 = VAR1;
+VAR4[100-1] = '\';
+strcat(VAR2, VAR4);

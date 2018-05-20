@@ -1,0 +1,13 @@
+#define VAR8 "AAAAAAAAAA"
+typedef CLASS1
+char * VAR30;
+char * VAR31;
+} CLASS2;
+char * VAR1;
+CLASS2 VAR32;
+VAR1 = NULL;
+VAR1 = (char *)malloc((10+1)*sizeof(char));
+VAR32.VAR30 = VAR1;
+char * VAR1 = VAR32.VAR31;
+char VAR9[10+1] = VAR8;
+strncpy(VAR1, VAR9, strlen(VAR9) + 1);

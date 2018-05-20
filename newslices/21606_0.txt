@@ -1,0 +1,17 @@
+VAR1 VAR2;
+char VAR3[1024];
+FUN1(VAR2,VAR4);
+FUN2(VAR3,sizeof(VAR3),VAR4,VAR2);
+FUN3(((void *)0));
+FUN3("VAR5 %d.%d",VAR6 -> VAR7,VAR6 -> VAR8);
+FUN3(((void *)0));
+FUN3("VAR9 %d.%d",VAR6 -> VAR7,VAR6 -> VAR8);
+FUN3(((void *)0));
+FUN3("VAR10 %s %d.%d",VAR11,VAR6 -> VAR7,VAR6 -> VAR8);
+FUN3(((void *)0));
+FUN3("VAR12 %d.%d",VAR13 -> VAR7,VAR13 -> VAR14 -> VAR8);
+FUN3(((void *)0));
+FUN3("VAR15 %d.%d",VAR13 -> VAR7,VAR13 -> VAR14 -> VAR8);
+static void FUN3(const char *VAR4,... )
+FUN1(VAR2,VAR4);
+FUN2(VAR3,sizeof(VAR3),VAR4,VAR2);

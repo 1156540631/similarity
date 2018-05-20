@@ -1,0 +1,86 @@
+if (sameaddr(ctladdr, a))
+printaddr(ctladdr, FALSE);
+(void) sendtolist(p, NULLADDR, &e->e_sendqueue, 0, e);
+ADDRESS *ctladdr;
+(void) sendtolist(p, NULLADDR, &e->e_sendqueue, 0, e);
+e->e_message = newstr("Deferred: user database error");
+e->e_nrcpts++;
+e->e_nrcpts++;
+fprintf(e->e_xfp,
+register ENVELOPE *e;
+a = recipient(a, sendq, aliaslevel, e);
+register ENVELOPE *e;
+char *oldto = e->e_to;
+if (bitset(EF_VRFYONLY, e->e_flags))
+e->e_flags |= EF_SENDRECEIPT;
+register ENVELOPE *e;
+a = recipient(a, sendq, aliaslevel, e);
+e->e_to = oldto;
+e->e_nrcpts++;
+ENVELOPE *e;
+char *oldto = e->e_to;
+oldto, shortenstring(buf, 203));
+e->e_to = oldto;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ENVELOPE *e;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+register ENVELOPE *e;
+printaddr(ctladdr, FALSE);
+(strchr(list, ',') != NULL || strchr(list, ';') != NULL ||
+i = strlen(list) + 1;
+strcpy(bufp, denlstring(list, FALSE, TRUE));
+a = parseaddr(p, NULLADDR, RF_COPYALL, delimiter, &delimptr, e);
+if (sameaddr(ctladdr, a))
+printaddr(ctladdr, FALSE);
+a->q_alias = ctladdr;
+if (sameaddr(ctladdr, a))
+a->q_fullname = ctladdr->q_fullname;
+al = a;
+register ADDRESS *a = al;
+printaddr(*sendq, TRUE);
+register ADDRESS **sendq;
+alias(a, sendq, aliaslevel, e);
+if (udbexpand(a, sendq, aliaslevel, e) == EX_TEMPFAIL)
+maplocaluser(a, sendq, aliaslevel + 1, e);
+forward(a, sendq, aliaslevel, e);
+a = recipient(a, sendq, aliaslevel, e);
+register ADDRESS *a;
+register ADDRESS **sendq;
+bool initialdontsend = bitset(QDONTSEND, a->q_flags);
+for (pq = sendq; (q = *pq) != NULL; pq = &q->q_next)
+if (sameaddr(q, a))
+a = q;
+if (sameaddr(q, a))
+printaddr(q, FALSE);
+a = q;
+if (bitset(QDONTSEND|QBADADDR|QVERIFIED, a->q_flags))
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+while (a != NULL && !bitset(QGOODUID, a->q_flags))
+register ADDRESS *a;
+return (a);
+ca = getctladdr(ctladdr);
+ctladdr->q_flags |= ca->q_flags & QBOGUSSHELL;
+ADDRESS *ctladdr;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+ca = getctladdr(ctladdr);
+ADDRESS *ctladdr;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+message("including file %s", a->q_user);
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+char *fname;
+rval = safefile(fname, uid, gid, uname, sfflags, S_IREAD, NULL);
+fp = fopen(fname, "r");
+if (fstat(fileno(fp), &st) < 0)
+safechown = chownsafe(fileno(fp));
+while (fgets(buf, sizeof buf, fp) != NULL)
+register char *p = strchr(buf, '\n');
+forwarding ? "forwarding" : "sending", buf);
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+char *list;
+if (ctladdr == NULL && (strchr(list, ',') != NULL || strchr(list, ';') != NULL || strchr(list, '<') != NULL || strchr(list, '(') != NULL))

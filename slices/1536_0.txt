@@ -1,0 +1,22 @@
+rewind(VAR1);
+VAR2 = fread(*CLASS2,1,VAR4,VAR1);
+*CLASS2 = NULL;
+char *VAR3;
+FUN1(&VAR3,"THAPSIA_PULVINIC");
+VAR5 = VAR3;
+VAR6[5] = VAR5;
+VAR9 = 5;
+VAR10 = &VAR9;
+VAR11 =  *(VAR6 +  *VAR10);
+free(((char *)VAR11));
+void FUN1(char** CLASS2, char* VAR8) {
+VAR9 = getenv(VAR8);
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,VAR7,2);
+VAR4 = ftell(VAR1);
+*CLASS2 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+FUN1(&VAR3,"THAPSIA_PULVINIC");
+VAR5 = VAR3;
+VAR6[5] = VAR5;
+VAR11 =  *(VAR6 +  *VAR10);
+free(((char *)VAR11));

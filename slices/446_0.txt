@@ -1,0 +1,11 @@
+LPCWSTR VAR1,
+nsAutoArrayPtr<char> VAR2 = new char[VAR3];
+reinterpret_cast<CLASS1*>(VAR2.FUN5()),
+*reinterpret_cast<CLASS1*>(VAR2.FUN5());
+CLASS1 &VAR4 =
+if (!FixServicePath(VAR7, VAR4.VAR5,
+CLASS2 VAR6 = wcslen(VAR1);
+!wcsstr(VAR1, L"maintenanceservice_tmp.exe") &&
+VAR1));
+WCHAR VAR9[VAR8 + 1] = { L'\0' };
+wcsncpy(VAR9, VAR1, VAR8);

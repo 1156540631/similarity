@@ -1,0 +1,12 @@
+int * VAR1;
+VAR2<int *> VAR3;
+VAR1 = VAR4;
+VAR1 = (int *)malloc(10*sizeof(int));
+VAR3.FUN1(VAR1);
+VAR3.FUN1(VAR1);
+VAR3.FUN1(VAR1);
+FUN2(VAR3);
+void FUN2(VAR2<int *> VAR3)
+int * VAR1 = VAR3.FUN3();
+int VAR5[10] = {0};
+memcpy(VAR1, VAR5, 10*sizeof(int));

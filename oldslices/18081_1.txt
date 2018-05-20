@@ -1,0 +1,8 @@
+char * &dataRef = data;
+char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+char * data = dataRef;
+source[100-1] = '\0';
+strcpy(data, source);

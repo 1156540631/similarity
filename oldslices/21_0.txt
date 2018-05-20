@@ -1,0 +1,3 @@
+hex_debug(unsigned char *buffer,
+for (col = 0; len > 0; col ++, buffer ++, len --)
+fprintf(stderr, " %02X", *buffer);

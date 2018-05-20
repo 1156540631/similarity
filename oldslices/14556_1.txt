@@ -1,0 +1,7 @@
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+int Pointer = (int*)new char[dataBytes];
+for (i = 0; i < (size_t)data; i++)
+int Pointer[i] = 0;

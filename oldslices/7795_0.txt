@@ -1,0 +1,8 @@
+neatherd_mesomorph = getenv("SPHERULA_STOMATOTOMIES");
+humbugs_locofocos = ((int )(strlen(neatherd_mesomorph)));
+strictish_wormship = ((char *)(malloc(humbugs_locofocos + 1)));
+memset(strictish_wormship,0,humbugs_locofocos + 1);
+memcpy(strictish_wormship,neatherd_mesomorph,humbugs_locofocos);
+innocent_instantiations = &strictish_wormship;
+thessa_gryllotalpa = innocent_instantiations + 5;
+free(((char *)( *(thessa_gryllotalpa - 5))));

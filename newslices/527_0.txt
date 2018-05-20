@@ -1,0 +1,16 @@
+char       *VAR1,
+const char *VAR2,
+if (!FUN1(VAR2, "VAR3-VAR4", 15))
+VAR1[2] = ' ';
+FUN2(VAR1 + 3, VAR5, VAR6 - 3);
+else if (!FUN1(VAR2, "deskjet", 7))
+FUN3(VAR1, VAR6, "VAR7 VAR8%s", VAR2 + 7);
+else if (!FUN1(VAR2, "officejet", 9))
+FUN3(VAR1, VAR6, "VAR7 VAR9%s", VAR2 + 9);
+else if (!FUN1(VAR2, "stylus_pro_", 11))
+FUN3(VAR1, VAR6, "VAR10 VAR11 VAR12 %s",
+VAR2 + 11);
+FUN2(VAR1, VAR2, VAR6);
+if ((VAR5 = strstr(VAR1, ", VAR13.,")) != VAR14)
+if ((VAR5 = strstr(VAR1, " Network")) != VAR14)
+if ((VAR5 = strchr(VAR1, ',')) != VAR14)

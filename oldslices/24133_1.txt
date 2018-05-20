@@ -1,0 +1,15 @@
+main(int argc, char **argv)
+if(argc != 2)
+n = strtoul(argv[1], 0, 10);
+if(n * sizeof(int) <= INT_MAX)
+test(n);
+test(unsigned int n)
+buf = malloc(n * sizeof *buf);
+if(!buf){
+return;
+for(i = 0; i < n; i++){
+buf[i]=i;
+while(i-->0){
+printf("%x ", buf[i]);
+free(buf);
+

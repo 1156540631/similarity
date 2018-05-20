@@ -1,0 +1,5 @@
+void FUN1(char *VAR1, int VAR2, const char *VAR3,
+FUN2(VAR1, VAR3, VAR2);
+VAR4 = strstr(VAR1, ":
+VAR4 += 3;
+VAR4 = strchr(VAR4, '/');

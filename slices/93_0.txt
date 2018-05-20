@@ -1,0 +1,3 @@
+if(strcmp(VAR1->VAR2->VAR7, "mov,mp4,m4a,3gp,3g2,mj2"))
+!strcmp(VAR1->VAR2->VAR7, "mpegts"))){
+&& (!strcmp(VAR1->VAR2->VAR7, "mpeg") ||

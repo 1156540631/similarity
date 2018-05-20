@@ -1,0 +1,4 @@
+overtrimme_laundress = getenv("MONOUREIDE_LOOTING");
+mahan_tia = ((char *)overtrimme_laundress);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(mahan_tia)+1, mahan_tia, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, mahan_tia, strlen(mahan_tia) + 1);

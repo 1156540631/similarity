@@ -1,0 +1,11 @@
+ls = strchr(p, '/');
+ls2 = strchr(p, '?');
+ls = ls2;
+ls = FFMIN(ls, ls2);
+av_strlcpy(path, ls, path_size);
+ls = &p[strlen(p)];
+if ((at = strchr(p, '@')) && at < ls) {
+FFMIN(authorization_size, at + 1 - p));
+p = at + 1;
+if (*p == '[' && (brk = strchr(p, ']')) && brk < ls) {
+} else if ((col = strchr(p, ':')) && col < ls) {

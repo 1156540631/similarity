@@ -1,0 +1,8 @@
+excepable_undercarry = getenv("LUMINESCE_SERVOLAB");
+if (excepable_undercarry != 0) {;
+lawfully_sphygmoid = ((void *)excepable_undercarry);
+marigolde_shrimper[ *( *( *( *( *( *( *( *( *( *iodoxybenzene_blurting)))))))))] = lawfully_sphygmoid;
+benni_bedsore = marigolde_shrimper[ *( *( *( *( *( *( *( *( *( *iodoxybenzene_blurting)))))))))];
+loggets_cobleman = ((char *)((char *)benni_bedsore));
+if (strlen(loggets_cobleman) < 20) {;
+realpath(loggets_cobleman, stonesoup_data->base_path);

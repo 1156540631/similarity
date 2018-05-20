@@ -1,0 +1,8 @@
+VAR102 = getenv("SILKMEN_OVEREMPIRICALLY");
+VAR103 = VAR102;
+VAR104[ *( *VAR105)] = VAR103;
+VAR106 = VAR104[ *( *VAR105)];
+VAR107 = ((char *)VAR106);
+VAR74 = (struct STRUCT1*) malloc(sizeof (struct STRUCT1));
+tracepoint(VAR70, VAR71, "STONESOUP_TAINT_SOURCE", strlen(VAR107)+1, VAR107, "TAINTED-SOURCE");
+strncpy(VAR74->VAR75, VAR107, strlen(VAR107) + 1);

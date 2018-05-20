@@ -1,0 +1,2 @@
+envvar = getenv("STRINGLEN_OK");
+i = strlen(envvar);

@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&imager_marsala,"TOYER_MCA");
+if (imager_marsala != 0) {;
+pung_ethanoyl . pratincole_superodorsal = ((char *)imager_marsala);
+heterophyllous_reimburser = &pung_ethanoyl;
+extol_bassetts(heterophyllous_reimburser);

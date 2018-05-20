@@ -1,0 +1,25 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR111,"IERNA_KOHN");
+if (VAR111 != 0) {;
+FUNC21(VAR112,VAR111);
+void FUNC21(int VAR113,char *VAR114)
+FUNC21(VAR113,VAR114);
+VAR115 = ((char *)VAR114);
+FUNC5(VAR17, VAR18, "VAR98", VAR115, "INITIAL-STATE");
+for (VAR10 = 0; VAR10 < strlen(VAR115); ++VAR10) {
+VAR115[VAR10],
+VAR27.VAR28[(int) VAR115[VAR10]]);
+FUNC5(VAR17, VAR83, "((int) VAR98[VAR10])", ((int) VAR115[VAR10]), &(VAR115[VAR10]), "TRIGGER-STATE");
+if (VAR114 != 0)
+free(((char *)VAR114));
+void FUNC3(char * VAR1, ...) {

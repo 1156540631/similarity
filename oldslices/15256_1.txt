@@ -1,0 +1,14 @@
+twoIntsStruct * data;
+vector<twoIntsStruct *> dataVector;
+twoIntsStruct * dataBadBuffer = (twoIntsStruct *)ALLOCA(50*sizeof(twoIntsStruct));
+twoIntsStruct * dataGoodBuffer = (twoIntsStruct *)ALLOCA(100*sizeof(twoIntsStruct));
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(list<twoIntsStruct *> dataList)
+twoIntsStruct * data = dataList.back();
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memcpy(data, source, 100*sizeof(twoIntsStruct));

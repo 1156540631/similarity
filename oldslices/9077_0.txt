@@ -1,0 +1,8 @@
+overwheel_orthopraxia = getenv("ALIUS_OVERTHICKNESS");
+wittekind_supernaturally = ((int )(strlen(overwheel_orthopraxia)));
+sclerocornea_amygdalus = ((char *)(malloc(wittekind_supernaturally + 1)));
+memset(sclerocornea_amygdalus,0,wittekind_supernaturally + 1);
+memcpy(sclerocornea_amygdalus,overwheel_orthopraxia,wittekind_supernaturally);
+misforms_procellose(sclerocornea_amygdalus);
+void misforms_procellose(char *coloristic_gadaria)
+free(((char *)coloristic_gadaria));

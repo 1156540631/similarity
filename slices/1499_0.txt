@@ -1,0 +1,7 @@
+FUN1(&VAR3,"MICROMEMBRANE_INDUBIOUSLY");
+void FUN1(char** CLASS2, char* VAR8) {
+VAR9 = getenv(VAR8);
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,VAR7,2);
+VAR4 = ftell(VAR1);
+*CLASS2 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));

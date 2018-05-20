@@ -1,0 +1,4 @@
+void badSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+source[100-1] = L'\0';
+wcscat(data, source);

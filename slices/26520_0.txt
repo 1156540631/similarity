@@ -1,0 +1,17 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR58,"BUPRESTIDAN_EAVESING");
+if (VAR58 != 0) {;
+VAR59 = ((void *)VAR58);
+VAR60[ *VAR61] = VAR59;
+VAR62 = VAR60[ *VAR61];
+FUN11(VAR62);

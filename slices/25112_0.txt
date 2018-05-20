@@ -1,0 +1,4 @@
+FUN1(&VAR1,"6156",VAR2);
+void FUN1(char** VAR3, char* FUN4, int VAR5) {
+key_t VAR6;
+if(sscanf(FUN4, "%d", &VAR6) > 0) {

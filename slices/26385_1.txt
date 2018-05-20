@@ -1,0 +1,17 @@
+VAR288 = ((char *)( *( *( *( *( *( *( *( *( *( *VAR289))))))))))[1]);
+VAR290 = 4;
+strncpy(VAR29, VAR288, VAR290);
+VAR29[VAR290 - 1] = 0;
+FUN69("%VAR208\VAR213", VAR29);
+tracepoint(VAR31, VAR251, "VAR290", VAR290, &VAR290, "INITIAL-STATE");
+tracepoint(VAR31, VAR243, "VAR29", VAR29, "CROSSOVER-STATE");
+VAR291 = FUN81(VAR29);
+strncpy(VAR29, VAR288, VAR290);
+void FUN69(char * VAR205, ...) {
+tracepoint(VAR31, VAR243, "VAR29", VAR29, "INITIAL-STATE");
+tracepoint(VAR31, VAR243, "VAR29", VAR29, "TRIGGER-STATE");
+strncpy(VAR29, VAR288, VAR290);
+char FUN81(char *VAR292)
+free(VAR292);
+tracepoint(VAR31, VAR243, "VAR29", VAR29, "TRIGGER-STATE");
+strncpy(VAR29, VAR288, VAR290);

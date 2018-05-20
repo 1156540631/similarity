@@ -1,0 +1,11 @@
+void * data;
+map<int, void *> dataMap;
+data = NULL;
+data = (void *)CHAR_STRING;
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, void *> dataMap)
+void * data = dataMap[2];
+size_t dataLen = strlen((char *)data);

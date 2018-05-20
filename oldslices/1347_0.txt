@@ -1,0 +1,10 @@
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+dataArray[2] = data;
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_66b_goodB2GSink(dataArray);
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_66b_goodB2GSink(char * dataArray[])
+char * data = dataArray[2];
+goodB2GVaSink(data, data);
+static void goodB2GVaSink(char * data, ...)
+va_start(args, data);

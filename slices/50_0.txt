@@ -1,0 +1,11 @@
+static void FUN2(TEM1<CLASS1>& VAR2,
+const char* VAR4,
+char* VAR3)
+uint32_t VAR1 = strlen(VAR4);
+if (VAR2.Length() > 0) {
+FUN1(VAR6, strlen(VAR2[0].get()), VAR3)
+strcpy(VAR3, VAR2[0].get());
+for (uint32_t VAR11 = 1; VAR11 < VAR2.Length(); VAR11++) {
+strcat(VAR3, VAR4);
+FUN1(VAR6, strlen(VAR2[VAR11].get()), VAR3)
+strcat(VAR3, VAR2[VAR11].get());

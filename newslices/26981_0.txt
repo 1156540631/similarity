@@ -1,0 +1,2 @@
+void FUN1(const char *VAR1) {
+printf("%s", VAR1);

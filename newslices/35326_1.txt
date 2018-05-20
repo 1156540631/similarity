@@ -1,0 +1,11 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = '\';
+FUN1(VAR2);
+void FUN1(char * VAR2)
+FUN2(VAR2);
+void FUN2(char * VAR2)
+FUN3(VAR2);
+void FUN3(char * VAR2)
+char VAR3[50] = "";
+strncpy(VAR3, VAR2, strlen(VAR2));

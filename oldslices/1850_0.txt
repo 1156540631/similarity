@@ -1,0 +1,5 @@
+void entrench_babyfied(char *const gauzily_sass)
+visitorial_garfish(ruesomeness_huntsmen,gauzily_sass);
+void visitorial_garfish(int cankered_pyrrophyllin,char *fritniency_floroun)
+visitorial_garfish(cankered_pyrrophyllin,fritniency_floroun);
+free(((char *)((char *)fritniency_floroun)));

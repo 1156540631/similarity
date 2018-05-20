@@ -1,0 +1,17 @@
+VAR1 >>= 8;
+VAR2 = FUN1(VAR3,VAR4,(((VAR1 & 0xff) >= 48 && (VAR1 & 0xff) <= '' || (VAR1 & 0xff) >= '' && (VAR1 & 0xff) <= '' || (VAR1 & 0xff) >= '' && (VAR1 & 0xff) <= '' || ((VAR1 & 0xff) == '.' || (VAR1 & 0xff) == 32 || (VAR1 & 0xff) == '-' || (VAR1 & 0xff) == '')?"%c" : "[%d]")),VAR1 & 0xff);
+FUN2(VAR5,sizeof(VAR5),VAR6 -> VAR1);
+return ((void *)0);
+return ((void *)0);
+VAR7 = FUN3(VAR8,VAR6 -> VAR7);
+VAR3[0] ^= '' ^ '';
+FUN1(VAR3 + strlen(VAR3),VAR4 - strlen(VAR3)," (%s)",VAR7);
+FUN1(VAR3 + strlen(VAR3),VAR4 - strlen(VAR3)," (%s / 0x%04X)",VAR5,VAR6 -> VAR1);
+void FUN4(char *VAR3,int VAR4,CLASS1 *VAR6,int VAR9)
+const char *VAR7 = ((void *)0);
+FUN1(VAR3,VAR4,"%s: %s%s",(VAR10?VAR10 : "unknown"),VAR11,(VAR6 -> VAR12?" (VAR13)" : ""));
+FUN1(VAR3 + strlen(VAR3),VAR4 - strlen(VAR3)," (%s)",VAR7);
+FUN1(VAR3 + strlen(VAR3),VAR4 - strlen(VAR3)," (%s / 0x%04X)",VAR5,VAR6 -> VAR1);
+VAR14 FUN2(char *VAR3,VAR14 VAR4,unsigned int VAR1)
+VAR2 = FUN1(VAR3,VAR4,(((VAR1 & 0xff) >= 48 && (VAR1 & 0xff) <= '' || (VAR1 & 0xff) >= '' && (VAR1 & 0xff) <= '' || (VAR1 & 0xff) >= '' && (VAR1 & 0xff) <= '' || ((VAR1 & 0xff) == '.' || (VAR1 & 0xff) == 32 || (VAR1 & 0xff) == '-' || (VAR1 & 0xff) == '')?"%c" : "[%d]")),VAR1 & 0xff);
+FUN1(VAR3 + strlen(VAR3),VAR4 - strlen(VAR3)," (%s / 0x%04X)",VAR5,VAR6 -> VAR1);

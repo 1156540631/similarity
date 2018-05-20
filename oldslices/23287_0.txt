@@ -1,0 +1,6 @@
+char buf[10] = "STRING";
+strcpy(s->buf,buf);
+st_underrun_003_s_001 s;
+st_underrun_003_func_001(&s);
+void st_underrun_003_func_001 (st_underrun_003_s_001 *s)
+strcpy(s->buf,buf);

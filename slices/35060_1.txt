@@ -1,0 +1,8 @@
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+const CLASS1& baseObject = CLASS2();
+baseObject.FUN1(data);
+void CLASS2::FUN1(char * data) const
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

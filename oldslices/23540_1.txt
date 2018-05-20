@@ -1,0 +1,6 @@
+char src[11];
+char buf[10];
+memset(src, 'A', 11);
+src[11 - 1] = '\0';
+i = 12;
+strncpy(buf, src, 11 % i);

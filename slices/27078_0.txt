@@ -1,0 +1,3 @@
+char VAR39[VAR45];
+snprintf(VAR39, 1024, "<%*.*VAR1>", VAR45-3, VAR45-3, VAR14);
+printf("result: %VAR1\VAR7", VAR39);

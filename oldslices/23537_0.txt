@@ -1,0 +1,12 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+void stonesoup_handle_taint(char *champion_adamello)
+royalising_resaw = ((char *)champion_adamello);
+stonesoup_buffer = malloc((strlen(royalising_resaw) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,royalising_resaw);

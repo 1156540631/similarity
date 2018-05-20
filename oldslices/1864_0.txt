@@ -1,0 +1,5 @@
+CWE134_Uncontrolled_Format_String__char_console_vfprintf_34_unionType myUnion;
+char * data = myUnion.unionSecond;
+goodB2GVaSink(data, data);
+static void goodB2GVaSink(char * data, ...)
+va_start(args, data);

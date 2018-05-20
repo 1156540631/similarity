@@ -1,0 +1,29 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&possessory_contrectation,"WHOOPLAS_PLUFFY");
+if (possessory_contrectation != 0) {;
+methodized_jewishly = ((char *)possessory_contrectation);
+strcpy(stonesoup_stack_buffer_64,methodized_jewishly);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "CROSSOVER-STATE");
+stonesoup_stack_buffer_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buffer_64[stonesoup_oc_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "FINAL-STATE");
+stonesoup_printf("%s\n",stonesoup_stack_buffer_64);
+if (possessory_contrectation != 0)
+free(((char *)possessory_contrectation));
+int stonesoup_toupper(int c) {
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_stack_buffer_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buffer_64[stonesoup_oc_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "FINAL-STATE");
+stonesoup_printf("%s\n",stonesoup_stack_buffer_64);
+void stonesoup_printf(char * format, ...) {

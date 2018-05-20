@@ -1,0 +1,6 @@
+data[0] = '\0';
+char * dataCopy = data;
+char * data = dataCopy;
+SNPRINTF(data, 100, "%s", source);
+printLine(data);
+free(data);

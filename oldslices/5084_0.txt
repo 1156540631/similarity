@@ -1,0 +1,5 @@
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_65b_goodG2BSink(int data)
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

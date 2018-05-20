@@ -1,0 +1,3 @@
+dynamic_buffer_overrun_s_005* ptr_s= malloc(10*sizeof(dynamic_buffer_overrun_s_005));
+ptr_s[i].arri[i]='a';
+free(ptr_s);

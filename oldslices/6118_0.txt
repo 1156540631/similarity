@@ -1,0 +1,9 @@
+void stonesoup_handle_taint(char *yod_saturniid)
+cessations_autologous = ((void *)yod_saturniid);
+testacea_tallevast[5] = cessations_autologous;
+scroungiest_approbations = 5;
+walkaways_spoonways = &scroungiest_approbations;
+gayer_dodge =  *(testacea_tallevast +  *walkaways_spoonways);
+CADDISHNESS_PSILOTUM(gayer_dodge);
+void annunciation_apis(void *goldfinch_preplanning)
+free(((char *)((char *)goldfinch_preplanning)));

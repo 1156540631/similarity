@@ -1,0 +1,6 @@
+unsigned int r;
+f = fopen("/dev/urandom", "rb");
+if(fread(&r, sizeof r, 1, f) != 1)
+return r;
+unsigned length = getRand() % 50 - 1;
+char *t = malloc((length + 1) * sizeof(char));

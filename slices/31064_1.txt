@@ -1,0 +1,13 @@
+#define VAR1 "AAAAAAAAAA"
+static int FUN29()
+return 1;
+static int FUN30()
+return 0;
+char * VAR2;
+char * VAR3 = (char *)ALLOCA((10)*sizeof(char));
+char * VAR4 = (char *)ALLOCA((10+1)*sizeof(char));
+if(FUN29())
+VAR2 = VAR3;
+VAR2[0] = '\0';
+char VAR7[10+1] = VAR1;
+strncpy(VAR2, VAR7, strlen(VAR7) + 1);

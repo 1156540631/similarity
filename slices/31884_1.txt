@@ -1,0 +1,19 @@
+typedef struct _CLASS41
+char * VAR39;
+} CLASS41;
+char * VAR1;
+CLASS41 CLASS14;
+VAR1 = NULL;
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6 - 8;
+CLASS14.VAR39 = VAR1;
+FUN52(CLASS14);
+void FUN52(CLASS41 CLASS14)
+char * VAR1 = CLASS14.VAR39;
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));
+VAR8[100-1] = '\0';

@@ -1,0 +1,8 @@
+data = NULL;
+data = new int[100];
+CWE122_Heap_Based_Buffer_Overflow__cpp_CWE805_int_memmove_68_goodG2BData = data;
+goodG2BSink();
+void goodG2BSink();
+int * data = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE805_int_memmove_68_goodG2BData;
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

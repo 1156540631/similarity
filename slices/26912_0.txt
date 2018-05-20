@@ -1,0 +1,3 @@
+VAR349 = (char *) malloc(sizeof(char) * 500);
+VAR354->VAR355 = (char *) malloc(strlen(VAR349) * sizeof(char) + 1);
+strcpy(VAR354->VAR355, VAR349);

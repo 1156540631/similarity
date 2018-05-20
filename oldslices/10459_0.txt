@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int episodical_creamcups = 105;
+char *lenthiel_inverters;
+stonesoup_read_taint(&lenthiel_inverters,"7982",episodical_creamcups);
+free(((char *)lenthiel_inverters));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&lenthiel_inverters,"7982",episodical_creamcups);
+free(((char *)lenthiel_inverters));

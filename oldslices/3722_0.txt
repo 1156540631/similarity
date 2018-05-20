@@ -1,0 +1,10 @@
+char *ankus_clementine(char *whereat_carate)
+return whereat_carate;
+nationally_superincumbent = ankus_clementine(julies_realisers);
+free(((char *)nationally_superincumbent));
+void stonesoup_handle_taint(char *disorganizing_outlook)
+protevangelion_beat = ((int )(strlen(disorganizing_outlook)));
+julies_realisers = ((char *)(malloc(protevangelion_beat + 1)));
+memset(julies_realisers,0,protevangelion_beat + 1);
+memcpy(julies_realisers,disorganizing_outlook,protevangelion_beat);
+nationally_superincumbent = ankus_clementine(julies_realisers);

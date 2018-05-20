@@ -1,0 +1,4 @@
+data = new wchar_t[10];
+wchar_t * data = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_wchar_t_cpy_68_badData;
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);

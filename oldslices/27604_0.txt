@@ -1,0 +1,9 @@
+#define SRC_STRING "AAAAAAAAAA"
+static const int STATIC_CONST_FIVE = 5;
+char * data;
+data = NULL;
+if(STATIC_CONST_FIVE!=5) {}
+else
+data = (char *)malloc((10+1)*sizeof(char));
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

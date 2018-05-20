@@ -1,0 +1,23 @@
+VAR126 = (getenv("VAR127"));
+if (!VAR126) {
+FUNC40(cfg,&VAR126,"helpers","VAR129-VAR134",((void *)0));
+if (!VAR126) {
+if (!VAR126) {
+if (!VAR126) {
+if (VAR126) {
+for (VAR128 = VAR126;  *VAR128; VAR128++)
+if (!( *VAR128)) {
+*VAR129 = VAR126;
+svn_VAR139or_t *VAR132 = FUNC43(&VAR129,VAR130,VAR131);
+VAR134 = (FUNC41(VAR135,"%s %s",VAR129,VAR136));
+VAR133 = system(VAR134);
+if (VAR133) {
+return FUNC42(VAR140,((void *)0),(FUNC42("subversion","system('%s') returned %d")),VAR134,VAR133);
+svn_VAR139or_t *VAR132 = FUNC43(&VAR129,VAR130,VAR131);
+VAR134 = (FUNC41(VAR135,"%s %s",VAR129,VAR137));
+VAR133 = system(VAR134);
+if (VAR133 != 0) {
+VAR139 = FUNC42(VAR140,((void *)0),(FUNC42("subversion","system('%s') returned %d")),VAR134,VAR133);
+if (!VAR139 && VAR138) {
+return VAR139;
+static svn_VAR139or_t *FUNC43(const char **VAR129,const char *VAR130,apr_hash_t *VAR131)

@@ -1,0 +1,3 @@
+oid_str_to_bytes(const char *oid_str, GByteArray *bytes) {
+p = oid_str;
+if (!isdigit((guchar)*p) && (*p != '.')) return FALSE;

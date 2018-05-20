@@ -1,0 +1,3 @@
+int FUN1(int VAR1, char **VAR2) {
+char *VAR3 = (char *) malloc(VAR4);
+strcpy(VAR3, VAR2[1]);

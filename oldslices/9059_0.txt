@@ -1,0 +1,10 @@
+if(fread(&r, sizeof r, 1, f) != 1)
+fclose(f);
+if(fclose(f) != 0)
+return r;
+vector[i] = (short)(getRand() % 256);
+if (vector) {
+free(vector);
+printf("%d ",vector[i]);
+if (vector)
+free(vector);

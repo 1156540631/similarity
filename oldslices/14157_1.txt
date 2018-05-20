@@ -1,0 +1,17 @@
+uint32_t (*funcPtr)(ESPState *) = badSource;
+static void sysbus_esp_mem_write(void *opaque, hwaddr addr,uint64_t val, unsigned int size)
+SysBusESPState *sysbus = opaque;
+uint32_t saddr;
+saddr = addr >> sysbus->it_shift;
+esp_reg_write(&sysbus->esp, saddr, val);
+void esp_reg_write(ESPState *s, uint32_t saddr, uint64_t val)
+handle_satn_stop(s);
+static void handle_satn_stop(ESPState *s)
+s->cmdlen = get_cmd(s, s->cmdbuf);
+static uint32_t get_cmd(ESPState *s, uint8_t *buf)
+uint32_t dmalen;
+damlen = funcPtr(s);
+uint32_t badSource(ESPState *s)
+return s->ti_size;
+damlen = funcPtr(s);
+memcpy(buf, s->ti_buf, dmalen);

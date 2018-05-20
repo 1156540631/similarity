@@ -1,0 +1,19 @@
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int coccidology_nonjuristic = 53;
+char *kabalevsky_greenbackism;;
+stonesoup_read_taint(&kabalevsky_greenbackism,"2414",coccidology_nonjuristic);
+getters_shifter = ((int )(strlen(kabalevsky_greenbackism)));
+coeternal_montessorian = ((char *)(malloc(getters_shifter + 1)));
+memset(coeternal_montessorian,0,getters_shifter + 1);
+memcpy(coeternal_montessorian,kabalevsky_greenbackism,getters_shifter);
+cochabamba_vandenberg[5] = coeternal_montessorian;
+tetrasulphid_oxfordist[1] = 5;
+uneasily_iliohypogastric =  *(cochabamba_vandenberg + tetrasulphid_oxfordist[1]);
+ambon_enthusiasm = ((char *)uneasily_iliohypogastric);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(ambon_enthusiasm)+1, ambon_enthusiasm, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, ambon_enthusiasm, strlen(ambon_enthusiasm) + 1);

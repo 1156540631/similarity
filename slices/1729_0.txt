@@ -1,0 +1,6 @@
+void FUN2(void * VAR3)
+char * * VAR4 = (char * *)VAR3;
+char * VAR1 = (*VAR4);
+FUN3(VAR1, VAR1);
+static void FUN3(char * VAR1, ...)
+FUN1(VAR6, VAR1);

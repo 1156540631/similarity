@@ -1,0 +1,5 @@
+void badSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);

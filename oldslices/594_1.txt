@@ -1,0 +1,11 @@
+WCHAR updateStatusFilePath[MAX_PATH + 1];
+wcscpy(updateStatusFilePath, updateDirPath);
+if (!PathAppendSafe(updateStatusFilePath, L"update.status")) {
+NULL, CREATE_ALWAYS, 0, NULL);
+HANDLE statusFile = CreateFileW(updateStatusFilePath, GENERIC_WRITE, 0,
+BOOL ok = WriteFile(statusFile, pending,
+CloseHandle(statusFile);
+BOOL PathAppendSafe(LPWSTR base, LPCWSTR extra);
+HANDLE statusFile = CreateFileW(updateStatusFilePath, GENERIC_WRITE, 0,
+BOOL ok = WriteFile(statusFile, pending,
+CloseHandle(statusFile);

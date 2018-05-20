@@ -1,0 +1,24 @@
+while (((c = fgetc(f)) != EOF) && (i < len)) {
+*msg++ = (u_char) c;
+fclose(f);
+hp = (HEADER *) msg;
+cp = msg + sizeof(HEADER);
+eom = msg + msglen;
+printf("opcode = %d\n",hp->opcode);
+req_iquery(hp, &cp, eom, &msglen, msg);
+req_iquery(HEADER *hp, u_char **cpp, u_char *eom, int *buflenp, u_char *msg)
+if ((n = dn_skipname(*cpp, eom)) < 0) {
+*cpp += n;
+GETSHORT(type, *cpp);
+*cpp += INT32SZ;
+GETSHORT(dlen, *cpp);
+*cpp += dlen;
+if (*cpp != eom) {
+fname = (char *)msg + HFIXEDSZ;
+alen = (char *)*cpp - fname;
+if ((size_t)alen > sizeof anbuf){
+printf("Copying %d bytes from fname to anbuf which can store %d bytes\n", alen, sizeof(anbuf));
+memcpy(anbuf, fname, alen);
+data = anbuf + alen - dlen;
+*cpp = (u_char *)fname;
+req_iquery(hp, &cp, eom, &msglen, msg);

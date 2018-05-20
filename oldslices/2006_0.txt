@@ -1,0 +1,5 @@
+data = NULL;
+data = (char *)malloc((10+1)*sizeof(char));
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);

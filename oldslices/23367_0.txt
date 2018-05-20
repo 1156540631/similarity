@@ -1,0 +1,21 @@
+exodermal_gratulated = getenv("DEVINNA_FOXTON");
+if (exodermal_gratulated != 0) {;
+beveled_soya = exodermal_gratulated;
+toxin_semicentenaries = &beveled_soya;
+NONHERETICAL_TUBINARIAL(toxin_semicentenaries);
+void intervened_galvanoscopic(metter_propylhexedrine *bradoon_barbet)
+NONHERETICAL_TUBINARIAL(toxin_semicentenaries);
+tyndallize_ironmongery = ((char *)( *bradoon_barbet));
+stonesoup_buffer = malloc((strlen(tyndallize_ironmongery) + 1) * sizeof(char ));
+if (stonesoup_buffer == 0) {
+strcpy(stonesoup_buffer,tyndallize_ironmongery);
+if (stonesoup_buffer[0] >= 97) {
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+if (stonesoup_buffer != 0) {
+free(stonesoup_buffer);
+char stonesoup_process_buffer(char *buffer_param)
+first_char = buffer_param[0] - 97;
+free(buffer_param);
+return first_char;
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+void stonesoup_printf(char * format, ...) {

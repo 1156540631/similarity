@@ -1,0 +1,5 @@
+FUN1();
+FUN2();
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+VAR1->VAR2 = (void *)VAR3;
+memcpy(VAR1->VAR4, VAR3, sizeof(VAR1->VAR4));

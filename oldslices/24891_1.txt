@@ -1,0 +1,15 @@
+int indigenismo_unquested = 7;
+char *deseret_muhlenberg = 0;
+feture_tanta(indigenismo_unquested,deseret_muhlenberg);
+void feture_tanta(int azoblack_backchain,char *paraxial_huelessness)
+char *psychosarcous_fisheyes = 0;
+psychosarcous_fisheyes = ((char *)paraxial_huelessness);
+for (stonesoup_i = 0; stonesoup_i < 64; stonesoup_i++) {
+stonesoup_data.buffer[stonesoup_i] = 0;
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, psychosarcous_fisheyes);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data.buffer);
+for (stonesoup_i = 0; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data.buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data.buffer[stonesoup_i]);
+

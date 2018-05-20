@@ -1,0 +1,13 @@
+static void doapr_outch(
+char **sbuffer,
+char **buffer,
+size_t *currlen,
+size_t *maxlen,
+int c)
+if (buffer) {
+while (*currlen >= *maxlen) {
+if (*buffer == NULL) {
+char *dataCopy = OPENSSL_malloc(*maxlen);
+*buffer = dataCopy;
+if (*currlen > 0) {
+memcpy(*buffer, *sbuffer, *currlen);

@@ -1,0 +1,26 @@
+return FUN1("image2", VAR1, VAR1);
+VAR2 = FUN1(VAR3, VAR1, VAR1);
+CLASS1 *VAR2, const char *VAR4)
+int VAR5 = FUN2(&VAR6, VAR2, VAR3, VAR4);
+const char *VAR3, const char *VAR4)
+VAR2 = FUN1(VAR1, VAR4, VAR1);
+int FUN3(const char *VAR4)
+return VAR4 && (FUN4(VAR7, sizeof(VAR7), VAR4, 1)>=0);
+const char *VAR8, int VAR9)
+VAR10 = VAR8;
+VAR11 = *VAR10++;
+VAR12 = 0;
+FUN5 (isdigit(*VAR10)) {
+VAR12 = VAR12 * 10 + *VAR10++ - '';
+FUN5 (isdigit(*VAR10)) {
+int FUN6(CLASS2 **VAR13, const char *VAR4, CLASS3 *VAR14, CLASS4 **VAR15)
+if ((VAR5 = FUN7(VAR16, VAR4, &VAR17)) < 0)
+static int FUN7(CLASS2 *VAR16, const char *VAR4, CLASS4 **VAR15)
+return FUN8(VAR16->VAR18, &VAR16->VAR19, VAR4, VAR16, 0, VAR16->VAR20);
+const char *VAR4, void *VAR21,
+return FUN8(VAR16->VAR18, &VAR16->VAR19, VAR4, VAR16, 0, VAR16->VAR20);
+if ((VAR5 = FUN9(&VAR16->VAR18, VAR4, VAR22 | VAR16->VAR23,
+if (!FUN3(VAR4)) {
+CLASS1 *FUN1(const char *VAR24, const char *VAR4,
+FUN10(VAR4) != VAR25) {
+FUN3(VAR4) &&

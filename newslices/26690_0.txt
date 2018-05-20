@@ -1,0 +1,33 @@
+return FUN1("image2",((void *)0),((void *)0));
+if ((VAR1 = FUN2(&VAR2 -> VAR3,VAR4,1 | VAR2 -> VAR5,(&VAR2 -> VAR6),VAR7)) < 0) {
+return FUN3(VAR2 -> VAR3,&VAR2 -> VAR8,VAR4,VAR2,0,VAR2 -> VAR9);
+if (!FUN4(VAR4)) {
+char VAR10[20];
+FUN5(FUN6(( *VAR11))){
+VAR12 =  *(VAR11++);
+VAR13 = VAR13 * '\' + ( *(VAR11++)) - 48;
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR13,VAR15);
+VAR16 = (strlen(VAR10));
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR13,VAR15);
+int FUN8(CLASS1 **VAR17,const char *VAR4,CLASS2 *VAR18,CLASS3 **VAR7)
+if ((VAR1 = FUN9(VAR2,VAR4,&VAR19)) < 0) {
+static int FUN9(CLASS1 *VAR2,const char *VAR4,CLASS3 **VAR7)
+return FUN3(VAR2 -> VAR3,&VAR2 -> VAR8,VAR4,VAR2,0,VAR2 -> VAR9);
+if ((VAR1 = FUN2(&VAR2 -> VAR3,VAR4,1 | VAR2 -> VAR5,(&VAR2 -> VAR6),VAR7)) < 0) {
+if (!FUN4(VAR4)) {
+int FUN4(const char *VAR4)
+return VAR4 && FUN10(VAR20,(sizeof(VAR20)),VAR4,1) >= 0;
+int FUN10(char *VAR20,int VAR21,const char *VAR22,int VAR15)
+VAR11 = VAR22;
+VAR12 =  *(VAR11++);
+VAR13 = 0;
+VAR13 = VAR13 * '\' + ( *(VAR11++)) - 48;
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR13,VAR15);
+VAR16 = (strlen(VAR10));
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR13,VAR15);
+memcpy(VAR23,VAR10,VAR16);
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR13,VAR15);
+int FUN3(CLASS4 *VAR3,CLASS2 **VAR18,const char *VAR4,void *VAR24,unsigned int VAR25,unsigned int VAR26)
+if (!FUN4(VAR4)) {
+CLASS5 *FUN1(const char *VAR27,const char *VAR4,const char *VAR28)
+if (!VAR27 && VAR4 && FUN4(VAR4) && (FUN11(VAR4)) != VAR29) {

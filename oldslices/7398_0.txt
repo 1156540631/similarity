@@ -1,0 +1,8 @@
+void overlordship_volvet(int raspingly_seducee,colorific_impingements *orderlinesses_amoebaean)
+overlordship_volvet(raspingly_seducee,orderlinesses_amoebaean);
+free(((char *)( *(orderlinesses_amoebaean - 5))));
+void stonesoup_handle_taint(char *gooseberry_antipatriotism)
+ochletic_millihenry = gooseberry_antipatriotism;
+moraler_glorifications = &ochletic_millihenry;
+gregrory_raphaelle = moraler_glorifications + 5;
+overlordship_volvet(lithotomical_boltrope,gregrory_raphaelle);

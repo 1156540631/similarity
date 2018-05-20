@@ -1,0 +1,15 @@
+const char *VAR1;
+(CLASS1 *)(VAR1 + FUN1(VAR2->VAR3));
+const CLASS1 * VAR4 =
+if (((char *)VAR4 + VAR4->FUN2()) > (char *)VAR5)
+FUN3(VAR6) + FUN4();
+return sizeof(CLASS1) + FUN3(VAR7) +
+return VAR4;
+VAR8 = VAR9.FUN5(VAR2);
+VAR10.FUN6(VAR8->FUN7(), VAR2->FUN4());
+return VAR4 + FUN3(VAR7) + FUN3(VAR6);
+VAR10.FUN6(VAR8->FUN7(), VAR2->FUN4());
+VAR11 VAR12, VAR13, VAR14;
+const char *VAR15 = VAR10.FUN8();
+VAR16 = strstr(VAR15, "\n");
+sscanf(VAR15, "%d %d %d", &VAR12, &VAR13, &VAR14) == 3) {

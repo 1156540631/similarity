@@ -1,0 +1,30 @@
+int i = 0;
+if ((f = fopen("iquery-file", "r")) == NULL)
+return -1;
+while (((c = fgetc(f)) != EOF) && (i < len)) {
+*msg++ = (u_char) c;
+i++;
+return i;
+msg = (u_char *) malloc(10000*sizeof(u_char));
+msglen = create_msg(msg, 10000);
+cp = msg + sizeof(HEADER);
+eom = msg + msglen;
+req_iquery(hp, &cp, eom, &msglen, msg);
+int create_msg(u_char *msg, int len){
+cp = msg + sizeof(HEADER);
+req_iquery(hp, &cp, eom, &msglen, msg);
+req_iquery(HEADER *hp, u_char **cpp, u_char *eom, int *buflenp, u_char *msg)
+char anbuf[2], *data, *fname;
+if ((n = dn_skipname(*cpp, eom)) < 0) {
+printf("FORMERR IQuery packet name problem\n");
+*cpp += n;
+GETSHORT(type, *cpp);
+*cpp += INT32SZ;
+GETSHORT(dlen, *cpp);
+*cpp += dlen;
+fname = (char *)msg + HFIXEDSZ;
+alen = (char *)*cpp - fname;
+if ((size_t)alen > sizeof anbuf){
+return (Finish);}
+printf("Copying %d bytes from fname to anbuf which can store %d bytes\n", alen, sizeof(anbuf));
+memcpy(anbuf, fname, alen);

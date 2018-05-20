@@ -1,0 +1,14 @@
+VAR8 = -1;
+VAR37 = 1;
+VAR8 = FUN64(VAR8);
+int FUN64(int VAR8)
+if(VAR37)
+char VAR5[VAR6] = "";
+if (fgets(VAR5, VAR6, stdin) != NULL)
+VAR8 = atoi(VAR5);
+return VAR8;
+int *VAR22;
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

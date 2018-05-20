@@ -1,0 +1,18 @@
+return c - 32;
+stonesoup_data = (struct stonesoup_struct*) malloc (sizeof(struct stonesoup_struct));
+memset(stonesoup_data->base_path, 0, 20);
+stonesoup_data->buff_pointer = stonesoup_data->base_path;
+realpath(overages_assur, stonesoup_data->base_path);
+stonesoup_opt_var = strlen( stonesoup_data->buff_pointer);
+stonesoup_toupper(stonesoup_data->base_path[stonesoup_oc_i]);
+stonesoup_data->base_path[stonesoup_oc_i] =
+stonesoup_printf("%s\n", stonesoup_data->base_path);
+stonesoup_printf("%s\n", stonesoup_data->buff_pointer);
+free (stonesoup_data);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_data);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_toupper(stonesoup_data->base_path[stonesoup_oc_i]);
+stonesoup_data->base_path[stonesoup_oc_i] =
+stonesoup_printf("%s\n", stonesoup_data->base_path);

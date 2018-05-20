@@ -1,0 +1,26 @@
+char * VAR1;
+VAR2<int, char *> VAR3;
+char VAR4[100];
+VAR1 = VAR4;
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+VAR3[0] = VAR1;
+VAR3[1] = VAR1;
+VAR3[2] = VAR1;
+void FUN1(VAR2<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+char VAR5[50] = "";
+strncat(VAR5, VAR1, strlen(VAR1));
+
+65987 1 VAR6-121
+
+--------------------------------
+2048 /VAR7/65987/VAR8.VAR9 VAR10
+VAR1[50-1] = '\';
+VAR3[2] = VAR1;
+FUN2(VAR3);
+char VAR5[50] = "";
+strncat(VAR5, VAR1, strlen(VAR1));
+void FUN2(VAR2<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+strncat(VAR5, VAR1, strlen(VAR1));

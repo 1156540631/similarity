@@ -1,0 +1,25 @@
+int32_t (*funcPtr)(int32_t ) = goodSource;
+nsresult XULContentSinkImpl::AddText(const char16_t* aText, int32_t aLength)
+int32_t offset = 0;
+while (0 != aLength) {
+int32_t amount = mTextSize - mTextLength;
+if (amount > aLength) {
+amount = funcPtr(aLength);
+int32_t goodSource(int32_t aLength)
+return aLength;
+amount = funcPtr(aLength);
+if (0 == amount) {
+if (mConstrainSize) {
+nsresult rv = FlushText();
+if (NS_OK != rv) {
+return rv;   }
+} else {
+CheckedInt32 size = mTextSize;
+size += aLength;
+if (!size.isValid()) {
+return NS_ERROR_OUT_OF_MEMORY; }
+mTextSize = size.value();
+mText = (char16_t *) realloc(mText, sizeof(char16_t) * mTextSize);
+if (nullptr == mText) {
+return NS_ERROR_OUT_OF_MEMORY;      }}}
+memcpy(&mText[mTextLength],aText + offset, sizeof(char16_t) * amount);

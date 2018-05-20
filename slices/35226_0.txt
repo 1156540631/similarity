@@ -1,0 +1,9 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[50-1] = '\0';
+VAR4 = VAR2;
+FUN1();
+static void FUN1()
+char * VAR2 = VAR4;
+char VAR3[50] = "";
+strncat(VAR3, VAR2, strlen(VAR2));

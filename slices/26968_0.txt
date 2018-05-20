@@ -1,0 +1,2 @@
+VAR39[VAR45-1] = '\0';
+printf("result: %VAR1\VAR7", VAR39);

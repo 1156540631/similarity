@@ -1,0 +1,9 @@
+#VAR1 VAR2 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+VAR3 = VAR4;
+if(5!=5) {}
+else{
+VAR3 = (void *)VAR2;
+if(5==5)
+VAR5 VAR6 = strlen((char *)VAR3);
+void * VAR7 = (void *)calloc(VAR6+1, 1);
+memcpy(VAR7, VAR3, (VAR6+1));

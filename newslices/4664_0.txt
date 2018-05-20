@@ -1,0 +1,10 @@
+if (fread((&VAR1),1,sizeof(VAR2 ),VAR3) != sizeof(VAR2 )) {
+switch(fgetc(VAR3)){
+if (fread((&VAR4),1,((VAR5 )(&((CLASS1 *)0) -> VAR6)),VAR3) != ((VAR5 )(&((CLASS1 *)0) -> VAR6))) {
+VAR7 = ((CLASS1 *)(FUN1(VAR8,((void *)(&VAR4 . VAR9)),VAR10,&VAR11)));
+memcpy(VAR7,(&VAR4),sizeof(CLASS1 ));
+if (VAR4 . VAR9 != VAR12 && VAR4 . VAR9 != ((VAR13 )0)) {
+if (fread((&VAR14),1,sizeof(VAR15 ),VAR3) != sizeof(VAR15 )) {
+VAR16 = ((VAR15 *)(FUN1(VAR17,((void *)(&VAR14 . VAR18)),VAR10,&VAR11)));
+memcpy(VAR16,(&VAR14),sizeof(VAR14));
+FUN2(VAR3);

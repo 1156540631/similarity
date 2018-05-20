@@ -1,0 +1,12 @@
+CLASS2            *VAR4,
+fread(VAR1, 13, 1, VAR4);
+if (FUN1(VAR4, VAR3, VAR5, &VAR6))
+fclose(VAR4);
+VAR1[0] = getc(VAR4);
+FUN2(VAR4, VAR1);
+while (FUN2(VAR4, VAR1) != 0);
+static int	FUN1(CLASS2 *VAR4, int VAR3, CLASS1 VAR5,
+fclose(VAR4);
+static int	FUN2(CLASS2 *VAR4, unsigned char *VAR2);
+fclose(VAR4);
+while (FUN2(VAR4, VAR1) != 0);

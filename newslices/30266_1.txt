@@ -1,0 +1,15 @@
+VAR1 = FUN1(VAR2, VAR3, VAR4 - 1, 0);
+if (VAR1 == VAR5 || VAR1 == 0)
+VAR3[VAR1] = '\';
+VAR6 = atoi(VAR3);
+FUN2(VAR6);
+void FUN2(int VAR6)
+FUN3(VAR6);
+void FUN3(int VAR6)
+FUN4(VAR6);
+void FUN4(int VAR6)
+FUN5(VAR6);
+void FUN5(int VAR6)
+VAR7 = (int*)malloc(VAR6 * sizeof(int));
+for (VAR8 = 0; VAR8 < (VAR9)VAR6; VAR8++)
+VAR7[VAR8] = 0;

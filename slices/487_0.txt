@@ -1,0 +1,17 @@
+CLASS1 *VAR2 = (CLASS1*) calloc( 1, sizeof(CLASS1) );
+return VAR2;
+VAR1 = FUN5( VAR1 ? (VAR1+1) : VAR14 );
+" <trackList>\VAR2", VAR1 ) == -1)
+CLASS1 *VAR5 = FUN4( VAR1 );
+if( FUN1( VAR11, VAR5, true ) < 0 ) return -1;
+inline static CLASS1* FUN4( char *VAR4 )
+VAR2->VAR4 = FUN5( VAR4 );
+return VAR2;
+CLASS1 *VAR5 = FUN4( VAR1 );
+if( FUN1( VAR11, VAR5, true ) < 0 ) return -1;
+static int FUN1( char **VAR11, CLASS1 *VAR2, bool VAR12 );
+if( FUN1( VAR11, VAR5, true ) < 0 ) return -1;
+FUN6( VAR5 );
+inline static void FUN6( CLASS1 *VAR7 )
+FUN6( VAR7->VAR8 );
+free( VAR7->VAR4 );

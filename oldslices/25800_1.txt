@@ -1,0 +1,5 @@
+int main(int argc, char **argv) {
+char *buf2R1;
+buf2R1 = (char *) malloc(BUFSIZER1);
+free(buf2R1);
+strncpy(buf2R1, argv[1], BUFSIZER1-1);

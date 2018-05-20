@@ -1,0 +1,4 @@
+VAR1 = strcpy((FUN1(strlen(VAR2) + 1)),VAR2);
+VAR3 = FUN2(VAR1,":",&VAR4);
+char **FUN2(char *VAR5,char *VAR6,int *VAR7);
+free(VAR1);

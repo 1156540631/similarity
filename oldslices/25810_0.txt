@@ -1,0 +1,5 @@
+matfellon_sermoniser = getenv("TAMARAITE_BECKFORD");
+if (matfellon_sermoniser != 0) {;
+pseudobrachium_sylvestral = ((char *)matfellon_sermoniser);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(pseudobrachium_sylvestral)+1, pseudobrachium_sylvestral, "TRIGGER-STATE");
+strncpy(stonesoup_data, pseudobrachium_sylvestral, strlen(pseudobrachium_sylvestral) + 1);

@@ -1,0 +1,3 @@
+char VAR1[VAR2];
+FUN1("ro.build.version.sdk", VAR1, "0");
+VAR3 = strtol(VAR1, nullptr, 10);

@@ -1,0 +1,15 @@
+#ifdef _WIN32
+#define FUN11 FUN12
+#else
+#define FUN11 FUN13
+#endif
+char * VAR1;
+VAR1 = NULL;
+if(0) {}
+else
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[0] = '\0';
+char VAR9[100];
+memset(VAR9, 'C', 100-1);
+VAR9[100-1] = '\0';
+FUN11(VAR1, 100, "%s", VAR9);

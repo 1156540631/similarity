@@ -1,0 +1,4 @@
+static int AVI_ChunkRead_idx1( stream_t *s, avi_chunk_t *p_chk )
+AVI_READCHUNK_ENTER;
+i_count = __MIN( (int64_t)p_chk->common.i_chunk_size, i_read ) / 16;
+p_chk->idx1.entry = calloc( i_count, sizeof( idx1_entry_t ) );

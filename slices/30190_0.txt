@@ -1,0 +1,14 @@
+int VAR20;
+VAR20 = -1;
+goto VAR21;
+VAR21:
+VAR14 = FUN43(VAR15, VAR16, VAR17 - 1, 0);
+if (VAR14 == VAR18 || VAR14 == 0)
+break;
+VAR16[VAR14] = '\0';
+VAR20 = atoi(VAR16);
+goto sink;
+sink:
+int VAR19[10] = { 0 };
+if (VAR20 >= 0 && VAR20 < (10))
+printIntLine(VAR19[VAR20]);

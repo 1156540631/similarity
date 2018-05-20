@@ -1,0 +1,11 @@
+WCHAR exearg[MAX_PATH + 1];
+if (!GetPrivateProfileStringW(L"PostUpdateWin", L"ExeArg", NULL, exearg,
+WCHAR dummyArg[14];
+wcscpy(dummyArg, L"argv0ignored ");
+size_t len = wcslen(exearg) + wcslen(dummyArg);
+WCHAR *cmdline = (WCHAR *) malloc((len + 1) * sizeof(WCHAR));
+wcscpy(cmdline, dummyArg);
+wcscat(cmdline, exearg);
+cmdline,
+cmdline,
+free(cmdline);

@@ -1,0 +1,19 @@
+char *VAR1;;
+FUN1(&VAR1,"MIMICKER_CUNNINGHAMIA");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+VAR8 = ((void *)VAR1);
+VAR9 = FUN3(VAR8);
+VAR10 = ((char *)((char *)VAR9));
+VAR11 = (char*) malloc(64 * sizeof(char));
+if (VAR11 != VAR12) {
+memset(VAR11,'',63);
+VAR11[63] = '\';
+FUN4(VAR13, VAR14, "VAR11", VAR11, "VAR15-VAR16");
+strncpy(VAR11, VAR10, 64);

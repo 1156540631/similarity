@@ -1,0 +1,14 @@
+char * data;
+data = NULL;
+data = new char[100];
+data[0] = '\0';
+goodG2BSink_b(data);
+void goodG2BSink_b(char * data)
+goodG2BSink_c(data);
+void goodG2BSink_c(char * data)
+goodG2BSink_d(data);
+void goodG2BSink_d(char * data)
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);

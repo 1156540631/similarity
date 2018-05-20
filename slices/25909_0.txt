@@ -1,0 +1,1 @@
+getenv("WIRESHARK_ABORT_ON_DISSECTOR_BUG") != ((void *)0)?abort() : except_throw(1,4,(FUN93("%VAR9:%u: failed assertion \"DISSECTOR_ASSERT_NOT_REACHED\"","VAR397.VAR23",1890)));

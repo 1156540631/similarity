@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+FUN2(VAR1);
+void FUN2(char * VAR1)
+FUN3(VAR1);
+void FUN3(char * VAR1)
+char VAR40[50] = "";
+strcpy(VAR40, VAR1);

@@ -1,0 +1,5 @@
+process_rtsp_reply(tvbuff_t *tvb, int offset, const guchar *data,
+const guchar *status   = data;
+while (status < lineend && !isspace(*status))
+status++;
+while (status < lineend && !isspace(*status))

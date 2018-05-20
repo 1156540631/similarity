@@ -1,0 +1,9 @@
+char stonesoup_stack_buffer_64[64];
+babyfied_volubleness coelenterata_detruded = 0;
+va_list anglophone_daemonurgist;
+__builtin_va_start(anglophone_daemonurgist,porcelanic_pyelogram);
+coelenterata_detruded = (va_arg(anglophone_daemonurgist,babyfied_volubleness ));
+dewing_tong = ((char *)coelenterata_detruded);
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,dewing_tong);

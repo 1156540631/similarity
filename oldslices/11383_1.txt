@@ -1,0 +1,10 @@
+ret = MAX_VAL;
+ret=5;
+return ret;
+char  **dptr,a;
+dptr=(char**) malloc(10*sizeof(char*));
+dptr[i]=(char*) malloc(memory_allocation_failure_013_func_001(0)*sizeof(char));
+strcpy( dptr[1],"STRING TEST" );
+free(dptr[i]);
+dptr = NULL;
+free(dptr);

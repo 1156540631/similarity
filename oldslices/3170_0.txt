@@ -1,0 +1,3 @@
+char* destbuf=(char*) malloc(10*sizeof(char));
+strncpy(&destbuf[loc],&srcbuf[loc],1);
+free(destbuf);

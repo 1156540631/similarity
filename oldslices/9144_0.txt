@@ -1,0 +1,12 @@
+vector<void *> dataVector;
+data = (void *)WIDE_STRING;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodB2GSink(dataVector);
+void goodB2GSink(vector<void *> dataVector)
+void * data = dataVector[2];
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+free(dest);

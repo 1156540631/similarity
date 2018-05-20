@@ -1,0 +1,3 @@
+char VAR1[64];
+VAR1, sizeof(VAR1))) {
+if (strcmp(VAR1, VAR2)) {

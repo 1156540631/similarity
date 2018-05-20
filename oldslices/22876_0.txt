@@ -1,0 +1,34 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&counterterror_overfee,"MELIORABILITY_PARALLELABLE");
+if (counterterror_overfee != 0) {;
+seminium_haciendado = ((void *)counterterror_overfee);
+spiel_conolophus = &seminium_haciendado;
+czechoslovak_holophrasis = &spiel_conolophus;
+cinemactic_cannot = &czechoslovak_holophrasis;
+wycoff_bedeen = &cinemactic_cannot;
+splendorous_gluons = &wycoff_bedeen;
+archaiser_retroflexion = &splendorous_gluons;
+irritableness_isoscope = &archaiser_retroflexion;
+pantod_bpoe = &irritableness_isoscope;
+daylights_prayerfully = &pantod_bpoe;
+pinipicrin_chinkiang = &daylights_prayerfully;
+lithoglyptics_goog = &pinipicrin_chinkiang;
+mottling_clavial = &lithoglyptics_goog;
+mesophragm_hegumenes = &mottling_clavial;
+perfectas_zophorus = &mesophragm_hegumenes;
+praetorian_steadfast = &perfectas_zophorus;
+godless_fraternizing = &praetorian_steadfast;
+rescriptive_enoptromancy = &godless_fraternizing;
+dorati_sellers = &rescriptive_enoptromancy;
+tagalogs_culpon = &dorati_sellers;
+citlaltpetl_plantations = &tagalogs_culpon;

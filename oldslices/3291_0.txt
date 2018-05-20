@@ -1,0 +1,4 @@
+void badSink(vector<int64_t *> dataVector)
+int64_t * data = dataVector[2];
+printLongLongLine(*data);
+free(data);

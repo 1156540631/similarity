@@ -1,0 +1,2 @@
+if ((VAR1 = (FUN1("FFREPORT"))) || VAR2) {
+FUN2(VAR1);

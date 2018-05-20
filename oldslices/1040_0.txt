@@ -1,0 +1,3 @@
+va_list overspaciously_herbalism;
+__builtin_va_start(overspaciously_herbalism,sulphocarbonate_missuits);
+misceability_heterochronic = (va_arg(overspaciously_herbalism,struct gayomart_friendliness ));

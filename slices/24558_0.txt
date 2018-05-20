@@ -1,0 +1,8 @@
+void FUNC1(int VAR257,char **VAR258)
+char VAR137[1024];
+VAR259 = ((char *)( *(VAR258 - 5)));
+VAR137[VAR10] = 0;
+strncpy(VAR137, VAR259, sizeof(VAR137));
+VAR137[1023] = '\0';
+if (strlen(VAR137) + 1 <= 64) {
+strncpy(VAR137, VAR259, sizeof(VAR137));

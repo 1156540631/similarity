@@ -1,0 +1,7 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_82_base* baseObject = new CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_82_goodG2B;
+baseObject->action(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_82_goodG2B::action(char * data)
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

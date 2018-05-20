@@ -1,0 +1,5 @@
+void FUN1(VAR1<int *> VAR2)
+int * VAR7 = VAR2[2];
+memcpy(VAR7, VAR1, 10*sizeof(int));
+FUN2(VAR7[0]);
+free(VAR7);

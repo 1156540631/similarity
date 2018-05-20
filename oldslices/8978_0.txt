@@ -1,0 +1,5 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+SNPRINTF(dest, strlen(data), "%s", data);
+printLine(data);
+free(data);

@@ -1,0 +1,13 @@
+char * data;
+void (*funcPtr) (char *) = CWE127_Buffer_Underread__char_declare_ncpy_65b_goodG2BSink;
+char dataBuffer[100];
+memset(dataBuffer, 'A', 100-1);
+dataBuffer[100-1] = '\0';
+data = dataBuffer;
+funcPtr(data);
+void CWE127_Buffer_Underread__char_declare_ncpy_65b_goodG2BSink(char * data)
+char dest[100];
+memset(dest, 'C', 100-1);
+dest[100-1] = '\0';
+strncpy(dest, data, strlen(dest));
+dest[100-1] = '\0';

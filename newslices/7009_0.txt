@@ -1,0 +1,6 @@
+register char *VAR1;
+char VAR2[100];
+scanf("%99s", VAR2);
+VAR3 = FUN1(VAR2);
+VAR1++;
+FUN2 (*VAR1 != '\' && isascii((int)*VAR1) && isspace((int)*VAR1))

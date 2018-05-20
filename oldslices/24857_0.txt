@@ -1,0 +1,3 @@
+env_val = (getenv( *env_var));
+if (env_val && env_val[0]) {
+fprintf(error_stream,"%s: warning: cannot set LC_CTYPE locale\n%s: warning: environment variable %s is %s\n%s: warning: please check that your locale name is correct\n",progname,progname, *env_var,env_val,progname);

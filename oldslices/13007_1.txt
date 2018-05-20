@@ -1,0 +1,5 @@
+wchar_t * &dataRef = data;
+wchar_t * data = dataRef;
+memmove(dest, data, wcslen(data)*sizeof(wchar_t));
+printWLine(data);
+free(data);

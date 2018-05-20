@@ -1,0 +1,8 @@
+void pskov_sacrificeable(int hyperlithuria_nonohmic,char **naida_wittier)
+char stonesoup_source[1024];
+nauseas_tumble = ((char *)((char **)naida_wittier)[1]);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, nauseas_tumble, sizeof(stonesoup_source));
+stonesoup_source[1023] = '\0';
+if (strlen(stonesoup_source) + 1 <= 64) {
+strncpy(stonesoup_source, nauseas_tumble, sizeof(stonesoup_source));

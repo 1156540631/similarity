@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int cathedratic_epithymetic = 44;
+char *demander_bacule;
+stonesoup_read_taint(&demander_bacule,"8148",cathedratic_epithymetic);
+uncrude_eelgrass[30] = demander_bacule;
+anesthetist_spartans = uncrude_eelgrass;
+uneddying_mentobregmatic(hexanchidae_primar,anesthetist_spartans);
+uneddying_mentobregmatic(gombeen_unorientally,acopon_lacer);
+void uneddying_mentobregmatic(int gombeen_unorientally,char **acopon_lacer)
+free(((char *)acopon_lacer[30]));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&demander_bacule,"8148",cathedratic_epithymetic);
+uncrude_eelgrass[30] = demander_bacule;
+anesthetist_spartans = uncrude_eelgrass;
+uneddying_mentobregmatic(hexanchidae_primar,anesthetist_spartans);

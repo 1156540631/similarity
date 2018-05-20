@@ -1,0 +1,4 @@
+char buf[10];
+f = fopen("TestInputFile1", "r");
+assert(f != NULL);
+fgets(buf, 11, f);

@@ -1,0 +1,5 @@
+void *bemadams_depressants = 0;
+jumart_nonsupporting(&bemadams_depressants);
+dermas_vassalism = &bemadams_depressants;
+wherefore_chromite = dermas_vassalism + 5;
+free(((char *)((char *)( *(wherefore_chromite - 5)))));

@@ -1,0 +1,19 @@
+VAR1 = FUN1("JUNCTION_COITUS");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = ((int )(strlen(VAR2)));
+for (; VAR3 >= 0; (--VAR4 , --VAR3)) {
+VAR5[VAR4] = VAR2[VAR3];
+FUN2(VAR6, VAR7, "VAR5", VAR5, "VAR8-VAR9");
+VAR5[VAR10] = FUN3(VAR5[VAR10]);
+FUN4("%s\n",&(VAR5[VAR4+1]));
+free(VAR5);
+FUN2(VAR6, VAR7, "VAR5", VAR5, "VAR11-VAR9");
+int FUN3(int VAR12)
+if (VAR12 >= 97 && VAR12 <= 122) {
+return VAR12 - 32;
+return VAR12;
+VAR5[VAR10] = FUN3(VAR5[VAR10]);
+FUN4("%s\n",&(VAR5[VAR4+1]));
+void FUN4(char * VAR13, ...) {
+FUN4("%s\n",&(VAR5[VAR4+1]));

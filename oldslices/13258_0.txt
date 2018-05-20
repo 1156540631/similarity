@@ -1,0 +1,21 @@
+static int SnifferDecompress(unsigned char *inbuf, size_t inlen, unsigned char *outbuf, size_t outlen, int *err)
+unsigned char * pout = outbuf;
+int length;
+int offset;
+if ( !(bit_mask & bit_value) ){
+if ( pout + 1 > pout_end )
+{*err = WTAP_ERR_UNC_OVERFLOW;
+return ( -1 );                       }
+*(pout++) = *(pin++);
+offset = code_low + ((unsigned int)(*pin++) << 4) + 3;
+if ( pout - offset + length > pout )
+*err = WTAP_ERR_UNC_BAD_OFFSET;
+return ( -1 );}
+length = func(&code_type);
+int func(int *code_type)
+return *code_type;
+length = func(&code_type);
+if ( pout + length > pout_end )
+*err = WTAP_ERR_UNC_OVERFLOW;
+return ( -1 );}
+memcpy( pout, pout - offset, length );

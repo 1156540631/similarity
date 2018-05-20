@@ -1,0 +1,25 @@
+VAR1 = FUN1(VAR2[VAR3],"=",&VAR4);
+VAR5 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR6 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR7 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+if (FUN3("target",VAR1[1]) == 0) {
+VAR8 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR9 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR10 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR11 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR12 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR13 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR14 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR15 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR16 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR17 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR18 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR19 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR20 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR21 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR22 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR23 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR24 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR25 -> VAR26 = strcpy((FUN2(strlen((VAR1[0] + 1)) + 1)),(VAR1[0] + 1));
+VAR25 -> VAR27 = strcpy((FUN2(strlen(VAR1[1]) + 1)),VAR1[1]);
+free(VAR1);

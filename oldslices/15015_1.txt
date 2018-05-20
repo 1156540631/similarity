@@ -1,0 +1,13 @@
+char * data;
+vector<char *> dataVector;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+data = dataBadBuffer;
+data[0] = '\0';
+dataVector.insert(dataVector.end(), 1, ata);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<wchar_t *> dataVector)
+wchar_t * data = dataVector[2];
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

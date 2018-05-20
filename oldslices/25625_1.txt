@@ -1,0 +1,26 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char stonesoup_buffer[8];
+char *bluntishness_fibiger;
+stonesoup_read_taint(&bluntishness_fibiger,"PLUTEUS_VALLECULA");
+antiphlogistin_erythron[3] = bluntishness_fibiger;
+crane_snipy[5] = antiphlogistin_erythron;
+springling_beachie[1] = 5;
+heartsomeness_tranks =  *(crane_snipy + springling_beachie[1]);
+virulented_bantry = ((char *)heartsomeness_tranks[3]);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(virulented_bantry)+1, virulented_bantry, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,virulented_bantry,strlen(virulented_bantry) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&bluntishness_fibiger,"PLUTEUS_VALLECULA");
+antiphlogistin_erythron[3] = bluntishness_fibiger;
+crane_snipy[5] = antiphlogistin_erythron;
+heartsomeness_tranks =  *(crane_snipy + springling_beachie[1]);
+virulented_bantry = ((char *)heartsomeness_tranks[3]);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(virulented_bantry)+1, virulented_bantry, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,virulented_bantry,strlen(virulented_bantry) + 1);

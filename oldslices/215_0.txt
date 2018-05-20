@@ -1,0 +1,4 @@
+va_list vl;
+va_start(vl, fmt);
+vsnprintf(str + len, size > len ? size - len : 0, fmt, vl);
+va_end(vl);

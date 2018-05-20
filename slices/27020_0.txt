@@ -1,0 +1,3 @@
+int main(int argc, char **argv) {
+strncpy(VAR39, argv[1], sizeof VAR39 - 1);
+VAR39[sizeof VAR39 - 1] = 0;

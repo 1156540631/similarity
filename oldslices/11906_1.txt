@@ -1,0 +1,37 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+return c;
+int backoff_blastomas = 596;
+char *meadowlarks_bannock;
+stonesoup_read_taint(&meadowlarks_bannock,"9830",backoff_blastomas);
+hoofy_telephotography = ((char *)meadowlarks_bannock);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before = stonesoup_toupper;
+memset(stonesoup_data->buffer,0,64);
+stonesoup_data->after = stonesoup_toupper;
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->before", stonesoup_data->before, &stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->after", stonesoup_data->after, &stonesoup_data->after, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, hoofy_telephotography);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+return c - 32;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+free(stonesoup_data);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&meadowlarks_bannock,"9830",backoff_blastomas);
+hoofy_telephotography = ((char *)meadowlarks_bannock);
+strcpy(stonesoup_data->buffer, hoofy_telephotography);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);

@@ -1,0 +1,14 @@
+dissect_ldss (tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree)
+return dissect_ldss_broadcast(tvb, pinfo, tree);
+dissect_ldss_broadcast(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree)
+messageID   = tvb_get_ntohs  (tvb,  0);
+digest_type = tvb_get_guint8 (tvb,  2);
+compression = tvb_get_guint8 (tvb,  3);
+cookie      = tvb_get_ntohl  (tvb,  4);
+digest      = tvb_memdup     (tvb,  8, DIGEST_LEN);
+size	    = tvb_get_ntoh64 (tvb, 40);
+offset	    = tvb_get_ntoh64 (tvb, 48);
+targetTime  = tvb_get_ntohl  (tvb, 56);
+port        = tvb_get_ntohs  (tvb, 64);
+rate	    = tvb_get_ntohs  (tvb, 66);
+? (long)floor(exp(rate * G_LN2 / 2048))

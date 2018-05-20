@@ -1,0 +1,23 @@
+VAR103 = getenv("VAR1");
+if (VAR103 != 0) {;
+VAR104 = &VAR103;
+VAR105 = VAR104 + 5;
+VAR106 = ((char *)( *(VAR105 - 5)));
+VAR107[7] = VAR106;
+VAR11 = ((int )(strlen(VAR106)));
+FUNC5(VAR17, VAR18, "VAR107", VAR107, "INITIAL-STATE");
+for (; VAR11 >= 0; (--VAR108 , --VAR11)) {
+VAR109[VAR108] = VAR106[VAR11];
+FUNC5(VAR17, VAR18, "VAR109", VAR109, "CROSSOVER-STATE");
+VAR109[VAR33] = FUNC2(VAR109[VAR33]);
+FUNC3("%s\n",VAR109);
+FUNC3("strlen size = %d\n",strlen(VAR106));
+FUNC3("strlen size = %d\n",strlen(VAR107[7]));
+void FUNC3(char * format, ...) {
+FUNC3("strlen size = %d\n",strlen(VAR107[7]));
+FUNC5(VAR17, VAR18, "VAR109", VAR109, "FINAL-STATE");
+int FUNC2(int VAR110)
+if (VAR110 >= 97 && VAR110 <= 122) {
+return VAR110 - 32;
+return VAR110;
+VAR109[VAR33] = FUNC2(VAR109[VAR33]);

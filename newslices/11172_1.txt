@@ -1,0 +1,17 @@
+FUN1(char *VAR1, int VAR2, int VAR3)
+return FUN1(VAR1+1, VAR2-1, VAR3);
+return VAR1;
+return FUN1(VAR1+1, VAR2-1, VAR3);
+VAR4 = malloc(VAR5);
+strcpy(VAR4, VAR6);
+printf("VAR7: %s\VAR2", VAR4);
+free(VAR4);
+VAR8 = FUN1(VAR9, strlen(VAR9), 80);
+FUN2(VAR8);
+FUN2(char *VAR6)
+strcpy(VAR4, VAR6);
+printf("VAR7: %s\VAR2", VAR4);
+free(VAR4);
+FUN3(int VAR10, char **VAR11)
+VAR9 = VAR11[1];
+VAR8 = FUN1(VAR9, strlen(VAR9), 80);

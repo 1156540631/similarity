@@ -1,0 +1,13 @@
+return VAR1 - 32;
+VAR2 = (char*) malloc(8 * sizeof(char));
+strncpy(VAR2, VAR3, strlen(VAR3) + 1);
+VAR2[VAR4] = FUN1(VAR2[VAR4]);
+for (; VAR4 < strlen(VAR2); ++VAR4) {
+FUN2("%s\n", VAR2);
+int FUN1(int VAR1)
+return VAR1;
+VAR2[VAR4] = FUN1(VAR2[VAR4]);
+for (; VAR4 < strlen(VAR2); ++VAR4) {
+FUN2("%s\n", VAR2);
+void FUN2(char * VAR5, ...) {
+free(VAR2);

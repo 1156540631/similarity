@@ -1,0 +1,5 @@
+size_t len = strlen(rtsp_methods[ii]);
+g_ascii_strncasecmp(rtsp_methods[ii], data, len) == 0 &&
+for (ii = 0; ii < RTSP_NMETHODS; ii++) {
+if (ii == RTSP_NMETHODS) {
+(gint) strlen(rtsp_methods[ii]), rtsp_methods[ii]);

@@ -1,0 +1,24 @@
+size_t strlcpy(char *, const char *, size_t);
+char host[MAXHOSTNAMELEN];
+strcpy(host, "LL.MIT.EDU");
+status = strlen(host);
+r->dns_r_q.dns_q_domain = (char *) strdup(host);
+strcpy(host,"BLAH.MIT.EDU");
+status = strlen(host);
+(*rr)->rr_domain = (char *) strdup(host);
+status = dn_expand(data, data + len, p, host,
+(*rr)->rr_u.rr_txt = (char *) strdup(host);
+strcpy(host,"BLAH.MIT.EDU");
+status = strlen(host);
+(*rr)->rr_domain = (char *) strdup(host);
+status = dn_expand(data, data + len, p + 2, host,
+l = strlen(host) + 1;
+(void) strlcpy((*rr)->rr_u.rr_mx->mx_r_domain, host, l);
+status = dn_expand(data, data + len, p + 6, host,
+l = strlen(host) + 1;
+(void) strlcpy((*rr)->rr_u.rr_srv->srv_r_target, host, l);
+strcpy(host,"BLAH.MIT.EDU");
+status = strlen(host);
+(*rr)->rr_domain = (char *) strdup(host);
+status = dn_expand(data, data + len, p + 6, host,
+l = strlen(host) + 1;

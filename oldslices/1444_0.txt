@@ -1,0 +1,6 @@
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_66b_badSink(int dataArray[])
+int data = dataArray[2];
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

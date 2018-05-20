@@ -1,0 +1,14 @@
+int globalReturnsTrue() 
+return 1;
+}  
+int globalReturnsFalse() 
+return 0;
+data = -1;
+if(globalReturnsTrue())
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+if(globalReturnsTrue())
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

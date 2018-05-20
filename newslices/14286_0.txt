@@ -1,0 +1,43 @@
+VAR1  VAR2;
+VAR3 = FUN1(&VAR2, 2, VAR4->VAR5);
+VAR6 = FUN2(&VAR2);
+VAR7 = FUN2(&VAR2);
+VAR8 = 4;
+if (VAR6 < 3)
+return -1;
+if (VAR6 > VAR9)
+return -1;
+VAR10 = (CLASS1 *) FUN3(sizeof(*VAR11) + VAR6);
+VAR11 = (struct CLASS2 *) VAR10;
+VAR12 = (struct CLASS3 *) VAR10;
+for (VAR13 = 1; VAR13 <= 2; ++VAR13)
+if (VAR13 == 1)
+VAR14 = VAR12->VAR15;
+VAR16 = sizeof(*VAR12) + VAR6;
+else if (VAR13 == 2)
+VAR14 = VAR11->VAR15;
+VAR16 = sizeof(*VAR11) + VAR6;
+if (VAR7 != sizeof(*VAR11))
+continue;
+VAR3 = FUN1(VAR10 + VAR8, VAR16 - VAR8,VAR4->VAR5);
+if (VAR3 != VAR16 - VAR8)
+*VAR17 = FUN4(VAR4->VAR5, VAR18);
+if (*VAR17 == 0 && VAR3 != 0)
+*VAR17 = VAR19;
+VAR13 = -1;
+break;
+VAR8 += VAR3;
+if (FUN5(VAR14[0]) == '?')
+continue;
+VAR20 = (CLASS1 *) memchr(VAR14, '\', VAR6 - 1);
+if (VAR20 == VAR21)
+continue;
+++VAR20;
+VAR22 = VAR6 - (VAR20 - VAR14);
+VAR23 = (CLASS1 *) memchr(VAR20, '\', VAR22);
+if (VAR23 && (VAR14 + VAR6 - 1 != VAR23))
+continue;
+FUN6(VAR10);
+return VAR13;
+FUN6(VAR10);
+return -1;

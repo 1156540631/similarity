@@ -1,0 +1,25 @@
+VAR1 VAR2 = - 9223372036854775807L - 1;
+VAR3 = (VAR2 / 1000000);
+VAR4 = (VAR2 % 1000000);
+VAR5 = VAR3 / 60;
+VAR3 %= 60;
+VAR6 = VAR5 / 60;
+VAR5 %= 60;
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%02d:%02d:%02d.%02d ",VAR6,VAR5,VAR3,100 * VAR4 / 1000000);
+VAR8[VAR9] -> VAR10 = 0;
+FUN2();
+VAR11 = FUN3();
+FUN4(0,VAR12,VAR13);
+VAR14 = VAR8[VAR9];
+VAR15 = VAR14 -> VAR15;
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR16=%5d VAR17=%3.*VAR18 VAR19=%3.1f ",VAR15,VAR17 < 9.95,VAR17,VAR19);
+FUN5(&VAR20,"VAR16=%VAR26\n",VAR15);
+VAR21 = (VAR22 -> CLASS1 * VAR22 -> VAR23) * 255.0 * 255.0 * VAR15;
+VAR24 = FUN6(VAR25 / VAR21);
+static double FUN6(double VAR26)
+return - 10.0 * log(VAR26) / log(10.0);
+VAR24 = FUN6(VAR25 / VAR21);
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%c:%2.2f ",VAR27[VAR28],VAR24);
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"*:%2.2f ",FUN6(VAR29 / VAR30));
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR31=VAR32/VAR33 time=");
+FUN1(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%02d:%02d:%02d.%02d ",VAR6,VAR5,VAR3,100 * VAR4 / 1000000);

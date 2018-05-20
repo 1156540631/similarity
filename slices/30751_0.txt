@@ -1,0 +1,10 @@
+void * *VAR61 = &VAR2;
+void * *VAR62 = &VAR2;
+VAR2 = NULL;
+void * VAR2 = *VAR61;
+VAR2 = (void *)VAR8;
+*VAR61 = VAR2;
+void * VAR2 = *VAR62;
+size_t VAR12 = wcslen((wchar_t *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, sizeof(wchar_t));
+memcpy(VAR13, VAR2, (VAR12+1)*sizeof(wchar_t));

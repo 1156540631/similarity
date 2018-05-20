@@ -1,0 +1,6 @@
+unsigned int VAR1;
+VAR2 = fopen("/VAR3/VAR4", "rb");
+if(fread(&VAR1, sizeof VAR1, 1, VAR2) != 1)
+return VAR1;
+unsigned VAR5 = FUN1() % 50 - 1;
+char *VAR6 = malloc((VAR5 + 1) * sizeof(char));

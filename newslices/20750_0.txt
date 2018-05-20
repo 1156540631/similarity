@@ -1,0 +1,5 @@
+VAR1 = FUN1("STRINGLEN_MED");
+if (VAR1 != VAR2)
+VAR3 = strlen(VAR1);
+if (VAR3 > 17)
+VAR4[VAR3] = '';

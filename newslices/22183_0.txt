@@ -1,0 +1,2 @@
+int FUN1(int VAR1, char **VAR2) {
+strncpy(VAR3, VAR2[1], VAR4-1);

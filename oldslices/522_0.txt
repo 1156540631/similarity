@@ -1,0 +1,8 @@
+trace_vmware_palette_write(s->index, value);
+trace_vmware_value_write(s->index, value);
+printf("%s: Bad bits per pixel: %i bits\n", __func__, value);
+uint64_t data, unsigned size)
+vmsvga_value_write(s, addr, data);
+static void vmsvga_value_write(void *opaque, uint32_t address, uint32_t value)
+trace_vmware_scratch_write(s->index, value);
+printf("%s: Bad bits per pixel: %i bits\n", __func__, value);

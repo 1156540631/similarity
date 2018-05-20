@@ -1,0 +1,4 @@
+wchar_t * VAR1;
+VAR1[0] = '\';
+wchar_t VAR2[10+1] = VAR3;
+FUN1(VAR1, VAR2);

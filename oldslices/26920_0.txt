@@ -1,0 +1,2 @@
+len = read_record_from_file(reply, sizeof(reply));
+printf("read_record_from_file returned len = %d\n", len);

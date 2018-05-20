@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&rcn_dentinoma,"UNCORRUPTEDNESS_CHAIRWOMAN");
+if (rcn_dentinoma != 0) {;
+tessellate_ametrous . dmi_lummoxes = rcn_dentinoma;
+palaeostylic_sessler = &tessellate_ametrous;
+saintlikeness_captiousness = palaeostylic_sessler + 5;

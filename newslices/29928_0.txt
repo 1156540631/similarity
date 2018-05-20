@@ -1,0 +1,11 @@
+const int VAR1 = 5; 
+wchar_t * VAR2;
+wchar_t * VAR3 = (wchar_t *)FUN1(100*sizeof(wchar_t));
+FUN2(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+if(VAR1==5)
+VAR2 = VAR3;
+wchar_t VAR4[100];
+FUN2(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+FUN3(VAR2, VAR4, 100-1);

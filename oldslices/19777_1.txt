@@ -1,0 +1,9 @@
+structType myStruct;
+data = NULL;
+data = new int64_t[50];
+myStruct.structFirst = data;
+badSink(myStruct);
+void badSink(structType myStruct)
+int64_t * data = myStruct.structFirst;
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

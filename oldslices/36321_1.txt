@@ -1,0 +1,7 @@
+void (*funcPtr) (char *) = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_65b_badSink;
+data = (char *)malloc(100*sizeof(char));
+data[100-1] = '\0';
+funcPtr(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_65b_badSink(char * data)
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

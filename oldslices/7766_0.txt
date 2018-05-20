@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int caftan_deaccessioned = 53;
+char *dicksonia_blackjacks;
+stonesoup_read_taint(&dicksonia_blackjacks,"1955",caftan_deaccessioned);
+free(((char *)dicksonia_blackjacks));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&dicksonia_blackjacks,"1955",caftan_deaccessioned);
+free(((char *)dicksonia_blackjacks));

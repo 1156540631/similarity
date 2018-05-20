@@ -1,0 +1,2 @@
+fprintf(VAR38, "Error opening file\VAR7");
+fprintf(VAR38, "Error reading file\VAR7");

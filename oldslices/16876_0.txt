@@ -1,0 +1,11 @@
+list<double *> dataList;
+data = NULL;
+data = (double *)malloc(sizeof(*data));
+*data = 1.7E300;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<double *> dataList)
+double * data = dataList.back();
+printDoubleLine(*data);

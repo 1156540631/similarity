@@ -1,0 +1,12 @@
+data = -1;
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<int> dataList)
+int data = dataList.back();
+if (data < 10)
+buffer[data] = 1;

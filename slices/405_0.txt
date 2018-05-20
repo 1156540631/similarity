@@ -1,0 +1,7 @@
+VAR2[VAR1] = '\0';
+if ((VAR4 = strstr(VAR2, VAR5))) {
+if ((VAR4 = strstr(VAR2, VAR6))) {
+CLASS1               VAR7, VAR8;
+if ((VAR4 = strstr(VAR2, VAR9)) == NULL) {
+VAR4 += strlen(VAR9);
+VAR3 = sscanf(VAR4, "%u-%u", &VAR7, &VAR8);

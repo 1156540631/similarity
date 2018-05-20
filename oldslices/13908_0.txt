@@ -1,0 +1,11 @@
+void *p_org = p_stream->p_headers;
+int dataarray[5]
+dataarray[2] = p_stream->i_headers;
+p_stream->i_headers = badSource(dataarray);
+void badsource(int dataarray[])
+int p_stream->i_headers = dataarray[2]
+p_stream->i_headers += p_oggpacket->bytes;
+return p_stream->i_headers;
+p_stream->p_headers = realloc( p_stream->p_headers, p_stream->i_headers );
+if( p_stream->p_headers )
+memcpy( (unsigned char *)p_stream->p_headers + p_stream->i_headers - p_oggpacket->bytes, p_oggpacket->packet, p_oggpacket->bytes );

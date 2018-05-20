@@ -1,0 +1,8 @@
+CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_ncpy_34_unionType myUnion;
+data = (wchar_t *)malloc(100*sizeof(wchar_t));
+data[0] = L'\0';
+myUnion.unionFirst = data;
+wchar_t * data = myUnion.unionSecond;
+wchar_t source[100];
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

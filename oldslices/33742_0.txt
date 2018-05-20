@@ -1,0 +1,7 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[50-1] = '\0';
+myUnion.unionFirst = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_34_unionType myUnion;
+char * data = myUnion.unionSecond;
+memcpy(dest, data, strlen(data)*sizeof(char));

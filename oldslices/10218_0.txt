@@ -1,0 +1,6 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+goodG2B1VaSinkB(data, data);
+static void goodG2B1VaSinkB(char * data, ...)
+va_start(args, data);

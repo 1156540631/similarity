@@ -1,0 +1,2 @@
+u_char obuf[MAXLINE];
+printf("obuf = %s\n",obuf);

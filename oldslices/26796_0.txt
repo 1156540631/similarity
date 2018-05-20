@@ -1,0 +1,2 @@
+now = time(NULL);
+printf("Signing at = %d\n", now);

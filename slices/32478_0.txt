@@ -1,0 +1,11 @@
+int FUN12() 
+return 1;
+int FUN13() 
+return 0;
+char * VAR1;
+char VAR6[100] = "";
+VAR1 = VAR6;
+if(FUN12())
+strcpy(VAR1, "fixedstringtest");
+if(FUN12())
+fprintf(stdout, VAR1);

@@ -1,0 +1,16 @@
+return nullptr;
+FrameProperties props = Properties();
+(props.Get(LineCursorProperty()));
+nsLineBox* property = static_cast<nsLineBox*>
+line_iterator cursor = mLines.begin(property);
+nsRect cursorArea = cursor->GetVisualOverflowArea();
+cursor = cursor.prev();
+cursorArea = cursor->GetVisualOverflowArea();
+cursor = cursor.next();
+cursorArea = cursor->GetVisualOverflowArea();
+if (cursor.get() != property) {
+props.Set(LineCursorProperty(), cursor.get());
+return cursor.get();
+nullptr : GetFirstLineContaining(aDirtyRect.y);
+nsLineBox* cursor = aBuilder->ShouldDescendIntoFrame(this) ?
+for (line_iterator line = mLines.begin(cursor);

@@ -1,0 +1,11 @@
+FUN1(CLASS1 *VAR1, int VAR2, const guchar *VAR17,
+(VAR6 == VAR3 || isspace(VAR17[VAR6])))
+FUN2(VAR4[VAR8], VAR17, VAR6) == 0 &&
+VAR5 = VAR17;
+while (VAR5 < VAR7 && !isspace(*VAR5))
+VAR5++;
+while (VAR5 < VAR7 && isspace(*VAR5))
+VAR5++;
+while (VAR5 < VAR7 && !isspace(*VAR5))
+VAR5++;
+while (VAR5 < VAR7 && !isspace(*VAR5))

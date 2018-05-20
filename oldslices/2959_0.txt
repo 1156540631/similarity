@@ -1,0 +1,8 @@
+data[50-1] = '\0';
+dataArray[2] = data;
+CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_66b_goodG2BSink(dataArray);
+void CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_66b_goodG2BSink(char * dataArray[])
+char * data = dataArray[2];
+strcpy(dest, data);
+printLine(data);
+free(data);

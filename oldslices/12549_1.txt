@@ -1,0 +1,6 @@
+int *buf=(int*) calloc(5,sizeof(int));
+free(buf);
+dynamic_buffer_overrun_017_func_001(5);
+void dynamic_buffer_overrun_017_func_001 (int index)
+*(buf +index) = 1;
+free(buf);

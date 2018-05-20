@@ -1,0 +1,6 @@
+VAR116 = (signed char *) getenv("VAR2");
+FUNC5(VAR17, VAR18, "((char *)VAR116)", ((char *)VAR116), "INITIAL-STATE");
+if (VAR116 != 0) {
+for (VAR63 = 0; VAR63 < strlen((char *)VAR116); ++VAR63) {
+if (VAR116[VAR63] < 0)
+++VAR1[VAR116[VAR63]];

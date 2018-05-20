@@ -1,0 +1,7 @@
+char stonesoup_buffer[8];
+intermediacy_roadlessness = getenv("UMBRATIC_SYNENTOGNATHI");
+cyanines_shyness = &intermediacy_roadlessness;
+conceive_vettura = cyanines_shyness + 5;
+monetite_peladore = ((char *)( *(conceive_vettura - 5)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(monetite_peladore)+1, monetite_peladore, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,monetite_peladore,strlen(monetite_peladore) + 1);

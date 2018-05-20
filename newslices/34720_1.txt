@@ -1,0 +1,10 @@
+char * VAR1
+VAR1 = VAR2;
+FUN1(VAR1);
+void FUN1(char * &VAR1)
+VAR1 = new char[50];
+VAR1[0] = '\';
+char VAR3[100];
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+strncat(VAR1, VAR3, 100);

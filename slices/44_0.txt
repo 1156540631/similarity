@@ -1,0 +1,4 @@
+static int FUN1( CLASS1 *VAR1, CLASS2 *AVR2 )
+FUN2;
+VAR3 = __MIN( (int64_t)AVR2->VAR4.VAR5, VAR6 ) / 16;
+AVR2->idx1.VAR7 = calloc( VAR3, sizeof( VAR8 ) );

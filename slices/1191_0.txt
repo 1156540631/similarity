@@ -1,0 +1,5 @@
+void FUN2(CLASS2<int, CLASS1 *> VAR3)
+CLASS1 * VAR1 = VAR3[2];
+wcsncat(VAR1, VAR2, 100);
+FUN2(VAR1);
+free(VAR1);

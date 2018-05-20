@@ -1,0 +1,16 @@
+char VAR2[100] = "";
+VAR1 = VAR2;
+switch(6)
+case 6:
+strcpy(VAR1, "fixedstringtest");
+break;
+default:
+break;
+switch(7)
+case 7:
+FUN1(VAR1, VAR1);
+static void FUN1(char * VAR1, ...)
+va_list VAR4;
+va_start(VAR4, VAR1);
+vfprintf(stdout, VAR1, VAR4);
+va_end(VAR4);

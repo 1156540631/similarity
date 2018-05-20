@@ -1,0 +1,18 @@
+static int FUN1( CLASS1 *VAR1 )
+CLASS2     *VAR2 = (CLASS2*)VAR1;
+char         *VAR3 = 0, *VAR4 = 0, *VAR5 = 0;
+VAR6 = strchr( VAR2->VAR6, '/' );
+char *VAR7 = strdup( VAR2->VAR6 );
+VAR7[ VAR6 - VAR2->VAR6 ] = 0;
+VAR8 = strchr( VAR7, '@' );
+VAR8 = strchr( VAR7, ':' );
+VAR4 = strdup( VAR8+1 );
+if( !VAR3 ) VAR3 = FUN2( VAR2, "VAR9-VAR10" );
+if( !VAR4 ) VAR4 = FUN2( VAR2, "VAR9-VAR11" );
+if( VAR4 && !*VAR4 ) { free( VAR4 ); VAR4 = 0; }
+CLASS3( VAR2, VAR6, VAR3, VAR4, VAR5);
+free( VAR4 );
+char *VAR3, char *VAR4,
+free( VAR4 );
+VAR12 = FUN3( &VAR13, VAR4, VAR3, 0 );
+free( VAR4 );

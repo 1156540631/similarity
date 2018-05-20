@@ -1,0 +1,23 @@
+void NetworkUtils::removeDefaultRoute(CommandChain* aChain,CommandCallback aCallback,NetworkResultOptions& aResult)
+if (GET_FIELD(mLoopIndex) >= GET_FIELD(mGateways).Length()) {
+aCallback(aChain, false, aResult);
+return;
+char command[MAX_COMMAND_SIZE];
+nsTArray<nsString>& gateways = GET_FIELD(mGateways);
+NS_ConvertUTF16toUTF8 autoGateway(gateways[GET_FIELD(mLoopIndex)]);
+int type = getIpType(autoGateway.get());
+size = MAX_COMMAND_SIZE - 1;
+PR_snprintf(command, size, "network route remove %d %s %s/0 %s",
+GET_FIELD(mNetId), GET_CHAR(mIfname),
+type == AF_INET6 ? "::" : "0.0.0.0", autoGateway.get());
+struct MyCallback
+static void callback(CommandCallback::CallbackType aOriginalCallback,
+CommandChain* aChain,
+bool aError,
+mozilla::dom::NetworkResultOptions& aResult)
+NS_ConvertUTF16toUTF8 reason(aResult.mResultReason);
+NU_DBG("removeDefaultRoute's reason: %s", reason.get());
+if (aError && !reason.EqualsASCII("removeRoute() failed (No such process)")) {
+return aOriginalCallback(aChain, aError, aResult);
+GET_FIELD(mLoopIndex)++;
+return removeDefaultRoute(aChain, aOriginalCallback, aResult);

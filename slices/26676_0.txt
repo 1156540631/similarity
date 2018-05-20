@@ -1,0 +1,28 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR205,"PHOTOETCHING_INQUILINISM");
+if (VAR205 != 0) {;
+VAR206 = VAR205;
+VAR207 = ((char *)VAR206);
+VAR49 = FUN10(VAR207);
+if (VAR206 != 0)
+free(((char *)VAR206));
+STRUCT3 FUN10(char *VAR50)
+VAR52 = strlen(VAR50) % 3;
+if (VAR52 == 0) {
+else if (VAR52 == 1) {
+sscanf(VAR50,"%VAR138",&VAR51);
+return VAR51;
+VAR49 = FUN10(VAR207);
+tracepoint(VAR71, VAR208, "VAR49", VAR49, "TRIGGER-STATE");
+VAR209 = ( *VAR49)(VAR210,VAR207);
+if (VAR209 == 0)

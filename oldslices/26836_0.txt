@@ -1,0 +1,6 @@
+int main(int argc, char **argv){
+f = fopen (argv[1], "r");
+assert(f!=NULL);
+assert ((fscanf(f, "%d", &something)) != 0);
+msglen = create_msg(msg, 10000);
+req_iquery(hp, &cp, eom, &msglen, msg);

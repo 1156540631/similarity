@@ -1,0 +1,7 @@
+int append, const char *fmt, va_list ap, const char *file, int lineno, const char *function)
+int offset = (append && (*buf)->__AST_STR_LEN) ? (*buf)->__AST_STR_USED : 0;
+va_list aq;
+va_end(aq);
+va_end(aq);
+va_copy(aq, ap);
+res = vsnprintf((*buf)->__AST_STR_STR + offset, (*buf)->__AST_STR_LEN - offset, fmt, aq);

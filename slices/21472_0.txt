@@ -1,0 +1,5 @@
+HTAB *FUNC9(const char *VAR20,long VAR21,HASHCTL *VAR22,int VAR23)
+VAR24 = VAR25(VAR24,VAR20,0,(8 * 1024),(8 * 1024 * 1024));
+VAR26 = ((HTAB *)(FUNC10(sizeof(HTAB ) + strlen(VAR20) + 1)));
+VAR26 -> VAR20 = ((char *)(VAR26 + 1));
+strcpy(VAR26 -> VAR20,VAR20);

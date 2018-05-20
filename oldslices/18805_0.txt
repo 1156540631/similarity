@@ -1,0 +1,10 @@
+data = NULL;
+data = goodG2B2Source(data);
+if(goodG2B2Static)
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);
+static char * goodG2B2Source(char * data)
+return data;
+data = goodG2B2Source(data);
+strcpy(data, source);

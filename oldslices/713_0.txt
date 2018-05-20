@@ -1,0 +1,9 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&preenlistments_nuchale,"SOPHISTICATIONS_PLAGUELESS");
+if (preenlistments_nuchale != 0) {;
+wran_nonevent . unpriceably_advocates = preenlistments_nuchale;
+reincorporates_tale[5] = wran_nonevent;
+curacao_drivellers =  *(reincorporates_tale +  *irenic_onewhere);
+subreguli_alphonsism(curacao_drivellers);

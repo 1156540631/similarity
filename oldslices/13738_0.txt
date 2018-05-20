@@ -1,0 +1,7 @@
+WCHAR installDir[MAX_PATH + 1] = {L'\0'};
+unionType myUnion;
+myUnion.unionFirst = installDir;
+WCHAR * installDir = myUnion.unionSecond;
+if (!GetInstallationDir(argc, argv, installDir)) {
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH])
+wcscpy(aResultDir, argvTmp[2]);

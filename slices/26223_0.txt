@@ -1,0 +1,36 @@
+char VAR78[1024];
+VAR62 -> VAR4 -> VAR141 = VAR97 -> VAR4 -> VAR141;
+VAR62 -> VAR4 -> VAR147 = VAR97 -> VAR4 -> VAR147;
+VAR62 -> VAR64 = FUN36(VAR101 -> VAR102);
+VAR101 -> VAR149 = FUN48(VAR62 -> VAR134 -> VAR134 -> VAR150[0]);
+VAR62 -> VAR116 = FUN49(VAR62 -> VAR134 -> VAR134);
+int VAR115 = FUN34(VAR62 -> VAR116,VAR62 -> VAR64 -> VAR117);
+VAR62 -> VAR116 = VAR62 -> VAR64 -> VAR117[VAR115];
+if (!strcmp(VAR62 -> VAR64 -> VAR120,"libx264")) {
+snprintf(VAR78,sizeof(VAR78),"Error while opening encoder for output stream #%VAR83:%VAR83 - maybe incorrect parameters such as bit_rate, rate, VAR80 or VAR81",VAR62 -> VAR69,VAR62 -> VAR70);
+FUN53(VAR62 -> VAR134 -> VAR134,(VAR62 -> VAR4 -> VAR101 -> VAR159));
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+snprintf(VAR78,sizeof(VAR78),"Error while opening encoder for output stream #%VAR83:%VAR83 - maybe incorrect parameters such as bit_rate, rate, VAR80 or VAR81",VAR62 -> VAR69,VAR62 -> VAR70);
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+snprintf(VAR78,sizeof(VAR78),"Error while opening encoder for output stream #%VAR83:%VAR83 - maybe incorrect parameters such as bit_rate, rate, VAR80 or VAR81",VAR62 -> VAR69,VAR62 -> VAR70);

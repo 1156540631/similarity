@@ -1,0 +1,66 @@
+const unsigned char *VAR1 = VAR2->VAR3 + 16;
+const unsigned char *VAR4;
+if (VAR5 || VAR6 || (VAR7 != VAR2->VAR8->VAR9) || (VAR10 != VAR2->VAR8->VAR11))
+memcpy(VAR2->VAR12.VAR13[0], VAR2->VAR14.VAR13[0],VAR2->VAR8->VAR11 * VAR2->VAR12.VAR15[0]);
+if (VAR2->VAR16 > 0)
+VAR4 = VAR1;
+VAR17 = VAR2->VAR3 + VAR2->VAR16 - VAR4;
+if (VAR17 < 1)
+return;
+VAR18 = *VAR4++; VAR17--;
+if (VAR18 & 0x80)
+FUN1(VAR4, VAR17, VAR2->VAR19, VAR2->VAR20);
+VAR18 &= 0x7F;
+VAR4 = VAR2->VAR19;
+VAR21 VAR22;
+VAR22.VAR23 = VAR4;
+char * VAR4 = VAR22.VAR24;
+VAR17 = VAR2->VAR20;
+switch (VAR18)
+case 1:
+for (VAR25 = 0; VAR25 < VAR10; VAR25++)
+do
+if (VAR17 < 1)
+return;
+VAR26 = *VAR4++;
+if (VAR26 & 0x80)
+VAR26 = (VAR26 & 0x7F) + 1;
+if (VAR27 + VAR26 > VAR7 || VAR17 < VAR26)
+return;
+memcpy(&VAR28[VAR27], VAR4, VAR26);
+VAR4 += VAR26;
+VAR17 -= VAR26;
+if (VAR27 + VAR26 + 1 > VAR7 || !VAR2->VAR14.VAR13[0])
+return;
+memcpy(&VAR28[VAR27], &VAR29[VAR27], VAR26 + 1);
+case 2:
+for (VAR25 = 0; VAR25 < VAR10; VAR25++)
+if (VAR17 < VAR7)
+return;
+memcpy(VAR28, VAR4, VAR7);
+VAR4 += VAR7;
+VAR17 -= VAR7;
+case 3:
+for (VAR25 = 0; VAR25 < VAR10; VAR25++)
+do
+if (VAR17 < 1)
+return;
+VAR26 = *VAR4++;
+VAR17--;
+if (VAR26 & 0x80)
+VAR26 = (VAR26 & 0x7F) + 1;
+if (VAR17 < 1)
+return;
+if (*VAR4++ == 0xFF)
+VAR26 = FUN2(VAR4, &VAR28[VAR27], VAR26, VAR17, VAR7 - VAR27);
+else
+if (VAR17 < VAR26)
+return;
+memcpy(&VAR28[VAR27], VAR4, VAR26);
+VAR4 += VAR26;
+VAR17 -= 1 + VAR26;
+VAR27 += VAR26;
+else
+if (VAR27 + VAR26 + 1 > VAR7 || !VAR2->VAR14.VAR13[0])
+return;
+memcpy(&VAR28[VAR27], &VAR29[VAR27], VAR26 + 1);

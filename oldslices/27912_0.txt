@@ -1,0 +1,12 @@
+#define SRC_STRING L"AAAAAAAAAA"
+wchar_t * data;
+data = NULL;
+goodG2B1Static = 0;
+data = goodG2B1Source(data);
+static wchar_t * goodG2B1Source(wchar_t * data)
+if(goodG2B1Static) {}
+else
+data = (wchar_t *)malloc((10+1)*sizeof(wchar_t));
+return data;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

@@ -1,0 +1,15 @@
+int data;
+int *dataPtr1 = &data;
+int *dataPtr2 = &data;
+data = -1;
+int data = *dataPtr1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+*dataPtr1 = data;
+int data = *dataPtr2;
+int buffer[10] = { 0 };
+if (data >= 0)
+printIntLine(buffer[data]);

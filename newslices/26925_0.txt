@@ -1,0 +1,24 @@
+VAR1 FUN1(char *, const char *, VAR1);
+char VAR2[VAR3];
+strcpy(VAR2, "VAR4.VAR5.VAR6");
+VAR7 = strlen(VAR2);
+VAR8->VAR9.VAR10 = (char *) strdup(VAR2);
+strcpy(VAR2,"VAR11.VAR5.VAR6");
+VAR7 = strlen(VAR2);
+(*VAR12)->VAR13 = (char *) strdup(VAR2);
+VAR7 = FUN2(VAR14, VAR14 + VAR15, VAR16, VAR2,
+(*VAR12)->VAR17.VAR18 = (char *) strdup(VAR2);
+strcpy(VAR2,"VAR11.VAR5.VAR6");
+VAR7 = strlen(VAR2);
+(*VAR12)->VAR13 = (char *) strdup(VAR2);
+VAR7 = FUN2(VAR14, VAR14 + VAR15, VAR16 + 2, VAR2,
+VAR19 = strlen(VAR2) + 1;
+(void) FUN1((*VAR12)->VAR17.VAR20->VAR21, VAR2, VAR19);
+VAR7 = FUN2(VAR14, VAR14 + VAR15, VAR16 + 6, VAR2,
+VAR19 = strlen(VAR2) + 1;
+(void) FUN1((*VAR12)->VAR17.VAR22->VAR23, VAR2, VAR19);
+strcpy(VAR2,"VAR11.VAR5.VAR6");
+VAR7 = strlen(VAR2);
+(*VAR12)->VAR13 = (char *) strdup(VAR2);
+VAR7 = FUN2(VAR14, VAR14 + VAR15, VAR16 + 6, VAR2,
+VAR19 = strlen(VAR2) + 1;

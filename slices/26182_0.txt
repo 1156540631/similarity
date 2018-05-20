@@ -1,0 +1,27 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR239,"URTICA_UNDERBEAR");
+if (VAR239 != 0) {;
+VAR240 = ((char *)VAR239);
+VAR241 = FUN75(VAR240);
+if (VAR239 != 0)
+free(((char *)VAR239));
+STRUCT13 FUN75(char *VAR238)
+VAR242 = strlen(VAR238) % 3;
+if (VAR242 == 0) {
+else if (VAR242 == 1) {
+sscanf(VAR238,"%VAR82",&VAR237);
+return VAR237;
+VAR241 = FUN75(VAR240);
+tracepoint(VAR31, VAR243, "VAR241", VAR241, "TRIGGER-STATE");
+VAR244 = ( *VAR241)(VAR245,VAR240);
+if (VAR244 == 0)

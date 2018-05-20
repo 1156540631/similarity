@@ -1,0 +1,4 @@
+ret = MAX_VAL;
+ret=5;
+return ret;
+memory_allocation_failure_012_buf2_gbl = (int *) calloc (memory_allocation_failure_012_func_001(1),sizeof(int));

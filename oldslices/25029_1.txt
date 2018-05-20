@@ -1,0 +1,4 @@
+char src[4106];
+char buf[10];
+src[4106 - 1] = '\0';
+strncpy(buf, src, index_array[0]);

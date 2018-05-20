@@ -1,0 +1,13 @@
+VAR5 = -1;
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53b_FUN5(VAR5);
+void CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53b_FUN5(int VAR5)
+CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53c_FUN5(VAR5);
+void CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53c_FUN5(int VAR5)
+CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53d_FUN5(VAR5);
+void CWE121_Stack_Based_VAR16_Overflow__CWE129_fgets_53d_FUN5(int VAR5)
+int VAR16[10] = { 0 };
+if (VAR5 >= 0)
+VAR16[VAR5] = 1;

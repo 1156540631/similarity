@@ -1,0 +1,4 @@
+GoodClass goodClassObject1("One"), goodClassObject2("Two");
+GoodClass(GoodClass &goodClassObject)
+this->data = new char[strlen(goodClassObject.data) + 1];
+strcpy(this->data, goodClassObject.data);

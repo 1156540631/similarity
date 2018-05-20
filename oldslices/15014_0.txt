@@ -1,0 +1,7 @@
+wchar_t * &dataRef = data;
+char dataBadBuffer[10];
+data = dataBadBuffer;
+data[0] = '\0';
+wchar_t * data = dataRef;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

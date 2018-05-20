@@ -1,0 +1,2 @@
+errno = 0;
+printf("include: read error: %s\n", errstring(errno));

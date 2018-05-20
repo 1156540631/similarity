@@ -1,0 +1,15 @@
+(VAR1) = VAR2;
+VAR2 = (VAR1);
+VAR3;
+(VAR4) = (VAR5) + VAR6;
+VAR2 = (VAR4);
+*VAR2 = (VAR7);
+int VAR8 = (int) (VAR2 - (VAR5)) - 1;
+(VAR4) = (VAR5) + VAR8;
+VAR9 = FUN1( VAR10 );
+if ( FUN2( ) )
+VAR3;
+*VAR2 = (VAR7);
+VAR11 = VAR2;
+VAR3;
+VAR12.VAR13 = FUN3(VAR14, VAR15, 16);

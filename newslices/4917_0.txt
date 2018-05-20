@@ -1,0 +1,4 @@
+void FUN1(char *VAR1)
+FUN2(VAR1);
+void FUN2(char *VAR2)
+free(((char *)VAR2));

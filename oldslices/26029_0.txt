@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+int santoro_rebemire = 91;
+char *punnets_catamnestic;
+stonesoup_read_taint(&punnets_catamnestic,"4630",santoro_rebemire);
+unfulfill_inviolate = ((char *)punnets_catamnestic);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, unfulfill_inviolate, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&punnets_catamnestic,"4630",santoro_rebemire);
+unfulfill_inviolate = ((char *)punnets_catamnestic);
+strncpy(stonesoup_source, unfulfill_inviolate, sizeof(stonesoup_source));

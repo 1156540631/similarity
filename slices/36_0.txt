@@ -1,0 +1,4 @@
+CLASS1 VAR1 = FUN1(VAR2, 0);
+if (!FUN2(VAR1, &VAR3)) {
+} while (FUN3(VAR1, &VAR3));
+FUN4(VAR1);

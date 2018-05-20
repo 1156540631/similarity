@@ -1,0 +1,8 @@
+char * data;
+char * &dataRef = data;
+char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataGoodBuffer;
+char * data = dataRef;
+source[100-1] = '\0';
+strncat(data, source, 100);

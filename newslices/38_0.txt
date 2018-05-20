@@ -1,0 +1,5 @@
+unsigned char *VAR1;
+unsigned char VAR2;
+VAR3->FUN1(VAR4, &VAR1, &VAR2, VAR5,
+VAR4->VAR6 = FUN2(VAR2);
+memcpy(VAR4->VAR6, VAR1, VAR2);

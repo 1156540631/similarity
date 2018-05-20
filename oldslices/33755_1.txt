@@ -1,0 +1,7 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[100-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_52b_badSink(data);
+char dest[50] = "";
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_52c_badSink(char * data)
+memcpy(dest, data, strlen(data)*sizeof(char));

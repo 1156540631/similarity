@@ -1,0 +1,20 @@
+VAR1 = FUN1("LACERTA_TWEYFOLD");
+if (VAR1 != 0) {;
+VAR2 = &VAR1;
+VAR3 = ((char **)(((unsigned long )VAR2) * CLASS1 * CLASS1)) + 5;
+VAR4 = ((char *)( *(VAR3 - 5)));
+VAR5 = ((int )(strlen(VAR4)));
+for (; VAR5 >= 0; (--VAR6 , --VAR5)) {
+VAR7->VAR8[VAR6] = VAR4[VAR5];
+FUN2(VAR9, VAR10, "VAR7->VAR8", VAR7->VAR8, "VAR11-VAR12");
+VAR7->VAR8[VAR13] = FUN3(VAR7->VAR8[VAR13]);
+free(VAR7);
+FUN2(VAR9, VAR10, "VAR7->VAR8", VAR7->VAR8, "VAR14-VAR12");
+int FUN3(int VAR15)
+if (VAR15 >= 97 && VAR15 <= 122) {
+return VAR15 - 32;
+return VAR15;
+VAR7->VAR8[VAR13] = FUN3(VAR7->VAR8[VAR13]);
+FUN4("%VAR15",VAR7->FUN5(VAR7->VAR8[VAR13]));
+void FUN4(char * VAR16, ...) {
+FUN4("%VAR15",VAR7->FUN5(VAR7->VAR8[VAR13]));

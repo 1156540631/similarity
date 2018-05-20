@@ -1,0 +1,7 @@
+FUN1(VAR6, VAR2, VAR2 + 4);
+FUN1(VAR6, VAR2, VAR2 + 4);
+FUN1(VAR6, VAR2, VAR2 + 4);
+int           VAR2)
+fprintf(stderr, "DEBUG: %*sBOOLEAN %VAR1 bytes %VAR1\VAR2", VAR2, "",
+putc('\VAR2', stderr);
+fprintf(stderr, "DEBUG: %*sOID %VAR1 bytes ", VAR2, "",

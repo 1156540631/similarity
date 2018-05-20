@@ -1,0 +1,8 @@
+debatter_suppertime = getenv("TRANSGRESSED_SULFONAL");
+laicity_akutagawa = ((int )(strlen(debatter_suppertime)));
+waki_fritillaria = ((char *)(malloc(laicity_akutagawa + 1)));
+memset(waki_fritillaria,0,laicity_akutagawa + 1);
+memcpy(waki_fritillaria,debatter_suppertime,laicity_akutagawa);
+explorational_micropterygidae(waki_fritillaria);
+void explorational_micropterygidae(char *const pregladness_enseating)
+free(((char *)((char *)pregladness_enseating)));

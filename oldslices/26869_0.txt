@@ -1,0 +1,3 @@
+char *filename;
+int flags;
+printf("writable(%s, 0x%x)\n", filename, flags);

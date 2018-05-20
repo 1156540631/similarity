@@ -1,0 +1,8 @@
+data = new char[10+1];
+dataMap[2] = data;
+goodG2BSink(dataMap);
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);
+void goodG2BSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+strncpy(data, source, strlen(source) + 1);

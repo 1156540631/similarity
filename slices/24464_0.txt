@@ -1,0 +1,16 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR180,"VAR183");
+if (VAR180 != 0) {;
+VAR181 = VAR180;
+FUNC32(VAR181);
+void FUNC32(const reemission_cwrite VAR182);

@@ -1,0 +1,3 @@
+VAR1 = (char *) malloc (25 * sizeof(char));
+strcpy(VAR1,"VAR2 VAR3 VAR4");
+free(VAR1);

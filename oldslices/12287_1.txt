@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&episternal_larcenist,"HECATE_AMENABLE");
+if (episternal_larcenist != 0) {;
+chawed_anarchs . malinvestment_garfish = episternal_larcenist;
+iffiest_chubbiest = ((char *)chawed_anarchs . malinvestment_garfish);
+if (strlen(iffiest_chubbiest) < 20) {
+realpath(iffiest_chubbiest,stonesoup_base_path);
+if (chawed_anarchs . malinvestment_garfish != 0)
+free(((char *)chawed_anarchs . malinvestment_garfish));

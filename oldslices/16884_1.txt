@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(int64_t * &data)
+data = (int64_t *)malloc(sizeof(data));
+*data = 2147483643LL;
+printLongLongLine(*data);

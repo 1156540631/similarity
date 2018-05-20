@@ -1,0 +1,9 @@
+IEEE_DP_MANTISSA_WIDTH;
+exponent = ((exponent >> IEEE_DP_MANTISSA_WIDTH) - IEEE_DP_BIAS) -
+return mantissa * pow(2, exponent);
+return get_ieee_double(ieee_fp_union.dw);
+return get_ieee_double(ieee_fp_union.dw);
+get_ieee_double(guint64 w)
+exponent = w & IEEE_DP_EXPONENT_MASK;
+exponent = ((exponent >> IEEE_DP_MANTISSA_WIDTH) - IEEE_DP_BIAS) -
+return mantissa * pow(2, exponent);

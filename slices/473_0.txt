@@ -1,0 +1,3 @@
+static int FUN1( CLASS1 *VAR1, CLASS2 *VAR5 )
+VAR6;
+VAR2->VAR3 = malloc( VAR4 + 1);

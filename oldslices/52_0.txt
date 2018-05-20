@@ -1,0 +1,11 @@
+char		filename[1024],
+if ((cups_serverroot = getenv("CUPS_SERVERROOT")) == NULL)
+cups_serverroot = CUPS_SERVERROOT;
+snprintf(filename, sizeof(filename), "%s/snmp.conf", cups_serverroot);
+if ((fp = cupsFileOpen(filename, "r")) != NULL)
+linenum = 0;
+while (cupsFileGetConf(fp, line, sizeof(line), &value, &linenum))
+fprintf(stderr, "ERROR: Missing value on line %d of %s!\n", linenum,
+filename);
+line, linenum, filename);
+"line %d of %s!\n", linenum, filename);

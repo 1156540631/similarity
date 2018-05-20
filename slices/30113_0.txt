@@ -1,0 +1,16 @@
+typedef union
+wchar_t * VAR4;
+wchar_t * VAR5;
+} CLASS1;
+wchar_t * VAR20;
+CLASS1 CLASS2;
+wchar_t VAR3[100];
+wmemset(VAR3, L'A', 100-1);
+VAR3[100-1] = L'\0';
+VAR20 = VAR3;
+CLASS2.VAR4 = VAR20;
+wchar_t * VAR20 = CLASS2.VAR5;
+wchar_t VAR21[100];
+wmemset(VAR21, L'C', 100-1);
+VAR21[100-1] = L'\0';
+wcsncpy(VAR20, VAR21, 100-1);

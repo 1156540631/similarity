@@ -1,0 +1,12 @@
+VAR8 = -1;
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+const CLASS32& CLASS11 = CLASS33();
+CLASS11.FUN42(VAR8);
+void CLASS33::FUN42(int VAR8) const
+VAR45 = VAR8 * sizeof(int);
+VAR22 = (int*)new char[VAR45];
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

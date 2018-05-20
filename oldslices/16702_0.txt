@@ -1,0 +1,7 @@
+data = (char *)malloc(100*sizeof(char));
+goodG2BSource(data);
+static void goodG2BSource(char * &data)
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+char dest[50] = "";
+strncat(dest, data, strlen(data));

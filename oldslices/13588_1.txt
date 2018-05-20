@@ -1,0 +1,17 @@
+size_t VCMSessionInfo::InsertBuffer(uint8_t* frame_buffer,acketIterator packet_it) {
+size_t required_length = 0;
+while (nalu_ptr < packet_buffer + packet.sizeBytes) {
+size_t length = BufferToUWord16(nalu_ptr);
+required_length += length + (packet.insertStartCode ? kH264StartCodeLengthBytes : 0);}
+ShiftSubsequentPackets(packet_it, required_length);
+void VCMSessionInfo::ShiftSubsequentPackets(PacketIterator it,  int steps_to_shift) {
+++it;
+if (it == packets_.end())
+return;
+int shift_length = 0;
+uint8_t* first_packet_ptr = const_cast<uint8_t*>((*it).dataPtr);
+for (; it != packets_.end(); ++it) {
+shift_length += (*it).sizeBytes;
+if ((*it).dataPtr != NULL)
+(*it).dataPtr += steps_to_shift;
+memmove(first_packet_ptr + steps_to_shift, first_packet_ptr, shift_length);

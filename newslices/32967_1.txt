@@ -1,0 +1,12 @@
+char * VAR1;
+char * VAR2 = (char *)FUN1(50*sizeof(char));
+VAR1 = VAR2;
+VAR1[0] = '\';
+FUN2(&VAR1);
+void FUN2(void * VAR3)
+char * * VAR4 = (char * *)VAR3;
+char * VAR1 = (*VAR4);
+char VAR5[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+strncpy(VAR1, VAR5, 100-1);

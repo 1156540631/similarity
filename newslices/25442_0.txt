@@ -1,0 +1,2 @@
+VAR1=(char*) malloc(10*sizeof(char));
+strcpy(VAR1,"TEST");

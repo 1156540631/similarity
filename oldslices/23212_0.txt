@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+int biasing_rhymic = 91;
+char *atelic_hexaseme;
+stonesoup_read_taint(&atelic_hexaseme,"8146",biasing_rhymic);
+bartonsville_pact = ((char *)atelic_hexaseme);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, bartonsville_pact, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&atelic_hexaseme,"8146",biasing_rhymic);
+bartonsville_pact = ((char *)atelic_hexaseme);
+strncpy(stonesoup_source, bartonsville_pact, sizeof(stonesoup_source));

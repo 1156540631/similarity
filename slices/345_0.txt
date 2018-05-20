@@ -1,0 +1,4 @@
+CLASS1 VAR1;
+int VAR3 = FUN1(VAR10, &VAR1);
+CLASS1 *VAR2)
+strncpy(VAR2->VAR4,

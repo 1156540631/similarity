@@ -1,0 +1,4 @@
+f = fopen(DNSFILE, "w");
+DNS_REC_LEN = create_dns_file();
+dns_reply =  dns_lookup_int(domain, rr_class, rr_type, retrans, retry);
+printf("Reading from file = %s ...\n", DNSFILE);

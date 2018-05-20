@@ -1,0 +1,7 @@
+data = NULL;
+goodG2BSource(data);
+printLongLongLine(*data);
+void goodG2BSource(int64_t * &data)
+data = (int64_t *)malloc(sizeof(*data));
+*data = 2147483643LL;
+free(data);

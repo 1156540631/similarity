@@ -1,0 +1,20 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+struct passed_edacious semihoral_pompelmoose;
+int exobasidium_chemult = 596;
+char *spreadability_chamfrain;
+stonesoup_read_taint(&spreadability_chamfrain,"2873",exobasidium_chemult);
+semihoral_pompelmoose . excited_daedalion = ((char *)spreadability_chamfrain);
+mononucleoses_preexperience[5] = semihoral_pompelmoose;
+fruitful_inurbanely = 5;
+drongo_tureen = &fruitful_inurbanely;
+gatling_reagency =  *(mononucleoses_preexperience +  *drongo_tureen);
+free(((char *)gatling_reagency . excited_daedalion));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&spreadability_chamfrain,"2873",exobasidium_chemult);
+semihoral_pompelmoose . excited_daedalion = ((char *)spreadability_chamfrain);
+gatling_reagency =  *(mononucleoses_preexperience +  *drongo_tureen);
+free(((char *)gatling_reagency . excited_daedalion));

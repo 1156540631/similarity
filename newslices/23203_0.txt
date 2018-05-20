@@ -1,0 +1,17 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+char VAR3[1024];
+int VAR4 = 91;
+char *VAR5;
+FUN1(&VAR5,"6829",VAR4);
+VAR6 = VAR5;
+VAR7 = ((char *)VAR6);
+memset(VAR3, 0, 1024);
+strncpy(VAR3, VAR7, sizeof(VAR3));
+void FUN1(char** VAR1, char* VAR8, int VAR9) {
+if ((VAR10 = FUN2(VAR11, VAR9, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR9, sizeof(char));
+FUN1(&VAR5,"6829",VAR4);
+VAR6 = VAR5;
+VAR7 = ((char *)VAR6);
+strncpy(VAR3, VAR7, sizeof(VAR3));

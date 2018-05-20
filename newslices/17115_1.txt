@@ -1,0 +1,17 @@
+char * VAR1;
+VAR2<char *> VAR3;
+char VAR4[100];
+VAR1 = VAR4;
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+void FUN3(VAR5<char *> VAR6)
+char * VAR1 = VAR6.FUN4();
+VAR7 = strlen(VAR1);
+char VAR8[50] = "";
+VAR9 VAR10, VAR7;
+VAR7 = strlen(VAR1);
+for (VAR10 = 0; VAR10 < VAR7; VAR10++)
+VAR8[VAR10] = VAR1[VAR10];

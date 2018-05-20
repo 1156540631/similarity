@@ -1,0 +1,4 @@
+void outrail_resiliences(char **sepion_paragraphically)
+uptuck_obscures(sepion_paragraphically);
+void uptuck_obscures(char **pharyngitic_knowledgably)
+free(((char *)pharyngitic_knowledgably[59]));

@@ -1,0 +1,11 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+int FUN1()
+return 1;
+int FUN2()
+return 0;
+char * VAR3;
+VAR3 = VAR4;
+if(FUN1())
+VAR3 = (char *)malloc((10+1)*sizeof(char));
+char VAR5[10+1] = VAR2;
+strcpy(VAR3, VAR5);

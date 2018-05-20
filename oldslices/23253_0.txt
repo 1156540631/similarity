@@ -1,0 +1,5 @@
+char stonesoup_source[1024];
+whiteclay_tossy = getenv("LAWSUITING_SUSAN");
+faaas_unpeerable = ((char *)whiteclay_tossy);
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,faaas_unpeerable,sizeof(stonesoup_source));

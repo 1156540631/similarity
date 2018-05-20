@@ -1,0 +1,70 @@
+path->data = NULL;
+path->size = 0;
+memcpy(lhs->data, rhs->data, rhs->size);
+lhs->size = rhs->size;
+if (!strncmp(s1->data, s2->data, s1->size - 1)) {
+err = v9fs_co_open(pdu, f, f->open_flags);
+err = v9fs_co_opendir(pdu, f);
+for (f = s->fid_list; f; f = f->next) {
+BUG_ON(f->clunked);
+f->ref++;
+err = v9fs_reopen_fid(pdu, f);
+return NULL;
+f->flags |= FID_REFERENCED;
+return f;
+return NULL;
+dst->size++;
+V9fsPath dpath, path;
+fidp = get_fid(pdu, fid);
+v9fs_path_init(&path);
+v9fs_path_copy(&dpath, &fidp->path);
+v9fs_path_copy(&path, &fidp->path);
+v9fs_path_init(&path);
+v9fs_path_copy(&dpath, &fidp->path);
+err = v9fs_co_name_to_path(pdu, &dpath, wnames[name_idx].data, &path);
+err = v9fs_co_lstat(pdu, &path, &stbuf);
+v9fs_path_copy(&dpath, &path);
+v9fs_path_copy(&fidp->path, &path);
+v9fs_path_copy(&newfidp->path, &path);
+V9fsPath path;
+v9fs_path_init(&path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+err = v9fs_co_name_to_path(pdu, &fidp->path, name.data, &path);
+v9fs_path_copy(&fidp->path, &path);
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+v9fs_fix_path(&tfidp->path, &new_path, strlen(fidp->path.data));
+if (v9fs_path_is_ancestor(&oldpath, &tfidp->path)) {
+void v9fs_path_copy(V9fsPath *lhs, V9fsPath *rhs)
+v9fs_path_free(lhs);
+lhs->data = g_malloc(rhs->size);
+memcpy(lhs->data, rhs->data, rhs->size);
+v9fs_path_copy(&str, dst);
+v9fs_path_copy(&path, &fidp->path);
+v9fs_path_copy(&newfidp->path, &path);
+v9fs_fix_path(&tfidp->path, &new_path, strlen(fidp->path.data));
+static int v9fs_path_is_ancestor(V9fsPath *s1, V9fsPath *s2)
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+v9fs_fix_path(&tfidp->path, &new_path, strlen(fidp->path.data));
+if (v9fs_path_is_ancestor(&oldpath, &tfidp->path)) {
+v9fs_fix_path(&tfidp->path, &newpath, strlen(oldpath.data));
+static void v9fs_fix_path(V9fsPath *dst, V9fsPath *src, int len)
+v9fs_path_copy(&str, dst);
+void v9fs_path_init(V9fsPath *path)
+v9fs_path_init(&path);
+v9fs_path_copy(&newfidp->path, &path);
+v9fs_path_init(&path);
+v9fs_path_copy(&fidp->path, &path);
+static int v9fs_reopen_fid(V9fsPDU *pdu, V9fsFidState *f)
+err = v9fs_reopen_fid(pdu, f);
+return f;
+fidp = get_fid(pdu, fid);
+v9fs_path_copy(&dpath, &fidp->path);

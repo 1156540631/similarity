@@ -1,0 +1,26 @@
+size_t FUN112(char *VAR55,size_t VAR424,unsigned int VAR143)
+VAR258 = snprintf(VAR55,VAR424,(((VAR143 & 0xff) >= 48 && (VAR143 & 0xff) <= '9' || (VAR143 & 0xff) >= 'a' && (VAR143 & 0xff) <= 'z' || (VAR143 & 0xff) >= 'A' && (VAR143 & 0xff) <= 'Z' || ((VAR143 & 0xff) == '.' || (VAR143 & 0xff) == 32 || (VAR143 & 0xff) == '-' || (VAR143 & 0xff) == '_')?"%VAR13" : "[%VAR83]")),VAR143 & 0xff);
+VAR55 += VAR258;
+VAR143 >>= 8;
+const char *VAR425 = ((void *)0);
+VAR55[0] ^= 'a' ^ 'A';
+char VAR427[32];
+FUN112(VAR427,sizeof(VAR427),VAR64 -> VAR143);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," (%VAR208 / 0x%04X)",VAR427,VAR64 -> VAR143);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %VAR208",FUN113(VAR64 -> VAR428));
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %dx%VAR83",VAR64 -> VAR80,VAR64 -> VAR81);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," [SAR %VAR83:%VAR83 DAR %VAR83:%VAR83]",VAR64 -> VAR153 . VAR430,VAR64 -> VAR153 . VAR431,VAR426 . VAR430,VAR426 . VAR431);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %VAR83/%VAR83",VAR64 -> VAR112 . VAR430 / VAR443,VAR64 -> VAR112 . VAR431 / VAR443);
+return ((void *)0);
+return ((void *)0);
+VAR425 = FUN115(VAR82,VAR64 -> VAR425);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," (%VAR208)",VAR425);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," (%VAR208 / 0x%04X)",VAR427,VAR64 -> VAR143);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %VAR208",FUN113(VAR64 -> VAR428));
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," (%VAR83 bpc)",VAR64 -> VAR429);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %dx%VAR83",VAR64 -> VAR80,VAR64 -> VAR81);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %VAR83/%VAR83",VAR64 -> VAR112 . VAR430 / VAR443,VAR64 -> VAR112 . VAR431 / VAR443);
+void FUN116(char *VAR55,int VAR424,STRUCT5 *VAR64,int VAR432)
+snprintf(VAR55,VAR424,"%VAR208: %VAR208%VAR208",(VAR433?VAR433 : "unknown"),VAR434,(VAR64 -> VAR435?" (VAR436)" : ""));
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %dx%VAR83",VAR64 -> VAR80,VAR64 -> VAR81);
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55),", %VAR83/%VAR83",VAR64 -> VAR112 . VAR430 / VAR443,VAR64 -> VAR112 . VAR431 / VAR443);

@@ -1,0 +1,10 @@
+static int VAR1 = 1;
+static int VAR2 = 0;
+char * VAR3;
+VAR3 = (char *)malloc(100*sizeof(char));
+if(VAR2){ }
+else
+memset(VAR3, '', 50-1);
+VAR3[50-1] = '\';
+char VAR4[50] = "";
+strcpy(VAR4, VAR3);

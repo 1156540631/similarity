@@ -1,0 +1,38 @@
+STRUCT335 FUN108(char *VAR34,STRUCT335 VAR336,unsigned int VAR456)
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);
+VAR34 += VAR439;
+VAR456 >>= 8;
+const char *VAR457 = ((void *)0);
+VAR34[0] ^= 'a' ^ 'A';
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9)",VAR457);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9 / 0x%04X)",VAR458,VAR156 -> VAR456);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR9",FUN100(VAR156 -> VAR452));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR219 bpc)",VAR156 -> STRUCT470);
+int VAR468 = (FUN112(VAR156 -> VAR140 . VAR459,VAR156 -> VAR140 . VAR460));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219/%VAR219",VAR156 -> VAR140 . VAR459 / VAR468,VAR156 -> VAR140 . VAR460 / VAR468);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR9",FUN106(VAR156 -> VAR454));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", pass 2");
+return ((void *)0);
+VAR457 = FUN109(VAR143,VAR156 -> VAR457);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9)",VAR457);
+char VAR458[32];
+FUN108(VAR458,sizeof(VAR458),VAR156 -> VAR456);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9 / 0x%04X)",VAR458,VAR156 -> VAR456);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR9",FUN100(VAR156 -> VAR452));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %dx%VAR219",VAR156 -> VAR168,VAR156 -> VAR173);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," [SAR %VAR219:%VAR219 DAR %VAR219:%VAR219]",VAR156 -> VAR171 . VAR459,VAR156 -> VAR171 . VAR460,VAR461 . VAR459,VAR461 . VAR460);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", VAR188=%VAR219-%VAR219",VAR156 -> VAR471,VAR156 -> VAR472);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219 Hz",VAR156 -> VAR469);
+FUN113(VAR34,", ",VAR336);
+FUN114(VAR34 + strlen(VAR34),(VAR336 - strlen(VAR34)),VAR156 -> VAR166,VAR156 -> VAR473);
+int VAR468 = (FUN112(VAR156 -> VAR140 . VAR459,VAR156 -> VAR140 . VAR460));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219/%VAR219",VAR156 -> VAR140 . VAR459 / VAR468,VAR156 -> VAR140 . VAR460 / VAR468);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", pass 1");
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", pass 2");
+return ((void *)0);
+VAR457 = FUN109(VAR143,VAR156 -> VAR457);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9)",VAR457);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", pass 2");
+void FUN110(char *VAR34,int VAR336,STRUCT9 *VAR156,int VAR463)
+snprintf(VAR34,VAR336,"%VAR9: %VAR9%VAR9",(VAR464?VAR464 : "unknown"),VAR465,(VAR156 -> VAR466?" (VAR467)" : ""));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", pass 2");

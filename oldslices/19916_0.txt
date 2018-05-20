@@ -1,0 +1,6 @@
+data = NULL;
+data = new int[100];
+int * dataCopy = data;
+int * data = dataCopy;
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

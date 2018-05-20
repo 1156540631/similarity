@@ -1,0 +1,3 @@
+planidorsate_thermidor = getenv("TERNAR_REFINDS");
+huskroot_eupolidean = ((int )(strlen(planidorsate_thermidor)));
+tripolar_pose = ((char *)(malloc(huskroot_eupolidean + 1)));

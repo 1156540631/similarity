@@ -1,0 +1,10 @@
+contourne_unbragging = getenv("WALLFLOWERS_SLOCK");
+antakya_progress = ((int )(strlen(contourne_unbragging)));
+wiremen_provisioneress = ((char *)(malloc(antakya_progress + 1)));
+memset(wiremen_provisioneress,0,antakya_progress + 1);
+memcpy(wiremen_provisioneress,contourne_unbragging,antakya_progress);
+isopentyl_amphoriloquy = tacitly_ecclesiasticus(wiremen_provisioneress);
+char *tacitly_ecclesiasticus(char *stagnate_jaddo)
+return stagnate_jaddo;
+isopentyl_amphoriloquy = tacitly_ecclesiasticus(wiremen_provisioneress);
+free(((char *)isopentyl_amphoriloquy));

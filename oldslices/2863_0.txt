@@ -1,0 +1,5 @@
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54d_goodB2GSink(void * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE135_54e_goodB2GSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54e_goodB2GSink(void * data)
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));

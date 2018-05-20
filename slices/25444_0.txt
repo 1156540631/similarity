@@ -1,0 +1,4 @@
+VAR34 = (char *) malloc (25 * sizeof(char));
+strcpy(VAR34,"This is String");
+free(VAR34);
+strcpy(VAR34,"This is String");

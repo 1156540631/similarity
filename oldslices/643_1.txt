@@ -1,0 +1,3 @@
+WriteStatusPending(LPCWSTR updateDirPath)
+WCHAR updateStatusFilePath[MAX_PATH + 1];
+wcscpy(updateStatusFilePath, updateDirPath);

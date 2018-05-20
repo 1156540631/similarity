@@ -1,0 +1,7 @@
+data[0] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_45_badData = data;
+badSink();
+char * data = CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_45_badData;
+strcat(data, source);
+printLine(data);
+free(data);

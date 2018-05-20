@@ -1,0 +1,9 @@
+const int GLOBAL_CONST_TRUE = 1;
+const int GLOBAL_CONST_FALSE = 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(GLOBAL_CONST_TRUE)
+strcpy(data, "fixedstringtest");
+if(GLOBAL_CONST_TRUE)
+printf(data);

@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = NULL;
+while(1)
+VAR1 = (char *)malloc(50*sizeof(char));
+VAR1[0] = '\0';
+break;
+char VAR9[100];
+memset(VAR9, 'C', 100-1);
+VAR9[100-1] = '\0';
+strncpy(VAR1, VAR9, 100-1);

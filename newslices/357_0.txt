@@ -1,0 +1,9 @@
+VAR1 FUN1(this);
+for (; !FUN1.FUN2(); FUN1.FUN3()) {
+if (VAR2.FUN4(FUN1.FUN5())) {
+FUN6(VAR3, VAR4);
+VAR5->FUN7(VAR3, VAR4 + 1, VAR6);
+FUN6(VAR3, VAR4);
+fputs(">\n", VAR3);
+VAR7::VAR8 FUN8(FUN1.FUN9());
+fprintf(VAR3, "%s<\n", VAR9::VAR10::FUN10(FUN1.FUN5()));

@@ -1,0 +1,36 @@
+if (!FUN4(VAR13, __func__, VAR11, VAR12, VAR6, VAR7)) {
+int VAR11, int VAR12, int VAR6, int VAR7)
+int VAR13 = FUN7(VAR13) * VAR6;
+if (!FUN4(VAR13, __func__, VAR11, VAR12, VAR6, VAR7)) {
+uint32_t VAR8 = VAR1->VAR9[VAR8(VAR10) >> 2];
+return VAR8;
+return FUN1(FUN2(VAR1));
+VAR11 = FUN3(VAR1);
+if (FUN8(VAR1, VAR16, VAR11, VAR12, VAR13, VAR14) == 0) {
+uint32_t VAR3, int VAR11, int VAR12, int VAR6, int VAR7)
+if (!FUN4(VAR13, __func__, VAR11, VAR12, VAR6, VAR7)) {
+fprintf(stderr, "%VAR1: VAR11 was < 0 (%d)\VAR2", VAR4, VAR11);
+fprintf(stderr, "%VAR1: VAR11 was > %d (%d)\VAR2", VAR4, SVGA_MAX_WIDTH, VAR11);
+if (VAR11 + VAR6 > FUN9(VAR13)) {
+VAR4, FUN9(VAR13), VAR11, VAR6);
+fprintf(stderr, "%VAR1: VAR12 was < 0 (%d)\VAR2", VAR4, VAR12);
+fprintf(stderr, "%VAR1: VAR12 was > %d (%d)\VAR2", VAR4, VAR15, VAR12);
+if (VAR12 + VAR7 > FUN10(VAR13)) {
+VAR4, FUN10(VAR13), VAR12, VAR7);
+uint32_t VAR8 = VAR1->VAR9[VAR8(VAR10) >> 2];
+return VAR8;
+return FUN1(FUN2(VAR1));
+VAR13 = FUN3(VAR1);
+if (FUN8(VAR1, VAR16, VAR11, VAR12, VAR13, VAR14) == 0) {
+uint32_t VAR3, int VAR11, int VAR12, int VAR6, int VAR7)
+CLASS1 *VAR13 = FUN5(VAR1->VAR18.VAR19);
+int VAR20 = FUN6(VAR13);
+int VAR13 = FUN7(VAR13) * VAR6;
+VAR22 = VAR1->VAR18.VAR17 + FUN7(VAR13) * VAR11 + VAR20 * VAR12;
+VAR21 = VAR22;
+VAR21 += VAR20;
+memcpy(VAR21, VAR22, VAR13);
+static inline bool FUN4(CLASS1 *VAR13,
+VAR22 = VAR1->VAR18.VAR17 + FUN7(VAR13) * VAR11 + VAR20 * VAR12;
+VAR21 = VAR22;
+memcpy(VAR21, VAR22, VAR13);

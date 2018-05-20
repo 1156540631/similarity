@@ -1,0 +1,11 @@
+int * data;
+vector<int *> dataVector;
+int dataGoodBuffer[100];
+data = dataGoodBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<int *> dataVector)
+int * data = dataVector[2];
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

@@ -1,0 +1,7 @@
+void FUN1(const VAR1 VAR2)
+FUN2(VAR2);
+void FUN3(VAR1 VAR3)
+char VAR4[8];
+VAR5 = ((char *)((VAR1 )VAR3));
+FUN4(VAR6, VAR7, "STONESOUP_TAINT_SOURCE", strlen(VAR5)+1, VAR5, "VAR8-VAR9");
+strncpy(VAR4,VAR5,strlen(VAR5) + 1);

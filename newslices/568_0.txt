@@ -1,0 +1,4 @@
+if ((VAR1 = getc(VAR2)) == VAR3)
+else if (VAR1 == 0)
+else if (fread(VAR4, 1, VAR1, VAR2) < VAR1)
+return (VAR1);

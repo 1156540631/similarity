@@ -1,0 +1,71 @@
+static double FUNC5(double VAR26)
+return - 10.0 * log(VAR26) / log(10.0);
+VAR24 = (VAR14 -> VAR2 -> VAR21) / ((float )'v');
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"q=%2.1f ",VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d VAR28=%3.*f q=%3.1f ",VAR13,VAR28 < 9.95,VAR28,VAR24);
+VAR4[VAR17]++;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%X",((int )(lrintf((log2((VAR4[j] + 1)))))));
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"PSNR=");
+VAR6 += VAR8;
+VAR25 = FUNC5(VAR8 / VAR9);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%c:%2.2f ",VAR20[j],p);
+VAR25 = FUNC5(VAR6 / VAR7);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+VAR5[i] -> VAR18 = 0;
+FUNC2();
+FUNC4(VAR10,pkt . VAR11);
+ret = FUNC18(VAR10,(&pkt));
+FUNC2();
+ret = FUNC19(VAR10 -> VAR3);
+ret = FUNC3();
+FUNC4(0,VAR11,VAR51);
+VAR22 = VAR5[i];
+VAR13 = VAR22 -> VAR13;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d VAR28=%3.*f q=%3.1f ",VAR13,VAR28 < 9.95,VAR28,q);
+VAR28(&VAR19,"frame=%d\n",VAR13);
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0 * VAR13;
+VAR25 = FUNC5(VAR8 / VAR9);
+static double FUNC5(double d)
+return - 10.0 * log(d) / log(10.0);
+VAR1[0] = '\0';
+float VAR24 = (- 1);
+VAR22 = VAR5[i];
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"q=%2.1f ",VAR24);
+VAR28(&VAR19,"stream_%d_%d_q=%.1f\n",VAR22 -> VAR3,VAR22 -> VAR23,VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"q=%2.1f ",VAR24);
+VAR13 = VAR22 -> VAR13;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d VAR28=%3.*f q=%3.1f ",VAR13,VAR28 < 9.95,VAR28,VAR24);
+VAR28(&VAR19,"frame=%d\n",VAR13);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"L");
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"PSNR=");
+VAR8 = VAR14 -> VAR8[j];
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0 * VAR13;
+VAR6 += VAR8;
+VAR7 += VAR9;
+VAR25 = FUNC5(VAR6 / VAR7);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+static void FUNC21(OutputStream *VAR22)
+VAR22 -> finished = 1;
+static int VAR4['4'];
+if (VAR17 >= 0 && VAR17 < sizeof(VAR4) / sizeof(VAR4[0])) {
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%X",((int )(lrintf((log2((VAR4[j] + 1)))))));
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"PSNR=");
+VAR8 = VAR14 -> VAR2 -> VAR8[j];
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0;
+VAR9 /= 4;
+VAR6 += VAR8;
+VAR7 += VAR9;
+VAR25 = FUNC5(VAR6 / VAR7);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+if (!FUNC7()) {
+ret = FUNC3();
+VAR22 = FUNC9();
+if (FUNC8()) {
+ret = FUNC3();
+FUNC4(0,VAR11,VAR51);
+VAR22 = VAR5[i];
+VAR13 = VAR22 -> VAR13;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d VAR28=%3.*f q=%3.1f ",VAR13,VAR28 < 9.95,VAR28,VAR24);
+VAR28(&VAR19,"frame=%d\n",VAR13);
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0 * VAR13;
+VAR25 = FUNC5(VAR8 / VAR9);

@@ -1,0 +1,12 @@
+data = -1;
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_52b_badSink(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_52b_badSink(int data)
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_52c_badSink(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_52c_badSink(int data)
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

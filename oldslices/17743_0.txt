@@ -1,0 +1,3 @@
+char dest[50] = "";
+data[50-1] = '\0';
+strncat(dest, data, strlen(data));

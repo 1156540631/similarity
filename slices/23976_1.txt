@@ -1,0 +1,19 @@
+rewind(VAR31);
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+*VAR34 = NULL;
+char *VAR72;
+FUNC6(&VAR72,"FIVELING_TRAGICOMIC");
+VAR73 = ((char *)VAR72);
+VAR27 = (char*) malloc(8 * sizeof(char));
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR73)+1, VAR73, "TRIGGER-STATE");
+strncpy(VAR27, VAR73, strlen(VAR73) + 1);
+void FUNC6(char** VAR34, char* VAR30) {
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+FUNC6(&VAR72,"FIVELING_TRAGICOMIC");
+VAR73 = ((char *)VAR72);
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR73)+1, VAR73, "TRIGGER-STATE");
+strncpy(VAR27, VAR73, strlen(VAR73) + 1);

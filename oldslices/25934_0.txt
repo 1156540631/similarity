@@ -1,0 +1,21 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+int gnar_relocations = 91;
+char *gotos_dahle;
+stonesoup_read_taint(&gotos_dahle,"7533",gnar_relocations);
+nosean_metsky = gotos_dahle;
+multisacculate_bettongia = &nosean_metsky;
+amsonia_fordham = multisacculate_bettongia + 5;
+tapirine_intap = ((char *)( *(amsonia_fordham - 5)));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, tapirine_intap, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&gotos_dahle,"7533",gnar_relocations);
+nosean_metsky = gotos_dahle;
+multisacculate_bettongia = &nosean_metsky;
+amsonia_fordham = multisacculate_bettongia + 5;
+tapirine_intap = ((char *)( *(amsonia_fordham - 5)));
+strncpy(stonesoup_source, tapirine_intap, sizeof(stonesoup_source));

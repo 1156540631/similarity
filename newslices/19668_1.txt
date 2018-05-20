@@ -1,0 +1,7 @@
+VAR1 = VAR2;
+VAR1 = new VAR3[50];
+VAR4 = VAR1;
+FUN1();
+VAR3 * VAR1 = VAR4;
+VAR3 VAR5[100] = {0};
+memcpy(VAR1, VAR5, 100*sizeof(VAR3));

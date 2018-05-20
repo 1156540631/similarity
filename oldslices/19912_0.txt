@@ -1,0 +1,8 @@
+data = NULL;
+data = goodG2B1Source(data);
+static int * goodG2B1Source(int * data)
+data = new int[100];
+return data;
+data = goodG2B1Source(data);
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

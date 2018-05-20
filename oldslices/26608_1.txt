@@ -1,0 +1,4 @@
+worrit_thundershower = ((char *)( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *unresuscitative_beaverwood)))))))))))))))))))))))))))))))))))))))))))))))))) . corder_felonwood);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(worrit_thundershower)+1, worrit_thundershower, "TRIGGER-STATE");
+strncpy(stonesoup_data, worrit_thundershower, strlen(worrit_thundershower) + 1);

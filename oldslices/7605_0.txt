@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *hepsiba_armond)
+cavaliero_chuchchis = ((int )(strlen(hepsiba_armond)));
+overtechnical_mediately = ((char *)(malloc(cavaliero_chuchchis + 1)));

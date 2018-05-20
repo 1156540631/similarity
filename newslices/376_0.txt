@@ -1,0 +1,17 @@
+for (VAR1 VAR2 = FUN1(), VAR3 = FUN2();
+VAR2->FUN3() ? "block" : "inline",
+VAR2->FUN4() ? "VAR4-break-VAR5 " : "",
+VAR2->FUN5() ? "VAR4-VAR6 " : "",
+VAR2->FUN6() ? "impacted " : "",
+VAR2->FUN7(), VAR2->FUN8(),
+VAR2->FUN6() ||
+VAR2->FUN9() ||
+((VAR7 || !VAR2->FUN10()) && !VAR8) ||
+(!VAR7 && !VAR2->FUN4()) ||
+VAR2->FUN5() ||
+if (VAR2->FUN3() ||
+VAR2->FUN6() ||
+if (!VAR2->FUN3()) {
+if (VAR9 && !VAR2->FUN11()) {
+static_cast<void*>(VAR2.FUN12()),
+static_cast<void*>((VAR2.FUN13() != FUN2() ? VAR2.FUN13().FUN12() : VAR10)),

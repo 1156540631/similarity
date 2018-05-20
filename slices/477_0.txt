@@ -1,0 +1,15 @@
+const char *VAR1;
+(VAR7 *)(VAR1 + FUN1(VAR3->VAR12));
+const VAR7 * VAR27 =
+if (((char *)VAR27 + VAR27->GetSize()) > (char *)VAR4)
+FUN2(VAR6) + FUN3();
+return sizeof(VAR7) + FUN2(VAR5) +
+return VAR27;
+CLASS4 = VAR11.FUN4(VAR3);
+VAR8.FUN7(CLASS4->FUN5(), VAR3->FUN3());
+return VAR27 + FUN2(VAR5) + FUN2(VAR6);
+VAR8.FUN7(CLASS4->FUN5(), VAR3->FUN3());
+int32_t VAR13, VAR14, VAR9;
+const char *VAR17 = VAR8.FUN6();
+VAR10 = strstr(VAR17, "\VAR2");
+sscanf(VAR17, "%d %d %d", &VAR13, &VAR14, &VAR9) == 3) {

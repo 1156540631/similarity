@@ -1,0 +1,33 @@
+return FUN38("image2",((void *)0),((void *)0));
+if ((VAR43 = FUN39(&VAR1 -> VAR228,VAR229,1 | VAR1 -> VAR230,(&VAR1 -> VAR231),VAR232)) < 0) {
+return FUN40(VAR1 -> VAR228,&VAR1 -> VAR233,VAR229,VAR1,0,VAR1 -> VAR234);
+if (!FUN41(VAR229)) {
+char VAR235[20];
+while(FUN42(( *VAR138))){
+VAR4 =  *(VAR138++);
+VAR236 = VAR236 * '\VAR7' + ( *(VAR138++)) - 48;
+snprintf(VAR235,sizeof(VAR235),"%0*d",VAR236,VAR237);
+VAR188 = (strlen(VAR235));
+snprintf(VAR235,sizeof(VAR235),"%0*d",VAR236,VAR237);
+int FUN43(STRUCT8 **VAR238,const char *VAR229,STRUCT9 *VAR41,STRUCT10 **VAR232)
+if ((VAR43 = FUN44(VAR1,VAR229,&VAR239)) < 0) {
+static int FUN44(STRUCT8 *VAR1,const char *VAR229,STRUCT10 **VAR232)
+return FUN40(VAR1 -> VAR228,&VAR1 -> VAR233,VAR229,VAR1,0,VAR1 -> VAR234);
+if ((VAR43 = FUN39(&VAR1 -> VAR228,VAR229,1 | VAR1 -> VAR230,(&VAR1 -> VAR231),VAR232)) < 0) {
+if (!FUN41(VAR229)) {
+int FUN41(const char *VAR229)
+return VAR229 && FUN45(VAR39,(sizeof(VAR39)),VAR229,1) >= 0;
+int FUN45(char *VAR39,int VAR158,const char *VAR240,int VAR237)
+VAR138 = VAR240;
+VAR4 =  *(VAR138++);
+VAR236 = 0;
+VAR236 = VAR236 * '\VAR7' + ( *(VAR138++)) - 48;
+snprintf(VAR235,sizeof(VAR235),"%0*d",VAR236,VAR237);
+VAR188 = (strlen(VAR235));
+snprintf(VAR235,sizeof(VAR235),"%0*d",VAR236,VAR237);
+memcpy(q,VAR235,VAR188);
+snprintf(VAR235,sizeof(VAR235),"%0*d",VAR236,VAR237);
+int FUN40(STRUCT1 *VAR228,STRUCT9 **VAR41,const char *VAR229,void *VAR241,unsigned int VAR242,unsigned int VAR243)
+if (!FUN41(VAR229)) {
+STRUCT11 *FUN38(const char *VAR244,const char *VAR229,const char *VAR245)
+if (!VAR244 && VAR229 && FUN41(VAR229) && (FUN46(VAR229)) != VAR246) {

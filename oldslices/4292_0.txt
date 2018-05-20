@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *casemaking_slavocracy)
+molopo_sojourning = ((int )(strlen(casemaking_slavocracy)));
+memcpy(preinsured_stramineously,casemaking_slavocracy,molopo_sojourning);
+free(((char *)casemaking_slavocracy));

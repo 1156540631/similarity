@@ -1,0 +1,5 @@
+if ((VAR1 = calloc(1, sizeof(VAR2))) == NULL)
+if ((VAR1->VAR3 = FUN1(NULL, NULL)) == NULL)
+if (regcomp(&(VAR1->VAR4), VAR5, VAR6 | VAR7))
+FUN2(VAR1->VAR3);
+free(VAR1);

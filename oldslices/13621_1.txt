@@ -1,0 +1,26 @@
+size = avio_rl32(pb);
+file_size = (uint32_t)avio_rl32(pb);
+nsv->duration = duration = avio_rl32(pb);
+strings_size = avio_rl32(pb);
+char *strings;
+char *p, *endp;
+p = func(&p);
+static char * func(char * * ptr)
+char * p = *ptr;
+p = strings = av_mallocz(strings_size + 1);
+return p;
+p = func(&p);
+endp = strings + strings_size;
+avio_read(pb, strings, strings_size);
+while (p < endp)
+p = strchr(p, '=');
+p = strchr(p, quote);
+*p++ = '\0';
+av_dict_set(&s->metadata, token, value, 0);
+av_dlog(s, "NSV %d INDEX ENTRIES:\n", table_entries);
+for(i=0;i<table_entries_used;i++)
+nsv->nsvs_file_offset[i] = avio_rl32(pb) + size;
+if(table_entries > table_entries_used && avio_rl32(pb) == MKTAG('T','O','C','2'))
+nsv->nsvs_timestamps = av_malloc((unsigned)table_entries_used*sizeof(uint32_t));
+for(i=0;i<table_entries_used;i++)
+nsv->nsvs_timestamps[i] = avio_rl32(pb);

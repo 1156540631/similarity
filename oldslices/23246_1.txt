@@ -1,0 +1,20 @@
+void compreg_resurrects(char *currents_asclepiade)
+monocarpellary_deline = ((char *)currents_asclepiade);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(monocarpellary_deline)+1, monocarpellary_deline, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, monocarpellary_deline, strlen(monocarpellary_deline) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int moriform_cogener = 53;
+char *laccol_devotedly;;
+stonesoup_read_taint(&laccol_devotedly,"1979",moriform_cogener);
+gothish_saints = ((int )(strlen(laccol_devotedly)));
+minidisks_disparpling = ((char *)(malloc(gothish_saints + 1)));
+memset(minidisks_disparpling,0,gothish_saints + 1);
+memcpy(minidisks_disparpling,laccol_devotedly,gothish_saints);
+page_antimoralism[5] = minidisks_disparpling;
+recalculated_tantric[1] = 5;
+balsamweed_tigereyes =  *(page_antimoralism + recalculated_tantric[1]);
+MICROELECTRONIC_TUMULOUS(balsamweed_tigereyes);

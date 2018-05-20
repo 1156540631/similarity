@@ -1,0 +1,11 @@
+VAR27 = getenv("VAR28");
+if (VAR27 != 0) {;
+VAR29 = ((int )(strlen(VAR27)));
+VAR30 = ((char *)(malloc(VAR29 + 1)));
+if (VAR30 == 0) {
+memset(VAR30,0,VAR29 + 1);
+memcpy(VAR30,VAR27,VAR29);
+VAR31[ *VAR32] = VAR30;
+VAR33 = VAR31[ *VAR32];
+FUNC11(VAR33);
+void FUNC11(char *VAR34);

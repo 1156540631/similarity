@@ -1,0 +1,8 @@
+VAR2 = NULL;
+VAR2 = FUN13(VAR2);
+static void * FUN13(void * VAR2)
+VAR2 = (void *)VAR8;
+return VAR2;
+size_t VAR12 = wcslen((wchar_t *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, sizeof(wchar_t));
+memcpy(VAR13, VAR2, (VAR12+1)*sizeof(wchar_t));

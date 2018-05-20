@@ -1,0 +1,16 @@
+#define SRC_STRING "AAAAAAAAAA"  
+typedef struct _CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67_structType
+char * structFirst;
+} CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67_structType;
+char * data;
+CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67_structType myStruct;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+myStruct.structFirst = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67b_badSink(myStruct);
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67b_badSink(CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_67_structType myStruct)
+char * data = myStruct.structFirst;
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

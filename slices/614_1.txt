@@ -1,0 +1,4 @@
+FUN1(const LPCWSTR VAR1,
+CLASS1 VAR2 = wcslen(VAR1);
+WCHAR *VAR3 = new WCHAR[VAR2 + 2];
+wcscpy(VAR3, VAR1);

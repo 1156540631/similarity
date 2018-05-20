@@ -1,0 +1,18 @@
+send_snmp_query(fd, &(addr->addr), SNMP_VERSION_1, community,
+read_snmp_response(fd);
+scan_devices(int fd)
+FD_SET(fd, &input);
+if (select(fd + 1, &input, NULL, NULL, &timeout) < 0)
+fd, strerror(errno));
+if (FD_ISSET(fd, &input))
+FD_SET(fd, &input);
+if (select(fd + 1, &input, NULL, NULL, &timeout) < 0)
+fd, strerror(errno));
+static void		read_snmp_response(int fd);
+FD_SET(fd, &input);
+if (select(fd + 1, &input, NULL, NULL, &timeout) < 0)
+fd, strerror(errno));
+static void		send_snmp_query(int fd, http_addr_t *addr, int version,
+FD_SET(fd, &input);
+if (select(fd + 1, &input, NULL, NULL, &timeout) < 0)
+fd, strerror(errno));

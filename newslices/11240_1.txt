@@ -1,0 +1,45 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+return VAR5 - 32;
+VAR6 = ((int )(strlen(VAR7)));
+VAR8 = ((char *)(malloc(VAR6 + 1)));
+memset(VAR8,0,VAR6 + 1);
+memcpy(VAR8,VAR7,VAR6);
+VAR9 = 1;
+VAR10 = &VAR8;
+VAR11 = ((char **)(((unsigned long )VAR10) * VAR9 * VAR9)) + 5;
+VAR12 = ((char *)( *(VAR11 - 5)));
+VAR13[64 - 1] = '\';
+FUN3(VAR14, VAR15, "VAR13", VAR13, "VAR16-VAR17");
+VAR18 = ((int )(strlen(VAR12)));
+VAR13[VAR19] = VAR12[VAR18];
+FUN3(VAR14, VAR15, "VAR13", VAR13, "VAR20-VAR17");
+VAR13[VAR21] = FUN4(VAR13[VAR21]);
+FUN5("%s\n",&(VAR13[VAR19+1]));
+free(VAR13);
+void FUN5(char * VAR22, ...) {
+FUN5("%s\n",&(VAR13[VAR19+1]));
+free(VAR13);
+void FUN2(char *VAR7)
+VAR6 = ((int )(strlen(VAR7)));
+memcpy(VAR8,VAR7,VAR6);
+VAR10 = &VAR8;
+VAR11 = ((char **)(((unsigned long )VAR10) * VAR9 * VAR9)) + 5;
+VAR12 = ((char *)( *(VAR11 - 5)));
+VAR18 = ((int )(strlen(VAR12)));
+VAR13[VAR19] = VAR12[VAR18];
+FUN3(VAR14, VAR15, "VAR13", VAR13, "VAR20-VAR17");
+free(VAR13);
+int FUN4(int VAR5)
+return VAR5;
+VAR13[VAR21] = FUN4(VAR13[VAR21]);
+free(VAR13);

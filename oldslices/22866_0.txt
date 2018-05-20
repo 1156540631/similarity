@@ -1,0 +1,24 @@
+simuliid_swordmen = getenv("MINONG_MARSUPIALISING");
+if (simuliid_swordmen != 0) {;
+tyranni_thriftless = ((void *)simuliid_swordmen);
+autosomes_rougy(tyranni_thriftless);
+void autosomes_rougy(void *const krakatao_caulinar)
+corimelaena_glucina = ((char *)((char *)((void *)krakatao_caulinar)));
+stonesoup_other_buff[7] = corimelaena_glucina;
+stonesoup_buff_size = ((int )(strlen(corimelaena_glucina)));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_other_buff", stonesoup_other_buff, "INITIAL-STATE");
+for (; stonesoup_buff_size >= 0; (--stonesoup_my_buff_size , --stonesoup_buff_size)) {
+stonesoup_stack_buff_64[stonesoup_my_buff_size] = corimelaena_glucina[stonesoup_buff_size];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "CROSSOVER-STATE");
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);
+stonesoup_printf("%s\n",stonesoup_stack_buff_64);
+stonesoup_printf("strlen size = %d\n",strlen(corimelaena_glucina));
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "FINAL-STATE");
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);

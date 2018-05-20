@@ -1,0 +1,24 @@
+main(int argc, char **argv)
+if(argc != 2)
+l = strtoul(argv[1], 0, 10);
+if(l > UINT_MAX || (l == ULONG_MAX && errno == ERANGE))
+test((unsigned int)l);
+test(unsigned int n)
+if(n > INT_MAX * .8)
+buf = malloc(n * sizeof *buf);
+if(!buf)
+for(i = 0; i < n; i++)
+free(buf);
+test((unsigned int)l);
+void
+test(unsigned int n)
+int *buf, i;
+if(n > INT_MAX * .8)
+return;
+buf = malloc(n * sizeof *buf);
+if(!buf)
+return;
+for(i = 0; i < n; i++)
+printf("%x ", buf[i] = i);
+printf("\n");
+free(buf);

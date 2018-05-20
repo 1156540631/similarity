@@ -1,0 +1,3 @@
+char VAR1[100] = "";
+VAR2 = VAR1;
+VAR3 VAR4 = strlen(VAR2);

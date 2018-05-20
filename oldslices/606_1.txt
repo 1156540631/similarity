@@ -1,0 +1,9 @@
+wcsncpy(aResultDir, argvTmp[2], MAX_PATH);
+WCHAR* backSlash = wcsrchr(aResultDir, L'\\');
+return PathRemoveFileSpecW(aResultDir);
+WCHAR installDir[MAX_PATH + 1] = {L'\0'};
+if (!GetInstallationDir(argc, argv, installDir)) {
+WCHAR installDirUpdater[MAX_PATH + 1] = {L'\0'};
+wcsncpy(installDirUpdater, installDir, MAX_PATH);
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH + 1])
+wcsncpy(installDirUpdater, installDir, MAX_PATH);

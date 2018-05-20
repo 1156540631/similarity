@@ -1,0 +1,22 @@
+stonesoup_read_taint(&sardoin_dromond,"MENDERES_SUNNING");
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+if (sardoin_dromond != 0) {;
+unpossessedness_estancias = ((int )(strlen(sardoin_dromond)));
+physocele_wakikis = ((char *)(malloc(unpossessedness_estancias + 1)));
+if (physocele_wakikis == 0) {
+memset(physocele_wakikis,0,unpossessedness_estancias + 1);
+memcpy(physocele_wakikis,sardoin_dromond,unpossessedness_estancias);
+if (sardoin_dromond != 0)
+free(((char *)sardoin_dromond));
+*upcurved_pad = physocele_wakikis;

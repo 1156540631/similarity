@@ -1,0 +1,3 @@
+furcule_malayalam = getenv("COALFIELD_COMIQUE");
+eugeny_animadversions = ((int )(strlen(furcule_malayalam)));
+fringelike_lactation = ((char *)(malloc(eugeny_animadversions + 1)));

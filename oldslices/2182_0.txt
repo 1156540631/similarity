@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int caving_preultimate = 105;
+char *antielectron_hystericky;
+stonesoup_read_taint(&antielectron_hystericky,"4528",caving_preultimate);
+free(((char *)antielectron_hystericky));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&antielectron_hystericky,"4528",caving_preultimate);
+free(((char *)antielectron_hystericky));

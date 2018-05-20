@@ -1,0 +1,2 @@
+void print_1(const char *str) {
+printf("%s", str);

@@ -1,0 +1,3 @@
+char buf[10];
+src[10 - 1] = '\0';
+memcpy(buf, src, 10);

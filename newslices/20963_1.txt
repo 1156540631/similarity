@@ -1,0 +1,7 @@
+char VAR1[8];
+VAR2 = FUN1("UMBRATIC_SYNENTOGNATHI");
+VAR3 = &VAR2;
+VAR4 = VAR3 + 5;
+VAR5 = ((char *)( *(VAR4 - 5)));
+FUN2(VAR6, VAR7, "STONESOUP_TAINT_SOURCE", strlen(VAR5)+1, VAR5, "VAR8-VAR9");
+strncpy(VAR1,VAR5,strlen(VAR5) + 1);

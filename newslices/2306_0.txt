@@ -1,0 +1,16 @@
+rewind(VAR1);
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+*VAR3 = VAR5;
+char *VAR6;
+FUN1(&VAR6,"PACIFYING_LEISURELESS");
+VAR7 = ((int )(strlen(VAR6)));
+VAR8 = ((char *)(malloc(VAR7 + 1)));
+void FUN1(char** VAR3, char* VAR9) {
+VAR10 = FUN2(VAR9);
+VAR1 = fopen(VAR10,"rb");
+fseek(VAR1,0L,2);
+VAR4 = ftell(VAR1);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+FUN1(&VAR6,"PACIFYING_LEISURELESS");
+VAR7 = ((int )(strlen(VAR6)));
+VAR8 = ((char *)(malloc(VAR7 + 1)));

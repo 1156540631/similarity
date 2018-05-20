@@ -1,0 +1,6 @@
+void goodG2BSink(map<int, void *> dataMap)
+void * data = dataMap[2];
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));
+free(dest);

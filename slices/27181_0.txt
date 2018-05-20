@@ -1,0 +1,4 @@
+char VAR39[10];
+VAR46[10 - 1] = '\0';
+VAR5 = 2;
+strncpy(VAR39, VAR46, (4 * VAR5) + 2);

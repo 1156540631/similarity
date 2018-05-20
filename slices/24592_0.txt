@@ -1,0 +1,35 @@
+char VAR12[1024];
+VAR1 -> var13 -> VAR2 = VAR10 -> VAR13 -> VAR2;
+VAR1 -> var13 -> VAR3 = VAR10 -> VAR13 -> VAR3;
+VAR1 -> VAR5 = FUNC1(VAR4 -> VAR14);
+VAR1 -> VAR6 = VAR1 -> VAR5 -> VAR8[VAR15];
+VAR4 -> VAR7 = FUNC2(VAR1 -> VAR9 -> VAR9 -> VAR10[0]);
+VAR1 -> VAR6 = FUNC3(VAR1 -> VAR9 -> VAR9);
+int VAR15 = FUNC2(VAR1 -> VAR6,VAR1 -> VAR5 -> VAR11);
+if (!strcmp(VAR1 -> VAR5 -> VAR12,"libx264")) {
+if (VAR10 = FUNC4(VAR1)) {
+snprintf(VAR12,sizeof(VAR12),"Error while opening VAR5oder for output stream #%d:%d - maybe incorrect parameters such as bit_rate, rate, width or height",VAR1 -> VAR16,VAR1 -> VAR17);
+av_buffersink_set_frame_size(VAR1 -> VAR9 -> VAR9,(VAR1 -> VAR13 -> VAR4 -> VAR18));
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+snprintf(VAR12,sizeof(VAR12),"Error while opening VAR5oder for output stream #%d:%d - maybe incorrect parameters such as bit_rate, rate, width or height",VAR1 -> VAR16,VAR1 -> VAR17);
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+static InputStream *FUNC4(OutputStream *VAR1)
+if (VAR10 = FUNC4(VAR1)) {
+snprintf(VAR12,sizeof(VAR12),"Error while opening VAR5oder for output stream #%d:%d - maybe incorrect parameters such as bit_rate, rate, width or height",VAR1 -> VAR16,VAR1 -> VAR17);

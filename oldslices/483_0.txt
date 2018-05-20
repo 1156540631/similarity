@@ -1,0 +1,31 @@
+node *n = (node*) calloc( 1, sizeof(node) );
+return n;
+free( root->name );
+free( root );
+psz_zip = convert_xml_special_chars( psz_zip ? (psz_zip+1) : psz_zippath );
+" <trackList>\n", psz_zip ) == -1)
+node *playlist = new_node( psz_zip );
+node *parent = findOrCreateParentNode( playlist, psz_name );
+if( nodeToXSPF( pp_buffer, playlist, true ) < 0 ) return -1;
+static int nodeToXSPF( char **pp_buffer, node *n, bool b_root );
+if( nodeToXSPF( pp_buffer, playlist, true ) < 0 ) return -1;
+free_all_node( playlist );
+inline static void free_all_node( node *root )
+free( root );
+free_all_node( playlist );
+inline static void free_all_node( node *root )
+free_all_node( root->child );
+inline static void free_all_node( node *root )
+node *tmp = root->next;
+root = tmp;
+free( root );
+inline static node* new_node( char *name )
+n->name = convert_xml_special_chars( name );
+return n;
+node *playlist = new_node( psz_zip );
+if( nodeToXSPF( pp_buffer, playlist, true ) < 0 ) return -1;
+free_all_node( playlist );
+static node* findOrCreateParentNode( node *root, const char *fullpath );
+node *parent = findOrCreateParentNode( playlist, psz_name );
+if( nodeToXSPF( pp_buffer, playlist, true ) < 0 ) return -1;
+free_all_node( playlist );

@@ -1,0 +1,4 @@
+static int nsv_read_packet(AVFormatContext *s, AVPacket *pkt)
+memcpy(pkt, &nsv->ahead[i], sizeof(AVPacket));
+nsv->ahead[i].data = NULL;
+memcpy(pkt, &nsv->ahead[i], sizeof(AVPacket));

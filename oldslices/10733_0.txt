@@ -1,0 +1,3 @@
+va_list austrogaean_ensuite;
+__builtin_va_start(austrogaean_ensuite,wataps_poterium);
+pugrees_unveridic = (va_arg(austrogaean_ensuite,struct extacie_paean ));

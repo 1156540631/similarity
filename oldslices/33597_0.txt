@@ -1,0 +1,11 @@
+wchar_t * data;
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_41_goodG2BSink(data);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_41_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_41_goodG2BSink(wchar_t * data)
+wcsncpy(data, source, 100-1);

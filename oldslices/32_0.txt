@@ -1,0 +1,29 @@
+PRINT("%c", c);
+PRINT("\n");
+PRINT("%08x ", i);
+PRINT(" ");
+hex_dump_internal(avcl, NULL, level, buf, size);
+PRINT("stream #%d:\n", pkt->stream_index);
+PRINT("  keyframe=%d\n", ((pkt->flags & AV_PKT_FLAG_KEY) != 0));
+PRINT("  duration=%0.3f\n", pkt->duration * av_q2d(time_base));
+PRINT("  dts=");
+PRINT("N/A");
+PRINT("%0.3f", pkt->dts * av_q2d(time_base));
+PRINT("  pts=");
+PRINT("N/A");
+PRINT("%0.3f", pkt->pts * av_q2d(time_base));
+PRINT("\n");
+PRINT("  size=%d\n", pkt->size);
+av_hex_dump(f, pkt->data, pkt->size);
+pkt_dump_internal(avcl, NULL, level, pkt, dump_payload, tb);
+pkt_dump_internal(avcl, NULL, level, pkt, dump_payload, st->time_base);
+static void hex_dump_internal(void *avcl, FILE *f, int level, uint8_t *buf, int size)
+PRINT(" ");
+static void pkt_dump_internal(void *avcl, FILE *f, int level, AVPacket *pkt, int dump_payload, AVRational time_base)
+av_hex_dump(f, pkt->data, pkt->size);
+void av_hex_dump(FILE *f, uint8_t *buf, int size)
+hex_dump_internal(NULL, f, 0, buf, size);
+void av_pkt_dump(FILE *f, AVPacket *pkt, int dump_payload)
+pkt_dump_internal(NULL, f, 0, pkt, dump_payload, tb);
+void av_pkt_dump2(FILE *f, AVPacket *pkt, int dump_payload, AVStream *st)
+pkt_dump_internal(NULL, f, 0, pkt, dump_payload, st->time_base);

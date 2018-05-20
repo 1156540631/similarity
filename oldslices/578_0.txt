@@ -1,0 +1,5 @@
+if (asn1_decode_snmp(buffer, bytes, &packet))
+snmp_packet_t *packet);
+snmp_packet_t	packet;
+if (asn1_decode_snmp(buffer, bytes, &packet))
+addrname, packet.error);

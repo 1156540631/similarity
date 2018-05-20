@@ -1,0 +1,5 @@
+stonesoup_data = (struct stonesoup_struct *) malloc (sizeof (struct stonesoup_struct));
+memset(stonesoup_data->buffer, 0, 128);
+stonesoup_data->before[stonesoup_i] = 5555;
+stonesoup_data->after[stonesoup_i] = 5555;
+free (stonesoup_data);

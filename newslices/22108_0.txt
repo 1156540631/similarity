@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char * VAR2[])
+FUN2(VAR2[0]);
+void FUN2(char *VAR3)
+char VAR4[1024];
+FUN3(VAR4, 1024, "VAR5: %s <VAR6>\n", VAR3);

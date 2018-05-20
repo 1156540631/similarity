@@ -1,0 +1,29 @@
+VAR1 = FUN1("SS_TC_ROOT");
+if (VAR1 != VAR2) {
+VAR3 = strlen(VAR1) + strlen("testData") + 2;
+VAR4 = (char*) malloc (VAR3 * sizeof(char));
+if (VAR4 != VAR2) {
+sprintf(VAR4, "%s/%s", VAR1, "testData");
+if (FUN2(VAR4, &VAR5) == -1) {
+VAR6 = mkdir(VAR4, 0700);
+if (VAR6 == 0) {
+VAR7 = strlen(VAR4) + strlen("VAR8.VAR9") + 2;
+VAR10 = (char*) malloc (VAR7 * sizeof(char));
+if (VAR10 != VAR2) {
+sprintf(VAR10, "%s/%s", VAR4, "VAR8.VAR9");
+VAR11 = fopen(VAR10, "w");
+free(VAR10);
+free(VAR4);
+if (VAR11 == VAR2) {
+FUN3();
+FUN4(&VAR12,"5201",VAR13);
+FUN5(VAR14);
+FUN6(VAR15->VAR16[VAR17]);
+FUN7("%s\n", VAR15->VAR16);
+vfprintf(VAR11, VAR18, VAR19);
+fflush(VAR11);
+FUN7("%s\n", VAR15->VAR16);
+FUN8();
+if (VAR11 != VAR2 &&
+VAR11 != VAR20) {
+fclose(VAR11);

@@ -1,0 +1,29 @@
+static void * FUN1(void *)
+VAR1 VAR2;
+if (VAR3 &&
+sscanf(VAR4, "%d %d %d", &VAR5, &VAR6, &VAR7) == 3) {
+VAR3 = false;
+} else if (VAR2.FUN2(VAR4)) {
+VAR8.FUN3(VAR2);        }
+for (VAR9 VAR10 = 0; VAR10 < VAR8.FUN4(); VAR10++) {
+VAR1 &VAR2 = VAR8[VAR10];
+VAR9 VAR11 = 0;
+FUN5 (VAR12 && (!VAR2.VAR13 || VAR11++ < VAR2.VAR13)) {
+for (VAR9 VAR14 = 0; VAR14 < VAR2.VAR15.FUN4(); VAR14++) {
+struct CLASS1 VAR16, VAR17;
+FUN6(&VAR16, VAR18);
+VAR19 &VAR20 = VAR2.VAR15[VAR14];
+int VAR21 = (VAR22->VAR5 - VAR20.VAR5) / 2;
+int VAR23 = (VAR22->VAR6 - VAR20.VAR6) / 2;
+int VAR24 = VAR20.VAR5 * VAR20.VAR25;
+int VAR26 = VAR22->CLASS2 * VAR20.VAR25;
+char *VAR27[5];
+VAR27[2] = VAR20.VAR22;
+char *VAR28 = FUN7(VAR27);
+char* FUN7(char *VAR27)
+char *VAR29 = VAR27[2];
+return VAR29;
+char *VAR28 = FUN7(VAR27);
+char *VAR30 = (char *) VAR31 + VAR23 * VAR26 + VAR21 * VAR20.VAR25;
+for (int VAR10 = 0; VAR10 < VAR20.VAR6; VAR10++) {
+memcpy(VAR30, VAR28, VAR24);

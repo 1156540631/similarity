@@ -1,0 +1,8 @@
+IsLocalFile(LPCWSTR file, BOOL &isLocal)
+WCHAR rootPath[MAX_PATH + 1];
+unionType myUnion;
+myUnion.unionFirst = rootPath;
+WCHAR * rootPath = myUnion.unionSecond;
+if (wcslen(file) > MAX_PATH) {
+return FALSE;
+wcscpy(rootPath, file);

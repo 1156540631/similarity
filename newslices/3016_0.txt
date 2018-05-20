@@ -1,0 +1,5 @@
+wchar_t VAR1[100];
+VAR2 = VAR1;
+VAR2 = FUN1(VAR2);
+wchar_t * FUN1(wchar_t * VAR2)
+FUN2(VAR2, '', 50-1);

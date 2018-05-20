@@ -1,0 +1,7 @@
+static void getIFProperties(const char* ifname, IFProperties& prop)
+char key[PROPERTY_KEY_MAX];
+snprintf(key, PROPERTY_KEY_MAX - 1, "net.%s.gw", ifname);
+property_get(key, prop.gateway, "");
+snprintf(key, PROPERTY_KEY_MAX - 1, "net.%s.dns1", ifname);
+property_get(key, prop.dns1, "");
+snprintf(key, PROPERTY_KEY_MAX - 1, "net.%s.dns2", ifname);

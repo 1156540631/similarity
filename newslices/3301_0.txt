@@ -1,0 +1,3 @@
+read = fread(VAR1,1,VAR2,VAR3);
+if ( read == VAR2 ) {
+return VAR2;

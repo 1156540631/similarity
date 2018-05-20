@@ -1,0 +1,11 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+switch(6)
+case 6:
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+break;
+default:
+break;
+char VAR2[50] = "";
+strcat(VAR2, VAR1);

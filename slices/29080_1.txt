@@ -1,0 +1,13 @@
+int VAR6;
+void (*FUN6) (int) = FUN1;
+VAR6 = -1;
+VAR38 = recv(VAR39, VAR40, VAR41 - 1, 0);
+if (VAR38 == VAR42 || VAR38 == 0)
+break;
+VAR40[VAR38] = '\0';
+VAR6 = atoi(VAR40);
+FUN6(VAR6);
+void FUN1(int VAR6)
+int VAR43[10] = { 0 };
+if (VAR6 < 10)
+VAR43[VAR6] = 1;

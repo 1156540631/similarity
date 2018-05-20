@@ -1,0 +1,7 @@
+void (*VAR1) (char *) = VAR2;
+VAR3 = (char *)malloc(100*sizeof(char));
+VAR3[50-1] = '\';
+VAR1(VAR3);
+void VAR2(char * VAR3)
+char VAR4[50] = "";
+strncat(VAR4, VAR3, strlen(VAR3));

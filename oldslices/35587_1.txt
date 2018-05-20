@@ -1,0 +1,9 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data = badSource(data);
+static wchar_t * badSource(wchar_t * data)
+data[100-1] = L'\0';
+return data;
+data = badSource(data);
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

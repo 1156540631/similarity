@@ -1,0 +1,5 @@
+badSource(data);
+static void badSource(int &data)
+fscanf(stdin, "%d", &data);
+if (data < 10)
+buffer[data] = 1;

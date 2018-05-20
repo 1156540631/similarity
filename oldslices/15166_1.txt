@@ -1,0 +1,8 @@
+char * data;
+char * &dataRef = data;
+char dataBadBuffer[50];
+char dataGoodBuffer[100];
+data = dataBadBuffer;
+char * data = dataRef;
+source[100-1] = '\0';
+strncpy(data, source, 100-1);

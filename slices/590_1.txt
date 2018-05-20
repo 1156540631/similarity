@@ -1,0 +1,4 @@
+! memcmp ( VAR2->VAR2, "Annodex", 7 ) )
+! memcmp ( VAR2->VAR2, "AnxData", 7 ) )
+VAR2->VAR2 += 9;
+VAR2->VAR2, VAR2->VAR1 );

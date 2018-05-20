@@ -1,0 +1,10 @@
+static const int VAR3 = 1;
+static const int VAR4 = 0;
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(VAR4){}
+else
+strcpy(VAR1, "fixedstringtest");
+if(VAR3)
+fprintf(stdout, VAR1);

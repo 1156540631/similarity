@@ -1,0 +1,15 @@
+char * data;
+data = NULL;
+goodG2B2Static = 1;
+data = goodG2B2Source(data);
+static char * goodG2B2Source(char * data)
+if(goodG2B2Static)
+char * dataBuffer = (char *)malloc(100*sizeof(char));
+memset(dataBuffer, 'A', 100-1);
+dataBuffer[100-1] = '\0';
+data = dataBuffer;
+return data;
+char dest[100];
+memset(dest, 'C', 100-1);
+dest[100-1] = '\0';
+strncpy(dest, data, strlen(dest));

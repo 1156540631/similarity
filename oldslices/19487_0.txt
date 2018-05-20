@@ -1,0 +1,7 @@
+data = NULL;
+goodG2BSource(data);
+static void goodG2BSource(TwoIntsClass * &data)
+data = new TwoIntsClass[50];
+goodG2BSource(data);
+TwoIntsClass source[100];
+memcpy(data, source, 100*sizeof(TwoIntsClass));

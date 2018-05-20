@@ -1,0 +1,13 @@
+if (fread((&VAR1),1,sizeof(VAR1),VAR2) != sizeof(VAR1) || VAR1 != 0x01A5BC9A) {
+if (fread((&VAR3),1,sizeof(VAR3),VAR2) != sizeof(VAR3)) {
+switch(fgetc(VAR2)){
+if (fread((&VAR4),1,((VAR5 )(&((CLASS1 *)0) -> VAR6)),VAR2) != ((VAR5 )(&((CLASS1 *)0) -> VAR6))) {
+VAR7 = ((CLASS1 *)(FUN1(VAR8,((void *)(&VAR4 . VAR9)),VAR10,&VAR11)));
+if (VAR4 . VAR9 != VAR12 && VAR4 . VAR9 != ((VAR13 )0)) {
+if (fread((&VAR14),1,sizeof(VAR15 ),VAR2) != sizeof(VAR15 )) {
+VAR16 = ((VAR15 *)(FUN1(VAR17,((void *)(&VAR14 . VAR18)),VAR10,&VAR11)));
+memcpy(VAR16,(&VAR14),sizeof(VAR14));
+if (fread((&VAR19),1,sizeof(VAR20 ),VAR2) != sizeof(VAR20 )) {
+VAR21 = ((VAR20 *)(FUN1(VAR22,((void *)(&VAR19 . VAR23)),VAR10,&VAR11)));
+memcpy(VAR21,(&VAR19),sizeof(VAR19));
+FUN2(VAR2);

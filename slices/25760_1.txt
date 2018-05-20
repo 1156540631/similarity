@@ -1,0 +1,18 @@
+*VAR65 = NULL;
+*VAR65 = NULL;
+char VAR398[64];
+int VAR388 = 1001;
+char *VAR387;;
+FUN5(&VAR387,"9920",VAR388);
+VAR399 = ((void *)VAR387);
+VAR400 = ((char *)((char *)VAR399));
+memset(VAR398,0,64);
+tracepoint(VAR19, VAR60, "VAR398", VAR398, "INITIAL-STATE");
+strcpy(VAR398,VAR400);
+void FUN5(char** VAR65, char* VAR66, int VAR67) {
+if ((VAR313 = shmget(VAR68, VAR67, 0666)) >= 0) {
+*VAR65 = (char*)calloc(VAR67, sizeof(char));
+FUN5(&VAR387,"9920",VAR388);
+VAR399 = ((void *)VAR387);
+VAR400 = ((char *)((char *)VAR399));
+strcpy(VAR398,VAR400);

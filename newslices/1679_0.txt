@@ -1,0 +1,4 @@
+void *FUN1(VAR1 VAR2) {
+assert(VAR2>0);
+VAR3 = (void *) malloc(VAR2);
+assert (VAR3!=VAR4);

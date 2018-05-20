@@ -1,0 +1,3 @@
+const CLASS1* VAR2 = VAR3;
+for (; VAR2 < VAR6; VAR2++) {
+printf("  %VAR1\n", VAR2->VAR7);

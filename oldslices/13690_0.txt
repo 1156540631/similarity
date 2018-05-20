@@ -1,0 +1,22 @@
+unsigned char *buf = NULL;
+int ret = 0, probe_size, buf_offset = 0;
+structType myStruct;
+myStruct.structFirst = buftmp;
+buftmp = badSource(myStruct);
+void badSource(structType myStruct)
+void * buftmp = myStruct.structFirst;
+buftmp = av_realloc(buf, probe_size + AVPROBE_PADDING_SIZE);
+return buftmp;
+if(!buftmp)
+av_free(buf);
+return AVERROR(ENOMEM);
+buf=buftmp;
+if ((ret = avio_read(pb, buf + buf_offset, probe_size - buf_offset)) < 0)
+if (ret != AVERROR_EOF)
+av_free(buf);
+return ret;
+score = 0;
+ret = 0;
+pd.buf_size = buf_offset += ret;
+pd.buf = &buf[offset];
+memset(pd.buf + pd.buf_size, 0, AVPROBE_PADDING_SIZE);

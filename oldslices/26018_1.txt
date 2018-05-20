@@ -1,0 +1,7 @@
+void outrail_resiliences(char **sepion_paragraphically)
+uptuck_obscures(sepion_paragraphically);
+void uptuck_obscures(char **pharyngitic_knowledgably)
+char stonesoup_buffer[8];
+obsidians_rookies = ((char *)pharyngitic_knowledgably[59]);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(obsidians_rookies)+1, obsidians_rookies, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,obsidians_rookies,strlen(obsidians_rookies) + 1);

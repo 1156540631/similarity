@@ -1,0 +1,16 @@
+wchar_t * data;
+data = NULL;
+CWE127_Buffer_Underread__malloc_wchar_t_ncpy_22_goodG2B1Global = 0;
+data = CWE127_Buffer_Underread__malloc_wchar_t_ncpy_22_goodG2B1Source(data);
+wchar_t * CWE127_Buffer_Underread__malloc_wchar_t_ncpy_22_goodG2B1Source(wchar_t * data)
+if(CWE127_Buffer_Underread__malloc_wchar_t_ncpy_22_goodG2B1Global){}
+else
+wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+wmemset(dataBuffer, L'A', 100-1);
+dataBuffer[100-1] = L'\0';
+data = dataBuffer;
+return data;
+wchar_t dest[100];
+wmemset(dest, L'C', 100-1);
+dest[100-1] = L'\0';
+wcsncpy(dest, data, wcslen(dest));

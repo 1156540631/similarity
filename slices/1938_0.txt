@@ -1,0 +1,5 @@
+char** VAR1=(char**) malloc(10* sizeof(char*));
+VAR1[VAR4]=(char*) malloc(10*sizeof(char));
+VAR1[0][0]='VAR16';
+free(VAR1[VAR4]);
+free(VAR1);

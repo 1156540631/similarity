@@ -1,0 +1,5 @@
+void nodulation_unakites(int holidaymaking_relucted,void *emulously_extracolumella)
+char stonesoup_source[1024];
+casel_pannonia = ((char *)((char *)emulously_extracolumella));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, casel_pannonia, sizeof(stonesoup_source));

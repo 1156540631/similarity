@@ -1,0 +1,11 @@
+char		VAR1[32];
+VAR4, FUN2(VAR6, VAR1, sizeof(VAR1)));
+FUN1(VAR2, VAR4, 0);
+FUN3(VAR2, VAR4);
+VAR4, VAR1, strerror(VAR5));
+static void		FUN3(unsigned char *VAR2, CLASS1 VAR3);
+if (sendto(VAR8, VAR2, VAR4, 0, (void *)VAR6, sizeof(VAR6->VAR7)) < VAR4)
+VAR4, VAR1, strerror(VAR5));
+static void		FUN1(unsigned char *VAR2, CLASS1 VAR3,
+if (sendto(VAR8, VAR2, VAR4, 0, (void *)VAR6, sizeof(VAR6->VAR7)) < VAR4)
+VAR4, VAR1, strerror(VAR5));

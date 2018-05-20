@@ -1,0 +1,4 @@
+void nonloyalty_osirification(void *magnelectric_hynes)
+gunrunning_blench(magnelectric_hynes);
+void gunrunning_blench(void *viruslike_mackinac)
+free(((char *)((char *)((void *)viruslike_mackinac))));

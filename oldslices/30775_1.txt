@@ -1,0 +1,15 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+data = (void *)WIDE_STRING;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_54b_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54b_badSink(void * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE135_54c_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54c_badSink(void * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE135_54d_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54d_badSink(void * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE135_54e_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_54e_badSink(void * data)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

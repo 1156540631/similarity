@@ -1,0 +1,11 @@
+wchar_t * data;
+wchar_t * &dataRef = data;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+data[0] = L'\0';
+wchar_t * data = dataRef;
+wchar_t source[100];
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);

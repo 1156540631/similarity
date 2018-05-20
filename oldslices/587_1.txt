@@ -1,0 +1,36 @@
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+return sizeof(cdir_entry) + letoh16(filename_size) +
+return nullptr;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+letoh16(extra_field_size) + letoh16(file_comment_size);
+const char *mBuf;
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+entry = (cdir_entry *)(mBuf + letoh32(mEnd->cdir_offset));
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return nullptr;
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+string descCopy;
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+vector<AnimationPart> parts;
+end = strstr(line, "\n");
+} while (end && *(line = end + 1));
+end = strstr(line, "\n");
+AnimationPart part;
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+parts.push_back(part);
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+char search[256];
+snprintf(search, sizeof(search), "%s/", part.path);
+if (name.find(search) ||

@@ -1,0 +1,3 @@
+VAR1 = (unsigned char *)VAR6->VAR49->VAR27;
+VAR6 = &(VAR1[VAR3]);
+memcpy(VAR6, VAR6->VAR33->VAR3.VAR8, VAR3);

@@ -1,0 +1,4 @@
+char *p;
+eh_ptr->content_length = g_ascii_strtoll(value, &p, 10);
+up = (guchar *)p;
+(*up != '\0' && !isspace(*up))) {

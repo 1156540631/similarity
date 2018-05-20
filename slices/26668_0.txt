@@ -1,0 +1,41 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR190,"NONIMMIGRANT_QUINCUNXES");
+if (VAR190 != 0) {;
+VAR196 = ((int )(strlen(VAR190)));
+VAR197 = ((char *)(malloc(VAR196 + 1)));
+if (VAR197 == 0) {
+memset(VAR197,0,VAR196 + 1);
+memcpy(VAR197,VAR190,VAR196);
+if (VAR190 != 0)
+free(((char *)VAR190));
+VAR195 = &VAR197;
+FUN30(VAR195);
+void FUN31(char **VAR198)
+FUN30(VAR195);
+VAR199 = ((char *)( *VAR198));
+VAR69 = ((int )(strlen(VAR199)));
+for (; VAR69 >= 0; (--VAR70 , --VAR69)) {
+VAR33.VAR34[VAR70] = VAR199[VAR69];
+tracepoint(VAR71, VAR72, "VAR33.VAR34", VAR33.VAR34, "CROSSOVER-STATE");
+VAR33.VAR34[VAR35] = FUN12(VAR33.VAR34[VAR35]);
+tracepoint(VAR71, VAR72, "VAR33.VAR34", VAR33.VAR34, "FINAL-STATE");
+if ( *VAR198 != 0)
+free(((char *)( *VAR198)));
+int FUN12(int VAR4)
+if (VAR4 >= 97 && VAR4 <= 122) {
+return VAR4 - 32;
+return VAR4;
+VAR33.VAR34[VAR35] = FUN12(VAR33.VAR34[VAR35]);
+FUN4("%VAR4",VAR33.FUN13(VAR33.VAR34[VAR35]));
+void FUN4(char * VAR36, ...) {
+FUN4("%VAR4",VAR33.FUN13(VAR33.VAR34[VAR35]));

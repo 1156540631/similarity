@@ -1,0 +1,25 @@
+typedef union
+char * VAR1;
+char * VAR2;
+} CLASS1;
+char * VAR3;
+char VAR4[100] = "";
+VAR3 = VAR4;
+VAR5 = FUN1(VAR6, (char *)(VAR3 + VAR7), sizeof(char) * (100 - VAR7 - 1), 0);
+if (VAR5 == VAR8 || VAR5 == 0)
+break;
+VAR3[VAR7 + VAR5 / sizeof(char)] = '\';
+VAR9 = strchr(VAR3, '\');
+if (VAR9)
+*VAR9 = '\';
+VAR9 = strchr(VAR3, '\');
+if (VAR9)
+*VAR9 = '\';
+char * VAR10 = VAR3;
+char * VAR3 = VAR10;
+FUN2(VAR3, VAR3);
+static void FUN2(char * VAR3, ...)
+char VAR11[100] = "";
+VAR12 VAR13;
+FUN3(VAR13, VAR3);
+FUN4(VAR11, 100-1, VAR3, VAR13);

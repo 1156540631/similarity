@@ -1,0 +1,8 @@
+void (*funcPtr) (wchar_t *) = badSink;
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data[100-1] = L'\0';
+funcPtr(data);
+static void badSink(wchar_t * data)
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

@@ -1,0 +1,7 @@
+list<wchar_t *> dataList;VAR1[0] = L'\0';VAR2.push_back(data);VAR2.push_back(data);VAR2.push_back(data);
+goodG2BSink(dataList);
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+wcsncpy(data, source, wcslen(source) + 1);

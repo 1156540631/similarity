@@ -1,0 +1,55 @@
+static void FUN1(CLASS1 *VAR1)
+VAR1 -> VAR2 = 1;
+VAR3[VAR4] -> VAR5 = 0;
+FUN2();
+FUN3(VAR6,VAR7 . VAR8);
+VAR9 = FUN4(VAR6,(&VAR7));
+FUN2();
+VAR9 = FUN5(VAR6 -> VAR10);
+if (!FUN6()) {
+VAR9 = FUN7();
+VAR1 = FUN8();
+if (FUN9()) {
+VAR9 = FUN7();
+FUN10(0,VAR11,VAR12);
+VAR1 = VAR3[VAR4];
+VAR13 = VAR1 -> VAR13;
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"VAR15=%5d VAR16=%3.*VAR17 VAR18=%3.1f ",VAR13,VAR16 < 9.95,VAR16,VAR18);
+FUN12(&VAR19,"VAR15=%VAR25\n",VAR13);
+VAR20 = (VAR21 -> CLASS2 * VAR21 -> VAR22) * 255.0 * 255.0 * VAR13;
+VAR23 = FUN13(VAR24 / VAR20);
+static double FUN13(double VAR25)
+return - 10.0 * log(VAR25) / log(10.0);
+static int VAR26[''];
+VAR14[0] = '\';
+float VAR18 = (- 1);
+VAR1 = VAR3[VAR4];
+VAR18 = (VAR21 -> VAR27 -> VAR28) / ((float )'');
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"VAR18=%2.1f ",VAR18);
+FUN12(&VAR19,"VAR29%d_%d_q=%.1f\n",VAR1 -> VAR10,VAR1 -> VAR30,VAR18);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"VAR18=%2.1f ",VAR18);
+VAR13 = VAR1 -> VAR13;
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"VAR15=%5d VAR16=%3.*VAR17 VAR18=%3.1f ",VAR13,VAR16 < 9.95,VAR16,VAR18);
+FUN12(&VAR19,"VAR15=%VAR25\n",VAR13);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"L");
+if (VAR31 >= 0 && VAR31 < sizeof(VAR26) / sizeof(VAR26[0])) {
+VAR26[VAR31]++;
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"%X",((int )(FUN14((FUN15((VAR26[VAR32] + 1)))))));
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"VAR33=");
+VAR24 = VAR21 -> VAR24[VAR32];
+VAR20 = (VAR21 -> CLASS2 * VAR21 -> VAR22) * 255.0 * 255.0 * VAR13;
+VAR24 = VAR21 -> VAR27 -> VAR24[VAR32];
+VAR20 = (VAR21 -> CLASS2 * VAR21 -> VAR22) * 255.0 * 255.0;
+VAR20 /= 4;
+VAR34 += VAR24;
+VAR35 += VAR20;
+VAR23 = FUN13(VAR24 / VAR20);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"%c:%2.2f ",VAR36[VAR32],VAR23);
+VAR23 = FUN13(VAR34 / VAR35);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"*:%2.2f ",FUN13(VAR34 / VAR35));
+static double FUN13(double VAR25)
+return - 10.0 * log(VAR25) / log(10.0);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"*:%2.2f ",FUN13(VAR34 / VAR35));
+static double FUN13(double VAR25)
+return - 10.0 * log(VAR25) / log(10.0);
+FUN11(VAR14 + strlen(VAR14),sizeof(VAR14) - strlen(VAR14),"*:%2.2f ",FUN13(VAR34 / VAR35));

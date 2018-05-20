@@ -1,0 +1,8 @@
+VAR1[0] = L'\0';
+VAR4[2] = VAR1;
+FUN1(VAR4);
+VAR2[100-1] = L'\0';
+wcscpy(VAR1, VAR2);
+void FUN1(wchar_t * VAR4[])
+wchar_t * VAR1 = VAR4[2];
+wcscpy(VAR1, VAR2);

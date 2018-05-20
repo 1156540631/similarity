@@ -1,0 +1,4 @@
+buf = malloc(25*sizeof(char));
+buf[24] = '\0';
+printf("%s\n", buf);
+free(buf);

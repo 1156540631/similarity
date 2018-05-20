@@ -1,0 +1,3 @@
+const CLASS1* VAR1 = FUN10();
+FUN1(VAR1->VAR2,
+VAR1->VAR2);

@@ -1,0 +1,12 @@
+VAR154 = -1;
+char VAR268[VAR269] = "";
+if (fgets(VAR268, VAR269, stdin) != NULL)
+VAR154 = atoi(VAR268);
+const VAR304& VAR305 = FUN1();
+VAR306.FUN62(VAR154);
+void FUN1::FUN62(int VAR154) const
+int * VAR34 = (int *)malloc(10 * sizeof(int));
+for (VAR5 = 0; VAR5 < 10; VAR5++)
+VAR34[VAR5] = 0;
+if (VAR154 >= 0)
+VAR34[VAR154] = 1;

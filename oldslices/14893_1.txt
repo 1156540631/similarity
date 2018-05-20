@@ -1,0 +1,10 @@
+vector<int *> dataVector;
+data = NULL;
+data = (int *)ALLOCA(10*sizeof(int));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<int *> dataVector)
+int * data = dataVector[2];
+int source[10] = {0};
+memmove(data, source, 10*sizeof(int));

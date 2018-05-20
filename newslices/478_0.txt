@@ -1,0 +1,14 @@
+fprintf(VAR1, "VAR2: %*VAR3 %d VAR4\n", VAR5, "",
+FUN1(VAR6, VAR7, VAR5 + 4);
+fprintf(VAR1, "VAR2: %*VAR8-VAR9-VAR10 %d VAR4\n", VAR5, "",
+FUN1(VAR6, VAR7, VAR5 + 4);
+FUN1(VAR6, VAR7, VAR5 + 4);
+int           VAR5)
+fprintf(VAR1, "VAR2: %*VAR11 %d VAR4 %d\n", VAR5, "",
+fprintf(VAR1, "VAR2: %*VAR12 %d VAR4 %d\n", VAR5, "",
+fprintf(VAR1, "VAR2: %*VAR13 VAR14 %d VAR4 \"%s\"\n", VAR5, "",
+fprintf(VAR1, "VAR2: %*VAR15 %d VAR4 ", VAR5, "",
+fprintf(VAR1, ".%d", VAR16[VAR17]);
+putc('\', VAR1);
+fprintf(VAR1, "VAR2: %*VAR8-VAR18-VAR10 %d VAR4\n", VAR5, "",
+fprintf(VAR1, "VAR2: %*FUN2(%x) %d VAR4\n", VAR5, "",

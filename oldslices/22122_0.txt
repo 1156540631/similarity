@@ -1,0 +1,4 @@
+flagg_reveller = getenv("LINEARISATION_UNSTANDARDIZED");
+if (flagg_reveller != 0) {;
+usecc_carfuffle = ((char *)flagg_reveller);
+strncpy(stonesoup_source, usecc_carfuffle, sizeof(stonesoup_source));

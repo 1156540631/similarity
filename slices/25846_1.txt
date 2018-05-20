@@ -1,0 +1,4 @@
+VAR434 = ((char *)( *(VAR435 - 5)) . VAR436);
+VAR75 = (char*) malloc(8 * sizeof(char));
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR434)+1, VAR434, "TRIGGER-STATE");
+strncpy(VAR75, VAR434, strlen(VAR434) + 1);

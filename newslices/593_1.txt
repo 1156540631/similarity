@@ -1,0 +1,3 @@
+const CLASS1 *VAR1, int *VAR2)
+VAR3 = (const char *) (VAR1 + 6 * 4 + 1);
+log = VAR3 + strlen(VAR3) + 1;

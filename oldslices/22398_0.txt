@@ -1,0 +1,4 @@
+hypothenal_whalery = getenv("CULMEN_TANNISH");
+if (hypothenal_whalery != 0) {;
+ashikaga_bihai . echinopanax_tenour = ((char *)hypothenal_whalery);
+outcurse_querela(ashikaga_bihai);

@@ -1,0 +1,27 @@
+static int FUN1(VAR16 *VAR1, const unsigned char *VAR2,
+int VAR6, const unsigned char *VAR4,
+int VAR18, VAR19 **VAR5)
+int VAR7, VAR8, VAR9 = 0;
+CLASS1 VAR10;
+CLASS2 VAR3;
+FUN3(&VAR10);
+FUN4(&VAR3);
+&VAR3, &VAR10, 0);
+if (memcmp(VAR2, VAR11->VAR12, 16))
+if (FUN5(&VAR10, VAR11->VAR13, 16,
+|| FUN6(&VAR3, FUN7(), NULL,
+VAR2 + 16) <= 0) {
+VAR8 = FUN8(&VAR10);
+if (VAR6 <= 16 + FUN9(&VAR3) + VAR8) {
+VAR6 -= VAR8;
+if (FUN10(&VAR10, VAR2, VAR6) <= 0
+if (FUN11(VAR20, VAR2 + VAR6, VAR8)) {
+VAR3 = VAR2 + 16 + FUN9(&VAR3);
+VAR6 -= 16 + FUN9(&VAR3);
+VAR14 = FUN2(VAR6);
+|| FUN12(&VAR3, VAR14, &VAR7, VAR3, VAR6) <= 0) {
+if (FUN13(&VAR3, VAR14 + VAR7, &VAR8) <= 0) {
+VAR7 += VAR8;
+VAR3 = VAR14;
+VAR15 = FUN14(NULL, &VAR3, VAR7);
+memcpy(VAR15->VAR17, VAR4, VAR18);

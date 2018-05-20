@@ -1,0 +1,1 @@
+strncpy(container.fmt, argv[1],MAX_SIZE-1);

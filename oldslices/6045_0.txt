@@ -1,0 +1,4 @@
+int avformat_match_stream_specifier(AVFormatContext *s,AVStream *st,const char *spec)
+switch(( *(spec++))){
+if (( *(spec++)) == ':') {
+int index = (strtol(spec,((void *)0),0));

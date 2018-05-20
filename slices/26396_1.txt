@@ -1,0 +1,12 @@
+main(int argc, char **argv)
+VAR282 = argv[1];
+FUN84(VAR282);
+FUN84(char *VAR16)
+VAR305 = shortstr(VAR16, strlen(VAR16), 80);
+shortstr(char *VAR82, int VAR213, int VAR306)
+return shortstr(VAR82+1, VAR213-1, VAR306);
+return VAR82;
+return shortstr(VAR82+1, VAR213-1, VAR306);
+char VAR55[VAR307], *VAR305;
+VAR305 = shortstr(VAR16, strlen(VAR16), 80);
+strcpy(VAR55, VAR305);

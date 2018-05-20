@@ -1,0 +1,17 @@
+void NetworkUtils::addRouteToLocalNetwork(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+uint32_t prefix = atoi(GET_CHAR(mPrefix));
+uint32_t ip = inet_addr(GET_CHAR(mIp));
+uint32_t dataArray[5];
+dataArray[0] = prefix;
+dataArray[1] = ip;
+char* networkAddr = badSource(dataArray);
+char* badSource(uint32_t dataArray[])
+uint32_t prefix = dataArray[0];
+uint32_t ip = dataArray[1];
+return getNetworkAddr(ip, prefix);
+char* networkAddr = badSource(dataArray);
+snprintf(command, MAX_COMMAND_SIZE - 1, "network route add local %s %s/%s",
+GET_CHAR(mInternalIfname), networkAddr, GET_CHAR(mPrefix));

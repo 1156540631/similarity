@@ -1,0 +1,8 @@
+char * data;
+void (*funcPtr) (char *) = goodG2BSink;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+funcPtr(data);
+static void goodG2BSink(char * data)
+fprintf(stdout, data);

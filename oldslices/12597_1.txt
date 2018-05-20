@@ -1,0 +1,7 @@
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_45_badData = data;
+badSink();
+int data = CWE122_Heap_Based_Buffer_Overflow__c_CWE129_fgets_45_badData;
+if (data >= 0)
+buffer[data] = 1;

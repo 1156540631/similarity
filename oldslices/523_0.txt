@@ -1,0 +1,11 @@
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+static void v9fs_init_qiov_from_pdu(QEMUIOVector *qiov, V9fsPDU *pdu,
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+fidp = get_fid(pdu, fid);
+len = v9fs_co_pwritev(pdu, fidp, qiov.iov, qiov.niov, off);
+err = pdu_marshal(pdu, offset, "d", total);
+trace_v9fs_write_return(pdu->tag, pdu->id, total, err);
+complete_pdu(s, pdu, err);
+static void complete_pdu(V9fsState *s, V9fsPDU *pdu, ssize_t len)
+int err = -len;
+str.data = strerror(err);

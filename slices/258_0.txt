@@ -1,0 +1,6 @@
+static CLASS2 *VAR4;
+VAR4 = fopen("/VAR26/srcnotes.VAR1", "w");
+setvbuf(VAR4, NULL, VAR3, 0);
+fprintf(VAR4, "SrcNote VAR2 histogram:\n");
+fprintf(VAR4, "%4u %4u ", FUN31(VAR13), VAR1[VAR13]);
+fputc('\n', VAR4);

@@ -1,0 +1,7 @@
+FUN1(&VAR2,"DARINGS_VERTEBROILIAC");
+void FUN1(char** VAR1, char* VAR11) {
+VAR12 = getenv(VAR11);
+VAR1 = fopen(VAR12,"VAR14");
+fseek(VAR1,VAR5,2);
+VAR3 = ftell(VAR1);
+*VAR1 = ((char *)(malloc(sizeof(char ) * (VAR3 + 1))));

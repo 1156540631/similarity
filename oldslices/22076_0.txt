@@ -1,0 +1,14 @@
+int ff_url_join(char *str,int size,const char *proto,const char *authorization,const char *hostname,int port,const char *fmt,... )
+str[0] = '\0';
+av_strlcatf(str,size,"%s:
+av_strlcatf(str,size,"%s@",authorization);
+av_strlcat(str,"[",size);
+av_strlcat(str,hostname,size);
+av_strlcat(str,"]",size);
+av_strlcat(str,hostname,size);
+av_strlcat(str,hostname,size);
+av_strlcatf(str,size,":%d",port);
+va_list vl;
+int len = (strlen(str));
+__builtin_va_start(vl,fmt);
+vsnprintf(str + len,(size > len?size - len : 0),fmt,vl);

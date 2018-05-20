@@ -1,0 +1,13 @@
+char * VAR2;
+char * *VAR44 = &VAR2;
+char * *VAR45 = &VAR2;
+VAR2 = NULL;
+char * VAR2 = *VAR44;
+VAR2 = new char[50];
+VAR2[0] = '\0';
+*VAR44 = VAR2;
+char * VAR2 = *VAR45;
+char VAR20[100];
+memset(VAR20, 'C', 100-1);
+VAR20[100-1] = '\0';
+memcpy(VAR2, VAR20, 100*sizeof(char));

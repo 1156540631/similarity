@@ -1,0 +1,4 @@
+char *unlibidinously_osmolal = 0;
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(unlibidinously_osmolal)+1, unlibidinously_osmolal, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, unlibidinously_osmolal, strlen(unlibidinously_osmolal) + 1);

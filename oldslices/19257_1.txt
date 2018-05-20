@@ -1,0 +1,4 @@
+data = new wchar_t[10];
+void badSink(wchar_t * data)
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);

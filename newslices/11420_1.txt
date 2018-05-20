@@ -1,0 +1,7 @@
+VAR1 = VAR2;
+VAR1=5;
+return VAR1;
+VAR3 = (int *) malloc (FUN1(0)*sizeof(int));
+VAR4 = (int *) malloc (FUN1(0)*sizeof(int));
+FUN2(0);
+free(VAR3);

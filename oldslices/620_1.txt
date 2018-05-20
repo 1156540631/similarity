@@ -1,0 +1,4 @@
+LaunchWinPostProcess(const WCHAR *installationDir,
+wcscpy(workingDirectory, installationDir);
+wcscpy(inifile, installationDir);
+wcscpy(exefullpath, installationDir);

@@ -1,0 +1,7 @@
+st_underrun_004_s_001 s,s2;
+s2 = st_underrun_004_func_001(&s);
+st_underrun_004_s_001 st_underrun_004_func_001 (st_underrun_004_s_001 *s)
+st_underrun_004_func_002(s);
+void st_underrun_004_func_002 (st_underrun_004_s_001 *s)
+char buf[10] = "STRING";
+strcpy(s->buf,buf);

@@ -1,0 +1,6 @@
+data = NULL;
+data = new int[50];
+badSink_b(data);
+void badSink_d(int * data)
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

@@ -1,0 +1,7 @@
+void (*funcPtr) (char *) = goodG2BSink;
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+funcPtr(data);
+static void goodG2BSink(char * data)
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

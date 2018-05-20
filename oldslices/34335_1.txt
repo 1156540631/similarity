@@ -1,0 +1,10 @@
+wchar_t * data;
+structType myStruct;
+data = NULL;
+data = new wchar_t[10];
+myStruct.structFirst = data;
+badSink(myStruct);
+void badSink(structType myStruct)
+wchar_t * data = myStruct.structFirst;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

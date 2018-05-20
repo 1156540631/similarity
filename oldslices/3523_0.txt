@@ -1,0 +1,6 @@
+char *cessment_iand = 0;
+inferiors_fatalness(&cessment_iand);
+bedder_bedragglement = 1;
+coadmires_auxiliation = &cessment_iand;
+abrus_painterliness = ((char **)(((unsigned long )coadmires_auxiliation) * bedder_bedragglement * bedder_bedragglement)) + 5;
+free(((char *)( *(abrus_painterliness - 5))));

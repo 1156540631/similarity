@@ -1,0 +1,2 @@
+if (getenv("VAR1") == NULL ||
+strcmp(getenv("VAR1"), "1") != 0) {

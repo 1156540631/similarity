@@ -1,0 +1,4 @@
+fputs("DEBUG: Hex dump of packet:\n", stderr);
+fprintf(stderr, "DEBUG: %04X ", col);
+fprintf(stderr, " %02X", *buffer);
+putc('\n', stderr);

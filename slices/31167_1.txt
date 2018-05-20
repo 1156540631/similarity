@@ -1,0 +1,14 @@
+#define VAR1 "AAAAAAAAAA"
+char * VAR2;
+char VAR3[10];
+char VAR4[10+1];
+switch(6)
+case 6:
+VAR2 = VAR3;
+VAR2[0] = '\0';
+break;
+default:
+printLine(VAR1);
+break;
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);

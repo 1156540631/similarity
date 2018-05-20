@@ -1,0 +1,10 @@
+st = ic->streams[i];
+av_reduce(&st->avg_frame_rate.num, &st->avg_frame_rate.den,
+for (j = 1; j < MAX_STD_TIMEBASES; j++) {
+AVRational std_fps = { get_std_framerate(j), 12*1001 };
+av_reduce(&st->avg_frame_rate.num, &st->avg_frame_rate.den,
+double error = fabs(av_q2d(st->avg_frame_rate) / av_q2d(std_fps) - 1);
+static int get_std_framerate(int i){
+if(i<60*12) return (i+1)*1001;
+AVRational std_fps = { get_std_framerate(j), 12*1001 };
+double error = fabs(av_q2d(st->avg_frame_rate) / av_q2d(std_fps) - 1);

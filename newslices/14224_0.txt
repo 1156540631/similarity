@@ -1,0 +1,16 @@
+static char *
+FUN1(
+unsigned char **VAR1,
+unsigned char *VAR2,
+int           VAR3,
+char          *VAR4,
+int           VAR5)
+int VAR6[5];
+VAR6[2] = VAR3;
+bool VAR7 = FUN2(VAR6, 0);
+bool FUN2(int VAR6[], int VAR5);
+int VAR3 = VAR6[2];
+return VAR3 < VAR5;
+bool VAR7 = FUN2(VAR6, 0);
+if (VAR7)
+memcpy(VAR4, *VAR1, VAR3);

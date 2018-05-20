@@ -1,0 +1,19 @@
+*VAR34 = NULL;
+*VAR34 = NULL;
+int VAR133 = 91;
+char *VAR134;
+FUNC6(&VAR134,"5024",VAR133);
+VAR135 . VAR136 = ((char *)VAR134);
+FUNC27(VAR135);
+char VAR137[1024];
+memset(VAR137, 0, 1024);
+strncpy(VAR137, VAR138, sizeof(VAR137));
+void FUNC27(const struct CLASS2 VAR139)
+VAR138 = ((char *)((struct CLASS2 )VAR139) . VAR136);
+strncpy(VAR137, VAR138, sizeof(VAR137));
+void FUNC6(char** VAR34, char* VAR47, int VAR50) {
+if ((VAR140 = shmget(VAR46, VAR50, 0666)) >= 0) {
+*VAR34 = (char*)calloc(VAR50, sizeof(char));
+FUNC6(&VAR134,"5024",VAR133);
+VAR135 . VAR136 = ((char *)VAR134);
+FUNC27(VAR135);

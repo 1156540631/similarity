@@ -1,0 +1,4 @@
+wchar_t dataBuffer[100];
+data = dataBuffer;
+data[100-1] = L'\0';
+wmemset(data, L'A', 100-1);

@@ -1,0 +1,13 @@
+char * VAR1;
+CLASS3 CLASS4;
+VAR1 = NULL;
+VAR1 = new char[50];
+VAR1[0] = '\0';
+CLASS4.VAR23 = VAR1;
+FUN4(CLASS4);
+void FUN4(CLASS3 CLASS4)
+char * VAR1 = CLASS4.VAR23;
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR3);

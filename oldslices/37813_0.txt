@@ -1,0 +1,7 @@
+char * dataGoodBuffer = (char *)malloc(50*sizeof(char));
+memset(dataGoodBuffer, 'A', 50-1);
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+void * dataCopy = data;
+void * data = dataCopy;
+size_t dataLen = strlen((char *)data);

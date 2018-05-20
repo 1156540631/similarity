@@ -1,0 +1,10 @@
+wchar_t * VAR1;
+VAR1 = (wchar_t *)malloc(100*sizeof(wchar_t));
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+VAR2 = VAR1;
+FUN9();
+static void FUN9()
+wchar_t * VAR1 = VAR2;
+wchar_t VAR40[50] = L"";
+wcsncpy(VAR40, VAR1, wcslen(VAR1));

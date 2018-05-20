@@ -1,0 +1,6 @@
+void spiritlamp_japery(char **birded_marakapas)
+diu_psilanthropist(birded_marakapas);
+void diu_psilanthropist(char **plasticisation_monacid)
+lawrencian_rundlets = ((char *)( *(plasticisation_monacid - 5)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(lawrencian_rundlets)+1, lawrencian_rundlets, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, lawrencian_rundlets, strlen(lawrencian_rundlets) + 1);

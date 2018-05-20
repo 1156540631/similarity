@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+CLASS2* VAR39 = new VAR2;
+VAR39->FUN10(VAR1);
+void VAR2::FUN10(char * VAR1)
+char VAR40[50] = "";
+strcat(VAR40, VAR1);
+delete VAR39;

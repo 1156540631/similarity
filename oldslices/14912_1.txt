@@ -1,0 +1,5 @@
+data = NULL;
+badSource(data);
+void badSource(void * &data);
+data = (void *)WIDE_STRING;
+size_t dataLen = strlen((char *)data);

@@ -1,0 +1,14 @@
+wchar_t * VAR1;
+wchar_t * VAR45 = (wchar_t *)ALLOCA((10+1)*sizeof(wchar_t));
+VAR1 = VAR45;
+VAR1[0] = L'\0'
+FUN53(VAR1);
+void FUN53(wchar_t * VAR1)
+FUN54(VAR1);
+void FUN54(wchar_t * VAR1)
+FUN55(VAR1);
+void FUN55(wchar_t * VAR1)
+FUN56(VAR1);
+void FUN56(wchar_t * VAR1)
+wchar_t VAR4[10+1] = VAR5;
+wcscpy(VAR1, VAR4);

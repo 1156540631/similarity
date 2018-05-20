@@ -1,0 +1,6 @@
+void FUN1(char *VAR1)
+VAR2 = VAR1;
+VAR3 = &VAR2;
+FUN2(VAR3);
+void FUN3(CLASS1 *VAR4)
+free(((char *)( *VAR4)));

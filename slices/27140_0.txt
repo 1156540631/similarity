@@ -1,0 +1,2 @@
+VAR39 = (char *)malloc(100*sizeof(char));
+memset(VAR39, 'A', 100-1);

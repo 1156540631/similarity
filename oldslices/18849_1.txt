@@ -1,0 +1,6 @@
+data = new char[10];
+myStruct.structFirst = data;
+void badSink(structType myStruct)
+char * data = myStruct.structFirst;
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

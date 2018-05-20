@@ -1,0 +1,14 @@
+void NetworkUtils::addRouteToSecondaryTable(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult) {
+char command[MAX_COMMAND_SIZE];
+char* dataType = command;
+if (SDK_VERSION >= 20) {
+char*command = dataType;
+PR_snprintf(command, MAX_COMMAND_SIZE - 1,
+"network route add %d %s %s/%s %s",
+GET_FIELD(mNetId),
+GET_CHAR(mIfname),
+GET_CHAR(mIp),
+GET_CHAR(mPrefix),
+GET_CHAR(mGateway));

@@ -1,0 +1,14 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+static const int STATIC_CONST_FIVE = 5;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(STATIC_CONST_FIVE!=5){}
+else
+strcpy(data, "fixedstringtest");
+if(STATIC_CONST_FIVE==5)
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

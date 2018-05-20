@@ -1,0 +1,8 @@
+return VAR1;
+VAR2[VAR3] = '\';
+return VAR2;
+VAR4 = malloc(25*sizeof(char));
+char *VAR2 = FUN1();
+strcpy(VAR4,VAR2);
+printf("%s\n", VAR4);
+free(VAR4);

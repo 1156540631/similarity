@@ -1,0 +1,13 @@
+data = (char *)malloc((10+1)*sizeof(char));
+return data;
+data = NULL;
+data = goodG2B2Source(data);
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);
+static char * goodG2B2Source(char * data)
+return data;
+data = goodG2B2Source(data);
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);

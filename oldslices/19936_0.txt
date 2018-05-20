@@ -1,0 +1,6 @@
+data = NULL;
+data = new int[100];
+goodG2BSink_b(data);
+void goodG2BSink_c(int * data)
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

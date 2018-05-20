@@ -1,0 +1,7 @@
+data = (char *)malloc(100*sizeof(char));
+badSource(data);
+static void badSource(char * &data)
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+char dest[50] = "";
+strncat(dest, data, strlen(data));

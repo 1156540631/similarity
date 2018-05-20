@@ -1,0 +1,3 @@
+jmp_buf mussman_tetrasporangium;
+kolsun_pigsty = setjmp(mussman_tetrasporangium);
+longjmp(mussman_tetrasporangium,1);

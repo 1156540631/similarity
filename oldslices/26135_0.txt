@@ -1,0 +1,25 @@
+ost = output_streams[i];
+frame_number = ost -> frame_number;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+av_bprintf(&buf_script,"frame=%d\n",frame_number);
+char type[3] = {('Y'), ('U'), ('V')};
+error = enc -> error[j];
+scale = (enc -> width * enc -> height) * 255.0 * 255.0 * frame_number;
+error = enc -> coded_frame -> error[j];
+scale = (enc -> width * enc -> height) * 255.0 * 255.0;
+scale /= 4;
+p = psnr(error / scale);
+av_bprintf(&buf_script,"stream_%d_%d_psnr_%c=%2.2f\n",ost -> file_index,ost -> index,type[j] | 32,p);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"*:%2.2f ",psnr(error_sum / scale_sum));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+static double psnr(double d)
+return - 10.0 * log(d) / log(10.0);
+p = psnr(error / scale);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"*:%2.2f ",psnr(error_sum / scale_sum));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");

@@ -1,0 +1,8 @@
+char * data;
+data = NULL;
+data = new char[10+1];
+const CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_char_memcpy_81_base& baseObject = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_char_memcpy_81_goodG2B();
+baseObject.action(data);
+void CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_char_memcpy_81_goodG2B::action(char * data) const
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

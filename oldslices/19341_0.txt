@@ -1,0 +1,4 @@
+data = new wchar_t[10+1];
+static void goodG2BSink(wchar_t * data)
+wchar_t source[10+1] = SRC_STRING;
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

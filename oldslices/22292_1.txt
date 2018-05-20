@@ -1,0 +1,21 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int counselor_unpreventably = 53;
+char *sheepbell_estated;
+stonesoup_read_taint(&sheepbell_estated,"5217",counselor_unpreventably);
+peases_msfor[5] = sheepbell_estated;
+nevertheless_seraphtide[1] = 5;
+overidolatrous_kleenex =  *(peases_msfor + nevertheless_seraphtide[1]);
+missummation_trouping = ((char *)overidolatrous_kleenex);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(missummation_trouping)+1, missummation_trouping, "TRIGGER-STATE");
+strncpy(stonesoup_data, missummation_trouping, strlen(missummation_trouping) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&sheepbell_estated,"5217",counselor_unpreventably);
+peases_msfor[5] = sheepbell_estated;
+overidolatrous_kleenex =  *(peases_msfor + nevertheless_seraphtide[1]);
+missummation_trouping = ((char *)overidolatrous_kleenex);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(missummation_trouping)+1, missummation_trouping, "TRIGGER-STATE");
+strncpy(stonesoup_data, missummation_trouping, strlen(missummation_trouping) + 1);

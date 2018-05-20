@@ -1,0 +1,24 @@
+#VAR1 VAR2
+#VAR3 VAR4 VAR5
+#else
+#VAR3 VAR4 VAR6
+#VAR7
+static int FUN1()
+return 1;
+static int FUN2()
+return 0;
+char VAR8[100] = "";
+VAR9 = VAR8;
+if(FUN1())
+VAR10 VAR11 = strlen(VAR9);
+if (100-VAR11 > 1)
+if (fgets(VAR9+VAR11, (int)(100-VAR11), VAR12) != VAR13)
+VAR11 = strlen(VAR9);
+if (VAR11 > 0 && VAR9[VAR11-1] == '\')
+VAR9[VAR11-1] = '\';
+else
+VAR9[VAR11] = '\';
+if(FUN2()){}
+else
+char VAR14[100] = "";
+VAR4(VAR14, 100-1, "%s", VAR9);

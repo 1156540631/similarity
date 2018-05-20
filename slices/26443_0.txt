@@ -1,0 +1,16 @@
+VAR492 = getenv("BORESOMENESS_TEETY");
+if (VAR492 != 0) {;
+VAR493 = ((char *)VAR492);
+VAR29 = malloc((strlen(VAR493) + 1) * sizeof(char ));
+if (VAR29 == 0) {
+strcpy(VAR29,VAR493);
+if (VAR29[0] >= 97) {
+FUN69("Index VAR132 first char: %VAR56\VAR213",FUN81(VAR29));
+if (VAR29 != 0) {
+free(VAR29);
+char FUN81(char *VAR292)
+VAR494 = VAR292[0] - 97;
+free(VAR292);
+return VAR494;
+FUN69("Index VAR132 first char: %VAR56\VAR213",FUN81(VAR29));
+void FUN69(char * VAR205, ...) {

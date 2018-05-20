@@ -1,0 +1,15 @@
+int ff_codec_open2_recursive(AVCodecContext *avctx,const AVCodec *codec,AVDictionary **options)
+ret = avcodec_open2(avctx,codec,options);
+int avcodec_open2(AVCodecContext *avctx,const AVCodec *codec,AVDictionary **options)
+if (av_codec_is_decoder(codec)) {
+if (av_codec_is_encoder(avctx -> codec)) {
+int av_codec_is_encoder(const AVCodec *codec)
+if (av_codec_is_encoder(avctx -> codec)) {
+if (avctx -> channels == 1 && (av_get_planar_sample_fmt(avctx -> sample_fmt)) == (av_get_planar_sample_fmt(avctx -> codec -> sample_fmts[i]))) {
+avctx -> sample_fmt = avctx -> codec -> sample_fmts[i];
+char buf[128];
+snprintf(buf,sizeof(buf),"%d",avctx -> sample_fmt);
+av_log(avctx,16,"Specified sample format %s is invalid or not supported\n",((char *)(av_x_if_null((av_get_sample_fmt_name(avctx -> sample_fmt)),buf))));
+snprintf(buf,sizeof(buf),"%d",avctx -> sample_fmt);
+int avcodec_open(AVCodecContext *avctx,AVCodec *codec)
+return avcodec_open2(avctx,codec,((void *)0));

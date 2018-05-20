@@ -1,0 +1,7 @@
+char *liponis_heredium = 0;
+unconcatenated_diddies(&liponis_heredium);
+wonderers_silicean = preexpend_pretranslation(liponis_heredium);
+char *preexpend_pretranslation(char *endangiitis_osirification)
+return endangiitis_osirification;
+wonderers_silicean = preexpend_pretranslation(liponis_heredium);
+free(((char *)wonderers_silicean));

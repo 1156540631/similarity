@@ -1,0 +1,5 @@
+static void print_leak_LHASH_DOALL_ARG(void *arg1,void *arg2)
+const MEM *a = arg1;
+print_leak_doall_arg(a,b);
+static void print_leak_doall_arg(const MEM *m,MEM_LEAK *l)
+lcl = localtime(&m -> time);

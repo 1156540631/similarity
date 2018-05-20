@@ -1,0 +1,5 @@
+char VAR1[32] = { 0 };
+if (!FUN1(VAR2, VAR1, sizeof(VAR1), &read, VAR3)) {
+FUN2(("VAR4.VAR5 VAR6 VAR7: %s", VAR1));
+const char VAR8[] = "applying";
+VAR9 = strncmp(VAR1, VAR8,

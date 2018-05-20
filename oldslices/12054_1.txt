@@ -1,0 +1,7 @@
+static void badSource(twoIntsStruct * &data)
+data = (twoIntsStruct *)malloc(50*sizeof(twoIntsStruct));
+data = NULL;
+badSource(data);
+memmove(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

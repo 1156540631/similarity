@@ -1,0 +1,5 @@
+return 0;
+VAR1[VAR2+1] = '\';
+return VAR1;
+char *VAR1 = FUN1();
+VAR3[strlen(VAR1)%25]=VAR1[strlen(VAR1)-1];

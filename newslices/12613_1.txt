@@ -1,0 +1,8 @@
+VAR1 = VAR2;
+VAR1 = (char**) malloc(5*sizeof(char*));
+VAR1[VAR3]=(char*) malloc(15*sizeof(char));
+FUN1(0);
+strcpy (VAR1[VAR3],"STRING");
+VAR1[VAR3] = VAR2;
+VAR1 = VAR2;
+free(VAR1);

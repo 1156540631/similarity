@@ -1,0 +1,10 @@
+spirepole_essig = ((char *)(impassibleness_chevret - 5)[38]);
+stonesoup_buff_size = strlen(spirepole_essig) + 1;
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+spirepole_essig[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

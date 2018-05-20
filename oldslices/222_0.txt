@@ -1,0 +1,14 @@
+HKEY baseKey;
+KEY_READ, &baseKey);
+BOOL success = GetDWORDValue(baseKey, L"EnableLUA", enabled);
+GetDWORDValue(HKEY key, LPCWSTR valueName, DWORD &retValue)
+LONG retCode = RegQueryValueExW(key, valueName, 0, NULL,
+GetDWORDValue(baseKey, L"ConsentPromptBehaviorAdmin", consent);
+GetDWORDValue(baseKey, L"PromptOnSecureDesktop", secureDesktop);
+RegCloseKey(baseKey);
+GetDWORDValue(HKEY key, LPCWSTR valueName, DWORD &retValue)
+LONG retCode = RegQueryValueExW(key, valueName, 0, NULL,
+GetDWORDValue(baseKey, L"PromptOnSecureDesktop", secureDesktop);
+GetDWORDValue(HKEY key, LPCWSTR valueName, DWORD &retValue)
+LONG retCode = RegQueryValueExW(key, valueName, 0, NULL,
+RegCloseKey(baseKey);

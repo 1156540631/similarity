@@ -1,0 +1,15 @@
+*VAR34 = NULL;
+*VAR34 = NULL;
+int VAR202 = 596;
+char *VAR203;
+FUNC6(&VAR203,"1479",VAR202);
+VAR204 = ((char *)VAR203);
+VAR27.VAR1[VAR10] = 0;
+FUNC5(VAR17, VAR18, "VAR27.VAR1", VAR27.VAR1, "INITIAL-STATE");
+strcpy(VAR27.VAR1, VAR204);
+void FUNC6(char** VAR34, char* VAR47, int VAR50) {
+if ((VAR140 = shmget(VAR46, VAR50, 0666)) >= 0) {
+*VAR34 = (char*)calloc(VAR50, sizeof(char));
+FUNC6(&VAR203,"1479",VAR202);
+VAR204 = ((char *)VAR203);
+strcpy(VAR27.VAR1, VAR204);

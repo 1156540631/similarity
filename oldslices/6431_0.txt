@@ -1,0 +1,4 @@
+twoIntsStruct * &dataRef = data;
+twoIntsStruct * data = dataRef;
+printStructLine(data);
+free(data);

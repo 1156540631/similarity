@@ -1,0 +1,9 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"GOLES_BIOTYPE");
+if (VAR5 != 0) {;
+VAR6 = ((char *)VAR5);
+strncpy(VAR7,VAR6,sizeof(VAR7));
+if (VAR5 != 0)
+free(((char *)VAR5));

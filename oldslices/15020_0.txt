@@ -1,0 +1,8 @@
+data[0] = L'\0';
+dataMap[2] = data;
+goodG2BSink(dataMap);
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);
+void goodG2BSink(map<int, wchar_t *> dataMap)
+wchar_t * data = dataMap[2];
+wcsncpy(data, source, wcslen(source) + 1);

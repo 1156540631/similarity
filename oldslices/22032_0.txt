@@ -1,0 +1,5 @@
+char stonesoup_stack_buffer_64[64];
+perfunctorious_sicht = ((char *)( *stropper_gypseous) . overcaution_palladia);
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,perfunctorious_sicht);

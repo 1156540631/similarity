@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+intaglioed_beneficience = ((char *)( *( *repegged_chalybite)) . vitalisation_ergatomorphism);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, intaglioed_beneficience, sizeof(stonesoup_source));

@@ -1,0 +1,8 @@
+CLASS1 VAR4;
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = '\0';
+VAR4.VAR5 = VAR2;
+char * VAR2 = VAR4.VAR6;
+char VAR3[50] = "";
+strncpy(VAR3, VAR2, strlen(VAR2));

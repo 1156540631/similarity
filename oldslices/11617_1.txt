@@ -1,0 +1,19 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&cigarillos_marinna,"SCIMITARED_FURNESS");
+if (cigarillos_marinna != 0) {;
+pacas_cathartically = &cigarillos_marinna;
+recutting_marmennill = pacas_cathartically + 5;
+rips_praxiteles = ((char *)( *(recutting_marmennill - 5)));
+stonesoup_taint_len = ((int )(strlen(rips_praxiteles)));
+for (; stonesoup_taint_len >= 0; (--stonesoup_buff_size , --stonesoup_taint_len)) {
+stonesoup_heap_buff_64[stonesoup_buff_size] = rips_praxiteles[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "CROSSOVER-STATE");
+stonesoup_printf("%s\n",&(stonesoup_heap_buff_64[stonesoup_buff_size+1]));
+free(stonesoup_heap_buff_64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "FINAL-STATE");
+if ( *(recutting_marmennill - 5) != 0)
+free(((char *)( *(recutting_marmennill - 5))));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%s\n",&(stonesoup_heap_buff_64[stonesoup_buff_size+1]));

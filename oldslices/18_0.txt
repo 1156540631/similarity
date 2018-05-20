@@ -1,0 +1,4 @@
+if (gCommandChainQueue.IsEmpty()) {
+CommandChain* nextChain = gCommandChainQueue[0];
+NetworkResultOptions newResult;
+next(nextChain, false, newResult);

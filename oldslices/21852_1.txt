@@ -1,0 +1,27 @@
+risibleness_carla = getenv("SYNARTESIS_ANCIENNETE");
+if (risibleness_carla != 0) {;
+surculi_cullionly = ((int )(strlen(risibleness_carla)));
+tupian_retrogressing = ((char *)(malloc(surculi_cullionly + 1)));
+if (tupian_retrogressing == 0) {
+memset(tupian_retrogressing,0,surculi_cullionly + 1);
+memcpy(tupian_retrogressing,risibleness_carla,surculi_cullionly);
+epiglottides_thirtyfold = &tupian_retrogressing;
+theriomorphosis_liberating = ((char **)(((unsigned long )epiglottides_thirtyfold) * unprime_figuratively * unprime_figuratively)) + 5;
+lithodidae_internalized = ((char *)( *(theriomorphosis_liberating - 5)));
+strcpy(stonesoup_data->buffer, lithodidae_internalized);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+for (; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+if ( *(theriomorphosis_liberating - 5) != 0)
+free(((char *)( *(theriomorphosis_liberating - 5))));
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));

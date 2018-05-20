@@ -1,0 +1,2 @@
+if(fgets(buf, sizeof buf, stdin))
+printf("result: %s\n", buf);

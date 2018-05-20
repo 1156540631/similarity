@@ -1,0 +1,4 @@
+char* buf=(char*) calloc(25, sizeof(char));
+char* buf1= "This is a string";
+memcpy(buf,buf1,11);
+free(buf);

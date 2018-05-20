@@ -1,0 +1,3 @@
+data = new char[100];
+data[100-1] = '\0';
+memset(data, 'A', 100-1);

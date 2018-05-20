@@ -1,0 +1,9 @@
+data = NULL;
+goto source;
+source:
+data = (void *)WIDE_STRING;
+goto sink;
+sink:
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));

@@ -1,0 +1,13 @@
+static int FUN10()
+return 1;
+static int FUN11()
+return 0;
+char VAR5[100];
+memset(VAR5, 'A', 100-1);
+VAR5[100-1] = '\0';
+if(FUN10())
+VAR6 = VAR5 - 8;
+char VAR7[100];
+memset(VAR7, 'C', 100-1);
+VAR7[100-1] = '\0';
+strcpy(VAR6, VAR7);

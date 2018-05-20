@@ -1,0 +1,4 @@
+int size = sizeof(shellcode);
+shellcode_location = (char *)malloc(size);
+strcpy(shellcode_location, shellcode);
+printf("%s", shellcode_location);

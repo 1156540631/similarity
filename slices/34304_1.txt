@@ -1,0 +1,8 @@
+wchar_t * VAR2;
+CLASS11 CLASS10;
+VAR2 = NULL;
+VAR2 = new wchar_t[10];
+CLASS10.VAR15 = VAR2;
+wchar_t * VAR2 = CLASS10.VAR16;
+wchar_t VAR20[10+1] = VAR59;
+wcsncpy(VAR2, VAR20, wcslen(VAR20) + 1);

@@ -1,0 +1,12 @@
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(staticReturnsFalse()){}
+else
+strcpy(data, "fixedstringtest");
+if(staticReturnsTrue())
+printf(data);

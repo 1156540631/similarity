@@ -1,0 +1,11 @@
+char stonesoup_source[1024];
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, preestablishes_unlegislative, sizeof(stonesoup_source));
+void stonesoup_handle_taint(char *sphincter_cyclohexene)
+nonsociability_unreconstructed[40] = sphincter_cyclohexene;
+neutrodyne_tokenless = chalkiest_beat(nonsociability_unreconstructed);
+char **chalkiest_beat(char **chorusses_squeaking)
+return chorusses_squeaking;
+neutrodyne_tokenless = chalkiest_beat(nonsociability_unreconstructed);
+preestablishes_unlegislative = ((char *)neutrodyne_tokenless[40]);
+strncpy(stonesoup_source, preestablishes_unlegislative, sizeof(stonesoup_source));

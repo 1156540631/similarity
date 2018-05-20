@@ -1,0 +1,14 @@
+return c - 32;
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+stonesoup_data->buff_pointer = stonesoup_data->buffer;
+strncpy(stonesoup_data->buffer, stowp_catchments, strlen(stowp_catchments) + 1);
+stonesoup_ptr_deref = strlen( stonesoup_data->buff_pointer);
+stonesoup_data->buffer[stonesoup_oc_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_oc_i]);
+stonesoup_printf("%s\n", stonesoup_data->buffer);
+free(stonesoup_data);
+void stonesoup_printf(char * format, ...) {
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_data->buffer[stonesoup_oc_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_oc_i]);
+stonesoup_printf("%s\n", stonesoup_data->buffer);

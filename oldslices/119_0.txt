@@ -1,0 +1,6 @@
+void NetworkUtils::disableNat(CommandChain* aChain,
+if (!GET_FIELD(mIp).IsEmpty() && !GET_FIELD(mPrefix).IsEmpty()) {
+uint32_t prefix = atoi(GET_CHAR(mPrefix));
+uint32_t ip = inet_addr(GET_CHAR(mIp));
+char* networkAddr = getNetworkAddr(ip, prefix);
+GET_CHAR(mInternalIfname), GET_CHAR(mExternalIfname), networkAddr,

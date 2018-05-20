@@ -1,0 +1,13 @@
+map<int, int> dataMap;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+goodB2GSink(dataMap);
+void goodB2GSink(map<int, int> dataMap)
+int data = dataMap[2];
+if (data >= 0 && data < (10))
+buffer[data] = 1;

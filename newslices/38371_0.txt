@@ -1,0 +1,4 @@
+VAR1 VAR2 = strlen(VAR3);
+if (fgets(VAR3+VAR2, (int)(100-VAR2), VAR4) != VAR5)
+VAR2 = strlen(VAR3);
+VAR1 VAR2 = strlen(VAR3);

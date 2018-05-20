@@ -1,0 +1,69 @@
+fprintf(stderr, "%s: x was > %d (%d)\n", name, SVGA_MAX_WIDTH, x);
+fprintf(stderr, "%s: w was < 0 (%d)\n", name, w);
+fprintf(stderr, "%s: w was > %d (%d)\n", name, SVGA_MAX_WIDTH, w);
+if (x + w > surface_width(surface)) {
+name, surface_width(surface), x, w);
+fprintf(stderr, "%s: y was < 0 (%d)\n", name, y);
+fprintf(stderr, "%s: y was > %d (%d)\n", name, SVGA_MAX_HEIGHT, y);
+if (y + h > surface_height(surface)) {
+name, surface_height(surface), y, h);
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+x = 0;
+y = 0;
+w = surface_width(surface);
+h = surface_height(surface);
+bypl = surface_stride(surface);
+width = surface_bytes_per_pixel(surface) * w;
+start = surface_bytes_per_pixel(surface) * x + bypl * y;
+src = s->vga.vram_ptr + start;
+dst = surface_data(surface) + start;
+for (line = h; line > 0; line--, src += bypl, dst += bypl) {
+memcpy(dst, src, width);
+qemu_default_pixman_format(s->new_depth, true);
+trace_vmware_setmode(s->new_width, s->new_height, s->new_depth);
+static void vmsvga_update_display(void *opaque)
+vmsvga_check_size(s);
+static inline void vmsvga_check_size(struct vmsvga_state_s *s)
+vmsvga_check_size(s);
+vmsvga_fifo_run(s);
+static void vmsvga_fifo_run(struct vmsvga_state_s *s)
+len = vmsvga_fifo_length(s);
+vmsvga_fifo_run(s);
+vmsvga_update_rect_flush(s);
+static inline int vmsvga_fifo_length(struct vmsvga_state_s *s)
+len = vmsvga_fifo_length(s);
+static void vmsvga_fifo_run(struct vmsvga_state_s *s)
+vmsvga_fifo_run(s);
+vmsvga_update_rect_flush(s);
+static inline void vmsvga_update_rect_flush(struct vmsvga_state_s *s)
+rect = &s->redraw_fifo[s->redraw_fifo_first++];
+vmsvga_update_rect(s, rect->x, rect->y, rect->w, rect->h);
+int x, int y, int w, int h)
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+int x, int y, int w, int h)
+width = surface_bytes_per_pixel(surface) * w;
+start = surface_bytes_per_pixel(surface) * x + bypl * y;
+src = s->vga.vram_ptr + start;
+dst = surface_data(surface) + start;
+memcpy(dst, src, width);
+static inline void vmsvga_update_rect(struct vmsvga_state_s *s,
+vmsvga_update_rect(s, rect->x, rect->y, rect->w, rect->h);
+rect = &s->redraw_fifo[s->redraw_fifo_first++];
+vmsvga_update_rect(s, rect->x, rect->y, rect->w, rect->h);
+int x, int y, int w, int h)
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+int x, int y, int w, int h)
+fprintf(stderr, "%s: x was < 0 (%d)\n", name, x);
+width = surface_bytes_per_pixel(surface) * w;
+start = surface_bytes_per_pixel(surface) * x + bypl * y;
+src = s->vga.vram_ptr + start;
+dst = surface_data(surface) + start;
+memcpy(dst, src, width);
+for (line = h; line > 0; line--, src += bypl, dst += bypl) {
+memcpy(dst, src, width);
+static inline bool vmsvga_verify_rect(DisplaySurface *surface,
+bypl = surface_stride(surface);
+width = surface_bytes_per_pixel(surface) * w;
+for (line = h; line > 0; line--, src += bypl, dst += bypl) {
+memcpy(dst, src, width);

@@ -1,0 +1,7 @@
+int svn_cmdline_init(const char *progname,FILE *error_stream)
+char prefix_buf[64];
+fprintf(error_stream,"%s: warning: cannot set LC_CTYPE locale\n%s: warning: environment variable %s is %s\n%s: warning: please check that your locale name is correct\n",progname,progname, *env_var,env_val,progname);
+strncpy(prefix_buf,progname,sizeof(prefix_buf) - 3);
+prefix_buf[sizeof(prefix_buf) - 3] = '\0';
+strcat(prefix_buf,": ");
+strncpy(prefix_buf,progname,sizeof(prefix_buf) - 3);

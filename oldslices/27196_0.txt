@@ -1,0 +1,4 @@
+envvar = getenv("STRINGLEN_OK");
+if (envvar != NULL)
+i = strlen(envvar);
+if (i > 9)

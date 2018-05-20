@@ -1,0 +1,10 @@
+void NetworkUtils::removeDefaultRoute(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+nsTArray<nsString>& gateways = GET_FIELD(mGateways);
+char command[MAX_COMMAND_SIZE];
+NS_ConvertUTF16toUTF8 autoGateway(gateways[GET_FIELD(mLoopIndex)]);
+int type = getIpType(autoGateway.get());
+snprintf(command, MAX_COMMAND_SIZE - 1, "network route remove %d %s %s/0 %s",
+GET_FIELD(mNetId), GET_CHAR(mIfname),
+type == AF_INET6 ? "::" : "0.0.0.0", autoGateway.get());

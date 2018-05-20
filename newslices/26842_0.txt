@@ -1,0 +1,5 @@
+VAR1[4]= '\';
+return VAR1;
+VAR2 = FUN1(VAR3);
+printf("VAR4 = %s\n", VAR2);
+printf("VAR1 VAR5 = %d\n", strlen(VAR2));

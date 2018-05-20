@@ -1,0 +1,8 @@
+var1[0] = L'\0';
+VAR2[2] = VAR1;
+goodG2BSink(VAR2);
+wchar_t source[10+1] = SRC_STRING;
+memcpy(VAR1, source, (wcslen(source) + 1) * sizeof(wchar_t));
+void goodG2BSink(map<int, wchar_t *> VAR2)
+wchar_t * VAR1 = VAR2[2];
+memcpy(VAR1, source, (wcslen(source) + 1) * sizeof(wchar_t));

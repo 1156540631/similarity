@@ -1,0 +1,12 @@
+int FUN3() 
+return 1;
+int FUN4() 
+return 0;
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+if(FUN4()){ }
+else
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+char VAR40[50] = "";
+strcat(VAR40, VAR1);

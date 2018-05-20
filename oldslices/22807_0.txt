@@ -1,0 +1,5 @@
+orchel_amroc = getenv("OVERCRITICIZE_AUBYN");
+if (orchel_amroc != 0) {;
+blobbiest_ange . popularist_soiliest = orchel_amroc;
+rememorate_verticillus = ((char *)blobbiest_ange . popularist_soiliest);
+strncpy(stonesoup_source,rememorate_verticillus,sizeof(stonesoup_source));

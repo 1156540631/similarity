@@ -1,0 +1,4 @@
+long long int i=0;
+long long int *ptr=(long long*) malloc(MAX_VAL *sizeof(long long));
+*(ptr+i) = i;
+free(ptr);

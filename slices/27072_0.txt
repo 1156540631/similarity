@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+if(argc > 1) {
+VAR44 = argv[1];
+if(strlen(VAR44) < VAR45 - 3)
+FUN8(VAR44);
+FUN8(char *VAR14)
+snprintf(VAR39, 1024, "<%VAR1>", VAR14);
+printf("result: %VAR1\VAR7", VAR39);

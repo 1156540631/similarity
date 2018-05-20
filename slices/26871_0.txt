@@ -1,0 +1,4 @@
+while ((VAR463 = getpwent()) != NULL)
+if (strcasecmp(VAR463->VAR465, VAR339) == 0)
+FUN108(VAR463->VAR464, VAR463->VAR465, VAR39);
+printf("VAR467 matches %VAR1\VAR7", VAR463->VAR465);

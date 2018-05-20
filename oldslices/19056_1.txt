@@ -1,0 +1,4 @@
+data = new char[10];
+char * data = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_char_memmove_68_goodG2BData;
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

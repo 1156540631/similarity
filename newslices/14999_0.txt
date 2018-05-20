@@ -1,0 +1,11 @@
+VAR1<wchar_t *> VAR2;
+VAR3[0] = '\';
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+FUN3(VAR2);
+wchar_t VAR4[10+1] = VAR5;
+memcpy(VAR3, VAR4, (FUN4(VAR4) + 1) * sizeof(wchar_t));
+void FUN3(VAR1<wchar_t *> VAR2)
+wchar_t * VAR3 = VAR2[2];
+memcpy(VAR3, VAR4, (FUN4(VAR4) + 1) * sizeof(wchar_t));

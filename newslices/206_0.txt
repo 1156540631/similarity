@@ -1,0 +1,10 @@
+static void		FUN1(const char *VAR1, ...);
+const char  *VAR2,
+const char  *VAR3,
+const char  *VAR4,
+const char  *VAR5)
+VAR6, VAR2, VAR3 ? VAR3 : "(VAR7)", VAR4 ? VAR4 : "(VAR7)",
+VAR5 ? VAR5 : "(VAR7)");
+memcpy(&(VAR8->VAR9), VAR6, sizeof(VAR8->VAR9));
+FUN2(CLASS1 *VAR6,
+VAR6, VAR2, VAR3 ? VAR3 : "(VAR7)", VAR4 ? VAR4 : "(VAR7)",

@@ -1,0 +1,36 @@
+static int read_blob(FILE_T infile, ngsniffer_comp_stream_t *comp_stream,
+comp_stream = &ngsniffer->rand;
+comp_stream = &ngsniffer->seq;
+if (read_blob(infile, comp_stream, err, err_info) < 0)
+bytes_left = comp_stream->nbytes - comp_stream->nextout;
+if (read_blob(infile, comp_stream, err, err_info) < 0)
+bytes_left = comp_stream->nbytes - comp_stream->nextout;
+bytes_to_copy = bytes_left;
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],
+bytes_to_copy);
+copybytes -= bytes_to_copy;
+bytes_to_copy = copybytes;
+bytes_to_copy);
+outbuffer += bytes_to_copy;
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],
+static int read_blob(FILE_T infile, ngsniffer_comp_stream_t *comp_stream,
+if (read_blob(infile, comp_stream, err, err_info) < 0)
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],
+ng_file_read(void *buffer, unsigned int nbytes, wtap *wth, gboolean is_random,
+unsigned int copybytes = nbytes;
+unsigned char *outbuffer = (unsigned char *)buffer;
+comp_stream = &ngsniffer->rand;
+comp_stream->buf = (unsigned char *)g_malloc(OUTBUF_SIZE);
+if (read_blob(infile, comp_stream, err, err_info) < 0)
+if (read_blob(infile, comp_stream, err, err_info) < 0)
+bytes_to_copy = copybytes;
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],
+bytes_to_copy);
+outbuffer += bytes_to_copy;
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],
+comp_stream->nextout += bytes_to_copy;
+bytes_left = comp_stream->nbytes - comp_stream->nextout;
+bytes_to_copy = bytes_left;
+bytes_to_copy);
+outbuffer += bytes_to_copy;
+memcpy(outbuffer, &comp_stream->buf[comp_stream->nextout],

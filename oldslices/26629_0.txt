@@ -1,0 +1,17 @@
+furcule_malayalam = getenv("COALFIELD_COMIQUE");
+if (furcule_malayalam != 0) {;
+eugeny_animadversions = ((int )(strlen(furcule_malayalam)));
+fringelike_lactation = ((char *)(malloc(eugeny_animadversions + 1)));
+if (fringelike_lactation == 0) {
+memset(fringelike_lactation,0,eugeny_animadversions + 1);
+memcpy(fringelike_lactation,furcule_malayalam,eugeny_animadversions);
+fredrick_porchlike = ower_unfarsighted(fringelike_lactation);
+char *ower_unfarsighted(char *furtherer_rabiform)
+return furtherer_rabiform;
+fredrick_porchlike = ower_unfarsighted(fringelike_lactation);
+pluteus_hallan = ((char *)fredrick_porchlike);
+stonesoup_buff_size = ((int )(strlen(pluteus_hallan)));
+strncpy(stonesoup_heap_buff_64, pluteus_hallan, 64);
+for (; stonesoup_ss_i < stonesoup_buff_size; ++stonesoup_ss_i){
+if (fredrick_porchlike != 0)
+free(((char *)fredrick_porchlike));

@@ -1,0 +1,9 @@
+void nonheretical_amores(int verd_bye,char *therms_chorizo)
+guyot_dinitril = ((char *)therms_chorizo);
+stonesoup_data.buffer[stonesoup_i] = 0;
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, guyot_dinitril);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data.buffer);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, guyot_dinitril);

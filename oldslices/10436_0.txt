@@ -1,0 +1,4 @@
+float *buf1=(float*)calloc(5,sizeof(float));
+float *buf2=(float*)calloc(5,sizeof(float));
+buf2[0] = 10.0;
+free(buf2);

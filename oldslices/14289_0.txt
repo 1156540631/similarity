@@ -1,0 +1,5 @@
+return 0;
+t[i+1] = '\0';
+return t;
+char *t = rand_text();
+buf[strlen(t)%25]=t[strlen(t)-1];

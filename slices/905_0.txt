@@ -1,0 +1,52 @@
+static CLASS2 *FUN1(CLASS3 *VAR2)
+VAR3 = FUN1(VAR2);
+if (!strncmp((VAR2 -> VAR7),"expr:",5)) {
+FUN2(VAR2 -> VAR7,VAR2,VAR2 -> VAR9 -> VAR10);
+static void FUN2(char *VAR11,CLASS3 *VAR2,CLASS1 *VAR6)
+int VAR1 = 1;
+int64_t *VAR12;
+FUN13 = VAR1;
+VAR12 = (VAR8(sizeof(( *VAR12)) * FUN13));
+VAR8 = VAR11;
+char *VAR13 = strchr(VAR8,',');
+*(VAR13++) = 0;
+if (!memcmp(VAR8,"VAR16",8)) {
+if (VAR14 -> VAR15 > (2147483647 - FUN13) || !(VAR12 = (FUN5(VAR12,(FUN13 += VAR14 -> VAR15 - 1),sizeof(( *VAR12)))))) {
+VAR20 = (VAR8[8]?FUN3("force_key_frames",(VAR8 + 8),1) : 0);
+AVChapter *VAR5 = VAR14 -> VAR16[j];
+VAR12[VAR17++] = FUN4(VAR5 -> VAR18,VAR5 -> VAR19,VAR6 -> VAR19) + VAR20;
+if (VAR14 -> VAR15 > (2147483647 - FUN13) || !(VAR12 = (FUN5(VAR12,(FUN13 += VAR14 -> VAR15 - 1),sizeof(( *VAR12)))))) {
+VAR8 = VAR13;
+char *VAR13 = strchr(VAR8,',');
+if (!memcmp(VAR8,"VAR16",8)) {
+VAR20 = (VAR8[8]?FUN3("force_key_frames",(VAR8 + 8),1) : 0);
+VAR12[VAR17++] = FUN4(VAR5 -> VAR18,VAR5 -> VAR19,VAR6 -> VAR19) + VAR20;
+qsort(VAR12,FUN13,sizeof(( *VAR12)),VAR38);
+VAR2 = VAR39[VAR28];
+VAR3 = FUN1(VAR2);
+VAR2 -> VAR9 -> VAR21 = VAR3 -> VAR9 -> VAR21;
+VAR3 = FUN1(VAR2);
+if (copy_tb < 0 && FUN6(VAR3 -> VAR9 -> VAR22) >= FUN6(VAR3 -> VAR9 -> VAR23) && 0.5 / FUN6(VAR3 -> VAR9 -> VAR22) > FUN6(VAR3 -> VAR9 -> VAR19) && 0.5 / FUN6(VAR3 -> VAR9 -> VAR22) > FUN6(icodec -> VAR19) && FUN6(VAR3 -> VAR9 -> VAR19) < 1.0 / 500 && FUN6(icodec -> VAR19) < 1.0 / 500 || copy_tb == 2) {
+VAR2 -> VAR9 -> VAR23 = VAR3 -> VAR9 -> VAR23;
+VAR3 = FUN1(VAR2);
+snprintf(VAR26,sizeof(VAR26),"Encoder (VAR10 %VAR4) not found for output stream #%d:%d",avcodec_get_name(VAR2 -> VAR9 -> VAR10 -> codec_id),VAR2 -> file_index,VAR2 -> VAR17);
+VAR2 -> VAR27 = VAR2 -> VAR29 -> VAR30[VAR31];
+VAR3 = FUN1(VAR2);
+VAR10 -> VAR32 = FUN7(VAR2 -> VAR33 -> VAR33 -> VAR34[0]);
+VAR2 -> VAR27 = FUN8(VAR2 -> VAR33 -> VAR33);
+VAR10 -> VAR24 = VAR2 -> VAR33 -> VAR33 -> VAR34[0] -> VAR35;
+VAR10 -> VAR25 = VAR2 -> VAR33 -> VAR33 -> VAR34[0] -> VAR36;
+VAR10 -> VAR40 = VAR2 -> VAR9 -> VAR40 = (VAR2 -> VAR37?FUN9((VAR2 -> VAR37 * (VAR10 -> VAR25) / (VAR10 -> VAR24)),255) : VAR2 -> VAR33 -> VAR33 -> VAR34[0] -> VAR40);
+VAR3 = FUN1(VAR2);
+VAR2 -> VAR29 = FUN10(VAR10 -> codec_id);
+int VAR31 = FUN11(VAR2 -> VAR27,VAR2 -> VAR29 -> VAR30);
+FUN2(VAR2 -> VAR7,VAR2,VAR2 -> VAR9 -> VAR10);
+static void FUN2(char *VAR11,CLASS3 *VAR2,CLASS1 *VAR6)
+FUN2(VAR2 -> VAR7,VAR2,VAR2 -> VAR9 -> VAR10);
+static void FUN2(char *VAR11,CLASS3 *VAR2,CLASS1 *VAR6)
+VAR8 = VAR11;
+char *VAR13 = strchr(VAR8,',');
+if (!memcmp(VAR8,"VAR16",8)) {
+VAR20 = (VAR8[8]?FUN3("force_key_frames",(VAR8 + 8),1) : 0);
+VAR12[VAR17++] = FUN4(VAR5 -> VAR18,VAR5 -> VAR19,VAR6 -> VAR19) + VAR20;
+qsort(VAR12,FUN13,sizeof(( *VAR12)),VAR38);

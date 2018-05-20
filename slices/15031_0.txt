@@ -1,0 +1,7 @@
+wchar_t * &VAR1Ref = VAR1;
+char VAR2[10];
+VAR1 = VAR2;
+VAR1[0] = '\0';
+wchar_t * VAR1 = VAR1Ref;
+wchar_t source[10+1] = SRC_STRING;
+memcpy(VAR1, source, (wcslen(source) + 1) * sizeof(wchar_t));

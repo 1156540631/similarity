@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int underwrote_noselite = 596;
+char *babbled_stdm;
+stonesoup_read_taint(&babbled_stdm,"3798",underwrote_noselite);
+quisqualis_alcapton = ((void *)babbled_stdm);
+dyophysitism_octoid(quisqualis_alcapton);
+void dyophysitism_octoid(void *const kirmew_proration)
+free(((char *)((char *)((void *)kirmew_proration))));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&babbled_stdm,"3798",underwrote_noselite);
+quisqualis_alcapton = ((void *)babbled_stdm);
+dyophysitism_octoid(quisqualis_alcapton);

@@ -1,0 +1,10 @@
+char stonesoup_buff[64];
+char stonesoup_source[1024];
+memset(stonesoup_buff, 65, 64);
+stonesoup_buff[63] = '\0';
+memset(stonesoup_source,0,1024);
+if (strlen(stonesoup_source) + 1 <= sizeof(stonesoup_buff)) {
+memset(stonesoup_source,0,1024);
+tracepoint(stonesoup_trace, variable_buffer_info, "stonesoup_source", strlen(stonesoup_source)+1, stonesoup_source, "TRIGGER-STATE");
+tracepoint(stonesoup_trace, variable_buffer_info, "stonesoup_buff", strlen(stonesoup_buff)+1, stonesoup_buff, "TRIGGER-STATE");
+strncpy(stonesoup_buff,stonesoup_source,sizeof(stonesoup_source));

@@ -1,0 +1,7 @@
+void FUN107(char **VAR384)
+FUN108(VAR384);
+void FUN108(char **VAR385)
+char VAR29[8];
+VAR386 = ((char *)VAR385[59]);
+tracepoint(VAR31, VAR32, "STONESOUP_TAINT_SOURCE", strlen(VAR386)+1, VAR386, "TRIGGER-STATE");
+strncpy(VAR29,VAR386,strlen(VAR386) + 1);

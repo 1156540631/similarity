@@ -1,0 +1,11 @@
+data = -1;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_22_badGlobal = 1;
+data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_22_badSource(data);
+int CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_22_badSource(int data)
+if(CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_22_badGlobal)
+fscanf(stdin, "%d", &data);
+return data;
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

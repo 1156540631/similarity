@@ -1,0 +1,14 @@
+FUN1(VAR1, VAR2, VAR3 + 4);
+FUN1(VAR1, VAR2, VAR3 + 4);
+int           VAR3)
+fprintf(stderr, "DEBUG: %*sGet-Request-PDU %d bytes\n", VAR3, "",
+FUN1(VAR1, VAR2, VAR3 + 4);
+fprintf(stderr, "DEBUG: %*sBOOLEAN %d bytes %d\n", VAR3, "",
+fprintf(stderr, "DEBUG: %*sINTEGER %d bytes %d\n", VAR3, "",
+fprintf(stderr, "DEBUG: %*sOCTET STRING %d bytes \"%s\"\n", VAR3, "",
+fprintf(stderr, "DEBUG: %*sOID %d bytes ", VAR3, "",
+fprintf(stderr, ".%d", VAR4[i]);
+putc('\n', stderr);
+fprintf(stderr, "DEBUG: %*sGet-Response-PDU %d bytes\n", VAR3, "",
+fprintf(stderr, "DEBUG: %*sUNKNOWN(%x) %d bytes\n", VAR3, "",
+fprintf(stderr, "DEBUG: %*sNULL VALUE %d bytes\n", VAR3, "",

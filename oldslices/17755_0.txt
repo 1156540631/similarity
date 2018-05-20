@@ -1,0 +1,26 @@
+char * data;
+map<int, char *> dataMap;
+char dataBuffer[100];
+data = dataBuffer;
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+char dest[50] = "";
+strncat(dest, data, strlen(data));
+
+65987 1 CWE-121
+
+--------------------------------
+2048 /Mixed/65987/CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncat_74.cpp Buffer_Overflow_boundedcpy
+data[50-1] = '\0';
+dataMap[2] = data;
+goodG2BSink(dataMap);
+char dest[50] = "";
+strncat(dest, data, strlen(data));
+void goodG2BSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+strncat(dest, data, strlen(data));

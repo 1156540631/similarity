@@ -1,0 +1,5 @@
+vptr = (int *)calloc(memory_allocation_failure_005_gbl*memory_allocation_failure_005_gbl, sizeof(int));
+vptr = (char *)calloc(10, sizeof(char));
+vptr = (float *)calloc(10, sizeof(float));
+ret = memory_allocation_failure_005_func_001 (1);
+free(vptr);

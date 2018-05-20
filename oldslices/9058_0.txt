@@ -1,0 +1,9 @@
+data = NULL;
+data = goodG2B1Source(data);
+static wchar_t * goodG2B1Source(wchar_t * data)
+data = (wchar_t *)malloc((10+1)*sizeof(wchar_t));
+return data;
+data = goodG2B1Source(data);
+wcsncpy(data, source, wcslen(source) + 1);
+printWLine(data);
+free(data);

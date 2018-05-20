@@ -1,0 +1,5 @@
+char ** doubleptr=(char**) malloc(10*sizeof(char*));
+doubleptr[i]=calloc(10,sizeof(char));
+doubleptr[i][j]='a';
+free(doubleptr[i]);
+free(doubleptr);

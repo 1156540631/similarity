@@ -1,0 +1,13 @@
+typedef union
+char * unionFirst;
+char * unionSecond;
+} CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_34_unionType;
+char * data;
+CWE122_Heap_Based_Buffer_Overflow__c_src_char_cpy_34_unionType myUnion;
+data = (char *)malloc(100*sizeof(char));
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+myUnion.unionFirst = data;
+char * data = myUnion.unionSecond;
+char dest[50] = "";
+strcpy(dest, data);

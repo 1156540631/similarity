@@ -1,0 +1,6 @@
+char   *VAR3;
+VAR1[VAR4] = '\0';
+VAR2 = VAR1 + FUN1(VAR5);
+while (*VAR2 && isspace(*VAR2))
+VAR2++;
+VAR6 = strtol(VAR2, &VAR3, 10);

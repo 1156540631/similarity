@@ -1,0 +1,34 @@
+char VAR434[100];
+scanf("%99s", VAR434);
+VAR435 = FUN105(VAR434);
+char * FUN105(VAR349)
+register char *VAR349;
+VAR349++;
+VAR138 = VAR439 = VAR349;
+VAR138++;
+while ((VAR4 = *VAR138++) != '<')
+while ((VAR4 = *VAR138++) != '\0')
+if ((VAR4 = *VAR138++) == '\0')
+VAR138--;
+VAR138++;
+VAR138++;
+while ((VAR4 = *VAR138++) != ':')
+VAR138++;
+FUN106(*VAR138);
+VAR438 = VAR73;
+VAR73 = VAR438;
+VAR439 = VAR138;
+for (VAR440 = VAR439; VAR440 < VAR138; )
+VAR4 = *VAR440++;
+FUN106(VAR4);
+FUN106(VAR4);
+FUN106('\\');
+#define FUN106(VAR4)                   \
+do                          \
+{                           \
+printf ("VAR73-VAR321 = %d   VAR436-VAR321=%d\VAR7", (VAR73-VAR321), (VAR436-VAR321)); \
+if (VAR443)               \
+*VAR73++ = (VAR4);                \
+else                        \
+goto returng;               \
+} while (0)

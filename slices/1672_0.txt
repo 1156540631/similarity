@@ -1,0 +1,8 @@
+VAR6 = (CLASS1 *)calloc(1,sizeof(CLASS1));
+VAR6->VAR1 = 10;
+VAR6->VAR2 = 10;
+VAR6 = (CLASS1 *)calloc(1,sizeof(CLASS1));
+VAR6->VAR1 = 20;
+VAR6->VAR2 = 20;
+FUN1 (1);
+free(VAR6);

@@ -1,0 +1,8 @@
+char VAR1[100] = "";
+VAR2 = VAR1;
+strcpy(VAR2, "fixedstringtest");
+strcpy(VAR2, "fixedstringtest");
+FUN1(VAR2, VAR2);
+FUN1(VAR2, VAR2);
+static void FUN1(char * VAR2, ...)
+FUN2(VAR3, VAR2);

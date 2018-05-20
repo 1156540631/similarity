@@ -1,0 +1,5 @@
+CLASS1 VAR2;
+char * VAR1 = VAR2.VAR4;
+FUN3(VAR1, VAR1);
+static void FUN3(char * VAR1, ...)
+FUN1(VAR6, VAR1);

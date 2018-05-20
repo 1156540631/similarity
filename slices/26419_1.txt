@@ -1,0 +1,6 @@
+char VAR55[10];
+VAR257[18 - 1] = '\0';
+strncpy(VAR55, VAR257, FUN140(18));
+int FUN140(int VAR452)
+return VAR452;
+strncpy(VAR55, VAR257, FUN140(18));

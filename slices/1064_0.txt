@@ -1,0 +1,4 @@
+void FUN2(list<CLASS1 *> VAR2)
+CLASS1 * VAR1 = VAR2.FUN3();
+FUN1(VAR1);
+free(VAR1);

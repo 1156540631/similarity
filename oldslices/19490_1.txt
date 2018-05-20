@@ -1,0 +1,9 @@
+void (*funcPtr) (TwoIntsClass *) = badSink;
+data = NULL;
+data = new TwoIntsClass[50];
+funcPtr(data);
+static void badSink(TwoIntsClass * data)
+TwoIntsClass source[100];
+source[i].intOne = 0;
+source[i].intTwo = 0;
+memcpy(data, source, 100*sizeof(TwoIntsClass));

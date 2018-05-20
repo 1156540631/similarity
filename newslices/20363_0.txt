@@ -1,0 +1,7 @@
+int FUN1(int VAR1,char*VAR2[])
+if(VAR2[1])
+VAR3 = atoi(VAR2[1]);
+VAR4 = (int)floor((double)VAR3/1000.0);
+VAR5 = (int)floor((int)VAR3%1000);
+printf("VAR4 = %d VAR6 = %d VAR3 =%d \n" , VAR4, VAR5,VAR3);
+if (VAR4 ==45 || VAR4 == 888)

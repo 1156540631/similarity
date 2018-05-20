@@ -1,0 +1,13 @@
+DeviceTypeRequest, DeviceTypeOID);
+const unsigned request_id,
+const int *oid);
+gettimeofday(&StartTime, NULL);
+DeviceTypeRequest = StartTime.tv_sec;
+DeviceDescRequest = StartTime.tv_sec + 1;
+for (address = (char *)cupsArrayFirst(Addresses);
+address = (char *)cupsArrayNext(Addresses))
+fprintf(stderr, "ERROR: Unable to scan \"%s\"!\n", address);
+for (community = (char *)cupsArrayFirst(Communities);
+community = (char *)cupsArrayNext(Communities))
+DeviceTypeRequest, DeviceTypeOID);
+fprintf(stderr, "ERROR: %.3f select() for %d failed: %s\n", run_time(),

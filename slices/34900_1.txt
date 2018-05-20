@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = NULL;
+switch(6)
+case 6:
+VAR1 = new char[50];
+VAR1[0] = '\0';
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR3);

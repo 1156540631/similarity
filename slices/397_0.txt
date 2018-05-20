@@ -1,0 +1,7 @@
+CLASS2<CLASS1*, 8> VAR1;
+for (CLASS1* VAR7 = VAR3.FUN1(); VAR7; VAR7 = VAR7->FUN5()) {
+if (VAR7->FUN2() & VAR5)
+VAR1.FUN3(VAR7);
+if ((!VAR8 || VAR6.VAR31() != VAR1.VAR31()) && !VAR4) {
+for (VAR13 = 0; VAR13 < VAR1.VAR31(); ++VAR13) {
+printf("Stored float: %VAR2\n", VAR1.FUN4(VAR13));

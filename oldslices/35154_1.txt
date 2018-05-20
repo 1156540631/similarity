@@ -1,0 +1,8 @@
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+const CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_81_base& baseObject = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_81_bad();
+baseObject.action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_81_bad::action(char * data) const
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

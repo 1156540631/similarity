@@ -1,0 +1,3 @@
+char buf[MAXSIZE], *p, *ep;
+ep = buf + sizeof buf - 1;
+printf("result: %s\n", buf);

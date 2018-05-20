@@ -1,0 +1,4 @@
+molybdic_huccatoon = getenv("BORESOMENESS_TEETY");
+spunking_hidalgoism = ((char *)molybdic_huccatoon);
+stonesoup_buffer = malloc((strlen(spunking_hidalgoism) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,spunking_hidalgoism);

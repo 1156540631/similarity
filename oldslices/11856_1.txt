@@ -1,0 +1,4 @@
+data[100-1] = L'\0';
+SNPRINTF(dest, wcslen(data), L"%s", data);
+printWLine(data);
+free(data);

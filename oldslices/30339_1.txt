@@ -1,0 +1,8 @@
+data = -1;
+data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_61b_badSource(data);
+int CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_61b_badSource(int data)
+fscanf(stdin, "%d", &data);
+return data;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

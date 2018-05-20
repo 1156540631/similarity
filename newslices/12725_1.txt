@@ -1,0 +1,41 @@
+FUN1(VAR1 VAR2)
+FUN2(&VAR3, &VAR4);
+if (strcmp(VAR5[2], "fields") == 0)
+else if (strcmp(VAR5[2], "fields2") == 0)
+else if (strcmp(VAR5[2], "protocols") == 0)
+else if (strcmp(VAR5[2], "decodes") == 0)
+FUN3("VAR6 \"%s\" VAR7 for -VAR8 VAR9", VAR5[2]);
+FUN4 ((VAR10 = FUN5(VAR11, VAR5, VAR12)) != -1) {
+VAR13 = FUN6(&VAR3, VAR10, VAR14, &VAR15);
+VAR13 = FUN7(VAR16);
+FUN1(VAR17);
+VAR3.VAR18 = VAR17;
+VAR3.VAR19 = FUN8(VAR11, VAR5, VAR20);
+if (strcmp(VAR3.VAR21, "-") == 0 && VAR22) {
+FUN9(&VAR3, VAR23);
+FUN10(&VAR3);
+if (!FUN11(&VAR3,
+VAR13 = FUN12(&VAR3, VAR16);
+FUN13(VAR13);
+FUN14(int VAR11, char *VAR5[])
+VAR24 = FUN15(VAR5[0], FUN14);
+VAR25 = VAR20;
+FUN4 ((VAR10 = FUN5(VAR11, VAR5, VAR12)) != -1) {
+VAR20 = VAR25;
+if (VAR11 >= 2 && strcmp(VAR5[1], "-VAR8") == 0) {
+else if (strcmp(VAR5[2], "fields3") == 0)
+else if (strcmp(VAR5[2], "values") == 0)
+else if (strcmp(VAR5[2], "defaultprefs") == 0)
+else if (strcmp(VAR5[2], "currentprefs") == 0) {
+FUN4 ((VAR10 = FUN5(VAR11, VAR5, VAR12)) != -1) {
+FUN1(VAR17);
+VAR3.VAR19 = FUN8(VAR11, VAR5, VAR20);
+FUN1(VAR16);
+if (strcmp(VAR3.VAR21, "-") == 0) {
+VAR13 = FUN12(&VAR3, VAR16);
+FUN13(VAR13);
+FUN3(const char *VAR26, ...)
+FUN4 ((VAR10 = FUN5(VAR11, VAR5, VAR12)) != -1) {
+VAR3.VAR19 = FUN8(VAR11, VAR5, VAR20);
+VAR13 = FUN12(&VAR3, VAR16);
+FUN13(VAR13);

@@ -1,0 +1,9 @@
+CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_67_structType myStruct;
+data[0] = '\0';
+myStruct.structFirst = data;
+CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_67b_goodG2BSink(myStruct);
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_67b_goodG2BSink(CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_67_structType myStruct)
+char * data = myStruct.structFirst;
+strcat(data, source);
+printLine(data);
+free(data);

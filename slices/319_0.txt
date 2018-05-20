@@ -1,0 +1,15 @@
+fprintf(stderr, "DEBUG: %*sSEQUENCE %VAR39 VAR4\n", VAR4, "",
+FUN1(VAR2, VAR3, VAR4 + 4);
+fprintf(stderr, "DEBUG: %*sGet-Request-VAR12 %VAR39 VAR4\n", VAR4, "",
+FUN1(VAR2, VAR3, VAR4 + 4);
+FUN1(VAR2, VAR3, VAR4 + 4);
+int           VAR4)
+fprintf(stderr, "DEBUG: %*sBOOLEAN %VAR39 VAR4 %VAR39\n", VAR4, "",
+fprintf(stderr, "DEBUG: %*sINTEGER %VAR39 VAR4 %VAR39\n", VAR4, "",
+fprintf(stderr, "DEBUG: %*sOCTET VAR14 %VAR39 VAR4 \"%VAR1\"\n", VAR4, "",
+fprintf(stderr, "DEBUG: %*sNULL VAR3 %VAR39 VAR4\n", VAR4, "",
+fprintf(stderr, "DEBUG: %*sOID %VAR39 VAR4 ", VAR4, "",
+fprintf(stderr, ".%VAR39", VAR5[VAR13]);
+putc('\n', stderr);
+fprintf(stderr, "DEBUG: %*sUNKNOWN(%FUN4) %VAR39 VAR4\n", VAR4, "",
+fprintf(stderr, "DEBUG: %*sGet-Response-VAR12 %VAR39 VAR4\n", VAR4, "",

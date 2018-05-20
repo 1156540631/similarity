@@ -1,0 +1,17 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR525,"NEMATOLOGY_IMID");
+if (VAR525 != 0) {;
+VAR526 = &VAR525;
+VAR527 = ((char **)(((unsigned long )VAR526) * VAR528 * VAR528)) + 5;
+FUN142(VAR527);
+void FUN142(char **VAR529);

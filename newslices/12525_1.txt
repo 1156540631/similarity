@@ -1,0 +1,7 @@
+static void FUN1(double * &VAR1)
+VAR1 = VAR2;
+FUN1(VAR1);
+VAR1 = (double *)malloc(sizeof(VAR1));
+*VAR1 = 1.7E300;
+FUN2(*VAR1);
+free(VAR1);

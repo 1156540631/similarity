@@ -1,0 +1,51 @@
+return FUN1(VAR1);
+return sizeof(VAR2) + FUN2(VAR3) +
+FUN2(VAR4) + FUN3();
+(VAR2 *)(VAR5 + FUN1(VAR6->VAR7));
+const VAR2 * VAR8 =
+if (((char *)VAR8 + VAR8->FUN4()) > (char *)VAR9)
+FUN2(VAR4) + FUN3();
+if (((char *)VAR8 + VAR8->FUN4()) > (char *)VAR9)
+return VAR10;
+return VAR8;
+VAR11 = VAR12.FUN5(VAR6);
+VAR13.FUN6(VAR11->FUN7(), VAR6->FUN3());
+return VAR8 + FUN2(VAR3) + FUN2(VAR4);
+return sizeof(VAR14) + FUN2(VAR3) +
+FUN2(VAR4) + FUN2(VAR15);
+const char *VAR5;
+VAR6 = (VAR14 *)((char *)VAR16 + VAR16->FUN4());
+VAR6 = (VAR14 *)(VAR5 + FUN1(VAR9->VAR17));
+!VAR6->FUN8())
+if (((char *)VAR6 + VAR6->FUN4()) > VAR18 ||
+return VAR10;
+return VAR6;
+FUN9 ((VAR6 = VAR12.FUN10(VAR6))) {
+VAR13.FUN6(VAR11->FUN7(), VAR6->FUN3());
+return FUN1(VAR19);
+VAR20 VAR13;
+VAR13.FUN6(VAR11->FUN7(), VAR6->FUN3());
+const char *VAR21 = VAR13.FUN11();
+VAR22<VAR23> VAR24;
+VAR25 = strstr(VAR21, "\n");
+sscanf(VAR21, "%d %d %d", &VAR26, &VAR27, &VAR28) == 3) {
+} else if (sscanf(VAR21, "VAR29 %d %d %s",
+&VAR30.VAR31, &VAR30.VAR32, VAR30.VAR33)) {
+VAR24.FUN12(VAR30);
+} FUN9 (VAR25 && *(VAR21 = VAR25 + 1));
+VAR25 = strstr(VAR21, "\n");
+VAR23 VAR30;
+sscanf(VAR21, "%d %d %d", &VAR26, &VAR27, &VAR28) == 3) {
+} else if (sscanf(VAR21, "VAR29 %d %d %s",
+&VAR30.VAR31, &VAR30.VAR32, VAR30.VAR33)) {
+VAR24.FUN12(VAR30);
+for (VAR34 VAR35 = 0; VAR35 < VAR24.FUN13(); VAR35++) {
+for (VAR34 VAR35 = 0; VAR35 < VAR24.FUN13(); VAR35++) {
+VAR23 &VAR30 = VAR24[VAR35];
+VAR36 &VAR37 = VAR30.VAR38[VAR39];
+wchar_t VAR40 = FUN14(VAR37.VAR41, VAR42);
+FUN14(const VAR43& VAR44, int VAR45)
+VAR46.VAR47 = VAR44.VAR48;
+VAR46.VAR49 = VAR44.VAR50;
+FUN15(VAR46.VAR49, VAR46.VAR47);
+wchar_t VAR40 = FUN14(VAR37.VAR41, VAR42);

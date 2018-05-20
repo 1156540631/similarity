@@ -1,0 +1,5 @@
+babyfied_volubleness coelenterata_detruded = 0;
+va_list anglophone_daemonurgist;
+__builtin_va_start(anglophone_daemonurgist,porcelanic_pyelogram);
+coelenterata_detruded = (va_arg(anglophone_daemonurgist,babyfied_volubleness ));
+free(((char *)coelenterata_detruded));

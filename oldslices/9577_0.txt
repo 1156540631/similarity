@@ -1,0 +1,5 @@
+void stonesoup_handle_taint(char *pva_federalizes)
+achlorhydria_unpeculiarly . reunionistic_cabinlike = ((char *)pva_federalizes);
+upclimbed_cellule(achlorhydria_unpeculiarly);
+void upclimbed_cellule(struct ulicon_crosswicks pochay_mercator)
+free(((char *)pochay_mercator . reunionistic_cabinlike));

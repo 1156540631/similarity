@@ -1,0 +1,14 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+data = goodG2BSource(data);
+static char * goodG2BSource(char * data)
+strcpy(data, "fixedstringtest");
+return data;
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

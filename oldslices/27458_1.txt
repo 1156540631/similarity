@@ -1,0 +1,10 @@
+#define SRC_STRING "AAAAAAAAAA"
+data = NULL;
+badStatic = 1;
+data = badSource(data);
+static char * badSource(char * data)
+if(badStatic)
+data = (char *)malloc(10*sizeof(char));
+return data;
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

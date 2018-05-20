@@ -1,0 +1,12 @@
+vector<char *> dataVector;
+data = (char *)malloc(100*sizeof(char));
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+badSink(dataVector);
+void badSink(vector<char *> dataVector)
+char * data = dataVector[2];
+char dest[50] = "";
+strncat(dest, data, strlen(data));

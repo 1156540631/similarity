@@ -1,0 +1,11 @@
+VAR1<CLASS1*, 8> VAR2;
+for (VAR3 VAR4 = FUN1(), VAR5 = FUN2();
+if (VAR4->FUN3()) {
+if (VAR4->FUN4()) {
+CLASS2* VAR6 = VAR4->FUN5();
+VAR6 = VAR6->FUN6();
+VAR2.FUN7(VAR6->VAR7);
+if (VAR8 < VAR2.FUN8() && VAR2.FUN9(VAR8) != VAR9) {
+if ((!VAR10 || VAR2.FUN8() != VAR11.FUN8()) && !VAR12) {
+for (VAR8 = 0; VAR8 < VAR2.FUN8(); ++VAR8) {
+printf("VAR13 float: %p\n", VAR2.FUN9(VAR8));

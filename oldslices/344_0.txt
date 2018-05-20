@@ -1,0 +1,4 @@
+MaintenanceServiceStringTable serviceStrings;
+int rv = ReadMaintenanceServiceStrings(updaterINIPath, &serviceStrings);
+MaintenanceServiceStringTable *results)
+strncpy(results->serviceDescription,

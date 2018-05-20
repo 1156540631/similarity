@@ -1,0 +1,6 @@
+inamovability_pictet = getenv("SEMIDIGESTED_MACHINEMEN");
+shipwrecks_scrawly = ((char *)inamovability_pictet);
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(shipwrecks_scrawly)));
+strncpy(stonesoup_heap_buff_64, shipwrecks_scrawly, 64);

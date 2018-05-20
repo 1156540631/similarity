@@ -1,0 +1,7 @@
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+FUN1();
+FUN2();
+FUN3();
+FUN4();
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));

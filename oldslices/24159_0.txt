@@ -1,0 +1,6 @@
+diyarbakir_subassociative = getenv("QUENCHLESS_HYPERSUBTLE");
+if (diyarbakir_subassociative != 0) {;
+stenographing_cicely = ((char *)diyarbakir_subassociative);
+if (strlen(stenographing_cicely) < 20) {
+realpath(stenographing_cicely,stonesoup_base_path);
+

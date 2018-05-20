@@ -1,0 +1,16 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+typedef struct CLASS1
+char * VAR3;
+} CLASS2;
+char * VAR4;
+CLASS2 VAR5;
+char VAR6[10];
+char VAR7[10+1];
+VAR4 = VAR6;
+VAR4[0] = '\';
+VAR5.VAR3 = VAR4;
+FUN1(VAR5);
+void FUN1(CLASS2 VAR5)
+char * VAR4 = VAR5.VAR3;
+char VAR8[10+1] = VAR2;
+strcpy(VAR4, VAR8);

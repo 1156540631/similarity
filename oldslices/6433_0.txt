@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *overfrugality_pairt)
+pseudobinary_synochal = ((int )(strlen(overfrugality_pairt)));
+memcpy(magistracy_riverside,overfrugality_pairt,pseudobinary_synochal);
+free(((char *)overfrugality_pairt));

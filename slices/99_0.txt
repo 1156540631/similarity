@@ -1,0 +1,30 @@
+CLASS1 VAR2;
+FUN2( VAR2, VAR3 );
+char *VAR4;
+int VAR5 = vasprintf( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR8 ) + strlen( VAR4 ) + 1;
+char *VAR9 = realloc( *VAR8, VAR6 );
+strcat( VAR9, VAR4 );
+*VAR8 = VAR9;
+if( FUN1( &VAR10, "%VAR1", VAR12 ) < 0 ) return -1;
+"  <track>\n"
+if( FUN1( VAR13,
+" </trackList>\n"
+if( FUN1( VAR13, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+if( FUN1( VAR13, "  <vlc:node title=\"%VAR1\">\n", VAR14->VAR7 ) < 0 )
+if( FUN1( VAR13, "   <vlc:item tid=\"%d\" />\n", VAR11->VAR15 ) < 0 )
+if( FUN1( VAR13, "  </vlc:node>\n" ) < 0 )
+static int FUN1( char **VAR8, const char *VAR3, ... )
+FUN2( VAR2, VAR3 );
+int VAR5 = vasprintf( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR8 ) + strlen( VAR4 ) + 1;
+strcat( VAR9, VAR4 );
+*VAR8 = VAR9;
+if( FUN1( &VAR10, "%VAR1", VAR12 ) < 0 ) return -1;
+char *VAR16 = strdup( VAR10 );
+if( FUN1( &VAR16, "%VAR1", VAR17 ) < 0 ) return -1;
+if( FUN1( VAR13,
+if( FUN1( VAR13, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+if( FUN1( VAR13, "  </vlc:node>\n" ) < 0 )
+static int FUN1( char **VAR8, const char *VAR3, ... )
+int VAR6 = strlen( *VAR8 ) + strlen( VAR4 ) + 1;

@@ -1,0 +1,14 @@
+int i_header_len = 0;
+! memcmp ( p_oggpacket->packet, "Annodex", 7 ) )
+! memcmp ( p_oggpacket->packet, "AnxData", 7 ) )
+p_oggpacket->packet += 9;
+p_oggpacket->packet, p_stream->i_headers );
+p_oggpacket->bytes, p_oggpacket->packet ) )
+Ogg_UpdatePCR( p_stream, p_oggpacket );
+i_header_len = (*p_oggpacket->packet & PACKET_LEN_BITS01) >> 6;
+i_header_len++;
+p_oggpacket->bytes - i_header_len );
+static void Ogg_UpdatePCR    ( logical_stream_t *, ogg_packet * );
+Ogg_UpdatePCR( p_stream, p_oggpacket );
+i_header_len |= (*p_oggpacket->packet & PACKET_LEN_BITS2) << 1;
+p_oggpacket->bytes - i_header_len );

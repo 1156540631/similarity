@@ -1,0 +1,4 @@
+V9fsString extension;
+v9fs_string_init(&extension);
+&perm, &mode, &extension);
+int32_t ofid = atoi(extension.data);

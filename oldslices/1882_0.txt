@@ -1,0 +1,19 @@
+void av_url_split(char *proto,int proto_size,char *authorization,int authorization_size,char *hostname,int hostname_size,int *port_ptr,char *path,int path_size,const char *url)
+const char *at;
+const char *col;
+if (p = (strchr(url,':'))) {
+p++;
+p++;
+p++;
+ls = (strchr(p,'/'));
+ls2 = (strchr(p,63));
+ls = ls2;
+ls = (ls > ls2?ls2 : ls);
+av_strlcpy(path,ls,path_size);
+ls = &p[strlen(p)];
+while((at = (strchr(p,'@'))) && at < ls){
+p = at + 1;
+while((at = (strchr(p,'@'))) && at < ls){
+if (( *p) == '[' && (brk = (strchr(p,']'))) && brk < ls) {
+if ((col = (strchr(p,':'))) && col < ls) {
+*port_ptr = atoi(col + 1);

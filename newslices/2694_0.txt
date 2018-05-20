@@ -1,0 +1,3 @@
+VAR1 VAR2;
+time(&VAR2);
+VAR3 = localtime((&VAR2));

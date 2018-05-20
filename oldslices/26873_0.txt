@@ -1,0 +1,8 @@
+struct stat st;
+if (fstat(fileno(fp), &st) < 0)
+pw = sm_getpwuid(st.st_uid);
+ctladdr->q_ruser = newstr(pw->pw_name);
+sh = pw->pw_shell;
+sh = "/SENDMAIL/ANY/SHELL/";
+if (!usershellok(pw->pw_name, sh))
+syslog(LOG_INFO, "%s: user %s has bad shell %s, marked %s", shortenstring(fname, 203), pw->pw_name, sh, safechown ? "bogus" : "unsafe");

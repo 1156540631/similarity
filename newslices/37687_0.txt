@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = VAR2;
+VAR1 = new char[100];
+VAR1[0] = '\';
+VAR3.FUN1(VAR1);
+void VAR4::FUN1(char * VAR1) const
+char VAR5[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+FUN2(VAR1, 100, "%s", VAR5);

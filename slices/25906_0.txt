@@ -1,0 +1,15 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR522,"NICKS_PRIORITIZED");
+if (VAR522 != 0) {;
+VAR523 = ((void *)VAR522);
+*VAR524 = VAR523;

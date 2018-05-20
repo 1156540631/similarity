@@ -1,0 +1,12 @@
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+FUN54(&VAR8);
+void FUN54(void * VAR14)
+int * VAR15 = (int *)VAR14;
+int VAR8 = (*VAR15);
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

@@ -1,0 +1,13 @@
+char * data;
+list<char *> dataList;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+data = dataBadBuffer;
+data[0] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+void badSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

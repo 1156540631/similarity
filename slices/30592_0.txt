@@ -1,0 +1,12 @@
+const int VAR10 = 1;
+const int VAR11 = 0;
+VAR5 = -1;
+if(VAR10)
+VAR12 = recv(VAR55, VAR14, VAR15 - 1, 0);
+VAR14[VAR12] = '\0';
+VAR5 = atoi(VAR14);
+if(VAR11){}
+else
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

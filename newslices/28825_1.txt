@@ -1,0 +1,9 @@
+static const int VAR1 = 1;
+static const int VAR2 = 0;
+char * VAR3;
+VAR3 = (char *)malloc(100*sizeof(char));
+if(VAR1)
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+char VAR4[50] = "";
+strcat(VAR4, VAR3);

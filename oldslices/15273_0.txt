@@ -1,0 +1,15 @@
+twoIntsStruct * data;
+list<twoIntsStruct *> dataList;
+twoIntsStruct dataBadBuffer[50];
+twoIntsStruct dataGoodBuffer[100];
+data = dataGoodBuffer;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memcpy(data, source, 100*sizeof(twoIntsStruct));
+void goodG2BSink(list<twoIntsStruct *> dataList)
+twoIntsStruct * data = dataList.back();
+memcpy(data, source, 100*sizeof(twoIntsStruct));

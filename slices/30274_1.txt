@@ -1,0 +1,12 @@
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+const CLASS17& CLASS11 = CLASS18();
+CLASS11.FUN42(VAR8);
+namespace CWE680_Integer_Overflow_to_VAR7_Overflow__malloc_connect_socket_81
+void CLASS18::FUN42(int VAR8) const
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

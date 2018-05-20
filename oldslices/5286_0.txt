@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *antipode_winkelried)
+boatel_macron = ((int )(strlen(antipode_winkelried)));
+leptorrhinian_condensability = ((char *)(malloc(boatel_macron + 1)));

@@ -1,0 +1,8 @@
+data = NULL;
+data = goodG2B1Source(data);
+int * goodG2B2Source(int * data)
+data = new int[100];
+return data;
+data = goodG2B1Source(data);
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

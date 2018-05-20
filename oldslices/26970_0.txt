@@ -1,0 +1,14 @@
+main(int argc, char **argv)
+if(argc > 1) {
+userstr = argv[1];
+str2 = shortstr(userstr, strlen(userstr), MAXSIZE-1);
+shortstr(char *p, int n, int targ)
+if(n > targ){
+return shortstr(p+1, n-1, targ);}
+return p;
+str2 = shortstr(userstr, strlen(userstr), MAXSIZE-1);
+test(str2);
+test(char *str)
+strcpy(buf, str);
+printf("result: %s\n", buf);
+free(buf);

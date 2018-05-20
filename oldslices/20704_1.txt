@@ -1,0 +1,7 @@
+void manganocalcite_polysorbate(char *lamaite_elaeagnaceous)
+cystonephrosis_inferrer(lamaite_elaeagnaceous);
+void cystonephrosis_inferrer(char *milkshop_ulcerative)
+ocelliferous_tansies = ((char *)milkshop_ulcerative);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(ocelliferous_tansies)+1, ocelliferous_tansies, "TRIGGER-STATE");
+strncpy(stonesoup_data, ocelliferous_tansies, strlen(ocelliferous_tansies) + 1);

@@ -1,0 +1,5 @@
+stonesoup_printf("Error: Failed to allocate memory\n");
+stonesoup_printf("%c",stonesoup_stack_buff_64[stonesoup_ss_i]);
+stonesoup_printf("\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

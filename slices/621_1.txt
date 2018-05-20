@@ -1,0 +1,4 @@
+FUN1(const WCHAR *VAR3,
+wcscpy(VAR2, VAR3);
+wcscpy(VAR4, VAR3);
+wcscpy(VAR1, VAR3);

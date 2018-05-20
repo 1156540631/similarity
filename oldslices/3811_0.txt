@@ -1,0 +1,5 @@
+char *name;
+pw = getpwnam(name);
+*p = tolower(*p);
+for (p = name; *p != '\0'; p++)
+if (isascii((int)*p) && isupper((int)*p))

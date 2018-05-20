@@ -1,0 +1,6 @@
+VAR1=(int**) malloc(10*sizeof(int*));
+VAR1[VAR2][0] =10;
+FUN1();
+if(FUN2(VAR3)==0)
+VAR1[VAR2] = VAR4;
+free(VAR1);

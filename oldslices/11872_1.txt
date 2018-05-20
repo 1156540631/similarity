@@ -1,0 +1,6 @@
+data = (wchar_t *)malloc(100*sizeof(wchar_t));
+badSource(data);
+void badSource(wchar_t * &data);
+memcpy(dest, data, wcslen(data)*sizeof(wchar_t));
+printWLine(data);
+free(data);

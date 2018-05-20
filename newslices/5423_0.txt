@@ -1,0 +1,3 @@
+FUN1(const char *VAR1)
+for (VAR2 = VAR1; (VAR3 = *VAR2) != '\'; VAR2++) {
+else if (!isprint((unsigned char)VAR3)) {

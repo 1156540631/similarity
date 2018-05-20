@@ -1,0 +1,7 @@
+for (VAR2 = (char *)FUN2(VAR10);
+VAR2 = (char *)FUN3(VAR10))
+if (!strcmp(VAR2, "@LOCAL"))
+else if (!strncmp(VAR2, "@IF(", 4))
+strlcpy(VAR6, VAR2 + 4, sizeof(VAR6));
+VAR1 = FUN1(VAR2, VAR3, NULL);
+fprintf(stderr, "VAR30: Unable to scan \"%VAR6\"!\VAR2", VAR2);

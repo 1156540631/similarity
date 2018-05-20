@@ -1,0 +1,9 @@
+char * data;
+void (*funcPtr) (char *) = goodG2BSink;
+data = new char[100];
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+funcPtr(data);
+static void goodG2BSink(char * data)
+char dest[50] = "";
+SNPRINTF(dest, strlen(data), "%s", data);

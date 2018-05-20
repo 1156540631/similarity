@@ -1,0 +1,3 @@
+char *entity = nullptr;
+rv = mEntityConverter->ConvertUTF32ToEntity(inUCS4, mEntityVersion, &entity);
+if (!entity || (int32_t)strlen(entity) > bufferLength) {

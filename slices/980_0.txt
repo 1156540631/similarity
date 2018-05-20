@@ -1,0 +1,4 @@
+static void FUN4(char * VAR1)
+strcpy(VAR1, VAR2);
+FUN2(VAR1);
+free(VAR1);

@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *chrismatize_ria)
+quadrilling_stomachic = ((int )(strlen(chrismatize_ria)));
+memcpy(hairless_widukind,chrismatize_ria,quadrilling_stomachic);
+free(((char *)chrismatize_ria));

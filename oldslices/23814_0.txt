@@ -1,0 +1,24 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&salnatron_minsteryard,"PHRYGANEOID_JENEQUEN");
+if (salnatron_minsteryard != 0) {;
+unstirred_antiasthmatic[20] = salnatron_minsteryard;
+stymphalian_dodson = &unstirred_antiasthmatic;
+saul_hyacine = &stymphalian_dodson;
+neutrodyne_maewo = &saul_hyacine;
+featurelessness_lecoma = &neutrodyne_maewo;
+millen_metropolitical = &featurelessness_lecoma;
+mydriatine_emblematise = &millen_metropolitical;
+sogat_desmepithelium = &mydriatine_emblematise;
+guaranteer_chinoline = &sogat_desmepithelium;
+pallini_fatalism = &guaranteer_chinoline;
+scenewright_preutilized = &pallini_fatalism;

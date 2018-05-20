@@ -1,0 +1,6 @@
+int FUN1(int VAR1, char **VAR2)
+VAR3 = (char *)malloc(VAR4);
+if (VAR1 > 1 && strlen(VAR2[1]) < VAR4)
+strcpy(VAR3, VAR2[1]);
+printf("VAR3 = %s\n", VAR3);
+free(VAR3);

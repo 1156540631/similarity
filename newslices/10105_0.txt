@@ -1,0 +1,5 @@
+VAR1<VAR2> VAR3::FUN1(VAR2* VAR4, VAR5& VAR6)
+if (VAR4->FUN2() != this) {
+if (FUN3() != VAR4->FUN3()) {
+CLASS1* VAR7 = FUN4(true);
+return VAR8<VAR2>(VAR7->FUN5(VAR4->FUN6(), VAR6));

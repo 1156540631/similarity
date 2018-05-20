@@ -1,0 +1,8 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+const CWE134_Uncontrolled_Format_String__char_console_fprintf_81_base& baseObject = CWE134_Uncontrolled_Format_String__char_console_fprintf_81_goodG2B();
+baseObject.action(data);
+void CWE134_Uncontrolled_Format_String__char_console_fprintf_81_goodG2B::action(char * data) const
+fprintf(stdout, data);

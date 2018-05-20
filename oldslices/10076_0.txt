@@ -1,0 +1,6 @@
+void badSink(list<int> dataList)
+int data = dataList.back();
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

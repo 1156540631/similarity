@@ -1,0 +1,75 @@
+bytes_tvb = tvb_new_child_real_data(tvb, buf, i, i);
+proto_tree_add_text(tree, tvb, offset, tokenlen, "Debug; Analysed string: '%s'",
+next_offset = tvb_find_guint8(tvb, offset, -1, '=');
+offset = next_offset;
+offset++;
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+item = proto_tree_add_uint(tree, hf_sdp_fmtp_mpeg4_profile_level_id, tvb, offset, tokenlen,
+atol((char*)format_specific_parameter));
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+data_tvb = ascii_bytes_to_tvb(tvb, pinfo, tokenlen, format_specific_parameter);
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+item = proto_tree_add_uint(tree, hf_sdp_fmtp_h263_profile, tvb, offset, tokenlen,
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+item = proto_tree_add_uint(tree, hf_sdp_fmtp_h263_level, tvb, offset, tokenlen,
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+data_tvb = ascii_bytes_to_tvb(tvb, pinfo, tokenlen, format_specific_parameter);
+proto_tree_add_text(tree, tvb, offset, tokenlen, "Could not convert '%s' to 3 bytes", format_specific_parameter);
+item = proto_tree_add_text(tree, tvb, offset, tokenlen, "Incorrectly coded, must be three bytes");
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+item = proto_tree_add_uint(tree, hf_sdp_h264_packetization_mode, tvb, offset, tokenlen,
+comma_offset = tvb_find_guint8(tvb, offset, -1, ',');
+data_p = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_text(tree, tvb, offset, tokenlen, "NAL unit 1 string: %s", data_p);
+data_tvb = base64_to_tvb(tvb, data_p);
+show_reported_bounds_error(tvb, pinfo, tree);
+data_p   = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_text(tree, tvb, offset, tokenlen, "NAL unit 2 string: %s", data_p);
+data_tvb = base64_to_tvb(tvb, data_p);
+(tvb_strncaseeql(tvb, offset, sdp_media_attribute_names[i].name, len) == 0))
+offset = 0;
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+offset = colon_offset + 1;
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+attribute_value = tvb_get_ephemeral_string(tvb, offset, tvb_length_remaining(tvb, offset));
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+hf_media_format, tvb, offset,
+media_format = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));
+payload_type = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ';');
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+next_offset= tvb_length(tvb);
+tokenlen = next_offset - offset;
+hf_media_format_specific_parameter, tvb,
+decode_sdp_fmtp(fmtp_tree, tvb, pinfo, offset, tokenlen,
+hf_media_format_specific_parameter, tvb,
+offset = next_offset + 1;
+offset, tokenlen, ENC_ASCII|ENC_NA);
+decode_sdp_fmtp(fmtp_tree, tvb, pinfo, offset, tokenlen,
+decode_sdp_fmtp(proto_tree *tree, tvbuff_t *tvb, packet_info *pinfo, gint offset, gint tokenlen, char *mime_type) {
+end_offset = offset + tokenlen;
+proto_tree_add_text(tree, tvb, offset, tokenlen, "Debug; Analysed string: '%s'",
+next_offset = tvb_find_guint8(tvb, offset, -1, '=');
+field_name = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+tokenlen = end_offset - offset;
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+atol((char*)format_specific_parameter));
+decode_sdp_fmtp(fmtp_tree, tvb, pinfo, offset, tokenlen,
+hf_media_format_specific_parameter, tvb,
+decode_sdp_fmtp(fmtp_tree, tvb, pinfo, offset, tokenlen,
+static void dissect_sdp_media_attribute(tvbuff_t *tvb, packet_info *pinfo, proto_item * ti, int length, transport_info_t *transport_info) {
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+static gint find_sdp_media_attribute_names(tvbuff_t *tvb, int offset, guint len)
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+next_offset = tvb_find_guint8(tvb, offset, -1, ';');
+hf_media_format_specific_parameter, tvb,
+decode_sdp_fmtp(fmtp_tree, tvb, pinfo, offset, tokenlen,
+ascii_bytes_to_tvb(tvbuff_t *tvb, packet_info *pinfo, gint len, gchar *msg)
+data_tvb = ascii_bytes_to_tvb(tvb, pinfo, tokenlen, format_specific_parameter);
+format_specific_parameter = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+data_tvb = ascii_bytes_to_tvb(tvb, pinfo, tokenlen, format_specific_parameter);

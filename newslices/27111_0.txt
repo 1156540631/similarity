@@ -1,0 +1,2 @@
+int FUN1(int VAR1, char **VAR2)
+if (strlen(VAR2[1]) < VAR3)

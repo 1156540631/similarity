@@ -1,0 +1,16 @@
+char line[256];
+while (fgets(line, sizeof line, pFile) != NULL) {
+line[pos + 1] = '\0';
+if (sscanf(&line[0], "%x", &hash) != 1)
+pos = strcspn(line, ",");
+while (fgets(line, sizeof line, pFile) != NULL) {
+g_strdup_printf("%." ETCH_MAX_SYMBOL_LENGTH "s", &line[pos+1]));
+char         *filename;
+g_free(filename);
+add_symbols_of_file(filename);
+gbl_symbols_array_append(int hash, gchar *symbol) {
+g_strdup_printf("%." ETCH_MAX_SYMBOL_LENGTH "s", &line[pos+1]));
+while (fgets(line, sizeof line, pFile) != NULL) {
+add_symbols_of_file(const char *filename)
+pFile = ws_fopen(filename, "r");
+while (fgets(line, sizeof line, pFile) != NULL) {

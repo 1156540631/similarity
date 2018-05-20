@@ -1,0 +1,4 @@
+data = new wchar_t[10+1];
+goodG2BSink(data);
+void goodG2BSink(wchar_t * data)
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

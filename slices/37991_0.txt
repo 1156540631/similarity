@@ -1,0 +1,14 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+goto source;
+source:
+strcpy(VAR1, "fixedstringtest");
+goto sink;
+sink:
+FUN1(VAR1, VAR1);
+static void FUN1(char * VAR1, ...)
+char VAR7[100] = "";
+va_list VAR8;
+va_start(VAR8, VAR1);
+vsnprintf(VAR7, 100-1, VAR1, VAR8);

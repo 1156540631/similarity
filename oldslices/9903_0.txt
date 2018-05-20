@@ -1,0 +1,6 @@
+register char *addr;
+char address[100];
+scanf("%99s", address);
+res_addr = crackaddr(address);
+addr++;
+while (*addr != '\0' && isascii((int)*addr) && isspace((int)*addr))

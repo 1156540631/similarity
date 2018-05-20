@@ -1,0 +1,3 @@
+int opt_max_alloc(void *optctx,const char *opt,const char *arg)
+char *tail;
+max = (strtol(arg,&tail,'\n'));

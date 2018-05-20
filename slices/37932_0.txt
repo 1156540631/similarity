@@ -1,0 +1,14 @@
+int VAR9 = 1;
+int VAR10 = 0;
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(VAR9)
+strcpy(VAR1, "fixedstringtest");
+if(VAR9)
+FUN3(VAR1, VAR1);
+static void FUN3(char * VAR1, ...)
+char VAR7[100] = "";
+va_list VAR8;
+va_start(VAR8, VAR1);
+vsnprintf(VAR7, 100-1, VAR1, VAR8);

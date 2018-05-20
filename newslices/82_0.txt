@@ -1,0 +1,5 @@
+if (!(VAR1 = strchr(VAR2, '=')))
+VAR1++;
+for (; *VAR1 && !(isspace(*VAR1) || *VAR1 == ','); VAR1++)
+VAR2 = VAR1;
+if (!(VAR1 = strchr(VAR2, '=')))

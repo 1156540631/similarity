@@ -1,0 +1,3 @@
+char exp_dn[200], exp_dn2[200];
+strcpy(exp_dn, "lcs.mit.edu");
+printf("uncomp_size = %d\n", strlen(exp_dn));

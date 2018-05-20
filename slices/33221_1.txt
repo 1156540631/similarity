@@ -1,0 +1,9 @@
+char * VAR1;
+char VAR2[50];
+if(FUN2())
+VAR1 = VAR2;
+VAR1[0] = '\0';
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR4);

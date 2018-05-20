@@ -1,0 +1,13 @@
+int64_t * data;
+map<int, int64_t *> dataMap;
+int64_t dataBadBuffer[50];
+int64_t dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, int64_t *> dataMap)
+int64_t * data = dataMap[2];
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

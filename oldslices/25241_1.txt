@@ -1,0 +1,5 @@
+stonesoup_input_string = (signed char *) getenv("INPUT_STRING");
+if (stonesoup_input_string != 0) {
+for (stonesoup_i = 0; stonesoup_i < strlen((char *) stonesoup_input_string); ++stonesoup_i) {
+if (stonesoup_input_string[stonesoup_i] < 0)
+++stonesoup_data->buffer[stonesoup_input_string[stonesoup_i]];

@@ -1,0 +1,6 @@
+V9fsString version;
+v9fs_string_init(&version);
+err = pdu_unmarshal(pdu, offset, "ds", &s->msize, &version);
+trace_v9fs_version(pdu->tag, pdu->id, s->msize, version.data);
+if (!strcmp(version.data, "9P2000.u")) {
+} else if (!strcmp(version.data, "9P2000.L")) {

@@ -1,0 +1,5 @@
+convert_string_to_hex(const char *string, size_t *nbytes)
+p = &string[0];
+c = *p++;
+if (isspace(c))
+if (isdigit(c))

@@ -1,0 +1,2 @@
+if ((VAR1 = (char *)malloc(256*sizeof(char))) != VAR2)
+strcpy(VAR1, "VAR3!");

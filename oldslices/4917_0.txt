@@ -1,0 +1,4 @@
+void offsprings_azotic(char *preodorous_ulani)
+balloons_contamination(preodorous_ulani);
+void balloons_contamination(char *debtee_kurr)
+free(((char *)debtee_kurr));

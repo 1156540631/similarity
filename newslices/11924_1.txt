@@ -1,0 +1,10 @@
+VAR1[63] = '\';
+FUN1(VAR2, VAR3, "VAR1", VAR1, "VAR4-VAR5");
+strncpy(VAR1, VAR6, 64);
+FUN1(VAR2, VAR3, "VAR1", VAR1, "TAINTED");
+FUN2("%02x",VAR1[VAR7]);
+FUN1(VAR2, VAR3, "VAR1", VAR1, "VAR8-VAR5");
+free( VAR1);
+void FUN2(char * VAR9, ...) {
+FUN1(VAR2, VAR3, "VAR1", VAR1, "VAR8-VAR5");
+free( VAR1);

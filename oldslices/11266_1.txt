@@ -1,0 +1,6 @@
+data[0] = '\0';
+char * dataCopy = data;
+char * data = dataCopy;
+strcat(data, source);
+printLine(data);
+free(data);

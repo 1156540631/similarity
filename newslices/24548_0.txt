@@ -1,0 +1,2 @@
+VAR1 = getchar();
+FUN1(VAR1 != '\' && VAR1 != - 1)

@@ -1,0 +1,24 @@
+int serial = ogg_page_serialno(&page);
+nsOggCodecState* codecState = 0;
+if (!ogg_page_bos(&page))
+readAllBOS = PR_TRUE;
+else if (!mCodecStates.Get(serial, nsnull))
+unionType myUnion;
+codecState = nsOggCodecState::Create(&page);
+myUnion.unionFirst = codecState;
+nsOggCodecState * codecState = myUnion.unionSecond;
+DebugOnly<PRBool> r = mCodecStates.Put(serial, codecState);
+NS_ASSERTION(r, "Failed to insert into mCodecStates");
+bitstreams.AppendElement(codecState);
+mKnownStreams.AppendElement(serial);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_VORBIS && !mVorbisState)
+mVorbisState = static_cast<nsVorbisState*>(codecState);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_THEORA && !mTheoraState)
+mTheoraState = static_cast<nsTheoraState*>(codecState);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_SKELETON && !mSkeletonState)
+mSkeletonState = static_cast<nsSkeletonState*>(codecState);
+mCodecStates.Get(serial, &codecState);
+NS_ENSURE_TRUE(codecState, NS_ERROR_FAILURE);
+if (NS_FAILED(codecState->PageIn(&page)))
+return NS_ERROR_FAILURE;
+memcpy(&mTheoraInfo, &mTheoraState->mInfo, sizeof(mTheoraInfo));

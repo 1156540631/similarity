@@ -1,0 +1,7 @@
+void twangy_entourage(union orchidectomies_carrel dermatorrhagia_niched)
+scrogie_transmitter = ((char *)dermatorrhagia_niched . dunkers_crosette);
+stonesoup_fp = stonesoup_switch_func(scrogie_transmitter);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

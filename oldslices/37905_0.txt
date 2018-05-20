@@ -1,0 +1,10 @@
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_22_goodB2G1Sink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE129_connect_socket_22_goodB2G1Sink(int data)
+int * buffer = (int *)malloc(10 * sizeof(int));
+buffer[i] = 0;
+if (data >= 0 && data < (10))
+buffer[data] = 1;

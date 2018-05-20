@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100];
+data = dataBuffer;
+goodG2BSource(data);
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+char dest[50] = "";
+data[50-1] = '\0';
+strcpy(dest, data);

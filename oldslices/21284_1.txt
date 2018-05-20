@@ -1,0 +1,6 @@
+void dominionism_gossipmonger(int barotseland_hih,destructors_maru *yaounde_aedility)
+fofarraw_tritural = ((char *)( *(yaounde_aedility - 5)));
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+memset(stonesoup_data->buffer,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, fofarraw_tritural);

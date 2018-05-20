@@ -1,0 +1,6 @@
+wchar_t * VAR5 = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+VAR1 = VAR5;
+CLASS1 CLASS2;
+wchar_t * VAR1 = CLASS2.VAR9;
+VAR4[100-1] = L'\0';
+wcsncat(VAR1, VAR4, 100);

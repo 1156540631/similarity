@@ -1,0 +1,4 @@
+char   *p;
+content_length = strtol(tmp, &p, 10);
+up = p;
+if (up == tmp || (*up != '\0' && !isspace(*up)))

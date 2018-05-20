@@ -1,0 +1,15 @@
+*VAR24 = NULL;
+*VAR24 = NULL;
+int VAR375 = 53;
+char *VAR374;
+FUN1(&VAR374,"5835",VAR375);
+VAR376 = ((char *)VAR374);
+tracepoint(VAR31, VAR32, "STONESOUP_TAINT_SOURCE", strlen(VAR376)+1, VAR376, "TRIGGER-STATE");
+strncpy(VAR11.VAR12, VAR376, strlen(VAR376) + 1);
+void FUN1(char** VAR24, char* VAR278, int VAR281) {
+if ((VAR299 = shmget(VAR277, VAR281, 0666)) >= 0) {
+*VAR24 = (char*)calloc(VAR281, sizeof(char));
+FUN1(&VAR374,"5835",VAR375);
+VAR376 = ((char *)VAR374);
+tracepoint(VAR31, VAR32, "STONESOUP_TAINT_SOURCE", strlen(VAR376)+1, VAR376, "TRIGGER-STATE");
+strncpy(VAR11.VAR12, VAR376, strlen(VAR376) + 1);

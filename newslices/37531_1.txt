@@ -1,0 +1,10 @@
+wchar_t * VAR1;
+wchar_t * VAR2 = (wchar_t *)FUN1(100*sizeof(wchar_t));
+VAR1 = VAR2;
+FUN2(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+const VAR3& VAR4 = FUN3();
+VAR4.FUN4(VAR1);
+void FUN3::FUN4(wchar_t * VAR1) const
+wchar_t VAR5[50] = VAR6"";
+FUN5(VAR5, VAR1);

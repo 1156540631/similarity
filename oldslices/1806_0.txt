@@ -1,0 +1,4 @@
+emem_tree_lookup_string(emem_tree_t* se_tree, const gchar* k, guint32 flags)
+guint32 len = (guint) strlen(k);
+ch = (unsigned char)k[i];
+if(isupper(ch)) {

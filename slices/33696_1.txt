@@ -1,0 +1,9 @@
+wchar_t * VAR1;
+wchar_t VAR2[50];
+VAR1 = VAR2;
+VAR1[0] = L'\0';
+const CLASS17& CLASS6 = CLASS18();
+CLASS6.FUN13(VAR1);
+void CLASS18::FUN13(wchar_t * VAR1) const
+VAR4[100-1] = L'\0';
+SNPRINTF(VAR1, 100, L"%s", VAR4);

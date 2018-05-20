@@ -1,0 +1,4 @@
+if( CreatePlaylist( s, &p_sys->psz_xspf ) < 0 )
+static int CreatePlaylist( stream_t *s, char **pp_buffer );
+if( CreatePlaylist( s, &p_sys->psz_xspf ) < 0 )
+p_sys->i_len = strlen( p_sys->psz_xspf );

@@ -1,0 +1,7 @@
+process_rtsp_request(tvbuff_t *tvb, int offset, const guchar *data,
+g_ascii_strncasecmp(rtsp_methods[ii], data, len) == 0 &&
+(len == linelen || isspace(data[len])))
+url = data;
+while (url < lineend && !isspace(*url))
+url++;
+while (url < lineend && !isspace(*url))

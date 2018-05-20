@@ -1,0 +1,17 @@
+typedef struct _CWE124_Buffer_Underwrite__CWE839_listen_socket_67_structType
+int structFirst;
+} CWE124_Buffer_Underwrite__CWE839_listen_socket_67_structType;
+CWE124_Buffer_Underwrite__CWE839_listen_socket_67_structType myStruct;
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myStruct.structFirst = data;
+CWE124_Buffer_Underwrite__CWE839_listen_socket_67b_goodB2GSink(myStruct);
+void CWE124_Buffer_Underwrite__CWE839_listen_socket_67b_goodB2GSink(CWE124_Buffer_Underwrite__CWE839_listen_socket_67_structType myStruct)
+int data = myStruct.structFirst;
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

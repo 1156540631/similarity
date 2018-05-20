@@ -1,0 +1,17 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&metabasis_chincough,"GEMMATED_WAYNESBURG");
+if (metabasis_chincough != 0) {;
+irremeably_famelic = ((char *)metabasis_chincough);
+strncpy(stonesoup_source,irremeably_famelic,sizeof(stonesoup_source));
+if (metabasis_chincough != 0)
+free(((char *)metabasis_chincough));

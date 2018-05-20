@@ -1,0 +1,3 @@
+VAR1[50-1] = L'\0';
+wchar_t VAR2[50] = L"";
+snprintf(VAR2, wcslen(VAR1), L"%s", VAR1);

@@ -1,0 +1,6 @@
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+goodB2G1_vasink(data, data);
+static void goodB2G1_vasink(char * data, ...)
+va_start(args, data);

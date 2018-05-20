@@ -1,0 +1,10 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&signifer_hydrazobenzene,"INWRAP_GRAPHIOLOGIST");
+if (signifer_hydrazobenzene != 0) {;
+braxies_sprighty . pomiculturist_inconcoct = signifer_hydrazobenzene;
+ufa_idou[5] = braxies_sprighty;
+runa_queendom =  *(ufa_idou + reconsidering_misremember[1]);
+camaldolesian_windham(australioid_fitts,runa_queendom);
+void camaldolesian_windham(int overcrops_cabinlike,union oversteadiness_composite picturemaker_bromometric);

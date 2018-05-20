@@ -1,0 +1,2 @@
+char *VAR1;
+VAR2 += strlen(VAR1);

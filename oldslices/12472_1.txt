@@ -1,0 +1,5 @@
+ipmi_add_timestamp(proto_tree *tree, gint hf, tvbuff_t *tvb, guint offset)
+guint32 ts = tvb_get_letohl(tvb, offset);
+char buf[64];
+time_t t = ts;
+strftime(buf, sizeof(buf), "%F %T", gmtime(&t));

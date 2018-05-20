@@ -1,0 +1,3 @@
+const char *VAR1)
+char *VAR2;
+VAR3 = strtol(VAR1 + 1, &VAR2, 0);

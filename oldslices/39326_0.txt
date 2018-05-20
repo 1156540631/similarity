@@ -1,0 +1,16 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+CWE134_Uncontrolled_Format_String__char_console_snprintf_67_structType myStruct;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+myStruct.structFirst = data;
+CWE134_Uncontrolled_Format_String__char_console_snprintf_67b_goodG2BSink(myStruct);
+void CWE134_Uncontrolled_Format_String__char_console_snprintf_67b_goodG2BSink(CWE134_Uncontrolled_Format_String__char_console_snprintf_67_structType myStruct)
+char * data = myStruct.structFirst;
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

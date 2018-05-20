@@ -1,0 +1,15 @@
+char * VAR1;
+VAR1 = NULL;
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6 - 8;
+CLASS43* CLASS2 = new CLASS44;
+CLASS2->FUN2(VAR1);
+void CLASS44::FUN2(char * VAR1)
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));
+VAR8[100-1] = '\0';
+delete CLASS2;

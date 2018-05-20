@@ -1,0 +1,4 @@
+double *ptr, *dptr = 0,a;
+a = *(ptr+1);
+a = *(dptr+1);
+printf("%lf",a);

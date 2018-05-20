@@ -1,0 +1,25 @@
+c = split(arg[i],"=",&n);
+norm_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+file_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+dir_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+if (strcasecmp("target",c[1]) == 0) {
+link_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+fifo_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+door_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+block_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+char_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+orphan_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+sock_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+suid_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+sgid_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+stickyow_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+otherwr_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+sticky_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+exec_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+missing_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+leftcode = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+rightcode = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+endcode = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+e -> ext = strcpy((xmalloc(strlen((c[0] + 1)) + 1)),(c[0] + 1));
+e -> term_flg = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+free(c);

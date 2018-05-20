@@ -1,0 +1,14 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+CWE134_Uncontrolled_Format_String__char_console_snprintf_34_unionType myUnion;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+myUnion.unionFirst = data;
+char * data = myUnion.unionSecond;
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

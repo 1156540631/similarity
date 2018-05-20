@@ -1,0 +1,17 @@
+wchar_t * VAR20;
+wchar_t VAR3[100];
+wmemset(VAR3, L'A', 100-1);
+VAR3[100-1] = L'\0';
+VAR20 = VAR3;
+FUN22(VAR20);
+void FUN22(wchar_t * VAR20)
+FUN23(VAR20);
+void FUN23(wchar_t * VAR20)
+FUN24(VAR20);
+void FUN24(wchar_t * VAR20)
+FUN25(VAR20);
+void FUN25(wchar_t * VAR20)
+wchar_t VAR21[100];
+wmemset(VAR21, L'C', 100-1);
+VAR21[100-1] = L'\0';
+wcsncpy(VAR20, VAR21, 100-1);

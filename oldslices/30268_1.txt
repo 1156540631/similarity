@@ -1,0 +1,10 @@
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_63b_badSink(&data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_63b_badSink(int * dataPtr)
+int data = *dataPtr;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

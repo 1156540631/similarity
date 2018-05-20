@@ -1,0 +1,5 @@
+void FUN1(list<CLASS4 *> VAR1)
+CLASS4 * VAR7 = VAR1.FUN2();
+memmove(VAR25, VAR7, wcslen(VAR7)*sizeof(CLASS4));
+FUN3(VAR7);
+free(VAR7);

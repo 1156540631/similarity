@@ -1,0 +1,5 @@
+CLASS1 * &VAR1 = VAR2;
+VAR2 = (CLASS1 *)malloc(50*sizeof(CLASS1));
+CLASS1 * VAR2 = VAR1;
+CLASS1 VAR3[100] = {0};
+memcpy(VAR2, VAR3, 100*sizeof(CLASS1));

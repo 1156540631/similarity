@@ -1,0 +1,3 @@
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+*dataPtr1 = data;

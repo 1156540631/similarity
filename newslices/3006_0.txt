@@ -1,0 +1,3 @@
+static void FUN1(void * VAR1)
+VAR2 VAR3 = FUN2((wchar_t *)VAR1);
+void * VAR4 = (void *)calloc(VAR3+1, sizeof(wchar_t));

@@ -1,0 +1,23 @@
+svn_error_t *svn_cmdline__edit_file_externally(const char *path,const char *editor_cmd,apr_hash_t *config,apr_pool_t *pool)
+svn_dirent_split(&base_dir,&file_name,path,pool);
+svn_error_t *svn_err__temp = find_editor_binary(&editor,editor_cmd,config);
+apr_err = apr_filepath_get(&old_cwd,0x10,pool);
+apr_err = apr_filepath_set(base_dir_apr,pool);
+cmd = (apr_psprintf(pool,"%s %s",editor,file_name));
+sys_err = system(cmd);
+static svn_error_t *find_editor_binary(const char **editor,const char *editor_cmd,apr_hash_t *config)
+e = editor_cmd;
+e = (getenv("SVN_EDITOR"));
+svn_config_get(cfg,&e,"helpers","editor-cmd",((void *)0));
+e = (getenv("VISUAL"));
+e = (getenv("EDITOR"));
+e = "/usr/bin/vi";
+*editor = e;
+const char *editor;
+const char *file_name;
+svn_error_t *svn_err__temp = find_editor_binary(&editor,editor_cmd,config);
+cmd = (apr_psprintf(pool,"%s %s",editor,file_name));
+sys_err = system(cmd);
+apr_err = apr_filepath_set(old_cwd,pool);
+cmd = (apr_psprintf(pool,"%s %s",editor,file_name));
+sys_err = system(cmd);

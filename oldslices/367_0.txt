@@ -1,0 +1,5 @@
+stream_sys_t *p_sys;
+s->p_sys = p_sys = calloc( 1, sizeof( *p_sys ) );
+calloc( 1, sizeof( zlib_filefunc_def ) );
+p_sys->fileFunctions = ( zlib_filefunc_def * )
+free( p_sys );

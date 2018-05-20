@@ -1,0 +1,11 @@
+char * data;
+data = NULL;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_61b_goodG2BSource(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_ncpy_61b_goodG2BSource(char * data)
+data = (char *)malloc(100*sizeof(char));
+data[0] = '\0';
+return data;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);

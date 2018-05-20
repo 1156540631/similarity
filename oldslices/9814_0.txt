@@ -1,0 +1,11 @@
+vector<char *> dataVector;
+data[50-1] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+memcpy(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

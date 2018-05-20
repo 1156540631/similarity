@@ -1,0 +1,5 @@
+envvar = getenv("STRINGLEN_MED");
+if (envvar != NULL)
+i = strlen(envvar);
+if (i > 17)
+buf[i] = 'A';

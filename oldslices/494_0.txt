@@ -1,0 +1,8 @@
+folder = path;
+char *sep = strchr( folder, '/' );
+*sep = '\0';
+return findOrCreateParentNode( current, sep );
+ret = findOrCreateParentNode( ret, sep );
+static node* findOrCreateParentNode( node *root, const char *fullpath )
+char *path = strdup( fullpath );
+free( path );

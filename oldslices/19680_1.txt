@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(int64_t * &data);
+data = new int64_t[50];
+int64_t source[100] = {0};
+memcpy(data, source, 100*sizeof(int64_t));

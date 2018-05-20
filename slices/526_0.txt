@@ -1,0 +1,5 @@
+return FUN1("image2", NULL, NULL);
+VAR5 = FUN1(VAR2, NULL, NULL);
+VAR5 = FUN1(NULL, VAR6, NULL);
+const char *VAR1)
+if (VAR9->VAR1 && VAR1 && !strcmp(VAR9->VAR1, VAR1))

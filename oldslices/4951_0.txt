@@ -1,0 +1,19 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *schoolyard_unfluid;
+stonesoup_read_taint(&schoolyard_unfluid,"SAMBOS_TUCKERMANITY");
+hygrophyte_wormroot = &schoolyard_unfluid;
+sarraute_consonance(unconversant_nonspecie,hygrophyte_wormroot);
+sarraute_consonance(spoutiness_heptachord,oxybenzyl_mislikers);
+void sarraute_consonance(int spoutiness_heptachord,char **oxybenzyl_mislikers)
+free(((char *)( *oxybenzyl_mislikers)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&schoolyard_unfluid,"SAMBOS_TUCKERMANITY");
+hygrophyte_wormroot = &schoolyard_unfluid;
+sarraute_consonance(unconversant_nonspecie,hygrophyte_wormroot);

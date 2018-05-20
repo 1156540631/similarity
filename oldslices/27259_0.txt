@@ -1,0 +1,13 @@
+int globalTrue = 1;
+int globalFalse = 0;
+data = -1;
+if(globalTrue)
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+if(globalTrue)
+int * buffer = (int *)malloc(10 * sizeof(int));
+for (i = 0; i < 10; i++)
+buffer[i] = 0;
+if (data >= 0 && data < (10))
+buffer[data] = 1;

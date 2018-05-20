@@ -1,0 +1,18 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&preaffirmation_crosscurrented,"KAIK_ABOLITIONIZED");
+if (preaffirmation_crosscurrented != 0) {;
+overcasts_ringman[27] = preaffirmation_crosscurrented;
+enhydris_expeditely = overcasts_ringman;
+dillyman_beakers = ((char **)(((unsigned long )enhydris_expeditely) * harpp_seculars * harpp_seculars)) + 5;
+tyrannisingly_gerbatka(saddik_damaskeening,dillyman_beakers);
+void tyrannisingly_gerbatka(int gimmals_saebeins,char **palladia_deckle);

@@ -1,0 +1,3 @@
+neatherd_mesomorph = getenv("SPHERULA_STOMATOTOMIES");
+humbugs_locofocos = ((int )(strlen(neatherd_mesomorph)));
+strictish_wormship = ((char *)(malloc(humbugs_locofocos + 1)));

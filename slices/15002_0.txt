@@ -1,0 +1,11 @@
+list<wchar_t *> VAR1;
+data[0] = L'\0';
+VAR1.push_back(VAR2);
+VAR1.push_back(VAR2);
+VAR1.push_back(VAR2);
+goodG2BSink(VAR1);
+wchar_t source[10+1] = SRC_STRING;
+memcpy(VAR2, source, (wcslen(source) + 1) * sizeof(wchar_t));
+void goodG2BSink(list<wchar_t *> VAR1)
+wchar_t * VAR2 = VAR1.back();
+memcpy(VAR2, source, (wcslen(source) + 1) * sizeof(wchar_t));

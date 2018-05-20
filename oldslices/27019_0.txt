@@ -1,0 +1,3 @@
+int main(int argc, char **argv) {
+strncpy(buf, argv[1], sizeof buf - 1);
+buf[sizeof buf - 1] = 0;

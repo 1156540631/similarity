@@ -1,0 +1,3 @@
+register char *gecos;
+gecos++;
+printf ("strlen (gecos)=%d\n", strlen (gecos));

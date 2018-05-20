@@ -1,0 +1,5 @@
+har * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+char dest[50] = "";
+data[100-1] = '\0';
+memcpy(dest, data, strlen(data)*sizeof(char));

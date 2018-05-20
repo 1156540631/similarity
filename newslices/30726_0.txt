@@ -1,0 +1,16 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#VAR1 VAR4 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+VAR5 = VAR6;
+switch(6)
+case 6:
+VAR5 = (void *)VAR2;
+break;
+default:
+break;
+switch(8)
+case 7:
+break;
+default:
+VAR7 VAR8 = FUN1((wchar_t *)VAR5);
+void * VAR9 = (void *)calloc(VAR8+1, sizeof(wchar_t));
+memcpy(VAR9, VAR5, (VAR8+1)*sizeof(wchar_t));

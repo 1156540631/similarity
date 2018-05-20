@@ -1,0 +1,3 @@
+VAR1 = malloc(VAR2);
+printf("VAR3: %s\n", VAR1);
+free(VAR1);

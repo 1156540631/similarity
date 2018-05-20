@@ -1,0 +1,6 @@
+wchar_t * data;
+wchar_t * dataBadBuffer = (wchar_t *)ALLOCA(50*sizeof(wchar_t));
+data = dataBadBuffer;
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncpy_54e_badSink(wchar_t * data)
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

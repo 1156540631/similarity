@@ -1,0 +1,9 @@
+len = snprintf(buf,buf_size,(((codec_tag & 0xff) >= 48 && (codec_tag & 0xff) <= '9' || (codec_tag & 0xff) >= 'a' && (codec_tag & 0xff) <= 'z' || (codec_tag & 0xff) >= 'A' && (codec_tag & 0xff) <= 'Z' || ((codec_tag & 0xff) == '.' || (codec_tag & 0xff) == 32 || (codec_tag & 0xff) == '-' || (codec_tag & 0xff) == '_')?"%c" : "[%d]")),codec_tag & 0xff);
+buf += len;
+len = snprintf(buf,buf_size,(((codec_tag & 0xff) >= 48 && (codec_tag & 0xff) <= '9' || (codec_tag & 0xff) >= 'a' && (codec_tag & 0xff) <= 'z' || (codec_tag & 0xff) >= 'A' && (codec_tag & 0xff) <= 'Z' || ((codec_tag & 0xff) == '.' || (codec_tag & 0xff) == 32 || (codec_tag & 0xff) == '-' || (codec_tag & 0xff) == '_')?"%c" : "[%d]")),codec_tag & 0xff);
+buf_size = (buf_size > len?buf_size - len : 0);
+len = snprintf(buf,buf_size,(((codec_tag & 0xff) >= 48 && (codec_tag & 0xff) <= '9' || (codec_tag & 0xff) >= 'a' && (codec_tag & 0xff) <= 'z' || (codec_tag & 0xff) >= 'A' && (codec_tag & 0xff) <= 'Z' || ((codec_tag & 0xff) == '.' || (codec_tag & 0xff) == 32 || (codec_tag & 0xff) == '-' || (codec_tag & 0xff) == '_')?"%c" : "[%d]")),codec_tag & 0xff);
+char tag_buf[32];
+av_get_codec_tag_string(tag_buf,sizeof(tag_buf),enc -> codec_tag);
+size_t av_get_codec_tag_string(char *buf,size_t buf_size,unsigned int codec_tag)
+len = snprintf(buf,buf_size,(((codec_tag & 0xff) >= 48 && (codec_tag & 0xff) <= '9' || (codec_tag & 0xff) >= 'a' && (codec_tag & 0xff) <= 'z' || (codec_tag & 0xff) >= 'A' && (codec_tag & 0xff) <= 'Z' || ((codec_tag & 0xff) == '.' || (codec_tag & 0xff) == 32 || (codec_tag & 0xff) == '-' || (codec_tag & 0xff) == '_')?"%c" : "[%d]")),codec_tag & 0xff);

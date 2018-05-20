@@ -1,0 +1,13 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&lamping_goban,"SOODLE_ORTHOCEPHALY");
+if (lamping_goban != 0) {;
+paludous_oversetting . lludd_mensis = ((char *)lamping_goban);
+clitia_outgroups[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *phototelescope_lyncid)))))))))))))))))))))))))))))))))))))))))))))))))] = paludous_oversetting;
+burled_blepharydatis = clitia_outgroups[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *phototelescope_lyncid)))))))))))))))))))))))))))))))))))))))))))))))))];
+cottbus_billows = ((char *)burled_blepharydatis . lludd_mensis);
+stonesoup_my_buff_size = ((int )(strlen(cottbus_billows)));
+for (; stonesoup_ss_i < stonesoup_my_buff_size; ++stonesoup_ss_i){
+if (burled_blepharydatis . lludd_mensis != 0)
+free(((char *)burled_blepharydatis . lludd_mensis));

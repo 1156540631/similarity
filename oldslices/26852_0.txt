@@ -1,0 +1,23 @@
+char address[100];
+scanf("%99s", address);
+res_addr = crackaddr(address);
+char * crackaddr(addr)
+register char *addr;
+addr++;
+p = addrhead = addr;
+while ((c = *p++) != '\0')
+printf("c = %c\n", c);
+p--;
+p++;
+p++;
+p++;
+p++;
+while ((c = *p++) != '<')
+if ((c = *p++) == '\0')
+addrhead = p;
+for (q = addrhead; q < p; )
+c = *q++;
+while ((c = *p++) != ':')
+MustQuoteChars = "@,;:\\()[].'";
+res_addr = crackaddr(address);
+if (strchr(MustQuoteChars, c) != NULL)

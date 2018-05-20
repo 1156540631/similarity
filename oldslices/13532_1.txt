@@ -1,0 +1,13 @@
+CommandResult NetworkUtils::setDNS(NetworkParams& aOptions)
+unionType myUnion;
+myUnion.unionFirst = aOptions;
+uint32_t length = func(myUnion);
+uint32_t func(unionType myUnion)
+NetworkParams aOptions = myUnion.unionSecond;
+return aOptions.mDnses.Length();
+uint32_t length = func(myUnion);
+if (length > 0) {
+for (uint32_t i = 0; i < length; i++) {
+NS_ConvertUTF16toUTF8 autoDns(aOptions.mDnses[i]);
+char dns_prop_key[PROPERTY_VALUE_MAX];
+snprintf(dns_prop_key, sizeof dns_prop_key, "net.dns%d", i+1);

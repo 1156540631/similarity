@@ -1,0 +1,9 @@
+static const int STATIC_CONST_TRUE = 1;
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+if(STATIC_CONST_TRUE)
+data = (void *)WIDE_STRING;
+if(STATIC_CONST_TRUE)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

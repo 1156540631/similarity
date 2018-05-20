@@ -1,0 +1,4 @@
+switch(6)
+data = new char[10+1]
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

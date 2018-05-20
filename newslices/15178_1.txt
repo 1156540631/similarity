@@ -1,0 +1,14 @@
+char * VAR1;
+VAR2<int, char *> VAR3;
+char VAR4[50];
+char VAR5[100];
+* VAR6 VAR7 VAR8 VAR9 VAR10 VAR11 using VAR12 "large" VAR13 VAR6. */
+VAR1 = VAR4;
+VAR1[0] = '\';
+VAR3[0] = VAR1;
+VAR3[1] = VAR1;
+VAR3[2] = VAR1;
+void FUN1(VAR2<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+VAR13[100-1] = '\';
+strncpy(VAR1, VAR13, 100-1);

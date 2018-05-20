@@ -1,0 +1,11 @@
+static void join(nsTArray<nsCString>& array,
+const char* sep,
+char* result)
+uint32_t seplen = strlen(sep);
+if (array.Length() > 0) {
+CHECK_LENGTH(len, strlen(array[0].get()), maxlen)
+strcpy(result, array[0].get());
+for (uint32_t i = 1; i < array.Length(); i++) {
+strcat(result, sep);
+CHECK_LENGTH(len, strlen(array[i].get()), maxlen)
+strcat(result, array[i].get());

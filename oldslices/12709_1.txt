@@ -1,0 +1,6 @@
+data[0] = L'\0';
+return data;
+data = badSource(data);
+SNPRINTF(data, 100, L"%s", source);
+printWLine(data);
+free(data);

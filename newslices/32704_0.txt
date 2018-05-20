@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+wchar_t VAR2[10+1];
+if(VAR3!=5)
+else
+VAR1 = VAR2;
+VAR1[0] = '\';
+wchar_t VAR4[10+1] = VAR5;
+FUN1(VAR1, VAR4);

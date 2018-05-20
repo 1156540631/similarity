@@ -1,0 +1,8 @@
+wchar_t * data;
+data = new wchar_t[100];
+wmemset(data, L'A', 100-1);
+data[100-1] = L'\0';
+baseObject.action(data);
+void CWE122_Heap_Based_Buffer_Overflow__cpp_src_wchar_t_cpy_81_bad::action(wchar_t * data) const
+wchar_t dest[50] = L"";
+wcscpy(dest, data);

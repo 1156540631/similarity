@@ -1,0 +1,2 @@
+char VAR9[10] ;
+strcpy(VAR9,VAR81[0]);

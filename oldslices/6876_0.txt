@@ -1,0 +1,8 @@
+void seminarcosis_almadie(int surceased_epitaphic,void ***eradication_pearlstone)
+seminarcosis_almadie(surceased_epitaphic,eradication_pearlstone);
+free(((char *)((char *)( *( *eradication_pearlstone)))));
+void stonesoup_handle_taint(char *aesopic_tastelessness)
+calcaire_nro = ((void *)aesopic_tastelessness);
+loquent_forbid = &calcaire_nro;
+nonpressing_nucla = &loquent_forbid;
+seminarcosis_almadie(pasadis_dorididae,nonpressing_nucla);

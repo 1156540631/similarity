@@ -1,0 +1,25 @@
+ogg_packet  oggpacket;
+while( ogg_stream_packetout( &p_stream->os, &oggpacket ) > 0 )
+! memcmp( oggpacket.packet, "\x80theora", 7 ) )
+! memcmp( oggpacket.packet, "\x01vorbis", 7 ) )
+Ogg_DecodePacket( p_demux, p_stream, &oggpacket );
+Ogg_DecodePacket( p_demux, p_stream, &oggpacket );
+static void Ogg_DecodePacket ( demux_t *, logical_stream_t *, ogg_packet * );
+Ogg_DecodePacket( p_demux, p_stream, &oggpacket );
+! memcmp( oggpacket.packet, "\x80theora", 7 ) )
+! memcmp( oggpacket.packet, "\x01vorbis", 7 ) )
+if( ogg_stream_packetout( &p_stream->os, &oggpacket ) > 0 )
+Ogg_UpdatePCR( p_stream, &oggpacket );
+Ogg_DecodePacket( p_demux, p_stream, &oggpacket );
+! memcmp( oggpacket.packet, "\x80theora", 7 ) )
+! memcmp( oggpacket.packet, "\x01vorbis", 7 ) )
+static void Ogg_UpdatePCR    ( logical_stream_t *, ogg_packet * );
+Ogg_UpdatePCR( p_stream, &oggpacket );
+Ogg_ReadVorbisHeader( p_stream, &oggpacket );
+static void Ogg_ReadVorbisHeader( logical_stream_t *, ogg_packet * );
+Ogg_ReadVorbisHeader( p_stream, &oggpacket );
+Ogg_ReadTheoraHeader( p_stream, &oggpacket );
+static void Ogg_ReadTheoraHeader( logical_stream_t *, ogg_packet * );
+Ogg_ReadTheoraHeader( p_stream, &oggpacket );
+! memcmp( oggpacket.packet, "\x80theora", 7 ) )
+! memcmp( oggpacket.packet, "\x01vorbis", 7 ) )

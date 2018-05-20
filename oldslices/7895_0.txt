@@ -1,0 +1,7 @@
+unsigned int r;
+f = fopen("/dev/urandom", "rb");
+if(fread(&r, sizeof r, 1, f) != 1)
+return r;
+vector[i] = (short)(getRand() % 256);
+vector = NULL;
+free(vector);

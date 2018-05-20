@@ -1,0 +1,6 @@
+void FUN1(int VAR1,char **VAR2)
+VAR3 = ((char *)( *(VAR2 - 5)));
+VAR4 = (struct CLASS1*) malloc(sizeof(struct CLASS1));
+memset(VAR4->VAR5,0,64);
+FUN2(VAR6, VAR7, "VAR4->VAR5", VAR4->VAR5, "VAR8-VAR9");
+strcpy(VAR4->VAR5, VAR3);

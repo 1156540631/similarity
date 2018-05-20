@@ -1,0 +1,4 @@
+char *VAR88 = 0;
+VAR75 = (struct STRUCT3*) malloc(sizeof (struct STRUCT3));
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR88)+1, VAR88, "TAINTED-SOURCE");
+strncpy(VAR75->VAR76, VAR88, strlen(VAR88) + 1);

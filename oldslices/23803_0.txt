@@ -1,0 +1,155 @@
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, 4, TRUE); *pOffset+=4;
+char *szValue = ep_alloc(MAX_BUFFER);
+gint iOffset = *pOffset;
+gint32 iLen = tvb_get_letohl(tvb, *pOffset);
+iOffset+=4;
+if (iStrLen > (MAX_BUFFER-1)) iStrLen = MAX_BUFFER - 1;
+strncpy(szValue, (char*)&tvb->real_data[iOffset], iStrLen);
+iOffset += iLen;
+proto_tree_add_string(tree, hfIndex, tvb, *pOffset, (iOffset - *pOffset), szValue);
+*pOffset = iOffset;
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, 4, TRUE);
+*pOffset += 4;
+iOffset++;
+parseString(subtree, tvb, &iOffset, hf_opcua_localizedtext_locale);
+parseString(subtree, tvb, &iOffset, hf_opcua_localizedtext_text);
+int iOffset = *pOffset;
+gint32 iLen = tvb_get_letohl(tvb, iOffset);
+iOffset += 4;
+iOffset += iLen;
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, (iOffset - *pOffset), TRUE);
+*pOffset = iOffset;
+iOffset++;
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_symbolicid);
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_namespace);
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_localizedtext);
+parseString(subtree, tvb, &iOffset, hf_opcua_diag_additionalinfo);
+parseStatusCode(subtree, tvb, &iOffset, hf_opcua_diag_innerstatuscode);
+parseDiagnosticInfo(subtree, tvb, &iOffset, "Inner DiagnosticInfo");
+iOffset++;
+parseVariant(subtree, tvb, &iOffset, "Value");
+iOffset++;
+ArrayLength = tvb_get_letohl(tvb, iOffset);
+case OpcUaType_String: parseString(subtree, tvb, &iOffset, hf_opcua_String); break;
+case OpcUaType_NodeId: parseNodeId(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_ExpandedNodeId: parseExpandedNodeId(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_DiagnosticInfo: parseDiagnosticInfo(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_QualifiedName: parseQualifiedName(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_LocalizedText: parseLocalizedText(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_ExtensionObject: parseExtensionObject(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_DataValue: parseDataValue(subtree, tvb, &iOffset, "Value"); break;
+case OpcUaType_Variant: parseVariant(subtree, tvb, &iOffset, "Value"); break;
+iOffset++;
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+parseString(subtree, tvb, &iOffset, hf_opcua_String);
+iOffset++;
+proto_tree_add_item(subtree, hf_opcua_nodeid_numeric, tvb, iOffset, 1, TRUE);
+iOffset+=1;
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 1, TRUE);
+iOffset+=1;
+proto_tree_add_item(subtree, hf_opcua_nodeid_numeric, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+proto_tree_add_item(subtree, hf_opcua_nodeid_numeric, tvb, iOffset, 4, TRUE);
+iOffset+=4;
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+parseString(subtree, tvb, &iOffset, hf_opcua_String);
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+parseGuid(subtree, tvb, &iOffset, hf_opcua_Guid);
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+iOffset+=2;
+parseByteString(subtree, tvb, &iOffset, hf_opcua_ByteString);
+parseString(subtree, tvb, &iOffset, hf_opcua_Uri);
+void parseDataValue(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+proto_item *ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: DataValue", szFieldName);
+gint    iOffset = *pOffset;
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+ti = proto_tree_add_text(subtree, tvb, 0, -1, "EncodingMask");
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_valueflag,           tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_statuscodeflag,      tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_sourcetimestampflag, tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_servertimestampflag, tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_sourcepicoseconds,   tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_datavalue_mask_serverpicoseconds,   tvb, iOffset, 1, TRUE);
+parseVariant(subtree, tvb, &iOffset, "Value");
+void parseVariant(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+proto_item *ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: Variant", szFieldName);
+gint    iOffset = *pOffset;
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+proto_tree_add_item(subtree, hf_opcua_variant_encodingmask, tvb, iOffset, 1, TRUE);
+ArrayLength = tvb_get_letohl(tvb, iOffset);
+case OpcUaType_String: parseString(subtree, tvb, &iOffset, hf_opcua_String); break;
+void parseString(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+gint32 iLen = tvb_get_letohl(tvb, *pOffset);
+int iStrLen = iLen;
+strncpy(szValue, (char*)&tvb->real_data[iOffset], iStrLen);
+void parseDiagnosticInfo(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+gint        iOffset = *pOffset;
+ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: DiagnosticInfo", szFieldName);
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+ti = proto_tree_add_text(subtree, tvb, 0, -1, "EncodingMask");
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_symbolicflag,        tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_namespaceflag,       tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_localizedtextflag,   tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_additionalinfoflag,  tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_innerstatuscodeflag, tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_diag_mask_innerdiaginfoflag,   tvb, iOffset, 1, TRUE);
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_symbolicid);
+parseString(subtree, tvb, &iOffset, hf_opcua_diag_additionalinfo);
+parseDiagnosticInfo(subtree, tvb, &iOffset, "Inner DiagnosticInfo");
+void parseInt32(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, 4, TRUE); *pOffset+=4;
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_symbolicid);
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_namespace);
+parseInt32(subtree, tvb, &iOffset, hf_opcua_diag_localizedtext);
+parseString(subtree, tvb, &iOffset, hf_opcua_diag_additionalinfo);
+parseDiagnosticInfo(subtree, tvb, &iOffset, "Inner DiagnosticInfo");
+void parseExpandedNodeId(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+proto_item *ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: ExpandedNodeId", szFieldName);
+gint    iOffset = *pOffset;
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+proto_tree_add_item(subtree, hf_opcua_nodeid_encodingmask, tvb, iOffset, 1, TRUE);
+parseString(subtree, tvb, &iOffset, hf_opcua_Uri);
+void parseByteString(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+gint32 iLen = tvb_get_letohl(tvb, iOffset);
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, (iOffset - *pOffset), TRUE);
+parseByteString(subtree, tvb, &iOffset, hf_opcua_ByteString);
+parseString(subtree, tvb, &iOffset, hf_opcua_Uri);
+void parseNodeId(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+proto_item *ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: NodeId", szFieldName);
+gint    iOffset = *pOffset;
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+proto_tree_add_item(subtree, hf_opcua_nodeid_encodingmask, tvb, iOffset, 1, TRUE);
+proto_tree_add_item(subtree, hf_opcua_nodeid_nsid, tvb, iOffset, 2, TRUE);
+parseString(subtree, tvb, &iOffset, hf_opcua_String);
+void parseQualifiedName(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+proto_item *ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: QualifiedName", szFieldName);
+parseUInt16(subtree, tvb, pOffset, hf_opcua_qualifiedname_id);
+void parseUInt16(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, 2, TRUE); *pOffset+=2;
+parseUInt16(subtree, tvb, pOffset, hf_opcua_qualifiedname_id);
+parseString(subtree, tvb, pOffset, hf_opcua_qualifiedname_name);
+void parseExtensionObject(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+gint    iOffset = *pOffset;
+ti = proto_tree_add_text(tree, tvb, 0, -1, "%s : ExtensionObject", szFieldName);
+parseExpandedNodeId(extobj_tree, tvb, &iOffset, "TypeId");
+void parseLocalizedText(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, char *szFieldName)
+gint        iOffset = *pOffset;
+ti = proto_tree_add_text(tree, tvb, 0, -1, "%s: LocalizedText", szFieldName);
+EncodingMask = tvb_get_guint8(tvb, iOffset);
+ti = proto_tree_add_text(subtree, tvb, 0, -1, "EncodingMask");
+proto_tree_add_item(mask_tree, hf_opcua_loctext_mask_localeflag, tvb, iOffset, 1, TRUE);
+proto_tree_add_item(mask_tree, hf_opcua_loctext_mask_textflag,   tvb, iOffset, 1, TRUE);
+parseString(subtree, tvb, &iOffset, hf_opcua_localizedtext_text);
+void parseStatusCode(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, 4, TRUE);
+parseStatusCode(subtree, tvb, &iOffset, hf_opcua_diag_innerstatuscode);
+parseDiagnosticInfo(subtree, tvb, &iOffset, "Inner DiagnosticInfo");
+void parseGuid(proto_tree *tree, tvbuff_t *tvb, gint *pOffset, int hfIndex)
+proto_tree_add_item(tree, hfIndex, tvb, *pOffset, GUID_LEN, TRUE); *pOffset+=GUID_LEN;
+parseGuid(subtree, tvb, &iOffset, hf_opcua_Guid);
+parseString(subtree, tvb, &iOffset, hf_opcua_Uri);

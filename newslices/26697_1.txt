@@ -1,0 +1,23 @@
+VAR1 = FUN1("NONRANDOMNESS_MIMBARS");
+VAR2 . VAR3 = ((char *)VAR1);
+FUN2(VAR2);
+VAR4 = 4;
+strncpy(VAR5, VAR6, VAR4);
+VAR5[VAR4 - 1] = 0;
+FUN3("%s\n", VAR5);
+FUN4(VAR7, VAR8, "VAR4", VAR4, &VAR4, "VAR9-VAR10");
+FUN4(VAR7, VAR11, "VAR5", VAR5, "VAR12-VAR10");
+VAR13 = FUN5(VAR5);
+strncpy(VAR5, VAR6, VAR4);
+void FUN3(char * VAR14, ...) {
+FUN4(VAR7, VAR11, "VAR5", VAR5, "VAR9-VAR10");
+FUN4(VAR7, VAR11, "VAR5", VAR5, "VAR15-VAR10");
+strncpy(VAR5, VAR6, VAR4);
+char FUN5(char *VAR16)
+free(VAR16);
+FUN4(VAR7, VAR11, "VAR5", VAR5, "VAR15-VAR10");
+strncpy(VAR5, VAR6, VAR4);
+void FUN2(const struct CLASS1 VAR17)
+VAR6 = ((char *)((struct CLASS1 )VAR17) . VAR3);
+strncpy(VAR5, VAR6, VAR4);
+strncpy(VAR5, VAR6, VAR4);

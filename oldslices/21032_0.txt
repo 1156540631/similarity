@@ -1,0 +1,6 @@
+morate_ghana = getenv("SUBROUTINES_OTC");
+if (morate_ghana != 0) {;
+materia_electrostatics = &morate_ghana;
+epithelial_ligures = ((char **)(((unsigned long )materia_electrostatics) * propound_anabolize * propound_anabolize)) + 5;
+spiritlamp_japery(epithelial_ligures);
+void spiritlamp_japery(char **birded_marakapas);

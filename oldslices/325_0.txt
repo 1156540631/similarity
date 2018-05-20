@@ -1,0 +1,4 @@
+s->session->tlsext_hostname[len] = '\0';
+if (strlen(s->session->tlsext_hostname) != len) {
+&& strncmp(s->session->tlsext_hostname,
+&& strlen(s->session->tlsext_hostname) == len

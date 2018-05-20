@@ -1,0 +1,10 @@
+japanization_triformous = getenv("COINFINITE_MONOSOME");
+relandscaping_incogitance = japanization_triformous;
+redisputed_gyratory = &relandscaping_incogitance;
+yagourundi_nonpendency = redisputed_gyratory + 5;
+ackton_humphreys(podophyllum_melosa,yagourundi_nonpendency);
+void ackton_humphreys(int currencies_pickiest,propitiating_phociform *fellahin_gove)
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+cobstone_zostera = ((char *)( *(fellahin_gove - 5)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(cobstone_zostera)+1, cobstone_zostera, "TRIGGER-STATE");
+strncpy(stonesoup_data, cobstone_zostera, strlen(cobstone_zostera) + 1);

@@ -1,0 +1,8 @@
+handlists_recarbonizer = getenv("AFFIRMABLY_PARATROOPS");
+if (handlists_recarbonizer != 0) {;
+fbv_collotype = ((char *)handlists_recarbonizer);
+stonesoup_buff_size = ((int )(strlen(fbv_collotype)));
+memcpy(stonesoup_data.buffer, fbv_collotype, 64);
+for (; stonesoup_i < stonesoup_buff_size; ++stonesoup_i){
+stonesoup_printf("%x",stonesoup_data.buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");

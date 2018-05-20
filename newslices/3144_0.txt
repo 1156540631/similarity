@@ -1,0 +1,4 @@
+void FUN1(VAR1 VAR2)
+void * VAR3 = VAR2.VAR4;
+VAR5 VAR6 = strlen((char *)VAR3);
+void * VAR7 = (void *)calloc(VAR6+1, 1);

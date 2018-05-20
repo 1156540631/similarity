@@ -1,0 +1,8 @@
+dataBadBuffer[50-1] = L'\0';
+data = (void *)dataBadBuffer;
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__CWE135_61b_goodB2GSource(data);
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+free(dest);

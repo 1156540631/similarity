@@ -1,0 +1,13 @@
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);
+void amortises_scillonian(void *const assagaiing_noncontumacious)
+HEMOLYZED_MYTHOHISTORIC(assagaiing_noncontumacious);
+void suppos_aphotic(void *telephony_pranced)
+denounced_replaying = ((char *)((char *)((void *)telephony_pranced)));
+stonesoup_buff_size = strlen(denounced_replaying) + 1;
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+denounced_replaying[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);

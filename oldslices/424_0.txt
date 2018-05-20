@@ -1,0 +1,11 @@
+int x0, int y0, int x1, int y1, int w, int h)
+uint32_t cmd = s->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(s));
+width = vmsvga_fifo_read(s);
+if (vmsvga_copy_rect(s, x, y, dx, dy, width, height) == 0) {
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+int bypl = surface_stride(surface);
+int bypp = surface_bytes_per_pixel(surface);
+int width = bypp * w;
+memmove(ptr[1], ptr[0], width);

@@ -1,0 +1,11 @@
+int decompound_pansified = 53;
+char *corruptive_eequinoctium;
+stonesoup_read_taint(&corruptive_eequinoctium,"7626",decompound_pansified);
+crostarie_cystoptosis = ((int )(strlen(corruptive_eequinoctium)));
+greetings_cryophile = ((char *)(malloc(crostarie_cystoptosis + 1)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&corruptive_eequinoctium,"7626",decompound_pansified);
+crostarie_cystoptosis = ((int )(strlen(corruptive_eequinoctium)));
+greetings_cryophile = ((char *)(malloc(crostarie_cystoptosis + 1)));

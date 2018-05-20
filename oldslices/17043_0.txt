@@ -1,0 +1,14 @@
+wchar_t * data;
+map<int, wchar_t *> dataMap;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataGoodBuffer;
+data[0] = L'\0';
+goodG2BSink(dataMap);
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);
+void goodG2BSink(map<int, wchar_t *> dataMap)
+wchar_t source[100];
+wchar_t * data = dataMap[2];
+SNPRINTF(data, 100, L"%s", source);

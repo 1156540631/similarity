@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+comeddle_speers = ((char *)(oneupmanship_supraspinatus - 5)[36]);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, comeddle_speers, sizeof(stonesoup_source));

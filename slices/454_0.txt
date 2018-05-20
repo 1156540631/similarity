@@ -1,0 +1,10 @@
+while ((VAR1 = strchr(VAR2, ','))) {
+VAR13 = FUN1(VAR1 - VAR2, VAR3);
+if (!FUN2(VAR4, VAR2, VAR13))
+VAR2 = VAR1+1;
+while ((VAR1 = strchr(VAR2, ','))) {
+return !FUN3(VAR4, VAR2);
+if (VAR9->VAR4 && VAR17 && FUN4(VAR17, VAR9->VAR4))
+if (FUN4(VAR17, VAR9->VAR4))
+static int FUN4(const char *VAR4, const char *VAR2)
+while ((VAR1 = strchr(VAR2, ','))) {

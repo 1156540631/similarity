@@ -1,0 +1,5 @@
+static VAR1 FUN1(void *VAR2, VAR1 VAR3)
+printf("%VAR6: VAR4 register %02x\n", VAR5, VAR6->VAR7);
+static VAR8 FUN2(void *VAR2, VAR9 VAR10, unsigned VAR11)
+struct CLASS1 *VAR6 = VAR2;
+case CLASS2 * VAR12: return FUN1(VAR6, VAR10);

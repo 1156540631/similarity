@@ -1,0 +1,5 @@
+fprintf(stderr, "%VAR13 ", *(VAR15++));
+fprintf(stderr, "\n");
+fprintf(stderr, "Received VAR6 VAR23 %VAR39 VAR2 %VAR39\n", VAR23, VAR2);
+fprintf(stderr,
+fprintf(stderr, "\n");

@@ -1,0 +1,5 @@
+int * &dataRef = data;
+int * data = dataRef;
+memcpy(data, source, 100*sizeof(int));
+printIntLine(data[0]);
+free(data);

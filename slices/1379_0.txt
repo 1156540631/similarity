@@ -1,0 +1,28 @@
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,VAR7,2);
+VAR4 = ftell(VAR1);
+rewind(VAR1);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+*VAR3 = NULL;
+char *VAR5;
+FUN1(&VAR5,"NONIMMIGRANT_QUINCUNXES");
+VAR6 = ((int )(strlen(VAR5)));
+VAR10 = ((char *)(malloc(VAR6 + 1)));
+memset(VAR10,0,VAR6 + 1);
+memcpy(VAR10,VAR5,VAR6);
+VAR11 = &VAR10;
+FUN2(VAR11);
+void FUN3(char **VAR12)
+free(((char *)( *VAR12)));
+void FUN1(char** VAR3, char* VAR8) {
+VAR9 = getenv(VAR8);
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,VAR7,2);
+VAR4 = ftell(VAR1);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+FUN1(&VAR5,"NONIMMIGRANT_QUINCUNXES");
+VAR6 = ((int )(strlen(VAR5)));
+memcpy(VAR10,VAR5,VAR6);
+VAR11 = &VAR10;
+FUN2(VAR11);

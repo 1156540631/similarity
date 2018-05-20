@@ -1,0 +1,3 @@
+register int sz;
+sz = 1;
+p = malloc((unsigned) sz);

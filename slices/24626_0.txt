@@ -1,0 +1,67 @@
+static InputStream *FUNC1(OutputStream *VAR2)
+VAR4[VAR1++] = FUNC2(VAR40 -> VAR38,VAR40 -> VAR39,VAR34 -> VAR39) + t;
+char VAR31[1024];
+VAR10 = FUNC1(VAR2);
+VAR2 -> VAR41 -> VAR5 = VAR10 -> VAR41 -> VAR5;
+if (!VAR25 -> VAR6 -> VAR7 || (FUNC3(VAR25 -> VAR6 -> VAR7,VAR21 -> VAR7)) == (VAR20 -> VAR8) || !FUNC4(VAR25 -> VAR6 -> VAR7,VAR21 -> VAR8,&VAR7)) {
+if (!strcmp(VAR25 -> VAR6 -> VAR49,"avi")) {
+if (VAR9 < 0 && av_q2d(VAR10 -> VAR41 -> r_VAR12) >= av_q2d(VAR10 -> VAR41 -> VAR11) && 0.5 / av_q2d(VAR10 -> VAR41 -> r_VAR12) > av_q2d(VAR10 -> st -> VAR39) && 0.5 / av_q2d(VAR10 -> st -> r_VAR12) > av_q2d(VAR21 -> VAR39) && av_q2d(VAR10 -> st -> VAR39) < 1.0 / 500 && av_q2d(VAR21 -> VAR39) < 1.0 / 500 || VAR9 == 2) {
+if (!(VAR25 -> VAR6 -> flags & 0002000) && strcmp(VAR25 -> VAR6 -> VAR49,"mov") && strcmp(VAR25 -> VAR6 -> VAR49,"mp4") && strcmp(VAR25 -> VAR6 -> VAR49,"3gp") && strcmp(VAR25 -> VAR6 -> VAR49,"3g2") && strcmp(VAR25 -> VAR6 -> VAR49,"psp") && strcmp(VAR25 -> VAR6 -> VAR49,"ipod") && strcmp(VAR25 -> VAR6 -> VAR49,"f4v")) {
+VAR2 -> VAR41 -> VAR11 = VAR10 -> VAR41 -> VAR11;
+VAR2 -> VAR26 = FUNC5(VAR20 -> VAR8);
+snprintf(VAR31,sizeof(VAR31),"Encoder (VAR20 %s) not found for output stream #%d:%d",avVAR20_get_VAR49(VAR2 -> VAR41 -> VAR20 -> VAR8),VAR2 -> file_VAR1,VAR2 -> VAR1);
+int VAR13 = FUNC6(VAR2 -> VAR12,VAR2 -> VAR26 -> VAR48);
+VAR2 -> VAR12 = VAR2 -> VAR26 -> VAR48[VAR13];
+VAR20 -> channels = FUNC6(VAR2 -> VAR19 -> VAR19 -> inputs[0]);
+VAR2 -> VAR12 = FUNC7(VAR2 -> VAR19 -> VAR19);
+VAR20 -> VAR27 = VAR2 -> VAR19 -> VAR19 -> inputs[0] -> VAR42;
+VAR20 -> VAR28 = VAR2 -> VAR19 -> VAR19 -> inputs[0] -> VAR43;
+VAR20 -> VAR29 = VAR2 -> VAR41 -> VAR29 = (VAR2 -> FUNC11((VAR2 -> VAR30 * (VAR20 -> VAR28) / (VAR20 -> VAR27)),255) : VAR2 -> VAR19 -> VAR19 -> inputs[0] -> VAR29);
+FUNC10(VAR2 -> VAR37,VAR2,VAR2 -> VAR41 -> VAR20);
+if (!strcmp(VAR2 -> VAR26 -> VAR49,"libx264")) {
+VAR2 = VAR24[i];
+AVCoVAR47Context *VAR47 = ((void *)0);
+if (VAR10 = FUNC1(VAR2)) {
+VAR2 -> st -> VAR20 -> VAR46 = (av_mallVAR25z((VAR47 -> VAR43 + 1)));
+memcpy((VAR2 -> VAR41 -> VAR20 -> VAR46),(VAR47 -> VAR46),(VAR47 -> VAR43));
+VAR2 -> VAR41 -> VAR20 -> VAR43 = VAR47 -> VAR43;
+if ((VAR36 = FUNC12(VAR2 -> VAR41 -> VAR20,VAR20,&VAR2 -> VAR3)) < 0) {
+if (VAR10 = FUNC1(VAR2)) {
+snprintf(VAR31,sizeof(VAR31),"Error while opening VAR26oder for output stream #%d:%d - maybe incorrect parameters such as bit_rate, rate, VAR27 or VAR28",VAR2 -> file_VAR1,VAR2 -> VAR1);
+FUNC9(VAR2 -> VAR19 -> VAR19,(VAR2 -> VAR41 -> VAR20 -> VAR22));
+FUNC10((VAR2 -> VAR41 -> VAR20),&VAR2 -> VAR3);
+if (VAR10 = FUNC1(VAR2)) {
+for (i = 0; i < VAR14; i++) {
+VAR25 = VAR15[i] -> VAR16;
+VAR25 -> VAR33 = VAR44;
+if ((VAR36 = FUNC8(VAR25,&VAR15[i] -> VAR3)) < 0) {
+char VAR17[128];
+const char *VAR33 = VAR17;
+if (FUNC9(VAR36,VAR17,sizeof(VAR17)) < 0) {
+VAR45 = (strerror(-VAR36));
+snprintf(VAR31,sizeof(VAR31),"Could not write header for output file #%d (incorrect VAR20 parameters ?): %s",i,VAR45);
+if (strcmp(VAR25 -> VAR6 -> VAR49,"rtp")) {
+if ((VAR36 = FUNC8(VAR25,&VAR15[i] -> VAR3)) < 0) {
+if (FUNC9(VAR36,VAR17,sizeof(VAR17)) < 0) {
+VAR45 = (strVAR31(-VAR36));
+snprintf(VAR31,sizeof(VAR31),"Could not write header for output file #%d (incorrect VAR20 parameters ?): %s",i,VAR45);
+static InputStream *FUNC1(OutputStream *VAR2)
+if (VAR10 = FUNC1(VAR2)) {
+static InputStream *FUNC1(OutputStream *VAR2)
+if (VAR10 = FUNC1(VAR2)) {
+static InputStream *FUNC1(OutputStream *VAR2)
+if (VAR10 = FUNC1(VAR2)) {
+static InputStream *FUNC1(OutputStream *VAR2)
+if (VAR10 = FUNC1(VAR2)) {
+static InputStream *FUNC1(OutputStream *VAR2)
+if (VAR10 = FUNC1(VAR2)) {
+snprintf(VAR31,sizeof(VAR31),"Error while opening VAR26oder for output stream #%d:%d - maybe incorrect parameters such as bit_rate, rate, VAR27 or VAR28",VAR2 -> file_VAR1,VAR2 -> VAR1);
+snprintf(VAR31,sizeof(VAR31),"Could not write header for output file #%d (incorrect VAR20 parameters ?): %s",i,VAR45);
+static void FUNC10(char *VAR35,OutputStream *VAR2,AVCoVAR47Context *VAR34)
+VAR2 = VAR24[i];
+VAR10 = FUNC1(VAR2);
+FUNC10(VAR2 -> VAR37,VAR2,VAR2 -> st -> VAR20);
+if (VAR10 = FUNC1(VAR2)) {
+static void FUNC10(char *VAR35,OutputStream *VAR2,AVCoVAR47Context *VAR34)
+FUNC10(VAR2 -> VAR37,VAR2,VAR2 -> st -> VAR20);
+if (VAR10 = FUNC1(VAR2)) {

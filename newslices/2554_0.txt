@@ -1,0 +1,3 @@
+wchar_t * &VAR1 = VAR2;
+wchar_t * VAR2 = VAR1;
+VAR3 = FUN1(VAR2);

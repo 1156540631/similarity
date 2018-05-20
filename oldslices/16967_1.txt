@@ -1,0 +1,13 @@
+list<int> dataList;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<int> dataList)
+int data = dataList.back();
+if (data < 10)
+buffer[data] = 1;

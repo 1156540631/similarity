@@ -1,0 +1,81 @@
+nsBlockFrame::BlockNeedsFloatManager(nsIFrame* aBlock)
+NS_PRECONDITION(aBlock, "Must have a frame");
+NS_ASSERTION(nsLayoutUtils::GetAsBlock(aBlock), "aBlock must be a block");
+nsIFrame* parent = aBlock->GetParent();
+return (aBlock->GetStateBits() & NS_BLOCK_FLOAT_MGR) ||
+bool needFloatManager = nsBlockFrame::BlockNeedsFloatManager(this);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+(parent && !parent->IsFloatContainingBlock());
+return (aBlock->GetStateBits() & NS_BLOCK_FLOAT_MGR) ||
+bool needFloatManager = nsBlockFrame::BlockNeedsFloatManager(this);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+nsBlockFrame::DrainPushedFloats(nsBlockReflowState& aState)
+DrainPushedFloats(state);
+rv = ReflowPushedFloats(state, fcBounds, fcStatus);
+*aBottomMarginRoot = GetNextInFlow() == nullptr;
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+*aTopMarginRoot = true;
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+*aBottomMarginRoot = true;
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+nsBlockFrame::ReflowPushedFloats(nsBlockReflowState& aState,
+rv = ReflowPushedFloats(state, fcBounds, fcStatus);
+rv = ReflowDirtyLines(state);
+if (0 != aState.ClearFloats(0, NS_STYLE_CLEAR_LEFT_AND_RIGHT)) {
+nsBlockFrame::ReflowPushedFloats(nsBlockReflowState& aState,
+rv = ReflowPushedFloats(state, fcBounds, fcStatus);
+rv = ReflowDirtyLines(state);
+nsBlockFrame::ReflowDirtyLines(nsBlockReflowState& aState)
+printf(" computedWidth=%d\n", aState.mReflowState.ComputedWidth());
+nsBlockFrame::GetEffectiveComputedHeight(const nsHTMLReflowState& aReflowState) const
+if (GetEffectiveComputedHeight(aReflowState) + heightExtras.TopBottom() <=
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+nscoord height = aReflowState.ComputedHeight();
+if (GetEffectiveComputedHeight(aReflowState) + heightExtras.TopBottom() <=
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+nsBlockFrame::Reflow(nsPresContext*           aPresContext,
+nsHTMLReflowMetrics&     aMetrics,
+const nsHTMLReflowState& aReflowState,
+DISPLAY_REFLOW(aPresContext, this, aReflowState, aMetrics, aStatus);
+aReflowState.availableWidth, aReflowState.availableHeight,
+aReflowState.ComputedWidth(), aReflowState.ComputedHeight());
+const nsHTMLReflowState *reflowState = &aReflowState;
+aReflowState.ComputedHeight() != NS_AUTOHEIGHT &&
+ApplyOverflowClipping(this, aReflowState.mStyleDisplay)) {
+if (GetEffectiveComputedHeight(aReflowState) + heightExtras.TopBottom() <=
+mutableReflowState->availableHeight = NS_UNCONSTRAINEDSIZE;
+nsAutoFloatManager autoFloatManager(const_cast<nsHTMLReflowState&>(*reflowState));
+bool needFloatManager = nsBlockFrame::BlockNeedsFloatManager(this);
+autoFloatManager.CreateFloatManager(aPresContext);
+if (IsFrameTreeTooDeep(*reflowState, aMetrics, aStatus)) {
+bool topMarginRoot, bottomMarginRoot;
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+*aTopMarginRoot = false;
+*aBottomMarginRoot = false;
+*aTopMarginRoot = GetPrevInFlow() == nullptr;
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);
+nsBlockFrame::IsMarginRoot(bool* aTopMarginRoot, bool* aBottomMarginRoot)
+IsMarginRoot(&topMarginRoot, &bottomMarginRoot);
+topMarginRoot, bottomMarginRoot, needFloatManager);
+nsBlockReflowState state(*reflowState, aPresContext, this, aMetrics,
+DrainPushedFloats(state);

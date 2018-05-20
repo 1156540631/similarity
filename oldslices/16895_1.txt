@@ -1,0 +1,5 @@
+data = NULL;
+badSource(data);
+static void badSource(twoIntsStruct * &data)
+data = (twoIntsStruct *)malloc(sizeof(data));
+printStructLine(data);

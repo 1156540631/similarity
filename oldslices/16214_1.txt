@@ -1,0 +1,11 @@
+wchar_t * data;
+wchar_t * dataArray[5];
+data = new wchar_t[100];
+wmemset(data, L'A', 100-1);
+data[100-1] = L'\0';
+dataArray[2] = data;
+badSink(dataArray);
+void badSink(wchar_t * dataArray[])
+wchar_t * data = dataArray[2];
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

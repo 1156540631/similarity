@@ -1,0 +1,3 @@
+nsAutoString atomString;
+pseudoTag->ToString(atomString);
+NS_LossyConvertUTF16toASCII(atomString).get());

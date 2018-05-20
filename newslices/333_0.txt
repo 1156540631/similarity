@@ -1,0 +1,4 @@
+VAR1 VAR2 = {0};
+&VAR2);
+&VAR2);
+FUN1(VAR2.VAR3);

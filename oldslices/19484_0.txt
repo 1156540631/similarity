@@ -1,0 +1,6 @@
+data = NULL;
+data = new TwoIntsClass[100];
+goodG2BSink(data);
+void goodG2BSink(TwoIntsClass * data)
+TwoIntsClass source[100];
+memcpy(data, source, 100*sizeof(TwoIntsClass));

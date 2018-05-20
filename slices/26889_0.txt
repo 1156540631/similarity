@@ -1,0 +1,16 @@
+register char *VAR527;
+char *VAR529;
+char *VAR39;
+register char *VAR73 = VAR39;
+VAR527++;
+VAR140 += strlen(VAR529);
+for (VAR138 = VAR527; *VAR138 != '\0' && *VAR138 != ',' && *VAR138 != ';' && *VAR138 != '%'; VAR138++)
+*VAR73 = FUN133(*VAR73);
+VAR73 += strlen(VAR73);
+*VAR73++ = *VAR138;
+printf ("sizeof(VAR73) = %d\VAR7", sizeof(VAR73));
+snprintf(VAR73, FUN132(VAR39, VAR73), "%VAR1", VAR529);
+printf ("VAR73-VAR39=%d\VAR7", (VAR73-VAR39));
+printf ("FUN132(VAR39,VAR73)=%d\VAR7", FUN132(VAR39,VAR73));
+printf ("strlen(VAR529)=%d\VAR7", strlen(VAR529));
+snprintf(VAR73, FUN132(VAR39, VAR73), "%VAR1", VAR529);

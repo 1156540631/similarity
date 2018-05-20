@@ -1,0 +1,13 @@
+if ((cups_serverroot = getenv("CUPS_SERVERROOT")) == NULL)
+snprintf(filename, sizeof(filename), "%s/snmp.conf", cups_serverroot);
+if ((fp = cupsFileOpen(filename, "r")) != NULL)
+while (cupsFileGetConf(fp, line, sizeof(line), &value, &linenum))
+filename);
+fprintf(stderr, "ERROR: Missing value on line %d of %s!\n", linenum,
+"line %d of %s!\n", linenum, filename);
+fprintf(stderr,
+line, linenum, filename);
+fprintf(stderr, "ERROR: Unknown directive %s on line %d of %s!\n",
+cupsFileClose(fp);
+filename);
+fprintf(stderr,

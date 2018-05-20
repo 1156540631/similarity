@@ -1,0 +1,8 @@
+VmdVideoContext *s = avctx->priv_data;
+vmd_decode(s);
+static void vmd_decode(VmdVideoContext *s)
+frame_x = AV_RL16(&s->buf[6]);
+s->x_off = frame_x;
+static void vmd_decode(VmdVideoContext *s)
+vmd_decode(s);
+memcpy(s->frame.data[1], s->palette, PALETTE_COUNT * 4);

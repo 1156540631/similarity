@@ -1,0 +1,16 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int caftan_deaccessioned = 53;
+char *dicksonia_blackjacks;
+stonesoup_read_taint(&dicksonia_blackjacks,"1955",caftan_deaccessioned);
+irrespirable_orthotropism = ((char *)dicksonia_blackjacks);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(irrespirable_orthotropism)+1, irrespirable_orthotropism, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, irrespirable_orthotropism, strlen(irrespirable_orthotropism) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&dicksonia_blackjacks,"1955",caftan_deaccessioned);
+irrespirable_orthotropism = ((char *)dicksonia_blackjacks);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(irrespirable_orthotropism)+1, irrespirable_orthotropism, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, irrespirable_orthotropism, strlen(irrespirable_orthotropism) + 1);

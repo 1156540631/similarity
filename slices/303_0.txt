@@ -1,0 +1,6 @@
+const char *VAR2,
+if (!strncasecmp(VAR2, "Hewlett-Packard", 15))
+else if (!strncasecmp(VAR2, "deskjet", 7))
+else if (!strncasecmp(VAR2, "officejet", 9))
+else if (!strncasecmp(VAR2, "stylus_pro_", 11))
+VAR2 + 11);

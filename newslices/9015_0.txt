@@ -1,0 +1,5 @@
+FUN1("%s\n",VAR1);
+FUN1("strlen VAR2 = %d\n",strlen(VAR3));
+FUN1("strlen VAR2 = %d\n",strlen(VAR4[7]));
+void FUN1(char * VAR5, ...) {
+FUN2(VAR6, VAR5);

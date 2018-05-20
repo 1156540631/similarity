@@ -1,0 +1,2 @@
+int VAR57 = 0;
+if (scanf("%VAR83",&VAR57) != 1) {

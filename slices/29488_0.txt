@@ -1,0 +1,13 @@
+char * VAR6;
+void (*FUN6) (char *) = FUN8;
+VAR6 = NULL;
+char * VAR5 = (char *)malloc(100*sizeof(char));
+memset(VAR5, 'A', 100-1);
+VAR5[100-1] = '\0';
+VAR6 = VAR5;
+FUN6(VAR6);
+static void FUN8(char * VAR6)
+char VAR7[100];
+memset(VAR7, 'C', 100-1);
+VAR7[100-1] = '\0';
+strcpy(VAR6, VAR7);

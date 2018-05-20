@@ -1,0 +1,3 @@
+VAR1[100-1] = '\';
+char VAR2[50] = "";
+FUN1(VAR2, strlen(VAR1), "%s", VAR1);

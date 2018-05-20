@@ -1,0 +1,4 @@
+data = (char *)malloc((10+1)*sizeof(char));
+memmove(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);

@@ -1,0 +1,13 @@
+char *VAR597 = 0;
+FUN158(&VAR597);
+VAR598 = FUN159(VAR597);
+VAR262[63] = '\0';
+tracepoint(VAR19, VAR60, "VAR262", VAR262, "INITIAL-STATE");
+strncpy(VAR262, VAR599, 64);
+char *FUN159(char *VAR600)
+return VAR600;
+VAR598 = FUN159(VAR597);
+VAR601[3] = VAR598;
+VAR599 = ((char *)VAR601[3]);
+VAR264 = ((int )(strlen(VAR599)));
+strncpy(VAR262, VAR599, 64);

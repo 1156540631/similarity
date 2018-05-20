@@ -1,0 +1,3 @@
+CLASS1 VAR1 = FUN1(_T("MPR.DLL"));
+(void *)FUN2( VAR1, _T("WNetAddConnection2A") );
+FUN3( VAR1 );

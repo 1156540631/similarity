@@ -1,0 +1,6 @@
+return (count * invalid_memory_access_005(count-1));
+invalid_memory_access_005 (5);
+int invalid_memory_access_005 (int count)
+ptr = (int *) calloc (count,sizeof(int));
+*(ptr+(count-1)) = 5*count;
+free(ptr);

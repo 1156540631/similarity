@@ -1,0 +1,8 @@
+WCHAR VAR7[VAR2 + 1];
+if (!FUN2(VAR7, VAR1, L"uninstall.update")) {
+LPCWSTR VAR3)
+if (wcslen(VAR9) + wcslen(VAR3) >= VAR2) {
+FUN2(LPWSTR VAR9,
+wcscpy(VAR9, VAR8);
+if (!FUN1(VAR9)) {
+if (wcslen(VAR9) + wcslen(VAR3) >= VAR2) {

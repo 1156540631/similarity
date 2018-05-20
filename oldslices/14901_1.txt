@@ -1,0 +1,4 @@
+void * &dataRef = data;
+data = (void *)WIDE_STRING;
+void * data = dataRef;
+size_t dataLen = strlen((char *)data);

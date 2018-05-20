@@ -1,0 +1,7 @@
+arided_devotionalist = getenv("MADEGASSY_DEVOTIONALITY");
+tylosoid_keeve = ((char *)arided_devotionalist);
+stonesoup_fp = stonesoup_switch_func(tylosoid_keeve);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

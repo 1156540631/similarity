@@ -1,0 +1,21 @@
+unsigned char *VAR1 = VAR2;
+int VAR3 = 0, VAR4;
+VAR5 = FUN1(&VAR5);
+static void * FUN1(void * * VAR6)
+void * VAR5 = * VAR6;
+VAR5 = FUN2(VAR1, VAR4 + VAR7);
+return VAR5;
+VAR5 = FUN1(&VAR5);
+if(!VAR5)
+FUN3(VAR1);
+return FUN4(VAR8);
+VAR1=VAR5;
+if ((VAR3 = FUN5(VAR9, VAR1 + VAR10, VAR4 - VAR10)) < 0)
+if (VAR3 != VAR11)
+FUN3(VAR1);
+return VAR3;
+VAR12 = 0;
+VAR3 = 0;
+VAR13.VAR14 += VAR3;
+VAR13.VAR1 = &VAR1[VAR15];
+memset(VAR13.VAR1 + VAR13.VAR14, 0, VAR7);

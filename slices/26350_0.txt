@@ -1,0 +1,2 @@
+VAR13 = split(arg[VAR56],"=",&VAR213);
+VAR215 = strcpy((xmalloc(strlen(VAR13[1]) + 1)),VAR13[1]);

@@ -1,0 +1,10 @@
+char * *VAR1 = &VAR4;
+char * *VAR2 = &VAR4;
+char FUN3[100];
+VAR4 = FUN3;
+char * VAR4 = *VAR1;
+VAR4[50-1] = '\0';
+*VAR1 = VAR4;
+char * VAR4 = *VAR2;
+char VAR5[50] = "";
+memmove(VAR5, VAR4, strlen(VAR4)*sizeof(char));

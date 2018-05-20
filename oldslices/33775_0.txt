@@ -1,0 +1,8 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[50-1] = '\0';
+const CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_81_base& baseObject = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_81_goodG2B();
+baseObject.action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_81_goodG2B::action(char * data) const
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

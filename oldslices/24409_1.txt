@@ -1,0 +1,7 @@
+char stonesoup_buffer_stack[128] = {0};
+char *vernacularism_urling = 0;
+int unlitigiously_lentic = 76;
+stonesoup_read_taint(&rhodochrosite_emballonurid,"6508",unlitigiously_lentic);
+if (rhodochrosite_emballonurid != 0) {;
+vernacularism_urling = ((char *)rhodochrosite_emballonurid);
+sprintf(stonesoup_buffer_stack,vernacularism_urling);

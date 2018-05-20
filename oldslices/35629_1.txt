@@ -1,0 +1,8 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data[100-1] = L'\0';
+const CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncpy_81_base& baseObject = CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncpy_81_bad();
+baseObject.action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncpy_81_bad::action(wchar_t * data) const
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

@@ -1,0 +1,4 @@
+colors = strcpy((xmalloc(strlen(s) + 1)),s);
+arg = split(colors,":",&n);
+char **split(char *str,char *delim,int *nwrds);
+free(colors);

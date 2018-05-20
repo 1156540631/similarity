@@ -1,0 +1,10 @@
+char * VAR1;
+char * VAR2 = (char *)ALLOCA(50*sizeof(char));
+VAR1 = VAR2;
+VAR1[0] = '\0';
+const CLASS12& CLASS6 = CLASS13();
+void CLASS13::FUN13(char * VAR1) const
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR4);

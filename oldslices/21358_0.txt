@@ -1,0 +1,27 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&deciatine_gotthard,"NONPECUNIARY_MELVERN");
+if (deciatine_gotthard != 0) {;
+fluoresceine_proration = ((int )(strlen(deciatine_gotthard)));
+wilt_snot = ((char *)(malloc(fluoresceine_proration + 1)));
+if (wilt_snot == 0) {
+memset(wilt_snot,0,fluoresceine_proration + 1);
+memcpy(wilt_snot,deciatine_gotthard,fluoresceine_proration);
+if (deciatine_gotthard != 0)
+free(((char *)deciatine_gotthard));
+birchman_infrequency[5] = wilt_snot;
+centauromachia_electing =  *(birchman_infrequency +  *cadelle_aldabra);
+jade_theines = ((char *)centauromachia_electing);
+if (strlen(jade_theines) < 20) {
+realpath(jade_theines, stonesoup_data.base_path);
+if (centauromachia_electing != 0)
+free(((char *)centauromachia_electing));

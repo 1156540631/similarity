@@ -1,0 +1,11 @@
+char VAR329[200], VAR330[200];
+VAR332 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR333 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR334 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR335 = (unsigned char *) malloc(200*sizeof(unsigned char));
+strcpy(VAR330, "sls.lcs.mit.edu");
+*VAR333++ = (u_char *) VAR330;
+*VAR333-- = NULL;
+VAR337 = NULL;
+VAR331 = FUN68((const char *) VAR330, VAR335, 200, VAR333, VAR337);
+printf("VAR331 = %d\VAR7", VAR331);

@@ -1,0 +1,19 @@
+static void doapr_outch(
+char **sbuffer,
+char **buffer,
+size_t *currlen,
+size_t *maxlen,
+int c)
+unionType myUnion;
+if (buffer) {
+while (*currlen >= *maxlen) {
+if (*buffer == NULL) {
+myUnion.unionFirst = maxlen;
+*buffer = func(buffer, myUnion)
+static char** func(char **buffer, unionType myUnion)
+size_t *maxlen = myUnion.unionSecond;
+*buffer = OPENSSL_malloc(*maxlen);
+return *buffer
+*buffer = func(buffer, myUnion)
+if (*currlen > 0) {
+memcpy(*buffer, *sbuffer, *currlen);

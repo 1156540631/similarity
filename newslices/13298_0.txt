@@ -1,0 +1,9 @@
+CLASS1* (*VAR1)() = VAR2;
+void VAR3::FUN1(const char* VAR4, CLASS2* VAR5, VAR6 VAR7)
+FUN2("VAR8 VAR9 VAR10 \'%s\' VAR11...", VAR4);
+CLASS1* VAR12 = VAR1();
+CLASS1* VAR2()
+return CLASS1();
+CLASS1* VAR12 = VAR1();
+if (VAR13 >= 16) {
+FUN3((char*)VAR12->VAR14, VAR15 - 1, "0 %s", VAR4);

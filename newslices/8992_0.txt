@@ -1,0 +1,9 @@
+void FUN1(int VAR1,char **VAR2,const CLASS1 *VAR3)
+int VAR4 = FUN2(VAR1,VAR2,VAR3,"loglevel");
+int FUN2(int VAR1,char **VAR2,const CLASS1 *VAR3,const char *VAR5)
+VAR4 = FUN2(VAR1,VAR2,VAR3,"v");
+FUN3(((void *)0),"loglevel",VAR2[VAR4 + 1]);
+int FUN3(void *VAR6,const char *VAR7,const char *VAR8)
+char *VAR9;
+if (!strcmp(VAR10[VAR11] . VAR12,VAR8)) {
+VAR13 = (strtol(VAR8,&VAR9,'\'));

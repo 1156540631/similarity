@@ -1,0 +1,21 @@
+reactive_monohydric = getenv("PUSHFUL_CHASTY");
+if (reactive_monohydric != 0) {;
+lornnesses_unworkmanlike = ((char *)reactive_monohydric);
+stonesoup_other_buff[7] = lornnesses_unworkmanlike;
+stonesoup_buff_size = ((int )(strlen(lornnesses_unworkmanlike)));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_other_buff", stonesoup_other_buff, "INITIAL-STATE");
+for (; stonesoup_buff_size >= 0; (--stonesoup_my_buff_size , --stonesoup_buff_size)) {
+stonesoup_stack_buff_64[stonesoup_my_buff_size] = lornnesses_unworkmanlike[stonesoup_buff_size];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "CROSSOVER-STATE");
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);
+stonesoup_printf("%s\n",stonesoup_stack_buff_64);
+stonesoup_printf("strlen size = %d\n",strlen(lornnesses_unworkmanlike));
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "FINAL-STATE");

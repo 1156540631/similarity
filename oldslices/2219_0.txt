@@ -1,0 +1,4 @@
+void RenderListMarker::paint(PaintInfo& paintInfo, int tx, int ty)
+marker.move(tx, ty);
+paintCustomHighlight(tx, ty, style()->highlight(), true);
+selRect.move(tx, ty);

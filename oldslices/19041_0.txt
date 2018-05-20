@@ -1,0 +1,5 @@
+data = new char[10+1];
+goodG2BSink_e(data);
+void goodG2BSink_e(char * data)
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

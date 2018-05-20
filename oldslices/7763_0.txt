@@ -1,0 +1,3 @@
+buf[MAXSIZE-1] = '\0';
+printf("result: %s\n", buf);
+free(buf);

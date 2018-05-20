@@ -1,0 +1,8 @@
+#define VAR8 "AAAAAAAAAA"
+char * VAR1;
+VAR1 = NULL;
+while(1)
+VAR1 = (char *)malloc(10*sizeof(char));
+break;
+char VAR9[10+1] = VAR8;
+strncpy(VAR1, VAR9, strlen(VAR9) + 1);

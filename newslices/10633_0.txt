@@ -1,0 +1,9 @@
+VAR1 = 20;
+VAR2[2] = VAR1;
+FUN1(VAR2);
+void FUN1(VAR3<int, int> VAR2)
+int VAR1 = VAR2[2];
+VAR4 = (int*)malloc(VAR1 * sizeof(int));
+VAR4[VAR5] = 0;
+FUN2(VAR4[0]);
+free(VAR4);

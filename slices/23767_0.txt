@@ -1,0 +1,11 @@
+VAR3 = NULL;
+VAR3 = FUNC1(VAR3);
+wchar_t * FUNC1(wchar_t * VAR3)
+VAR3 = new wchar_t[100];
+VAR3[0] = L'\0';
+return VAR3;
+VAR3 = FUNC1(VAR3);
+wchar_t VAR4[100];
+wmemset(VAR4, L'C', 100-1);
+VAR4[100-1] = L'\0';
+wcsncat(VAR3, VAR4, 100);

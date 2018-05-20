@@ -1,0 +1,5 @@
+sucury_sagaponack = getenv("GUMPTIONS_UTTERMOST");
+if (sucury_sagaponack != 0) {;
+balladries_rowley . trunkful_fibrocystoma = sucury_sagaponack;
+propos_neurobiologist = &balladries_rowley;
+impartment_carnalizing = propos_neurobiologist + 5;

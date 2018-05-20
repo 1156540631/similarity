@@ -1,0 +1,22 @@
+len = snprintf(buf,buf_size,(((codec_tag & 0xff) >= 48 && (codec_tag & 0xff) <= '9' || (codec_tag & 0xff) >= 'a' && (codec_tag & 0xff) <= 'z' || (codec_tag & 0xff) >= 'A' && (codec_tag & 0xff) <= 'Z' || ((codec_tag & 0xff) == '.' || (codec_tag & 0xff) == 32 || (codec_tag & 0xff) == '-' || (codec_tag & 0xff) == '_')?"%c" : "[%d]")),codec_tag & 0xff);
+buf += len;
+codec_tag >>= 8;
+const char *profile = ((void *)0);
+return ((void *)0);
+return ((void *)0);
+profile = av_get_profile_name(p,enc -> profile);
+buf[0] ^= 'a' ^ 'A';
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%s)",profile);
+char tag_buf[32];
+av_get_codec_tag_string(tag_buf,sizeof(tag_buf),enc -> codec_tag);
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%s / 0x%04X)",tag_buf,enc -> codec_tag);
+snprintf(buf + strlen(buf),buf_size - strlen(buf),", %s",av_get_pix_fmt_name(enc -> pix_fmt));
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%d bpc)",enc -> bits_per_raw_sample);
+size_t av_get_codec_tag_string(char *buf,size_t buf_size,unsigned int codec_tag)
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%s / 0x%04X)",tag_buf,enc -> codec_tag);
+snprintf(buf + strlen(buf),buf_size - strlen(buf),", %s",av_get_pix_fmt_name(enc -> pix_fmt));
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%d bpc)",enc -> bits_per_raw_sample);
+void avcodec_string(char *buf,int buf_size,AVCodecContext *enc,int encode)
+snprintf(buf,buf_size,"%s: %s%s",(codec_type?codec_type : "unknown"),codec_name,(enc -> mb_decision?" (hq)" : ""));
+snprintf(buf + strlen(buf),buf_size - strlen(buf),", %s",av_get_pix_fmt_name(enc -> pix_fmt));
+snprintf(buf + strlen(buf),buf_size - strlen(buf)," (%d bpc)",enc -> bits_per_raw_sample);

@@ -1,0 +1,9 @@
+bankman_redefied = getenv("STETHOSCOPIC_COERCERS");
+if (bankman_redefied != 0) {;
+pennell_chargeling[15] = bankman_redefied;
+amphissa_intervallic[ *teetotum_bayminette] = pennell_chargeling;
+wichman_thermopylae = amphissa_intervallic[ *teetotum_bayminette];
+if (wichman_thermopylae[15] != 0) {
+beetlers_signalled = ((char *)wichman_thermopylae[15]);
+if (strlen(beetlers_signalled) < 20) {;
+realpath(beetlers_signalled, stonesoup_data->base_path);

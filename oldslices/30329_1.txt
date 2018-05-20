@@ -1,0 +1,10 @@
+int *dataPtr1 = &data;
+int *dataPtr2 = &data;
+data = -1;
+int data = *dataPtr1;
+fscanf(stdin, "%d", &data);
+*dataPtr1 = data;
+int data = *dataPtr2;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

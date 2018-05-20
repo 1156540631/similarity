@@ -1,0 +1,11 @@
+wchar_t * data;
+data = NULL;
+goodG2B1Static =
+data = goodG2B1Source(data);
+static wchar_t * goodG2B1Source(wchar_t * data)
+if(goodG2B1Static)
+else
+data = new wchar_t[10+1];
+return data;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

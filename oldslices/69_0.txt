@@ -1,0 +1,3 @@
+unz_file_info *p_fileInfo = calloc( 1, sizeof( unz_file_info ) );
+if( unzGetCurrentFileInfo( file, p_fileInfo, psz_fileName,
+free( p_fileInfo );

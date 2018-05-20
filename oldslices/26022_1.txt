@@ -1,0 +1,5 @@
+void intemerateness_primely(int cephalotaceous_merula,talclike_crista *reveler_xanthoceras)
+synezisis_dimercury = ((char *)( *(reveler_xanthoceras - 5)));
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(synezisis_dimercury)+1, synezisis_dimercury, "TRIGGER-STATE");
+strncpy(stonesoup_data, synezisis_dimercury, strlen(synezisis_dimercury) + 1);

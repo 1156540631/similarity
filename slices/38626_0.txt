@@ -1,0 +1,9 @@
+static int VAR4 = 1;
+static int VAR5 = 0;
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(VAR4)
+strcpy(VAR1, "fixedstringtest");
+if(VAR4)
+printf(VAR1);

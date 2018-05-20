@@ -1,0 +1,10 @@
+VAR2 = recv(VAR3, VAR4, VAR5 - 1, 0);
+if (VAR2 == SOCKET_ERROR || VAR2 == 0)
+VAR4[VAR2] = '\0';
+VAR1 = atoi(VAR4);
+int VAR7 = VAR1;
+int VAR1 = VAR7;
+int * VAR6 = (int *)malloc(10 * sizeof(int));
+VAR6[i] = 0;
+if (VAR1 >= 0 && VAR1 < (10))
+VAR6[VAR1] = 1;

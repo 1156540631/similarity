@@ -1,0 +1,36 @@
+dissect_sdp_media(tvbuff_t *tvb, proto_item *ti,
+offset = 0;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+proto_tree_add_item(sdp_media_tree, hf_media_media, tvb, offset, tokenlen,
+transport_info->media_type = (char*)tvb_get_ephemeral_string(tvb, offset, tokenlen);
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+tokenlen = next_offset - offset;
+next_offset = tvb_find_guint8(tvb, offset, tokenlen, '/');
+transport_info->media_port[transport_info->media_count] = (char*)tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_uint(sdp_media_tree, hf_media_port, tvb, offset, tokenlen,
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+proto_tree_add_item(sdp_media_tree, hf_media_portcount, tvb, offset,
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+transport_info->media_port[transport_info->media_count] = (char*)tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_uint(sdp_media_tree, hf_media_port, tvb, offset, tokenlen,
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+transport_info->media_proto[transport_info->media_count] = (char*)tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_item(sdp_media_tree, hf_media_proto, tvb, offset, tokenlen,
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+tokenlen = tvb_length_remaining(tvb, offset);
+tokenlen = next_offset - offset;
+media_format = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+proto_tree_add_string(sdp_media_tree, hf_media_format, tvb, offset,
+media_format = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+tokenlen, val_to_str_ext(atol((char*)media_format), &rtp_payload_type_vals_ext, "%u"));
+media_format = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+tokenlen, val_to_str_ext(atol((char*)media_format), &rtp_payload_type_vals_ext, "%u"));
+proto_tree_add_item(sdp_media_tree, hf_media_format, tvb, offset,
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+media_format = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+tokenlen, val_to_str_ext(atol((char*)media_format), &rtp_payload_type_vals_ext, "%u"));

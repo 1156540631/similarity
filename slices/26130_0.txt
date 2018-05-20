@@ -1,0 +1,66 @@
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+VAR100[VAR70++] = FUN33(VAR13 -> VAR111,VAR13 -> VAR112,VAR113 -> VAR112) + VAR114;
+char VAR78[1024];
+VAR62 = VAR63[VAR56];
+VAR97 = FUN32(VAR62);
+VAR62 -> VAR4 -> VAR141 = VAR97 -> VAR4 -> VAR141;
+if (!VAR88 -> VAR142 -> VAR143 || (FUN46(VAR88 -> VAR142 -> VAR143,VAR144 -> VAR143)) == (VAR101 -> VAR102) || !FUN47(VAR88 -> VAR142 -> VAR143,VAR144 -> VAR102,&VAR143)) {
+if (!strcmp(VAR88 -> VAR142 -> VAR120,"avi")) {
+if (VAR145 < 0 && FUN37(VAR97 -> VAR4 -> VAR146) >= FUN37(VAR97 -> VAR4 -> VAR147) && 0.5 / FUN37(VAR97 -> VAR4 -> VAR146) > FUN37(VAR97 -> VAR4 -> VAR112) && 0.5 / FUN37(VAR97 -> VAR4 -> VAR146) > FUN37(VAR144 -> VAR112) && FUN37(VAR97 -> VAR4 -> VAR112) < 1.0 / 500 && FUN37(VAR144 -> VAR112) < 1.0 / 500 || VAR145 == 2) {
+if (!(VAR88 -> VAR142 -> VAR148 & 0002000) && strcmp(VAR88 -> VAR142 -> VAR120,"mov") && strcmp(VAR88 -> VAR142 -> VAR120,"mp4") && strcmp(VAR88 -> VAR142 -> VAR120,"3gp") && strcmp(VAR88 -> VAR142 -> VAR120,"3g2") && strcmp(VAR88 -> VAR142 -> VAR120,"psp") && strcmp(VAR88 -> VAR142 -> VAR120,"ipod") && strcmp(VAR88 -> VAR142 -> VAR120,"f4v")) {
+VAR62 -> VAR4 -> VAR147 = VAR97 -> VAR4 -> VAR147;
+VAR62 -> VAR64 = FUN36(VAR101 -> VAR102);
+snprintf(VAR78,sizeof(VAR78),"Encoder (VAR101 %s) not found for output stream #%VAR83:%VAR83",FUN29(VAR62 -> VAR4 -> VAR101 -> VAR102),VAR62 -> VAR69,VAR62 -> VAR70);
+int VAR115 = FUN34(VAR62 -> VAR116,VAR62 -> VAR64 -> VAR117);
+VAR62 -> VAR116 = VAR62 -> VAR64 -> VAR117[VAR115];
+VAR101 -> VAR149 = FUN48(VAR62 -> VAR134 -> VAR134 -> VAR150[0]);
+VAR62 -> VAR116 = FUN49(VAR62 -> VAR134 -> VAR134);
+VAR101 -> VAR80 = VAR62 -> VAR134 -> VAR134 -> VAR150[0] -> VAR151;
+VAR101 -> VAR81 = VAR62 -> VAR134 -> VAR134 -> VAR150[0] -> VAR152;
+VAR101 -> VAR153 = VAR62 -> VAR4 -> VAR153 = (VAR62 -> VAR154?FUN50((VAR62 -> VAR154 * (VAR101 -> VAR81) / (VAR101 -> VAR80)),255) : VAR62 -> VAR134 -> VAR134 -> VAR150[0] -> VAR153);
+FUN35(VAR62 -> VAR119,VAR62,VAR62 -> VAR4 -> VAR101);
+if (!strcmp(VAR62 -> VAR64 -> VAR120,"libx264")) {
+VAR62 = VAR63[VAR56];
+STRUCT5 *VAR155 = ((void *)0);
+if (VAR97 = FUN32(VAR62)) {
+VAR62 -> VAR4 -> VAR101 -> VAR156 = (FUN51((VAR155 -> VAR157 + 1)));
+memcpy((VAR62 -> VAR4 -> VAR101 -> VAR156),(VAR155 -> VAR156),(VAR155 -> VAR157));
+VAR62 -> VAR4 -> VAR101 -> VAR157 = VAR155 -> VAR157;
+if ((VAR59 = FUN52(VAR62 -> VAR4 -> VAR101,VAR101,&VAR62 -> VAR158)) < 0) {
+if (VAR97 = FUN32(VAR62)) {
+snprintf(VAR78,sizeof(VAR78),"Error while opening encoder for output stream #%VAR83:%VAR83 - maybe incorrect parameters such as bit_rate, rate, VAR80 or VAR81",VAR62 -> VAR69,VAR62 -> VAR70);
+FUN53(VAR62 -> VAR134 -> VAR134,(VAR62 -> VAR4 -> VAR101 -> VAR159));
+FUN54((VAR62 -> VAR4 -> VAR101),&VAR62 -> VAR158);
+if (VAR97 = FUN32(VAR62)) {
+for (VAR56 = 0; VAR56 < VAR160; VAR56++) {
+VAR88 = VAR161[VAR56] -> VAR133;
+VAR88 -> VAR162 = VAR163;
+if ((VAR59 = FUN55(VAR88,&VAR161[VAR56] -> VAR158)) < 0) {
+char VAR164[128];
+const char *VAR165 = VAR164;
+if (FUN56(VAR59,VAR164,sizeof(VAR164)) < 0) {
+VAR165 = (FUN57(-VAR59));
+snprintf(VAR78,sizeof(VAR78),"Could not write header for output file #%VAR83 (incorrect VAR101 parameters ?): %s",VAR56,VAR165);
+if (strcmp(VAR88 -> VAR142 -> VAR120,"rtp")) {
+if ((VAR59 = FUN55(VAR88,&VAR161[VAR56] -> VAR158)) < 0) {
+if (FUN56(VAR59,VAR164,sizeof(VAR164)) < 0) {
+VAR165 = (FUN57(-VAR59));
+snprintf(VAR78,sizeof(VAR78),"Could not write header for output file #%VAR83 (incorrect VAR101 parameters ?): %s",VAR56,VAR165);
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+static STRUCT4 *FUN32(STRUCT3 *VAR62)
+if (VAR97 = FUN32(VAR62)) {
+snprintf(VAR78,sizeof(VAR78),"Error while opening encoder for output stream #%VAR83:%VAR83 - maybe incorrect parameters such as bit_rate, rate, VAR80 or VAR81",VAR62 -> VAR69,VAR62 -> VAR70);
+snprintf(VAR78,sizeof(VAR78),"Could not write header for output file #%VAR83 (incorrect VAR101 parameters ?): %s",VAR56,VAR165);
+static void FUN35(char *VAR118,STRUCT3 *VAR62,STRUCT5 *VAR113)
+FUN35(VAR62 -> VAR119,VAR62,VAR62 -> VAR4 -> VAR101);
+if (VAR97 = FUN32(VAR62)) {
+static void FUN35(char *VAR118,STRUCT3 *VAR62,STRUCT5 *VAR113)
+FUN35(VAR62 -> VAR119,VAR62,VAR62 -> VAR4 -> VAR101);
+if (VAR97 = FUN32(VAR62)) {

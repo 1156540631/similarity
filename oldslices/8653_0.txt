@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *hot_scungilli)
+downhearted_disgress = ((int )(strlen(hot_scungilli)));
+wordle_backcourtman = ((char *)(malloc(downhearted_disgress + 1)));

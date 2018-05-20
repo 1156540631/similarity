@@ -1,0 +1,4 @@
+VAR1 = VAR2;
+(unsigned char *)VAR3->VAR4->VAR5 + VAR6;
+unsigned char *VAR7 =
+memcpy(&VAR7[VAR1->VAR8.VAR9], VAR1->VAR10,

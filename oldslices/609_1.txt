@@ -1,0 +1,52 @@
+if (!sep) sep = ", ";
+ap = av_malloc((5 + strlen(sep)) * count);
+ap0   = ap;
+int l = snprintf(ap, 5 + strlen(sep), "%d%s", sp[i], sep);
+ap0[strlen(ap0) - strlen(sep)] = '\0';
+tag   = tget_short(&s->gb, s->le);
+type  = tget_short(&s->gb, s->le);
+count = tget_long(&s->gb, s->le);
+off   = tget_long(&s->gb, s->le);
+ADD_METADATA(count, "ModelPixelScaleTag", NULL);
+ADD_METADATA(count, "ModelTransformationTag", NULL);
+ADD_METADATA(count, "ModelTiepointTag", NULL);
+ADD_METADATA(1, "GeoTIFF_Version", NULL);
+ADD_METADATA(2, "GeoTIFF_Key_Revision", ".");
+ADD_METADATA(count, "artist", NULL);
+ADD_METADATA(count, "copyright", NULL);
+ADD_METADATA(count, "date", NULL);
+ADD_METADATA(count, "document_name", NULL);
+ADD_METADATA(count, "computer", NULL);
+ADD_METADATA(count, "description", NULL);
+ADD_METADATA(count, "make", NULL);
+ADD_METADATA(count, "model", NULL);
+ADD_METADATA(count, "page_name", NULL);
+ADD_METADATA(count, "page_number", " / ");
+ADD_METADATA(count, "software", NULL);
+const char *name, const char *sep, TiffContext *s)
+case TIFF_SHORT : return add_shorts_metadata(count, name, sep, s);
+const char *sep, TiffContext *s)
+if (count >= INT_MAX / sizeof(int16_t) || count <= 0)
+if (bytestream2_get_bytes_left(&s->gb) < count * sizeof(int16_t))
+sp = av_malloc(count * sizeof(int16_t));
+ap = shorts2str(sp, count, sep);
+static char *shorts2str(int16_t *sp, int count, const char *sep)
+ap = av_malloc((5 + strlen(sep)) * count);
+ap0   = ap;
+ap0[strlen(ap0) - strlen(sep)] = '\0';
+static int add_metadata(int count, int type,
+case TIFF_SHORT : return add_shorts_metadata(count, name, sep, s);
+static int add_shorts_metadata(int count, const char *name,
+sp = av_malloc(count * sizeof(int16_t));
+ap = shorts2str(sp, count, sep);
+static unsigned tget_short(GetByteContext *gb, int le)
+unsigned v = le ? bytestream2_get_le16(gb) : bytestream2_get_be16(gb);
+tag   = tget_short(&s->gb, s->le);
+type  = tget_short(&s->gb, s->le);
+count = tget_long(&s->gb, s->le);
+static unsigned tget_long(GetByteContext *gb, int le)
+unsigned v = le ? bytestream2_get_le32(gb) : bytestream2_get_be32(gb);
+return v;
+count = tget_long(&s->gb, s->le);
+off   = tget_long(&s->gb, s->le);
+ADD_METADATA(count, "software", NULL);

@@ -1,0 +1,4 @@
+int *buf=(int*) calloc(5,sizeof(int));
+int index = 5;
+*(buf-index)=9;
+free(buf);

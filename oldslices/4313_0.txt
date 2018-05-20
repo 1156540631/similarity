@@ -1,0 +1,5 @@
+char * &dataRef = data;
+char * data = dataRef;
+SNPRINTF(dest, strlen(data), "%s", data);
+printLine(data);
+free(data);

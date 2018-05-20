@@ -1,0 +1,15 @@
+wchar_t * data;
+list<wchar_t *> dataList;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = L'\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+wcsncpy(data, source, 100-1);

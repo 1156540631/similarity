@@ -1,0 +1,3 @@
+contourne_unbragging = getenv("WALLFLOWERS_SLOCK");
+antakya_progress = ((int )(strlen(contourne_unbragging)));
+wiremen_provisioneress = ((char *)(malloc(antakya_progress + 1)));

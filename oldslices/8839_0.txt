@@ -1,0 +1,4 @@
+double * &dataRef = data;
+double * data = dataRef;
+printDoubleLine(*data);
+free(data);

@@ -1,0 +1,8 @@
+FILE *get_preset_file(char *filename,size_t filename_size,const char *preset_name,int is_path,const char *codec_name)
+snprintf(filename,filename_size,"%s%s/%s.ffpreset",base[i],(i != 1?"" : "/.ffmpeg"),preset_name);
+f = fopen(filename,"r");
+snprintf(filename,filename_size,"%s%s/%s-%s.ffpreset",base[i],(i != 1?"" : "/.ffmpeg"),codec_name,preset_name);
+f = fopen(filename,"r");
+snprintf(filename,filename_size,"%s%s/%s.ffpreset",base[i],(i != 1?"" : "/.ffmpeg"),preset_name);
+f = fopen(filename,"r");
+snprintf(filename,filename_size,"%s%s/%s-%s.ffpreset",base[i],(i != 1?"" : "/.ffmpeg"),codec_name,preset_name);

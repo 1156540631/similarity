@@ -1,0 +1,5 @@
+frag = NULL;
+al = dtls1_preprocess_fragment(s, &frag->msg_header, max);
+static int dtls1_preprocess_fragment(SSL *s, struct hm_header_st *msg_hdr,
+al = dtls1_preprocess_fragment(s, &frag->msg_header, max);
+frag->msg_header.frag_len);

@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int immodulated_tripleback = 1024;
+char *belate_sifflement;
+stonesoup_read_taint(&belate_sifflement,"1455",immodulated_tripleback);
+free(((char *)belate_sifflement));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&belate_sifflement,"1455",immodulated_tripleback);
+free(((char *)belate_sifflement));

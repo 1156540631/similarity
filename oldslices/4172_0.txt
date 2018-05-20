@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+struct myelemia_schapping lobal_cysteine;
+int hut_corea = 44;
+char *overvehement_macrocosm;;
+stonesoup_read_taint(&overvehement_macrocosm,"4212",hut_corea);
+lobal_cysteine . snooled_lections = ((char *)overvehement_macrocosm);
+transliterate_actuarian = zalucki_awatch(lobal_cysteine);
+struct myelemia_schapping zalucki_awatch(struct myelemia_schapping sense_dendrocolaptine)
+return sense_dendrocolaptine;
+transliterate_actuarian = zalucki_awatch(lobal_cysteine);
+free(((char *)transliterate_actuarian . snooled_lections));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&overvehement_macrocosm,"4212",hut_corea);
+lobal_cysteine . snooled_lections = ((char *)overvehement_macrocosm);
+transliterate_actuarian = zalucki_awatch(lobal_cysteine);

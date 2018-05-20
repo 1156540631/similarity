@@ -1,0 +1,2 @@
+char VAR1[256];
+memset(VAR1, 0, sizeof(VAR1));

@@ -1,0 +1,14 @@
+CWE134_Uncontrolled_Format_String__char_console_vfprintf_67_structType myStruct;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+myStruct.structFirst = data;
+CWE134_Uncontrolled_Format_String__char_console_vfprintf_67b_goodG2BSink(myStruct);
+void CWE134_Uncontrolled_Format_String__char_console_vfprintf_67b_goodG2BSink(CWE134_Uncontrolled_Format_String__char_console_vfprintf_67_structType myStruct)
+char * data = myStruct.structFirst;
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

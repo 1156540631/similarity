@@ -1,0 +1,16 @@
+return VAR1 - 32;
+VAR2 = (char *) malloc (sizeof(char) * 20);
+memset(VAR2, 0, 20);
+FUN1(VAR3, VAR2);
+VAR4 = strlen( VAR2);
+FUN2(VAR2[VAR5]);
+VAR2[VAR5] =
+FUN2(VAR2[VAR5]);
+FUN3("%s\n", VAR2);
+int FUN2(int VAR1)
+return VAR1;
+FUN2(VAR2[VAR5]);
+VAR2[VAR5] =
+FUN3("%s\n", VAR2);
+void FUN3(char * VAR6, ...) {
+free (VAR2);

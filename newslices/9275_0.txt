@@ -1,0 +1,5 @@
+void FUN1(char * VAR1[])
+char * VAR2 = VAR1[2];
+strncpy(VAR2, VAR3, strlen(VAR3) + 1);
+FUN2(VAR2);
+free(VAR2);

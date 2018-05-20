@@ -1,0 +1,10 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cat_82_base* baseObject = new CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cat_82_goodG2B;
+baseObject->action(data);
+void CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cat_82_goodG2B::action(char * data)
+char dest[50] = "";
+strcat(dest, data);

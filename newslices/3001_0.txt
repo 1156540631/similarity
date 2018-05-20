@@ -1,0 +1,4 @@
+int *VAR1=(int*)calloc(5,sizeof(int));
+int *VAR2=(int*)calloc(5,sizeof(int));
+int *VAR3=(int*)calloc(5,sizeof(int));
+free(VAR3);

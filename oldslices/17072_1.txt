@@ -1,0 +1,13 @@
+char * data;
+map<int, char *> dataMap;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, char *> dataMap)
+char dest[50] = "";
+char * data = dataMap[2];
+memmove(dest, data, strlen(data)*sizeof(char));

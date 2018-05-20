@@ -1,0 +1,31 @@
+FUN1(&VAR1,"SAMBOS_TUCKERMANITY");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+if (VAR5 != 0) {
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+if (*VAR2 != 0) {
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+if (VAR5 != 0) {
+fclose(VAR5);
+if (VAR1 != 0) {;
+VAR8 = &VAR1;
+FUN3(VAR9,VAR8);
+void FUN3(int VAR10,char **VAR11)
+VAR12 = ((char *)( *VAR11));
+VAR13 = malloc((strlen(VAR12) + 1) * sizeof(char ));
+if (VAR13 == 0) {
+strcpy(VAR13,VAR12);
+if (VAR13[0] >= 97) {
+FUN4("VAR14 VAR15 VAR16 char: %i\n",FUN5(VAR13));
+char FUN5(char *VAR17)
+VAR18 = VAR17[0] - 97;
+free(VAR17);
+return VAR18;
+if (VAR13 != 0) {
+free(VAR13);
+if ( *VAR11 != 0)
+free(((char *)( *VAR11)));

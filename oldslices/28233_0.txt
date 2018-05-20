@@ -1,0 +1,6 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+char * dataCopy = data;
+char * data = dataCopy;
+char dest[50] = "";
+strncat(dest, data, strlen(data));

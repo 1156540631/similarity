@@ -1,0 +1,13 @@
+wchar_t * VAR9;
+wchar_t VAR2[100];
+wmemset(VAR2, L'A', 100-1);
+VAR2[100-1] = L'\0';
+VAR9 = VAR2;
+CALSS1* FUN1 = new CALSS3;
+FUN1->action(VAR9);
+void CALSS3::action(wchar_t * VAR9)
+wchar_t VAR10[100];
+wmemset(VAR10, L'C', 100-1);
+VAR10[100-1] = L'\0';
+wcscpy(VAR9, VAR10);
+delete FUN1;

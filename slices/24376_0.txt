@@ -1,0 +1,4 @@
+monosiphonic_remits = getenv("VAR2");
+if (VAR1 != 0) {;
+VAR3 . VAR4 = ((char *)VAR1);
+*VAR5 = VAR3;

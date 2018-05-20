@@ -1,0 +1,6 @@
+bspa_rubella = getenv("EQUABLE_UNCRINKLING");
+if (bspa_rubella != 0) {;
+stoppableness_complimentarily = bspa_rubella;
+turtlings_unchromed = &stoppableness_complimentarily;
+lynndyl_upreared = ((noak_taking *)(((unsigned long )turtlings_unchromed) * marcellina_befraught * marcellina_befraught)) + 5;
+acnodal_unbedimmed(lynndyl_upreared);

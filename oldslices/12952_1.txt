@@ -1,0 +1,30 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int isolex_sanfo = 596;
+char *owlishly_ionospheres;
+stonesoup_read_taint(&owlishly_ionospheres,"6156",isolex_sanfo);
+alphabetizers_lbl = ((char *)owlishly_ionospheres);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before[63] = '\0';
+stonesoup_data->buffer[63] = '\0';
+stonesoup_data->after[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->before", stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->after", stonesoup_data->after, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(alphabetizers_lbl)));
+memcpy(stonesoup_data->buffer, alphabetizers_lbl, 64);
+stonesoup_printf("%x",stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+free( stonesoup_data);
+void stonesoup_printf(char * format, ...) {
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+free( stonesoup_data);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&owlishly_ionospheres,"6156",isolex_sanfo);
+alphabetizers_lbl = ((char *)owlishly_ionospheres);
+stonesoup_buff_size = ((int )(strlen(alphabetizers_lbl)));
+memcpy(stonesoup_data->buffer, alphabetizers_lbl, 64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+free( stonesoup_data);

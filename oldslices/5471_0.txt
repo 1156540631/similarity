@@ -1,0 +1,8 @@
+uninit_pointer_016_gbl_doubleptr=(char**) malloc(10*sizeof(char*));
+uninit_pointer_016_gbl_doubleptr[i]=(char*) malloc(10*sizeof(char));
+strcpy(uninit_pointer_016_gbl_doubleptr[i],"STRING00");
+uninit_pointer_016_func_002();
+printf("unint p %s \n",uninit_pointer_016_gbl_doubleptr[i]);
+strcpy(s,uninit_pointer_016_gbl_doubleptr[i]);
+free (uninit_pointer_016_gbl_doubleptr[i]);
+free(uninit_pointer_016_gbl_doubleptr);

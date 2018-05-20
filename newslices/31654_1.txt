@@ -1,0 +1,11 @@
+const int VAR1 = 5;
+char * VAR2;
+char VAR3[100];
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+if(VAR1==5)
+VAR2 = VAR3 - 8;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+strncpy(VAR4, VAR2, strlen(VAR4));

@@ -1,0 +1,6 @@
+stonesoup_buffer[64 - 1] = '\0';
+stonesoup_source[1023] = '\0';
+if (strlen(stonesoup_source) + 1 <= 64) {
+tracepoint(stonesoup_trace, variable_buffer_info, "stonesoup_source", strlen(stonesoup_source)+1, stonesoup_source, "TRIGGER-STATE");
+tracepoint(stonesoup_trace, variable_buffer_info, "stonesoup_buffer", strlen(stonesoup_buffer)+1, stonesoup_buffer, "TRIGGER-STATE");
+strncpy(stonesoup_buffer, stonesoup_source, sizeof(stonesoup_source));

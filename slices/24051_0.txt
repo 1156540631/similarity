@@ -1,0 +1,1 @@
+getenv("VAR253") != ((void *)0)?abort() : except_throw(1,4,(FUNC51("%s:%u: failed assertion \"DISSECTOR_ASSERT_NOT_REACHED\"","emem.c",1856)));

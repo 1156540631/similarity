@@ -1,0 +1,9 @@
+FUN1(VAR1 VAR2, VAR3 &VAR4)
+VAR5 = FUN2(VAR5);
+static CLASS1 * FUN2(const CLASS1 * VAR5)
+CLASS1 VAR5[VAR6 + 1] = { '\' };
+return VAR5;
+VAR5 = FUN2(VAR5);
+if (FUN3(VAR2) > VAR6) {
+return VAR7;
+FUN4(VAR5, VAR2, VAR6);

@@ -1,0 +1,6 @@
+void badSource(twoIntsStruct * &data);
+badSource(data);
+data = NULL;
+badSource(data);
+printStructLine(data);
+free(data);

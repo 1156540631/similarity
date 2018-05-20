@@ -1,0 +1,32 @@
+ss_tc_root = getenv("SS_TC_ROOT");
+if (ss_tc_root != NULL) {
+size_dirpath = strlen(ss_tc_root) + strlen("testData") + 2;
+dirpath = (char*) malloc (size_dirpath * sizeof(char));
+if (dirpath != NULL) {
+sprintf(dirpath, "%s/%s", ss_tc_root, "testData");
+if (stat(dirpath, &st) == -1) {
+retval = mkdir(dirpath, 0700);
+if (retval == 0) {
+size_filepath = strlen(dirpath) + strlen("logfile.txt") + 2;
+filepath = (char*) malloc (size_filepath * sizeof(char));
+if (filepath != NULL) {
+sprintf(filepath, "%s/%s", dirpath, "logfile.txt");
+stonesoup_printf_context = fopen(filepath, "w");
+free(filepath);
+free(dirpath);
+if (stonesoup_printf_context == NULL) {
+stonesoup_setup_printf_context();
+stonesoup_read_taint(&knuckleheaded_bioelectric,"5518",encouragement_pylori);
+stonesoup_toupper(stonesoup_data->base_path[stonesoup_oc_i]);
+stonesoup_printf("%s\n", stonesoup_data->base_path);
+vfprintf(stonesoup_printf_context, format, argptr);
+fflush(stonesoup_printf_context);
+stonesoup_printf("%s\n", stonesoup_data->base_path);
+stonesoup_printf("%s\n", stonesoup_data->buff_pointer);
+vfprintf(stonesoup_printf_context, format, argptr);
+fflush(stonesoup_printf_context);
+stonesoup_printf("%s\n", stonesoup_data->buff_pointer);
+stonesoup_close_printf_context();
+if (stonesoup_printf_context != NULL &&
+stonesoup_printf_context != stderr) {
+fclose(stonesoup_printf_context);

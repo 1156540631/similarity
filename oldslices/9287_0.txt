@@ -1,0 +1,17 @@
+shortstr(char *p, int n, int targ)
+return shortstr(p+1, n-1, targ);
+return p;
+return shortstr(p+1, n-1, targ);
+buf = malloc(MAXSIZE);
+strcpy(buf, str);
+printf("result: %s\n", buf);
+free(buf);
+str2 = shortstr(userstr, strlen(userstr), MAXSIZE-1);
+test(str2);
+test(char *str)
+strcpy(buf, str);
+printf("result: %s\n", buf);
+free(buf);
+main(int argc, char **argv)
+userstr = argv[1];
+str2 = shortstr(userstr, strlen(userstr), MAXSIZE-1);

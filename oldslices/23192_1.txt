@@ -1,0 +1,8 @@
+char * buffer = 0;
+buffer = (char*) malloc(max_buffer * sizeof(char));
+snprintf(buffer, max_buffer * sizeof(char), "Error: %s", error_log);
+char *str = "STRINGMEM";
+memory_allocation_failure_008_func_001(str);
+char * memory_allocation_failure_008_func_001 (const char *msg) {
+const char *error_log = msg;
+snprintf(buffer, max_buffer * sizeof(char), "Error: %s", error_log);

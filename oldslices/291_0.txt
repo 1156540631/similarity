@@ -1,0 +1,37 @@
+nsBlockFrame::GetMinWidth(nsRenderingContext *aRenderingContext)
+InlineMinWidthData data;
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+data.ForceBreak(aRenderingContext);
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+data.currentLine += nsRuleNode::ComputeCoordPercentCalc(indent, 0);
+kid->AddInlineMinWidth(aRenderingContext, &data);
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+kid->AddInlineMinWidth(aRenderingContext, &data);
+data.prevLines, data.currentLine);
+return nsBidiPresUtils::Resolve(this);
+for (nsBlockFrame* curFrame = this; curFrame;
+curFrame = static_cast<nsBlockFrame*>(curFrame->GetNextContinuation())) {
+for (line_iterator line = curFrame->begin_lines(), line_end = curFrame->end_lines();
+line->IsBlock() ? "block" : "inline",
+line->IsEmpty() ? ", empty" : "");
+if (line->IsBlock()) {
+line->mFirstChild, nsLayoutUtils::MIN_WIDTH);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+data.line = &line;
+data.ForceBreak(aRenderingContext);
+data.ForceBreak(aRenderingContext);
+line == curFrame->begin_lines()) {
+if (!curFrame->GetPrevContinuation() &&
+const nsStyleCoord &indent = GetStyleText()->mTextIndent;
+if (indent.ConvertsToLength())
+kid->AddInlineMinWidth(aRenderingContext, &data);
+data.currentLine += nsRuleNode::ComputeCoordPercentCalc(indent, 0);
+for (int32_t i = 0, i_end = line->GetChildCount(); i != i_end;
+data.line = &line;
+data.lineContainer = curFrame;
+data.prevLines, data.currentLine);
+kid->AddInlineMinWidth(aRenderingContext, &data);
+data.prevLines, data.currentLine);

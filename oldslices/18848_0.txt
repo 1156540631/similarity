@@ -1,0 +1,6 @@
+structType myStruct;
+data = new char[10+1];
+myStruct.structFirst = data;
+void goodG2BSink(structType myStruct)
+char * data = myStruct.structFirst;
+strcpy(data, source);

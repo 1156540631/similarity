@@ -1,0 +1,6 @@
+data[50-1] = '\0';
+return data;
+data = goodG2BSource(data);
+strcpy(dest, data);
+printLine(data);
+free(data);

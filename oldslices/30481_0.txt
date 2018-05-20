@@ -1,0 +1,11 @@
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_82_base* baseObject = new CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_82_goodB2G;
+baseObject->action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_82_goodB2G::action(int data)
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;
+delete baseObject;

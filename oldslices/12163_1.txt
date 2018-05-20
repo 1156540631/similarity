@@ -1,0 +1,9 @@
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);
+free(stonesoup_buffer);
+void trilloes_arranger(char **arterialization_jebel)
+temesv_threefolded = ((char *)( *(arterialization_jebel - 5)));
+stonesoup_buffer = malloc((strlen(temesv_threefolded) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,temesv_threefolded);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+free(stonesoup_buffer);

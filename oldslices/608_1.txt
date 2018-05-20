@@ -1,0 +1,8 @@
+WCHAR dlogFile[MAX_PATH + 1];
+if (!PathGetSiblingFilePath(dlogFile, exefullpath, L"uninstall.update")) {
+LPCWSTR newFileName)
+if (wcslen(destinationBuffer) + wcslen(newFileName) >= MAX_PATH) {
+PathGetSiblingFilePath(LPWSTR destinationBuffer,
+wcscpy(destinationBuffer, siblingFilePath);
+if (!PathRemoveFileSpecW(destinationBuffer)) {
+if (wcslen(destinationBuffer) + wcslen(newFileName) >= MAX_PATH) {

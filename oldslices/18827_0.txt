@@ -1,0 +1,6 @@
+char * data = goodG2BData;
+data = new char[10+1];
+goodG2BData = data;
+goodG2BSink();
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

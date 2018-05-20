@@ -1,0 +1,6 @@
+void FUN1(char * VAR1, ...) {
+VAR2 = (struct CLASS1 *) malloc (sizeof (struct CLASS1));
+memset(VAR2->VAR3, 0, 128);
+VAR2->VAR4[VAR5] = 5555;
+VAR2->VAR6[VAR5] = 5555;
+free (VAR2);

@@ -1,0 +1,6 @@
+char *teleologist_hazzanim = 0;
+aggrieve_ahmeek(&teleologist_hazzanim);
+joly_adaiha(teleologist_hazzanim);
+void joly_adaiha(char *const herbless_climatography)
+fanestil_unboraxed[1] = herbless_climatography;
+free(((char *)((char *)fanestil_unboraxed[1])));

@@ -1,0 +1,22 @@
+int tls1_process_heartbeat(SSL *s)
+unsigned char *p = &s->s3->rrec.data[0], *pl;
+unsigned int padding = 16;
+unsigned int payload;
+unsigned char *buffer, *bp;
+hbtype = *p++;
+n2s(p, payload);
+if (1 + 2 + payload + 16 > s->s3->rrec.length)
+return 0;
+pl = p;
+unsigned char *dataArray[5];
+buffer = OPENSSL_malloc(write_length);
+bp = buffer;
+dataArray[2] = bp;
+bp = func(dataArray);
+static unsigned char* func(unsigned char *dataArray[])
+*bp = dataArray[2];
+*bp++ = TLS1_HB_RESPONSE;
+return bp;
+bp = func(dataArray);
+s2n(payload, bp);
+memcpy(bp, pl, payload);

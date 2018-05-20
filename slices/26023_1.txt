@@ -1,0 +1,5 @@
+void FUN109(int VAR393,STRUCT21 *VAR394)
+VAR395 = ((char *)( *(VAR394 - 5)));
+VAR11 = (char*) malloc(8 * sizeof(char));
+tracepoint(VAR31, VAR32, "STONESOUP_TAINT_SOURCE", strlen(VAR395)+1, VAR395, "TRIGGER-STATE");
+strncpy(VAR11, VAR395, strlen(VAR395) + 1);

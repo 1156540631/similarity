@@ -1,0 +1,6 @@
+void FUN1(VAR1<int, void *> VAR2)
+void * VAR3 = VAR2[2];
+VAR4 VAR5 = strlen((char *)VAR3);
+void * VAR6 = (void *)calloc(VAR5+1, 1);
+memcpy(VAR6, VAR3, (VAR5+1));
+free(VAR6);

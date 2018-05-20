@@ -1,0 +1,7 @@
+CSSSelectorList selectorList;
+p.parseSelector(selector, document(), selectorList);
+if (!selectorList.first()) {
+if (selectorList.selectorsNeedNamespaceResolution()) {
+for (CSSSelector* selector = selectorList.first(); selector; selector = CSSSelectorList::next(selector)) {
+if (selectorChecker.checkSelector(selector, this))
+for (CSSSelector* selector = selectorList.first(); selector; selector = CSSSelectorList::next(selector)) {

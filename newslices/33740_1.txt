@@ -1,0 +1,6 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+VAR2[100-1] = '\';
+char VAR3[50] = "";
+char * *VAR4 = &VAR2;
+char * VAR2 = *VAR4;

@@ -1,0 +1,10 @@
+VAR1<int *> VAR2;
+VAR3 = (int *)malloc(50*sizeof(int));
+VAR2.FUN1(VAR3);
+VAR2.FUN1(VAR3);
+VAR2.FUN1(VAR3);
+FUN2(VAR2);
+void FUN2(VAR1<int *> VAR2)
+int * VAR3 = VAR2.FUN3();
+int VAR4[100] = {0};
+memcpy(VAR3, VAR4, 100*sizeof(int));

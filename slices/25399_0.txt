@@ -1,0 +1,7 @@
+VAR5 = getenv("MADEGASSY_DEVOTIONALITY");
+VAR6 = ((char *)VAR5);
+VAR7 = FUN1(VAR6);
+VAR8 FUN1(char *VAR9)
+VAR8 VAR10 = (VAR8 )0;
+VAR11 = strlen(VAR9) % 3;
+sscanf(VAR9,"%p",&VAR10);

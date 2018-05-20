@@ -1,0 +1,57 @@
+unsigned short size;
+n2s(data, size);
+s->tlsext_debug_cb(s, 1, type, data, size, s->tlsext_debug_arg);
+!s->tls_session_ticket_ext_cb(s, data, size,
+if (!ssl_next_proto_validate(data, size)) {
+if (!ssl_parse_serverhello_renegotiate_ext(s, data, size, al))
+data += size;
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+int ssl_parse_serverhello_tlsext(SSL *s, unsigned char **p, unsigned char *d,
+unsigned char *data = *p;
+n2s(data, length);
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+fprintf(stderr,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+if (ssl_parse_serverhello_use_srtp_ext(s, data, size, al))
+data += size;
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+static char ssl_next_proto_validate(unsigned char *d, unsigned len)
+ctx->next_proto_select_cb(s, &selected, &selected_len, data,
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+size,
+data += size;
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));

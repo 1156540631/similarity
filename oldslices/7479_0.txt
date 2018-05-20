@@ -1,0 +1,17 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int propylitic_bakhmut = 596;
+char *poligarship_treadled;
+stonesoup_read_taint(&poligarship_treadled,"8084",propylitic_bakhmut);
+waterworn_overharshly[84] = poligarship_treadled;
+eucrite_peripneumonic = ebullioscopic_emceeing(waterworn_overharshly);
+char **ebullioscopic_emceeing(char **nonrhythmical_pintos)
+return nonrhythmical_pintos;
+eucrite_peripneumonic = ebullioscopic_emceeing(waterworn_overharshly);
+free(((char *)eucrite_peripneumonic[84]));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&poligarship_treadled,"8084",propylitic_bakhmut);
+waterworn_overharshly[84] = poligarship_treadled;
+eucrite_peripneumonic = ebullioscopic_emceeing(waterworn_overharshly);

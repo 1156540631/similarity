@@ -1,0 +1,13 @@
+int FUN61() 
+return 1;
+int FUN62() 
+return 0;
+VAR8 = -1;
+if(FUN61())
+VAR3 = FUN1(VAR42, VAR5, VAR6 - 1, 0);
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

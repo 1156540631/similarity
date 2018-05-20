@@ -1,0 +1,3 @@
+addr = (char *) malloc(sizeof(char) * 500);
+CurEnv->e_to = (char *) malloc(strlen(addr) * sizeof(char) + 1);
+strcpy(CurEnv->e_to, addr);

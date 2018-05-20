@@ -1,0 +1,8 @@
+data = NULL;
+data = badSource(data);
+TwoIntsClass * badSource(TwoIntsClass * data)
+data = new TwoIntsClass[50];
+return data;
+data = badSource(data);
+TwoIntsClass source[100];
+memcpy(data, source, 100*sizeof(TwoIntsClass));

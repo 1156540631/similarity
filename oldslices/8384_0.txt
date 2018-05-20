@@ -1,0 +1,8 @@
+static wchar_t * goodG2B2Source(wchar_t * data)
+data[0] = L'\0';
+data = NULL;
+data = goodG2B2Source(data);
+return data;
+data = goodG2B2Source(data);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

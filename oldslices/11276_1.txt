@@ -1,0 +1,57 @@
+node->left=new_node;
+new_node->u.is_subtree=EMEM_TREE_NODE_IS_DATA;
+node=new_node;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+node=node->left;
+new_node->parent=node;
+node=new_node;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->left=NULL;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->right=NULL;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->key32=key;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->data=data;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->u.is_subtree=EMEM_TREE_NODE_IS_DATA;
+node->right=new_node;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+node=new_node;
+new_node->parent=node;
+node=new_node;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+next_tree=lookup_or_insert32(se_tree, *key[0].key, create_sub_tree, se_tree, EMEM_TREE_NODE_IS_SUBTREE);
+key[0].length--;
+key[0].key++;
+emem_tree_insert32_array(next_tree, key, data);
+emem_tree_key_t key[2];
+aligned[div-1] = 0x00000001;
+key[0].key = aligned;
+key[1].length = 0;
+key[1].key = NULL;
+emem_tree_insert32_array(se_tree, key, v);
+static void* lookup_or_insert32(emem_tree_t *se_tree, guint32 key, void*(*func)(void*),void* ud, int is_subtree) {
+next_tree=lookup_or_insert32(se_tree, *key[0].key, create_sub_tree, se_tree, EMEM_TREE_NODE_IS_SUBTREE);
+key++;
+emem_tree_insert32_array(next_tree, key, data);
+emem_tree_insert32_array(emem_tree_t *se_tree, emem_tree_key_t *key, void *data)
+emem_tree_insert32(se_tree, *key[0].key, data);
+key++;
+emem_tree_insert32_array(next_tree, key, data);
+emem_tree_insert32(emem_tree_t *se_tree, guint32 key, void *data)
+new_node->key32=key;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+new_node->data=data;
+new_node=se_tree->malloc(sizeof(emem_tree_node_t));
+emem_tree_insert_string(emem_tree_t* se_tree, const gchar* k, void* v, guint32 flags)
+guint32 len = (guint32) strlen(k);
+guint32 div = (len+3)/4+1;
+aligned = malloc(div * sizeof (guint32));
+key[0].length = div;
+emem_tree_insert32_array(se_tree, key, v);

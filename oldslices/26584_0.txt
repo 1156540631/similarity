@@ -1,0 +1,14 @@
+piffero_qualificator = getenv("UNIQUEST_NONPHILOLOGIC");
+if (piffero_qualificator != 0) {;
+vereeniging_milanville = ((int )(strlen(piffero_qualificator)));
+guildford_epicier = ((char *)(malloc(vereeniging_milanville + 1)));
+if (guildford_epicier == 0) {
+memset(guildford_epicier,0,vereeniging_milanville + 1);
+memcpy(guildford_epicier,piffero_qualificator,vereeniging_milanville);
+rehood_satellitoid = &guildford_epicier;
+if ( *rehood_satellitoid != 0) {
+junkyards_gawney = ((char *)( *rehood_satellitoid));
+if (strlen(junkyards_gawney) < 20) {
+realpath(junkyards_gawney,stonesoup_base_path);
+if ( *rehood_satellitoid != 0)
+free(((char *)( *rehood_satellitoid)));

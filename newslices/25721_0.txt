@@ -1,0 +1,16 @@
+char VAR1[256];
+FUN1 (fgets(VAR1, sizeof VAR1, VAR2) != VAR3) {
+VAR1[VAR4 + 1] = '\';
+if (sscanf(&VAR1[0], "%x", &VAR5) != 1)
+VAR4 = strcspn(VAR1, ",");
+FUN1 (fgets(VAR1, sizeof VAR1, VAR2) != VAR3) {
+FUN2("%." ETCH_MAX_SYMBOL_LENGTH "s", &VAR1[VAR4+1]));
+char         *VAR6;
+FUN3(VAR6);
+FUN4(VAR6);
+FUN5(int VAR5, CLASS1 *VAR7) {
+FUN2("%." ETCH_MAX_SYMBOL_LENGTH "s", &VAR1[VAR4+1]));
+FUN1 (fgets(VAR1, sizeof VAR1, VAR2) != VAR3) {
+FUN4(const char *VAR6)
+VAR2 = FUN6(VAR6, "r");
+FUN1 (fgets(VAR1, sizeof VAR1, VAR2) != VAR3) {

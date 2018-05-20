@@ -1,0 +1,10 @@
+wchar_t * data;
+wchar_t dataBadBuffer[50];
+data = dataBadBuffer;
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_snprintf_64b_badSink(&data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_snprintf_64b_badSink(void * dataVoidPtr)
+wchar_t * * dataPtr = (wchar_t * *)dataVoidPtr;
+wchar_t * data = (*dataPtr);
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);

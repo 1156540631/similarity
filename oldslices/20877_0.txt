@@ -1,0 +1,10 @@
+char buf[1025];
+norm_flgs = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+leftcode = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+rightcode = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+leftcode = strcpy((xmalloc(strlen("\033[") + 1)),"\033[");
+rightcode = strcpy((xmalloc(strlen("m") + 1)),"m");
+norm_flgs = strcpy((xmalloc(strlen("00") + 1)),"00");
+endcode = strcpy((xmalloc(strlen(buf) + 1)),buf);
+sprintf(buf,"%s%s%s",leftcode,norm_flgs,rightcode);
+endcode = strcpy((xmalloc(strlen(buf) + 1)),buf);

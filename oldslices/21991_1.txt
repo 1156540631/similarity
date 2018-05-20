@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+if(argc == 3)
+strncpy(name, argv[1], sizeof name - 1);
+strcat(name, argv[2]);

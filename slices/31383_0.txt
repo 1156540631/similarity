@@ -1,0 +1,13 @@
+#define VAR6 "AAAAAAAAAA"
+static const int VAR12 = 1;
+static const int VAR13 = 0;
+char * VAR4;
+char VAR1[10];
+char VAR7[10+1];
+if(VAR13)
+{}
+else
+VAR4 = VAR7;
+VAR4[0] = '\0';
+char VAR8[10+1] = VAR6;
+strncpy(VAR4, VAR8, strlen(VAR8) + 1);

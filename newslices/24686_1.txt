@@ -1,0 +1,6 @@
+void FUN1(int VAR1,void *VAR2)
+VAR3 = ((char *)((char *)VAR2));
+VAR4 = (char*) malloc(64 * sizeof(char));
+memset(VAR4,0,64);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR7-VAR8");
+strcpy(VAR4, VAR3);

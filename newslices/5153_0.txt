@@ -1,0 +1,4 @@
+char *VAR1;
+VAR2->VAR3 = strtol(VAR4, &VAR1, 10);
+VAR5 = (CLASS1 *)VAR1;
+(*VAR5 != '\' && !isspace(*VAR5))) {

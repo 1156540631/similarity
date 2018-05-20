@@ -1,0 +1,40 @@
+static char *FUN1(double *VAR1, int VAR2, const char *VAR3)
+char *VAR4, *VAR5;
+VAR6 VAR7;
+if (!VAR3) VAR3 = ", ";
+VAR7 = 15LL + strlen(VAR3);
+if (VAR2 >= (VAR8 - 1)/VAR7)
+return VAR9;
+VAR4 = FUN2(VAR7 * VAR2 + 1);
+if (!VAR4)
+return VAR9;
+VAR5   = VAR4;
+VAR4[0] = '\';
+for (VAR10 = 0; VAR10 < VAR2; VAR10++)
+unsigned VAR11 = FUN3(VAR4, VAR7, "%f%s", VAR1[VAR10], VAR3);
+if(VAR11 >= VAR7)
+FUN4(VAR5);
+return VAR9;
+VAR4 += VAR11;
+VAR5[strlen(VAR5) - strlen(VAR3)] = '\';
+return VAR5;
+static char *FUN5(CLASS1 *VAR12, int VAR2, const char *VAR3)
+char *VAR4, *VAR5;
+VAR6 VAR7;
+if (!VAR3) VAR3 = ", ";
+VAR7 = 7LL + strlen(VAR3);
+if (VAR2 >= (VAR8 - 1)/VAR7)
+return VAR9;
+VAR4 = FUN2(VAR7 * VAR2 + 1);
+if (!VAR4)
+return VAR9;
+VAR5   = VAR4;
+VAR4[0] = '\';
+for (VAR10 = 0; VAR10 < VAR2; VAR10++)
+unsigned VAR11 = FUN3(VAR4, VAR7, "%d%s", VAR12[VAR10], VAR3);
+if (VAR11 >= VAR7
+FUN4(VAR5);
+return VAR9;
+VAR4 += VAR11;
+VAR5[strlen(VAR5) - strlen(VAR3)] = '\';
+return VAR5;

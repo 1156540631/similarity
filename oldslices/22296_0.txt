@@ -1,0 +1,4 @@
+antenatalitial_examplar = getenv("CARIA_PRODUCIBLE");
+if (antenatalitial_examplar != 0) {;
+slovan_salicins(antenatalitial_examplar);
+void slovan_salicins(char *const bibliographize_glomerulus);

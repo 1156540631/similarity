@@ -1,0 +1,6 @@
+data = new wchar_t[10+1];
+goodG2BSink(data);
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);
+void goodG2BSink(wchar_t * data)
+wcscpy(data, source);

@@ -1,0 +1,11 @@
+union VAR33 VAR34 = {0};
+STRUCT1 VAR35;
+FUN2(VAR35,VAR36);
+VAR34 = (FUN3(VAR35,union VAR33 ));
+FUN4(VAR37,VAR34);
+char VAR30[1024];
+memset(VAR30, 0, 1024);
+strncpy(VAR30, VAR38, sizeof(VAR30));
+void FUN4(int VAR39,union VAR33 VAR40)
+VAR38 = ((char *)VAR40 . VAR28);
+strncpy(VAR30, VAR38, sizeof(VAR30));

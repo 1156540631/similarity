@@ -1,0 +1,21 @@
+VAR1 = FUN1("PUSHFUL_CHASTY");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3[7] = VAR2;
+VAR4 = ((int )(strlen(VAR2)));
+FUN2(VAR5, VAR6, "VAR3", VAR3, "VAR7-VAR8");
+for (; VAR4 >= 0; (--VAR9 , --VAR4)) {
+VAR10[VAR9] = VAR2[VAR4];
+FUN2(VAR5, VAR6, "VAR10", VAR10, "VAR11-VAR8");
+VAR10[VAR12] = FUN3(VAR10[VAR12]);
+FUN4("%s\n",VAR10);
+FUN4("strlen VAR13 = %d\n",strlen(VAR2));
+FUN4("strlen VAR13 = %d\n",strlen(VAR3[7]));
+int FUN3(int VAR14)
+if (VAR14 >= 97 && VAR14 <= 122) {
+return VAR14 - 32;
+return VAR14;
+VAR10[VAR12] = FUN3(VAR10[VAR12]);
+void FUN4(char * VAR15, ...) {
+FUN4("strlen VAR13 = %d\n",strlen(VAR3[7]));
+FUN2(VAR5, VAR6, "VAR10", VAR10, "VAR16-VAR8");

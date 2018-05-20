@@ -1,0 +1,3 @@
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncpy_81_goodG2B::action(wchar_t * data) const
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

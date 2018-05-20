@@ -1,0 +1,10 @@
+FUN1(char *VAR7)
+VAR7 ++;
+for (VAR1 = VAR7; *VAR7 && *VAR7 != '\"'; VAR7 ++)
+*VAR7++ = '\0';
+while (isspace(*VAR7 & 255))
+VAR7 ++;
+for (VAR1 = VAR7; *VAR7 && !isspace(*VAR7 & 255); VAR7 ++);
+while (isspace(*VAR7 & 255))
+*VAR7++ = '\0';
+while (isspace(*VAR7 & 255))

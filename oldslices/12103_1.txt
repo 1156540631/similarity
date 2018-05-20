@@ -1,0 +1,3 @@
+free(memory_allocation_failure_011_gbl_u1->s1->a);
+free(memory_allocation_failure_011_gbl_u1->s1);
+free(memory_allocation_failure_011_gbl_u1);

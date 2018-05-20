@@ -1,0 +1,38 @@
+uint8_t *new_buf = av_realloc(pd->buf, pd->buf_size+pkt->size+AVPROBE_PADDING_SIZE);
+pd->buf = new_buf;
+memcpy(pd->buf+pd->buf_size, pkt->data, pkt->size);
+memset(pd->buf+pd->buf_size, 0, AVPROBE_PADDING_SIZE);
+if(end || av_log2(pd->buf_size) != av_log2(pd->buf_size - pkt->size)){
+av_init_packet(pkt);
+ret= s->iformat->read_packet(s, pkt);
+probe_codec(s, st, NULL);
+av_free_packet(pkt);
+av_packet_merge_side_data(pkt);
+add_to_pktbuf(&s->raw_packet_buffer, pkt, &s->raw_packet_buffer_end);
+AVPacket cur_pkt;
+ret = ff_read_packet(s, &cur_pkt);
+AVPacket pkt1, *pkt = &pkt1;
+av_free_packet(pkt);
+ret = ff_read_packet(ic, pkt);
+int ff_read_packet(AVFormatContext *s, AVPacket *pkt)
+*pkt = pktl->pkt;
+av_init_packet(pkt);
+add_to_pktbuf(&s->raw_packet_buffer, pkt, &s->raw_packet_buffer_end);
+static AVPacket *add_to_pktbuf(AVPacketList **packet_buffer, AVPacket *pkt,
+add_to_pktbuf(&s->raw_packet_buffer, pkt, &s->raw_packet_buffer_end);
+probe_codec(s, st, pkt);
+*pkt = pktl->pkt;
+av_init_packet(pkt);
+add_to_pktbuf(&s->raw_packet_buffer, pkt, &s->raw_packet_buffer_end);
+static void probe_codec(AVFormatContext *s, AVStream *st, const AVPacket *pkt)
+uint8_t *new_buf = av_realloc(pd->buf, pd->buf_size+pkt->size+AVPROBE_PADDING_SIZE);
+pd->buf = new_buf;
+memcpy(pd->buf+pd->buf_size, pkt->data, pkt->size);
+memset(pd->buf+pd->buf_size, 0, AVPROBE_PADDING_SIZE);
+if(end || av_log2(pd->buf_size) != av_log2(pd->buf_size - pkt->size)){
+probe_codec(s, st, pkt);
+*pkt = pktl->pkt;
+av_init_packet(pkt);
+add_to_pktbuf(&s->raw_packet_buffer, pkt, &s->raw_packet_buffer_end);
+int av_read_packet(AVFormatContext *s, AVPacket *pkt)
+return ff_read_packet(s, pkt);

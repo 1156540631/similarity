@@ -1,0 +1,5 @@
+char * &VAR3 = VAR1;
+char * VAR1 = VAR3;
+SNPRINTF(VAR1, 100, "%s", VAR2);
+FUN2(VAR1);
+free(VAR1);

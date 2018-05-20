@@ -1,0 +1,25 @@
+VAR22 = VAR5[i];
+VAR13 = VAR22 -> VAR13;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d fps=%3.*f q=%3.1f ",VAR13,fps < 9.95,fps,VAR24);
+FUNC1(&VAR19,"frame=%d\n",VAR13);
+char VAR20[3] = {('Y'), ('U'), ('V')};
+VAR8 = VAR14 -> VAR8[j];
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0 * VAR13;
+VAR8 = VAR14 -> VAR2 -> VAR8[j];
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0;
+VAR9 /= 4;
+VAR25 = FUNC5(VAR8 / VAR9);
+FUNC1(&VAR19,"stream_%d_%d_FUNC5_%c=%2.2f\n",VAR22 -> VAR3,VAR22 -> VAR23,VAR20[j] | 32,VAR25);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%c:%2.2f ",VAR20[j],VAR25);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"q=%2.1f ",VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d fps=%3.*f q=%3.1f ",VAR13,fps < 9.95,fps,VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"PSNR=");
+static double FUNC5(double VAR26)
+return - 10.0 * log(VAR26) / log(10.0);
+VAR25 = FUNC5(VAR8 / VAR9);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%c:%2.2f ",VAR20[j],VAR25);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"q=%2.1f ",VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d fps=%3.*f q=%3.1f ",VAR13,fps < 9.95,fps,VAR24);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"PSNR=");

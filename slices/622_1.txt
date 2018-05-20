@@ -1,0 +1,43 @@
+return '?';
+const guint8 *VAR3, int *VAR1)
+VAR8 = (const gint *) (VAR3 + 4);
+VAR11 = (const gint *) (VAR3 + 2 * 4);
+VAR2 = (const guint32 *) (VAR3 + 4 * 4);
+VAR5 = FUN1((const guint8 *) (VAR3 + 5 * 4));
+VAR10 = (const gchar *) (VAR3 + 5 * 4 + 1);
+VAR16 = VAR10 + strlen(VAR10) + 1;
+VAR8 = (const gint *) (VAR3 + 4);
+VAR11 = (const gint *) (VAR3 + 2 * 4);
+VAR2 = (const guint32 *) (VAR3 + 4 * 4);
+VAR5 = FUN1((const guint8 *) (VAR3 + 6 * 4));
+VAR10 = (const char *) (VAR3 + 6 * 4 + 1);
+VAR16 = VAR10 + strlen(VAR10) + 1;
+VAR27 = FUN2(VAR6, *VAR7, *VAR2 / 1000000, *VAR8, *VAR11,
+VAR5, VAR10, VAR13);
+gint VAR12, gint VAR8, gint VAR11, gchar VAR5, const gchar *VAR10,
+VAR13[VAR14 - VAR15] = '\0';
+VAR5, VAR10, VAR13);
+const gchar *VAR16)
+gchar  VAR17[15];
+VAR5, VAR10, VAR8, VAR16);
+VAR9
+VAR5, VAR8, VAR16, VAR10);
+VAR9
+VAR5, VAR10, VAR16);
+VAR9
+VAR5, VAR8, VAR11, VAR16);
+VAR9
+strftime(VAR17, sizeof(VAR17), "%m-%d %H:%M:%VAR4",
+VAR17, VAR12, VAR5, VAR10, VAR8, VAR16);
+VAR9
+strftime(VAR17, sizeof(VAR17), "%m-%d %H:%M:%VAR4",
+VAR17, VAR12, VAR8, VAR11, VAR5, VAR10, VAR16);
+VAR9
+strftime(VAR17, sizeof(VAR17), "%m-%d %H:%M:%VAR4",
+VAR17, VAR12, VAR8, VAR11, VAR5, VAR10, VAR16);
+VAR9
+return NULL;
+VAR27 = FUN2(VAR6, *VAR7, *VAR2 / 1000000, *VAR8, *VAR11,
+VAR9 = (guint32)strlen(VAR27);
+if (!FUN3(VAR18, VAR27, VAR9, VAR1)) {
+VAR9 = (guint32)strlen(VAR27);

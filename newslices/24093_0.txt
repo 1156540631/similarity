@@ -1,0 +1,4 @@
+char VAR1[1024];
+VAR2 = ((char *)( *(VAR3 - 5)) . VAR4);
+memset(VAR1,0,1024);
+strncpy(VAR1,VAR2,sizeof(VAR1));

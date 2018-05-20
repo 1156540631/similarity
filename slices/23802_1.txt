@@ -1,0 +1,20 @@
+char* VAR34;
+int VAR260 = 1000;
+VAR34 = (char*) malloc(VAR260 * sizeof(char));
+VAR1 = FUNC1(VAR2, "data", VAR34, VAR260 * sizeof(char));
+VAR34 = (char*) malloc(VAR260 * sizeof(char));
+VAR1 = FUNC1(VAR2, "data", VAR34, VAR260 * sizeof(char));
+VAR260 = VAR260 * 2;
+VAR34 = (char*) malloc(VAR260 * sizeof(char));
+VAR1 = FUNC1(VAR2, "data", VAR34, VAR260 * sizeof(char));
+free(VAR34);
+FUNC2(VAR34);
+VAR27 = (char*) malloc(8 * sizeof(char));
+strncpy(VAR27, VAR3, strlen(VAR3) + 1);
+void FUNC2(char *VAR4)
+VAR5 = VAR4;
+VAR6[ *( *( *( *( *( *( *( *( *( *VAR7)))))))))] = VAR5;
+VAR8 = VAR6[ *( *( *( *( *( *( *( *( *( *VAR7)))))))))];
+VAR3 = ((char *)VAR8);
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR3)+1, VAR3, "TRIGGER-STATE");
+strncpy(VAR27, VAR3, strlen(VAR3) + 1);

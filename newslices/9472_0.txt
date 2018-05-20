@@ -1,0 +1,24 @@
+VAR1 = fopen(VAR2,"rb");
+fseek(VAR1,0L,2);
+VAR3 = ftell(VAR1);
+rewind(VAR1);
+*VAR4 = ((char *)(malloc(sizeof(char ) * (VAR3 + 1))));
+VAR5 = fread(*VAR4,1,VAR3,VAR1);
+*VAR4 = VAR6;
+struct CLASS1 VAR7;
+char *VAR8;
+FUN1(&VAR8,"PARA_STORYMONGER");
+VAR7 . VAR9 = ((char *)VAR8);
+VAR10[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR11)))))))))))))))))))))))))))))))))))))))))))))))))] = VAR7;
+VAR12 = VAR10[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR11)))))))))))))))))))))))))))))))))))))))))))))))))];
+free(((char *)VAR12 . VAR9));
+void FUN1(char** VAR4, char* VAR13) {
+VAR2 = FUN2(VAR13);
+VAR1 = fopen(VAR2,"rb");
+fseek(VAR1,0L,2);
+VAR3 = ftell(VAR1);
+*VAR4 = ((char *)(malloc(sizeof(char ) * (VAR3 + 1))));
+FUN1(&VAR8,"PARA_STORYMONGER");
+VAR7 . VAR9 = ((char *)VAR8);
+VAR12 = VAR10[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR11)))))))))))))))))))))))))))))))))))))))))))))))))];
+free(((char *)VAR12 . VAR9));

@@ -1,0 +1,16 @@
+char       *VAR1,
+const char *VAR3,
+if (!strncasecmp(VAR3, "Hewlett-Packard", 15))
+VAR1[2] = ' ';
+strlcpy(VAR1 + 3, VAR4, VAR2 - 3);
+else if (!strncasecmp(VAR3, "deskjet", 7))
+snprintf(VAR1, VAR2, "HP DeskJet%VAR6", VAR3 + 7);
+else if (!strncasecmp(VAR3, "officejet", 9))
+snprintf(VAR1, VAR2, "HP OfficeJet%VAR6", VAR3 + 9);
+else if (!strncasecmp(VAR3, "stylus_pro_", 11))
+snprintf(VAR1, VAR2, "EPSON Stylus Pro %VAR6",
+VAR3 + 11);
+strlcpy(VAR1, VAR3, VAR2);
+if ((VAR4 = strstr(VAR1, ", Inc.,")) != NULL)
+if ((VAR4 = strstr(VAR1, " Network")) != NULL)
+if ((VAR4 = strchr(VAR1, ',')) != NULL)

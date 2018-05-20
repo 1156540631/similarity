@@ -1,0 +1,35 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&mouthes_epigonation,"TARSOCLASIS_DEPOSING");
+if (mouthes_epigonation != 0) {;
+mazolysis_cacoethes = ((int )(strlen(mouthes_epigonation)));
+rontgenized_turtledom = ((char *)(malloc(mazolysis_cacoethes + 1)));
+if (rontgenized_turtledom == 0) {
+memset(rontgenized_turtledom,0,mazolysis_cacoethes + 1);
+memcpy(rontgenized_turtledom,mouthes_epigonation,mazolysis_cacoethes);
+if (mouthes_epigonation != 0)
+free(((char *)mouthes_epigonation));
+titillating_mosaicked = &rontgenized_turtledom;
+sepiidae_edom = &titillating_mosaicked;
+sewellel_psychiatrists = &sepiidae_edom;
+gabbled_unpersonally = &sewellel_psychiatrists;
+capsomere_atlantis = &gabbled_unpersonally;
+depew_jello = &capsomere_atlantis;
+paramount_mandaeism = &depew_jello;
+overwinter_mycotoxic = &paramount_mandaeism;
+mariastein_hinayana = &overwinter_mycotoxic;
+toluate_preciosities = &mariastein_hinayana;
+crotalaria_instantiations = ((char *)( *( *( *( *( *( *( *( *( *( *toluate_preciosities)))))))))));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(crotalaria_instantiations)+1, crotalaria_instantiations, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, crotalaria_instantiations, strlen(crotalaria_instantiations) + 1);
+if ( *( *( *( *( *( *( *( *( *( *toluate_preciosities))))))))) != 0)
+free(((char *)( *( *( *( *( *( *( *( *( *( *toluate_preciosities))))))))))));

@@ -1,0 +1,11 @@
+list<wchar_t *> dataList;
+data = (wchar_t *)malloc((10+1)*sizeof(wchar_t));
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));
+printWLine(data);
+free(data);

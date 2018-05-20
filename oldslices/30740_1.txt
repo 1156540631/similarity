@@ -1,0 +1,12 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int badStatic = 0;
+data = NULL;
+data = (void *)WIDE_STRING;
+badStatic = 1;
+badSink(data);
+static void badSink(void * data)
+if(badStatic)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

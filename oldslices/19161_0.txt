@@ -1,0 +1,4 @@
+data = new char[10+1];
+char * data = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_char_ncpy_68_badData;
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

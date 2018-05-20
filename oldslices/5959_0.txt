@@ -1,0 +1,5 @@
+va_list args;
+va_start(args, string1);
+va_end(args);
+va_start(args, string1);
+va_end(args);

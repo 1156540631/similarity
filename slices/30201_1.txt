@@ -1,0 +1,17 @@
+typedef union
+int VAR9;
+int VAR10;
+} CLASS1;
+int VAR8;
+CLASS1 CLASS2;
+VAR8 = -1;
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+break;
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+CLASS2.VAR9 = VAR8;
+int VAR8 = CLASS2.VAR10;
+int VAR7[10] = { 0 };
+if (VAR8 >= 0)
+FUN3(VAR7[VAR8]);

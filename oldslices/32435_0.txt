@@ -1,0 +1,16 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(5==5)
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+if(5==5)
+fprintf(stdout, "%s\n", data);

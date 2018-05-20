@@ -1,0 +1,5 @@
+CWE122_Heap_Based_Buffer_Overflow__c_CWE193_wchar_t_ncpy_34_unionType myUnion;
+wchar_t * data = myUnion.unionSecond;
+wcsncpy(data, source, wcslen(source) + 1);
+printWLine(data);
+free(data);

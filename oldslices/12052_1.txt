@@ -1,0 +1,7 @@
+data = -1;
+badSource(data);
+void badSource(int &data);
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

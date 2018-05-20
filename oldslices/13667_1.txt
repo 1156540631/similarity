@@ -1,0 +1,26 @@
+const uint8_t *buf = avpkt->data;
+int sample = 128;
+out_size = AV_RL16(&buf[0]);
+in_size  = AV_RL16(&buf[2]);
+buf += 4;
+s->frame.nb_samples = out_size;
+if ((ret = avctx->get_buffer(avctx, &s->frame)) < 0)
+av_log(avctx, AV_LOG_ERROR, "get_buffer() failed\n");
+char * dataArray[5];
+dataArray[2] = samples;
+samples = badSource(dataArray);
+void badSource(char * dataArray[])
+char * samples = dataArray[2];
+samples     = s->frame.data[0];
+return samples;
+samples_end = samples + out_size;
+while (samples < samples_end && buf - avpkt->data < buf_size)
+code  = *buf >> 6;
+count = *buf & 0x3F;
+switch (code)
+case 0:  smp = 4;                              break;
+case 1:  smp = 2;                              break;
+case 2:  smp = (count & 0x20) ? 1 : count + 1; break;
+default: smp = count + 1;                      break;
+default:
+memset(samples, sample, smp);

@@ -1,0 +1,7 @@
+char src[4106];
+char buf[10];
+src[4106 - 1] = '\0';
+strncpy(buf, src, function1(4106));
+int function1(int arg1)
+return arg1;
+strncpy(buf, src, function1(4106));

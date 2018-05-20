@@ -1,0 +1,12 @@
+static int FUN2( CLASS1 *VAR1 )
+CLASS2     *VAR3 = (CLASS2*)VAR1;
+char         *VAR2 = 0, *VAR5 = 0, *VAR6 = 0;
+VAR16 = strchr( VAR3->VAR16, '/' );
+char *VAR4 = strdup( VAR3->VAR16 );
+VAR4[ VAR16 - VAR3->VAR16 ] = 0;
+VAR7 = strchr( VAR4, '@' );
+VAR7 = strchr( VAR4, ':' );
+VAR5 = strdup( VAR7+1 );
+if( !VAR2 ) VAR2 = FUN1( VAR3, "smb-user" );
+if( !VAR5 ) VAR5 = FUN1( VAR3, "smb-pwd" );
+if( VAR5 && !*VAR5 ) { free( VAR5 ); VAR5 = 0; }

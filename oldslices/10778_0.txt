@@ -1,0 +1,10 @@
+idx = locate_option(argc,argv,options,"v");
+char *tail;
+if (!strcmp(log_levels[i] . name,arg)) {
+level = (strtol(arg,&tail,'\n'));
+int locate_option(int argc,char **argv,const OptionDef *options,const char *optname)
+opt_loglevel(((void *)0),"loglevel",argv[idx + 1]);
+int opt_loglevel(void *optctx,const char *opt,const char *arg)
+level = (strtol(arg,&tail,'\n'));
+void parse_loglevel(int argc,char **argv,const OptionDef *options)
+int idx = locate_option(argc,argv,options,"loglevel");

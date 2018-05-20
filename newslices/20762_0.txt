@@ -1,0 +1,5 @@
+VAR1 = FUN1("BRIGANDAGE_DANELLE");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = ((char *)VAR1);
+VAR4 = FUN2(VAR2);
+struct CLASS1 FUN2(struct CLASS1 VAR5);

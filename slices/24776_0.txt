@@ -1,0 +1,23 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR143,"COMPACTILE_DIVORCING");
+if (VAR143 != 0) {;
+VAR144 = ((int )(strlen(VAR143)));
+VAR145 = ((char *)(malloc(VAR144 + 1)));
+if (VAR145 == 0) {
+memset(VAR145,0,VAR144 + 1);
+memcpy(VAR145,VAR143,VAR144);
+if (VAR143 != 0)
+free(((char *)VAR143));
+VAR146 = &VAR145;
+VAR147 = &VAR146;
+FUNC28(VAR147);

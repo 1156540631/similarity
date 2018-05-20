@@ -1,0 +1,9 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cpy_41_goodG2BSink(VAR1);
+void CWE121_Stack_Based_Buffer_Overflow__src_char_declare_cpy_41_goodG2BSink(char * VAR1)
+char VAR3[50] = "";
+strcpy(VAR3, VAR1);

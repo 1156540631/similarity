@@ -1,0 +1,8 @@
+void FUN142(char **VAR529)
+FUN143(VAR529);
+void FUN143(char **VAR530)
+VAR531 = ((char *)( *(VAR530 - 5)));
+VAR532 = (char*) malloc(64 * sizeof(char));
+memset(VAR532,0,64);
+tracepoint(VAR19, VAR60, "VAR532", VAR532, "INITIAL-STATE");
+strcpy(VAR532, VAR531);

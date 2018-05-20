@@ -1,0 +1,5 @@
+void FUN1(int VAR1,VAR2 VAR3)
+char VAR4[1024];
+VAR5 = ((char *)VAR3);
+memset(VAR4, 0, 1024);
+strncpy(VAR4, VAR5, sizeof(VAR4));

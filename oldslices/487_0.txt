@@ -1,0 +1,3 @@
+const nsHTMLReflowState& aReflowState,
+DISPLAY_REFLOW(aPresContext, this, aReflowState, aMetrics, aStatus);
+aReflowState.ComputedWidth(), aReflowState.ComputedHeight());

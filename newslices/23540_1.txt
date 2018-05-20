@@ -1,0 +1,6 @@
+char VAR1[11];
+char VAR2[10];
+memset(VAR1, '', 11);
+VAR1[11 - 1] = '\';
+VAR3 = 12;
+strncpy(VAR2, VAR1, 11 % VAR3);

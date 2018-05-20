@@ -1,0 +1,16 @@
+!memcmp( p_oggpacket->packet, "Annodex", 7 ) )
+!memcmp( p_oggpacket->packet, "AnxData", 7 ) )
+granule_rate_numerator = GetQWLE( &p_oggpacket->packet[8] );
+granule_rate_denominator = GetQWLE( &p_oggpacket->packet[16] );
+GetDWLE( &p_oggpacket->packet[24] );
+content_type_string[0] = '\0';
+uint8_t *p = memchr( &p_oggpacket->packet[42], '\r',
+sscanf( (char*)(&p_oggpacket->packet[42]), "%1023s\r\n",
+content_type_string );
+if( !strncmp(content_type_string, "audio/x-wav", 11) )
+else if( !strncmp(content_type_string, "audio/x-vorbis", 14) )
+else if( !strncmp(content_type_string, "audio/x-speex", 13) )
+else if( !strncmp(content_type_string, "video/x-theora", 14) )
+else if( !strncmp(content_type_string, "video/x-xvid", 12) )
+else if( !strncmp(content_type_string, "video/mpeg", 10) )
+else if( !strncmp(content_type_string, "text/x-cmml", 11) )

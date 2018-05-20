@@ -1,0 +1,10 @@
+main(int argc, char **argv)
+if(argc > 1) {
+VAR282 = argv[1];
+test(VAR282);
+test(char *VAR16)
+VAR82 = strdup(VAR16);
+if(VAR82) {
+printf("result: %VAR208\VAR213", VAR82);
+free(VAR82);
+free(VAR82);

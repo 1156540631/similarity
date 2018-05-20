@@ -1,0 +1,7 @@
+void nonloyalty_osirification(void *magnelectric_hynes)
+gunrunning_blench(magnelectric_hynes);
+void gunrunning_blench(void *viruslike_mackinac)
+char stonesoup_source[1024];
+predescend_conicality = ((char *)((char *)((void *)viruslike_mackinac)));
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,predescend_conicality,sizeof(stonesoup_source));

@@ -1,0 +1,8 @@
+VAR1 VAR2;
+VAR3 = (wchar_t *)malloc(50*sizeof(wchar_t));
+VAR3[0] = '\';
+VAR2.VAR4 = VAR3;
+wchar_t * VAR3 = VAR2.VAR5;
+wchar_t VAR6[100];
+VAR6[100-1] = '\';
+FUN1(VAR3, 100, VAR7"%s", VAR6);

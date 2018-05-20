@@ -1,0 +1,5 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+data = badSource(data);
+static char * badSource(char * data)
+size_t dataLen = strlen(data);

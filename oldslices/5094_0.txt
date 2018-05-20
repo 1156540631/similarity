@@ -1,0 +1,3 @@
+evinces_cowan = getenv("TRAINMASTER_ANTIFOULING");
+stiacciato_snorkeler = ((int )(strlen(evinces_cowan)));
+nonperceptional_deployed = ((char *)(malloc(stiacciato_snorkeler + 1)));

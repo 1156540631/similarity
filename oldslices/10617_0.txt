@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *outbelch_ramuscule)
+frecklish_anyplace = ((int )(strlen(outbelch_ramuscule)));
+monecious_whosises = ((char *)(malloc(frecklish_anyplace + 1)));

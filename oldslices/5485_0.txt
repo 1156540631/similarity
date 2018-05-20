@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *geronomite_stouter)
+heterophaga_memory = ((int )(strlen(geronomite_stouter)));
+spinnable_unproficiently = ((char *)(malloc(heterophaga_memory + 1)));

@@ -1,0 +1,12 @@
+int *VAR35 = &VAR5;
+int *VAR36 = &VAR5;
+VAR5 = -1;
+int VAR5 = *VAR35;
+VAR12 = recv(VAR55, VAR14, VAR15 - 1, 0);
+VAR14[VAR12] = '\0';
+VAR5 = atoi(VAR14);
+*VAR35 = VAR5;
+int VAR5 = *VAR36;
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

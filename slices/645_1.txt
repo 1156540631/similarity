@@ -1,0 +1,4 @@
+g_strlcpy(VAR13, VAR15, strlen(VAR15));
+VAR13[strlen(VAR15)] = '\0';
+VAR13 = (gchar *) g_malloc(strlen(VAR15) + 1);
+g_strlcpy(VAR13, VAR15, strlen(VAR15));

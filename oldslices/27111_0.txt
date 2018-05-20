@@ -1,0 +1,2 @@
+int main(int argc, char **argv)
+if (strlen(argv[1]) < BUFSIZE)

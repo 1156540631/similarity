@@ -1,0 +1,9 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+const int VAR3 = 5; 
+char * VAR4;
+VAR4 = VAR5;
+if(VAR3!=5) {}
+else
+VAR4 = (char *)malloc((10+1)*sizeof(char));
+char VAR6[10+1] = VAR2;
+memmove(VAR4, VAR6, (strlen(VAR6) + 1) * sizeof(char));

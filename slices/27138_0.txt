@@ -1,0 +1,10 @@
+VAR10=(char**) malloc(10*sizeof(char*));
+VAR10[VAR5]=(char*) malloc(10*sizeof(char));
+strcpy(VAR1[VAR5],"STRING00");
+char VAR1[10] ;
+FUN92();
+if(FUN93(VAR411)==0)
+FUN94();
+printf("invalid gbl= %VAR1 \VAR7",VAR1[0]);
+strcpy(VAR1,VAR1[0]);
+printf("invalid VAR14= %VAR1 \VAR7",VAR1);

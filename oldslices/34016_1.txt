@@ -1,0 +1,9 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_68_badData = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_68b_badSink();
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncpy_81_bad::action(char * data) const
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

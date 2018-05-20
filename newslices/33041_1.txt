@@ -1,0 +1,10 @@
+char * VAR1;
+void (*VAR2) (char *) = VAR3;
+void VAR3(char * VAR1)
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+FUN1(VAR1, 100, "%s", VAR4);
+char * VAR5 = (char *)FUN2(50*sizeof(char));
+VAR1 = VAR5;
+VAR1[0] = '\';

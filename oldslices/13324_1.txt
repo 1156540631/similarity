@@ -1,0 +1,9 @@
+NetdCommand* (*funcPtr)() = badSource;
+void NetworkUtils::doCommand(const char* aCommand, CommandChain* aChain, CommandCallback aCallback)
+NU_DBG("Preparing to send \'%s\' command...", aCommand);
+NetdCommand* netdCommand = funcPtr();
+NetdCommand* badSource()
+return NetdCommand();
+NetdCommand* netdCommand = funcPtr();
+if (SDK_VERSION >= 16) {
+snprintf((char*)netdCommand->mData, MAX_COMMAND_SIZE - 1, "0 %s", aCommand);

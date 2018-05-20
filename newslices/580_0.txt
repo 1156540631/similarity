@@ -1,0 +1,19 @@
+for (VAR1 VAR2 = FUN1(), VAR3 = FUN2();
+if (VAR4 && !VAR2->FUN3()) {
+static_cast<void*>(VAR2.FUN4()),
+static_cast<void*>((VAR2.FUN5() != FUN2() ? VAR2.FUN5().FUN4() : VAR5)),
+VAR2->FUN6() ? "block" : "inline",
+VAR2->FUN7() ? "VAR6-break-VAR7 " : "",
+VAR2->FUN8() ? "VAR6-VAR8 " : "",
+VAR2->FUN9() ? "impacted " : "",
+VAR2->FUN10(), VAR2->FUN11(),
+VAR2->FUN9() ||
+VAR2->FUN12() ||
+((VAR9 || !VAR2->FUN13()) && !VAR10) ||
+(!VAR9 && !VAR2->FUN7()) ||
+VAR2->FUN8() ||
+if (VAR2->FUN6() ||
+VAR2->FUN9() ||
+VAR2->FUN14();
+if (!VAR2->FUN6()) {
+VAR2.FUN4(), VAR2->FUN9() ? "" : "not ");

@@ -1,0 +1,8 @@
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));
+free(dest);

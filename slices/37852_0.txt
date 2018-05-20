@@ -1,0 +1,10 @@
+void * VAR1;
+VAR1 = NULL;
+char * VAR2 = (char *)malloc(50*sizeof(char));
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+VAR1 = (void *)VAR2;
+CLASS1* VAR4 = new CLASS2;
+VAR4->FUN1(VAR1);
+void CLASS2::FUN1(void * VAR1)
+size_t VAR3 = strlen((char *)VAR1);

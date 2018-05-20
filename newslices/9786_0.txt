@@ -1,0 +1,3 @@
+double *VAR1,VAR2;
+VAR1= (double*) malloc(10*sizeof(double));
+free(VAR1);

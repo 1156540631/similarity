@@ -1,0 +1,96 @@
+scanf("%99s", address);
+res_addr = crackaddr(address);
+char * crackaddr(addr)
+register char *addr;
+while (*addr != '\0' && isascii((int)*addr) && isspace((int)*addr))
+addr++;
+p = addrhead = addr;
+while ((c = *p++) != '\0')
+printf("c = %c\n", c);
+SM_APPEND_CHAR(c);
+if (c == '\\')
+if ((c = *p++) == '\0')
+p--;
+SM_APPEND_CHAR(c);
+if (c == '"' && cmtlev <= 0)
+if (copylev > 0 && SM_HAVE_ROOM)
+if (c == '(')
+if (SM_HAVE_ROOM)
+if (bp != bufhead)
+SM_APPEND_CHAR(' ');
+SM_APPEND_CHAR(c);
+if (c == ')')
+if (SM_HAVE_ROOM)
+else if (c == ')')
+if (copylev > 0 && SM_HAVE_ROOM)
+bp--;
+if (c == '[')
+else if (c == ']')
+if (c == ':' && anglelev <= 0 && bracklev <= 0 &&
+!gotcolon && !ColonOkInAddr)
+if (*p == ':' || *p == '.')
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(*p);
+p++;
+--p;
+while (p > addr && isascii((int) *--p) && isspace((int) *p))
+p++;
+for (q = addrhead; q < p; )
+c = *q++;
+if (quoteit && c == '"')
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR('\\');
+SM_APPEND_CHAR(c);
+if (bp == &bufhead[1])
+bp--;
+SM_APPEND_CHAR('"');
+while ((c = *p++) != ':')
+SM_APPEND_CHAR(c);
+while (isascii((int)*p) && isspace((int)*p))
+SM_APPEND_CHAR(*p);
+SM_APPEND_CHAR(c);
+p++;
+bufhead = bp;
+if (bp != bufhead)
+bp = bufhead;
+SM_APPEND_CHAR('"');
+if (bp == &bufhead[1])
+addrhead = p;
+if (c == ';' && copylev <= 0 && !ColonOkInAddr)
+SM_APPEND_CHAR(c);
+if (strchr(MustQuoteChars, c) != NULL)
+if (c == '<')
+if (SM_HAVE_ROOM)
+bp = bufhead;
+SM_APPEND_CHAR('"');
+--p;
+while (p > addr && isascii((int)*--p) && isspace((int)*p))
+p++;
+for (q = addrhead; q < p; )
+c = *q++;
+if (quoteit && c == '"')
+SM_APPEND_CHAR('\\');
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(c);
+if (bp == &buf[1])
+bp--;
+SM_APPEND_CHAR('"');
+while ((c = *p++) != '<')
+SM_APPEND_CHAR(c);
+if (c == '>')
+if (SM_HAVE_ROOM)
+else if (SM_HAVE_ROOM)
+bp--;
+SM_APPEND_CHAR(c);
+if (bp > buf && bp[-1] == ')')
+SM_APPEND_CHAR(' ');
+SM_APPEND_CHAR(MACROEXPAND);
+SM_APPEND_CHAR('g');
+if (realqmode && bp < bufend)
+*bp++ = '"';
+while (realcmtlev-- > 0 && bp < bufend)
+*bp++ = ')';
+if (addangle && bp < bufend)
+*bp++ = '>';
+*bp = '\0';
+if (bp < bufend)

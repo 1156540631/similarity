@@ -1,0 +1,7 @@
+VAR1  VAR2;
+VAR3 = FUN1(&VAR2, 2, VAR4->VAR5);
+VAR6 = FUN2(&VAR2);
+VAR7 = (CLASS1 *) FUN3(5 * 4 + VAR6);
+VAR3 = FUN1(VAR7, 5 * 4 + VAR6, VAR4->VAR5);
+VAR8 = (VAR9)strlen(VAR7 + 5 * 4 + 1) + 1;
+VAR10 = (VAR9)strlen(VAR7 + 5 * 4 + 1 + VAR8) + 1;

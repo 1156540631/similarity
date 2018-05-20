@@ -1,0 +1,3 @@
+char *VAR1=(char*) calloc(5,sizeof(char));
+VAR1[VAR2]=1;
+free(VAR1);

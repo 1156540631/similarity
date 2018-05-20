@@ -1,0 +1,3 @@
+jmp_buf ihs_prediminish;
+uniforms_opsigamy = setjmp(ihs_prediminish);
+longjmp(ihs_prediminish,1);

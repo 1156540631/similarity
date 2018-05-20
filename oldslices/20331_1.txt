@@ -1,0 +1,8 @@
+union tardive_finner warworn_warstles = {0};
+va_list moider_spithame;
+__builtin_va_start(moider_spithame,lighterful_empiricists);
+warworn_warstles = (va_arg(moider_spithame,union tardive_finner ));
+superinduction_preconcert = ((char *)warworn_warstles . durion_holdback);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(superinduction_preconcert)+1, superinduction_preconcert, "TRIGGER-STATE");
+strncpy(stonesoup_data, superinduction_preconcert, strlen(superinduction_preconcert) + 1);

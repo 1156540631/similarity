@@ -1,0 +1,3 @@
+rubbery_brilliant = getenv("FAIRLY_INCOHERENCY");
+miscalculating_abevacuation = ((int )(strlen(rubbery_brilliant)));
+turmet_clerkish = ((char *)(malloc(miscalculating_abevacuation + 1)));

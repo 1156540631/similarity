@@ -1,0 +1,35 @@
+CLASS1::FUN1(FILE* VAR2, int32_t VAR4, uint32_t VAR5) const
+FUN2(VAR2, VAR4);
+FUN7(VAR2);
+fprintf(VAR2, " [parent=%VAR1]", VAR6);
+fprintf(VAR2, " [view=%VAR1]", static_cast<void*>(FUN3()));
+fprintf(VAR2, " next=%VAR1", static_cast<void*>(FUN4()));
+fprintf(VAR2, " prev-in-flow=%VAR1", static_cast<void*>(FUN5()));
+fprintf(VAR2, " next-in-flow=%VAR1", static_cast<void*>(FUN6()));
+fprintf(VAR2, " IBSplitSpecialSibling=%VAR1", VAR7);
+fprintf(VAR2, " IBSplitSpecialPrevSibling=%VAR1", VAR8);
+fprintf(VAR2, " [content=%VAR1]", static_cast<void*>(VAR9));
+fprintf(VAR2, " {%d,%d,%d,%d}", VAR10.VAR11, VAR10.VAR12, VAR10.VAR13, VAR10.VAR14);
+fprintf(VAR2, " [state=%016llx]", (unsigned long long)VAR15);
+fprintf(VAR2, " [vis-overflow=%d,%d,%d,%d]", VAR16.VAR11, VAR16.VAR12,
+fprintf(VAR2, " [scr-overflow=%d,%d,%d,%d]", VAR16.VAR11, VAR16.VAR12,
+fprintf(VAR2, " sc=%VAR1(VAR3=%d,b=%d)",
+fprintf(VAR2, " pst=%VAR1",
+fprintf(VAR2, " transformed");
+fprintf(VAR2, " perspective");
+fprintf(VAR2, " preserves-3d-children");
+fprintf(VAR2, " preserves-3d");
+fputs("<\n", VAR2);
+VAR17->FUN1(VAR2, VAR4, VAR5);
+FUN2(VAR2, VAR4);
+fputs("Overflow-lines<\n", VAR2);
+VAR17->FUN1(VAR2, VAR4 + 1, VAR5);
+FUN2(VAR2, VAR4);
+fputs(">\n", VAR2);
+FUN2(VAR2, VAR4);
+fprintf(VAR2, "%VAR1<\n", mozilla::layout::ChildListName(lists.CurrentID()));
+kid->FUN1(VAR2, VAR4 + 1, VAR5);
+FUN2(VAR2, VAR4);
+fputs(">\n", VAR2);
+FUN2(VAR2, VAR4);
+fputs(">\n", VAR2);

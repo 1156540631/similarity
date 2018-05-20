@@ -1,0 +1,18 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&shelducks_litherly,"WOOLFELLS_SCLEROTIZED");
+if (shelducks_litherly != 0) {;
+grammar_serfdoms . macapa_airsheds = ((char *)shelducks_litherly);
+hemiteratic_palaeolithy[5] = grammar_serfdoms;
+unbranded_repatency =  *(hemiteratic_palaeolithy + acronyctous_corrosived[1]);
+backfired_crambambuli(unbranded_repatency);
+void backfired_crambambuli(struct somewhy_mutter marcgrave_unitrivalent);

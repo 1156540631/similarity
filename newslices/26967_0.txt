@@ -1,0 +1,2 @@
+VAR1[VAR2-1] = '\';
+printf("VAR3: %s\n", VAR1);

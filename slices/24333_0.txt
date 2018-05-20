@@ -1,0 +1,17 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR175,"SOPHISTICATIONS_PLAGUELESS");
+if (VAR175 != 0) {;
+VAR176 . VAR177 = VAR175;
+VAR178[5] = VAR176;
+VAR179 =  *(VAR178 +  *irenic_onewhere);
+FUNC31(VAR179);

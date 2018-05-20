@@ -1,0 +1,2 @@
+VAR189 = "This is random junk in the TXT record that will overflow (*VAR377)->VAR379.VAR380";
+VAR188 += strlen(VAR189);

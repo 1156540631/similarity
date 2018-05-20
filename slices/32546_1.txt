@@ -1,0 +1,8 @@
+char * VAR1;
+char VAR2[10];
+VAR1 = VAR2;
+VAR1[0] = '\0';
+const CLASS36& CLASS2 = CLASS37();
+void CLASS37::FUN2(char * VAR1) const
+char VAR4[10+1] = VAR5;
+strncpy(VAR1, VAR4, strlen(VAR4) + 1);

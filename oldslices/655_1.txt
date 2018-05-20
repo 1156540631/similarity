@@ -1,0 +1,19 @@
+AVI_READCHUNK_ENTER;
+p_chk->strf.vids.p_bih = malloc( p_chk->common.i_chunk_size );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biSize );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biWidth );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biHeight );
+AVI_READ2BYTES( p_chk->strf.vids.p_bih->biPlanes );
+AVI_READ2BYTES( p_chk->strf.vids.p_bih->biBitCount );
+AVI_READFOURCC( p_chk->strf.vids.p_bih->biCompression );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biSizeImage );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biXPelsPerMeter );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biYPelsPerMeter );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biClrUsed );
+AVI_READ4BYTES( p_chk->strf.vids.p_bih->biClrImportant );
+p_chk->strf.vids.p_bih->biSize = p_chk->common.i_chunk_size;
+memcpy( &p_chk->strf.vids.p_bih[1],
+static vlc_fourcc_t GetFOURCC( const uint8_t *p_buff )
+return VLC_FOURCC( p_buff[0], p_buff[1], p_buff[2], p_buff[3] );
+AVI_READFOURCC( p_chk->strf.vids.p_bih->biCompression );
+memcpy( &p_chk->strf.vids.p_bih[1],

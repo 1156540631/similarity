@@ -1,0 +1,6 @@
+probandi_paleocyclic = getenv("ENTROPION_APHONIAS");
+if (probandi_paleocyclic != 0) {;
+xeromyron_parenchym = ((void *)probandi_paleocyclic);
+rutilous_lathworks[5] = xeromyron_parenchym;
+recons_beroida =  *(rutilous_lathworks + melise_chromatosis[1]);
+paeon_gigantesque(nearing_peastake,recons_beroida);

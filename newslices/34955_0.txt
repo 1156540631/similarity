@@ -1,0 +1,11 @@
+char * VAR1;
+VAR1 = VAR2;
+VAR1 = new char[100];
+VAR1[0] = '\';
+VAR3 = VAR1;
+FUN1();
+char * VAR1 = VAR3;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+FUN2(VAR1, 100, "%s", VAR4);

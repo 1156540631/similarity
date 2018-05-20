@@ -1,0 +1,4 @@
+va_list ap2;
+G_VA_COPY(ap2, ap);
+full_len = g_vsnprintf(&strbuf->str[strbuf->len], (gulong) add_len, format, ap2);
+va_end(ap2);

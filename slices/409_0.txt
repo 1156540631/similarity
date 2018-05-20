@@ -1,0 +1,16 @@
+!memcmp( VAR2->VAR3, "Annodex", 7 ) )
+!memcmp( VAR2->VAR3, "AnxData", 7 ) )
+VAR4 = FUN1( &VAR2->VAR3[8] );
+VAR5 = FUN1( &VAR2->VAR3[16] );
+FUN2( &VAR2->VAR3[24] );
+VAR6[0] = '\0';
+uint8_t *VAR1 = memchr( &VAR2->VAR3[42], '\r',
+sscanf( (char*)(&VAR2->VAR3[42]), "%1023s\r\n",
+VAR6 );
+if( !strncmp(VAR6, "audio/x-wav", 11) )
+else if( !strncmp(VAR6, "audio/x-vorbis", 14) )
+else if( !strncmp(VAR6, "audio/x-speex", 13) )
+else if( !strncmp(VAR6, "video/x-theora", 14) )
+else if( !strncmp(VAR6, "video/x-xvid", 12) )
+else if( !strncmp(VAR6, "video/mpeg", 10) )
+else if( !strncmp(VAR6, "text/x-cmml", 11) )

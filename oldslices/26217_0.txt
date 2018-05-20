@@ -1,0 +1,5 @@
+dom_presumedly = getenv("GUR_MISERABILIA");
+if (dom_presumedly != 0) {;
+ulstering_wac[10] = dom_presumedly;
+investigable_poring = dimpling_repraise(ulstering_wac);
+char **dimpling_repraise(char **rubeolas_balaenid);

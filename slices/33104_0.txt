@@ -1,0 +1,12 @@
+char * VAR1;
+char VAR5[100];
+VAR1 = VAR5;
+VAR1[0] = '\0';
+FUN32(VAR1);
+void FUN32(char * VAR1)
+FUN31(VAR1);
+void FUN31(char * VAR1)
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+strncat(VAR1, VAR4, 100);

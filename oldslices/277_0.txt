@@ -1,0 +1,15 @@
+AVI_READCHUNK_ENTER;
+p_chk->strf.auds.p_wf = malloc( __MAX( p_chk->common.i_chunk_size, sizeof( WAVEFORMATEX ) ) );
+AVI_READ2BYTES( p_chk->strf.auds.p_wf->wFormatTag );
+AVI_READ2BYTES( p_chk->strf.auds.p_wf->nChannels );
+AVI_READ4BYTES( p_chk->strf.auds.p_wf->nSamplesPerSec );
+AVI_READ4BYTES( p_chk->strf.auds.p_wf->nAvgBytesPerSec );
+AVI_READ2BYTES( p_chk->strf.auds.p_wf->nBlockAlign );
+AVI_READ2BYTES( p_chk->strf.auds.p_wf->wBitsPerSample );
+&& p_chk->common.i_chunk_size > sizeof( WAVEFORMATEX ) )
+AVI_READ2BYTES( p_chk->strf.auds.p_wf->cbSize );
+p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX ) )
+p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX );
+p_chk->strf.auds.p_wf->cbSize =
+p_chk->strf.auds.p_wf->cbSize = 0;
+p_chk->strf.auds.p_wf->cbSize );

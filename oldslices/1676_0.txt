@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *geronomite_stouter)
+heterophaga_memory = ((int )(strlen(geronomite_stouter)));
+memcpy(spinnable_unproficiently,geronomite_stouter,heterophaga_memory);
+free(((char *)geronomite_stouter));

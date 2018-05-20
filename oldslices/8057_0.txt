@@ -1,0 +1,5 @@
+char * *dataPtr2 = &data;
+char * data = *dataPtr2;
+goodB2GVaSink(data, data);
+static void goodB2GVaSink(char * data, ...)
+va_start(args, data);

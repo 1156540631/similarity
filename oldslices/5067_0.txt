@@ -1,0 +1,3 @@
+risibleness_carla = getenv("SYNARTESIS_ANCIENNETE");
+surculi_cullionly = ((int )(strlen(risibleness_carla)));
+tupian_retrogressing = ((char *)(malloc(surculi_cullionly + 1)));

@@ -1,0 +1,3 @@
+va_list impubic_development;
+__builtin_va_start(impubic_development,recanes_bundt);
+buffoon_philogynaecic = (va_arg(impubic_development,union unmanoeuvred_gavottes ));

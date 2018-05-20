@@ -1,0 +1,18 @@
+rewind(VAR1);
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+*VAR3 = NULL;
+char *VAR2;
+FUN1(&VAR2,"UNLEARNABLENESS_AMERINDIAN");
+VAR5 = ((int )(strlen(VAR2)));
+memcpy(VAR6,VAR2,VAR5);
+free(((char *)VAR2));
+void FUN1(char** VAR3, char* VAR8) {
+VAR9 = getenv(VAR8);
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,VAR7,2);
+VAR4 = ftell(VAR1);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+FUN1(&VAR2,"UNLEARNABLENESS_AMERINDIAN");
+VAR5 = ((int )(strlen(VAR2)));
+memcpy(VAR6,VAR2,VAR5);
+free(((char *)VAR2));

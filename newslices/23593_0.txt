@@ -1,0 +1,24 @@
+void FUN1(char** VAR1, char* VAR2) {
+VAR3 = FUN2(VAR2);
+VAR4 = fopen(VAR3,"rb");
+fseek(VAR4,0L,2);
+VAR5 = ftell(VAR4);
+rewind(VAR4);
+*VAR1 = ((char *)(malloc(sizeof(char ) * (VAR5 + 1))));
+VAR6 = fread(*VAR1,1,VAR5,VAR4);
+*VAR1 = VAR7;
+VAR8 VAR9 = (VAR8 )0;
+sscanf(VAR10,"%p",&VAR9);
+char *VAR11;
+FUN1(&VAR11,"MOFW_BRAMLEY");
+VAR12 = ((int )(strlen(VAR11)));
+VAR13 = ((char *)(malloc(VAR12 + 1)));
+memset(VAR13,0,VAR12 + 1);
+memcpy(VAR13,VAR11,VAR12);
+VAR14 = &VAR13;
+VAR15 = &VAR14;
+VAR16 = ((char *)( *( *VAR15)));
+VAR17 = FUN3(VAR16);
+VAR8 FUN3(char *VAR10)
+VAR18 = strlen(VAR10) % 3;
+sscanf(VAR10,"%p",&VAR9);

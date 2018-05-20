@@ -1,0 +1,6 @@
+data = NULL;
+data = new int64_t[100];
+goodG2BSink_b(data);
+void goodG2BSink_e(int64_t * data)
+int64_t source[100] = {0};
+memcpy(data, source, 100*sizeof(int64_t));

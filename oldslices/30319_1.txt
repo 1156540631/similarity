@@ -1,0 +1,9 @@
+const int GLOBAL_CONST_TRUE = 1;
+const int GLOBAL_CONST_FALSE = 0;
+data = -1;
+if(GLOBAL_CONST_TRUE)
+fscanf(stdin, "%d", &data);
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

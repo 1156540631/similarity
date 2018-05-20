@@ -1,0 +1,10 @@
+char VAR1[1024];
+VAR2 = FUN1("ZOOIDS_UNDUPLICABILITY");
+VAR3[29] = VAR2;
+VAR4[5] = VAR3;
+VAR5 = 5;
+VAR6 = &VAR5;
+VAR7 =  *(VAR4 +  *VAR6);
+VAR8 = ((char *)VAR7[29]);
+memset(VAR1, 0, 1024);
+strncpy(VAR1, VAR8, sizeof(VAR1));

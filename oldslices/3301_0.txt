@@ -1,0 +1,3 @@
+read = fread(buf,1,max,DiamDictin);
+if ( read == max ) {
+return max;

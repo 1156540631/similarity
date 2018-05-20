@@ -1,0 +1,12 @@
+VAR1<int, wchar_t *> VAR2;
+wchar_t VAR3[50];
+wchar_t VAR4[100];
+VAR5 = VAR4;
+VAR5[0] = '\';
+VAR2[2] = VAR5;
+FUN1(VAR2);
+VAR6[100-1] = '\';
+FUN2(VAR5, VAR6);
+void FUN1(VAR1<int, wchar_t *> VAR2)
+wchar_t * VAR5 = VAR2[2];
+FUN2(VAR5, VAR6);

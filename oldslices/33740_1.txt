@@ -1,0 +1,6 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[100-1] = '\0';
+char dest[50] = "";
+char * *dataPtr2 = &data;
+char * data = *dataPtr2;

@@ -1,0 +1,12 @@
+void * data;
+list<void *> dataList;
+data = NULL;
+data = (void *)WIDE_STRING;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+void badSink(list<void *> dataList)
+void * data = dataList.back();
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

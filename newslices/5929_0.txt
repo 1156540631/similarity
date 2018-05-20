@@ -1,0 +1,5 @@
+VAR1 = (int *) calloc (VAR2,sizeof(int));
+*(VAR1+(VAR2-1)) = 5*VAR2;
+return (VAR2 * FUN1(VAR2-1));
+int FUN1 (int VAR2)
+VAR1 = (int *) calloc (VAR2,sizeof(int));

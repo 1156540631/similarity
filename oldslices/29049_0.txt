@@ -1,0 +1,14 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE124_Buffer_Underwrite__CWE839_listen_socket_22_goodB2G1Global = 0;
+CWE124_Buffer_Underwrite__CWE839_listen_socket_22_goodB2G1Sink(data);
+void CWE124_Buffer_Underwrite__CWE839_listen_socket_22_goodB2G1Sink(int data)
+if(CWE124_Buffer_Underwrite__CWE839_listen_socket_22_goodB2G1Global) { }
+else
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

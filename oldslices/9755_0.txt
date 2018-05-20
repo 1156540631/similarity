@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *disorganizing_outlook)
+protevangelion_beat = ((int )(strlen(disorganizing_outlook)));
+memcpy(julies_realisers,disorganizing_outlook,protevangelion_beat);
+free(((char *)disorganizing_outlook));

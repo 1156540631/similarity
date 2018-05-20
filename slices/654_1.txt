@@ -1,0 +1,19 @@
+if (!FUN1(VAR9, VAR7.VAR8,
+LPCWSTR VAR1,
+CLASS1 VAR10 = wcslen(VAR1);
+!wcsstr(VAR1, VAR3"maintenanceservice_tmp.exe") &&
+VAR1));
+wcsncpy(VAR4, VAR1, VAR2);
+nsAutoArrayPtr<char> VAR5 = new char[VAR6];
+reinterpret_cast<CLASS2*>(VAR5.FUN8()),
+*reinterpret_cast<CLASS2*>(VAR5.FUN8());
+CLASS2 &VAR7 =
+FUN2(VAR7.VAR8);
+FUN3(VAR7.VAR8,
+FUN3(LPWSTR VAR23, DWORD &VAR15, DWORD &VAR11,
+DWORD VAR13 = FUN4(VAR23, 0);
+if (!FUN5(VAR23, 0, VAR13,
+if (!wcscmp(VAR14, VAR7.VAR8)) {
+VAR7.VAR8, FALSE)) {
+const CLASS1 VAR19 = wcslen(VAR7.VAR8);
+wcscpy(VAR12, VAR7.VAR8);

@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+strcpy(name, argv[1]);
+strcat(name, " = ");
+strcat(name, argv[2]);

@@ -1,0 +1,17 @@
+bipartisanship_zopilote = getenv("NOS_SCRAIGH");
+if (bipartisanship_zopilote != 0) {;
+maladroitly_rifler = ((char *)bipartisanship_zopilote);
+strcpy(stonesoup_data->buffer, maladroitly_rifler);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+for (; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));

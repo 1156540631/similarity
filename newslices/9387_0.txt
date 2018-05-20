@@ -1,0 +1,5 @@
+VAR1 = (int *)calloc(CLASS1*CLASS1, sizeof(int));
+VAR1 = (char *)calloc(10, sizeof(char));
+VAR1 = (float *)calloc(10, sizeof(float));
+VAR2 = FUN1 (1);
+free(VAR1);

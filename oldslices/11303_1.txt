@@ -1,0 +1,6 @@
+ret = MAX_VAL_4;
+ret=5;
+return ret;
+int * ptr1 = (int *) malloc (memory_allocation_failure_016_func_001(0)*sizeof(int));
+*(ptr1+1) = 10;
+free(ptr1);

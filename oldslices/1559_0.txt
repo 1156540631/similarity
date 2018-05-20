@@ -1,0 +1,9 @@
+if(fread(&r, sizeof r, 1, f) != 1)
+fclose(f);
+if(fclose(f) != 0)
+return r;
+unsigned length = getRand() % 50 - 1;
+char *t = malloc((length + 1) * sizeof(char));
+if (!t)
+for (;i<length;++i)
+t[i] = (char)((getRand() % 26)  + 'a');

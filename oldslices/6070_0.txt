@@ -1,0 +1,28 @@
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *seroot_improvidences;;
+stonesoup_read_taint(&seroot_improvidences,"CASSANDRE_STEVINSON");
+duramens_tintinnabulous = ((int )(strlen(seroot_improvidences)));
+sogat_claw = ((char *)(malloc(duramens_tintinnabulous + 1)));
+memset(sogat_claw,0,duramens_tintinnabulous + 1);
+memcpy(sogat_claw,seroot_improvidences,duramens_tintinnabulous);
+sandro_knublet = &sogat_claw;
+unstaid_venatorial = sandro_knublet + 5;
+free(((char *)( *(unstaid_venatorial - 5))));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&seroot_improvidences,"CASSANDRE_STEVINSON");
+duramens_tintinnabulous = ((int )(strlen(seroot_improvidences)));
+memcpy(sogat_claw,seroot_improvidences,duramens_tintinnabulous);
+sandro_knublet = &sogat_claw;
+unstaid_venatorial = sandro_knublet + 5;
+free(((char *)( *(unstaid_venatorial - 5))));

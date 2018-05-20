@@ -1,0 +1,14 @@
+#define VAR278 "AAAAAAAAAA"
+typedef struct STRUCT1
+char * VAR274;
+} STRUCT2;
+char * VAR154;
+STRUCT2 VAR275;
+VAR154 = NULL;
+VAR154 = (char *)malloc((10+1)*sizeof(char));
+VAR275.VAR274 = VAR154;
+FUN1(VAR275);
+void FUN1(STRUCT2 VAR275)
+char * VAR154 = VAR275.VAR274;
+char VAR279[10+1] = VAR278;
+strcpy(VAR154, VAR279);

@@ -1,0 +1,3 @@
+static void split(char* str, const char* sep, nsTArray<nsString>& result)
+char *s = strtok(str, sep);
+s = strtok(nullptr, sep);

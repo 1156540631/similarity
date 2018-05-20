@@ -1,0 +1,4 @@
+data[0] = '\0';
+strcat(data, source);
+printLine(data);
+free(data);

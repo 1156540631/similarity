@@ -1,0 +1,11 @@
+int * data;
+map<int, int *> dataMap;
+data = NULL;
+data = (int *)ALLOCA(10);
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, int *> dataMap)
+int * data = dataMap[2];
+int source[10] = {0};
+memmove(data, source, 10*sizeof(int));

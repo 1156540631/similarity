@@ -1,0 +1,15 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+goodB2G2Static = 1;
+goodB2G2Sink(data);
+static void goodB2G2Sink(int data)
+if(goodB2G2Static)
+int * buffer = (int *)malloc(10 * sizeof(int));
+for (i = 0; i < 10; i++)
+buffer[i] = 0;
+if (data >= 0 && data < (10))
+buffer[data] = 1;

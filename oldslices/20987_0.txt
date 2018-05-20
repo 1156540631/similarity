@@ -1,0 +1,2 @@
+if (env = getenv("OPENSSL_ia32cap")) {
+int off = env[0] == '~'?1 : 0;

@@ -1,0 +1,6 @@
+data = NULL;
+data = new int[100];
+int * *dataPtr2 = &data;
+int * data = *dataPtr2;
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

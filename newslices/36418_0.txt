@@ -1,0 +1,8 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[50-1] = '\';
+VAR2[2] = VAR1;
+FUN1(VAR2);
+void FUN1(char * VAR2[])
+char * VAR1 = VAR2[2];
+char VAR3[50] = "";
+memmove(VAR3, VAR1, strlen(VAR1)*sizeof(char));

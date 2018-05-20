@@ -1,0 +1,6 @@
+data = (void *)WIDE_STRING;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_45_badData = data;
+badSink();
+void * data = CWE121_Stack_Based_Buffer_Overflow__CWE135_45_badData;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);

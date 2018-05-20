@@ -1,0 +1,13 @@
+char * VAR1;
+VAR2<char *> VAR3;
+char VAR4[100];
+VAR1 = VAR4;
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+void FUN3(VAR2<char *> VAR3)
+char * VAR1 = VAR3[2];
+char VAR5[50] = "";
+memcpy(VAR5, VAR1, strlen(VAR1)*sizeof(char));

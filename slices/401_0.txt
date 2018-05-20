@@ -1,0 +1,9 @@
+char		VAR1[1024],
+if ((VAR2 = getenv("VAR2")) == NULL)
+VAR2 = VAR2;
+snprintf(VAR1, sizeof(VAR1), "%s/snmp.conf", VAR2);
+if ((VAR5 = FUN1(VAR1, "r")) != NULL)
+VAR1);
+"line %d of %s!\n", VAR3, VAR1);
+VAR4, VAR3, VAR1);
+VAR1);

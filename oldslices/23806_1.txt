@@ -1,0 +1,12 @@
+main(int argc, char **argv)
+if(argc > 1) {
+userstr = argv[1];
+test(userstr);
+test(char *str)
+char buf[MAXSIZE];
+for(l = 0; str[l]; l++)
+continue;
+if(l > MAXSIZE)
+return;
+strcpy(buf, str);
+printf("result: %s\n", buf);

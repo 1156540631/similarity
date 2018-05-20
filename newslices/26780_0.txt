@@ -1,0 +1,5 @@
+char VAR1[10];
+VAR2[10 - 1] = '\';
+VAR3 = 10;
+if (VAR3 <= (int)(sizeof VAR1))
+memcpy(VAR1, VAR2, VAR3);

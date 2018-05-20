@@ -1,0 +1,9 @@
+multivariate_shorterville = getenv("DIAPHANE_VERWANDERUNG");
+if (multivariate_shorterville != 0) {;
+beamish_talcums = ((int )(strlen(multivariate_shorterville)));
+caprioled_suboctuple = ((char *)(malloc(beamish_talcums + 1)));
+if (caprioled_suboctuple == 0) {
+memset(caprioled_suboctuple,0,beamish_talcums + 1);
+memcpy(caprioled_suboctuple,multivariate_shorterville,beamish_talcums);
+besnuff_misprovoking(1,caprioled_suboctuple);
+void besnuff_misprovoking(int contrast_logistical,... )

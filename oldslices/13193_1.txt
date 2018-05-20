@@ -1,0 +1,8 @@
+CommandResult NetworkUtils::setDNS(NetworkParams& aOptions)
+uint32_t length = aOptions.mDnses.Length();
+if (length > 0) {
+for (uint32_t i = 0; i < length; i++) {
+NS_ConvertUTF16toUTF8 autoDns(aOptions.mDnses[i]);
+char dns_prop_key[PROPERTY_VALUE_MAX];
+component_data = sizeof(dns_prop_key);
+snprintf(dns_prop_key, component_data, "net.dns%d", i+1);

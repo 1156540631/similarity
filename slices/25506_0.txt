@@ -1,0 +1,24 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR481,"EPOPEE_UNTASTILY");
+if (VAR481 != 0) {;
+VAR482 = ((char *)VAR481);
+VAR483 = strlen(VAR482);
+if (VAR483 < 2) {
+FUN122(VAR483, VAR484);
+VAR94 = ( *VAR484)(VAR482);
+if (VAR94 == 0)
+if (VAR481 != 0)
+free(((char *)VAR481));
+void FUN122(int VAR439, STRUCT484 * VAR485) {
+if (VAR439 > 10) {
+if (VAR439 < 10) {

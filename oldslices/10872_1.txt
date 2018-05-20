@@ -1,0 +1,5 @@
+data = (wchar_t *)malloc(100*sizeof(wchar_t));
+data[100-1] = L'\0';
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

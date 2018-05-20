@@ -1,0 +1,2 @@
+void badSource(char * &data)
+memset(data, 'A', 100-1);

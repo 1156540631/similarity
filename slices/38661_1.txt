@@ -1,0 +1,18 @@
+static int FUN1()
+return 1;
+static int FUN2()
+return 0;
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(FUN1())
+size_t VAR3 = strlen(VAR1);
+if (100-VAR3 > 1)
+if (fgets(VAR1+VAR3, (int)(100-VAR3), stdin) != NULL)
+VAR3 = strlen(VAR1);
+if (VAR3 > 0 && VAR1[VAR3-1] == '\n')
+VAR1[VAR3-1] = '\0';
+else
+VAR1[VAR3] = '\0';
+if(FUN1())
+printf(VAR1);

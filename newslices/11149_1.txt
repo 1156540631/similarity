@@ -1,0 +1,25 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"UNLEARNABLENESS_AMERINDIAN");
+if (VAR5 != 0) {;
+VAR6 = ((int )(strlen(VAR5)));
+VAR7 = ((char *)(malloc(VAR6 + 1)));
+if (VAR7 == 0) {
+memcpy(VAR7,VAR5,VAR6);
+if (VAR5 != 0)
+free(((char *)VAR5));
+VAR8[5] = VAR7;
+VAR9 =  *(VAR8 +  *VAR10);
+if (VAR9 != 0) {
+VAR11 = ((char *)VAR9);
+if (strlen(VAR11) < 1) {
+FUN2(VAR11, &VAR12);
+if (VAR9 != 0)
+free(((char *)VAR9));
+void FUN2(char *VAR13,struct CLASS1 *VAR14)
+if (strlen(VAR13) > 10U) {
+VAR14 -> VAR15 = VAR13;
+FUN2(VAR11, &VAR12);
+VAR16 = (VAR12 . FUN3(VAR12 . VAR15));
+if (VAR16 == 0)

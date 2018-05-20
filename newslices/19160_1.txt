@@ -1,0 +1,4 @@
+VAR1 = new char[10];
+char * VAR1 = VAR2;
+char VAR3[10+1] = VAR4;
+strncpy(VAR1, VAR3, strlen(VAR3) + 1);

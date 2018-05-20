@@ -1,0 +1,13 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+memset(dataBuffer, 'A', 100-1);
+dataBuffer[100-1] = '\0';
+data = dataBuffer;
+CWE124_Buffer_Underwrite__char_alloca_cpy_68_goodG2BData = data;
+CWE124_Buffer_Underwrite__char_alloca_cpy_68b_goodG2BSink();
+void CWE124_Buffer_Underwrite__char_alloca_cpy_68b_goodG2BSink()
+char * data = CWE124_Buffer_Underwrite__char_alloca_cpy_68_goodG2BData;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strcpy(data, source);

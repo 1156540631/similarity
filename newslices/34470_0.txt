@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = VAR2;
+if(VAR3)
+else
+VAR1 = new char[100];
+VAR1[0] = '\';
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+memcpy(VAR1, VAR4, 100*sizeof(char));

@@ -1,0 +1,5 @@
+doodling_kolhoz = getenv("DIETETICAL_UNCOGNIZED");
+if (doodling_kolhoz != 0) {;
+gonium_outdress = doodling_kolhoz;
+moet_maudlinize(1,gonium_outdress);
+void moet_maudlinize(int ass_addams,... )

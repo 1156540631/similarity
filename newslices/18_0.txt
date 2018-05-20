@@ -1,0 +1,4 @@
+if (VAR1.FUN1()) {
+CLASS1* VAR2 = VAR1[0];
+VAR3 VAR4;
+FUN2(VAR2, false, VAR4);

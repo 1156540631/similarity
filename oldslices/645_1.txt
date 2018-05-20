@@ -1,0 +1,25 @@
+IsUpdateBeingStaged(int argc, LPWSTR *argv)
+return argc == 4 && !wcscmp(argv[3], L"-1");
+bool replaceRequest = (argcTmp >= 4 && wcsstr(argvTmp[3], L"/replace"));
+if (!IsLocalFile(argv[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(argv[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(argv[0], installDirUpdater,
+HMODULE updaterModule = LoadLibraryEx(argv[0], NULL,
+LOAD_LIBRARY_AS_DATAFILE);
+HMODULE updaterModule = LoadLibraryEx(argv[0], NULL,
+if (!LoadStringA(updaterModule, IDS_UPDATER_IDENTITY,
+FreeLibrary(updaterModule);
+ExecuteServiceCommand(int argc, LPWSTR *argv)
+if (!lstrcmpi(argv[2], L"software-update")) {
+result = ProcessSoftwareUpdateCommand(argc - 3, argv + 3);
+ProcessSoftwareUpdateCommand(DWORD argc, LPWSTR *argv)
+if (!GetInstallationDir(argc, argv, installDir)) {
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH])
+wcscpy(aResultDir, argvTmp[2]);
+bool backgroundUpdate = IsUpdateBeingStaged(argcTmp, argvTmp);
+if (!IsLocalFile(argv[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(argv[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(argv[0], installDirUpdater,
+HMODULE updaterModule = LoadLibraryEx(argv[0], NULL,
+if (!LoadStringA(updaterModule, IDS_UPDATER_IDENTITY,
+FreeLibrary(updaterModule);

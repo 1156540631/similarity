@@ -1,0 +1,12 @@
+void * data;
+vector<void *> dataVector;
+data = NULL;
+data = (void *)CHAR_STRING;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void goodG2BSink(vector<void *> dataVector)
+void * data = dataVector[2];
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

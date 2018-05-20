@@ -1,0 +1,13 @@
+GetBackupLogPath(LPWSTR path, LPCWSTR basePath, int logNumber)
+logName = func(&logName);
+static WCHAR * func(WCHAR * * ptr)
+WCHAR * logName = *ptr;
+WCHAR logName[64];
+return logName;
+logName = func(&logName);
+wcscpy(path, basePath);
+if (logNumber <= 0)
+swprintf(logName, sizeof(logName) / sizeof(logName[0]),L"maintenanceservice.log");
+else
+swprintf(logName, sizeof(logName) / sizeof(logName[0]),L"maintenanceservice-%d.log", logNumber);
+return PathAppendSafe(path, logName);

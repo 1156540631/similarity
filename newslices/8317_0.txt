@@ -1,0 +1,5 @@
+void FUN1(VAR1<int, char *> VAR2)
+char * VAR3 = VAR2[2];
+memcpy(VAR3, VAR4, (strlen(VAR4) + 1) * sizeof(char));
+FUN2(VAR3);
+free(VAR3);

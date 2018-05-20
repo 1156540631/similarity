@@ -1,0 +1,14 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+strcpy(VAR1, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_console_snprintf_63b_goodG2BSink(&VAR1);
+void CWE134_Uncontrolled_Format_String__char_console_snprintf_63b_goodG2BSink(char * * VAR5)
+char * VAR1 = *VAR5;
+char VAR4[100] = "";
+SNPRINTF(VAR4, 100-1, VAR1);

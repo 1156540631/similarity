@@ -1,0 +1,8 @@
+register char *VAR527;
+char *VAR39;
+int VAR528;
+VAR527++;
+printf ("sizeof (VAR39) = %d\VAR7", sizeof (VAR39));
+printf ("VAR528 = %d\VAR7", VAR528);
+printf ("strlen (VAR527)=%d\VAR7", strlen (VAR527));
+snprintf(VAR39, VAR528, "%VAR1", VAR527);

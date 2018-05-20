@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+sscanf(param,"%p",&fct_ptr_addr);
+int reimburser_lorinda = 26;
+char *aerobian_triflingness;
+stonesoup_read_taint(&aerobian_triflingness,"7704",reimburser_lorinda);
+pebworth_reophore = ((char *)aerobian_triflingness);
+stonesoup_fp = stonesoup_switch_func(pebworth_reophore);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&aerobian_triflingness,"7704",reimburser_lorinda);
+pebworth_reophore = ((char *)aerobian_triflingness);
+stonesoup_fp = stonesoup_switch_func(pebworth_reophore);

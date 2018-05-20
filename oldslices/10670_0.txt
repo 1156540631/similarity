@@ -1,0 +1,5 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_67b_badSink(CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_67_structType myStruct)
+wchar_t * data = myStruct.structFirst;
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

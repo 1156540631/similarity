@@ -1,0 +1,21 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&sauerkrauts_antisemitism,"DENNYSVILLE_PLEASING");
+if (sauerkrauts_antisemitism != 0) {;
+recorde_iconodulist = ((char *)sauerkrauts_antisemitism);
+strcpy(stonesoup_data->buffer, recorde_iconodulist);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+for (; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+if (sauerkrauts_antisemitism != 0)
+free(((char *)sauerkrauts_antisemitism));
+int stonesoup_toupper(int c)
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));

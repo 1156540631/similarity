@@ -1,0 +1,16 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+void stonesoup_handle_taint(char *fliers_snowcap)
+char stonesoup_source[1024];
+fruitful_helotes = ((char *)fliers_snowcap);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, fruitful_helotes, sizeof(stonesoup_source));

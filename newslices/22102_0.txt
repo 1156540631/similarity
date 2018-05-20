@@ -1,0 +1,19 @@
+VAR1 = FUN1(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);
+VAR2 += VAR1;
+VAR4 >>= 8;
+const char *VAR5 = ((void *)0);
+return ((void *)0);
+return ((void *)0);
+VAR5 = FUN2(VAR6,VAR7 -> VAR5);
+VAR2[0] ^= '' ^ '';
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s)",VAR5);
+char VAR8[32];
+FUN3(VAR8,sizeof(VAR8),VAR7 -> VAR4);
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s / 0x%04X)",VAR8,VAR7 -> VAR4);
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %d/%d",VAR7 -> VAR9 . VAR10 / VAR11,VAR7 -> VAR9 . VAR12 / VAR11);
+VAR13 FUN3(char *VAR2,VAR13 VAR3,unsigned int VAR4)
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s / 0x%04X)",VAR8,VAR7 -> VAR4);
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %d/%d",VAR7 -> VAR9 . VAR10 / VAR11,VAR7 -> VAR9 . VAR12 / VAR11);
+void FUN4(char *VAR2,int VAR3,CLASS1 *VAR7,int VAR14)
+FUN1(VAR2,VAR3,"%s: %s%s",(VAR15?VAR15 : "unknown"),VAR16,(VAR7 -> VAR17?" (VAR18)" : ""));
+FUN1(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %d/%d",VAR7 -> VAR9 . VAR10 / VAR11,VAR7 -> VAR9 . VAR12 / VAR11);

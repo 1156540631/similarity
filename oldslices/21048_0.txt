@@ -1,0 +1,2 @@
+prefix_buf[sizeof(prefix_buf) - 3] = '\0';
+strcat(prefix_buf,": ");

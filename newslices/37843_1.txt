@@ -1,0 +1,12 @@
+void * VAR1;
+void * VAR2[5];
+VAR1 = VAR3;
+wchar_t * VAR4 = (wchar_t *)malloc(50*sizeof(wchar_t));
+FUN1(VAR4, '', 50-1);
+VAR4[50-1] = '\';
+VAR1 = (void *)VAR4;
+VAR2[2] = VAR1;
+FUN2(VAR2);
+void FUN2(void * VAR2[])
+void * VAR1 = VAR2[2];
+VAR5 VAR6 = strlen((char *)VAR1);

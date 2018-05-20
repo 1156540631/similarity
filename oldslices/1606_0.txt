@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *overfrugality_pairt)
+pseudobinary_synochal = ((int )(strlen(overfrugality_pairt)));
+magistracy_riverside = ((char *)(malloc(pseudobinary_synochal + 1)));

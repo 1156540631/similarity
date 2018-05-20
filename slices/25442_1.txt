@@ -1,0 +1,5 @@
+char **VAR79 = (char**) malloc(5*sizeof(char*));
+VAR79[VAR24]=(char*) malloc(15*sizeof(char));
+for(VAR24=0;VAR24<5;VAR24++)
+VAR79[VAR24] = NULL;
+strcpy(*(VAR79+VAR24),"String");

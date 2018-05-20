@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+coalescence_keven = ((char *)( *(nobbut_ordzhonikidze - 5)) . vitric_medimnus);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, coalescence_keven, sizeof(stonesoup_source));

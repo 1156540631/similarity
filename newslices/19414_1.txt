@@ -1,0 +1,6 @@
+VAR1 = VAR2;
+switch(6)
+case 6:
+VAR1 = new wchar_t[10];
+wchar_t VAR3[10+1] = VAR4;
+memmove(VAR1, VAR3, (FUN1(VAR3) + 1) * sizeof(wchar_t));

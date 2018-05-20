@@ -1,0 +1,10 @@
+char stonesoup_source[1024];
+bemole_lilithe = getenv("ZOOIDS_UNDUPLICABILITY");
+glycerolate_iodimetric[29] = bemole_lilithe;
+platycephalic_krishna[5] = glycerolate_iodimetric;
+smiths_redux = 5;
+antimalarial_semireticulate = &smiths_redux;
+mapland_camerlingos =  *(platycephalic_krishna +  *antimalarial_semireticulate);
+microcosmically_paynize = ((char *)mapland_camerlingos[29]);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, microcosmically_paynize, sizeof(stonesoup_source));

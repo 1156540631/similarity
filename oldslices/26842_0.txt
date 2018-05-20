@@ -1,0 +1,5 @@
+buf[4]= '\0';
+return buf;
+res_addr = crackaddr(address);
+printf("result = %s\n", res_addr);
+printf("buf len = %d\n", strlen(res_addr));

@@ -1,0 +1,5 @@
+data = badSource(data);
+if(badStatic)
+data = new char[10];
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

@@ -1,0 +1,7 @@
+static void FUN2(const char* VAR2, CLASS1& VAR5)
+char VAR4[VAR3];
+snprintf(VAR4, VAR3 - 1, "net.%VAR1.gw", VAR2);
+FUN1(VAR4, VAR5.VAR6, "");
+snprintf(VAR4, VAR3 - 1, "net.%VAR1.VAR7", VAR2);
+FUN1(VAR4, VAR5.VAR7, "");
+snprintf(VAR4, VAR3 - 1, "net.%VAR1.dns2", VAR2);

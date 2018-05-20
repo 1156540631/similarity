@@ -1,0 +1,21 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR602,"PLUTEUS_VALLECULA");
+if (VAR602 != 0) {;
+VAR603[3] = VAR602;
+VAR604[5] = VAR603;
+VAR605 =  *(VAR604 + VAR606[1]);
+VAR607 = ((char *)VAR605[3]);
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR607)+1, VAR607, "TRIGGER-STATE");
+strncpy(VAR106,VAR607,strlen(VAR607) + 1);
+if (VAR605[3] != 0)
+free(((char *)VAR605[3]));

@@ -1,0 +1,5 @@
+void FUN1(CLASS1 * CLASS2[])
+CLASS1 * VAR1 = CLASS2[2];
+SNPRINTF(VAR2, wcslen(VAR1), L"%s", VAR1);
+FUN2(VAR1);
+free(VAR1);

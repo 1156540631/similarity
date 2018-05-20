@@ -1,0 +1,12 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int goodG2BStatic = 0;
+data = NULL;
+data = (void *)CHAR_STRING;
+goodG2BStatic = 1;
+goodG2BSink(data);
+static void goodG2BSink(void * data)
+if(goodG2BStatic)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

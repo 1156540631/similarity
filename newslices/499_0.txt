@@ -1,0 +1,3 @@
+VAR1 VAR2 = FUN1(FUN2("VAR3.VAR4"));
+(void *)FUN3( VAR2, FUN2("WNetAddConnection2A") );
+FUN4( VAR2 );

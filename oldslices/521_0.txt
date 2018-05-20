@@ -1,0 +1,3 @@
+gWorkDoneEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
+ReportSvcStatus(SERVICE_RUNNING, NO_ERROR, 0);
+SetEvent(gWorkDoneEvent);

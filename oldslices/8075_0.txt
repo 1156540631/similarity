@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *casemaking_slavocracy)
+molopo_sojourning = ((int )(strlen(casemaking_slavocracy)));
+preinsured_stramineously = ((char *)(malloc(molopo_sojourning + 1)));

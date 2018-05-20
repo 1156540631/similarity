@@ -1,0 +1,6 @@
+VAR7[0] = '\0';
+return VAR7;
+VAR7 = FUN1(VAR7);
+SNPRINTF(VAR7, 100, "%VAR4", VAR1);
+printLine(VAR7);
+free(VAR7);

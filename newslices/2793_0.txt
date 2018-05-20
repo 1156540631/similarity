@@ -1,0 +1,4 @@
+VAR1[50-1] = '\';
+FUN1(VAR2, strlen(VAR1), "%s", VAR1);
+FUN2(VAR1);
+free(VAR1);

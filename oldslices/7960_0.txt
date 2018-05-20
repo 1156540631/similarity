@@ -1,0 +1,4 @@
+data = new wchar_t[100];
+goodG2BSource(data);
+static void goodG2BSource(wchar_t * &data)
+wmemset(data, L'A', 50-1);

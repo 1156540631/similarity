@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+quatch_foregrounds = ((int )(strlen(siliquiform_ammadas)));
+nitrifaction_prorogues = ((char *)(malloc(quatch_foregrounds + 1)));
+memset(nitrifaction_prorogues,0,quatch_foregrounds + 1);
+memcpy(nitrifaction_prorogues,siliquiform_ammadas,quatch_foregrounds);
+forzando_mendelize = &nitrifaction_prorogues;
+free(((char *)( *forzando_mendelize)));
+void stonesoup_handle_taint(char *siliquiform_ammadas)
+quatch_foregrounds = ((int )(strlen(siliquiform_ammadas)));
+memcpy(nitrifaction_prorogues,siliquiform_ammadas,quatch_foregrounds);
+forzando_mendelize = &nitrifaction_prorogues;
+free(((char *)( *forzando_mendelize)));

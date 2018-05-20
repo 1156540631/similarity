@@ -1,0 +1,13 @@
+struct vers_rec version;
+struct tm tm;
+bytes_read = file_read(&version, sizeof version, wth->fh);
+if (bytes_read != sizeof version) {
+start_date = pletoh16(&version.date);
+tm.tm_year = ((start_date&DOS_YEAR_MASK)>>DOS_YEAR_SHIFT) + DOS_YEAR_OFFSET;
+tm.tm_mon = ((start_date&DOS_MONTH_MASK)>>DOS_MONTH_SHIFT) + DOS_MONTH_OFFSET;
+tm.tm_mday = ((start_date&DOS_DAY_MASK)>>DOS_DAY_SHIFT);
+tm.tm_hour = 0;
+tm.tm_min = 0;
+tm.tm_sec = 0;
+tm.tm_isdst = -1;
+ngsniffer->start = mktime(&tm);

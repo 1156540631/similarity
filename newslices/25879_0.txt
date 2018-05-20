@@ -1,0 +1,18 @@
+VAR1 = FUN1(VAR2);
+VAR3 = fopen(VAR1,"rb");
+if (VAR3 != 0) {
+fseek(VAR3,0L,2);
+VAR4 = ftell(VAR3);
+rewind(VAR3);
+*VAR5 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+if (*VAR5 != 0) {
+VAR6 = fread(*VAR5,1,VAR4,VAR3);
+if (VAR3 != 0) {
+fclose(VAR3);
+FUN2(&VAR7,"TURMEL_MEROSYSTEMATIC");
+if (VAR7 != 0) {;
+VAR8[29] = VAR7;
+VAR9 = &VAR8;
+VAR10 = &VAR9;
+FUN3(VAR10);
+void FUN3(char *(**VAR11)[37]);

@@ -1,0 +1,4 @@
+snatches_phonying = ((char *)april_apeman . echinopanax_tenour);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(snatches_phonying)+1, snatches_phonying, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, snatches_phonying, strlen(snatches_phonying) + 1);

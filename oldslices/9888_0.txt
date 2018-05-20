@@ -1,0 +1,9 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_45_goodG2BData = data;
+goodG2BSink();
+char * data = CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_45_goodG2BData;
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_start(args, data);

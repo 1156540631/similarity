@@ -1,0 +1,5 @@
+char * VAR1;
+char VAR6[100] = "";
+VAR1 = VAR6;
+strcpy(VAR1, "fixedstringtest");
+fprintf(stdout, VAR1);

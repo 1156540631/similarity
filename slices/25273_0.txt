@@ -1,0 +1,4 @@
+VAR81 = getenv("HYOSCINES_TRUMPETRY");
+if (VAR81 != 0) {;
+VAR82 = VAR81;
+*VAR83 = VAR82;

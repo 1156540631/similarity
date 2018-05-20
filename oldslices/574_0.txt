@@ -1,0 +1,8 @@
+V9fsQID qid;
+dent = g_malloc(sizeof(struct dirent));
+err = v9fs_co_readdir_r(pdu, fidp, dent, &result);
+size = MIN(sizeof(dent->d_ino), sizeof(qid.path));
+qid.type = 0;
+qid.version = 0;
+&qid, dent->d_off,
+memcpy(&qid.path, &dent->d_ino, size);

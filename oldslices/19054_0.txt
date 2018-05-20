@@ -1,0 +1,11 @@
+char * data;
+structType myStruct;
+data = NULL;
+data = new char[10+1];
+myStruct.structFirst = data;
+goodG2BSink(myStruct);
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));
+void goodG2BSink(structType myStruct)
+char * data = myStruct.structFirst;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

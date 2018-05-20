@@ -1,0 +1,2 @@
+VAR34[FUN86()] = '!';
+printf("%VAR1\VAR7", VAR34);

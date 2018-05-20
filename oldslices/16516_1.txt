@@ -1,0 +1,10 @@
+list<int *> dataList;
+data = (int *)malloc(50*sizeof(int));
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<int *> dataList)
+int * data = dataList.back();
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

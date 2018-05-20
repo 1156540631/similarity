@@ -1,0 +1,25 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+successionist_shrubby = ((int )(strlen(phenoquinone_gravamem)));
+shieldmaker_mariya = ((char *)(malloc(successionist_shrubby + 1)));
+memset(shieldmaker_mariya,0,successionist_shrubby + 1);
+memcpy(shieldmaker_mariya,phenoquinone_gravamem,successionist_shrubby);
+counterthrusts_flabbinesses[5] = shieldmaker_mariya;
+anemochore_oryssidae[1] = 5;
+chromogenesis_scorbute =  *(counterthrusts_flabbinesses + anemochore_oryssidae[1]);
+free(((char *)chromogenesis_scorbute));
+void stonesoup_handle_taint(char *phenoquinone_gravamem)
+successionist_shrubby = ((int )(strlen(phenoquinone_gravamem)));
+memcpy(shieldmaker_mariya,phenoquinone_gravamem,successionist_shrubby);
+counterthrusts_flabbinesses[5] = shieldmaker_mariya;
+chromogenesis_scorbute =  *(counterthrusts_flabbinesses + anemochore_oryssidae[1]);
+free(((char *)chromogenesis_scorbute));

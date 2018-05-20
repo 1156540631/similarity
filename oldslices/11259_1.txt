@@ -1,0 +1,5 @@
+data = NULL;
+data = (wchar_t *)malloc(10*sizeof(wchar_t));
+wcscpy(data, source);
+printWLine(data);
+free(data);

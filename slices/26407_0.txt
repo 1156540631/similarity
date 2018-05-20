@@ -1,0 +1,2 @@
+VAR29 = malloc(65528);
+strncpy(VAR29, VAR311, VAR290);

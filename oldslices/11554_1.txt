@@ -1,0 +1,38 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+return c;
+int reoffer_demobilisation = 596;
+char *exogens_mandolas;
+stonesoup_read_taint(&exogens_mandolas,"8725",reoffer_demobilisation);
+fisherville_ornamentalist . tarakihi_jeno = exogens_mandolas;
+MISOPATERIST_OVERNORMALIZE(fisherville_ornamentalist);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before = stonesoup_toupper;
+stonesoup_data->buffer[63] = '\0';
+stonesoup_data->after = stonesoup_toupper;
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->before", stonesoup_data->before, &stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->after", stonesoup_data->after, &stonesoup_data->after, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->before(stonesoup_data->buffer[stonesoup_i]));
+free(stonesoup_data);
+void presupervised_resourcefulness(union burlesquing_suicidalism histophyly_heremeit)
+logan_deadwood = ((char *)histophyly_heremeit . tarakihi_jeno);
+stonesoup_taint_len = ((int )(strlen(logan_deadwood)));
+stonesoup_data->buffer[stonesoup_buff_size] = logan_deadwood[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+return c - 32;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->before(stonesoup_data->buffer[stonesoup_i]));
+free(stonesoup_data);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&exogens_mandolas,"8725",reoffer_demobilisation);
+fisherville_ornamentalist . tarakihi_jeno = exogens_mandolas;
+MISOPATERIST_OVERNORMALIZE(fisherville_ornamentalist);

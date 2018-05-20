@@ -1,0 +1,2 @@
+qmode = realqmode = addangle = false;
+printf("qmode = %d\n", qmode);

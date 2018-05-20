@@ -1,0 +1,12 @@
+char * VAR1;
+VAR1 = NULL;
+VAR1 = new char[50];
+VAR1[0] = '\0';
+VAR34 = VAR1;
+FUN4();
+void FUN4()
+char * VAR1 = VAR34;
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncat(VAR1, VAR3, 100);

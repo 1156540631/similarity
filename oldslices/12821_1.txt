@@ -1,0 +1,8 @@
+whisperable_discutable = ((char *)approximative_stewed . holabird_salinometer);
+stonesoup_buffer = malloc((strlen(whisperable_discutable) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,whisperable_discutable);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+free(stonesoup_buffer);
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);
+free(stonesoup_buffer);

@@ -1,0 +1,10 @@
+char * VAR1;
+void (*VAR32) (char *) = FUN45;
+void FUN45(char * VAR1)
+char VAR4[10+1] = VAR5;
+strncpy(VAR1, VAR4, strlen(VAR4) + 1);
+printLine(VAR1);
+char VAR45[10+1];
+VAR1 = VAR45;
+VAR1[0] = '\0';
+VAR32(VAR1);

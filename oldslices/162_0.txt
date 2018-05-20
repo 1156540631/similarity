@@ -1,0 +1,3 @@
+HKEY testOnlyFallbackKey;
+&testOnlyFallbackKey) != ERROR_SUCCESS) {
+RegCloseKey(testOnlyFallbackKey);

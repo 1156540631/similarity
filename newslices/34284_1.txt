@@ -1,0 +1,6 @@
+wchar_t * VAR1;
+VAR1 = VAR2;
+FUN1(1)
+VAR1 = new wchar_t[10];
+wchar_t VAR3[10+1] = VAR4;
+FUN2(VAR1, VAR3, FUN3(VAR3) + 1);

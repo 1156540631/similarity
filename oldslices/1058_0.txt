@@ -1,0 +1,3 @@
+unsigned i = 0;
+i++;
+namedAttrMap->m_attributes.remove(i);

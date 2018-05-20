@@ -1,0 +1,4 @@
+void badSink(vector<wchar_t *> dataVector)
+wchar_t * data = dataVector[2];
+wchar_t dest[50] = L"";
+wcscat(dest, data);

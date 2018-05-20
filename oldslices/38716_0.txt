@@ -1,0 +1,8 @@
+const int GLOBAL_CONST_FIVE = 5; 
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(GLOBAL_CONST_FIVE==5)
+strcpy(data, "fixedstringtest");
+if(GLOBAL_CONST_FIVE==5)
+printf(data);

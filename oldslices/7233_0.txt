@@ -1,0 +1,5 @@
+wchar_t * *dataPtr2 = &data;
+wchar_t * data = *dataPtr2;
+wcsncat(data, source, 100);
+printWLine(data);
+free(data);

@@ -1,0 +1,6 @@
+int *VAR7=(int*) calloc(5,sizeof(int));
+free(VAR7);
+FUN1(0);
+void FUN1 (int VAR20)
+*(VAR7 -VAR20) = 1;
+free(VAR7);

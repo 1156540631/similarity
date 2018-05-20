@@ -1,0 +1,3 @@
+fscanf(VAR1, "%d", &VAR2);
+if (VAR2 >= 0)
+VAR3[VAR2] = 1;

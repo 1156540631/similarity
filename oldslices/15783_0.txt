@@ -1,0 +1,4 @@
+data = new wchar_t[100];
+data = badSource(data);
+static wchar_t * badSource(wchar_t * data)
+wmemset(data, L'A', 100-1);

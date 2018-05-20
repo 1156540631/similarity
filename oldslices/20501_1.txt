@@ -1,0 +1,17 @@
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int decompound_pansified = 53;
+char *corruptive_eequinoctium;
+stonesoup_read_taint(&corruptive_eequinoctium,"7626",decompound_pansified);
+crostarie_cystoptosis = ((int )(strlen(corruptive_eequinoctium)));
+greetings_cryophile = ((char *)(malloc(crostarie_cystoptosis + 1)));
+memset(greetings_cryophile,0,crostarie_cystoptosis + 1);
+memcpy(greetings_cryophile,corruptive_eequinoctium,crostarie_cystoptosis);
+stokavski_nonrecognized = &greetings_cryophile;
+zebulun_stichidium = stokavski_nonrecognized + 5;
+reshaken_scala = ((char *)( *(zebulun_stichidium - 5)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(reshaken_scala)+1, reshaken_scala, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, reshaken_scala, strlen(reshaken_scala) + 1);

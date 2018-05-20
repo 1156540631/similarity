@@ -1,0 +1,4 @@
+void arne_woodman(nashville_uncounselled agglomerative_pursuers)
+detailist_clyman(agglomerative_pursuers);
+void detailist_clyman(nashville_uncounselled necessariness_stamboul)
+free(((char *)necessariness_stamboul));

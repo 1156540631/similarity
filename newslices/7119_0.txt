@@ -1,0 +1,4 @@
+float *VAR1=(float*)calloc(5,sizeof(float));
+float *VAR2=(float*)calloc(5,sizeof(float));
+VAR2[0] = 10.0;
+free(VAR2);

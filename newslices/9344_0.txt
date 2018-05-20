@@ -1,0 +1,16 @@
+register char *VAR1;
+char VAR2[100];
+scanf("%99s", VAR2);
+VAR3 = FUN1(VAR2);
+VAR1++;
+VAR4 = VAR5 = VAR1;
+VAR4++;
+FUN2 ((VAR6 = *VAR4++) != ':')
+VAR4++;
+VAR4++;
+FUN2 ((VAR6 = *VAR4++) != '<')
+FUN2 ((VAR6 = *VAR4++) != '\')
+if ((VAR6 = *VAR4++) == '\')
+VAR4--;
+VAR4++;
+FUN2 (VAR4 > VAR1 && isascii((int) *--VAR4) && isspace((int) *VAR4))

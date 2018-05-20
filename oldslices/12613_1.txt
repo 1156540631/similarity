@@ -1,0 +1,8 @@
+null_pointer_017dst = NULL;
+null_pointer_017dst = (char**) malloc(5*sizeof(char*));
+null_pointer_017dst[i]=(char*) malloc(15*sizeof(char));
+null_pointer_017_func_001(0);
+strcpy (null_pointer_017dst[i],"STRING");
+null_pointer_017dst[i] = NULL;
+null_pointer_017dst = NULL;
+free(null_pointer_017dst);

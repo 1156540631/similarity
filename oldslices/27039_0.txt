@@ -1,0 +1,5 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+str2 = shortstr(str, strlen(str), MAXSIZE-1);

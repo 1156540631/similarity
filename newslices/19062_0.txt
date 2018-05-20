@@ -1,0 +1,13 @@
+char * VAR1;
+VAR2<int, char *> VAR3;
+VAR1 = VAR4;
+VAR1 = new char[10+1];
+VAR3[0] = VAR1;
+VAR3[1] = VAR1;
+VAR3[2] = VAR1;
+FUN1(VAR3);
+char VAR5[10+1] = VAR6;
+memmove(VAR1, VAR5, (strlen(VAR5) + 1) * sizeof(char));
+void FUN1(VAR2<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+memmove(VAR1, VAR5, (strlen(VAR5) + 1) * sizeof(char));

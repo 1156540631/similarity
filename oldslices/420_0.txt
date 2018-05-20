@@ -1,0 +1,13 @@
+size_t length = BufferToUWord16(nalu_ptr);
+memcpy(frame_buffer, startCode, kH264StartCodeLengthBytes);
+length += (insert_start_code ? kH264StartCodeLengthBytes : 0);
+nalu_ptr += length;
+length,
+packet.sizeBytes +
+(packet.insertStartCode ? kH264StartCodeLengthBytes : 0));
+int steps_to_shift) {
+uint8_t* first_packet_ptr = const_cast<uint8_t*>((*it).dataPtr);
+memmove(first_packet_ptr + steps_to_shift, first_packet_ptr, shift_length);
+packet.sizeBytes,
+size_t length,
+length);

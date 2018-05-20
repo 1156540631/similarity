@@ -1,0 +1,9 @@
+data = NULL;
+data = badSource(data);
+static wchar_t * badSource(wchar_t * data)
+data = (wchar_t *)malloc(10*sizeof(wchar_t));
+return data;
+data = badSource(data);
+wcscpy(data, source);
+printWLine(data);
+free(data);

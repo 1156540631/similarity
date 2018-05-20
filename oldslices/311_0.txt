@@ -1,0 +1,12 @@
+int ssl_parse_clienthello_tlsext(SSL *s, unsigned char **p,
+unsigned char *data = *p;
+ssl_check_for_safari(s, data, limit);
+static void ssl_check_for_safari(SSL *s, const unsigned char *data,
+unsigned short type, size;
+static const unsigned char kSafariExtensionsBlock[] = {
+data += 2;
+n2s(data, type);
+n2s(data, size);
+data += size;
+const size_t len = sizeof(kSafariExtensionsBlock);
+if (memcmp(data, kSafariExtensionsBlock, len) != 0)

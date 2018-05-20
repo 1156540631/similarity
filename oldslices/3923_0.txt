@@ -1,0 +1,5 @@
+wchar_t dataBuffer[100];
+data = dataBuffer;
+badSource(data);
+void badSource(wchar_t * &data);
+dataLen = wcslen(data);

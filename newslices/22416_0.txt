@@ -1,0 +1,5 @@
+VAR1 = FUN1("ABIOGENESIS_ENCROWN");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = ((char *)VAR1);
+VAR4 = &VAR2;
+VAR5 = ((struct CLASS1 *)(((unsigned long )VAR4) * CLASS2 * CLASS2)) + 5;

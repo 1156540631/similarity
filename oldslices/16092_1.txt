@@ -1,0 +1,9 @@
+wchar_t * data;
+void (*funcPtr) (wchar_t *) = badSink;
+data = new wchar_t[100];
+wmemset(data, L'A', 100-1);
+data[100-1] = L'\0';
+funcPtr(data);
+static void badSink(wchar_t * data)
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

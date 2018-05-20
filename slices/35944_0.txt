@@ -1,0 +1,10 @@
+char * VAR3[5];
+VAR1 = NULL;
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[0] = '\0';
+VAR3[2] = VAR1;
+FUN1(VAR3);
+void FUN1(char * VAR3[])
+char * VAR1 = VAR3[2];
+VAR2[100-1] = '\0';
+snprintf(VAR1, 100, "%s", VAR2);

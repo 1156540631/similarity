@@ -1,0 +1,8 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+while(1)
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+break;
+char VAR40[50] = "";
+strcat(VAR40, VAR1);

@@ -1,0 +1,15 @@
+typedef union
+char * VAR1;
+char * VAR2;
+} CLASS1;
+CLASS1 VAR3;
+char * VAR4 = (char *)FUN1(100*sizeof(char));
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+VAR5 = VAR4 - 8;
+VAR3.VAR1 = VAR5;
+char * VAR5 = VAR3.VAR2;
+char VAR6[100];
+memset(VAR6, '', 100-1);
+VAR6[100-1] = '\';
+strncpy(VAR5, VAR6, 100-1);

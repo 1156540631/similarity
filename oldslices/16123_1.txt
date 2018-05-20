@@ -1,0 +1,13 @@
+wchar_t * data;
+list<wchar_t *> dataList;
+data = new wchar_t[100];
+wmemset(data, L'A', 100-1);
+data[100-1] = L'\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(map<int, wchar_t *> dataMap)
+wchar_t * data = dataMap[2];
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

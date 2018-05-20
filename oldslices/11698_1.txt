@@ -1,0 +1,17 @@
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+return data;
+data = -1;
+data = badSource(data);
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+static int badSource(int data)
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+return data;
+data = badSource(data);
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

@@ -1,0 +1,16 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&fugaciously_steganopod,"LEVANTINE_REGINAS");
+if (fugaciously_steganopod != 0) {;
+searcherlike_hesitating . collaterally_syzran = fugaciously_steganopod;
+pallia_defoliates = &searcherlike_hesitating;
+philocathartic_pteridospermae = ((union ascaricidal_richmonddale *)(((unsigned long )pallia_defoliates) * boathouses_trigeminous * boathouses_trigeminous)) + 5;

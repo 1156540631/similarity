@@ -1,0 +1,16 @@
+char * data;
+data = NULL;
+data = new char[50];
+data[0] = '\0';
+badSink_b(data);
+void badSink_b(char * data)
+badSink_c(data);
+void badSink_c(char * data)
+badSink_d(data);
+void badSink_d(char * data)
+badSink_e(data);
+void badSink_e(char * data)
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncat(data, source, 100);

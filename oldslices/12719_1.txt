@@ -1,0 +1,55 @@
+main(int argc, char *argv[])
+init_progfile_dir_error = init_progfile_dir(argv[0], main);
+if (init_progfile_dir_error != NULL) {
+init_progfile_dir_error);
+fprintf(stderr, "tshark: Can't get pathname of tshark program: %s.\n",
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+switch (opt) {
+if (argc >= 2 && strcmp(argv[1], "-G") == 0) {
+if (argc == 2)
+if (strcmp(argv[2], "fields") == 0)
+else if (strcmp(argv[2], "fields2") == 0)
+else if (strcmp(argv[2], "fields3") == 0)
+else if (strcmp(argv[2], "protocols") == 0)
+else if (strcmp(argv[2], "values") == 0)
+else if (strcmp(argv[2], "decodes") == 0)
+else if (strcmp(argv[2], "defaultprefs") == 0)
+else if (strcmp(argv[2], "currentprefs") == 0) {
+cmdarg_err("Invalid \"%s\" option for -G flag", argv[2]);
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+switch (opt) {
+status = capture_opts_add_opt(&global_capture_opts, opt, optarg, &start_capture);
+if(status != 0) {
+exit(status);
+if (optind < argc) {
+rfilter = get_args_as_string(argc, argv, optind);
+global_capture_opts.cfilter = get_args_as_string(argc, argv, optind);
+cfile.cinfo.col_buf[i] = (gchar *) g_malloc(sizeof(gchar) * COL_MAX_INFO_LEN);
+for (i = 0; i < cfile.cinfo.num_cols; i++) {
+if (cfile.cinfo.col_fmt[i] == COL_CUSTOM) {
+get_column_format_matches(cfile.cinfo.fmt_matx[i], cfile.cinfo.col_fmt[i]);
+if (cfile.cinfo.col_fmt[i] == COL_INFO)
+cfile.cinfo.col_buf[i] = (gchar *) g_malloc(sizeof(gchar) * COL_MAX_LEN);
+cfile.cinfo.col_expr.col_expr[i] = (gchar *) g_malloc(sizeof(gchar) * COL_MAX_LEN);
+cfile.cinfo.col_expr.col_expr_val[i] = (gchar *) g_malloc(sizeof(gchar) * COL_MAX_LEN);
+for (i = 0; i < cfile.cinfo.num_cols; i++) {
+if (!cfile.cinfo.fmt_matx[i][j])
+if (cfile.cinfo.col_first[j] == -1)
+capture_opts_trim_snaplen(&global_capture_opts, MIN_PACKET_SIZE);
+capture_opts_trim_ring_num_files(&global_capture_opts);
+if (rfilter != NULL) {
+if (!dfilter_compile(rfilter, &rfcode)) {
+if (pcap_compile(pc, &fcode, rfilter, 0, 0) != -1) {
+print_current_user();
+err = load_cap_file(&cfile, global_capture_opts.save_file, out_file_type,
+global_capture_opts.has_autostop_packets ? global_capture_opts.autostop_packets : 0,
+global_capture_opts.has_autostop_filesize ? global_capture_opts.autostop_filesize : 0);
+if (!capture_opts_trim_iface(&global_capture_opts,
+status = capture_opts_list_link_layer_types(&global_capture_opts, FALSE);
+exit(status);
+capture();
+if (!write_finale()) {
+cmdarg_err(const char *fmt, ...)
+static int load_cap_file(capture_file *, char *, int, int, gint64);
+global_capture_opts.has_autostop_packets ? global_capture_opts.autostop_packets : 0,
+global_capture_opts.has_autostop_filesize ? global_capture_opts.autostop_filesize : 0);

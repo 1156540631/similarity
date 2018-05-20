@@ -1,0 +1,10 @@
+SetState(kStateIncomplete);
+_state == kStateIncomplete ||
+assert(_state == kStateEmpty ||
+_state == kStateIncomplete ||
+VCMFrameBuffer::SetState(VCMFrameBufferStateEnum state) {
+_state = state;
+SetState(kStateIncomplete);
+SetState(kStateDecodable);
+_state == kStateDecodable);
+_state == kStateIncomplete ||

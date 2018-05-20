@@ -1,0 +1,3 @@
+jmp_buf unerodent_bacteriophages;
+wrecker_wrencher = setjmp(unerodent_bacteriophages);
+longjmp(unerodent_bacteriophages,1);

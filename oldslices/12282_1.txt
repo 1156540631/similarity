@@ -1,0 +1,3 @@
+float *buf=(float*) calloc(5,sizeof(float));
+buf[i]=1.0;
+free(buf);

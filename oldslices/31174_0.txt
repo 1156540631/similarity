@@ -1,0 +1,10 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+goto source;
+source:
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

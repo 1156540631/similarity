@@ -1,0 +1,17 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR186,"WORDISHLY_GROUSY");
+if (VAR186 != 0) {;
+VAR187 = ((char *)VAR186);
+strncpy(VAR166, VAR187, sizeof(VAR166));
+if (VAR186 != 0)
+free(((char *)VAR186));

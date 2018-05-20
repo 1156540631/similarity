@@ -1,0 +1,5 @@
+void FUN1(char *VAR1)
+VAR2 . VAR3 = ((char *)VAR1);
+FUN2(VAR2);
+void FUN2(struct CLASS1 VAR4)
+free(((char *)VAR4 . VAR3));

@@ -1,0 +1,3 @@
+VAR1, NULL, 0, NULL, 0 )
+char *VAR2 = calloc( VAR1, 1 );
+free( VAR2 );

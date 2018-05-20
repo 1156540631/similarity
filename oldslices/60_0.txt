@@ -1,0 +1,8 @@
+unsigned char *ssl_add_clienthello_tlsext(SSL *s, unsigned char *buf,
+unsigned char *ret = buf;
+ret += 2;
+s2n(TLSEXT_TYPE_server_name, ret);
+s2n(size_str + 5, ret);
+s2n(size_str + 3, ret);
+s2n(size_str, ret);
+memcpy(ret, s->tlsext_hostname, size_str);

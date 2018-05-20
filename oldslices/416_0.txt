@@ -1,0 +1,53 @@
+UpdateJumpTargets(jt->kids[JT_LEFT], pivot, delta);
+UpdateJumpTargets(jt->kids[JT_RIGHT], pivot, delta);
+sdbase = cg->spanDeps;
+sdlimit = sdbase + cg->numSpanDeps;
+offset = CG_OFFSET(cg);
+growth = 0;
+delta = 0;
+JS_ASSERT(JT_HAS_TAG(sd->target));
+sd->offset += delta;
+sdtop = sd;
+top = sd->top;
+JS_ASSERT(top == sd->before);
+span = SD_SPAN(sd, pivot);
+ptrdiff_t deltaFromTop = 0;
+for (sd2 = sdtop; sd2 < sdlimit && sd2->top == top; sd2++) {
+sd2->offset += deltaFromTop;
+deltaFromTop += JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN;
+sd2->offset += deltaFromTop;
+sd2->offset += delta;
+UpdateJumpTargets(cg->jumpTargets, sd2->offset,
+JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN);
+sd = sd2 - 1;
+for (sd = sdbase; sd < sdlimit; sd++) {
+delta += JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN;
+growth += delta;
+passes, offset + growth, offset, growth);
+growth / (JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN), cg->numSpanDeps,
+passes, offset + growth, offset, growth);
+JS_ASSERT(sd == sdlimit);
+span = SD_SPAN(sd, pivot);
+SET_JUMP_OFFSET(oldpc, span);
+pc = base + sd->offset;
+offset = sd->before + 1;
+delta = offset - sd->before;
+JS_ASSERT(delta >= 1 + JUMP_OFFSET_LEN);
+oldpc + 1 + JUMP_OFFSET_LEN,
+memmove(pc + 1 + JUMPX_OFFSET_LEN,
+UpdateJumpTargets(JSJumpTarget *jt, ptrdiff_t pivot, ptrdiff_t delta)
+for (sd2 = sdtop; sd2 < sdlimit && sd2->top == top; sd2++) {
+sd = sd2 - 1;
+for (sd = sdbase; sd < sdlimit; sd++) {
+JS_ASSERT(sd == sdlimit);
+span = SD_SPAN(sd, pivot);
+oldpc = base + sd->before;
+pc = base + sd->offset;
+memmove(pc + 1 + JUMPX_OFFSET_LEN,
+oldpc + 1 + JUMP_OFFSET_LEN,
+memmove(pc + 1 + JUMPX_OFFSET_LEN,
+OptimizeSpanDeps(JSContext *cx, JSCodeGenerator *cg)
+base = CG_BASE(cg);
+size = BYTECODE_SIZE(PTRDIFF(limit, base, jsbytecode));
+pc = base + sd->offset;
+memmove(pc + 1 + JUMPX_OFFSET_LEN,

@@ -1,0 +1,5 @@
+key_t VAR46;
+if(sscanf(VAR47, "%d", &VAR46) > 0) {
+FUNC6(&VAR168,"8039",VAR169);
+void FUNC6(char** VAR34, char* VAR47, int VAR50) {
+if(sscanf(VAR47, "%d", &VAR46) > 0) {

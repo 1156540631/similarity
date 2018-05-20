@@ -1,0 +1,12 @@
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_67_structType myStruct;
+data = 20;
+myStruct.structFirst = data;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_67b_goodG2BSink(myStruct);
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_67b_goodG2BSink(CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_67_structType myStruct)
+int data = myStruct.structFirst;
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

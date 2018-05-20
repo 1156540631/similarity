@@ -1,0 +1,9 @@
+char *VAR5 = strchr( VAR1, '/' );
+*VAR5 = '\0';
+return FUN1( VAR2, VAR5 );
+VAR22 = FUN1( VAR22, VAR5 );
+static CLASS1* FUN1( CLASS1 *VAR3, const char *VAR4 )
+char *VAR17 = strdup( VAR4 );
+VAR1 = VAR17;
+char *VAR5 = strchr( VAR1, '/' );
+if( !strcmp( VAR2->VAR23, VAR1 ) )

@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+VAR44 = argv[1];
+FUN8(VAR44);
+FUN8(char *VAR14)
+VAR39 = malloc(VAR45);
+if(strlen(VAR14) >= VAR45) {
+strcpy(VAR39, VAR14);
+printf("result: %VAR1\VAR7", VAR39);

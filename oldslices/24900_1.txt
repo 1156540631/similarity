@@ -1,0 +1,11 @@
+void stonesoup_handle_taint(char *aesopic_tastelessness)
+calcaire_nro = ((void *)aesopic_tastelessness);
+loquent_forbid = &calcaire_nro;
+nonpressing_nucla = &loquent_forbid;
+seminarcosis_almadie(pasadis_dorididae,nonpressing_nucla);
+void seminarcosis_almadie(int surceased_epitaphic,void ***eradication_pearlstone)
+panthous_zimarra = ((char *)((char *)( *( *eradication_pearlstone))));
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+memset(stonesoup_data->buffer,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, panthous_zimarra);

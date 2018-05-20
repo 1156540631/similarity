@@ -1,0 +1,3 @@
+char VAR39[VAR45], *VAR138, *VAR389;
+VAR389 = VAR39 + sizeof VAR39 - 1;
+printf("result: %VAR1\VAR7", VAR39);

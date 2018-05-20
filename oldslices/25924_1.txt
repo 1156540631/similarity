@@ -1,0 +1,8 @@
+void noncognizantly_monostich(char **overtorturing_tumps)
+spences_gutium(overtorturing_tumps);
+void spences_gutium(char **stationery_gryllotalpa)
+guthrun_coconino = ((char *)( *(stationery_gryllotalpa - 5)));
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, guthrun_coconino);

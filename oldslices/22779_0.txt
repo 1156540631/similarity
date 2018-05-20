@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+osirian_bochum = ((char *)( *(labourism_sextettes - 5)) . serosal_semimarking);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, osirian_bochum, sizeof(stonesoup_source));

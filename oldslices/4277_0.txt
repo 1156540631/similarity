@@ -1,0 +1,22 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *cotonou_subbing;
+stonesoup_read_taint(&cotonou_subbing,"CONGLOMERATIC_EUPHORBIA");
+decannulation_wooingly[3] = cotonou_subbing;
+maru_ganching[5] = decannulation_wooingly;
+newchwang_odalisks = 5;
+carara_protested = &newchwang_odalisks;
+provand_unbarrel =  *(maru_ganching +  *carara_protested);
+free(((char *)provand_unbarrel[3]));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&cotonou_subbing,"CONGLOMERATIC_EUPHORBIA");
+decannulation_wooingly[3] = cotonou_subbing;
+maru_ganching[5] = decannulation_wooingly;
+provand_unbarrel =  *(maru_ganching +  *carara_protested);
+free(((char *)provand_unbarrel[3]));

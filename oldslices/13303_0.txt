@@ -1,0 +1,14 @@
+char* (*funcPtr)() = goodSource;
+void NetworkUtils::onNetdMessage(NetdCommand* aCommand)
+char* reason = funcPtr();
+char* goodSource()
+return strtok(nullptr, "\0");
+char* reason = funcPtr();
+sendBroadcastMessage(code, reason);
+if (code == NETD_COMMAND_INTERFACE_CHANGE) {
+if (gWifiTetheringParms) {
+char linkdownReason[MAX_COMMAND_SIZE];
+PR_snprintf(linkdownReason, MAX_COMMAND_SIZE - 1,
+"Iface linkstate %s down",
+NS_ConvertUTF16toUTF8(gWifiTetheringParms->mIfname).get());
+if (!strcmp(reason, linkdownReason)) {

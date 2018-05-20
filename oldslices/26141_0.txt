@@ -1,0 +1,8 @@
+char stonesoup_source[1024];
+computerizing_infaust beryllonite_hexosamine = 0;
+va_list pyrolignous_myrrhis;
+__builtin_va_start(pyrolignous_myrrhis,posi_unimplicated);
+beryllonite_hexosamine = (va_arg(pyrolignous_myrrhis,computerizing_infaust ));
+moundy_pinatas = ((char *)beryllonite_hexosamine);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, moundy_pinatas, sizeof(stonesoup_source));

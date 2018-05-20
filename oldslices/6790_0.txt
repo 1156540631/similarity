@@ -1,0 +1,8 @@
+data[50-1] = L'\0';
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, wchar_t *> dataMap)
+wchar_t * data = dataMap[2];
+memmove(dest, data, wcslen(data)*sizeof(wchar_t));
+printWLine(data);
+free(data);

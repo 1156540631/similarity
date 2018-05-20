@@ -1,0 +1,11 @@
+WCHAR VAR1[VAR2 + 1];
+if (!FUN1(VAR3"PostUpdateWin", VAR3"VAR1", NULL, VAR1,
+WCHAR VAR4[14];
+wcscpy(VAR4, VAR3"argv0ignored ");
+CLASS1 VAR19 = wcslen(VAR1) + wcslen(VAR4);
+WCHAR *VAR5 = (WCHAR *) malloc((VAR19 + 1) * sizeof(WCHAR));
+wcscpy(VAR5, VAR4);
+wcscat(VAR5, VAR1);
+VAR5,
+VAR5,
+free(VAR5);

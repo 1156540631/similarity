@@ -1,0 +1,4 @@
+char dnschange[PROPERTY_VALUE_MAX];
+property_get("net.dnschange", dnschange, "0");
+char num[PROPERTY_VALUE_MAX];
+snprintf(num, PROPERTY_VALUE_MAX - 1, "%d", atoi(dnschange) + 1);

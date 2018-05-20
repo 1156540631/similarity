@@ -1,0 +1,7 @@
+madlyn_murrains = ((char *)( *(sycamine_orbitelous - 5)) . apium_rotalia);
+stonesoup_data.buffer[stonesoup_i] = 0;
+strcpy(stonesoup_data.buffer, madlyn_murrains);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data.buffer);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, madlyn_murrains);

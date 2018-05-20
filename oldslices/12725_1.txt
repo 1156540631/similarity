@@ -1,0 +1,41 @@
+print_usage(gboolean print_ver)
+capture_opts_init(&global_capture_opts, &cfile);
+if (strcmp(argv[2], "fields") == 0)
+else if (strcmp(argv[2], "fields2") == 0)
+else if (strcmp(argv[2], "protocols") == 0)
+else if (strcmp(argv[2], "decodes") == 0)
+cmdarg_err("Invalid \"%s\" option for -G flag", argv[2]);
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+status = capture_opts_add_opt(&global_capture_opts, opt, optarg, &start_capture);
+status = capture_opts_list_interfaces(FALSE);
+print_usage(TRUE);
+global_capture_opts.has_cfilter = TRUE;
+global_capture_opts.cfilter = get_args_as_string(argc, argv, optind);
+if (strcmp(global_capture_opts.save_file, "-") == 0 && print_packet_info) {
+capture_opts_trim_snaplen(&global_capture_opts, MIN_PACKET_SIZE);
+capture_opts_trim_ring_num_files(&global_capture_opts);
+if (!capture_opts_trim_iface(&global_capture_opts,
+status = capture_opts_list_link_layer_types(&global_capture_opts, FALSE);
+exit(status);
+main(int argc, char *argv[])
+init_progfile_dir_error = init_progfile_dir(argv[0], main);
+optind_initial = optind;
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+optind = optind_initial;
+if (argc >= 2 && strcmp(argv[1], "-G") == 0) {
+else if (strcmp(argv[2], "fields3") == 0)
+else if (strcmp(argv[2], "values") == 0)
+else if (strcmp(argv[2], "defaultprefs") == 0)
+else if (strcmp(argv[2], "currentprefs") == 0) {
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+print_usage(TRUE);
+global_capture_opts.cfilter = get_args_as_string(argc, argv, optind);
+print_usage(FALSE);
+if (strcmp(global_capture_opts.save_file, "-") == 0) {
+status = capture_opts_list_link_layer_types(&global_capture_opts, FALSE);
+exit(status);
+cmdarg_err(const char *fmt, ...)
+while ((opt = getopt(argc, argv, optstring)) != -1) {
+global_capture_opts.cfilter = get_args_as_string(argc, argv, optind);
+status = capture_opts_list_link_layer_types(&global_capture_opts, FALSE);
+exit(status);

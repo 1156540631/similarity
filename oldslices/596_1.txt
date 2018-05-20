@@ -1,0 +1,8 @@
+CommandChain* aChain,
+return addDefaultRouteToNetwork(aChain, aOriginalCallback, aResult);
+void NetworkUtils::addDefaultRouteToNetwork(CommandChain* aChain,
+if (GET_FIELD(mLoopIndex) >= GET_FIELD(mGateways).Length()) {
+nsTArray<nsString>& gateways = GET_FIELD(mGateways);
+NS_ConvertUTF16toUTF8 autoGateway(gateways[GET_FIELD(mLoopIndex)]);
+int type = getIpType(autoGateway.get());
+type == AF_INET6 ? "::" : "0.0.0.0", autoGateway.get());

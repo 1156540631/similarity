@@ -1,0 +1,20 @@
+VAR28 = (getenv("VISUAL"));
+if (!VAR28) {
+if (!VAR28) {
+if (VAR28) {
+for (VAR23 = VAR28;  *VAR23; VAR23++)
+if (!( *VAR23)) {
+*VAR288 = VAR28;
+STRUCT288 *VAR289 = FUN74(&VAR288,VAR290,VAR291);
+VAR292 = (FUN75(VAR293,"%VAR9 %VAR9",VAR288,VAR294));
+VAR295 = system(VAR292);
+if (VAR295) {
+return FUN75(VAR300,((void *)0),(dgettext("subversion","system('%VAR9') returned %VAR219")),VAR292,VAR295);
+STRUCT288 *VAR289 = FUN74(&VAR288,VAR290,VAR291);
+VAR292 = (FUN75(VAR293,"%VAR9 %VAR9",VAR288,VAR297));
+VAR295 = system(VAR292);
+if (VAR295 != 0) {
+VAR298 = FUN75(VAR300,((void *)0),(dgettext("subversion","system('%VAR9') returned %VAR219")),VAR292,VAR295);
+if (!VAR298 && VAR299) {
+return VAR298;
+static STRUCT288 *FUN74(const char **VAR288,const char *VAR290,STRUCT299 *VAR291)

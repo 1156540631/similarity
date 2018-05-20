@@ -1,0 +1,5 @@
+data = NULL;
+goodG2BSource(data);
+void goodG2BSource(void * &data);
+data = (void *)CHAR_STRING;
+size_t dataLen = strlen((char *)data);

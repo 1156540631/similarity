@@ -1,0 +1,11 @@
+nsAutoTArray<CLASS1*, 8> VAR1;
+for (line_iterator VAR17 = FUN1(), VAR6 = FUN3();
+if (VAR17->FUN4()) {
+if (VAR17->FUN5()) {
+CLASS2* VAR2 = VAR17->FUN6();
+VAR2 = VAR2->FUN2();
+VAR1.FUN7(VAR2->VAR4);
+if (VAR3 < VAR1.VAR24() && VAR1.FUN8(VAR3) != VAR9) {
+if ((!VAR5 || VAR1.VAR24() != VAR8.VAR24()) && !VAR7) {
+for (VAR3 = 0; VAR3 < VAR1.VAR24(); ++VAR3) {
+printf("VAR17 float: %VAR6\VAR2", VAR1.FUN8(VAR3));

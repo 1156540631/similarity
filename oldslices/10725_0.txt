@@ -1,0 +1,5 @@
+void stonesoup_handle_taint(char *smazes_crool)
+mutinying_fantasie = ((void *)smazes_crool);
+stationing_gilliver(mutinying_fantasie);
+void stationing_gilliver(void *const calippic_reveree)
+free(((char *)((char *)((void *)calippic_reveree))));

@@ -1,0 +1,6 @@
+int VAR1 = 1000;
+VAR2 = FUN1(VAR3, "data", VAR4, VAR1 * sizeof(char));
+VAR1 = VAR1 * 2;
+VAR4 = (char*) malloc(VAR1 * sizeof(char));
+VAR2 = FUN1(VAR3, "data", VAR4, VAR1 * sizeof(char));
+free(VAR4);

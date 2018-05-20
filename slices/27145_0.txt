@@ -1,0 +1,4 @@
+char VAR39[][25]={"This is VAR396 String",
+VAR14 = FUN95(VAR39[VAR10]);
+static char * FUN95 (char *VAR142)
+VAR5 = strlen(VAR142);

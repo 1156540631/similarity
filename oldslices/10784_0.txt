@@ -1,0 +1,5 @@
+airlifted_protoplasma = telegn_incomplete(futz_rakestele);
+cocreatorship_provisorily(manometries_logopedics,airlifted_protoplasma);
+cocreatorship_provisorily(cotyliform_shellshake,palar_oxygenate);
+void cocreatorship_provisorily(int cotyliform_shellshake,char *palar_oxygenate)
+free(((char *)palar_oxygenate));

@@ -1,0 +1,14 @@
+#define VAR8 "AAAAAAAAAA"
+char * VAR1;
+VAR1 = NULL;
+VAR1 = (char *)malloc(10*sizeof(char));
+FUN2(VAR1);
+void FUN2(char * VAR1)
+FUN3(VAR1);
+void FUN3(char * VAR1)
+FUN4(VAR1);
+void FUN4(char * VAR1)
+FUN5(VAR1);
+void FUN5(char * VAR1)
+char VAR9[10+1] = VAR8;
+memcpy(VAR1, VAR9, (strlen(VAR9) + 1) * sizeof(char));

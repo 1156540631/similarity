@@ -1,0 +1,4 @@
+int64_t * &dataRef = data;
+int64_t * data = dataRef;
+printLongLongLine(*data);
+free(data);

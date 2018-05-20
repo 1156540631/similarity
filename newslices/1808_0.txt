@@ -1,0 +1,3 @@
+VAR1 = FUN1("LS_COLORS");
+if ((VAR1 == ((void *)0) || strlen(VAR1) == 0) && VAR2) {
+if (VAR1 == ((void *)0) || !VAR2 && (VAR3 || !isatty(1))) {

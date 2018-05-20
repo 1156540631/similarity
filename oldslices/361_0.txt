@@ -1,0 +1,19 @@
+else  return first_iformat;
+AVInputFormat *fmt1 = NULL, *fmt;
+fmt = NULL;
+while ((fmt1 = av_iformat_next(fmt1))) {
+score = fmt1->read_probe(&lpd);
+fmt = fmt1;
+fmt = NULL;
+return fmt;
+AVInputFormat *fmt = av_probe_input_format3(pd, 1, &score);
+pd->buf_size, MAX_PROBE_PACKETS - st->probe_packets, fmt->name, score);
+if (!strcmp(fmt->name, fmt_id_type[i].name)) {
+AVInputFormat  *av_iformat_next(AVInputFormat  *f)
+if(f) return f->next;
+while ((fmt1 = av_iformat_next(fmt1))) {
+fmt = fmt1;
+return fmt;
+AVInputFormat *fmt = av_probe_input_format3(pd, 1, &score);
+pd->buf_size, MAX_PROBE_PACKETS - st->probe_packets, fmt->name, score);
+if (!strcmp(fmt->name, fmt_id_type[i].name)) {

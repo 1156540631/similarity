@@ -1,0 +1,3 @@
+jmp_buf scrivaille_thakur;
+mysids_redowas = setjmp(scrivaille_thakur);
+longjmp(scrivaille_thakur,1);

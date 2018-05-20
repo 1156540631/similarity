@@ -1,0 +1,13 @@
+return c - 32;
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+strncpy(stonesoup_data, educand_epichil, strlen(educand_epichil) + 1);
+stonesoup_data[stonesoup_oc_i] = stonesoup_toupper(stonesoup_data[stonesoup_oc_i]);
+for (; stonesoup_oc_i < strlen(stonesoup_data); ++stonesoup_oc_i) {
+stonesoup_printf("%s\n", stonesoup_data);
+void stonesoup_printf(char * format, ...) {
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_data[stonesoup_oc_i] = stonesoup_toupper(stonesoup_data[stonesoup_oc_i]);
+for (; stonesoup_oc_i < strlen(stonesoup_data); ++stonesoup_oc_i) {
+stonesoup_printf("%s\n", stonesoup_data);

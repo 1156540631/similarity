@@ -1,0 +1,3 @@
+const char VAR1[] = "pending";
+CLASS2 VAR5;
+sizeof(VAR1) - 1, &VAR5, NULL);

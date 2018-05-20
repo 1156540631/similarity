@@ -1,0 +1,4 @@
+VAR1 = FUN1("LINEARISATION_UNSTANDARDIZED");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+strncpy(VAR3, VAR2, sizeof(VAR3));

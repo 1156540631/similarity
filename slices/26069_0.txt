@@ -1,0 +1,2 @@
+char *VAR416 = getenv("WIRESHARK_DEBUG_MIBS");
+VAR417 = ((VAR416?strtoul(VAR416,((void *)0),10) : 0));

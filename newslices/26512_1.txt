@@ -1,0 +1,4 @@
+char VAR1[10];
+VAR2 = fopen("TestInputFile1", "r");
+assert(VAR2 != VAR3);
+fgets(VAR1, 11, VAR2);

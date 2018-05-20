@@ -1,0 +1,12 @@
+p_chk->strf.auds.p_wf = malloc( __MAX( p_chk->common.i_chunk_size, sizeof( WAVEFORMATEX ) ) );
+if( p_chk->strf.auds.p_wf->wFormatTag != WAVE_FORMAT_PCM && p_chk->common.i_chunk_size > sizeof( WAVEFORMATEX ) )
+if( p_chk->strf.auds.p_wf->cbSize > p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX ) )
+p_chk->strf.auds.p_wf->cbSize = p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX );
+unionType myUnion;
+myUnion.unionFirst = p_chk->strf.vids.p_bih;
+void * p_chk->strf.vids.p_bih = myUnion.unionSecond;
+p_chk->strf.vids.p_bih = malloc( __MAX( p_chk->common.i_chunk_size,sizeof( *p_chk->strf.vids.p_bih ) ) );
+if( p_chk->strf.vids.p_bih->biSize > p_chk->common.i_chunk_size )
+p_chk->strf.vids.p_bih->biSize = p_chk->common.i_chunk_size;
+if( p_chk->common.i_chunk_size > sizeof(BITMAPINFOHEADER) )
+memcpy( &p_chk->strf.vids.p_bih[1], p_buff + 8 + sizeof(BITMAPINFOHEADER), p_chk->common.i_chunk_size -sizeof(BITMAPINFOHEADER) );

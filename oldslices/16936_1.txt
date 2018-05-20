@@ -1,0 +1,8 @@
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+data = -1;
+badSource(data);
+static void badSource(int &data)
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+if (data < 10)
+buffer[data] = 1;

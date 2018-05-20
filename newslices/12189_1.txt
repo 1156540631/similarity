@@ -1,0 +1,22 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"CASUISTICAL_RESTIACEOUS");
+if (VAR5 != 0) {;
+VAR6 = ((void *)VAR5);
+VAR7[5] = VAR6;
+VAR8 =  *(VAR7 +  *VAR9);
+VAR10 = ((char *)((char *)VAR8));
+strcpy(VAR11, VAR10);
+FUN2(VAR12, VAR13, "VAR11", VAR11, "VAR14-VAR15");
+VAR16 = strlen( VAR11);
+FUN2(VAR12, VAR17, "VAR16", VAR16, &VAR16, "VAR14-VAR15");
+for (; VAR18 < VAR16; ++VAR18) {
+FUN2(VAR12, VAR17, "VAR16", VAR16, &VAR16, "VAR19-VAR15");
+FUN2(VAR12, VAR13, "VAR11", VAR11, "VAR20-VAR21");
+FUN3("%s\n",VAR11);
+if (((char *)VAR8) != 0)
+free(((char *)((char *)VAR8)));
+void FUN3(char * VAR22, ...) {
+free(VAR11);
+FUN2(VAR12, VAR13, "VAR11", VAR11, "VAR19-VAR15");

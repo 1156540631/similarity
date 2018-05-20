@@ -1,0 +1,2 @@
+if (VAR631 = getenv("OPENSSL_ia32cap")) {
+int VAR632 = VAR631[0] == '~'?1 : 0;

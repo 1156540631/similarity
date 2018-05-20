@@ -1,0 +1,25 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR506,"TRUCKIE_LYSIGENIC");
+if (VAR506 != 0) {;
+VAR507 . VAR508 = ((char *)VAR506);
+FUN137(VAR507);
+void FUN137(const struct STRUCT508 VAR509)
+VAR510 = ((char *)((struct STRUCT508 )VAR509) . VAR508);
+VAR264 = ((int )(strlen(VAR510)));
+memcpy(VAR75.VAR76, VAR510, 64);
+for (; VAR263 < VAR264; ++VAR263){
+FUN68("%x",VAR75.VAR76[VAR263]);
+tracepoint(VAR19, VAR60, "VAR75.VAR76", VAR75.VAR76, "CROSSOVER-STATE");
+if (((struct STRUCT508 )VAR509) . VAR508 != 0)
+free(((char *)((struct STRUCT508 )VAR509) . VAR508));
+void FUN68(char * VAR51, ...) {

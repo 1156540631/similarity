@@ -1,0 +1,75 @@
+unsigned short type, size;
+static const unsigned char kSafariExtensionsBlock[] = {
+data += 2;
+n2s(data, type);
+n2s(data, size);
+data += size;
+const size_t len1 = sizeof(kSafariExtensionsBlock);
+if (memcmp(data, kSafariExtensionsBlock, len1) != 0)
+if (memcmp(data + len1, kSafariTLS12ExtensionsBlock, len2) != 0)
+if (memcmp(data, kSafariExtensionsBlock, len) != 0)
+unsigned short size;
+ssl_check_for_safari(s, data, limit);
+n2s(data, len);
+n2s(data, size);
+fprintf(stderr, "Received extension type %d size %d\n", type, size);
+s->tlsext_debug_cb(s, 0, type, data, size, s->tlsext_debug_arg);
+n2s(data, dsize);
+size -= 2;
+memcpy(s->srp_ctx.login, &data[1], len);
+!s->tls_session_ticket_ext_cb(s, data, size,
+if (!ssl_parse_clienthello_renegotiate_ext(s, data, size, al))
+n2s(data, dsize);
+size -= 2;
+if (!tls1_process_sigalgs(s, data, dsize))
+s->tlsext_status_type = *data++;
+size--;
+n2s(data, dsize);
+size -= 2;
+int idsize;
+n2s(data, idsize);
+size -= 2 + idsize;
+id = d2i_OCSP_RESPID(NULL, &sdata, idsize);
+data += idsize;
+n2s(data, dsize);
+size -= 2;
+if (ssl_parse_clienthello_use_srtp_ext(s, data, size, al))
+data += size;
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+static void ssl_check_for_safari(SSL *s, const unsigned char *data,
+n2s(data, len);
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+int tls1_process_sigalgs(SSL *s, const unsigned char *data, int dsize)
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));
+int ssl_parse_clienthello_tlsext(SSL *s, unsigned char **p,
+unsigned char *data = *p;
+n2s(data, len);
+n2s(data, type);
+n2s(data, size);
+unsigned char *sdata = data;
+int ecpointformatlist_length = *(sdata++);
+OPENSSL_malloc(ecpointformatlist_length)) == NULL) {
+memcpy(s->session->tlsext_ecpointformatlist, sdata,
+sdata = s->session->tlsext_ecpointformatlist;
+fprintf(stderr, "%i ", *(sdata++));

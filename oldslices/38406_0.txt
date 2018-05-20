@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_console_fprintf_22_goodG2BGlobal = 1;
+CWE134_Uncontrolled_Format_String__char_console_fprintf_22_goodG2BSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_fprintf_22_goodG2BSink(char * data)
+if(CWE134_Uncontrolled_Format_String__char_console_fprintf_22_goodG2BGlobal)
+fprintf(stdout, data);

@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char **VAR2)
+if (VAR1 > 1 && strlen(VAR2[1]) < VAR3)
+strcpy(VAR4, VAR2[1]);
+printf("VAR4 = %s\n", VAR4);
+free(VAR4);

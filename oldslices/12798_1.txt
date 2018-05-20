@@ -1,0 +1,5 @@
+wchar_t * &dataRef = data;
+wchar_t * data = dataRef;
+SNPRINTF(data, 100, L"%s", source);
+printWLine(data);
+free(data);

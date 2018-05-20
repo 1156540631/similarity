@@ -1,0 +1,8 @@
+char * VAR1;
+VAR1 = VAR2;
+VAR1 = new char[10];
+const VAR3& VAR4 = FUN1();
+VAR4.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+char VAR5[10+1] = VAR6;
+strncpy(VAR1, VAR5, strlen(VAR5) + 1);

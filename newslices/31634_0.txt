@@ -1,0 +1,13 @@
+static int VAR1 = 1;
+static int VAR2 = 0;
+char * VAR3;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+if(VAR2){}
+else
+VAR3 = VAR4;
+char VAR5[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+strncpy(VAR5, VAR3, strlen(VAR5));

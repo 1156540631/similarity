@@ -1,0 +1,4 @@
+data = (int64_t *)malloc(50*sizeof(int64_t));
+memmove(data, source, 100*sizeof(int64_t));
+printLongLongLine(data[0]);
+free(data);

@@ -1,0 +1,6 @@
+char canary[] = "GOOD";
+pvp = prescan(addr, delim, pvpbuf, sizeof pvpbuf, delimptr, NULL, canary);
+char *canary;
+printf ("canary=[%s]\n", canary);
+printf ("canary=[%s]\n", canary);
+printf ("canary=[%s]\n", canary);

@@ -1,0 +1,5 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"DILUVY_CONSOLIDATING");
+if (VAR5 != 0) {;

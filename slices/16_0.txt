@@ -1,0 +1,6 @@
+FUN1(CLASS1 VAR1, int VAR2)
+char VAR3[32];
+sprintf(VAR3, "failed: %d", VAR2);
+CLASS2 VAR4 = strlen(VAR3);
+CLASS2 VAR5;
+VAR4, &VAR5, NULL);

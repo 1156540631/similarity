@@ -1,0 +1,13 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+data = NULL;
+if(staticReturnsTrue())
+data = (void *)WIDE_STRING;
+if(staticReturnsTrue())
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

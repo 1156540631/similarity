@@ -1,0 +1,31 @@
+CLASS1 *VAR1 = (CLASS1*) calloc( 1, sizeof(CLASS1) );
+return VAR1;
+free( VAR2->VAR3 );
+free( VAR2 );
+VAR4 = FUN1( VAR4 ? (VAR4+1) : VAR5 );
+" <VAR6>\VAR1", VAR4 ) == -1)
+CLASS1 *VAR7 = FUN2( VAR4 );
+CLASS1 *VAR8 = FUN3( VAR7, VAR9 );
+if( FUN4( VAR10, VAR7, true ) < 0 ) return -1;
+static int FUN4( char **VAR10, CLASS1 *VAR1, bool VAR11 );
+if( FUN4( VAR10, VAR7, true ) < 0 ) return -1;
+FUN5( VAR7 );
+inline static void FUN5( CLASS1 *VAR2 )
+free( VAR2 );
+FUN5( VAR7 );
+inline static void FUN5( CLASS1 *VAR2 )
+FUN5( VAR2->VAR12 );
+inline static void FUN5( CLASS1 *VAR2 )
+CLASS1 *VAR13 = VAR2->VAR14;
+VAR2 = VAR13;
+free( VAR2 );
+inline static CLASS1* FUN2( char *VAR3 )
+VAR1->VAR3 = FUN1( VAR3 );
+return VAR1;
+CLASS1 *VAR7 = FUN2( VAR4 );
+if( FUN4( VAR10, VAR7, true ) < 0 ) return -1;
+FUN5( VAR7 );
+static CLASS1* FUN3( CLASS1 *VAR2, const char *VAR15 );
+CLASS1 *VAR8 = FUN3( VAR7, VAR9 );
+if( FUN4( VAR10, VAR7, true ) < 0 ) return -1;
+FUN5( VAR7 );

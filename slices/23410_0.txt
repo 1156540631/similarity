@@ -1,0 +1,19 @@
+VAR10 = FUNC1(VAR11 -> VAR12);
+VAR10 = FUNC2(VAR11 -> VAR12);
+VAR22 = VAR5[i];
+VAR13 = VAR22 -> VAR13;
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"frame=%5d VAR28=%3.*f q=%3.1f ",VAR13,VAR28 < 9.95,VAR28,VAR24);
+VAR28(&VAR19,"frame=%d\n",VAR13);
+VAR9 = (VAR14 -> VAR15 * VAR14 -> VAR16) * 255.0 * 255.0 * VAR13;
+VAR25 = FUNC5(VAR8 / VAR9);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"size=%8.0fkB time=",VAR10 / 1024.0);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%02d:%02d:%02d.%02d ",VAR48,VAR49,VAR50,100 * VAR51 / 1000000);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"bitrate=N/A");
+static double FUNC5(double VAR26)
+return - 10.0 * log(VAR26) / log(10.0);
+VAR25 = FUNC5(VAR8 / VAR9);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%c:%2.2f ",VAR20[j],VAR25);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"*:%2.2f ",FUNC5(VAR6 / VAR7));
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"size=N/A time=");
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"%02d:%02d:%02d.%02d ",VAR48,VAR49,VAR50,100 * VAR51 / 1000000);
+snprintf(VAR1 + strlen(VAR1),sizeof(VAR1) - strlen(VAR1),"bitrate=N/A");

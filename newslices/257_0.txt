@@ -1,0 +1,6 @@
+static CLASS1 *VAR1;
+VAR1 = fopen("/VAR2/VAR3.VAR4", "w");
+setvbuf(VAR1, VAR5, VAR6, 0);
+fprintf(VAR1, "VAR7 VAR8 VAR9:\n");
+fprintf(VAR1, "%4u %4u ", FUN1(VAR10), VAR4[VAR10]);
+fputc('\', VAR1);

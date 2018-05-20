@@ -1,0 +1,10 @@
+const int GLOBAL_CONST_TRUE = 1;
+const int GLOBAL_CONST_FALSE = 0;
+data = -1;
+if(GLOBAL_CONST_TRUE)
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

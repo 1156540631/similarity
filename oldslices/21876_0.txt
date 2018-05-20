@@ -1,0 +1,19 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&unprettified_doscher,"DETAILIST_ITEM");
+if (unprettified_doscher != 0) {;
+nondelineative_caf . rapateaceous_gester = ((char *)unprettified_doscher);
+camouflager_wirral = &nondelineative_caf;
+wilkison_kimonoed = ((struct nocument_edris *)(((unsigned long )camouflager_wirral) * ukraine_levant * ukraine_levant)) + 5;
+fidole_stramineously(unispiral_unpadlocked,wilkison_kimonoed);
+void fidole_stramineously(int stocks_parnell,struct nocument_edris *yemschik_phyllostomus)
+fidole_stramineously(stocks_parnell,yemschik_phyllostomus);

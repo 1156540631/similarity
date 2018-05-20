@@ -1,0 +1,7 @@
+data = (twoIntsStruct *)malloc(100*sizeof(twoIntsStruct));
+static void goodG2BSource(twoIntsStruct * &data)
+data = NULL;
+goodG2BSource(data);
+memcpy(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

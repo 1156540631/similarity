@@ -1,0 +1,5 @@
+int main(int argc, char *argv[])
+char VAR227 [2048];
+strcpy(VAR227, argv[1]);
+strcat(VAR227, " = ");
+strcat(VAR227, argv[2]);

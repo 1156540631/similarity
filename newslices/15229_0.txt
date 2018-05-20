@@ -1,0 +1,8 @@
+int *  VAR1;
+int * &VAR2 = VAR1;
+int * VAR3 = (int *)FUN1(50*sizeof(int));
+int * VAR4 = (int *)FUN1(100*sizeof(int));
+VAR1 = VAR4;
+int * VAR1 = VAR2;
+int VAR5[100] = {0};
+memmove(VAR1, VAR5, 100*sizeof(int));

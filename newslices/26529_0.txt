@@ -1,0 +1,34 @@
+VAR1 = FUN1(VAR2);
+VAR3 = fopen(VAR1,"rb");
+if (VAR3 != 0) {
+fseek(VAR3,0L,2);
+VAR4 = ftell(VAR3);
+rewind(VAR3);
+*VAR5 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+if (*VAR5 != 0) {
+VAR6 = fread(*VAR5,1,VAR4,VAR3);
+if (VAR3 != 0) {
+fclose(VAR3);
+FUN2(&VAR7,"VILLATE_EPICOELIAC");
+if (VAR7 != 0) {;
+VAR8 = ((char *)VAR7);
+VAR9[7] = VAR8;
+VAR10 = ((int )(strlen(VAR8)));
+FUN3(VAR11, VAR12, "VAR9", VAR9, "VAR13-VAR14");
+for (; VAR10 >= 0; (--VAR15 , --VAR10)) {
+VAR16[VAR15] = VAR8[VAR10];
+FUN3(VAR11, VAR12, "VAR16", VAR16, "VAR17-VAR14");
+VAR16[VAR18] = FUN4(VAR16[VAR18]);
+FUN5("%s\n",VAR16);
+FUN5("strlen VAR19 = %d\n",strlen(VAR8));
+FUN5("strlen VAR19 = %d\n",strlen(VAR9[7]));
+if (VAR7 != 0)
+free(((char *)VAR7));
+void FUN5(char * VAR20, ...) {
+FUN5("strlen VAR19 = %d\n",strlen(VAR9[7]));
+FUN3(VAR11, VAR12, "VAR16", VAR16, "VAR21-VAR14");
+int FUN4(int VAR22)
+if (VAR22 >= 97 && VAR22 <= 122) {
+return VAR22 - 32;
+return VAR22;
+VAR16[VAR18] = FUN4(VAR16[VAR18]);

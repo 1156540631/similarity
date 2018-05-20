@@ -1,0 +1,6 @@
+char buf0[MAXNAME + 1];
+i = strlen(a->q_user);
+if (i >= sizeof buf0)
+buf = xalloc(i + 1);
+buf = buf0;
+(void) strcpy(buf, a->q_user);

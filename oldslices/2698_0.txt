@@ -1,0 +1,9 @@
+main(int argc, char **argv)
+l = strtoul(argv[1], 0, 10);
+test((unsigned int)l);
+test(unsigned int n)
+int *buf, i;
+buf = malloc(n * sizeof *buf);
+for(i = 0; i < n; i++)
+printf("%x ", buf[i] = i);
+free(buf);

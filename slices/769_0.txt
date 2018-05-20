@@ -1,0 +1,25 @@
+VAR5 = split(VAR2[VAR28],"=",&VAR1);
+VAR3 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR4 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR6 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+if (strcasecmp("target",VAR5[1]) == 0) {
+VAR7 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR8 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR9 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR10 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR11 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR12 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR13 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR14 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR15 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR16 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR17 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR18 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR19 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR20 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR21 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR22 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR23 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+VAR24 -> VAR25 = strcpy((xmalloc(strlen((VAR5[0] + 1)) + 1)),(VAR5[0] + 1));
+VAR24 -> VAR26 = strcpy((xmalloc(strlen(VAR5[1]) + 1)),VAR5[1]);
+free(VAR5);

@@ -1,0 +1,2 @@
+GETSHORT(r->dns_r_q.dns_q_type, p);
+printf("Record type queried = %d\n",r->dns_r_q.dns_q_type);

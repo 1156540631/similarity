@@ -1,0 +1,8 @@
+char exp_dn[200], exp_dn2[200];
+dnptrs = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+dnptrs2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+comp_dn = (unsigned char *) malloc(200*sizeof(unsigned char));
+strcpy(exp_dn, "lcs.mit.edu");
+comp_size = dn_comp((const char *) exp_dn, comp_dn, 200, dnptrs, lastdnptr);
+printf("uncomp_size = %d\n", strlen(exp_dn));
+printf("exp_dn = %s, comp_dn = %s\n", exp_dn, (char *) comp_dn);

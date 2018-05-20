@@ -1,0 +1,39 @@
+AVCodec *experimental = ((void *)0);
+p = first_avcodec;
+if (((encoder?av_codec_is_encoder(p) : av_codec_is_decoder(p))) && (p -> id) == id) {
+p = p -> next;
+if (((encoder?av_codec_is_encoder(p) : av_codec_is_decoder(p))) && (p -> id) == id) {
+experimental = p;
+return experimental;
+return find_encdec(id,1);
+return find_encdec(id,0);
+return "none";
+codec = avcodec_find_decoder(id);
+return codec -> name;
+codec = avcodec_find_encoder(id);
+return codec -> name;
+return "unknown_codec";
+codec_type = av_get_media_type_string(enc -> codec_type);
+codec_name = avcodec_get_name(enc -> codec_id);
+snprintf(buf,buf_size,"%s: %s%s",(codec_type?codec_type : "unknown"),codec_name,(enc -> mb_decision?" (hq)" : ""));
+int av_codec_is_decoder(const AVCodec *codec)
+if (((encoder?av_codec_is_encoder(p) : av_codec_is_decoder(p))) && (p -> id) == id) {
+return p;
+return find_encdec(id,0);
+codec = avcodec_find_decoder(id);
+return codec -> name;
+codec_name = avcodec_get_name(enc -> codec_id);
+snprintf(buf,buf_size,"%s: %s%s",(codec_type?codec_type : "unknown"),codec_name,(enc -> mb_decision?" (hq)" : ""));
+const char *avcodec_get_name(enum AVCodecID id)
+cd = avcodec_descriptor_get(id);
+return cd -> name;
+codec_name = avcodec_get_name(enc -> codec_id);
+snprintf(buf,buf_size,"%s: %s%s",(codec_type?codec_type : "unknown"),codec_name,(enc -> mb_decision?" (hq)" : ""));
+int av_codec_is_encoder(const AVCodec *codec)
+if (((encoder?av_codec_is_encoder(p) : av_codec_is_decoder(p))) && (p -> id) == id) {
+return p;
+return find_encdec(id,0);
+codec = avcodec_find_decoder(id);
+return codec -> name;
+codec_name = avcodec_get_name(enc -> codec_id);
+snprintf(buf,buf_size,"%s: %s%s",(codec_type?codec_type : "unknown"),codec_name,(enc -> mb_decision?" (hq)" : ""));

@@ -1,0 +1,16 @@
+char VAR338[256];
+while (fgets(VAR338, sizeof VAR338, VAR339) != NULL) {
+VAR338[VAR335 + 1] = '\0';
+if (sscanf(&VAR338[0], "%x", &VAR337) != 1)
+VAR335 = strcspn(VAR338, ",");
+while (fgets(VAR338, sizeof VAR338, VAR339) != NULL) {
+FUN82("%." ETCH_MAX_SYMBOL_LENGTH "VAR9", &VAR338[VAR335+1]));
+char         *VAR340;
+FUN83(VAR340);
+FUN84(VAR340);
+FUN85(int VAR337, gchar *VAR341) {
+FUN82("%." ETCH_MAX_SYMBOL_LENGTH "VAR9", &VAR338[VAR335+1]));
+while (fgets(VAR338, sizeof VAR338, VAR339) != NULL) {
+FUN84(const char *VAR340)
+VAR339 = ws_fopen(VAR340, "r");
+while (fgets(VAR338, sizeof VAR338, VAR339) != NULL) {

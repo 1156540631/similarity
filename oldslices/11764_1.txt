@@ -1,0 +1,5 @@
+char * *dataPtr2 = &data;
+char * data = *dataPtr2;
+strncpy(dest, data, strlen(data));
+printLine(data);
+free(data);

@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+improvement_cramponnee = ((char *)( *(yemschik_phyllostomus - 5)) . rapateaceous_gester);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, improvement_cramponnee, sizeof(stonesoup_source));

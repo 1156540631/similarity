@@ -1,0 +1,9 @@
+IsLocalFile(LPCWSTR file, BOOL &isLocal)
+rootPath = func(rootPath);
+static WCHAR * func(const WCHAR * rootPath)
+WCHAR rootPath[MAX_PATH + 1];
+return rootPath;
+rootPath = func(rootPath);
+if (wcslen(file) > MAX_PATH) {
+return FALSE;
+wcscpy(rootPath, file);

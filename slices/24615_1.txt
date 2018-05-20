@@ -1,0 +1,12 @@
+wchar_t * VAR1[5];
+VAR2 = NULL;
+VAR2 = new wchar_t[50];
+VAR2[0] = L'\0';
+VAR1[2] = VAR2;
+FUNC1(VAR1);
+void FUNC1(wchar_t * VAR1[])
+wchar_t * VAR2 = VAR1[2];
+wchar_t VAR3[100];
+wmemset(VAR3, L'C', 100-1);
+VAR3[100-1] = L'\0';
+memcpy(VAR2, VAR3, 100*sizeof(wchar_t));

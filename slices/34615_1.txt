@@ -1,0 +1,10 @@
+char * VAR2;
+VAR2 = NULL;
+VAR2 = new char[50];
+VAR2[0] = '\0';
+FUN4(VAR2);
+void FUN4(char * VAR2)
+char VAR20[100];
+memset(VAR20, 'C', 100-1);
+VAR20[100-1] = '\0';
+memmove(VAR2, VAR20, 100*sizeof(char));

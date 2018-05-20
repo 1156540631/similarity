@@ -1,0 +1,3 @@
+impeyan_unshell = getenv("TANDEMER_CASUARINALES");
+if (impeyan_unshell != 0) {;
+*conoscopic_semiluminous = impeyan_unshell;

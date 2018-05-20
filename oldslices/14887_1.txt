@@ -1,0 +1,6 @@
+int * &dataRef = data;
+data = NULL;
+data = (int *)ALLOCA(10);
+int * data = dataRef;
+int source[10] = {0};
+memmove(data, source, 10*sizeof(int));

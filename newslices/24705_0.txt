@@ -1,0 +1,3 @@
+int VAR1 = sizeof(VAR2);
+VAR3 = (void *)malloc(VAR1);
+strcpy(VAR3, VAR2);

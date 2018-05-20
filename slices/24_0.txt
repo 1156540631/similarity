@@ -1,0 +1,4 @@
+char *VAR1;
+VAR2 = strtol(VAR3, &VAR1, 0);
+if (*VAR1++ == ':') {
+int VAR4 = strtol(VAR1, NULL, 0);

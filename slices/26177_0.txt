@@ -1,0 +1,21 @@
+rewind(VAR22);
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+*VAR24 = NULL;
+STRUCT13 VAR237 = (STRUCT13 )0;
+sscanf(VAR238,"%VAR82",&VAR237);
+char *VAR239;
+FUN1(&VAR239,"URTICA_UNDERBEAR");
+VAR240 = ((char *)VAR239);
+VAR241 = FUN75(VAR240);
+void FUN1(char** VAR24, char* VAR21) {
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+FUN1(&VAR239,"URTICA_UNDERBEAR");
+VAR240 = ((char *)VAR239);
+VAR241 = FUN75(VAR240);
+STRUCT13 FUN75(char *VAR238)
+VAR242 = strlen(VAR238) % 3;
+sscanf(VAR238,"%VAR82",&VAR237);

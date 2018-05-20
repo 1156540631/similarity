@@ -1,0 +1,4 @@
+char VAR4[sizeof VAR1];
+VAR5 = FUN1(VAR4, sizeof VAR4, VAR2->VAR3);
+if (VAR5 != sizeof VAR4) {
+if (memcmp(VAR4, VAR1, sizeof VAR1)) {

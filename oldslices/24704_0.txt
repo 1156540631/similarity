@@ -1,0 +1,2 @@
+fifth = (void *)malloc(128);
+strcpy(fifth, "something");

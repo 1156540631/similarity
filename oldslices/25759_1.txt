@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_stack_buffer_64[64];
+int athymy_peacekeeper = 1001;
+char *favosites_anauxite;;
+stonesoup_read_taint(&favosites_anauxite,"9920",athymy_peacekeeper);
+neoholmia_fritze = ((void *)favosites_anauxite);
+benevolently_badass = ((char *)((char *)neoholmia_fritze));
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,benevolently_badass);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&favosites_anauxite,"9920",athymy_peacekeeper);
+neoholmia_fritze = ((void *)favosites_anauxite);
+benevolently_badass = ((char *)((char *)neoholmia_fritze));
+strcpy(stonesoup_stack_buffer_64,benevolently_badass);

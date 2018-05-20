@@ -1,0 +1,8 @@
+unsigned short type;
+n2s(data, type);
+s->tlsext_debug_cb(s, 0, type, data, size, s->tlsext_debug_arg);
+int idsize;
+n2s(data, idsize);
+size -= 2 + idsize;
+n2s(data, size);
+fprintf(stderr, "Received extension type %d size %d\n", type, size);

@@ -1,0 +1,3 @@
+if (FrameView* view = document()->view()) {
+IntRect visibleContentRect = view->visibleContentRect();
+result.move(-visibleContentRect.x(), -visibleContentRect.y());

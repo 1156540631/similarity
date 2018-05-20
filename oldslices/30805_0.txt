@@ -1,0 +1,9 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+if(0) { }
+else
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

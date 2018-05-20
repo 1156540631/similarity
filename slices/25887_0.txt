@@ -1,0 +1,19 @@
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);
+VAR34 += VAR439;
+VAR456 >>= 8;
+const char *VAR457 = ((void *)0);
+char VAR458[32];
+FUN108(VAR458,sizeof(VAR458),VAR156 -> VAR456);
+return ((void *)0);
+return ((void *)0);
+VAR457 = FUN109(VAR143,VAR156 -> VAR457);
+VAR34[0] ^= 'a' ^ 'A';
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9)",VAR457);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9 / 0x%04X)",VAR458,VAR156 -> VAR456);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219 Hz",VAR156 -> VAR469);
+void FUN110(char *VAR34,int VAR336,STRUCT9 *VAR156,int VAR463)
+snprintf(VAR34,VAR336,"%VAR9: %VAR9%VAR9",(VAR464?VAR464 : "unknown"),VAR465,(VAR156 -> VAR466?" (VAR467)" : ""));
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219 Hz",VAR156 -> VAR469);
+STRUCT335 FUN108(char *VAR34,STRUCT335 VAR336,unsigned int VAR456)
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34)," (%VAR9 / 0x%04X)",VAR458,VAR156 -> VAR456);
+snprintf(VAR34 + strlen(VAR34),VAR336 - strlen(VAR34),", %VAR219 Hz",VAR156 -> VAR469);

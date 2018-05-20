@@ -1,0 +1,7 @@
+STRUCT2 *VAR41;
+VAR41 = ((STRUCT2 *)(FUN5(VAR42,sizeof(STRUCT2 ) * VAR43)));
+VAR44 = ((char *)(FUN5(VAR42,(64 * VAR43))));
+VAR45 = VAR46;
+VAR45++;
+VAR44 += 64;
+strcpy(VAR44,((char *)(VAR45 -> VAR47)));

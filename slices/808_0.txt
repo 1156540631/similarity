@@ -1,0 +1,6 @@
+VAR7 = (char *)malloc((10+1)*sizeof(char));
+return VAR7;
+VAR7 = FUN1(VAR7);
+strncpy(VAR7, VAR1, strlen(VAR1) + 1);
+printLine(VAR7);
+free(VAR7);

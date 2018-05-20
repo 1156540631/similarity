@@ -1,0 +1,6 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53c_goodG2BSink(wchar_t * data)
+CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53d_goodG2BSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_wchar_t_cpy_53d_goodG2BSink(wchar_t * data)
+wcscpy(data, source);
+printWLine(data);
+free(data);

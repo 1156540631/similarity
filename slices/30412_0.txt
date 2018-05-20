@@ -1,0 +1,13 @@
+static int FUN1()
+return 1;
+static int FUN2()
+return 0;
+VAR5 = -1;
+if(FUN1())
+VAR12 = recv(VAR13, VAR14, VAR15 - 1, 0);
+VAR14[VAR12] = '\0';
+VAR5 = atoi(VAR14);
+if(FUN1())
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

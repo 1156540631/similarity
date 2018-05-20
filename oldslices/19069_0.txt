@@ -1,0 +1,7 @@
+data = NULL;
+if(5!=5)
+printLine("Benign, fixed string");
+else
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

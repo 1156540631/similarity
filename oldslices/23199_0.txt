@@ -1,0 +1,3 @@
+grandmothers_stylo = ((char *)teknonymously_vanquishes . reassert_skulkers);
+stonesoup_buffer = malloc((strlen(grandmothers_stylo) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,grandmothers_stylo);

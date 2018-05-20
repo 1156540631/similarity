@@ -1,0 +1,3 @@
+u->s1->a = (int *) malloc(5*sizeof(int));
+free(u->s1->a);
+free(u->s1);

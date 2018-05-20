@@ -1,0 +1,10 @@
+list<int *> dataList;
+data = new int[100];
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<int *> dataList)
+int * data = dataList.back();
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

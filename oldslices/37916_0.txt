@@ -1,0 +1,13 @@
+static int staticFive = 5;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(staticFive==5)
+strcpy(data, "fixedstringtest");
+if(staticFive==5)
+goodG2B2VaSinkB(data, data);
+static void goodG2B2VaSinkB(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

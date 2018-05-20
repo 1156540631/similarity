@@ -1,0 +1,3 @@
+char *buf,buf1[25];
+buf = "This is a string";
+strcpy(buf1,buf);

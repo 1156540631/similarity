@@ -1,0 +1,2 @@
+VAR1 = FUN1("STRINGLEN_OK");
+VAR2 = strlen(VAR1);

@@ -1,0 +1,4 @@
+FUN1(CLASS1* VAR1, const CLASS2* VAR2, void* VAR3, VAR4 VAR5)
+VAR4 VAR6 = (VAR4) strlen(VAR2);
+VAR7 = (unsigned char)VAR2[VAR8];
+if(FUN2(VAR7)) {

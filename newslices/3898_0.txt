@@ -1,0 +1,3 @@
+VAR1 = FUN1("SS_TC_ROOT");
+VAR2 = strlen(VAR1) + strlen("testData") + 2;
+VAR3 = (char*) malloc (VAR2 * sizeof(char));

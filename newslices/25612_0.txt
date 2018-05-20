@@ -1,0 +1,8 @@
+void FUN1(char *VAR1)
+FUN2(VAR1);
+void FUN2(char *VAR2)
+VAR3 = ((char *)VAR2);
+VAR4[63] = '\';
+FUN3(VAR5, VAR6, "VAR4", VAR4, "VAR7-VAR8");
+VAR9 = ((int )(strlen(VAR3)));
+strncpy(VAR4, VAR3, 64);

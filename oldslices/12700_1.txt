@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(int * &data);
+memmove(data, source, 100*sizeof(int));
+printIntLine(data[0]);
+free(data);

@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(char * &data);
+SNPRINTF(data, 100, "%s", source);
+printLine(data);
+free(data);

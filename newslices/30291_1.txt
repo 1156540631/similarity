@@ -1,0 +1,10 @@
+VAR1 = -1;
+goto VAR2;
+VAR2:
+char VAR3[VAR4] = "";
+if (fgets(VAR3, VAR4, VAR5) != VAR6)
+VAR1 = atoi(VAR3);
+int *VAR7;
+VAR7 = (int*)malloc(VAR1 * sizeof(int));
+for (VAR8 = 0; VAR8 < (VAR9)VAR1; VAR8++)
+VAR7[VAR8] = 0;

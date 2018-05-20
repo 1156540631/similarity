@@ -1,0 +1,3 @@
+if ((VAR475 = (getenv("FFREPORT"))) || VAR115) {
+FUN145(VAR475);
+static int FUN145(const char *VAR475);

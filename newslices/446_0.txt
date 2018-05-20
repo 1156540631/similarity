@@ -1,0 +1,32 @@
+VAR1 VAR2;
+FUN1( VAR2, VAR3 );
+char *VAR4;
+int VAR5 = FUN2( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR7 ) + strlen( VAR4 ) + 1;
+char *VAR8 = realloc( *VAR7, VAR6 );
+strcat( VAR8, VAR4 );
+*VAR7 = VAR8;
+VAR9 VAR10 = 0, VAR6 = 0;
+VAR6++;
+VAR6++;
+VAR10++;
+*VAR11 = malloc( VAR6 + 1 );
+memcpy( *VAR11, VAR12, VAR6 + 1 );
+char *VAR13 = malloc( VAR6 + 3*VAR10 + 2 );
+*VAR11 = VAR13;
+char *VAR14;
+FUN3( &VAR14, VAR15 );
+if( FUN4( &VAR14, "%s", VAR16 ) < 0 ) return -1;
+char *VAR17 = strdup( VAR14 );
+free( VAR14 );
+static int FUN4( char **VAR7, const char *VAR3, ... )
+FUN1( VAR2, VAR3 );
+int VAR5 = FUN2( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR7 ) + strlen( VAR4 ) + 1;
+strcat( VAR8, VAR4 );
+*VAR7 = VAR8;
+if( FUN4( &VAR14, "%s", VAR16 ) < 0 ) return -1;
+free( VAR14 );
+static int FUN3( char **VAR11, const char *VAR12 )
+FUN3( &VAR14, VAR15 );
+free( VAR14 );

@@ -1,0 +1,4 @@
+CLASS1 VAR1;
+void * VAR7 = VAR1.VAR2;
+CLASS1 VAR1 = strlen((char *)VAR7);
+void * VAR25 = (void *)calloc(VAR1+1, 1);

@@ -1,0 +1,20 @@
+static void callback(CommandCallback::CallbackType aOriginalCallback,
+CommandChain* aChain,
+bool aError,
+mozilla::dom::NetworkResultOptions& aResult)
+NS_ConvertUTF16toUTF8 reason(aResult.mResultReason);
+return addDefaultRouteToNetwork(aChain, aOriginalCallback, aResult);
+void NetworkUtils::addDefaultRouteToNetwork(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+if (GET_FIELD(mLoopIndex) >= GET_FIELD(mGateways).Length()) {
+aCallback(aChain, false, aResult);
+return;  }
+char command[MAX_COMMAND_SIZE];
+nsTArray<nsString>& gateways = GET_FIELD(mGateways);
+NS_ConvertUTF16toUTF8 autoGateway(gateways[GET_FIELD(mLoopIndex)]);
+int type = getIpType(autoGateway.get());
+component_data = MAX_COMMAND_SIZE - 1;
+PR_snprintf(command, component_data, "network route add %d %s %s/0 %s",
+GET_FIELD(mNetId), GET_CHAR(mIfname),
+type == AF_INET6 ? "::" : "0.0.0.0", autoGateway.get());

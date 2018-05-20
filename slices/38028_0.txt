@@ -1,0 +1,15 @@
+char * VAR1;
+char * *VAR9 = &VAR1;
+char * *VAR10 = &VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+char * VAR1 = *VAR9;
+strcpy(VAR1, "fixedstringtest");
+*VAR9 = VAR1;
+char * VAR1 = *VAR10;
+FUN1(VAR1, VAR1);
+static void FUN1(char * VAR1, ...)
+char VAR3[100] = "";
+va_list VAR4;
+va_start(VAR4, VAR1);
+vsnprintf(VAR3, 100-1, VAR1, VAR4);

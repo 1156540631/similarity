@@ -1,0 +1,10 @@
+wchar_t * data;
+wchar_t dataBadBuffer[10];
+data = dataBadBuffer;
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_68_badData = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_68b_badSink();
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_68b_badSink()
+wchar_t * data = CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_68_badData;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

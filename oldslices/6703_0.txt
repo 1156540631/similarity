@@ -1,0 +1,4 @@
+void *xalloc(size_t sz) {
+assert(sz>0);
+p = (void *) malloc(sz);
+assert (p!=NULL);

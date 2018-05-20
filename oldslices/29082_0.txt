@@ -1,0 +1,14 @@
+int dataArray[5];
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+dataArray[2] = data;
+CWE124_Buffer_Underwrite__CWE839_listen_socket_66b_goodB2GSink(dataArray);
+void CWE124_Buffer_Underwrite__CWE839_listen_socket_66b_goodB2GSink(int dataArray[])
+int data = dataArray[2];
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

@@ -1,0 +1,7 @@
+wchar_t * VAR2;
+VAR2 = NULL;
+VAR2 = new wchar_t[10+1];
+FUN3(VAR2);
+void FUN3(wchar_t * VAR2)
+wchar_t VAR20[10+1] = VAR59;
+memmove(VAR2, VAR20, (wcslen(VAR20) + 1) * sizeof(wchar_t));

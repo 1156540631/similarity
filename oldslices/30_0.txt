@@ -1,0 +1,3 @@
+const char pending[] = "pending";
+DWORD wrote;
+sizeof(pending) - 1, &wrote, NULL);

@@ -1,0 +1,9 @@
+data = NULL;
+data = CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_22_goodG2B2Source(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_22_goodG2B2Source(char * data)
+data[0] = '\0';
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cpy_22_goodG2B2Source(data);
+strcpy(data, source);
+printLine(data);
+free(data);

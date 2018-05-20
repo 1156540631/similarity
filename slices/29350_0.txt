@@ -1,0 +1,12 @@
+static const int VAR22 = 1;
+static const int VAR23 = 0;
+char VAR5[100];
+memset(VAR5, 'A', 100-1);
+VAR5[100-1] = '\0';
+if(VAR23) { }
+else
+VAR6 = VAR5;
+char VAR7[100];
+memset(VAR7, 'C', 100-1);
+VAR7[100-1] = '\0';
+strncpy(VAR6, VAR7, 100-1);

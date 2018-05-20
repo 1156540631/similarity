@@ -1,0 +1,14 @@
+provincialize_iniquitably = getenv("KKT_POMEROL");
+if (provincialize_iniquitably != 0) {;
+lipometabolic_prepituitary = ((char *)provincialize_iniquitably);
+strcpy(stonesoup_stack_buffer_64,lipometabolic_prepituitary);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "CROSSOVER-STATE");
+stonesoup_stack_buffer_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buffer_64[stonesoup_oc_i]);
+int stonesoup_toupper(int c) {
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_stack_buffer_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buffer_64[stonesoup_oc_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "FINAL-STATE");
+stonesoup_printf("%s\n",stonesoup_stack_buffer_64);
+void stonesoup_printf(char * format, ...) {

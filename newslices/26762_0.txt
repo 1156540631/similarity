@@ -1,0 +1,3 @@
+VAR1 = FUN1("RUDENTURE_SABELLIAN");
+if (VAR1 != 0) {;
+*VAR2 = VAR1;

@@ -1,0 +1,6 @@
+guint i = 1;
+ber_decode_as_foreach(ber_add_syntax_name, &i);
+qsort(&syntax_names[1], i - 1, sizeof(value_string), cmp_value_string);
+void ber_decode_as_foreach(GHFunc func, gpointer user_data)
+ber_decode_as_foreach(ber_add_syntax_name, &i);
+qsort(&syntax_names[1], i - 1, sizeof(value_string), cmp_value_string);

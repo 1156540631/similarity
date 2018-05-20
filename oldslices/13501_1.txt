@@ -1,0 +1,23 @@
+nsresult XULContentSinkImpl::AddText(const char16_t* aText, int32_t aLength)
+int32_t offset = 0;
+while (0 != aLength) {
+int32_t amount = mTextSize - mTextLength;
+if (amount > aLength) {
+structType myStruct;
+myStruct.structFirst = aLength;
+amount = func(myStruct);
+int32_t func(structType myStruct)
+int32_t aLength = myStruct.structFirst;
+return aLength;
+amount = func(myStruct);
+if (0 == amount) {
+if (mConstrainSize) {
+nsresult rv = FlushText();
+if (NS_OK != rv) {
+return rv; }
+} else {
+mTextSize += aLength;
+mText = (char16_t *) realloc(mText, sizeof(char16_t) * mTextSize);
+if (nullptr == mText) {
+return NS_ERROR_OUT_OF_MEMORY;      }}}
+memcpy(&mText[mTextLength],aText + offset, sizeof(char16_t) * amount);

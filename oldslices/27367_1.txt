@@ -1,0 +1,15 @@
+data = -1;
+goto source;
+source:
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+goto sink;
+sink:
+int * buffer = (int *)malloc(10 * sizeof(int));
+for (i = 0; i < 10; i++)
+buffer[i] = 0;
+if (data >= 0)
+buffer[data] = 1;

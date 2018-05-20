@@ -1,0 +1,5 @@
+char * &VAR1 = VAR2;
+VAR2 = new char[10+1];
+char * VAR2 = VAR1;
+char VAR3[10+1] = VAR4;
+memcpy(VAR2, VAR3, (strlen(VAR3) + 1) * sizeof(char));

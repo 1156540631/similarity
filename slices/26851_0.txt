@@ -1,0 +1,2 @@
+static char VAR444[10];
+strcpy(VAR444, "GOOD");

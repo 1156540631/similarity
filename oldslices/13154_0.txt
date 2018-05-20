@@ -1,0 +1,9 @@
+void NetworkUtils::startTethering(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+if (!GET_FIELD(mUsbStartIp).IsEmpty() && !GET_FIELD(mUsbEndIp).IsEmpty()) {
+component_data = MAX_COMMAND_SIZE - 1;
+PR_snprintf(command, component_data, "tether start %s %s %s %s",
+GET_CHAR(mWifiStartIp), GET_CHAR(mWifiEndIp),
+GET_CHAR(mUsbStartIp),  GET_CHAR(mUsbEndIp));

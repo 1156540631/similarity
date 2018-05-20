@@ -1,0 +1,11 @@
+char command[MAX_COMMAND_SIZE];
+if (SDK_VERSION >= 20)
+written = PR_snprintf(command, sizeof command, "resolver setnetdns %d %s",GET_FIELD(mNetId), GET_CHAR(mDomain));
+else
+written = PR_snprintf(command, sizeof command, "resolver setifdns %s %s",GET_CHAR(mIfname), GET_CHAR(mDomain));
+nsTArray<nsString>& dnses = GET_FIELD(mDnses);
+uint32_t length = dnses.Length();
+for (uint32_t i = 0; i < length; i++)
+NS_ConvertUTF16toUTF8 autoDns(dnses[i]);
+size = sizeof(command) - written;
+int ret = PR_snprintf(command + written, size, " %s", autoDns.get());

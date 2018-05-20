@@ -1,0 +1,10 @@
+WCHAR updateStatusFilePath[MAX_PATH + 1];
+wcscpy(updateStatusFilePath, updateDirPath);
+if (!PathAppendSafe(updateStatusFilePath, L"update.status")) {
+FILE_SHARE_DELETE,
+FILE_SHARE_WRITE |
+nsAutoHandle statusFile(CreateFileW(updateStatusFilePath, GENERIC_READ,
+NULL, OPEN_EXISTING, 0, NULL));
+char buf[32] = { 0 };
+DWORD read;
+if (!ReadFile(statusFile, buf, sizeof(buf), &read, NULL)) {

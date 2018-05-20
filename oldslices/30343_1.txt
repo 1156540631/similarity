@@ -1,0 +1,10 @@
+int dataArray[5];
+data = -1;
+fscanf(stdin, "%d", &data);
+dataArray[2] = data;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_66b_badSink(dataArray);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_66b_badSink(int dataArray[])
+int data = dataArray[2];
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

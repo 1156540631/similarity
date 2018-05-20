@@ -1,0 +1,7 @@
+int VAR1 = 0;
+const int VAR2 = 10;
+FUN1(static_cast<VAR3>(VAR4) * pow(2.0, VAR2) < VAR5,
+VAR1 = FUN2(VAR1 + 1, VAR2);
+VAR1 = 0;
+static_cast<VAR6>(VAR4 * pow(2.0, VAR1)), VAR1));
+VAR7 -= VAR4 * static_cast<VAR8>(pow(2.0, VAR1));

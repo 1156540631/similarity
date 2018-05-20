@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char *VAR2[])
+char VAR3 [2048];
+strcpy(VAR3, VAR2[1]);
+strcat(VAR3, " = ");
+strcat(VAR3, VAR2[2]);

@@ -1,0 +1,4 @@
+char VAR39[10];
+VAR46[10 - 1] = '\0';
+VAR328 = 10;
+memcpy(VAR39, VAR46, VAR328);

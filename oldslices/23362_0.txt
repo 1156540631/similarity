@@ -1,0 +1,3 @@
+truckages_conclave = getenv("NEPENTHES_ZOOTOMICAL");
+if (truckages_conclave != 0) {;
+laminarin_radioautograph . usar_lipotrophic = ((char *)truckages_conclave);

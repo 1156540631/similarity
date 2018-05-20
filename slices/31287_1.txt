@@ -1,0 +1,16 @@
+#define VAR6 "AAAAAAAAAA"
+typedef struct _CLASS9
+char * VAR10;
+} CLASS9;
+char * VAR4;
+CLASS9 CLASS2;
+char VAR1[10];
+char VAR7[10+1];
+VAR4 = VAR1;
+VAR4[0] = '\0';
+CLASS2.VAR10 = VAR4;
+FUN24(CLASS2);
+void FUN24(CLASS9 CLASS2)
+char * VAR4 = CLASS2.VAR10;
+char VAR8[10+1] = VAR6;
+memcpy(VAR4, VAR8, (strlen(VAR8) + 1) * sizeof(char));

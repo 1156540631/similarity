@@ -1,0 +1,7 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[100-1] = '\0';
+CLASS2* VAR39 = new FUN2;
+VAR39->FUN10(VAR1);
+void FUN2::FUN10(char * VAR1)
+char VAR40[50] = "";
+strncpy(VAR40, VAR1, strlen(VAR1));

@@ -1,0 +1,5 @@
+unsigned char *selected;
+unsigned char selected_len;
+ctx->next_proto_select_cb(s, &selected, &selected_len, data,
+s->next_proto_negotiated = OPENSSL_malloc(selected_len);
+memcpy(s->next_proto_negotiated, selected, selected_len);

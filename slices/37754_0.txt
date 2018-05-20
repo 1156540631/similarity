@@ -1,0 +1,8 @@
+char * VAR1;
+VAR1 = new char[100];
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+VAR3->FUN1(VAR1);
+void CLASS1::FUN1(char * VAR1)
+char VAR2[50] = "";
+strcpy(VAR2, VAR1);

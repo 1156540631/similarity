@@ -1,0 +1,11 @@
+char * VAR1;
+char * VAR2 = (char *)alloca(100*sizeof(char));
+VAR1 = VAR2;
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+FUN1(&VAR1);
+void FUN1(void * VAR4)
+char * * VAR5 = (char * *)VAR4;
+char * VAR1 = (*VAR5);
+char VAR3[50] = "";
+strcpy(VAR3, VAR1);

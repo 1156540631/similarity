@@ -1,0 +1,7 @@
+for (cache = (snmp_cache_t *)cupsArrayFirst(Devices);
+cache = (snmp_cache_t *)cupsArrayNext(Devices))
+free(cache->addrname);
+free(cache->uri);
+free(cache->id);
+free(cache->make_and_model);
+free(cache);

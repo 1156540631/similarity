@@ -1,0 +1,3 @@
+char buf[400];
+PR_snprintf(buf, sizeof(buf),
+printf("%s\n", buf);

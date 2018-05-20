@@ -1,0 +1,6 @@
+invalid_memory_access_012_s_001 *s;
+s = (invalid_memory_access_012_s_001 *)calloc(1,sizeof(invalid_memory_access_012_s_001));
+s->a = 10;
+s->b = 10;
+s->uninit = 10;
+free(s);

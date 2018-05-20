@@ -1,0 +1,5 @@
+void badSink(vector<wchar_t *> dataVector)
+wchar_t * data = dataVector[2];
+SNPRINTF(dest, wcslen(data), L"%s", data);
+printWLine(data);
+free(data);

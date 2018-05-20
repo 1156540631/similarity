@@ -1,0 +1,2 @@
+VAR13 = getchar();
+while(VAR13 != '\VAR213' && VAR13 != - 1)

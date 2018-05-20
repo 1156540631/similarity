@@ -1,0 +1,38 @@
+VAR2 = getenv("VAR2");
+if (VAR2 != NULL) {
+VAR3 = strlen(VAR2) + strlen("testData") + 2;
+VAR4 = (char*) malloc (VAR3 * sizeof(char));
+if (VAR4 != NULL) {
+sprintf(VAR4, "%s/%s", VAR2, "testData");
+if (stat(VAR4, &st) == -1) {
+VAR5 = mkdir(VAR4, 0700);
+if (VAR5 == 0) {
+VAR6 = strlen(VAR4) + strlen("logfile.txt") + 2;
+VAR7 = (char*) malloc (VAR6 * sizeof(char));
+if (VAR7 != NULL) {
+sprintf(VAR7, "%s/%s", VAR4, "logfile.txt");
+VAR8 = fopen(VAR7, "w");
+free(VAR7);
+free(VAR4);
+if (VAR8 == NULL) {
+FUNC1();
+FUNC2(VAR9,((void *)0));
+FUNC3(VAR9,VAR11);
+FUNC4(VAR10,VAR12);
+VAR13 = FUNC5(VAR10,(&VAR14));
+VAR13 = FUNC6(VAR10,&VAR15,&VAR16);
+VAR13 = FUNC5(VAR10,(&VAR14));
+FUNC4(VAR10,VAR12);
+FUNC1();
+FUNC5(1,VAR17);
+VAR13 = FUNC6(VAR10 -> VAR18);
+VAR13 = FUNC6();
+FUNC7(0,VAR18,VAR19);
+snprintf(VAR22 + strlen(VAR22),sizeof(VAR22) - strlen(VAR22),"frame=%5d fps=%3.*f q=%3.1f ",VAR23,VAR24 < 9.95,VAR24,VAR25);
+snprintf(VAR22 + strlen(VAR22),sizeof(VAR22) - strlen(VAR22),"%02d:%02d:%02d.%02d ",VAR26,VAR27,VAR28,100 * VAR29 / 1000000);
+vfprintf(VAR8, VAR20, VAR21);
+fflush(VAR8);
+FUNC8();
+if (VAR8 != NULL &&
+VAR8 != stderr) {
+fclose(VAR8);

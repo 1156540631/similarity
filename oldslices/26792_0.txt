@@ -1,0 +1,4 @@
+temp1 = (char *) malloc(400*sizeof(char));
+temp = temp1;
+strcpy(temp, "HEADER JUNK:");
+len += strlen(temp);

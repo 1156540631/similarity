@@ -1,0 +1,6 @@
+VAR1 = (void *)VAR3;
+FUN1(&VAR1);
+void FUN1(void * * VAR4)
+void * VAR1 = *VAR4;
+CLASS1 VAR2 = wcslen((CLASS1 *)VAR1);
+void * VAR2 = (void *)calloc(VAR2+1, sizeof(CLASS1));

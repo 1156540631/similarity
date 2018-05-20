@@ -1,0 +1,5 @@
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_34_unionType myUnion;
+char * data = myUnion.unionSecond;
+memcpy(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

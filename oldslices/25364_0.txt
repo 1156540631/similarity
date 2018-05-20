@@ -1,0 +1,9 @@
+se_packet_mem . debug_use_chunks = getenv("WIRESHARK_DEBUG_SE_NO_CHUNKS") == ((void *)0);
+se_packet_mem . debug_use_canary = se_packet_mem . debug_use_chunks && getenv("WIRESHARK_DEBUG_SE_USE_CANARY") != ((void *)0);
+emem_init_chunk(&se_packet_mem);
+static void emem_init_chunk(emem_header_t *mem)
+if (mem -> debug_use_canary) {
+emem_canary_init(mem -> canary);
+if (mem -> debug_use_chunks) {
+mem -> memory_alloc = emem_alloc_chunk;
+mem -> memory_alloc = emem_alloc_glib;

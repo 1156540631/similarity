@@ -1,0 +1,10 @@
+VAR1=(char*) malloc(10*sizeof(char));
+strcpy(VAR1,"TEST");
+free(VAR1);
+char VAR2[10] ;
+FUN1();
+if(FUN2(VAR3) == 0)
+FUN3();
+if(FUN2(VAR3) == 0)
+FUN4();
+strcpy(VAR2,VAR1);

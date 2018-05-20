@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+if (argc !=2){
+strcpy(first, argv[1]);
+free(first);

@@ -1,0 +1,19 @@
+static int	gif_read_image(FILE         *fp,
+cups_image_t *img,
+gif_cmap_t   cmap,
+int          interlace)
+unsigned char		code_size;
+code_size = getc(fp);
+if (gif_read_lzw(fp, 1, code_size) < 0)
+static int gif_read_lzw(FILE *fp,
+int  first_time,
+int  input_code_size)
+int set_code_size;
+set_code_size = input_code_size;
+clear_code  = func(int set_code_size);
+int func(int sret_code_szie)
+int temp = 1 << set_code_size;
+return temp;
+clear_code    = func(int set_code_size);
+for (i = 0; i < clear_code; i ++)
+table[1][i] = i;

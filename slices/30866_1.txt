@@ -1,0 +1,14 @@
+#define VAR1 "AAAAAAAAAA"
+char * VAR2;
+char * VAR3 = (char *)ALLOCA((10)*sizeof(char));
+char * VAR4 = (char *)ALLOCA((10+1)*sizeof(char));
+VAR2 = VAR3;
+VAR2[0] = '\0';
+FUN37(VAR2);
+void FUN37(char * VAR2)
+FUN38(VAR2);
+void FUN38(char * VAR2)
+FUN39(VAR2);
+void FUN39(char * VAR2)
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);

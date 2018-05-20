@@ -1,0 +1,4 @@
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_22_goodB2G2Sink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_fgets_22_goodB2G2Sink(int data);

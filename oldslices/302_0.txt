@@ -1,0 +1,6 @@
+const char *old_make_model,
+if (!strncasecmp(old_make_model, "Hewlett-Packard", 15))
+else if (!strncasecmp(old_make_model, "deskjet", 7))
+else if (!strncasecmp(old_make_model, "officejet", 9))
+else if (!strncasecmp(old_make_model, "stylus_pro_", 11))
+old_make_model + 11);

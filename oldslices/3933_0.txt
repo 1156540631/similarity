@@ -1,0 +1,3 @@
+int avformat_match_stream_specifier(AVFormatContext *s,AVStream *st,const char *spec)
+char *endptr;
+sid = (strtol(spec + 1,&endptr,0));

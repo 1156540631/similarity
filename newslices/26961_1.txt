@@ -1,0 +1,7 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+FUN2(VAR3);
+FUN2(char *VAR4)
+char VAR5[VAR6];
+if(strlen(VAR4) >= VAR6)
+strcpy(VAR5, VAR4);

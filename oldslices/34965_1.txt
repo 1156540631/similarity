@@ -1,0 +1,9 @@
+TwoIntsClass * data;
+data = NULL;
+if(1)
+data = new TwoIntsClass[50];
+TwoIntsClass source[100];
+for (i = 0; i < 100; i++)
+source[i].intOne = 0;
+source[i].intTwo = 0;
+memcpy(data, source, 100*sizeof(TwoIntsClass));

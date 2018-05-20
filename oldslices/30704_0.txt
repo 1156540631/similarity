@@ -1,0 +1,12 @@
+int globalTrue = 1;
+int globalFalse = 0;
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+if(globalTrue)
+data = (void *)WIDE_STRING;
+if(globalFalse) {}
+else
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));

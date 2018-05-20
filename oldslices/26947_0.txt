@@ -1,0 +1,6 @@
+test(char *fmt, char *str)
+printf(fmt, str);
+main(int argc, char **argv)
+userstr = argv[1];
+test("<%s>", userstr);
+test("[%s]", userstr);

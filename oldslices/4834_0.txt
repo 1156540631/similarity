@@ -1,0 +1,13 @@
+list<twoIntsStruct *> dataList;
+data = NULL;
+data = (twoIntsStruct *)malloc(sizeof(*data));
+data->intOne = 1;
+data->intTwo = 2;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<twoIntsStruct *> dataList)
+twoIntsStruct * data = dataList.back();
+printStructLine(data);
+free(data);

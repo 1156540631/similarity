@@ -1,0 +1,3 @@
+memset( VAR5, 0, sizeof( CLASS2 ) );
+VAR5 = malloc( sizeof( CLASS2 ) );
+memset( VAR5, 0, sizeof( CLASS2 ) );

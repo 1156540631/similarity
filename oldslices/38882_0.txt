@@ -1,0 +1,13 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_console_printf_54b_goodG2BSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_printf_54b_goodG2BSink(char * data)
+CWE134_Uncontrolled_Format_String__char_console_printf_54c_goodG2BSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_printf_54c_goodG2BSink(char * data)
+CWE134_Uncontrolled_Format_String__char_console_printf_54dgoodG2BSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_printf_54d_goodG2BSink(char * data)
+CWE134_Uncontrolled_Format_String__char_console_printf_54e_goodG2BSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_printf_54e_goodG2BSink(char * data)
+printf(data);

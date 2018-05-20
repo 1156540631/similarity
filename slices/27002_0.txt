@@ -1,0 +1,5 @@
+int main(int argc, char **argv)
+VAR39 = (char *)malloc(VAR127);
+if (argc > 1 && strlen(argv[1]) < VAR127)
+strcpy(VAR39, argv[1]);
+printf("VAR39 = %VAR1\VAR7", VAR39);

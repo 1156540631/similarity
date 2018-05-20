@@ -1,0 +1,3 @@
+static int Read( stream_t *s, void *p_read, unsigned int i_read )
+unsigned i_len = __MIN( i_read, p_sys->i_len - p_sys->i_pos );
+memcpy( p_read, p_sys->psz_xspf + p_sys->i_pos, i_len );

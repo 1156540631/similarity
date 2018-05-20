@@ -1,0 +1,24 @@
+struct CLASS1 VAR1;
+char *VAR2;
+FUN1(&VAR2,"STANNARY_DREXEL");
+void FUN1(char** VAR3, char* VAR4) {
+VAR5 = FUN2(VAR4);
+VAR6 = fopen(VAR5,"rb");
+if (VAR6 != 0) {
+fseek(VAR6,0L,2);
+VAR7 = ftell(VAR6);
+rewind(VAR6);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR7 + 1))));
+if (*VAR3 != 0) {
+VAR8 = fread(*VAR3,1,VAR7,VAR6);
+if (VAR6 != 0) {
+fclose(VAR6);
+if (VAR2 != 0) {;
+VAR1 . VAR9 = ((char *)VAR2);
+VAR10[ *VAR11] = VAR1;
+VAR12 = VAR10[ *VAR11];
+FUN3(VAR13,VAR12);
+void FUN3(int VAR14,struct CLASS1 VAR15)
+VAR16 = ((char *)VAR15 . VAR9);
+memset(VAR17,0,1024);
+strncpy(VAR17,VAR16,sizeof(VAR17));

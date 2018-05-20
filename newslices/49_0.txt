@@ -1,0 +1,11 @@
+static void FUN1(VAR1<VAR2>& VAR3,
+const char* VAR4,
+char* VAR5)
+VAR6 VAR7 = strlen(VAR4);
+if (VAR3.FUN2() > 0) {
+FUN3(VAR8, strlen(VAR3[0].FUN4()), VAR9)
+strcpy(VAR5, VAR3[0].FUN4());
+for (VAR6 VAR10 = 1; VAR10 < VAR3.FUN2(); VAR10++) {
+strcat(VAR5, VAR4);
+FUN3(VAR8, strlen(VAR3[VAR10].FUN4()), VAR9)
+strcat(VAR5, VAR3[VAR10].FUN4());

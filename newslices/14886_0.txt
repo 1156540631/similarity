@@ -1,0 +1,5 @@
+int * &VAR1 = VAR2;
+VAR2 = (int *)FUN1(10*sizeof(int));
+int * VAR2 = VAR1;
+int VAR3[10] = {0};
+memmove(VAR2, VAR3, 10*sizeof(int));

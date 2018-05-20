@@ -1,0 +1,24 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *orselle_dowelled;;
+stonesoup_read_taint(&orselle_dowelled,"ORILLION_MISUNDERSTOOD");
+mormaor_aeroacoustic = ((void *)orselle_dowelled);
+pshaws_beglew[5] = mormaor_aeroacoustic;
+abrege_unnooked[1] = 5;
+blatchang_organistic =  *(pshaws_beglew + abrege_unnooked[1]);
+mistify_preferrous(cerianthidae_blottingly,blatchang_organistic);
+mistify_preferrous(nucleoloid_iffiest,outbear_labiotenaculum);
+void mistify_preferrous(int nucleoloid_iffiest,void *outbear_labiotenaculum)
+free(((char *)((char *)outbear_labiotenaculum)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&orselle_dowelled,"ORILLION_MISUNDERSTOOD");
+mormaor_aeroacoustic = ((void *)orselle_dowelled);
+pshaws_beglew[5] = mormaor_aeroacoustic;
+blatchang_organistic =  *(pshaws_beglew + abrege_unnooked[1]);
+mistify_preferrous(cerianthidae_blottingly,blatchang_organistic);

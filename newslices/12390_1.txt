@@ -1,0 +1,4 @@
+int **VAR1 = (int**) malloc(5*sizeof(int*));
+VAR1[VAR2]=(int*) malloc(5*sizeof(int));
+VAR1[VAR2] = VAR3;
+free(VAR1);

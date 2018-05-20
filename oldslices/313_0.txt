@@ -1,0 +1,5 @@
+int32_t numInlineLines = 0;
+int32_t numBlockLines = 0;
+numBlockLines++;
+numInlineLines++;
+static_cast<void*>(mStyleContext), numInlineLines, numBlockLines);

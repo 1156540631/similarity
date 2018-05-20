@@ -1,0 +1,6 @@
+data[0] = L'\0';
+return data;
+data = badSource(data);
+wcsncat(data, source, 100);
+printWLine(data);
+free(data);

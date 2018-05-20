@@ -1,0 +1,3 @@
+dynamic_buffer_underrun_s_032* ptr_s= calloc(10,sizeof(dynamic_buffer_underrun_s_032));
+ptr_s[i].arr[i]='a';
+free(ptr_s);

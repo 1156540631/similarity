@@ -1,0 +1,10 @@
+char VAR132[64];
+char VAR67[1024];
+memset(VAR132, 65, 64);
+VAR132[63] = '\0';
+memset(VAR67,0,1024);
+if (strlen(VAR67) + 1 <= sizeof(VAR132)) {
+memset(VAR67,0,1024);
+tracepoint(VAR70, VAR71, "VAR67", strlen(VAR67)+1, VAR67, "TRIGGER-STATE");
+tracepoint(VAR70, VAR71, "VAR132", strlen(VAR132)+1, VAR132, "TRIGGER-STATE");
+strncpy(VAR132,VAR67,sizeof(VAR67));

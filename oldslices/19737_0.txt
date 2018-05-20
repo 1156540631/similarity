@@ -1,0 +1,9 @@
+data = NULL;
+badGlobal = 1;
+data = goodG2B1Source(data);
+int64_t * goodG2B1Source(int64_t * data)
+data = new int64_t[100];
+return data;
+data = goodG2B1Source(data);
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

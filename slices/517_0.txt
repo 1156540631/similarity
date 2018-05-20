@@ -1,0 +1,7 @@
+CLASS2 *VAR2 = FUN5();
+VAR5 = FUN1( VAR6, CLASS4, VAR2, NULL );
+static int FUN1( CLASS1*, VAR4, CLASS2*, CLASS2* );
+VAR5 = FUN2( VAR11, VAR2, VAR1->VAR16 );
+static int FUN2( char **VAR11, CLASS2 *VAR2,
+for( int VAR3 = 0; VAR3 < FUN3( VAR2 ); VAR3++ )
+free( FUN4( VAR2, VAR3 ) );

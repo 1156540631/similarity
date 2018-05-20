@@ -1,0 +1,10 @@
+FUN1(char *VAR1)
+VAR1 ++;
+for (VAR2 = VAR1; *VAR1 && *VAR1 != '\"'; VAR1 ++)
+*VAR1++ = '\';
+FUN2 (isspace(*VAR1 & 255))
+VAR1 ++;
+for (VAR2 = VAR1; *VAR1 && !isspace(*VAR1 & 255); VAR1 ++);
+FUN2 (isspace(*VAR1 & 255))
+*VAR1++ = '\';
+FUN2 (isspace(*VAR1 & 255))

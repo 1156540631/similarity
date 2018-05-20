@@ -1,0 +1,10 @@
+wchar_t * data;
+data = NULL;
+badStatic = 1;
+data = badSource(data);
+static wchar_t * badSource(wchar_t * data)
+if(badStatic)
+data = new wchar_t[10];
+return data;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

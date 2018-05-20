@@ -1,0 +1,22 @@
+bool ArrayBufferBuilder::append(const uint8_t *aNewData, uint32_t aDataLen,
+uint32_t aMaxGrowth)
+CheckedUint32 neededCapacity = mLength;
+neededCapacity += aDataLen;
+if (!neededCapacity.isValid())
+return false;
+if (mLength + aDataLen > mCapacity)
+CheckedUint32 newcap = mCapacity;
+if (!aMaxGrowth || mCapacity < aMaxGrowth)
+newcap *= 2;
+else
+newcap += aMaxGrowth;
+if (!newcap.isValid())
+return false;
+if (newcap.value() < neededCapacity.value())
+newcap = neededCapacity;
+if (!setCapacity(newcap.value()))
+return false;
+MOZ_ASSERT(!areOverlappingRegions(aNewData, aDataLen, mDataPtr + mLength,
+aDataLen));
+uint32_t aLength2)
+memcpy(mDataPtr + mLength, aNewData, aDataLen);

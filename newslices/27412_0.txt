@@ -1,0 +1,4 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+VAR3 = (char *)malloc((10+1)*sizeof(char));
+char VAR4[10+1] = VAR2;
+strcpy(VAR3, VAR4);

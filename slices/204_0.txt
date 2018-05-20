@@ -1,0 +1,19 @@
+CLASS1 VAR1 = 0, VAR2 = 0;
+VAR2++;
+VAR2++;
+*VAR3 = malloc( VAR2 + 1 );
+memcpy( *VAR3, VAR4, VAR2 + 1 );
+const char *VAR5 )
+char *VAR7 = strrchr( VAR5, VAR6 );
+char *VAR8;
+FUN1( &VAR8, VAR5 );
+char *VAR9;
+FUN1( &VAR9, VAR10 );
+static int FUN1( char **VAR3, const char *VAR4 )
+memcpy( *VAR3, VAR4, VAR2 + 1 );
+static int FUN4( char **VAR11, CLASS2 *VAR12,
+for( int VAR13 = 0; VAR13 < FUN2( VAR12 ); ++VAR13 )
+char *VAR10 = (char*) FUN3( VAR12, VAR13 );
+int VAR2 = strlen( VAR10 );
+char *VAR14 = strrchr( VAR10, '/' );
+FUN1( &VAR9, VAR10 );

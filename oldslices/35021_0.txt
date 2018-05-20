@@ -1,0 +1,9 @@
+char dataBuffer[100];
+data = dataBuffer;
+data = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_22_goodG2B2Source(data);
+char * CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_22_goodG2B2Source(char * data)
+data[50-1] = '\0';
+return data;
+data = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_22_goodG2B2Source(data);
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

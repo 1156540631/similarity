@@ -1,0 +1,30 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+VAR5 = 4;
+strncpy(VAR6, VAR7, VAR5);
+VAR6[VAR5 - 1] = 0;
+FUN3("%s\n", VAR6);
+FUN4(VAR8, VAR9, "VAR5", VAR5, &VAR5, "VAR10-VAR11");
+FUN4(VAR8, VAR12, "VAR6", VAR6, "VAR13-VAR11");
+VAR14 = FUN5(VAR6);
+strncpy(VAR6, VAR7, VAR5);
+void FUN2(char *VAR15)
+VAR7 = ((char *)VAR15);
+strncpy(VAR6, VAR7, VAR5);
+strncpy(VAR6, VAR7, VAR5);
+char FUN5(char *VAR16)
+free(VAR16);
+FUN4(VAR8, VAR12, "VAR6", VAR6, "VAR17-VAR11");
+strncpy(VAR6, VAR7, VAR5);
+void FUN3(char * VAR18, ...) {
+FUN4(VAR8, VAR12, "VAR6", VAR6, "VAR10-VAR11");
+FUN4(VAR8, VAR12, "VAR6", VAR6, "VAR17-VAR11");
+strncpy(VAR6, VAR7, VAR5);

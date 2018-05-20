@@ -1,0 +1,6 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_53c_goodG2BSink(wchar_t * data)
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_53d_goodG2BSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_snprintf_53d_goodG2BSink(wchar_t * data)
+SNPRINTF(dest, wcslen(data), L"%s", data);
+printWLine(data);
+free(data);

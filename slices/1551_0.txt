@@ -1,0 +1,7 @@
+struct CLASS1 VAR1 = {0};
+FUN1(&VAR1);
+VAR3 = FUN2(VAR1);
+struct CLASS1 FUN2(struct CLASS1 VAR2)
+return VAR2;
+VAR3 = FUN2(VAR1);
+free(((char *)VAR3 . VAR4));

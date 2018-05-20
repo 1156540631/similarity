@@ -1,0 +1,8 @@
+void (*funcPtr) (wchar_t *) = goodG2BSink;
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data[50-1] = L'\0';
+funcPtr(data);
+static void goodG2BSink(wchar_t * data)
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

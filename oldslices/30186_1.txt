@@ -1,0 +1,12 @@
+int data;
+data = -1;
+for(i = 0; i < 1; i++)
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+for(j = 0; j < 1; j++)
+int buffer[10] = { 0 };
+if (data >= 0)
+printIntLine(buffer[data]);

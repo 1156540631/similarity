@@ -1,0 +1,19 @@
+typedef union
+int unionFirst;
+int unionSecond;
+} CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_34_unionType;
+int data;
+CWE122_Heap_Based_Buffer_Overflow__c_CWE129_listen_socket_34_unionType myUnion;
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myUnion.unionFirst = data;
+int data = myUnion.unionSecond;
+int * buffer = (int *)malloc(10 * sizeof(int));
+for (i = 0; i < 10; i++)
+buffer[i] = 0;
+if (data >= 0)
+buffer[data] = 1;

@@ -1,0 +1,10 @@
+void eulytine_duplon(char **const noneuphonious_afips)
+whereto_desktops(pentoic_toupet,noneuphonious_afips);
+void whereto_desktops(int ergotinine_itabuna,char **cosmos_contemporize)
+whereto_desktops(ergotinine_itabuna,cosmos_contemporize);
+centrechinoida_jenei = ((char *)((char **)cosmos_contemporize)[2]);
+stonesoup_fp = stonesoup_switch_func(centrechinoida_jenei);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

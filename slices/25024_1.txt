@@ -1,0 +1,12 @@
+int main(int argc, char **argv){
+if(argc > 2){
+VAR1 = argv[1];
+VAR2 = argv[2];
+test(VAR1,VAR2);
+void test(char *VAR3, char *VAR4){
+char VAR5[VAR6] = "";
+if(strlen(VAR3) < VAR6)
+strcpy(VAR5, VAR3);
+printf(" strcpy: %s%s%s\n", VAR7, VAR5, VAR8);
+if(strlen(VAR5) + strlen(VAR4) <= VAR6)
+strcat(VAR5, VAR4);

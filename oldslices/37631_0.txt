@@ -1,0 +1,8 @@
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+baseObject.action(data);
+void CWE122_Heap_Based_Buffer_Overflow__cpp_CWE129_connect_socket_81_goodB2G::action(int data) const
+if (data >= 0 && data < (10))
+buffer[data] = 1;

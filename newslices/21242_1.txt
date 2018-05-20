@@ -1,0 +1,13 @@
+FUN1(char *VAR1, int VAR2, int VAR3)
+return FUN1(VAR1+1, VAR2-1, VAR3);
+return VAR1;
+return FUN1(VAR1+1, VAR2-1, VAR3);
+char VAR4[VAR5];
+strcpy(VAR4, VAR6);
+VAR7 = FUN1(VAR8, strlen(VAR8), 80);
+FUN2(VAR7);
+FUN2(char *VAR6)
+strcpy(VAR4, VAR6);
+FUN3(int VAR9, char **VAR10)
+VAR8 = VAR10[1];
+VAR7 = FUN1(VAR8, strlen(VAR8), 80);

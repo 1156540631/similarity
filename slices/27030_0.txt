@@ -1,0 +1,11 @@
+main(int argc, char **argv)
+if(argc != 2)
+VAR7 = strtoul(argv[1], 0, 10);
+if(VAR7 <= VAR136 / sizeof(int))
+FUN8(VAR7);
+FUN8(unsigned int VAR7)
+VAR39 = malloc(VAR7 * sizeof *VAR39);
+if(!VAR39)
+for(VAR5 = 0; VAR5 < VAR7; VAR5++)
+printf("%x ", VAR39[VAR5]);
+free(VAR39);

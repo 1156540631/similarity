@@ -1,0 +1,18 @@
+char stonesoup_source[1024];
+ensheath_bumpier unguessableness_resilement = 0;
+demijohn_prothalline(&unguessableness_resilement);
+titmall_abnegate[5] = unguessableness_resilement;
+cozenages_speedup[1] = 5;
+nonconcludent_iaria =  *(titmall_abnegate + cozenages_speedup[1]);
+kistfuls_skunkbush = ((char *)nonconcludent_iaria);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, kistfuls_skunkbush, sizeof(stonesoup_source));
+
+153236
+--------------------------------
+1645 /Bad/153236/dynahash.c Buffer_Overflow_cpycat
+HTAB *hash_create(const char *tabname,long nelem,HASHCTL *info,int flags)
+CurrentDynaHashCxt = AllocSetContextCreate(CurrentDynaHashCxt,tabname,0,(8 * 1024),(8 * 1024 * 1024));
+hashp = ((HTAB *)(DynaHashAlloc(sizeof(HTAB ) + strlen(tabname) + 1)));
+hashp -> tabname = ((char *)(hashp + 1));
+strcpy(hashp -> tabname,tabname);

@@ -1,0 +1,9 @@
+char dataBuffer[100];
+data = dataBuffer;
+data = goodG2B2Source(data);
+static char * goodG2B2Source(char * data)
+data[50-1] = '\0';
+return data;
+data = goodG2B2Source(data);
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

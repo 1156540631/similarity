@@ -1,0 +1,4 @@
+char* srcbuf="Test Code";
+char* destbuf=(char*) malloc(10*sizeof(char));
+for(i=0;i<strlen(srcbuf);i++)
+strncpy(&destbuf[loc],&srcbuf[loc],1);

@@ -1,0 +1,16 @@
+void NetworkUtils::addDefaultRouteToNetwork(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+nsTArray<nsString>& gateways = GET_FIELD(mGateways);
+NS_ConvertUTF16toUTF8 autoGateway(gateways[GET_FIELD(mLoopIndex)]);
+structType myStruct;
+myStruct.structFirst = autoGateway;
+int type = func(myStruct);
+int func(structType myStruct)
+NS_ConvertUTF16toUTF8 autoGateway = myStruct.structFirst;
+return getIpType(autoGateway.get());
+int type = func(myStruct);
+snprintf(command, MAX_COMMAND_SIZE - 1, "network route add %d %s %s/0 %s",
+GET_FIELD(mNetId), GET_CHAR(mIfname),
+type == AF_INET6 ? "::" : "0.0.0.0", autoGateway.get());

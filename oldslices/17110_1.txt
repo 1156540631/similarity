@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100];
+data = dataBuffer;
+badSource(data);
+static void badSource(char * &data)
+memset(data, 'A', 100-1);
+char dest[50] = "";
+for (i = 0; i < dataLen; i++)
+dest[i] = data[i];

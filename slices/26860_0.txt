@@ -1,0 +1,3 @@
+char VAR444[10];
+strcpy(VAR444, "GOOD");
+printf("VAR444 should be GOOD.  VAR444 = %VAR1\VAR7", VAR444);

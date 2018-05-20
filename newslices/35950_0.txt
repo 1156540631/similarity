@@ -1,0 +1,7 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[0] = '\';
+const VAR2& VAR3 = FUN1();
+VAR3.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+VAR4[100-1] = '\';
+FUN3(VAR1, 100, "%s", VAR4);

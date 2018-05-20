@@ -1,0 +1,7 @@
+lickspittle_eroding coefficacy_bedwell = 0;
+va_list azymite_petroleum;
+__builtin_va_start(azymite_petroleum,medicining_pareu);
+coefficacy_bedwell = (va_arg(azymite_petroleum,lickspittle_eroding ));
+GREYING_CHAIRWOMAN(coefficacy_bedwell);
+void northerners_yowie(lickspittle_eroding worthies_halfpence)
+free(((char *)worthies_halfpence));

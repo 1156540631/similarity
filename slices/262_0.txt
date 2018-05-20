@@ -1,0 +1,18 @@
+const char *VAR2, *VAR1, *VAR3, *VAR6, *VAR7, *VAR8;
+VAR30(VAR4, VAR5, FUN5(VAR9, VAR2 + 1 - VAR5));
+VAR2++;
+if (*VAR2 == '/') VAR2++;
+if (*VAR2 == '/') VAR2++;
+VAR1 = strchr(VAR2, '/');
+VAR3 = strchr(VAR2, '?');
+VAR1 = VAR3;
+VAR1 = FUN5(VAR1, VAR3);
+VAR30(VAR17, VAR1, VAR10);
+VAR1 = &VAR2[strlen(VAR2)];
+if ((VAR6 = strchr(VAR2, '@')) && VAR6 < VAR1) {
+FUN5(VAR11, VAR6 + 1 - VAR2));
+VAR2 = VAR6 + 1;
+if (*VAR2 == '[' && (VAR8 = strchr(VAR2, ']')) && VAR8 < VAR1) {
+} else if ((VAR7 = strchr(VAR2, ':')) && VAR7 < VAR1) {
+FUN5(VAR7 + 1 - VAR2, VAR12));
+if (VAR13) *VAR13 = FUN2(VAR7 + 1);

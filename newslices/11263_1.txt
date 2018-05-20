@@ -1,0 +1,8 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+FUN2(VAR3);
+FUN2(char *VAR4)
+VAR5 = malloc(VAR6);
+strcpy(VAR5, VAR4);
+printf("VAR7: %s\n", VAR5);
+free(VAR5);

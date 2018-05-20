@@ -1,0 +1,5 @@
+CLASS1 VAR3;
+char * VAR1 = VAR3.VAR4;
+memmove(VAR2, VAR1, strlen(VAR1)*sizeof(char));
+FUN2(VAR1);
+free(VAR1);

@@ -1,0 +1,5 @@
+badSource(data);
+static void badSource(int * &data)
+data = (int *)malloc(50*sizeof(int));
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

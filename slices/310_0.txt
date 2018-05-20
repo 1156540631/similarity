@@ -1,0 +1,4 @@
+sizeof(VAR1->VAR10->VAR2));
+sizeof(VAR1->VAR10->VAR2));
+sizeof(VAR1->VAR10->VAR2));
+sizeof(VAR1->VAR10->VAR2));

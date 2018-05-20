@@ -1,0 +1,3 @@
+NS_ConvertUTF16toUTF8 autoIfname(aOptions.mIfname);
+char key[PROPERTY_KEY_MAX];
+snprintf(key, sizeof key - 1, "net.%s.gw", autoIfname.get());

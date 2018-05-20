@@ -1,0 +1,6 @@
+CLASS2 VAR3;
+void * VAR1 = VAR3.VAR4;
+CLASS1 VAR2 = strlen((char *)VAR1);
+void * VAR2 = (void *)calloc(VAR2+1, 1);
+memcpy(VAR2, VAR1, (VAR2+1));
+free(VAR2);

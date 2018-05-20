@@ -1,0 +1,25 @@
+stonesoup_read_taint(&orselle_dowelled,"ORILLION_MISUNDERSTOOD");
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+if (orselle_dowelled != 0) {;
+mormaor_aeroacoustic = ((void *)orselle_dowelled);
+pshaws_beglew[5] = mormaor_aeroacoustic;
+blatchang_organistic =  *(pshaws_beglew + abrege_unnooked[1]);
+mistify_preferrous(cerianthidae_blottingly,blatchang_organistic);
+void mistify_preferrous(int nucleoloid_iffiest,void *outbear_labiotenaculum)
+bluebird_cutthroats = ((char *)((char *)outbear_labiotenaculum));
+for (stonesoup_i = 0; stonesoup_i < strlen(bluebird_cutthroats); ++stonesoup_i) {
+stonesoup_data->buffer[(int) bluebird_cutthroats[stonesoup_i]]);
+tracepoint(stonesoup_trace, variable_signed_integral, "((int) STONESOUP_TAINT_SOURCE[stonesoup_i])", ((int) bluebird_cutthroats[stonesoup_i]), &(bluebird_cutthroats[stonesoup_i]), "TRIGGER-STATE");
+if (((char *)outbear_labiotenaculum) != 0)
+free(((char *)((char *)outbear_labiotenaculum)));

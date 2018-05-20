@@ -1,0 +1,9 @@
+data = 20;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, int> dataMap)
+int data = dataMap[2];
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

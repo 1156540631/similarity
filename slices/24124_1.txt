@@ -1,0 +1,12 @@
+structType CLASS1;
+VAR6 = NULL;
+VAR6 = new wchar_t[50];
+VAR6[0] = L'\0';
+CLASS1.VAR1 = VAR6;
+FUNC1(CLASS1);
+void FUNC1(structType CLASS1)
+wchar_t * VAR6 = CLASS1.VAR1;
+wchar_t VAR7[100];
+wmemset(VAR7, L'C', 100-1);
+VAR7[100-1] = L'\0';
+memmove(VAR6, VAR7, 100*sizeof(wchar_t));

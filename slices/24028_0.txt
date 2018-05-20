@@ -1,0 +1,8 @@
+int main(int argc,char **argv)
+FUNC1(argc,argv,options);
+if (argc > 1 && !strcmp(argv[1],"-d")) {
+argc--;
+argv++;
+FUNC2(argc,argv,VAR1);
+VAR2 = FUNC3(argc,argv);
+if (VAR2 < 0) {

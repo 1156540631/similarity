@@ -1,0 +1,19 @@
+char* VAR65;
+int VAR314 = 1000;
+VAR65 = (char*) malloc(VAR314 * sizeof(char));
+VAR315 = FUN78(VAR316, "data", VAR65, VAR314 * sizeof(char));
+VAR65 = (char*) malloc(VAR314 * sizeof(char));
+VAR315 = FUN78(VAR316, "data", VAR65, VAR314 * sizeof(char));
+VAR314 = VAR314 * 2;
+VAR65 = (char*) malloc(VAR314 * sizeof(char));
+VAR315 = FUN78(VAR316, "data", VAR65, VAR314 * sizeof(char));
+free(VAR65);
+FUN71(VAR65);
+VAR262[63] = '\0';
+tracepoint(VAR19, VAR60, "VAR262", VAR262, "INITIAL-STATE");
+strncpy(VAR262, VAR317, 64);
+void FUN71(char *VAR318)
+VAR319 = VAR318;
+VAR317 = ((char *)VAR319);
+VAR264 = ((int )(strlen(VAR317)));
+strncpy(VAR262, VAR317, 64);

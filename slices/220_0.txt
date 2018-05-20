@@ -1,0 +1,4 @@
+if ((VAR1 = calloc(1, sizeof(VAR2))) == NULL)
+if ((VAR1->VAR3 = FUN1(NULL, NULL)) == NULL)
+FUN2(VAR1->VAR3);
+free(VAR1);

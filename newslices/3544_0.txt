@@ -1,0 +1,19 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+VAR5 = 5;
+VAR6 = &VAR5;
+VAR7 =  *(VAR8 +  *VAR6);
+free(((char *)VAR7));
+void FUN2(char *VAR9)
+VAR8[5] = VAR9;
+VAR7 =  *(VAR8 +  *VAR6);
+free(((char *)VAR7));

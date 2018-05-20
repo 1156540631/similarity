@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&crackup_armond,"STANNARY_DREXEL");
+if (crackup_armond != 0) {;
+epilated_fconvert . berake_pomme = ((char *)crackup_armond);
+staminigerous_depthless[ *sheepcrook_babson] = epilated_fconvert;
+oafish_fermented = staminigerous_depthless[ *sheepcrook_babson];
+arsis_antitonic(derision_tinman,oafish_fermented);
+}
+unperturbing_monads--;

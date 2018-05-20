@@ -1,0 +1,7 @@
+va_list ap;
+va_start(ap, format);
+ep_strbuf_append_vprintf(strbuf, format, ap);
+ep_strbuf_append_vprintf(emem_strbuf_t *strbuf, const gchar *format, va_list ap)
+G_VA_COPY(ap2, ap);
+full_len = g_vsnprintf(&strbuf->str[strbuf->len], (gulong) add_len, format, ap);
+va_end(ap);

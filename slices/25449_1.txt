@@ -1,0 +1,17 @@
+VAR83 = getenv("ORDINARINESS_SEAMLET");
+if (VAR83 != 0) {;
+VAR84[38] = VAR83;
+VAR85 = VAR84;
+FUN14(VAR85);
+void FUN14(char **VAR86)
+VAR87 = ((char *)VAR86[38]);
+VAR15 = FUN3(VAR87);
+STRUCT1 FUN3(char *VAR16)
+VAR17 = strlen(VAR16) % 3;
+if (VAR17 == 0) {
+else if (VAR17 == 1) {
+sscanf(VAR16,"%p",&VAR18);
+return VAR18;
+VAR15 = FUN3(VAR87);
+tracepoint(VAR19, VAR20, "VAR15", VAR15, "TRIGGER-STATE");
+VAR21 = ( *VAR15)(VAR22,VAR87);

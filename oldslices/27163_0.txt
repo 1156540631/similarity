@@ -1,0 +1,4 @@
+char **pbuf[5] = {&buf1, &buf2, &buf3, &buf4, &buf5};
+int i,j=4;
+*((*pbuf[i])+j)='a';
+printf("uninit %c \n",*((*pbuf[i])+j));

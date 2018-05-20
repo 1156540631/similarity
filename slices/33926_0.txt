@@ -1,0 +1,8 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncat_63b_FUN3(&VAR2);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_ncat_63b_FUN3(char * * VAR7)
+char * VAR2 = *VAR7;
+strncat(VAR4, VAR2, strlen(VAR2));

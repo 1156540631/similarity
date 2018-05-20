@@ -1,0 +1,5 @@
+wchar_t * &dataRef = data;
+wchar_t * data = dataRef;
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

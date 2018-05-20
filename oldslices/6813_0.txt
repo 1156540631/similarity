@@ -1,0 +1,5 @@
+data = NULL;
+data[0] = L'\0';
+SNPRINTF(data, 100, L"%s", source);
+printWLine(data);
+free(data);

@@ -1,0 +1,14 @@
+#define VAR6 "AAAAAAAAAA"
+int FUN12() 
+return 1;
+int FUN13() 
+return 0;
+char * VAR4;
+char VAR1[10];
+char VAR7[10+1];
+if(FUN13()) {}
+else
+VAR4 = VAR7;
+VAR4[0] = '\0';
+char VAR8[10+1] = VAR6;
+memmove(VAR4, VAR8, (strlen(VAR8) + 1) * sizeof(char));

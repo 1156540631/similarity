@@ -1,0 +1,3 @@
+VAR1[100-1] = '\';
+wchar_t VAR2[50] = VAR3"";
+FUN1(VAR2, FUN2(VAR1), VAR3"%s", VAR1);

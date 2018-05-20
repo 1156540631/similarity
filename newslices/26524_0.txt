@@ -1,0 +1,3 @@
+static int FUN1(CLASS1 *VAR1,char *VAR2,int VAR3)
+VAR2[0] = '\';
+if (!fgets(VAR2,VAR3,((CLASS2 *)(VAR1 -> VAR4)))) {

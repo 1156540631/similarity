@@ -1,0 +1,11 @@
+vector<int64_t *> dataVector;
+data = (int64_t *)malloc(100*sizeof(int64_t));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<int64_t *> dataVector)
+int64_t * data = dataVector[2];
+memmove(data, source, 100*sizeof(int64_t));
+printLongLongLine(data[0]);
+free(data);

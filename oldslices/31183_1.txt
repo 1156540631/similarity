@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+void (*funcPtr) (char *) = badSink;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+data = dataBadBuffer;
+data[0] = '\0';
+funcPtr(data);
+static void badSink(char * data)
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

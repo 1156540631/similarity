@@ -1,0 +1,10 @@
+char *FUN1(char *VAR1)
+return VAR1;
+VAR2 = FUN1(VAR3);
+free(((char *)VAR2));
+void FUN2(char *VAR4)
+VAR5 = ((int )(strlen(VAR4)));
+VAR3 = ((char *)(malloc(VAR5 + 1)));
+memset(VAR3,0,VAR5 + 1);
+memcpy(VAR3,VAR4,VAR5);
+VAR2 = FUN1(VAR3);

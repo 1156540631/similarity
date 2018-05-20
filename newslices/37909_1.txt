@@ -1,0 +1,10 @@
+VAR1 = FUN1(VAR2, VAR3, VAR4 - 1, 0);
+if (VAR1 == VAR5 || VAR1 == 0)
+VAR3[VAR1] = '\';
+VAR6 = atoi(VAR3);
+int VAR7 = VAR6;
+int VAR6 = VAR7;
+int * VAR8 = (int *)malloc(10 * sizeof(int));
+VAR8[VAR9] = 0;
+if (VAR6 >= 0)
+VAR8[VAR6] = 1;

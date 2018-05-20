@@ -1,0 +1,14 @@
+twoIntsStruct * data;
+list<twoIntsStruct *> dataList;
+twoIntsStruct * dataBadBuffer = (twoIntsStruct *)ALLOCA(50*sizeof(twoIntsStruct));
+twoIntsStruct * dataGoodBuffer = (twoIntsStruct *)ALLOCA(100*sizeof(twoIntsStruct));
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+void badSink(list<twoIntsStruct *> dataList)
+twoIntsStruct * data = dataList.back();
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memmove(data, source, 100*sizeof(twoIntsStruct));

@@ -1,0 +1,4 @@
+void hyllus_unstrictly(char **devocalisation_depew)
+carpos_radiale(devocalisation_depew);
+void carpos_radiale(char **desired_periodontics)
+free(((char *)desired_periodontics[3]));

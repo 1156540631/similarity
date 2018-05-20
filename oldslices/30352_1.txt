@@ -1,0 +1,12 @@
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+data = -1;
+if(staticReturnsTrue()){
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

@@ -1,0 +1,30 @@
+FILE            *fp,
+unsigned char	buf[1024];
+fread(buf, 13, 1, fp);
+img->xsize = (buf[7] << 8) | buf[6];
+img->ysize = (buf[9] << 8) | buf[8];
+if (gif_read_cmap(fp, ncolors, cmap, &gray))
+buf[0] = getc(fp);
+gif_get_block(fp, buf);
+while (gif_get_block(fp, buf) != 0);
+fread(buf, 9, 1, fp);
+img->xsize = (buf[5] << 8) | buf[4];
+img->ysize = (buf[7] << 8) | buf[6];
+img->xsize = (buf[5] << 8) | buf[4];
+img->ysize = (buf[7] << 8) | buf[6];
+img->xsize, img->ysize);
+static int	gif_read_cmap(FILE *fp, int ncolors, gif_cmap_t cmap,
+fread(buf, 9, 1, fp);
+img->xsize = (buf[5] << 8) | buf[4];
+img->ysize = (buf[7] << 8) | buf[6];
+img->xsize, img->ysize);
+static int	gif_get_block(FILE *fp, unsigned char *buffer);
+while (gif_get_block(fp, buf) != 0);
+fread(buf, 9, 1, fp);
+img->xsize = (buf[5] << 8) | buf[4];
+img->ysize = (buf[7] << 8) | buf[6];
+img->xsize, img->ysize);
+static int	gif_get_block(FILE *fp, unsigned char *buffer);
+fread(buf, 9, 1, fp);
+img->xsize = (buf[5] << 8) | buf[4];
+img->xsize, img->ysize);

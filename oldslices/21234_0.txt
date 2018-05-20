@@ -1,0 +1,7 @@
+worship_bridesman = getenv("HOOL_NONCARTELIZED");
+if (worship_bridesman != 0) {;
+anisotropically_orientality . evendown_vicing = worship_bridesman;
+dowdy_sofa = &anisotropically_orientality;
+MEDIZE_MEMORYLESS(dowdy_sofa);
+void zygion_assmannshausen(union adenous_satsuma *gynecomazia_cultured)
+MEDIZE_MEMORYLESS(dowdy_sofa);

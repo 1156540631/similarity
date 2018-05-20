@@ -1,0 +1,3 @@
+time_t now;
+time(&now);
+tm = localtime((&now));

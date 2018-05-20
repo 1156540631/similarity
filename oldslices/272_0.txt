@@ -1,0 +1,4 @@
+V9fsStatDotl v9stat_dotl;
+stat_to_v9stat_dotl(s, &stbuf, &v9stat_dotl);
+V9fsStatDotl *v9lstat)
+memset(v9lstat, 0, sizeof(*v9lstat));

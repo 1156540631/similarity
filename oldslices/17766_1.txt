@@ -1,0 +1,7 @@
+char dataBuffer[100];
+data = dataBuffer;
+badSource(data);
+char dest[50] = "";
+strncpy(dest, data, strlen(data));
+void badSource(char * &data);
+strncpy(dest, data, strlen(data));

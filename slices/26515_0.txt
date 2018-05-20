@@ -1,0 +1,5 @@
+int FUN6(STRUCT1 *VAR1,const char *VAR41,... )
+STRUCT2 VAR42;
+char VAR39[4096];
+FUN7(VAR42,VAR41);
+VAR43 = vsnprintf(VAR39,sizeof(VAR39),VAR41,VAR42);

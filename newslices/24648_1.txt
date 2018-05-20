@@ -1,0 +1,16 @@
+int VAR1 = 1001;
+char *VAR2;;
+FUN1(&VAR2,"9682",VAR1);
+void FUN1(char** VAR3, char* VAR4, int VAR5) {
+*VAR3 = VAR6;
+if ((VAR7 = FUN2(VAR8, VAR5, 0666)) >= 0) {
+*VAR3 = (char*)calloc(VAR5, sizeof(char));
+if (VAR2 != 0) {;
+VAR9 . VAR10 = VAR2;
+FUN3(VAR11,VAR9);
+void FUN3(int VAR12,union VAR13 VAR14)
+char VAR15[64];
+VAR16 = ((char *)VAR14 . VAR10);
+memset(VAR15,0,64);
+FUN4(VAR17, VAR18, "VAR15", VAR15, "VAR19-VAR20");
+strcpy(VAR15,VAR16);

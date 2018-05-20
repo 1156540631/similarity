@@ -1,0 +1,6 @@
+data = (char *)malloc((10+1)*sizeof(char));
+return data;
+data = goodG2BSource(data);
+strcpy(data, source);
+printLine(data);
+free(data);

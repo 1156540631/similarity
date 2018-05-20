@@ -1,0 +1,45 @@
+CLASS1* aOldFrame)
+VAR3::FUN2(stdout, aOldFrame);
+bool hasFloats = BlockHasAnyFloats(aOldFrame);
+VAR8 = DoRemoveFrame(aOldFrame, REMOVE_FIXED_CONTINUATIONS);
+return DoRemoveFrame(aOldFrame, REMOVE_FIXED_CONTINUATIONS);
+if (line->Contains(aDeletedFrame)) {
+NS_ASSERTION(VAR3 == aDeletedFrame->FUN4(), "messed up delete code");
+NS_ASSERTION(line->Contains(aDeletedFrame), "frame not in line");
+line->mFirstChild = aDeletedFrame->FUN4();
+overflowLines->mFrames.RemoveFrame(aDeletedFrame);
+mFrames.RemoveFrame(aDeletedFrame);
+line->NoteFrameRemoved(aDeletedFrame);
+aDeletedFrame->GetNextContinuation() : aDeletedFrame->FUN6();
+CLASS1* deletedNextContinuation = (VAR3 & REMOVE_FIXED_CONTINUATIONS) ?
+VAR3::FUN2(stdout, aDeletedFrame);
+aDeletedFrame->GetPrevSibling(), deletedNextContinuation);
+deletedNextContinuation->FUN2() & NS_FRAME_IS_OVERFLOW_CONTAINER) {
+deletedNextContinuation = nullptr;
+aDeletedFrame = deletedNextContinuation;
+NS_ASSERTION(VAR3 == aDeletedFrame->FUN4(), "messed up delete code");
+NS_ASSERTION(line->Contains(aDeletedFrame), "frame not in line");
+mFrames.RemoveFrame(aDeletedFrame);
+line->NoteFrameRemoved(aDeletedFrame);
+aDeletedFrame->GetNextContinuation() : aDeletedFrame->FUN6();
+CLASS1* deletedNextContinuation = (VAR3 & REMOVE_FIXED_CONTINUATIONS) ?
+VAR3::FUN2(stdout, aDeletedFrame);
+aDeletedFrame->GetPrevSibling(), deletedNextContinuation);
+CLASS1*      aNextInFlow,
+FUN1(aNextInFlow->FUN5(), "bad FUN2-in-flow");
+if (aNextInFlow->FUN2() &
+nsLayoutUtils::AssertTreeOnlyEmptyNextInFlows(aNextInFlow);
+DoRemoveFrame(aNextInFlow,
+static nsresult RemoveBlockChild(CLASS1* VAR1,
+CLASS1* nextBlock = nsLayoutUtils::GetAsBlock(VAR1->FUN4());
+return nextBlock->DoRemoveFrame(VAR1,
+CLASS1::DoRemoveFrame(CLASS1* aDeletedFrame, uint32_t VAR3)
+if (aDeletedFrame->FUN2() &
+NS_ASSERTION(VAR3 == aDeletedFrame->FUN4(), "messed up delete code");
+NS_ASSERTION(line->Contains(aDeletedFrame), "frame not in line");
+mFrames.RemoveFrame(aDeletedFrame);
+line->NoteFrameRemoved(aDeletedFrame);
+aDeletedFrame->GetNextContinuation() : aDeletedFrame->FUN6();
+CLASS1* deletedNextContinuation = (VAR3 & REMOVE_FIXED_CONTINUATIONS) ?
+VAR3::FUN2(stdout, aDeletedFrame);
+aDeletedFrame->GetPrevSibling(), deletedNextContinuation);

@@ -1,0 +1,4 @@
+data = new char[100];
+data = goodG2B2Source(data);
+static char * goodG2B2Source(char * data)
+memset(data, 'A', 50-1);

@@ -1,0 +1,16 @@
+register char *addr;
+char address[100];
+scanf("%99s", address);
+res_addr = crackaddr(address);
+addr++;
+p = addrhead = addr;
+p++;
+while ((c = *p++) != ':')
+*bp++ = *p++;
+p++;
+while ((c = *p++) != '<')
+while ((c = *p++) != '\0')
+if ((c = *p++) == '\0')
+p--;
+p++;
+while (isascii((int) *--p) && isspace((int) *p))

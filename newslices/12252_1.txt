@@ -1,0 +1,4 @@
+char *VAR1 = (char*) calloc(12, sizeof(char));
+VAR1[VAR2]='\';
+VAR3 = VAR1[VAR2];
+if(isspace(VAR3))

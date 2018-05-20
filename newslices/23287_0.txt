@@ -1,0 +1,6 @@
+char VAR1[10] = "STRING";
+strcpy(VAR2->VAR1,VAR1);
+VAR3 VAR2;
+FUN1(&VAR2);
+void FUN1 (VAR3 *VAR2)
+strcpy(VAR2->VAR1,VAR1);

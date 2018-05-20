@@ -1,0 +1,14 @@
+const int VAR1 = 1;
+const int VAR2 = 0;
+VAR3 = -1;
+if(VAR1)
+VAR4 = FUN1(VAR5, VAR6, VAR7 - 1, 0);
+if (VAR4 == VAR8 || VAR4 == 0)
+break;
+VAR6[VAR4] = '\';
+VAR3 = atoi(VAR6);
+if(VAR2) { }
+else
+int VAR9[10] = { 0 };
+if (VAR3 >= 0 && VAR3 < (10))
+VAR9[VAR3] = 1;

@@ -1,0 +1,8 @@
+wchar_t * data;
+data = NULL;
+data = badSource(data);
+wchar_t * badSource(wchar_t * data)
+data = new wchar_t[10];
+return data;
+wchar_t source[10+1] = SRC_STRING;
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

@@ -1,0 +1,24 @@
+while (((VAR17 = fgetc(VAR2)) != EOF) && (VAR4 < VAR6)) {
+*VAR3++ = (u_char) VAR17;
+fclose(VAR2);
+VAR5 = (VAR3 *) VAR3;
+VAR7 = VAR3 + sizeof(VAR3);
+VAR8 = VAR3 + VAR10;
+printf("VAR11 = %VAR20\VAR9",VAR5->VAR11);
+FUN1(VAR5, &VAR7, VAR8, &VAR10, VAR3);
+FUN1(VAR3 *VAR5, u_char **VAR12, u_char *VAR8, int *VAR13, u_char *VAR3)
+if ((VAR9 = FUN2(*VAR12, VAR8)) < 0) {
+*VAR12 += VAR9;
+FUN3(VAR19, *VAR12);
+*VAR12 += INT32SZ;
+FUN3(VAR21, *VAR12);
+*VAR12 += VAR21;
+if (*VAR12 != VAR8) {
+VAR15 = (char *)VAR3 + VAR14;
+VAR18 = (char *)*VAR12 - VAR15;
+if ((CLASS1)VAR18 > sizeof VAR16){
+printf("Copying %VAR20 bytes from VAR15 to VAR16 which can store %VAR20 bytes\VAR9", VAR18, sizeof(VAR16));
+memcpy(VAR16, VAR15, VAR18);
+VAR1 = VAR16 + VAR18 - VAR21;
+*VAR12 = (u_char *)VAR15;
+FUN1(VAR5, &VAR7, VAR8, &VAR10, VAR3);

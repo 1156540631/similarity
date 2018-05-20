@@ -1,0 +1,4 @@
+void FUN1(VAR1<double *> VAR2)
+double * VAR3 = VAR2[2];
+FUN2(*VAR3);
+free(VAR3);

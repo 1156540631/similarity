@@ -1,0 +1,12 @@
+typedef union
+int VAR9;
+int VAR10;
+} CLASS25;
+CLASS25 CLASS2;
+VAR8 = -1;
+fscanf(stdin, "%d", &VAR8);
+CLASS2.VAR9 = VAR8;
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

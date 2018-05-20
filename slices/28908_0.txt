@@ -1,0 +1,9 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+const CLASS2& VAR39 = FUN2();
+VAR39.FUN10(VAR1);
+void FUN2::FUN10(char * VAR1) const
+char VAR40[50] = "";
+strcat(VAR40, VAR1);

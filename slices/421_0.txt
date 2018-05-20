@@ -1,0 +1,13 @@
+CLASS2 VAR24 = FUN1(VAR1);
+memcpy(VAR5, VAR11, VAR6);
+VAR24 += (VAR12 ? VAR6 : 0);
+VAR1 += VAR24;
+VAR24,
+VAR3.VAR3 +
+(VAR3.VAR7 ? VAR6 : 0));
+int VAR8) {
+uint8_t* VAR9 = const_cast<uint8_t*>((*VAR4).VAR2);
+memmove(VAR9 + VAR8, VAR9, VAR10);
+VAR3.VAR3,
+CLASS2 VAR24,
+VAR24);

@@ -1,0 +1,4 @@
+VAR1 VAR2, unsigned VAR3)
+FUN1(VAR4, VAR5, VAR2);
+static void FUN1(void *VAR6, VAR7 VAR8, VAR7 VAR2)
+printf("%VAR4: VAR9 VAR10 VAR11 VAR12 VAR13 do FUN2 (%08x)?\n", VAR14, VAR2);

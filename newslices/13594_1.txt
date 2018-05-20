@@ -1,0 +1,9 @@
+static char *
+FUN1(
+unsigned char **VAR1,
+unsigned char *VAR2,
+int           VAR3,
+char          *VAR4,
+int           VAR5)
+if (VAR3 < VAR5)
+memcpy(VAR4, *VAR1, VAR3);

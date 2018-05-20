@@ -1,0 +1,4 @@
+char VAR1[4106];
+char VAR2[10];
+VAR1[4106 - 1] = '\';
+strncpy(VAR2, VAR1, VAR3[0]);

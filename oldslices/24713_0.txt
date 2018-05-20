@@ -1,0 +1,14 @@
+char stonesoup_source[1024];
+union writhed_saka habenulae_rageful;
+int lobito_unmoldy = 91;
+char *pintail_preperceive;;
+stonesoup_read_taint(&pintail_preperceive,"8449",lobito_unmoldy);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+habenulae_rageful . theodor_trisporous = pintail_preperceive;
+demiwolf_intertouch = hopkinsonian_siegler(habenulae_rageful);
+nonidolatrous_pelagia = ((char *)demiwolf_intertouch . theodor_trisporous);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, nonidolatrous_pelagia, sizeof(stonesoup_source));

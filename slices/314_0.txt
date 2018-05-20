@@ -1,0 +1,5 @@
+int32_t VAR1 = 0;
+int32_t VAR2 = 0;
+VAR2++;
+VAR1++;
+static_cast<void*>(VAR3), VAR1, VAR2);

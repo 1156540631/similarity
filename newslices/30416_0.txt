@@ -1,0 +1,12 @@
+int VAR1 = 1;
+int VAR2 = 0;
+VAR3 = -1;
+if(VAR1)
+VAR4 = FUN1(VAR5, VAR6, VAR7 - 1, 0);
+VAR6[VAR4] = '\';
+VAR3 = atoi(VAR6);
+if(VAR2) { }
+else
+int VAR8[10] = { 0 };
+if (VAR3 >= 0 && VAR3 < (10))
+VAR8[VAR3] = 1;

@@ -1,0 +1,13 @@
+void FUN1(char *VAR1, int VAR2, const char *VAR3,
+FUN2(VAR1, VAR3, VAR2);
+VAR4 = strchr(VAR1, '?');
+VAR5 = strrchr(VAR1, '/');
+VAR1[0] = '\';
+VAR5 = strrchr(VAR1, '/');
+if (!strcmp(VAR5 ? &VAR5[1] : VAR1, "..")) {
+FUN3(VAR1, "/", VAR2);
+VAR5 = strrchr(VAR1, '/');
+if (!strcmp(VAR5 ? &VAR5[1] : VAR1, "..")) {
+VAR1[0] = '\';
+VAR5 = strrchr(VAR1, '/');
+if (!strcmp(VAR5 ? &VAR5[1] : VAR1, "..")) {

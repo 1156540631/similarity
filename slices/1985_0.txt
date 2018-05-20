@@ -1,0 +1,9 @@
+main(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+FUN1(VAR3);
+FUN1(char *VAR5)
+VAR7 = malloc(VAR4);
+if(strlen(VAR5) >= VAR4) {
+strcpy(VAR7, VAR5);
+printf("result: %VAR6\VAR9", VAR7);
+free(VAR7);

@@ -1,0 +1,6 @@
+const char *VAR1,
+if (!FUN1(VAR1, "VAR2-VAR3", 15))
+else if (!FUN1(VAR1, "deskjet", 7))
+else if (!FUN1(VAR1, "officejet", 9))
+else if (!FUN1(VAR1, "stylus_pro_", 11))
+VAR1 + 11);

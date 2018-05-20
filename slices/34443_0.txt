@@ -1,0 +1,17 @@
+char * VAR2;
+vector<char *> VAR49;
+VAR2 = NULL;
+VAR2 = new char[100];
+VAR2[0] = '\0';
+VAR49.insert(VAR49.end(), 1, VAR2);
+VAR49.insert(VAR49.end(), 1, VAR2);
+VAR49.insert(VAR49.end(), 1, VAR2);
+FUN3(VAR49);
+void FUN3(vector<char *> VAR49)
+char * VAR2 = VAR49[2];
+char VAR20[100];
+memset(VAR20, 'C', 100-1);
+VAR20[100-1] = '\0';
+for (VAR21 = 0; VAR21< 100; VAR21++)
+VAR2[VAR21] = VAR20[VAR21];
+VAR2[100-1] = '\0';

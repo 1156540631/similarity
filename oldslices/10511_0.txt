@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *gurr_britzkas)
+nonpecuniary_amphichrome = ((int )(strlen(gurr_britzkas)));
+memcpy(lenotre_sentition,gurr_britzkas,nonpecuniary_amphichrome);
+free(((char *)gurr_britzkas));

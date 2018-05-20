@@ -1,0 +1,12 @@
+premorse_layship = getenv("COIFFE_SMOKYSEEMING");
+if (premorse_layship != 0) {;
+pariahism_brahmans = ((char *)premorse_layship);
+if (strlen(pariahism_brahmans) < 1) {
+stonesoup_set_function(pariahism_brahmans, &stonesoup_my_foo);
+void stonesoup_set_function(char *set_param_str,struct stonesoup_data_struct *set_param_data_struct)
+if (strlen(set_param_str) > 10U) {
+set_param_data_struct -> str_member = set_param_str;
+if (strlen(set_param_str) < 10U) {
+stonesoup_set_function(pariahism_brahmans, &stonesoup_my_foo);
+stonesoup_val = (stonesoup_my_foo . func_member(stonesoup_my_foo . str_member));
+if (stonesoup_val == 0)

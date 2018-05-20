@@ -1,0 +1,5 @@
+int * &dataRef = data;
+data = (int *)malloc(100*sizeof(int));
+int * data = dataRef;
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

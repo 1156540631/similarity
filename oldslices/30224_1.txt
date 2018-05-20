@@ -1,0 +1,13 @@
+int data;
+void (*funcPtr) (int) = CWE126_Buffer_Overread__CWE129_connect_socket_65b_badSink;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+funcPtr(data);
+void CWE126_Buffer_Overread__CWE129_connect_socket_65b_badSink(int data)
+int buffer[10] = { 0 };
+if (data >= 0)
+printIntLine(buffer[data]);

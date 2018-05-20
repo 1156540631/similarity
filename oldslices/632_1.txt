@@ -1,0 +1,8 @@
+const guint8 *pd, int *err)
+datetime = (const guint32 *) (pd + 3 * 4);
+datetime = (const guint32 *) (pd + 3 * 4);
+buf = logcat_log(dumper, *datetime, *nanoseconds / 1000000, *pid, *tid,
+buf = logcat_log(dumper, *datetime, *nanoseconds / 1000000, *pid, *tid,
+static gchar *logcat_log(const struct dumper_t *dumper, guint32 seconds,
+datetime = (time_t) seconds;
+gmtime(&datetime));

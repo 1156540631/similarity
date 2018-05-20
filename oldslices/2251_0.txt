@@ -1,0 +1,7 @@
+*modulus_function = stonesoup_modulus_function1;
+*modulus_function = stonesoup_modulus_function2;
+stonesoup_printf("String is too short to test\n");
+}
+stonesoup_printf("mod is false\n");
+void stonesoup_get_function(int len, fptr * modulus_function) {
+stonesoup_printf("mod is false\n");

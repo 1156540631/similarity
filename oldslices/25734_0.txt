@@ -1,0 +1,19 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&stratochamber_titmall,"GAVIIFORMES_PATIENCE");
+if (stratochamber_titmall != 0) {;
+tsadi_conundrum . apium_rotalia = stratochamber_titmall;
+beclowned_condensable = &tsadi_conundrum;
+counterguerilla_elatine = ((union bludgeoned_tasseling *)(((unsigned long )beclowned_condensable) * skeiner_influxive * skeiner_influxive)) + 5;
+beseem_captioned(beaning_tuesday,counterguerilla_elatine);
+void beseem_captioned(int bibliophily_snyes,union bludgeoned_tasseling *sycamine_orbitelous)
+beseem_captioned(bibliophily_snyes,sycamine_orbitelous);

@@ -1,0 +1,12 @@
+int FUN10(CLASS2 *VAR1, unsigned char **VAR2,
+unsigned char *VAR7 = *VAR2;
+FUN1(VAR1, VAR7, VAR29);
+static void FUN1(CLASS2 *VAR1, const unsigned char *VAR7,
+unsigned short VAR23, VAR2;
+static const unsigned char VAR4[] = {
+VAR7 += 2;
+FUN3(VAR7, VAR23);
+FUN3(VAR7, VAR2);
+VAR7 += VAR2;
+const CLASS1 VAR3 = sizeof(VAR4);
+if (memcmp(VAR7, VAR4, VAR3) != 0)

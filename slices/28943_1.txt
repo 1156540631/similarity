@@ -1,0 +1,8 @@
+const int VAR20 = 5; 
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+if(VAR20==5)
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+char VAR40[50] = "";
+strcpy(VAR40, VAR1);

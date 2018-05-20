@@ -1,0 +1,4 @@
+void FUN1(CLASS1 * VAR1)
+SNPRINTF(VAR1, 100, L"%s", VAR2);
+FUN2(VAR1);
+free(VAR1);

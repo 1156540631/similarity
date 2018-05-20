@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&jaguarondi_pseudolarix,"SCRUNCHING_KLEPHTISM");
+if (jaguarondi_pseudolarix != 0) {;
+photomurals_welf = ((int )(strlen(jaguarondi_pseudolarix)));
+grillage_communized = ((char *)(malloc(photomurals_welf + 1)));
+if (grillage_communized == 0) {
+memcpy(grillage_communized,jaguarondi_pseudolarix,photomurals_welf);
+if (jaguarondi_pseudolarix != 0)
+free(((char *)jaguarondi_pseudolarix));

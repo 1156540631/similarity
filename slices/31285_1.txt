@@ -1,0 +1,13 @@
+#define VAR6 "AAAAAAAAAA"
+char * VAR4;
+char * VAR9[5];
+char VAR1[10];
+char VAR7[10+1];
+VAR4 = VAR1;
+VAR4[0] = '\0';
+VAR9[2] = VAR4;
+FUN23(VAR9);
+void FUN23(char * VAR9[])
+char * VAR4 = VAR9[2];
+char VAR8[10+1] = VAR6;
+memcpy(VAR4, VAR8, (strlen(VAR8) + 1) * sizeof(char));

@@ -1,0 +1,7 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+VAR2 = FUN53(VAR2);
+char * FUN53(char * VAR2)
+return VAR2;
+VAR2 = FUN53(VAR2);
+memcpy(VAR4, VAR2, strlen(VAR2)*sizeof(char));

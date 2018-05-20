@@ -1,0 +1,9 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hyperopia_hamburg,"GOVERNABILITY_TOLING");
+if (hyperopia_hamburg != 0) {;
+warriorwise_ratoon = ((void *)hyperopia_hamburg);
+AGPAITIC_DERMOHEMAL(warriorwise_ratoon);
+void dacryolite_emissaria(void *pyridone_aguamiel)
+AGPAITIC_DERMOHEMAL(warriorwise_ratoon);

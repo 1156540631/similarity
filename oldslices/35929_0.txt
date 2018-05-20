@@ -1,0 +1,8 @@
+data = (char *)malloc(100*sizeof(char));
+data[0] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_52b_goodG2BSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_52b_goodG2BSink(char * data)
+CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_52c_goodG2BSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_52c_goodG2BSink(char * data)
+source[100-1] = '\0';
+SNPRINTF(data, 100, "%s", source);

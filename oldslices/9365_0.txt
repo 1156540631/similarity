@@ -1,0 +1,5 @@
+void *farmdale_lackawanna = 0;
+reticent_neonatology(subexternal_canvasman,farmdale_lackawanna);
+reticent_neonatology(grozet_hypochloremia,twint_haslett);
+void reticent_neonatology(int grozet_hypochloremia,void *twint_haslett)
+free(((char *)((char *)twint_haslett)));

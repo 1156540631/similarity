@@ -1,0 +1,27 @@
+VAR1 VAR2::FUN1(const CLASS1* VAR3, VAR4 VAR5)
+VAR4 VAR6 = 0;
+FUN2 (0 != VAR5) {
+VAR4 VAR7 = VAR8 - VAR9;
+if (VAR7 > VAR5) {
+VAR7 = VAR5;}
+if (0 == VAR7) {
+if (VAR10) {
+VAR1 VAR11 = FUN3();
+if (VAR12 != VAR11) {
+return VAR11;   }
+} else {
+VAR13 VAR14 = VAR8;
+VAR4 VAR15[5];
+VAR15[2] = VAR5;
+VAR14 += FUN4(VAR15);
+VAR4 FUN4(VAR4 VAR15[])
+VAR4 VAR5 = VAR15[2];
+return VAR5;
+VAR14 += FUN4(VAR15);
+if (!VAR14.FUN5()) {
+return VAR16; }
+VAR8 = VAR14.FUN6();
+VAR17 = (CLASS1 *) realloc(VAR17, sizeof(CLASS1) * VAR8);
+if (VAR18 == VAR17) {
+return VAR16;      }}}
+memcpy(&VAR17[VAR9],VAR3 + VAR6, sizeof(CLASS1) * VAR7);

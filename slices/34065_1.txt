@@ -1,0 +1,9 @@
+CLASS24 CLASS10;
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, 'A', 100-1);
+VAR2[100-1] = '\0';
+CLASS10.VAR15 = VAR2;
+char * VAR2 = CLASS10.VAR16;
+char VAR4[50] = "";
+SNPRINTF(VAR4, strlen(VAR2), "%s", VAR2);

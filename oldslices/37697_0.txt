@@ -1,0 +1,3 @@
+void CWE122_Heap_Based_Buffer_Overflow__cpp_CWE805_wchar_t_ncpy_82_goodG2B::action(wchar_t * data)
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

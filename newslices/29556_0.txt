@@ -1,0 +1,15 @@
+char * VAR1;
+VAR1 = VAR2;
+switch(6)
+case 6:
+char * VAR3 = (char *)malloc(100*sizeof(char));
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+VAR1 = VAR3;
+break;
+default:
+break;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+strncpy(VAR1, VAR4, 100-1);

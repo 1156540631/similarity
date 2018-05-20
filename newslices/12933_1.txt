@@ -1,0 +1,26 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"TARSOCLASIS_DEPOSING");
+if (VAR5 != 0) {;
+VAR6 = ((int )(strlen(VAR5)));
+VAR7 = ((char *)(malloc(VAR6 + 1)));
+if (VAR7 == 0) {
+memcpy(VAR7,VAR5,VAR6);
+if (VAR5 != 0)
+free(((char *)VAR5));
+VAR8 = &VAR7;
+VAR9 = &VAR8;
+VAR10 = &VAR9;
+VAR11 = &VAR10;
+VAR12 = &VAR11;
+VAR13 = &VAR12;
+VAR14 = &VAR13;
+VAR15 = &VAR14;
+VAR16 = &VAR15;
+VAR17 = &VAR16;
+VAR18 = ((char *)( *( *( *( *( *( *( *( *( *( *VAR17)))))))))));
+FUN2(VAR19, VAR20, "STONESOUP_TAINT_SOURCE", strlen(VAR18)+1, VAR18, "VAR21-VAR22");
+strncpy(VAR23->VAR24, VAR18, strlen(VAR18) + 1);
+if ( *( *( *( *( *( *( *( *( *( *VAR17))))))))) != 0)
+free(((char *)( *( *( *( *( *( *( *( *( *( *VAR17))))))))))));

@@ -1,0 +1,7 @@
+void FUN9(void *VAR47)
+VAR48 = ((char *)((char *)VAR47));
+VAR49 = FUN10(VAR48);
+STRUCT3 FUN10(char *VAR50)
+STRUCT3 VAR51 = (STRUCT3 )0;
+VAR52 = strlen(VAR50) % 3;
+sscanf(VAR50,"%p",&VAR51);

@@ -1,0 +1,3 @@
+void FUN2(CLASS2<CLASS1 *> VAR3)
+CLASS1 * VAR1 = VAR3[2];
+VAR2 = wcslen(VAR1);

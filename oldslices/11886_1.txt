@@ -1,0 +1,6 @@
+invalid_memory_access_009_uni_001 *u = (invalid_memory_access_009_uni_001 * )malloc(5*sizeof( invalid_memory_access_009_uni_001 ));
+u->s1 = (invalid_memory_access_009_s_001 *) malloc(sizeof(invalid_memory_access_009_s_001));
+u->s1->a = (int *) malloc(5*sizeof(int));
+free(u->s1->a);
+free(u->s1);
+free(u);

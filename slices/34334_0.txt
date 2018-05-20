@@ -1,0 +1,10 @@
+wchar_t * VAR2;
+wchar_t * VAR9[5];
+VAR2 = NULL;
+VAR2 = new wchar_t[10+1];
+VAR9[2] = VAR2;
+FUN3(VAR9);
+void FUN3(wchar_t * VAR9[])
+wchar_t * VAR2 = VAR9[2];
+wchar_t VAR20[10+1] = VAR59;
+wcsncpy(VAR2, VAR20, wcslen(VAR20) + 1);

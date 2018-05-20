@@ -1,0 +1,3 @@
+int    VAR337;
+line[VAR335 + 1] = '\0';
+if (sscanf(&line[0], "%x", &VAR337) != 1)

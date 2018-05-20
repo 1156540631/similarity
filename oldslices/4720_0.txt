@@ -1,0 +1,5 @@
+evolvable_shackled wasagara_apellous = 0;
+staffelite_familiar(&wasagara_apellous);
+kinematically_saundra[ *( *( *( *( *( *( *( *( *( *derogated_opisthogastric)))))))))] = wasagara_apellous;
+badass_neillia = kinematically_saundra[ *( *( *( *( *( *( *( *( *( *derogated_opisthogastric)))))))))];
+free(((char *)badass_neillia));

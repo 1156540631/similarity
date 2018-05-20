@@ -1,0 +1,8 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+strcpy(VAR1, "fixedstringtest");
+const VAR3& VAR4 = FUN1();
+VAR4.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+printf(VAR1);

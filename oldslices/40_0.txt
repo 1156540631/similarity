@@ -1,0 +1,15 @@
+char		uri[1024],
+if (!try_connect(&(device->address), device->addrname, 5353))
+snprintf(uri, sizeof(uri), "lpd:
+static int		try_connect(http_addr_t *addr, const char *addrname,
+if (!try_connect(&(device->address), device->addrname, 9100))
+static int		try_connect(http_addr_t *addr, const char *addrname,
+else if (!try_connect(&(device->address), device->addrname, 515))
+static int		try_connect(http_addr_t *addr, const char *addrname,
+debug_printf("DEBUG: %s supports LPD!\n", device->addrname);
+static void		debug_printf(const char *format, ...);
+snprintf(uri, sizeof(uri), "lpd:
+update_cache(device, uri, NULL, NULL);
+const char   *uri,
+device->uri = strdup(uri);
+snprintf(uri, sizeof(uri), "lpd:

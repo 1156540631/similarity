@@ -1,0 +1,2 @@
+data = (void *)WIDE_STRING;
+size_t dataLen = wcslen((wchar_t *)data);

@@ -1,0 +1,4 @@
+gos_biochore = getenv("SHAIKH_FRACTURS");
+if (gos_biochore != 0) {;
+smallpoxes_podology = gos_biochore;
+*meekhearted_fribblery = smallpoxes_podology;

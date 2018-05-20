@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *hepsiba_armond)
+cavaliero_chuchchis = ((int )(strlen(hepsiba_armond)));
+memcpy(overtechnical_mediately,hepsiba_armond,cavaliero_chuchchis);
+free(((char *)hepsiba_armond));

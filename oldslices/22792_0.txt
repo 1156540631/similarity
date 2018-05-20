@@ -1,0 +1,7 @@
+void hyllus_unstrictly(char **devocalisation_depew)
+carpos_radiale(devocalisation_depew);
+void carpos_radiale(char **desired_periodontics)
+char stonesoup_source[1024];
+rutins_essenianism = ((char *)desired_periodontics[3]);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, rutins_essenianism, sizeof(stonesoup_source));

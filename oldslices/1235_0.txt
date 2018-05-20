@@ -1,0 +1,6 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&enviableness_displeaser,"CHERKESSER_BATCHELDER");
+if (enviableness_displeaser != 0) {;
+*explainable_isotrehalose = enviableness_displeaser;

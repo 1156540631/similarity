@@ -1,0 +1,3 @@
+int FUN1(uint8_t *VAR27, const char *VAR1)
+VAR1 += strspn(VAR1, VAR2);
+VAR3 = FUN2((unsigned char) *VAR1++);

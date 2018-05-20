@@ -1,0 +1,3 @@
+jmp_buf milfoils_excerpting;
+mesne_sweven = setjmp(milfoils_excerpting);
+longjmp(milfoils_excerpting,1);

@@ -1,0 +1,9 @@
+add_device_uri(char *value)
+value ++;
+for (start = value; *value && *value != '\"'; value ++)
+*value++ = '\0';
+while (isspace(*value & 255))
+value ++;
+for (start = value; *value && !isspace(*value & 255); value ++);
+*value++ = '\0';
+for (start = value; *value && !isspace(*value & 255); value ++);

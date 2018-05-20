@@ -1,0 +1,16 @@
+list<wchar_t *> dataList;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+data[0] = L'\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t source[100];
+wchar_t * data = dataList.back();
+SNPRINTF(data, 100, L"%s", source);

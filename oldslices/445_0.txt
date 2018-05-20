@@ -1,0 +1,11 @@
+LPCWSTR currentServicePath,
+nsAutoArrayPtr<char> serviceConfigBuffer = new char[bytesNeeded];
+reinterpret_cast<QUERY_SERVICE_CONFIGW*>(serviceConfigBuffer.get()),
+*reinterpret_cast<QUERY_SERVICE_CONFIGW*>(serviceConfigBuffer.get());
+QUERY_SERVICE_CONFIGW &serviceConfig =
+if (!FixServicePath(schService, serviceConfig.lpBinaryPathName,
+size_t currentServicePathLen = wcslen(currentServicePath);
+!wcsstr(currentServicePath, L"maintenanceservice_tmp.exe") &&
+currentServicePath));
+WCHAR fixedPath[MAX_PATH + 1] = { L'\0' };
+wcsncpy(fixedPath, currentServicePath, MAX_PATH);

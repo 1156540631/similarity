@@ -1,0 +1,6 @@
+mesoprescutal_relaxable = getenv("SHOTTED_SINNAMAHONING");
+quartzitic_calpacs = ((char *)mesoprescutal_relaxable);
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, quartzitic_calpacs);

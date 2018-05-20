@@ -1,0 +1,5 @@
+st_underrun_007_s_001 s;
+s.buf[0] = 1;
+st_underrun_007_func_001(&s);
+void st_underrun_007_func_001 (st_underrun_007_s_001 *s)
+int len = strlen(s->buf) - 1;

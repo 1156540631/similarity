@@ -1,0 +1,6 @@
+void FUN2(int CLASS2[])
+int VAR1 = CLASS2[2];
+CLASS2 = (int*)malloc(VAR1 * sizeof(int));
+CLASS2[VAR4] = 0;
+FUN1(CLASS2[0]);
+free(CLASS2);

@@ -1,0 +1,5 @@
+char VAR1[64];
+VAR2 = ((char *)( *VAR3) . VAR4);
+memset(VAR1,0,64);
+FUN1(VAR5, VAR6, "VAR1", VAR1, "VAR7-VAR8");
+strcpy(VAR1,VAR2);

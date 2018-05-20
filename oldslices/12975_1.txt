@@ -1,0 +1,24 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int ferriage_iappp = 131;
+char *resupervise_aminoketone;
+stonesoup_read_taint(&resupervise_aminoketone,"8394",ferriage_iappp);
+execrators_turin = ((char *)resupervise_aminoketone);
+stonesoup_buff_size = strlen(execrators_turin) + 1;
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+execrators_turin[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&resupervise_aminoketone,"8394",ferriage_iappp);
+execrators_turin = ((char *)resupervise_aminoketone);
+stonesoup_buff_size = strlen(execrators_turin) + 1;
+execrators_turin[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+free (stonesoup_other_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

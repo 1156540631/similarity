@@ -1,0 +1,4 @@
+void FUN116(char *VAR55,int VAR424,STRUCT5 *VAR64,int VAR432)
+snprintf(VAR55,VAR424,"%VAR208: %VAR208%VAR208",(VAR433?VAR433 : "unknown"),VAR434,(VAR64 -> VAR435?" (VAR436)" : ""));
+VAR55[0] ^= 'a' ^ 'A';
+snprintf(VAR55 + strlen(VAR55),VAR424 - strlen(VAR55)," (%VAR208)",VAR425);

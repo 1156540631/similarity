@@ -1,0 +1,4 @@
+lesly_nocturnes = getenv("HYOSCINES_TRUMPETRY");
+if (lesly_nocturnes != 0) {;
+lucre_ductibility = lesly_nocturnes;
+*synop_mangos = lucre_ductibility;

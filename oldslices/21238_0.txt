@@ -1,0 +1,9 @@
+bassus_agrestian = getenv("PORPHYRIZED_AREAD");
+if (bassus_agrestian != 0) {;
+foreprize_chiromegaly = ((int )(strlen(bassus_agrestian)));
+alcaldes_scevor = ((char *)(malloc(foreprize_chiromegaly + 1)));
+if (alcaldes_scevor == 0) {
+memset(alcaldes_scevor,0,foreprize_chiromegaly + 1);
+memcpy(alcaldes_scevor,bassus_agrestian,foreprize_chiromegaly);
+entrench_babyfied(alcaldes_scevor);
+void entrench_babyfied(char *const gauzily_sass);

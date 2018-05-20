@@ -1,0 +1,6 @@
+void FUN1(char * VAR1)
+FUN3(VAR1);
+void FUN3(char * VAR1)
+strcpy(VAR1, VAR2);
+FUN2(VAR1);
+free(VAR1);

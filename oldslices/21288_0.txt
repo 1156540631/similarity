@@ -1,0 +1,7 @@
+file = getenv("OPENSSL_CONF");
+if (file) {
+return BUF_strdup(file);
+file = CONF_get1_default_config_file();
+if (!file) {
+if (NCONF_load(conf,file,((void *)0)) <= 0) {
+CRYPTO_free(file);

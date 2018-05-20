@@ -1,0 +1,3 @@
+VAR595 = getenv("TANDEMER_CASUARINALES");
+if (VAR595 != 0) {;
+*VAR596 = VAR595;

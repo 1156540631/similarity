@@ -1,0 +1,8 @@
+FUN1(VAR6->VAR6, VAR7);
+FUN2(VAR6->VAR6, VAR7);
+printf("%VAR6: Bad bits per pixel: %VAR3 bits\VAR2", __func__, VAR7);
+uint64_t VAR27, unsigned VAR10)
+FUN3(VAR6, VAR2, VAR27);
+static void FUN3(void *VAR3, uint32_t VAR2, uint32_t VAR7)
+FUN4(VAR6->VAR6, VAR7);
+printf("%VAR6: Bad bits per pixel: %VAR3 bits\VAR2", __func__, VAR7);

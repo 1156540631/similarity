@@ -1,0 +1,11 @@
+wchar_t dataBuffer[100];
+data = dataBuffer;
+data[50-1] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53b_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53b_goodG2BSink(wchar_t * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53c_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53c_goodG2BSink(wchar_t * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53d_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_declare_ncpy_53d_goodG2BSink(wchar_t * data)
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

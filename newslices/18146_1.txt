@@ -1,0 +1,14 @@
+wchar_t * VAR1;
+VAR2<wchar_t *> VAR3;
+wchar_t * VAR4 = (wchar_t *)FUN1(50*sizeof(wchar_t));
+wchar_t * VAR5 = (wchar_t *)FUN1(100*sizeof(wchar_t));
+* VAR6 VAR7 VAR8 VAR9 VAR10 VAR11 using VAR12 "large" VAR13 VAR6. */
+VAR1 = VAR4;
+VAR1[0] = '\';
+VAR3.FUN2(VAR1);
+VAR3.FUN2(VAR1);
+VAR3.FUN2(VAR1);
+void FUN3(VAR2<wchar_t *> VAR3)
+wchar_t * VAR1 = VAR3.FUN4();
+VAR13[100-1] = '\';
+FUN5(VAR1, VAR13);

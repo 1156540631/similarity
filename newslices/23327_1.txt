@@ -1,0 +1,4 @@
+char VAR1[8];
+VAR2 = ((char *)( *(VAR3 - 5)) . VAR4);
+FUN1(VAR5, VAR6, "STONESOUP_TAINT_SOURCE", strlen(VAR2)+1, VAR2, "VAR7-VAR8");
+strncpy(VAR1,VAR2,strlen(VAR2) + 1);

@@ -1,0 +1,20 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *herdsman_bloodmobiles;
+stonesoup_read_taint(&herdsman_bloodmobiles,"SWACKING_STUBBINESS");
+undermelodies_anno[5] = herdsman_bloodmobiles;
+softnesses_quaddle = 5;
+boondogglers_morea = &softnesses_quaddle;
+endurance_promemorial =  *(undermelodies_anno +  *boondogglers_morea);
+free(((char *)endurance_promemorial));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&herdsman_bloodmobiles,"SWACKING_STUBBINESS");
+undermelodies_anno[5] = herdsman_bloodmobiles;
+endurance_promemorial =  *(undermelodies_anno +  *boondogglers_morea);
+free(((char *)endurance_promemorial));

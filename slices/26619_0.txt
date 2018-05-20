@@ -1,0 +1,28 @@
+VAR24 = getenv("SS_TC_ROOT");
+if (VAR24 != NULL) {
+VAR25 = strlen(VAR24) + strlen("testData") + 2;
+VAR26 = (char*) malloc (VAR25 * sizeof(char));
+if (VAR26 != NULL) {
+sprintf(VAR26, "%VAR1/%VAR1", VAR24, "testData");
+if (stat(VAR26, &VAR27) == -1) {
+VAR28 = mkdir(VAR26, 0700);
+if (VAR28 == 0) {
+VAR29 = strlen(VAR26) + strlen("logfile.txt") + 2;
+VAR30 = (char*) malloc (VAR29 * sizeof(char));
+if (VAR30 != NULL) {
+sprintf(VAR30, "%VAR1/%VAR1", VAR26, "logfile.txt");
+VAR31 = fopen(VAR30, "w");
+free(VAR30);
+free(VAR26);
+if (VAR31 == NULL) {
+FUN2();
+FUN1(&VAR164,"7594",VAR165);
+FUN12(VAR125[VAR79]);
+FUN4("%VAR1\VAR7", VAR125);
+vfprintf(VAR31, VAR36, VAR37);
+fflush(VAR31);
+FUN4("%VAR1\VAR7", VAR125);
+FUN5();
+if (VAR31 != NULL &&
+VAR31 != VAR38) {
+fclose(VAR31);

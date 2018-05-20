@@ -1,0 +1,9 @@
+struct promiscuousness_rillette nonembryonal_sympathizing = {0};
+va_list repulverize_outyielding;
+__builtin_va_start(repulverize_outyielding,intarsa_plagiarizers);
+nonembryonal_sympathizing = (va_arg(repulverize_outyielding,struct promiscuousness_rillette ));
+midrashim_vinegar = ((char *)nonembryonal_sympathizing . ficklety_sabellian);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+memset(stonesoup_data->buffer,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, midrashim_vinegar);

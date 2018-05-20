@@ -1,0 +1,5 @@
+char buf[][25]={"This is a String",
+memory_allocation_failure_007_str_gbl = memory_allocation_failure_007_func_001(buf[j]);
+static char * memory_allocation_failure_007_func_001 (char *str1)
+static_var = strlen(str1);
+memory_allocation_failure_007_str_gbl = (char *) malloc(static_var+1);

@@ -1,0 +1,3 @@
+eh_ptr->content_type[i] = '\0';
+c = eh_ptr->content_type[i];
+if (c == ';' || isspace(c))

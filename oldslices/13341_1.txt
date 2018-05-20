@@ -1,0 +1,31 @@
+AnimationFrame (*funcPtr)(AnimationPart &) = badSource;
+static void *AnimationThread(void *)
+if (!reader.OpenArchive("/system/media/bootanimation.zip")) {
+bool OpenArchive(const char *path)
+fd = open(path, O_RDONLY);
+if (fstat(fd, &sb) == -1 || sb.st_size < sizeof(cdir_end)) {
+mBuf = (char *)mmap(nullptr, sb.st_size, PROT_READ, MAP_SHARED, fd, 0);
+if (!reader.OpenArchive("/system/media/bootanimation.zip")) {
+int32_t width, height, fps;
+while ((entry = reader.GetNextEntry(entry))) {
+entry = (cdir_entry *)(mBuf + letoh32(mEnd->cdir_offset));
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+AnimationPart part;
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s", &part.count, &part.pause, part.path)) {
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+part.frames.push_back();
+AnimationFrame &frame = funcPtr(part);
+AnimationFrame badSource(AnimationPart &part)
+return part.frames.back();
+AnimationFrame &frame = funcPtr(part);
+strcpy(frame.path, name.c_str());

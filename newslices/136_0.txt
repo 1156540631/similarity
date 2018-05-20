@@ -1,0 +1,9 @@
+! memcmp( &VAR1.VAR2[1], "VAR3\0\0\0", 7 ) )
+! memcmp( VAR1.VAR2, "\x01vorbis", 7 ) )
+! memcmp( VAR1.VAR2, "Speex", 5 ) )
+! memcmp( VAR1.VAR2, "fLaC", 4 ) )
+! memcmp( VAR1.VAR2, "\x80theora", 7 ) )
+! memcmp( VAR1.VAR2, "VAR4-VAR5\x00", 9 ) ) )
+! memcmp( VAR1.VAR2, "VAR6\x00", 5 ) ) ||
+! memcmp( VAR1.VAR2, "Annodex", 7 ) )
+! memcmp( VAR1.VAR2, "AnxData", 7 ) )

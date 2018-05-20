@@ -1,0 +1,12 @@
+void * VAR1;
+CLASS1 VAR4;
+VAR1 = NULL;
+char * VAR2 = (char *)malloc(50*sizeof(char));
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+VAR1 = (void *)VAR2;
+VAR4.VAR5 = VAR1;
+FUN1(VAR4);
+void FUN1(CLASS1 VAR4)
+void * VAR1 = VAR4.VAR5;
+size_t VAR3 = strlen((char *)VAR1);

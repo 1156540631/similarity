@@ -1,0 +1,7 @@
+wchar_t * &VAR1 = VAR2;
+VAR2 = (wchar_t *)malloc(50*sizeof(wchar_t));
+wchar_t * VAR2 = VAR1;
+wchar_t VAR3[100];
+FUN1(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+memmove(VAR2, VAR3, 100*sizeof(wchar_t));

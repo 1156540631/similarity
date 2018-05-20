@@ -1,0 +1,7 @@
+char * data;
+char dataGoodBuffer[10+1];
+if(staticFive==5)
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

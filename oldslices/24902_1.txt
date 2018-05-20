@@ -1,0 +1,2 @@
+if(gets(buf))
+printf("result: %s\n", buf);

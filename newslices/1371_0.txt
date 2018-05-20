@@ -1,0 +1,5 @@
+int VAR1 = sizeof(VAR2);
+VAR3 = (char *)malloc(VAR1);
+strcpy(VAR3, VAR2);
+printf("%s", VAR3);
+free(VAR3);

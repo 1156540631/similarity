@@ -1,0 +1,19 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char dataBuffer[100] = "";
+data = dataBuffer;
+size_t dataLen = strlen(data);
+if (100-dataLen > 1)
+if (fgets(data+dataLen, (int)(100-dataLen), stdin) != NULL)
+dataLen = strlen(data);
+if (dataLen > 0 && data[dataLen-1] == '\n')
+data[dataLen-1] = '\0';
+else
+data[dataLen] = '\0';
+CWE134_Uncontrolled_Format_String__char_console_snprintf_51b_goodB2GSink(data);
+void CWE134_Uncontrolled_Format_String__char_console_snprintf_51b_goodB2GSink(char * data)
+char dest[100] = "";
+SNPRINTF(dest, 100-1, "%s", data);

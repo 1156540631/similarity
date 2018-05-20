@@ -1,0 +1,39 @@
+xattr_len = fidp->fs.xattr.len;
+write_count = xattr_len - off;
+err = pdu_marshal(pdu, offset, "d", write_count);
+to_copy = write_count;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+static void v9fs_init_qiov_from_pdu(QEMUIOVector *qiov, V9fsPDU *pdu,
+qemu_iovec_init(qiov, niov);
+qemu_iovec_concat(qiov, &elem, skip, size);
+write_count -= to_copy;
+to_copy = write_count;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+uint64_t off;
+uint32_t count;
+QEMUIOVector qiov_full;
+err = pdu_unmarshal(pdu, offset, "dqd", &fid, &off, &count);
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+size_t skip, size_t size,
+qemu_iovec_concat(qiov, &elem, skip, size);
+trace_v9fs_write(pdu->tag, pdu->id, fid, off, count, qiov_full.niov);
+err = v9fs_xattr_write(s, pdu, fidp, off, count,
+uint64_t off, uint32_t count,
+write_count = xattr_len - off;
+write_count = count;
+err = pdu_marshal(pdu, offset, "d", write_count);
+to_copy = write_count;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+qiov_full.iov, qiov_full.niov);
+struct iovec *sg, int cnt)
+to_copy = sg[i].iov_len;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);
+off += to_copy;
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);

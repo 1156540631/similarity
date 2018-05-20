@@ -1,0 +1,9 @@
+VAR1 VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR4 = VAR3;
+memset(VAR4, '', 50-1);
+VAR4[50-1] = '\';
+VAR2.VAR5 = VAR4;
+char * VAR4 = VAR2.VAR6;
+char VAR7[50] = "";
+strncat(VAR7, VAR4, strlen(VAR4));

@@ -1,0 +1,4 @@
+VAR159 = ((char *)( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR149)))))))))))))))))))))))))))))))))))))))))))))))))) . VAR160);
+VAR33 = (char*) malloc(8 * sizeof(char));
+tracepoint(VAR71, VAR105, "STONESOUP_TAINT_SOURCE", strlen(VAR159)+1, VAR159, "TRIGGER-STATE");
+strncpy(VAR33, VAR159, strlen(VAR159) + 1);

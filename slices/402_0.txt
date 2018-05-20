@@ -1,0 +1,4 @@
+fprintf(stderr, "ERROR: Missing value on line %d of %s!\n", VAR3,
+fprintf(stderr,
+fprintf(stderr, "ERROR: Unknown directive %s on line %d of %s!\n",
+fprintf(stderr,

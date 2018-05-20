@@ -1,0 +1,11 @@
+int passes = 0;
+growth = 0;
+delta = 0;
+passes++;
+JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN);
+growth += delta;
+passes, offset + growth, offset, growth);
+UpdateJumpTargets(JSJumpTarget *jt, ptrdiff_t pivot, ptrdiff_t delta)
+delta += JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN;
+growth += delta;
+passes, offset + growth, offset, growth);

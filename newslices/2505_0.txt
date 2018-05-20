@@ -1,0 +1,15 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+int VAR3 = 596;
+char *VAR4;
+FUN1(&VAR4,"2493",VAR3);
+VAR5 = ((int )(strlen(VAR4)));
+memcpy(VAR6,VAR4,VAR5);
+free(((char *)VAR4));
+void FUN1(char** VAR1, char* VAR7, int VAR8) {
+if ((VAR9 = FUN2(VAR10, VAR8, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR8, sizeof(char));
+FUN1(&VAR4,"2493",VAR3);
+VAR5 = ((int )(strlen(VAR4)));
+memcpy(VAR6,VAR4,VAR5);
+free(((char *)VAR4));

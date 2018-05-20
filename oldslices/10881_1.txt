@@ -1,0 +1,6 @@
+int *dataPtr2 = &data;
+int data = *dataPtr2;
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

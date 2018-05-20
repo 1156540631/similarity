@@ -1,0 +1,6 @@
+int32_t do_wifi_command(const char* iface, const char* cmd, char* buf, size_t* len) {
+char command[COMMAND_SIZE];
+char* dataType = command;
+if (!strcmp(iface, "p2p0")) {
+char* command = dataType;
+PR_snprintf(command, COMMAND_SIZE, "IFNAME=%s %s", iface, cmd);

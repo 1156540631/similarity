@@ -1,0 +1,13 @@
+char * data;
+map<int, char *> dataMap;
+char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataGoodBuffer;
+data[0] = '\0';
+dataMap[2] = data;
+goodG2BSink(dataMap);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);
+void goodG2BSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+strncpy(data, source, 100-1);

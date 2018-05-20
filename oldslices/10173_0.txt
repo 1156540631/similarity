@@ -1,0 +1,4 @@
+void yard_idiomaticalness(void **outsiders_bethumped)
+naphthosalol_millenist(outsiders_bethumped);
+void naphthosalol_millenist(void **royalties_templum)
+free(((char *)((char *)( *(royalties_templum - 5)))));

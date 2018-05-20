@@ -1,0 +1,19 @@
+VAR1 = (getenv("EDITOR"));
+if (!VAR1) {
+if (VAR1) {
+for (VAR7 = VAR1;  *VAR7; VAR7++)
+if (!( *VAR7)) {
+*VAR4 = VAR1;
+svn_error_t *VAR2 = FUNC1(&VAR4,VAR3,VAR12);
+VAR8 = (FUNC41(pool,"%s %s",VAR4,VAR35_name));
+VAR6 = system(VAR8);
+if (VAR6) {
+return FUNC42(VAR5,((void *)0),(FUNC2("subversion","system('%s') returned %d")),VAR8,VAR6);
+svn_error_t *VAR2 = FUNC1(&VAR4,VAR3,VAR12);
+VAR8 = (FUNC41(pool,"%s %s",VAR4,VAR9));
+VAR6 = system(VAR8);
+if (VAR6 != 0) {
+VAR11 = FUNC42(VAR5,((void *)0),(FUNC2("subversion","system('%s') returned %d")),VAR8,VAR6);
+if (!VAR11 && VAR10) {
+return VAR11;
+static svn_error_t *FUNC1(const char **VAR4,const char *VAR3,apr_hash_t *VAR12)

@@ -1,0 +1,4 @@
+static void sysbus_esp_realize(DeviceState *dev, Error **errp)
+SysBusDevice *sbd = SYS_BUS_DEVICE(dev);
+SysBusESPState *sysbus = ESP(dev);
+assert(sysbus->it_shift != -1);

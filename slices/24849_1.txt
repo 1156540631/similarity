@@ -1,0 +1,7 @@
+VAR247 = getenv("VAR248");
+VAR249 = ((void *)VAR247);
+VAR250 = &VAR249;
+VAR251 = ((char *)((char *)( *VAR250)));
+VAR27 = (char*) malloc(8 * sizeof(char));
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR251)+1, VAR251, "TRIGGER-STATE");
+strncpy(VAR27, VAR251, strlen(VAR251) + 1);

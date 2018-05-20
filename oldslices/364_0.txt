@@ -1,0 +1,41 @@
+const size_t kH264NALHeaderLengthInBytes = 1;
+nalu_ptr = packet_buffer + kH264NALHeaderLengthInBytes;
+size_t length = BufferToUWord16(nalu_ptr);
+frame_buffer_ptr += Insert(nalu_ptr,
+if (packets_.size() == kMaxPacketsInSession) {
+ReversePacketIterator rit = packets_.rbegin();
+for (; rit != packets_.rend(); ++rit)
+if (rit != packets_.rend() &&
+first_packet_seq_num_ = static_cast<int>(packet.seqNum);
+last_packet_seq_num_ = static_cast<int>(packet.seqNum);
+PacketIterator packet_list_it = packets_.insert(rit.base(), packet);
+size_t returnLength = InsertBuffer(frame_buffer, packet_list_it);
+PacketIterator packet_it) {
+VCMPacket& packet = *packet_it;
+const uint8_t* packet_buffer = packet.dataPtr;
+packet.sizeBytes = Insert(packet_buffer,
+size_t VCMSessionInfo::Insert(const uint8_t* buffer,
+memcpy(frame_buffer, startCode, kH264StartCodeLengthBytes);
+buffer,
+length += (insert_start_code ? kH264StartCodeLengthBytes : 0);
+nalu_ptr += length;
+size_t length = BufferToUWord16(nalu_ptr);
+frame_buffer_ptr += Insert(nalu_ptr,
+IsNewerSequenceNumber(first_packet_seq_num_, packet.seqNum))) {
+IsNewerSequenceNumber(packet.seqNum, last_packet_seq_num_))) {
+IsNewerSequenceNumber(first_packet_seq_num_, packet.seqNum)) {
+last_packet_seq_num_ = static_cast<int>(packet.seqNum);
+PacketIterator packet_list_it = packets_.insert(rit.base(), packet);
+size_t returnLength = InsertBuffer(frame_buffer, packet_list_it);
+PacketIterator packet_it) {
+VCMPacket& packet = *packet_it;
+const uint8_t* packet_buffer = packet.dataPtr;
+packet.sizeBytes = Insert(packet_buffer,
+int VCMSessionInfo::InsertPacket(const VCMPacket& packet,
+IsNewerSequenceNumber(packet.seqNum, last_packet_seq_num_)) {
+PacketIterator packet_list_it = packets_.insert(rit.base(), packet);
+size_t returnLength = InsertBuffer(frame_buffer, packet_list_it);
+PacketIterator packet_it) {
+VCMPacket& packet = *packet_it;
+const uint8_t* packet_buffer = packet.dataPtr;
+packet.sizeBytes = Insert(packet_buffer,

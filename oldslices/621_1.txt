@@ -1,0 +1,43 @@
+return '?';
+const guint8 *pd, int *err)
+pid = (const gint *) (pd + 4);
+tid = (const gint *) (pd + 2 * 4);
+nanoseconds = (const guint32 *) (pd + 4 * 4);
+priority = get_priority((const guint8 *) (pd + 5 * 4));
+tag = (const gchar *) (pd + 5 * 4 + 1);
+log = tag + strlen(tag) + 1;
+pid = (const gint *) (pd + 4);
+tid = (const gint *) (pd + 2 * 4);
+nanoseconds = (const guint32 *) (pd + 4 * 4);
+priority = get_priority((const guint8 *) (pd + 6 * 4));
+tag = (const char *) (pd + 6 * 4 + 1);
+log = tag + strlen(tag) + 1;
+buf = logcat_log(dumper, *datetime, *nanoseconds / 1000000, *pid, *tid,
+priority, tag, log_part);
+gint microseconds, gint pid, gint tid, gchar priority, const gchar *tag,
+log_part[str_end - str_begin] = '\0';
+priority, tag, log_part);
+const gchar *log)
+gchar  time_buffer[15];
+priority, tag, pid, log);
+r
+priority, pid, log, tag);
+r
+priority, tag, log);
+r
+priority, pid, tid, log);
+r
+strftime(time_buffer, sizeof(time_buffer), "%m-%d %H:%M:%S",
+time_buffer, microseconds, priority, tag, pid, log);
+r
+strftime(time_buffer, sizeof(time_buffer), "%m-%d %H:%M:%S",
+time_buffer, microseconds, pid, tid, priority, tag, log);
+r
+strftime(time_buffer, sizeof(time_buffer), "%m-%d %H:%M:%S",
+time_buffer, microseconds, pid, tid, priority, tag, log);
+r
+return NULL;
+buf = logcat_log(dumper, *datetime, *nanoseconds / 1000000, *pid, *tid,
+length = (guint32)strlen(buf);
+if (!wtap_dump_file_write(wdh, buf, length, err)) {
+length = (guint32)strlen(buf);

@@ -1,0 +1,4 @@
+const char *prefix = "";
+if (base == 8) prefix = "0";
+if (base == 16) prefix = "0x";
+spadlen = min - OSSL_MAX(max, place) - (signvalue ? 1 : 0) - strlen(prefix);

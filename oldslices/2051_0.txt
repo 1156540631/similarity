@@ -1,0 +1,7 @@
+data = 20;
+int dataCopy = data;
+int data = dataCopy;
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

@@ -1,0 +1,8 @@
+char * data;
+char dataBadBuffer[10];
+switch(6)
+case 6:
+data = dataBadBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

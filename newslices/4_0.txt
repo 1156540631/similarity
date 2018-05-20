@@ -1,0 +1,7 @@
+FUN1(CLASS1* VAR1, const char* VAR2)
+VAR3::FUN2(VAR4, VAR1);
+CLASS2* VAR5 = VAR1->FUN3();
+printf("%p ", VAR5);
+VAR6 = VAR5->FUN4();
+VAR5 = VAR6;
+printf("%p ", VAR5);

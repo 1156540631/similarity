@@ -1,0 +1,7 @@
+if (!FUN1(VAR29, VAR1, VAR13)) {
+FUN2(VAR2, VAR3);
+FUN1(CLASS1 VAR17, CLASS2 VAR1, int VAR4)
+L"maintenanceservice-%VAR39.log", VAR4);
+FUN2(CLASS2 VAR1, int VAR5)
+for (int VAR13 = VAR5; VAR13 >= 1; VAR13--) {
+if (!FUN1(VAR27, VAR1, VAR13 -1)) {

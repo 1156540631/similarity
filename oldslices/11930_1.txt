@@ -1,0 +1,31 @@
+chunked_encoding_dissector(tvbuff_t **tvb_ptr, packet_info *pinfo,
+proto_tree *tree, int offset)
+gint chunk_offset = 0;
+tvb = *tvb_ptr;
+datalen = tvb_reported_length_remaining(tvb, offset);
+ti = proto_tree_add_text(tree, tvb, offset, datalen,
+linelen = tvb_find_line_end(tvb, offset, -1, &chunk_offset, TRUE);
+chunk_string = tvb_get_ephemeral_string(tvb, offset, linelen);
+chunk_size = strtol((gchar*)chunk_string, NULL, 16);
+datalen = tvb_reported_length_remaining(tvb, offset);
+chunk_size = datalen;
+chunk_tvb = tvb_new_subset(tvb, chunk_offset,
+chunk_size, datalen);
+tvb_memcpy(tvb, (guint8 *)(raw_data + raw_len),
+chunk_offset, chunk_size);
+chunk_ti = proto_tree_add_text(subtree, tvb,
+chunk_offset - offset + chunk_size + 2,
+chunk_ti = proto_tree_add_text(subtree, tvb,
+chunk_offset - offset + chunk_size + 2,
+"Data chunk (%u octets)", chunk_size);
+proto_tree_add_text(chunk_subtree, tvb, offset,
+chunk_offset - offset, "Chunk size: %u octets",
+chunk_size);
+data_tvb = tvb_new_subset(tvb, chunk_offset, chunk_size,
+proto_tree_add_text(chunk_subtree, tvb, chunk_offset +
+chunk_size, 2, "Chunk boundary");
+offset = chunk_offset + chunk_size + 2;
+datalen = tvb_reported_length_remaining(tvb, offset);
+linelen = tvb_find_line_end(tvb, offset, -1, &chunk_offset, TRUE);
+chunk_string = tvb_get_ephemeral_string(tvb, offset, linelen);
+chunk_size = strtol((gchar*)chunk_string, NULL, 16);

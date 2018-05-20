@@ -1,0 +1,9 @@
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_45_badData = data;
+badSink();
+int data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_45_badData;
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

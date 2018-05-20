@@ -1,0 +1,7 @@
+for (address = (char *)cupsArrayFirst(Addresses);
+address = (char *)cupsArrayNext(Addresses))
+if (!strcmp(address, "@LOCAL"))
+else if (!strncmp(address, "@IF(", 4))
+strlcpy(ifname, address + 4, sizeof(ifname));
+addrs = httpAddrGetList(address, AF_INET, NULL);
+fprintf(stderr, "ERROR: Unable to scan \"%s\"!\n", address);

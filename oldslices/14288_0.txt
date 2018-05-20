@@ -1,0 +1,6 @@
+int main(int argc, const char *argv[])
+if (argc > 1){
+const char *userstr=argv[1];
+tester(userstr);
+void tester (const char *__str) {
+test[strlen(__str)%BUFSIZE]='a';

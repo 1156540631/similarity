@@ -1,0 +1,9 @@
+addr = (char *) malloc(sizeof(char) * 500);
+addr[i+1] = special_char;
+CurEnv->e_to = (char *) malloc(strlen(addr) * sizeof(char) + 1);
+strcpy(CurEnv->e_to, addr);
+parseaddr(addr, delim, delimptr);
+char *addr;
+pvp = prescan(addr, delim, pvpbuf, sizeof pvpbuf, delimptr, NULL, canary);
+char *addr;
+if (strlen(addr) > (SIZE_T) MAXNAME)

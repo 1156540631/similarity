@@ -1,0 +1,7 @@
+char * &VAR1 = VAR2;
+char VAR3[10];
+char VAR4[10+1];
+VAR2 = VAR4;
+char * VAR2 = VAR1;
+char VAR5[10+1] = VAR6;
+strcpy(VAR2, VAR5);

@@ -1,0 +1,5 @@
+VAR1 = VAR2;
+FUN1(VAR1);
+VAR1 = (int *)FUN2(10);
+int VAR3[10] = {0};
+memcpy(VAR1, VAR3, 10*sizeof(int));

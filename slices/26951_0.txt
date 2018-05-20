@@ -1,0 +1,3 @@
+char VAR39[VAR45];
+if(fgets(VAR39, sizeof VAR39, stdin))
+printf("result: %VAR1\VAR7", VAR39);

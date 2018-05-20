@@ -1,0 +1,5 @@
+void stonesoup_handle_taint(char *emblemist_stours)
+tuberculiferous_pollaiuolo = emblemist_stours;
+EUPHONICALLY_SENSUALIZE(tuberculiferous_pollaiuolo);
+void rightabout_valerye(tereshkova_reinterrogates joisted_rice)
+free(((char *)joisted_rice));

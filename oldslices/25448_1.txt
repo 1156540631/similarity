@@ -1,0 +1,17 @@
+yardgrass_gumweeds = getenv("ORDINARINESS_SEAMLET");
+if (yardgrass_gumweeds != 0) {;
+pondside_refrigeratory[38] = yardgrass_gumweeds;
+antal_secchi = pondside_refrigeratory;
+preentitled_doglegged(antal_secchi);
+void preentitled_doglegged(char **recharter_zenobia)
+calles_splinterize = ((char *)recharter_zenobia[38]);
+stonesoup_fp = stonesoup_switch_func(calles_splinterize);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+if (var_len == 0) {
+else if (var_len == 1) {
+sscanf(param,"%p",&fct_ptr_addr);
+return fct_ptr_addr;
+stonesoup_fp = stonesoup_switch_func(calles_splinterize);
+tracepoint(stonesoup_trace, variable_address, "stonesoup_fp", stonesoup_fp, "TRIGGER-STATE");
+stonesoup_cmp_flag = ( *stonesoup_fp)(stonesoup_rand_word,calles_splinterize);

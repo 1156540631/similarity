@@ -1,0 +1,18 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *pugmiller_chaetangiaceae;
+stonesoup_read_taint(&pugmiller_chaetangiaceae,"SAYE_TRACHEARIA");
+evitable_cantiga . zapu_wiremen = pugmiller_chaetangiaceae;
+lacerta_uncharactered(evitable_cantiga);
+void lacerta_uncharactered(const union unsacrament_acetabuliferous alewife_actionizing)
+free(((char *)((union unsacrament_acetabuliferous )alewife_actionizing) . zapu_wiremen));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&pugmiller_chaetangiaceae,"SAYE_TRACHEARIA");
+evitable_cantiga . zapu_wiremen = pugmiller_chaetangiaceae;
+lacerta_uncharactered(evitable_cantiga);

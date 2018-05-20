@@ -1,0 +1,28 @@
+int serial = ogg_page_serialno(&page);
+nsOggCodecState* codecState = 0;
+if (ogg_page_bos(&page))
+NS_ASSERTION(!readAllBOS, "We shouldn't encounter another BOS page");
+void (*funcPtr) (nsOggCodecState *) = badSource;
+funcPtr(codecState)
+void badSource(nsOggCodecState * codecState)
+codecState = nsOggCodecState::Create(&page);
+#ifdef DEBUG
+PRBool r =
+#endif
+mCodecStates.Put(serial, codecState);
+NS_ASSERTION(r, "Failed to insert into mCodecStates");
+bitstreams.AppendElement(codecState);
+mKnownStreams.AppendElement(serial);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_VORBIS && !mVorbisState)
+mVorbisState = static_cast<nsVorbisState*>(codecState);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_THEORA && !mTheoraState)
+mTheoraState = static_cast<nsTheoraState*>(codecState);
+if (codecState && codecState->GetType() == nsOggCodecState::TYPE_SKELETON && !mSkeletonState)
+mSkeletonState = static_cast<nsSkeletonState*>(codecState);
+else
+readAllBOS = PR_TRUE;
+mCodecStates.Get(serial, &codecState);
+NS_ENSURE_TRUE(codecState, NS_ERROR_FAILURE);
+if (NS_FAILED(codecState->PageIn(&page)))
+return NS_ERROR_FAILURE;
+memcpy(&mTheoraInfo, &mTheoraState->mInfo, sizeof(mTheoraInfo));

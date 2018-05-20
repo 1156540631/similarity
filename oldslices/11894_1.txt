@@ -1,0 +1,13 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hotheadednesses_protoactinium,"RUPESTRAL_UNCUMBER");
+if (hotheadednesses_protoactinium != 0) {;
+wreckage_conceding = ((char *)hotheadednesses_protoactinium);
+stonesoup_buff_size = ((int )(strlen(wreckage_conceding)));
+memcpy(stonesoup_data->buffer, wreckage_conceding, 64);
+for (; stonesoup_i < stonesoup_buff_size; ++stonesoup_i){
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+free( stonesoup_data);
+if (hotheadednesses_protoactinium != 0)
+free(((char *)hotheadednesses_protoactinium));

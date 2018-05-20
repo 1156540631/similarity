@@ -1,0 +1,12 @@
+VAR1<char *> VAR2;
+VAR3 = (char *)malloc(100*sizeof(char));
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+FUN3(VAR2);
+void FUN3(VAR1<char *> VAR2)
+char * VAR3 = VAR2[2];
+char VAR4[50] = "";
+memcpy(VAR4, VAR3, strlen(VAR3)*sizeof(char));

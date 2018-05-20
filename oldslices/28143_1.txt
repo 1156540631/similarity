@@ -1,0 +1,13 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+data = NULL;
+data = (char *)malloc(50*sizeof(char));
+data[0] = '\0';
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+SNPRINTF(data, 100, "%s", source);

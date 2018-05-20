@@ -1,0 +1,19 @@
+rewind(VAR22);
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+*VAR24 = NULL;
+char *VAR246;
+FUN1(&VAR246,"FRITTERING_HYBRIDISED");
+VAR248 = ((char *)VAR246);
+VAR247 = (char*) malloc(64 * sizeof(char));
+memset(VAR247,0,64);
+tracepoint(VAR31, VAR249, "VAR247", VAR247, "INITIAL-STATE");
+strcpy(VAR247, VAR248);
+void FUN1(char** VAR24, char* VAR21) {
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+FUN1(&VAR246,"FRITTERING_HYBRIDISED");
+VAR248 = ((char *)VAR246);
+strcpy(VAR247, VAR248);

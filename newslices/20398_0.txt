@@ -1,0 +1,7 @@
+VAR1 = FUN1("OPENSSL_CONF");
+if (VAR1) {
+return FUN2(VAR1);
+VAR1 = FUN3();
+if (!VAR1) {
+if (FUN4(VAR2,VAR1,((void *)0)) <= 0) {
+FUN5(VAR1);

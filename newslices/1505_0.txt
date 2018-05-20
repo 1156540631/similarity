@@ -1,0 +1,5 @@
+void FUN1(wchar_t * VAR1[])
+wchar_t * VAR2 = VAR1[2];
+FUN2(VAR3, FUN3(VAR2), VAR4"%s", VAR2);
+FUN4(VAR2);
+free(VAR2);

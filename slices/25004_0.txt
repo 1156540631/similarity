@@ -1,0 +1,3 @@
+VAR1 = split(arg[i],"=",&n);
+if (strcasecmp("target",VAR1[1]) == 0) {
+VAR2 = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);

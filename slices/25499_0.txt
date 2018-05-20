@@ -1,0 +1,3 @@
+int main(int argc, char **argv) {
+while ((VAR23 = getopt(argc, argv, "VAR128:VAR9:m:o:h")) != -1) {
+switch(VAR23) {

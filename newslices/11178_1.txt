@@ -1,0 +1,4 @@
+VAR1 = (int *)malloc(10);
+memcpy(VAR1, VAR2, 10*sizeof(int));
+FUN1(VAR1[0]);
+free(VAR1);

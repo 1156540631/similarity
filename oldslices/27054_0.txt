@@ -1,0 +1,6 @@
+char buf[MAXSIZE];
+snprintf(buf, 1024, "<%s>", str);
+test("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+test("aaaaaaaaaaaaa");
+test(char *str)
+snprintf(buf, 1024, "<%s>", str);

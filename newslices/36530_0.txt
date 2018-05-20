@@ -1,0 +1,14 @@
+wchar_t VAR1[100];
+VAR2 = VAR1;
+FUN1(VAR2, '', 50-1);
+VAR2[50-1] = '\';
+FUN2(VAR2);
+void FUN2(wchar_t * VAR2)
+FUN3(VAR2);
+void FUN3(wchar_t * VAR2)
+FUN4(VAR2);
+void FUN4(wchar_t * VAR2)
+FUN5(VAR2);
+void FUN5(wchar_t * VAR2)
+wchar_t VAR3[50] = VAR4"";
+FUN6(VAR3, FUN7(VAR2), VAR4"%s", VAR2);

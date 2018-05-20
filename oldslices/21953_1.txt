@@ -1,0 +1,7 @@
+char buffer[max_buffer];
+snprintf(buffer, sizeof(buffer), "Error: %s", error_log);
+char *str ;
+uninit_memory_access_011_func_001(str);
+void uninit_memory_access_011_func_001 (const char *msg) {
+const char *error_log = msg;
+snprintf(buffer, sizeof(buffer), "Error: %s", error_log);

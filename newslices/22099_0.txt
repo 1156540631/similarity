@@ -1,0 +1,32 @@
+VAR1 FUN1(char *VAR2,VAR1 VAR3,unsigned int VAR4)
+VAR5 = FUN2(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);
+VAR2 += VAR5;
+VAR4 >>= 8;
+const char *VAR6 = ((void *)0);
+VAR7 VAR8;
+VAR6 = FUN3(VAR9,VAR10 -> VAR6);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s)",VAR6);
+char VAR11[32];
+FUN1(VAR11,sizeof(VAR11),VAR10 -> VAR4);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s / 0x%04X)",VAR11,VAR10 -> VAR4);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %s",FUN4(VAR10 -> VAR12));
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %dx%d",VAR10 -> VAR13,VAR10 -> VAR14);
+FUN5(&VAR8 . VAR15,&VAR8 . VAR16,(VAR10 -> VAR13 * VAR10 -> VAR17 . VAR15),(VAR10 -> VAR14 * VAR10 -> VAR17 . VAR16),(1024 * 1024));
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," [VAR18 %d:%d VAR19 %d:%d]",VAR10 -> VAR17 . VAR15,VAR10 -> VAR17 . VAR16,VAR8 . VAR15,VAR8 . VAR16);
+return ((void *)0);
+VAR6 = FUN3(VAR9,VAR10 -> VAR6);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s)",VAR6);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %dx%d",VAR10 -> VAR13,VAR10 -> VAR14);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," [VAR18 %d:%d VAR19 %d:%d]",VAR10 -> VAR17 . VAR15,VAR10 -> VAR17 . VAR16,VAR8 . VAR15,VAR8 . VAR16);
+return ((void *)0);
+VAR2[0] ^= '' ^ '';
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s)",VAR6);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%s / 0x%04X)",VAR11,VAR10 -> VAR4);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %s",FUN4(VAR10 -> VAR12));
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," (%d VAR20)",VAR10 -> VAR21);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %dx%d",VAR10 -> VAR13,VAR10 -> VAR14);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," [VAR18 %d:%d VAR19 %d:%d]",VAR10 -> VAR17 . VAR15,VAR10 -> VAR17 . VAR16,VAR8 . VAR15,VAR8 . VAR16);
+void FUN6(char *VAR2,int VAR3,CLASS1 *VAR10,int VAR22)
+FUN2(VAR2,VAR3,"%s: %s%s",(VAR23?VAR23 : "unknown"),VAR24,(VAR10 -> VAR25?" (VAR26)" : ""));
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2),", %dx%d",VAR10 -> VAR13,VAR10 -> VAR14);
+FUN2(VAR2 + strlen(VAR2),VAR3 - strlen(VAR2)," [VAR18 %d:%d VAR19 %d:%d]",VAR10 -> VAR17 . VAR15,VAR10 -> VAR17 . VAR16,VAR8 . VAR15,VAR8 . VAR16);

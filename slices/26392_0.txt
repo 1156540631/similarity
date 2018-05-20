@@ -1,0 +1,18 @@
+void FUN83(union STRUCT15 VAR296)
+char VAR30[1024];
+VAR297 = ((char *)VAR296 . VAR298);
+memset(VAR30, 0, 1024);
+strncpy(VAR30, VAR297, sizeof(VAR30));
+void FUN1(char** VAR24, char* VAR278, int VAR281) {
+*VAR24 = NULL;
+if ((VAR299 = shmget(VAR277, VAR281, 0666)) >= 0) {
+*VAR24 = (char*)calloc(VAR281, sizeof(char));
+*VAR24 = NULL;
+union STRUCT15 VAR300;
+int VAR294 = 91;
+char *VAR293;;
+FUN1(&VAR293,"5201",VAR294);
+VAR300 . VAR298 = VAR293;
+VAR301[ *( *VAR302)] = VAR300;
+VAR295 = VAR301[ *( *VAR302)];
+FUN82(VAR295);

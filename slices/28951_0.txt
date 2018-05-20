@@ -1,0 +1,11 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+switch(6)
+case 6:
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+break;
+default:
+break;
+char VAR40[50] = "";
+strcpy(VAR40, VAR1);

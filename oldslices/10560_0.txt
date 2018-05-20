@@ -1,0 +1,3 @@
+piffero_qualificator = getenv("UNIQUEST_NONPHILOLOGIC");
+vereeniging_milanville = ((int )(strlen(piffero_qualificator)));
+guildford_epicier = ((char *)(malloc(vereeniging_milanville + 1)));

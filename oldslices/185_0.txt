@@ -1,0 +1,11 @@
+AVI_READCHUNK_ENTER;
+p_chk->strf.auds.p_wf = malloc( __MAX( p_chk->common.i_chunk_size, sizeof( WAVEFORMATEX ) ) );
+&& p_chk->common.i_chunk_size > sizeof( WAVEFORMATEX ) )
+p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX ) )
+p_chk->common.i_chunk_size - sizeof( WAVEFORMATEX );
+p_buff + 8 + sizeof( WAVEFORMATEX ),
+if( p_chk->strf.vids.p_bih->biSize - sizeof(BITMAPINFOHEADER) > 0 )
+p_buff + 8 + sizeof(BITMAPINFOHEADER),
+p_chk->common.i_chunk_size -sizeof(BITMAPINFOHEADER) );
+p_buff + 8 + sizeof(BITMAPINFOHEADER),
+AVI_READCHUNK_EXIT( VLC_SUCCESS );

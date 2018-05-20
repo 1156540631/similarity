@@ -1,0 +1,6 @@
+pennsylvania_proteolytic = getenv("HALSER_RECRUDENCY");
+if (pennsylvania_proteolytic != 0) {;
+coursey_sarawakese = ((void *)pennsylvania_proteolytic);
+noachian_saccharone = &coursey_sarawakese;
+bluecap_sangei = ((void **)(((unsigned long )noachian_saccharone) * unhusk_gizzard * unhusk_gizzard)) + 5;
+firmisternal_ergotized(bluecap_sangei);

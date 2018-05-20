@@ -1,0 +1,6 @@
+char buf1[MAXSIZE], buf2 [MAXSIZE], * p, * q, ch;
+p = buf1;
+while ( ( ch = getc( stdin ) ) != EOF && ch != '\n' )
+* p++ = ch;
+* p++ = 0;
+free (p);

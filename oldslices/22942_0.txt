@@ -1,0 +1,6 @@
+inamovability_pictet = getenv("SEMIDIGESTED_MACHINEMEN");
+if (inamovability_pictet != 0) {;
+shipwrecks_scrawly = ((char *)inamovability_pictet);
+stonesoup_buff_size = ((int )(strlen(shipwrecks_scrawly)));
+strncpy(stonesoup_heap_buff_64, shipwrecks_scrawly, 64);
+for (; stonesoup_ss_i < stonesoup_buff_size; ++stonesoup_ss_i){

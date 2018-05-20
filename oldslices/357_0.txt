@@ -1,0 +1,9 @@
+ChildListIterator lists(this);
+for (; !lists.IsDone(); lists.Next()) {
+if (skip.Contains(lists.CurrentID())) {
+IndentBy(out, aIndent);
+kid->List(out, aIndent + 1, aFlags);
+IndentBy(out, aIndent);
+fputs(">\n", out);
+nsFrameList::Enumerator childFrames(lists.CurrentList());
+fprintf(out, "%s<\n", mozilla::layout::ChildListName(lists.CurrentID()));

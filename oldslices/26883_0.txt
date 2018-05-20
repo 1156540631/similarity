@@ -1,0 +1,3 @@
+char buf[MAXNAME + 1];
+buildfname(pw->pw_gecos, pw->pw_name, buf);
+if (strchr(buf, ' ') != NULL && !strcasecmp(buf, name))

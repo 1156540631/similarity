@@ -1,0 +1,4 @@
+struct CLASS1 VAR4;
+FUN4(VAR5, &VAR4);
+FUN4(unsigned char *VAR7, struct CLASS1 *VAR4)
+memset(VAR4, 0x00, sizeof(struct CLASS1));

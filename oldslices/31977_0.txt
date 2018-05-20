@@ -1,0 +1,18 @@
+typedef struct _CWE127_Buffer_Underread__malloc_wchar_t_cpy_67_structType
+wchar_t * structFirst;
+} CWE127_Buffer_Underread__malloc_wchar_t_cpy_67_structType;
+wchar_t * data;
+CWE127_Buffer_Underread__malloc_wchar_t_cpy_67_structType myStruct;
+data = NULL;
+wchar_t * dataBuffer = (wchar_t *)malloc(100*sizeof(wchar_t));
+wmemset(dataBuffer, L'A', 100-1);
+dataBuffer[100-1] = L'\0';
+data = dataBuffer;
+myStruct.structFirst = data;
+CWE127_Buffer_Underread__malloc_wchar_t_cpy_67b_goodG2BSink(myStruct);
+void CWE127_Buffer_Underread__malloc_wchar_t_cpy_67b_goodG2BSink(CWE127_Buffer_Underread__malloc_wchar_t_cpy_67_structType myStruct)
+wchar_t * data = myStruct.structFirst;
+wchar_t dest[100*2];
+wmemset(dest, L'C', 100*2-1);
+dest[100*2-1] = L'\0';
+wcscpy(dest, data);

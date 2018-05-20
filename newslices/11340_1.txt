@@ -1,0 +1,11 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"EPHEMEROPTERA_JUSTEN");
+if (VAR5 != 0) {;
+VAR6 = &VAR5;
+VAR7 = ((char *)( *VAR6));
+FUN2(VAR8, VAR9, "STONESOUP_TAINT_SOURCE", strlen(VAR7)+1, VAR7, "VAR10-VAR11");
+strncpy(VAR12.VAR13, VAR7, strlen(VAR7) + 1);
+if ( *VAR6 != 0)
+free(((char *)( *VAR6)));

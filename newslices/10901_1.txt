@@ -1,0 +1,5 @@
+VAR1= (char*) malloc(sizeof(char));
+FUN1();
+free (VAR1);
+FUN1();
+free(VAR1);

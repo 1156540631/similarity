@@ -1,0 +1,11 @@
+vector<twoIntsStruct *> dataVector;
+data = (twoIntsStruct *)malloc(100*sizeof(twoIntsStruct));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<twoIntsStruct *> dataVector)
+twoIntsStruct * data = dataVector[2];
+memcpy(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

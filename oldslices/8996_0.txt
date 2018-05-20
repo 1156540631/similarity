@@ -1,0 +1,7 @@
+data = (void *)WIDE_STRING;
+dataArray[2] = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_66b_goodB2GSink(dataArray);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_66b_goodB2GSink(void * dataArray[])
+void * data = dataArray[2];
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));

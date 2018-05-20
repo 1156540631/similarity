@@ -1,0 +1,24 @@
+size_t strlcpy(char *, const char *, size_t);
+char VAR371[VAR372];
+strcpy(VAR371, "LL.MIT.EDU");
+VAR373 = strlen(VAR371);
+VAR360->VAR369.VAR374 = (char *) strdup(VAR371);
+strcpy(VAR371,"BLAH.MIT.EDU");
+VAR373 = strlen(VAR371);
+(*VAR377)->VAR378 = (char *) strdup(VAR371);
+VAR373 = FUN71(VAR154, VAR154 + VAR188, VAR138, VAR371,
+(*VAR377)->VAR379.VAR380 = (char *) strdup(VAR371);
+strcpy(VAR371,"BLAH.MIT.EDU");
+VAR373 = strlen(VAR371);
+(*VAR377)->VAR378 = (char *) strdup(VAR371);
+VAR373 = FUN71(VAR154, VAR154 + VAR188, VAR138 + 2, VAR371,
+VAR140 = strlen(VAR371) + 1;
+(void) strlcpy((*VAR377)->VAR379.VAR381->VAR382, VAR371, VAR140);
+VAR373 = FUN71(VAR154, VAR154 + VAR188, VAR138 + 6, VAR371,
+VAR140 = strlen(VAR371) + 1;
+(void) strlcpy((*VAR377)->VAR379.VAR383->VAR384, VAR371, VAR140);
+strcpy(VAR371,"BLAH.MIT.EDU");
+VAR373 = strlen(VAR371);
+(*VAR377)->VAR378 = (char *) strdup(VAR371);
+VAR373 = FUN71(VAR154, VAR154 + VAR188, VAR138 + 2, VAR371,
+VAR140 = strlen(VAR371) + 1;

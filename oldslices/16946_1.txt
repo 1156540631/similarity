@@ -1,0 +1,3 @@
+fscanf(stdin, "%d", &data);
+if (data < 10)
+buffer[data] = 1;

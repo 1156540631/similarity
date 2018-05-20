@@ -1,0 +1,7 @@
+pipe_timer_cb(gpointer data)
+DWORD avail = 0;
+handle = (HANDLE) _get_osfhandle (pipe_input->source);
+result = PeekNamedPipe(handle, NULL, 0, NULL, &avail, NULL);
+if (!pipe_input->input_cb(pipe_input->source, pipe_input->user_data)) {
+handle = (HANDLE) _get_osfhandle (pipe_input->source);
+result = PeekNamedPipe(handle, NULL, 0, NULL, &avail, NULL);

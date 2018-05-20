@@ -1,0 +1,9 @@
+char *winklehole_musettes = 0;
+pointers_petrologically(&winklehole_musettes);
+superlocally_gumboils = &winklehole_musettes;
+lumpishness_anorthoscope = superlocally_gumboils + 5;
+tacitus_knitch[37] = lumpishness_anorthoscope;
+jumprock_backet = ((char *)( *(tacitus_knitch[37] - 5)));
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(jumprock_backet)+1, jumprock_backet, "TRIGGER-STATE");
+strncpy(stonesoup_data, jumprock_backet, strlen(jumprock_backet) + 1);

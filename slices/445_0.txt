@@ -1,0 +1,6 @@
+CLASS1::FUN1(CLASS4* VAR2, int32_t VAR4, uint32_t VAR5) const
+FUN2(VAR2, VAR4);
+FUN7(VAR2);
+fprintf(VAR2, " [parent=%VAR1]", VAR6);
+fprintf(VAR2, " [view=%VAR1]", static_cast<void*>(FUN3()));
+fprintf(VAR2, " FUN2=%VAR1", static_cast<void*>(FUN4()));

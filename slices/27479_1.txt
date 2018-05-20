@@ -1,0 +1,7 @@
+#define VAR278 "AAAAAAAAAA"
+VAR154 = NULL;
+VAR154 = (char *)malloc(10*sizeof(char));
+FUN1(VAR154);
+void FUN1(char * VAR154)
+char VAR279[10+1] = VAR278;
+strcpy(VAR154, VAR279);

@@ -1,0 +1,4 @@
+if( FUN1( VAR1, &VAR2->VAR5 ) < 0 )
+static int FUN1( CLASS2 *VAR1, char **VAR13 );
+if( FUN1( VAR1, &VAR2->VAR5 ) < 0 )
+VAR2->VAR6 = strlen( VAR2->VAR5 );

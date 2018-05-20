@@ -1,0 +1,2 @@
+guint n;
+a = sscanf(if_info->name,AIRPCAP_DEVICE_NUMBER_EXTRACT_STRING,&n);

@@ -1,0 +1,7 @@
+guint16  tmp;
+bytes_read = file_read(&tmp, 2, wth->fh);
+payload_length = pletoh16(&tmp);
+buffer = (guint8 *) g_malloc(5 * 4 + payload_length);
+bytes_read = file_read(buffer, 5 * 4 + payload_length, wth->fh);
+tag_length = (guint32)strlen(buffer + 5 * 4 + 1) + 1;
+log_length = (guint32)strlen(buffer + 5 * 4 + 1 + tag_length) + 1;

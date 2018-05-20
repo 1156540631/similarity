@@ -1,0 +1,6 @@
+VAR1[ VAR2 - VAR3->VAR2 ] = 0;
+VAR4 = strchr( VAR1, '@' );
+VAR4 = strchr( VAR1, ':' );
+VAR4 = strchr( VAR1, ';' );
+VAR5 = strdup( VAR1 );
+free( VAR1 );

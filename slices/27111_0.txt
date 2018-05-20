@@ -1,0 +1,5 @@
+int main(int argc, char **argv)
+char *VAR39;
+VAR39 = (char *)malloc(VAR127);
+if (strlen(argv[1]) < VAR127)
+strcpy(VAR39, argv[1]);

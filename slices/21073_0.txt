@@ -1,0 +1,7 @@
+VAR35 = getenv("VAR36");
+if (VAR35) {
+return FUNC12(VAR35);
+VAR35 = FUNC13();
+if (!VAR35) {
+if (FUNC14(VAR37,VAR35,((void *)0)) <= 0) {
+FUNC15(VAR35);

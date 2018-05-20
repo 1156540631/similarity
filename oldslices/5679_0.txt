@@ -1,0 +1,3 @@
+hex_digit[2] = '\0';
+if (! isxdigit(hex_digit[0]) || ! isxdigit(hex_digit[1]))
+val = (guint8) strtoul((char *)hex_digit, NULL, 16);

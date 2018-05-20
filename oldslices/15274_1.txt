@@ -1,0 +1,14 @@
+twoIntsStruct * data;
+map<int, twoIntsStruct *> dataMap;
+twoIntsStruct dataBadBuffer[50];
+twoIntsStruct dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, twoIntsStruct *> dataMap)
+twoIntsStruct * data = dataMap[2];
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memcpy(data, source, 100*sizeof(twoIntsStruct));

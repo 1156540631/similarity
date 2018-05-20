@@ -1,0 +1,6 @@
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

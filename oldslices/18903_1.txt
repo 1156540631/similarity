@@ -1,0 +1,4 @@
+for(i = 0; i < 1; i++)
+data = new char[10];
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

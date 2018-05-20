@@ -1,0 +1,5 @@
+void FUN1(int VAR1)
+VAR2 = (int*)malloc(VAR1 * sizeof(int));
+VAR2[VAR3] = 0;
+FUN2(VAR2[0]);
+free(VAR2);

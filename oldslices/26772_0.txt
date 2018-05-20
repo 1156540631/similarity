@@ -1,0 +1,13 @@
+char buf[MAXLINE];
+u_char obuf[MAXLINE];
+obp = obuf;
+if (mime_fromqp((u_char *) buf, &obp, 0, MAXLINE) == 0) {
+obp = obuf;
+printf ("obp-obuf=%u\n", obp-obuf);
+printf ("buf-obuf=%u\n", buf-(char *)obuf);
+while (fgets(buf, sizeof buf, e->e_dfp) != NULL)
+mime_fromqp(infile, outfile, state, maxlen)
+if (mime_fromqp((u_char *) buf, &obp, 0, MAXLINE) == 0) {
+printf ("obp-obuf=%u\n", obp-obuf);
+printf ("buf-obuf=%u\n", buf-(char *)obuf);
+while (fgets(buf, sizeof buf, e->e_dfp) != NULL)

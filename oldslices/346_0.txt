@@ -1,0 +1,3 @@
+for (cache = (snmp_cache_t *)cupsArrayFirst(Devices);
+cache = (snmp_cache_t *)cupsArrayNext(Devices))
+free(cache->make_and_model);

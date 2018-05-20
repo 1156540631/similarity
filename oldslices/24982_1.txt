@@ -1,0 +1,8 @@
+airify_vented = getenv("CONGLOBULATE_ASNIFFLE");
+if (airify_vented != 0) {;
+jacens_eberthella = ((char *)airify_vented);
+strcpy(stonesoup_data.buffer, jacens_eberthella);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data.buffer);
+for (stonesoup_i = 0; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data.buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data.buffer[stonesoup_i]);

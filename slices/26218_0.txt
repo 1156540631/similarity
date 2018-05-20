@@ -1,0 +1,5 @@
+VAR326 = getenv("GUR_MISERABILIA");
+if (VAR326 != 0) {;
+VAR316[10] = VAR326;
+VAR315 = FUN86(VAR316);
+char **FUN86(char **VAR327);

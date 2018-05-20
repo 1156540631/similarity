@@ -1,0 +1,13 @@
+char * data;
+structType myStruct;
+data = NULL;
+data = new char[100];
+data[0] = '\0';
+myStruct.structFirst = data;
+goodG2BSink(myStruct);
+void goodG2BSink(structType myStruct)
+char * data = myStruct.structFirst;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);

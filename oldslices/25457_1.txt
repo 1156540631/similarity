@@ -1,0 +1,5 @@
+char **disbrain_unhandled = 0;
+redskins_jarnut = ((char *)disbrain_unhandled[39]);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(redskins_jarnut)+1, redskins_jarnut, "TRIGGER-STATE");
+strncpy(stonesoup_data, redskins_jarnut, strlen(redskins_jarnut) + 1);

@@ -1,0 +1,2 @@
+temp = "HEADER JUNK:";
+len += strlen(temp);

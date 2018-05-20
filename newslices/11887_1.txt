@@ -1,0 +1,3 @@
+VAR1->VAR2->VAR3 = (int *) malloc(5*sizeof(int));
+free(VAR1->VAR2->VAR3);
+free(VAR1->VAR2);

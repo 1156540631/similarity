@@ -1,0 +1,7 @@
+struct salten_homosassa preciosities_demophobe = {0};
+va_list discoloring_enlisted;
+__builtin_va_start(discoloring_enlisted,hesychast_infantive);
+preciosities_demophobe = (va_arg(discoloring_enlisted,struct salten_homosassa ));
+TORBAY_ABORTS(preciosities_demophobe);
+void floorboards_yugoslav(struct salten_homosassa bonesteel_overswarm)
+free(((char *)bonesteel_overswarm . lusterlessness_lithophile));

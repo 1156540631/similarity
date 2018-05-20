@@ -1,0 +1,14 @@
+char * VAR1;
+VAR2<char *> VAR3;
+char * VAR4 = (char *)FUN1(50*sizeof(char));
+char * VAR5 = (char *)FUN1(100*sizeof(char));
+* VAR6 VAR7 VAR8 VAR9 VAR10 VAR11 using VAR12 "large" VAR13 VAR6. */
+VAR1 = VAR4;
+VAR1[0] = '\';
+VAR3.FUN2(VAR3.FUN3(), 1, VAR1);
+VAR3.FUN2(VAR3.FUN3(), 1, VAR1);
+VAR3.FUN2(VAR3.FUN3(), 1, VAR1);
+void FUN4(VAR2<char *> VAR3)
+char * VAR1 = VAR3[2];
+VAR13[100-1] = '\';
+strncpy(VAR1, VAR13, 100-1);

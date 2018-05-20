@@ -1,0 +1,4 @@
+void unweelness_monacha(char *const termly_notasulga)
+ferromagnetism_monographer(termly_notasulga);
+void ferromagnetism_monographer(char *billowing_takyr)
+free(((char *)((char *)billowing_takyr)));

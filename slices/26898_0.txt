@@ -1,0 +1,6 @@
+int main(int argc, char **argv){
+VAR189 = fopen (argv[1], "VAR360");
+assert (VAR189 != NULL);
+VAR83->VAR322 = VAR189;
+FUN134(VAR530, VAR83);
+fclose(VAR189);

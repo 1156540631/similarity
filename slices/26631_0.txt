@@ -1,0 +1,15 @@
+VAR182 = getenv("COALFIELD_COMIQUE");
+VAR183 = ((int )(strlen(VAR182)));
+VAR179 = ((char *)(malloc(VAR183 + 1)));
+memset(VAR179,0,VAR183 + 1);
+memcpy(VAR179,VAR182,VAR183);
+VAR178 = FUN28(VAR179);
+VAR180[63] = '\0';
+tracepoint(VAR71, VAR72, "VAR180", VAR180, "INITIAL-STATE");
+strncpy(VAR180, VAR185, 64);
+char *FUN28(char *VAR184)
+return VAR184;
+VAR178 = FUN28(VAR179);
+VAR185 = ((char *)VAR178);
+VAR70 = ((int )(strlen(VAR185)));
+strncpy(VAR180, VAR185, 64);

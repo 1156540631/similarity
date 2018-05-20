@@ -1,0 +1,34 @@
+node *n = (node*) calloc( 1, sizeof(node) );
+return n;
+char *sep = strchr( folder, '/' );
+*sep = '\0';
+node *current = root->child;
+if( !strcmp( current->name, folder ) )
+return findOrCreateParentNode( current, sep );
+current = current->next;
+return findOrCreateParentNode( current, sep );
+node *ret = new_node( folder );
+node *n = (node*) calloc( 1, sizeof(node) );
+return n;
+node *ret = new_node( folder );
+root->child = ret;
+return findOrCreateParentNode( current, sep );
+node *ret = new_node( folder );
+ret = findOrCreateParentNode( ret, sep );
+return ret;
+ret = findOrCreateParentNode( ret, sep );
+static node* findOrCreateParentNode( node *root, const char *fullpath )
+char *path = strdup( fullpath );
+folder = path;
+assert( root );
+char *sep = strchr( folder, '/' );
+return root;
+node *ret = new_node( folder );
+ret = findOrCreateParentNode( ret, sep );
+inline static node* new_node( char *name )
+n->name = convert_xml_special_chars( name );
+return n;
+node *ret = new_node( folder );
+ret = findOrCreateParentNode( ret, sep );
+static node* findOrCreateParentNode( node *root, const char *fullpath )
+assert( root );

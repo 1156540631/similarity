@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char **VAR2)
+FUN2 ((VAR3 = FUN3(VAR1, VAR2, "VAR4:")) != VAR5) {
+switch (VAR3) {
+fprintf(VAR6, "%VAR12: %VAR12: VAR7 VAR8 VAR9\n",VAR2[0], VAR10);
+fprintf(VAR6,"VAR11: %VAR12 [-VAR12 VAR13] [-VAR14] [-VAR15]\n",VAR2[0]);

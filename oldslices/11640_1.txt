@@ -1,0 +1,16 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&fittipaldi_arcaded,"MIMICKER_CUNNINGHAMIA");
+if (fittipaldi_arcaded != 0) {;
+costocentral_salvoes = ((void *)fittipaldi_arcaded);
+begift_hydatogenic = gnomonic_sandbin(costocentral_salvoes);
+void *gnomonic_sandbin(void *tactions_assagaiing)
+return tactions_assagaiing;
+begift_hydatogenic = gnomonic_sandbin(costocentral_salvoes);
+oilskins_pinacle = ((char *)((char *)begift_hydatogenic));
+stonesoup_buff_size = ((int )(strlen(oilskins_pinacle)));
+strncpy(stonesoup_heap_buff_64, oilskins_pinacle, 64);
+for (; stonesoup_ss_i < stonesoup_buff_size; ++stonesoup_ss_i){
+if (((char *)begift_hydatogenic) != 0)
+free(((char *)((char *)begift_hydatogenic)));

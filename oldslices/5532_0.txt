@@ -1,0 +1,7 @@
+void *camorrista_bethuel = 0;
+tailorless_quartette(&camorrista_bethuel);
+norms_chiffre[5] = camorrista_bethuel;
+sematography_contourne = 5;
+stomatopoda_untitled = &sematography_contourne;
+gaucherie_commodiously =  *(norms_chiffre +  *stomatopoda_untitled);
+free(((char *)((char *)gaucherie_commodiously)));

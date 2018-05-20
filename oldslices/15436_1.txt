@@ -1,0 +1,13 @@
+char * data;
+list<char *> dataList;
+data = new char[100];
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<char *> dataList)
+char * data = dataList.back();
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

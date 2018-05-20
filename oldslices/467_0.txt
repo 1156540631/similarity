@@ -1,0 +1,40 @@
+path->data = NULL;
+path->size = 0;
+if (!strncmp(s1->data, s2->data, s1->size - 1)) {
+err = v9fs_co_open(pdu, f, f->open_flags);
+err = v9fs_co_opendir(pdu, f);
+for (f = s->fid_list; f; f = f->next) {
+BUG_ON(f->clunked);
+f->ref++;
+err = v9fs_reopen_fid(pdu, f);
+return NULL;
+f->flags |= FID_REFERENCED;
+return f;
+return NULL;
+err = v9fs_co_rename(pdu, &fidp->path, &new_path);
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+v9fs_fix_path(&tfidp->path, &new_path, strlen(fidp->path.data));
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+fidp = get_fid(pdu, fid);
+err = v9fs_complete_rename(pdu, fidp, newdirfid, &name);
+V9fsPath oldpath, newpath;
+v9fs_path_init(&oldpath);
+v9fs_co_name_to_path(pdu, olddir, old_name->data, &oldpath);
+if (v9fs_path_is_ancestor(&oldpath, &tfidp->path)) {
+v9fs_fix_path(&tfidp->path, &newpath, strlen(oldpath.data));
+if (v9fs_path_is_ancestor(&oldpath, &tfidp->path)) {
+fidp = get_fid(pdu, fid);
+err = v9fs_complete_rename(pdu, fidp, -1, &v9stat.name);
+static int v9fs_complete_rename(V9fsPDU *pdu, V9fsFidState *fidp,
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+static int v9fs_path_is_ancestor(V9fsPath *s1, V9fsPath *s2)
+if (!strncmp(s1->data, s2->data, s1->size - 1)) {
+if (v9fs_path_is_ancestor(&fidp->path, &tfidp->path)) {
+void v9fs_path_init(V9fsPath *path)
+v9fs_path_init(&oldpath);
+if (v9fs_path_is_ancestor(&oldpath, &tfidp->path)) {
+static int v9fs_reopen_fid(V9fsPDU *pdu, V9fsFidState *f)
+err = v9fs_reopen_fid(pdu, f);
+return f;
+fidp = get_fid(pdu, fid);
+err = v9fs_complete_rename(pdu, fidp, newdirfid, &name);

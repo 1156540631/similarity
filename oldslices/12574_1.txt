@@ -1,0 +1,9 @@
+main(int argc, char **argv)
+userstr = argv[1];
+if(strlen(userstr) <= MAXSIZE)
+test(userstr);
+test(char *str)
+buf = malloc(MAXSIZE);
+snprintf(buf, 1024, "<%s>", str);
+printf("result: %s\n", buf);
+free(buf);

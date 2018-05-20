@@ -1,0 +1,8 @@
+void (*funcPtr) (char *) = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_65b_goodG2BSink;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[50-1] = '\0';
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memcpy_65b_goodG2BSink(char * data)
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

@@ -1,0 +1,39 @@
+CLASS1 *VAR1 = ((void *)0);
+VAR2 = VAR3;
+if (((VAR4?FUN1(VAR2) : FUN2(VAR2))) && (VAR2 -> VAR5) == VAR5) {
+VAR2 = VAR2 -> VAR6;
+if (((VAR4?FUN1(VAR2) : FUN2(VAR2))) && (VAR2 -> VAR5) == VAR5) {
+VAR1 = VAR2;
+return VAR1;
+return FUN3(VAR5,1);
+return FUN3(VAR5,0);
+return "none";
+VAR7 = FUN4(VAR5);
+return VAR7 -> VAR8;
+VAR7 = FUN5(VAR5);
+return VAR7 -> VAR8;
+return "unknown_codec";
+VAR9 = FUN6(VAR10 -> VAR9);
+VAR11 = FUN7(VAR10 -> VAR12);
+FUN8(VAR13,VAR14,"%s: %s%s",(VAR9?VAR9 : "unknown"),VAR11,(VAR10 -> VAR15?" (VAR16)" : ""));
+int FUN1(const CLASS1 *VAR7)
+if (((VAR4?FUN1(VAR2) : FUN2(VAR2))) && (VAR2 -> VAR5) == VAR5) {
+return VAR2;
+return FUN3(VAR5,0);
+VAR7 = FUN4(VAR5);
+return VAR7 -> VAR8;
+VAR11 = FUN7(VAR10 -> VAR12);
+FUN8(VAR13,VAR14,"%s: %s%s",(VAR9?VAR9 : "unknown"),VAR11,(VAR10 -> VAR15?" (VAR16)" : ""));
+const char *FUN7(enum VAR17 VAR5)
+VAR18 = FUN9(VAR5);
+return VAR18 -> VAR8;
+VAR11 = FUN7(VAR10 -> VAR12);
+FUN8(VAR13,VAR14,"%s: %s%s",(VAR9?VAR9 : "unknown"),VAR11,(VAR10 -> VAR15?" (VAR16)" : ""));
+int FUN2(const CLASS1 *VAR7)
+if (((VAR4?FUN1(VAR2) : FUN2(VAR2))) && (VAR2 -> VAR5) == VAR5) {
+return VAR2;
+return FUN3(VAR5,0);
+VAR7 = FUN4(VAR5);
+return VAR7 -> VAR8;
+VAR11 = FUN7(VAR10 -> VAR12);
+FUN8(VAR13,VAR14,"%s: %s%s",(VAR9?VAR9 : "unknown"),VAR11,(VAR10 -> VAR15?" (VAR16)" : ""));

@@ -1,0 +1,17 @@
+VAR1 = FUN1("UNDEWILY_HINTED");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = VAR1;
+VAR4[5] = VAR2;
+VAR5 =  *(VAR4 +  *VAR6);
+VAR7 = ((char *)VAR5 . VAR3);
+strcpy(VAR8,VAR7);
+FUN2(VAR9, VAR10, "VAR8", VAR8, "VAR11-VAR12");
+VAR8[VAR13] = FUN3(VAR8[VAR13]);
+int FUN3(int VAR14) {
+if (VAR14 >= 97 && VAR14 <= 122) {
+return VAR14 - 32;
+return VAR14;
+VAR8[VAR13] = FUN3(VAR8[VAR13]);
+FUN2(VAR9, VAR10, "VAR8", VAR8, "VAR15-VAR12");
+FUN4("%s\n",VAR8);
+void FUN4(char * VAR16, ...) {

@@ -1,0 +1,3 @@
+CLASS1* VAR1= calloc(10,sizeof(CLASS1));
+VAR1[VAR2].VAR3[VAR2]='';
+free(VAR1);

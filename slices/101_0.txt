@@ -1,0 +1,4 @@
+CLASS1 VAR2;
+FUN2( VAR2, VAR3 );
+int VAR5 = vasprintf( &VAR4, VAR3, VAR2 );
+FUN1( VAR2 );

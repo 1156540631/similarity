@@ -1,0 +1,4 @@
+nullptr, nullptr, nullptr);
+png_structp pngread = png_create_read_struct(PNG_LIBPNG_VER_STRING,
+png_infop pnginfo = png_create_info_struct(pngread);
+if (setjmp(png_jmpbuf(pngread))) {

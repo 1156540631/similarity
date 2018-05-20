@@ -1,0 +1,18 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&lectionary_metallist,"PHOTOETCHING_INQUILINISM");
+if (lectionary_metallist != 0) {;
+carnified_muddlement = lectionary_metallist;
+genetyllis_procure = ((char *)carnified_muddlement);
+stonesoup_fp = stonesoup_switch_func(genetyllis_procure);
+if (carnified_muddlement != 0)
+free(((char *)carnified_muddlement));
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);
+return fct_ptr_addr;
+stonesoup_fp = stonesoup_switch_func(genetyllis_procure);
+tracepoint(stonesoup_trace, variable_address, "stonesoup_fp", stonesoup_fp, "TRIGGER-STATE");
+stonesoup_cmp_flag = ( *stonesoup_fp)(stonesoup_rand_word,genetyllis_procure);
+if (stonesoup_cmp_flag == 0)

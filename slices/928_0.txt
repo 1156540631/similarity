@@ -1,0 +1,8 @@
+VAR2[50-1] = VAR3'\0';
+VAR7 = (void *)VAR2;
+return VAR7;
+VAR7 = FUN1(VAR7);
+CLASS1 VAR1 = wcslen((CLASS4 *)VAR7);
+void * VAR25 = (void *)calloc(VAR1+1, sizeof(CLASS4));
+memcpy(VAR25, VAR7, (VAR1+1)*sizeof(CLASS4));
+free(VAR25);

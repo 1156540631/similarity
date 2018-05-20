@@ -1,0 +1,8 @@
+invalid_memory_access_017_doubleptr_gbl=(char*) malloc(10*sizeof(char));
+strcpy(invalid_memory_access_017_doubleptr_gbl,"TEST");
+char s[10] ;
+invalid_memory_access_017_func_002();
+if(invalid_memory_access_017_func_001(flag) == 0)
+invalid_memory_access_017_func_004();
+printf("invalid gbl= %s \n",invalid_memory_access_017_doubleptr_gbl);
+strcpy(s,invalid_memory_access_017_doubleptr_gbl);

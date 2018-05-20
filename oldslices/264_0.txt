@@ -1,0 +1,5 @@
+aOldParent, aNewParent);
+nsIFrame* aNewParent)
+ReparentFrame(e.get(), aOldParent, aNewParent);
+ReparentFrame(nsIFrame* aFrame, nsIFrame* aOldParent, nsIFrame* aNewParent)
+aFrame->SetParent(aNewParent);

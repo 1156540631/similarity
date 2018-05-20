@@ -1,0 +1,10 @@
+void * VAR1;
+VAR1 = VAR2;
+char * VAR3 = (char *)malloc(50*sizeof(char));
+memset(VAR3, '', 50-1);
+VAR3[50-1] = '\';
+VAR1 = (void *)VAR3;
+VAR4 = VAR1;
+FUN1();
+void * VAR1 = VAR4;
+VAR5 VAR6 = strlen((char *)VAR1);

@@ -1,0 +1,23 @@
+unsigned char *ssl_add_clienthello_tlsext(SSL *s, unsigned char *buf,
+unsigned char *ret = buf;
+ret += 2;
+long lenmax;
+strlen(s->tlsext_hostname)) > (unsigned long)lenmax)
+s2n(TLSEXT_TYPE_server_name, ret);
+s2n(size_str + 5, ret);
+s2n(size_str + 3, ret);
+*(ret++) = (unsigned char)TLSEXT_NAMETYPE_host_name;
+s2n(size_str, ret);
+memcpy(ret, s->tlsext_hostname, size_str);
+ret += size_str;
+int el;
+if (!ssl_add_clienthello_renegotiate_ext(s, 0, &el, 0)) {
+s2n(TLSEXT_TYPE_renegotiate, ret);
+s2n(el, ret);
+if (!ssl_add_clienthello_renegotiate_ext(s, ret, &el, el)) {
+ret += el;
+int login_len = strlen(s->srp_ctx.login);
+s2n(TLSEXT_TYPE_srp, ret);
+s2n(login_len + 1, ret);
+(*ret++) = (unsigned char)login_len;
+memcpy(ret, s->srp_ctx.login, login_len);

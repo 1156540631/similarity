@@ -1,0 +1,5 @@
+VAR156 = getenv("VAR157");
+if (VAR156 != 0) {;
+VAR149 . VAR158 = ((char *)VAR156);
+VAR148 = FUNC29(VAR149);
+struct CLASS1 FUNC29(struct CLASS1 VAR159);

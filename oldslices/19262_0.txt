@@ -1,0 +1,11 @@
+wchar_t * data;
+structType myStruct;
+data = NULL;
+data = new wchar_t[10+1];
+myStruct.structFirst = data;
+goodG2BSink(myStruct);
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);
+void goodG2BSink(structType myStruct)
+wchar_t * data = myStruct.structFirst;
+wcscpy(data, source);

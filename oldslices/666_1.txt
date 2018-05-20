@@ -1,0 +1,12 @@
+char **sbuffer,
+char **buffer,
+size_t *currlen,
+size_t *maxlen,
+assert(*sbuffer != NULL || buffer != NULL);
+*maxlen = 1024;
+*buffer = OPENSSL_malloc(*maxlen);
+assert(*sbuffer != NULL);
+*sbuffer = NULL;
+*maxlen += 1024;
+*buffer = OPENSSL_realloc(*buffer, *maxlen);
+memcpy(*buffer, *sbuffer, *currlen);

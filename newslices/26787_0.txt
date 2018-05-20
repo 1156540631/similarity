@@ -1,0 +1,2 @@
+VAR1 = time(VAR2);
+printf("VAR3 VAR4 = %d\n", VAR1);

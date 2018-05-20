@@ -1,0 +1,4 @@
+value_length = asn1_get_length(&buffer, bufend);
+integer = asn1_get_integer(&buffer, bufend, value_length);
+int length);
+value_length, integer);

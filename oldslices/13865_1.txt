@@ -1,0 +1,10 @@
+static int Read( stream_t *s, void *p_read, unsigned int i_read )
+stream_sys_t *p_sys = s->p_sys;
+if( !p_read )
+return 0;
+if( Fill( s ) )
+return -1;
+int i_len = __MIN( i_read, p_sys->i_len - p_sys->i_pos );
+int * datacopy = i_len;
+int * i_len = datacopy
+memcpy( p_read, p_sys->psz_xspf + p_sys->i_pos, i_len );

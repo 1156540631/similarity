@@ -1,0 +1,6 @@
+void FUN1(void * VAR3)
+CLASS1 * * VAR4 = (CLASS1 * *)VAR3;
+CLASS1 * VAR1 = (*VAR4);
+wcsncpy(VAR2, VAR1, wcslen(VAR1));
+FUN2(VAR1);
+free(VAR1);

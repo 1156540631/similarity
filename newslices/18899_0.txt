@@ -1,0 +1,8 @@
+switch(5)
+FUN1("VAR1, VAR2 VAR3");
+break;
+default:
+char VAR4[10+1] = VAR5;
+VAR6 = new char[10+1];
+break;
+memcpy(VAR6, VAR4, (strlen(VAR4) + 1) * sizeof(char));

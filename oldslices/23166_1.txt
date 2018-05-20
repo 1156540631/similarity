@@ -1,0 +1,11 @@
+void pyretic_gunmen(int borocarbide_lituite,char **monomya_graving)
+pyretic_gunmen(borocarbide_lituite,monomya_graving);
+exchanger_autophytography = ((char *)monomya_graving[7]);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+memset(stonesoup_data->buffer,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, exchanger_autophytography);
+void stonesoup_handle_taint(char *attemperator_goodly)
+enviroment_peripheroceptor[7] = attemperator_goodly;
+dogfishes_panspermatist = enviroment_peripheroceptor;
+pyretic_gunmen(topotaxis_limmu,dogfishes_panspermatist);

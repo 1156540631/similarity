@@ -1,0 +1,14 @@
+void ff_parse_key_value(const char *str, ff_parse_key_val_cb callback_get_buf,
+const char *ptr = str;
+while (*ptr && (isspace(*ptr) || *ptr == ','))
+ptr++;
+if (!(ptr = strchr(key, '=')))
+while (*ptr && (isspace(*ptr) || *ptr == ','))
+ptr++;
+while (*ptr && (isspace(*ptr) || *ptr == ','))
+ptr++;
+ptr += 2;
+ptr++;
+ptr++;
+for (; *ptr && !(isspace(*ptr) || *ptr == ','); ptr++)
+while (*ptr && (isspace(*ptr) || *ptr == ','))

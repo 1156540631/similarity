@@ -1,0 +1,2 @@
+FUN79(VAR375, VAR346);
+printf("VAR375 = %d\VAR7", VAR375);

@@ -1,0 +1,12 @@
+VAR1 VAR2 = 0;
+VAR3 VAR4;
+FUN1(VAR4,VAR5);
+VAR2 = (FUN2(VAR4,VAR1 ));
+FUN3(VAR2);
+void FUN4(VAR1 VAR6)
+VAR7 = ((char *)VAR6);
+VAR8 = malloc((strlen(VAR7) + 1) * sizeof(char ));
+strcpy(VAR8,VAR7);
+FUN5("VAR9 VAR10 VAR11 char: %i\n",FUN6(VAR8));
+char FUN6(char *VAR12)
+free(VAR12);

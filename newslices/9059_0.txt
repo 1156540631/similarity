@@ -1,0 +1,10 @@
+if(fread(&VAR1, sizeof VAR1, 1, VAR2) != 1)
+fclose(VAR2);
+if(fclose(VAR2) != 0)
+return VAR1;
+VAR3[VAR4] = (short)(FUN1() % 256);
+if (VAR3) {
+free(VAR3);
+printf("%d ",VAR3[VAR4]);
+if (VAR3)
+free(VAR3);

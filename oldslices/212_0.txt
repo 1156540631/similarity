@@ -1,0 +1,13 @@
+void ff_make_absolute_url(char *buf, int size, const char *base,
+av_strlcpy(buf, base, size);
+path_query = strchr(buf, '?');
+sep = strrchr(buf, '/');
+buf[0] = '\0';
+sep = strrchr(buf, '/');
+if (!strcmp(sep ? &sep[1] : buf, "..")) {
+av_strlcat(buf, "/", size);
+sep = strrchr(buf, '/');
+if (!strcmp(sep ? &sep[1] : buf, "..")) {
+buf[0] = '\0';
+sep = strrchr(buf, '/');
+if (!strcmp(sep ? &sep[1] : buf, "..")) {

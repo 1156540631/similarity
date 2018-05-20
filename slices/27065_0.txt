@@ -1,0 +1,6 @@
+main(int argc, char **argv)
+VAR44 = argv[1];
+FUN8(VAR44, VAR141);
+FUN8(char *VAR142, char *VAR137)
+snprintf(VAR138, VAR140, "<%VAR1>", VAR142);
+VAR143 = strlen(VAR138);

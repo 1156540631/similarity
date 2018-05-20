@@ -1,0 +1,9 @@
+va_list ap;
+va_start(ap, fmt);
+dst = ep_strdup_vprintf(fmt, ap);
+ep_strdup_vprintf(const gchar *fmt, va_list ap)
+return emem_strdup_vprintf(fmt, ap, ep_alloc);
+emem_strdup_vprintf(const gchar *fmt, va_list ap, void *allocator(size_t))
+G_VA_COPY(ap2, ap);
+len = g_printf_string_upper_bound(fmt, ap);
+va_end(ap);

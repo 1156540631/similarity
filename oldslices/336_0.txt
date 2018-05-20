@@ -1,0 +1,3 @@
+const nsStyleText* styleText = GetStyleText();
+IsAlignedLeft(styleText->mTextAlign,
+styleText->mTextAlign);

@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&wobbler_eutechnics,"CRUDDLE_UNIDEATED");
+if (wobbler_eutechnics != 0) {;
+agaonidae_lymphorrhage . berryville_counterly = ((char *)wobbler_eutechnics);
+mortiser_resorting = &agaonidae_lymphorrhage;
+ribbonfish_tufts = mortiser_resorting + 5;

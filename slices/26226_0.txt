@@ -1,0 +1,17 @@
+STRUCT1 VAR180;
+char VAR55[1024];
+FUN2(VAR180,VAR181);
+vsnprintf(VAR55,sizeof(VAR55),VAR181,VAR180);
+FUN63(((void *)0));
+FUN63("encode_audio %VAR83.%VAR83",VAR62 -> VAR69,VAR62 -> VAR70);
+FUN63(((void *)0));
+FUN63("encode_video %VAR83.%VAR83",VAR62 -> VAR69,VAR62 -> VAR70);
+FUN63(((void *)0));
+FUN63("flush %VAR208 %VAR83.%VAR83",desc,VAR62 -> VAR69,VAR62 -> VAR70);
+FUN63(((void *)0));
+FUN63("FUN90 %VAR83.%VAR83",VAR97 -> VAR69,VAR97 -> VAR4 -> VAR70);
+FUN63(((void *)0));
+FUN63("decode_video %VAR83.%VAR83",VAR97 -> VAR69,VAR97 -> VAR4 -> VAR70);
+static void FUN63(const char *VAR181,... )
+FUN2(VAR180,VAR181);
+vsnprintf(VAR55,sizeof(VAR55),VAR181,VAR180);

@@ -1,0 +1,10 @@
+VAR1 = FUN1("UNPRIMNESS_JEUZ");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = ((char *)VAR1);
+VAR4[5] = VAR2;
+VAR5 =  *(VAR4 + VAR6[1]);
+FUN2(VAR5);
+void FUN3(struct CLASS1 VAR7)
+FUN2(VAR5);
+VAR8 = ((char *)VAR7 . VAR3);
+strncpy(VAR9, VAR8, sizeof(VAR9));

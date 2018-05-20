@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&aquatints_tumbrils,"WITTE_ANAEROPLASTY");
+if (aquatints_tumbrils != 0) {;
+crass_pyroborate = ((int )(strlen(aquatints_tumbrils)));
+adelomorphous_montparnasse = ((char *)(malloc(crass_pyroborate + 1)));
+if (adelomorphous_montparnasse == 0) {
+memcpy(adelomorphous_montparnasse,aquatints_tumbrils,crass_pyroborate);
+if (aquatints_tumbrils != 0)
+free(((char *)aquatints_tumbrils));

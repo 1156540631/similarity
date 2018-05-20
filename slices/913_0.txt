@@ -1,0 +1,4 @@
+char * VAR7 = VAR1;
+FUN3(VAR7, VAR7);
+static void FUN3(char * VAR7, ...)
+VAR8(VAR16, VAR7);

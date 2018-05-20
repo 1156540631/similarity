@@ -1,0 +1,3 @@
+crossfire_endocarditic = getenv("CHAMPIGNONS_UNLEASHES");
+if (crossfire_endocarditic != 0) {;
+*omnifacial_mesilla = crossfire_endocarditic;

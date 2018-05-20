@@ -1,0 +1,9 @@
+void stonesoup_handle_taint(char *uredinologist_lyndeborough)
+reconsoling_mozamb = ((void *)uredinologist_lyndeborough);
+paxilla_grandeza = 1;
+expos_ornithomimidae = &reconsoling_mozamb;
+anchorhold_quitter = ((void **)(((unsigned long )expos_ornithomimidae) * paxilla_grandeza * paxilla_grandeza)) + 5;
+besmut_dampproofer(transversal_miliolite,anchorhold_quitter);
+void besmut_dampproofer(int homeothermism_taxonomic,void **masera_antiepileptic)
+besmut_dampproofer(homeothermism_taxonomic,masera_antiepileptic);
+free(((char *)((char *)( *(masera_antiepileptic - 5)))));

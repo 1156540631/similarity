@@ -1,0 +1,4 @@
+long long int VAR1=0;
+long long int *VAR2=(long long*) malloc(CLASS1 *sizeof(long long));
+*(VAR2+VAR1) = VAR1;
+free(VAR2);

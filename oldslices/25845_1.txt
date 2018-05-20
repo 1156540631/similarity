@@ -1,0 +1,4 @@
+fractiousness_darter = ((char *)( *(sandiness_nightmarish - 5)) . secondhanded_permoralize);
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(fractiousness_darter)+1, fractiousness_darter, "TRIGGER-STATE");
+strncpy(stonesoup_data, fractiousness_darter, strlen(fractiousness_darter) + 1);

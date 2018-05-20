@@ -1,0 +1,2 @@
+r = (DNS_REPLY_T *) xalloc(sizeof(*r));
+memset(r, 0, sizeof(*r));

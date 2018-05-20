@@ -1,0 +1,6 @@
+void VAR1::FUN1(CLASS1* VAR2,
+VAR3 FUN2(FUN3(VAR4));
+FUN4(FUN2);
+VAR5.FUN5("\\", "\\\\");
+}
+FUN2.FUN6(),

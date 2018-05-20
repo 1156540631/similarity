@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&unsurprising_inconnection,"SINNAMAHONING_CONSULTORY");
+if (unsurprising_inconnection != 0) {;
+counterfire_incorresponding . adenine_fuellers = ((char *)unsurprising_inconnection);
+underpraise_raft = &counterfire_incorresponding;
+struthiform_sups = &underpraise_raft;

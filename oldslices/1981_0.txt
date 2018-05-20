@@ -1,0 +1,3 @@
+short *buf=(short*) calloc(5,sizeof(short));
+*(buf+4)=1;
+free(buf);

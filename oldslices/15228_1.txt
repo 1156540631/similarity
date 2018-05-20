@@ -1,0 +1,8 @@
+int *  data;
+int * &dataRef = data;
+int * dataBadBuffer = (int *)ALLOCA(50*sizeof(int));
+int * dataGoodBuffer = (int *)ALLOCA(100*sizeof(int));
+data = dataBadBuffer;
+int * data = dataRef;
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

@@ -1,0 +1,18 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+imbeciles_ethylin[1] = 5;
+mistral_unpasted =  *(mewled_bardwell + imbeciles_ethylin[1]);
+free(((char *)((char *)mistral_unpasted)));
+void stonesoup_handle_taint(char *robustity_seraphtide)
+unlogistical_rowdydowdy = ((void *)robustity_seraphtide);
+mewled_bardwell[5] = unlogistical_rowdydowdy;
+mistral_unpasted =  *(mewled_bardwell + imbeciles_ethylin[1]);
+free(((char *)((char *)mistral_unpasted)));

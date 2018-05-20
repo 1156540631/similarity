@@ -1,0 +1,19 @@
+FUN3(&VAR90,"ENTOZOOLOGICAL_UNRESTRICTIVE");
+void FUN3(char** VAR21, char* VAR54) {
+VAR55 = getenv(VAR54);
+VAR56 = fopen(VAR55,"rb");
+if (VAR56 != 0) {
+fseek(VAR56,0L,2);
+VAR57 = ftell(VAR56);
+rewind(VAR56);
+*VAR21 = ((char *)(malloc(sizeof(char ) * (VAR57 + 1))));
+if (*VAR21 != 0) {
+VAR58 = fread(*VAR21,1,VAR57,VAR56);
+if (VAR56 != 0) {
+fclose(VAR56);
+if (VAR90 != 0) {;
+VAR91 = ((char *)VAR90);
+if (strlen(VAR91) < 20) {;
+realpath(VAR91, VAR74->VAR92);
+if (VAR90 != 0)
+free(((char *)VAR90));

@@ -1,0 +1,8 @@
+STRUCT26 *FUN146(char *VAR477,size_t VAR478,const char *VAR480,int VAR481,const char *VAR434)
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR480);
+VAR476 = fopen(VAR477,"r");
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208-%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR434,VAR480);
+VAR476 = fopen(VAR477,"r");
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR480);
+VAR476 = fopen(VAR477,"r");
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208-%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR434,VAR480);

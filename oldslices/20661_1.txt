@@ -1,0 +1,5 @@
+void plaidman_antielectron(int unaffectioned_francophobe,char **palpator_spadebone)
+stowp_catchments = ((char *)palpator_spadebone[40]);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(stowp_catchments)+1, stowp_catchments, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, stowp_catchments, strlen(stowp_catchments) + 1);

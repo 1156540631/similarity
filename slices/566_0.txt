@@ -1,0 +1,99 @@
+if (aState.GetFlag(BRS_APPLYTOPMARGIN)) {
+if (!aState.IsAdjacentWithTop()) {
+if (aState.GetFlag(BRS_HAVELINEADJACENTTOTOP)) {
+aState.SetFlag(BRS_HAVELINEADJACENTTOTOP, true);
+if (ShouldApplyTopMargin(aState, VAR3)) {
+nsFlowAreaRect floatAvailableSpace = aState.GetFloatAvailableSpace();
+lineLayout.Init(&aState, aState.mMinLineHeight, aState.mLineNumber);
+rv = DoReflowInlineFrames(aState, lineLayout, VAR3,
+!aFrame->IsFrameOfType(CLASS1::eReplaced) &&
+return aFrame->IsFrameOfType(CLASS1::eBlockFrame) &&
+(VAR17->GetBreakTypeBefore() != NS_STYLE_CLEAR_NONE ||
+bool previousMarginWasDirty = VAR17->IsPreviousMarginDirty();
+(VAR17->FUN5() || VAR17->FUN5() || VAR17->HadFloatPushed())) {
+if (!VAR17->FUN4()) {
+if (needToRecoverState && VAR17->FUN4()) {
+if (VAR17->FUN4() && (VAR17->FUN5() || !willReflowAgain)) {
+FUN2(!willReflowAgain || !VAR17->FUN5(),
+rv = ReflowLine(aState, VAR17, &keepGoing);
+line_iterator VAR3,
+rv = ReflowInlineFrames(aState, VAR3, aKeepReflowGoing);
+line_iterator VAR3,
+VAR3->SetLineIsImpactedByFloat(VAR2);
+if (ShouldApplyTopMargin(aState, VAR3)) {
+nsLineBox* VAR3)
+if (ShouldApplyTopMargin(aState, VAR3)) {
+rv = DoReflowInlineFrames(aState, lineLayout, VAR3,
+line_iterator VAR3,
+VAR3->EnableResizeReflowOptimization();
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+rv = ReflowInlineFrame(aState, aLineLayout, VAR3, frame,
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+VAR3 = mLines.erase(VAR3);
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+line_iterator VAR3,
+rv = DoReflowInlineFrames(aState, lineLayout, VAR3,
+line_iterator VAR3,
+VAR3->EnableResizeReflowOptimization();
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+if (!PlaceLine(aState, aLineLayout, VAR3, aFloatStateBeforeLine,
+line_iterator       VAR3,
+IsLastLine(aState, VAR3)));
+VAR3->SetOverflowAreas(overflowAreas);
+if (!VAR3->CachedIsEmpty()) {
+VAR3->AppendFloats(aState.mCurrentLineFloats);
+if (VAR3->FUN5()) {
+VAR1 = VAR3->FUN2(VAR4);
+VAR1.VAR11, VAR1.VAR12, VAR1.VAR13, VAR1.VAR14,
+CLASS1::DoReflowInlineFrames(nsBlockReflowState& aState,
+rv = ReflowInlineFrame(aState, aLineLayout, VAR3, frame,
+CLASS1::ReflowInlineFrame(nsBlockReflowState& aState,
+rv = ReflowInlineFrame(aState, aLineLayout, VAR3, frame,
+(NS_STYLE_CLEAR_NONE != aState.mFloatBreakType), "bad break VAR6");
+FUN2((NS_STYLE_CLEAR_NONE != breakType) ||
+FUN2(NS_STYLE_CLEAR_PAGE != breakType, "no page breaks yet");
+VAR3->SetBreakTypeAfter(breakType);
+rv = ReflowInlineFrame(aState, aLineLayout, VAR3, frame,
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+VAR3 = mLines.erase(VAR3);
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+line_iterator VAR3,
+rv = DoReflowInlineFrames(aState, lineLayout, VAR3,
+line_iterator VAR3,
+VAR3->EnableResizeReflowOptimization();
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+if (!PlaceLine(aState, aLineLayout, VAR3, aFloatStateBeforeLine,
+line_iterator       VAR3,
+IsLastLine(aState, VAR3)));
+VAR3->SetOverflowAreas(overflowAreas);
+if (!VAR3->CachedIsEmpty()) {
+VAR3->AppendFloats(aState.mCurrentLineFloats);
+if (VAR3->FUN5()) {
+VAR1 = VAR3->FUN2(VAR4);
+VAR1.VAR11, VAR1.VAR12, VAR1.VAR13, VAR1.VAR14,
+CLASS1::ReflowInlineFrame(nsBlockReflowState& aState,
+(NS_STYLE_CLEAR_NONE != aState.mFloatBreakType), "bad break VAR6");
+FUN2((NS_STYLE_CLEAR_NONE != breakType) ||
+FUN2(NS_STYLE_CLEAR_PAGE != breakType, "no page breaks yet");
+VAR3->SetBreakTypeAfter(breakType);
+rv = ReflowInlineFrame(aState, aLineLayout, VAR3, frame,
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+VAR3 = mLines.erase(VAR3);
+while ((VAR3 != FUN2()) && (0 == VAR3->FUN4())) {
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+line_iterator VAR3,
+rv = DoReflowInlineFrames(aState, lineLayout, VAR3,
+line_iterator VAR3,
+VAR3->EnableResizeReflowOptimization();
+for (VAR2 = 0; LINE_REFLOW_OK == lineReflowStatus && VAR2 < VAR3->FUN4();
+if (!PlaceLine(aState, aLineLayout, VAR3, aFloatStateBeforeLine,
+line_iterator       VAR3,
+IsLastLine(aState, VAR3)));
+VAR3->SetOverflowAreas(overflowAreas);
+if (!VAR3->CachedIsEmpty()) {
+VAR3->AppendFloats(aState.mCurrentLineFloats);
+if (VAR3->FUN5()) {
+VAR1 = VAR3->FUN2(VAR4);
+VAR1.VAR11, VAR1.VAR12, VAR1.VAR13, VAR1.VAR14,

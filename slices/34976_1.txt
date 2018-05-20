@@ -1,0 +1,5 @@
+char VAR32[100];
+VAR1 = VAR32;
+VAR1[100-1] = '\0';
+char VAR33[50] = "";
+memcpy(VAR33, VAR1, strlen(VAR1)*sizeof(char));

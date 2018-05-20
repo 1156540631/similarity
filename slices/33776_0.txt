@@ -1,0 +1,8 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+VAR2[50-1] = '\0';
+const CLASS4& CLASS5 = FUN22();
+CLASS5.FUN21(VAR2);
+void FUN22::FUN21(char * VAR2) const
+char VAR4[50] = "";
+memcpy(VAR4, VAR2, strlen(VAR2)*sizeof(char));

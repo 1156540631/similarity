@@ -1,0 +1,3 @@
+long *buf=(long*) calloc(5,sizeof(long));
+buf[i]=1;
+free(buf);

@@ -1,0 +1,9 @@
+char stonesoup_buffer[8];
+char *rehypothecation_hypogeic = 0;
+pyruline_lingulae(&rehypothecation_hypogeic);
+perspirate_melolonthidan[5] = rehypothecation_hypogeic;
+whereinto_quadricostate[1] = 5;
+internetworking_lorriker =  *(perspirate_melolonthidan + whereinto_quadricostate[1]);
+ria_markstone = ((char *)internetworking_lorriker);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(ria_markstone)+1, ria_markstone, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,ria_markstone,strlen(ria_markstone) + 1);

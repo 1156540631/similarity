@@ -1,0 +1,20 @@
+static int Open( vlc_object_t *p_this )
+access_t     *p_access = (access_t*)p_this;
+char         *psz_user = 0, *psz_pwd = 0, *psz_domain = 0;
+psz_path = strchr( p_access->psz_path, '/' );
+char *psz_tmp = strdup( p_access->psz_path );
+psz_tmp[ psz_path - p_access->psz_path ] = 0;
+psz_parser = strchr( psz_tmp, '@' );
+psz_parser = strchr( psz_tmp, ':' );
+psz_parser = strchr( psz_tmp, ';' );
+*psz_parser = 0; psz_parser++;
+else psz_parser = psz_tmp;
+psz_user = strdup( psz_parser );
+if( !psz_user ) psz_user = var_CreateGetString( p_access, "smb-user" );
+if( psz_user && !*psz_user ) { free( psz_user ); psz_user = 0; }
+Win32AddConnection( p_access, psz_path, psz_user, psz_pwd, psz_domain);
+free( psz_user );
+char *psz_user, char *psz_pwd,
+free( psz_user );
+i_result = OurWNetAddConnection2( &net_resource, psz_pwd, psz_user, 0 );
+free( psz_user );

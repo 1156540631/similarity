@@ -1,0 +1,6 @@
+ret = MAX_VAL;
+ret=1;
+return ret;
+unsigned int *ptr = (unsigned int*) malloc(memory_allocation_failure_004_func_001(0)*sizeof(unsigned int));
+*(ptr+1) = 10;
+free(ptr);

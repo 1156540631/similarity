@@ -1,0 +1,5 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+data = goodB2GSource(data);
+static char * goodB2GSource(char * data)
+size_t dataLen = strlen(data);

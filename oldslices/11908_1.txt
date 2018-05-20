@@ -1,0 +1,6 @@
+void badSource(wchar_t * &data);
+wchar_t dataBuffer[100];
+data = dataBuffer;
+badSource(data);
+wchar_t dest[50] = L"";
+wcscat(dest, data);

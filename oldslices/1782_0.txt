@@ -1,0 +1,10 @@
+data = 20;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_63b_goodG2BSink(&data);
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_63b_goodG2BSink(int * dataPtr)
+int data = *dataPtr;
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

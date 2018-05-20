@@ -1,0 +1,6 @@
+psz_tmp[ psz_path - p_access->psz_path ] = 0;
+psz_parser = strchr( psz_tmp, '@' );
+psz_parser = strchr( psz_tmp, ':' );
+psz_parser = strchr( psz_tmp, ';' );
+psz_domain = strdup( psz_tmp );
+free( psz_tmp );

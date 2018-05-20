@@ -1,0 +1,3 @@
+ZIP_FILENAME_LEN, NULL, 0, NULL, 0 )
+char *psz_fileName = calloc( ZIP_FILENAME_LEN, 1 );
+free( psz_fileName );

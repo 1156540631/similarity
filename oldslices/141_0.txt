@@ -1,0 +1,39 @@
+nsBlockFrame::GetPrefWidth(nsRenderingContext *aRenderingContext)
+InlinePrefWidthData data;
+curFrame = static_cast<nsBlockFrame*>(curFrame->GetNextContinuation())) {
+for (line_iterator line = curFrame->begin_lines(), line_end = curFrame->end_lines();
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+line == curFrame->begin_lines()) {
+if (!curFrame->GetPrevContinuation() &&
+const nsStyleCoord &indent = GetStyleText()->mTextIndent;
+if (indent.ConvertsToLength())
+data.currentLine += nsRuleNode::ComputeCoordPercentCalc(indent, 0);
+data.lineContainer = curFrame;
+for (int32_t i = 0, i_end = line->GetChildCount(); i != i_end;
+data.line = &line;
+kid->AddInlinePrefWidth(aRenderingContext, &data);
+data.ForceBreak(aRenderingContext);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+kid->AddInlinePrefWidth(aRenderingContext, &data);
+data.prevLines, data.currentLine);
+kid->AddInlinePrefWidth(aRenderingContext, &data);
+data.prevLines, data.currentLine);
+return nsBidiPresUtils::Resolve(this);
+for (nsBlockFrame* curFrame = this; curFrame;
+for (line_iterator line = curFrame->begin_lines(), line_end = curFrame->end_lines();
+line->IsBlock() ? "block" : "inline",
+line->IsEmpty() ? ", empty" : "");
+if (line->IsBlock()) {
+line->mFirstChild, nsLayoutUtils::PREF_WIDTH);
+data.currentLine = nsLayoutUtils::IntrinsicForContainer(aRenderingContext,
+data.ForceBreak(aRenderingContext);
+data.ForceBreak(aRenderingContext);
+data.line = &line;
+data.ForceBreak(aRenderingContext);
+data.ForceBreak(aRenderingContext);
+kid->AddInlinePrefWidth(aRenderingContext, &data);
+data.currentLine += nsRuleNode::ComputeCoordPercentCalc(indent, 0);
+data.prevLines, data.currentLine);

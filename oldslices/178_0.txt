@@ -1,0 +1,4 @@
+frag = NULL;
+(unsigned char *)s->init_buf->data + DTLS1_HM_HEADER_LENGTH;
+unsigned char *p =
+memcpy(&p[frag->msg_header.frag_off], frag->fragment,

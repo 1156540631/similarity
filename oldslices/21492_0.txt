@@ -1,0 +1,5 @@
+char stonesoup_source[1024];
+isogonics_humanistical = getenv("DIACHRONIC_STATESMANESE");
+retrohepatic_fewneses = ((char *)isogonics_humanistical);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, retrohepatic_fewneses, sizeof(stonesoup_source));

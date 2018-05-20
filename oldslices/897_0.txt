@@ -1,0 +1,8 @@
+CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType myStruct;
+data = (void *)WIDE_STRING;
+myStruct.structFirst = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_67b_goodB2GSink(myStruct);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_67b_goodB2GSink(CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType myStruct)
+void * data = myStruct.structFirst;
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));

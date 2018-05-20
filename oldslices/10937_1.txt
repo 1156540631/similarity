@@ -1,0 +1,23 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&gottingen_ophthalmometer,"OSCILLATIONS_ANNUNCIATORY");
+if (gottingen_ophthalmometer != 0) {;
+carinal_stuber . dunkers_crosette = gottingen_ophthalmometer;
+outstretching_hoppestere[ *pratfalls_chipling] = carinal_stuber;
+schuit_shovelbill = outstretching_hoppestere[ *pratfalls_chipling];
+TRYPANOSOMA_ILLAQUEATION(schuit_shovelbill);
+void twangy_entourage(union orchidectomies_carrel dermatorrhagia_niched)
+TRYPANOSOMA_ILLAQUEATION(schuit_shovelbill);
+scrogie_transmitter = ((char *)dermatorrhagia_niched . dunkers_crosette);
+stonesoup_fp = stonesoup_switch_func(scrogie_transmitter);
+if (dermatorrhagia_niched . dunkers_crosette != 0)
+free(((char *)dermatorrhagia_niched . dunkers_crosette));
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);
+return fct_ptr_addr;
+stonesoup_fp = stonesoup_switch_func(scrogie_transmitter);
+tracepoint(stonesoup_trace, variable_address, "stonesoup_fp", stonesoup_fp, "TRIGGER-STATE");
+stonesoup_cmp_flag = ( *stonesoup_fp)(stonesoup_rand_word,scrogie_transmitter);
+if (stonesoup_cmp_flag == 0)

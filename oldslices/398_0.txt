@@ -1,0 +1,3 @@
+i_len++;
+i_len++;
+char *psz_ret = malloc( i_len + 3*i_num + 2 );

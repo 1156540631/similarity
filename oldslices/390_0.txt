@@ -1,0 +1,6 @@
+V9fsString extension;
+v9fs_string_init(&extension);
+&perm, &mode, &extension);
+char ctype;
+uint32_t major, minor;
+if (sscanf(extension.data, "%c %u %u", &ctype, &major, &minor) != 3) {

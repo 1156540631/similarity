@@ -1,0 +1,11 @@
+typedef union
+int VAR1;
+int VAR2;
+} CLASS1;
+CLASS1 VAR3;
+VAR4 = -1;
+fscanf(VAR5, "%d", &VAR4);
+VAR3.VAR1 = VAR4;
+VAR6 = (int*)malloc(VAR4 * sizeof(int));
+for (VAR7 = 0; VAR7 < (VAR8)VAR4; VAR7++)
+VAR6[VAR7] = 0;

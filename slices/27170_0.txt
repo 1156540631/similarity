@@ -1,0 +1,3 @@
+char VAR39[10];
+VAR46[10 - 1] = '\0';
+strcpy(VAR39, VAR46);

@@ -1,0 +1,3 @@
+VAR1[100-1] = '\';
+char VAR2[50] = "";
+strncat(VAR2, VAR1, strlen(VAR1));

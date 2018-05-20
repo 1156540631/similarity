@@ -1,0 +1,3 @@
+WCHAR accountName[UNLEN + 1];
+if (!LookupAccountSidW(NULL, sid, accountName,
+wcscpy(accountName, L"Users");

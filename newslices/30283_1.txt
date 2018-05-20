@@ -1,0 +1,11 @@
+int VAR1 = 1;
+int VAR2 = 0;
+VAR3 = -1;
+if(VAR1)
+char VAR4[VAR5] = "";
+if (fgets(VAR4, VAR5, VAR6) != VAR7)
+VAR3 = atoi(VAR4);
+int *VAR8;
+VAR8 = (int*)malloc(VAR3 * sizeof(int));
+for (VAR9 = 0; VAR9 < (VAR10)VAR3; VAR9++)
+VAR8[VAR9] = 0;

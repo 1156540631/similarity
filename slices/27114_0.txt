@@ -1,0 +1,3 @@
+char VAR396[12],*VAR397 = VAR396;
+VAR398[VAR5]='\0';
+memcpy(VAR397,VAR398,11);

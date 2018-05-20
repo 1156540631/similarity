@@ -1,0 +1,17 @@
+int intertissue_preemptor = 596;
+char *yucking_gelatinised;;
+stonesoup_read_taint(&yucking_gelatinised,"5575",intertissue_preemptor);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+(*stonesoup_tainted_buff)[stonesoup_s - stonesoup_shm] = *stonesoup_s;
+if (yucking_gelatinised != 0) {;
+lorrimor_stereoed[5] = yucking_gelatinised;
+autoantibody_penalizes[1] = 5;
+talco_matfellon =  *(lorrimor_stereoed + autoantibody_penalizes[1]);
+lamentedly_geulincx = ((char *)talco_matfellon);
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(lamentedly_geulincx)));
+strncpy(stonesoup_heap_buff_64, lamentedly_geulincx, 64);

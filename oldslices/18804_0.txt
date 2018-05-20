@@ -1,0 +1,12 @@
+data = NULL;
+data = goodG2B1Source(data);
+if(goodG2B1Static)
+printLine("Benign, fixed string");
+else
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);
+static char * goodG2B1Source(char * data)
+return data;
+data = goodG2B1Source(data);
+strcpy(data, source);

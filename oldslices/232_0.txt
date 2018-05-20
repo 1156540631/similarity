@@ -1,0 +1,56 @@
+va_list args;
+va_start( args, psz_fmt_src );
+char *psz_tmp;
+int i_ret = vasprintf( &psz_tmp, psz_fmt_src, args );
+int i_len = strlen( *ppsz_dest ) + strlen( psz_tmp ) + 1;
+char *psz_out = realloc( *ppsz_dest, i_len );
+strcat( psz_out, psz_tmp );
+*ppsz_dest = psz_out;
+size_t i_num = 0, i_len = 0;
+i_len++;
+i_len++;
+i_num++;
+*ppsz_encoded = malloc( i_len + 1 );
+memcpy( *ppsz_encoded, psz_url, i_len + 1 );
+char *psz_ret = malloc( i_len + 3*i_num + 2 );
+*ppsz_encoded = psz_ret;
+psz_zip = convert_xml_special_chars( psz_zip ? (psz_zip+1) : psz_zippath );
+" <trackList>\n", psz_zip ) == -1)
+char *psz_pathtozip;
+escapeToXml( &psz_pathtozip, psz_zippath );
+if( astrcatf( &psz_pathtozip, "%s", ZIP_SEP ) < 0 ) return -1;
+char *psz_path = strdup( psz_pathtozip );
+if( astrcatf( &psz_path, "%s", psz_escapedName ) < 0 ) return -1;
+if( astrcatf( pp_buffer,
+"  <track>\n"
+if( astrcatf( pp_buffer,
+" </trackList>\n"
+if( nodeToXSPF( pp_buffer, playlist, true ) < 0 ) return -1;
+if( astrcatf( pp_buffer, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+if( astrcatf( pp_buffer, "  <vlc:node title=\"%s\">\n", n->name ) < 0 )
+nodeToXSPF( pp_buffer, n->child, false );
+if( astrcatf( pp_buffer, "   <vlc:item tid=\"%d\" />\n", i->id ) < 0 )
+if( astrcatf( pp_buffer, "  </vlc:node>\n" ) < 0 )
+static int astrcatf( char **ppsz_dest, const char *psz_fmt_src, ... )
+va_start( args, psz_fmt_src );
+int i_ret = vasprintf( &psz_tmp, psz_fmt_src, args );
+int i_len = strlen( *ppsz_dest ) + strlen( psz_tmp ) + 1;
+char *psz_out = realloc( *ppsz_dest, i_len );
+strcat( psz_out, psz_tmp );
+*ppsz_dest = psz_out;
+if( astrcatf( &psz_pathtozip, "%s", ZIP_SEP ) < 0 ) return -1;
+char *psz_path = strdup( psz_pathtozip );
+if( astrcatf( &psz_path, "%s", psz_escapedName ) < 0 ) return -1;
+if( astrcatf( pp_buffer,
+if( astrcatf( pp_buffer, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+if( astrcatf( pp_buffer, "  </vlc:node>\n" ) < 0 )
+static int nodeToXSPF( char **pp_buffer, node *n, bool b_root );
+if( astrcatf( pp_buffer, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+static int WriteXSPF( char **pp_buffer, vlc_array_t *p_filenames,
+if( asprintf( pp_buffer, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+if( astrcatf( pp_buffer,
+static int nodeToXSPF( char **pp_buffer, node *n, bool b_root )
+if( astrcatf( pp_buffer, "  </vlc:node>\n" ) < 0 )
+static int escapeToXml( char **ppsz_encoded, const char *psz_url )
+escapeToXml( &psz_pathtozip, psz_zippath );
+if( astrcatf( &psz_pathtozip, "%s", ZIP_SEP ) < 0 ) return -1;

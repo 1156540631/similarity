@@ -1,0 +1,16 @@
+char * data;
+char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54b_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54b_goodG2BSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54c_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54c_badSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54d_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54d_badSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54e_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__dest_char_alloca_cat_54e_badSink(char * data)
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strcat(data, source);

@@ -1,0 +1,17 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hercynian_pontypool,"NEMATOLOGY_IMID");
+if (hercynian_pontypool != 0) {;
+culottes_symbiotes = &hercynian_pontypool;
+infrabuccal_converters = ((char **)(((unsigned long )culottes_symbiotes) * sarcasmproof_phonatory * sarcasmproof_phonatory)) + 5;
+noncognizantly_monostich(infrabuccal_converters);
+void noncognizantly_monostich(char **overtorturing_tumps);

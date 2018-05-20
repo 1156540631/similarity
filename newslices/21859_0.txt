@@ -1,0 +1,9 @@
+VAR1 = FUN1(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);
+VAR2 += VAR1;
+VAR1 = FUN1(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);
+VAR3 = (VAR3 > VAR1?VAR3 - VAR1 : 0);
+VAR1 = FUN1(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);
+char VAR5[32];
+FUN2(VAR5,sizeof(VAR5),VAR6 -> VAR4);
+VAR7 FUN2(char *VAR2,VAR7 VAR3,unsigned int VAR4)
+VAR1 = FUN1(VAR2,VAR3,(((VAR4 & 0xff) >= 48 && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || (VAR4 & 0xff) >= '' && (VAR4 & 0xff) <= '' || ((VAR4 & 0xff) == '.' || (VAR4 & 0xff) == 32 || (VAR4 & 0xff) == '-' || (VAR4 & 0xff) == '')?"%c" : "[%d]")),VAR4 & 0xff);

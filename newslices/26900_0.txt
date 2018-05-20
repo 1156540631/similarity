@@ -1,0 +1,2 @@
+char VAR1[VAR2];
+FUN1 (fgets(VAR1, sizeof VAR1, VAR3->VAR4) != VAR5)

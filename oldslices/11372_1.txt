@@ -1,0 +1,6 @@
+return NULL;
+t[i] = '\0';
+return t;
+char *t = rand_text();
+strcpy(buf,t);
+free(t);

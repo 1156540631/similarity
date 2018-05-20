@@ -1,0 +1,5 @@
+void FUN1(VAR1<int, char *> VAR2)
+char * VAR3 = VAR2[2];
+FUN2(VAR4, strlen(VAR3), "%s", VAR3);
+FUN3(VAR3);
+free(VAR3);

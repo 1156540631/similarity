@@ -1,0 +1,28 @@
+frame_x = AV_RL16(&s->buf[6]);
+frame_y = AV_RL16(&s->buf[8]);
+frame_width = AV_RL16(&s->buf[10]) - frame_x + 1;
+memcpy(s->frame.data[0], s->prev_frame.data[0],
+s->avctx->height * s->frame.linesize[0]);
+p += 2;
+r = *p++ * 4;
+g = *p++ * 4;
+b = *p++ * 4;
+pb = p;
+meth = *pb++;
+lz_unpack(pb, s->unpack_buffer, s->unpack_buffer_size);
+dp = &s->frame.data[0][frame_y * s->frame.linesize[0] + frame_x];
+memcpy(dp, pb, frame_width);
+pb += frame_width;
+memcpy(dp, pb, frame_width);
+dp += s->frame.linesize[0];
+memcpy(dp, pb, frame_width);
+VmdVideoContext *s = avctx->priv_data;
+vmd_decode(s);
+static void lz_unpack(const unsigned char *src, unsigned char *dest, int dest_len)
+pb = s->unpack_buffer;
+memcpy(dp, pb, frame_width);
+static void vmd_decode(VmdVideoContext *s)
+const unsigned char *p = s->buf + 16;
+frame_width = AV_RL16(&s->buf[10]) - frame_x + 1;
+pb = p;
+memcpy(dp, pb, frame_width);

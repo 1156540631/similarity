@@ -1,0 +1,18 @@
+tetradactyly_boxerism = getenv("SANCY_BOBBLED");
+if (tetradactyly_boxerism != 0) {;
+fourragere_britannia[ *( *( *( *( *( *( *( *( *( *unshrined_manuf)))))))))] = tetradactyly_boxerism;
+befreckle_utfangthief = fourragere_britannia[ *( *( *( *( *( *( *( *( *( *unshrined_manuf)))))))))];
+norry_hyperspherical = ((char *)befreckle_utfangthief);
+stonesoup_buffer = malloc((strlen(norry_hyperspherical) + 1) * sizeof(char ));
+if (stonesoup_buffer == 0) {
+strcpy(stonesoup_buffer,norry_hyperspherical);
+if (stonesoup_buffer[0] >= 97) {
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+if (stonesoup_buffer != 0) {
+free(stonesoup_buffer);
+char stonesoup_process_buffer(char *buffer_param)
+first_char = buffer_param[0] - 97;
+free(buffer_param);
+return first_char;
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+void stonesoup_printf(char * format, ...) {

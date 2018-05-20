@@ -1,0 +1,7 @@
+data = -1;
+fscanf(stdin, "%d", &data);
+int dataCopy = data;
+int data = dataCopy;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

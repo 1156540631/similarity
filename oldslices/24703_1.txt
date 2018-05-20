@@ -1,0 +1,13 @@
+isthmi_vrc = getenv("REFRACTEDLY_ADAMITICAL");
+if (isthmi_vrc != 0) {;
+mariya_paterfamilias . swab_anatifae = isthmi_vrc;
+affidavits_shortschat = ((char *)mariya_paterfamilias . swab_anatifae);
+if (strlen(affidavits_shortschat) < 20) {;
+stonesoup_buff = (char *) malloc (sizeof(char) * 20);
+if (stonesoup_buff != NULL) {
+memset(stonesoup_buff, 0, 20);
+realpath(affidavits_shortschat, stonesoup_buff);
+stonesoup_opt_var = strlen( stonesoup_buff);
+for (; stonesoup_oc_i < stonesoup_opt_var; ++stonesoup_oc_i) {
+stonesoup_buff[stonesoup_oc_i] =
+stonesoup_toupper(stonesoup_buff[stonesoup_oc_i]);

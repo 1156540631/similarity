@@ -1,0 +1,16 @@
+int squamotemporal_abeles = 1001;
+char *diphthongising_microchemic;;
+stonesoup_read_taint(&diphthongising_microchemic,"9682",squamotemporal_abeles);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+if (diphthongising_microchemic != 0) {;
+clappe_excathedral . stearyl_coghle = diphthongising_microchemic;
+hydroponic_nabal(joebush_launderer,clappe_excathedral);
+void hydroponic_nabal(int meterstick_unquakerlike,union silverado_steepening floricultural_unarrogance)
+char stonesoup_stack_buffer_64[64];
+hethen_insubstantiate = ((char *)floricultural_unarrogance . stearyl_coghle);
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,hethen_insubstantiate);

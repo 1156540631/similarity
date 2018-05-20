@@ -1,0 +1,3 @@
+FUN1(unsigned char *VAR14,
+for (VAR1 = 0; VAR6 > 0; VAR1 ++, VAR14 ++, VAR6 --)
+fprintf(stderr, " %02X", *VAR14);

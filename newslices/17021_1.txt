@@ -1,0 +1,15 @@
+VAR1<char *> VAR2;
+char VAR3[100];
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+VAR4 = VAR3 - 8;
+VAR2.FUN1(VAR2.FUN2(), 1, VAR4);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR4);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR4);
+FUN3(VAR2);
+void FUN3(VAR1<char *> VAR2)
+char * VAR4 = VAR2[2];
+char VAR5[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+memmove(VAR4, VAR5, 100*sizeof(char));

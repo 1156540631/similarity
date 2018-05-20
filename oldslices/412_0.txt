@@ -1,0 +1,3 @@
+char	ifname[255];
+strlcpy(ifname, address + 4, sizeof(ifname));
+ifname[strlen(ifname) - 1] = '\0';

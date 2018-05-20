@@ -1,0 +1,34 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&middled_nontenableness,"VILLATE_EPICOELIAC");
+if (middled_nontenableness != 0) {;
+jenna_resicken = ((char *)middled_nontenableness);
+stonesoup_other_buff[7] = jenna_resicken;
+stonesoup_buff_size = ((int )(strlen(jenna_resicken)));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_other_buff", stonesoup_other_buff, "INITIAL-STATE");
+for (; stonesoup_buff_size >= 0; (--stonesoup_my_buff_size , --stonesoup_buff_size)) {
+stonesoup_stack_buff_64[stonesoup_my_buff_size] = jenna_resicken[stonesoup_buff_size];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "CROSSOVER-STATE");
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);
+stonesoup_printf("%s\n",stonesoup_stack_buff_64);
+stonesoup_printf("strlen size = %d\n",strlen(jenna_resicken));
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+if (middled_nontenableness != 0)
+free(((char *)middled_nontenableness));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("strlen size = %d\n",strlen(stonesoup_other_buff[7]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buff_64", stonesoup_stack_buff_64, "FINAL-STATE");
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_stack_buff_64[stonesoup_oc_i] = stonesoup_toupper(stonesoup_stack_buff_64[stonesoup_oc_i]);

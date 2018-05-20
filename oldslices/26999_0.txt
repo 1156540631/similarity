@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+strncpy(name, argv[1], sizeof name - 1);
+name[sizeof name - 1] = '\0';
+strncat(name, argv[2], sizeof name - strlen(name) - 1);

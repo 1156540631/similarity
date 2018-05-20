@@ -1,0 +1,3 @@
+int FUN1(CLASS1 *VAR1, unsigned char *VAR2)
+VAR3 VAR4 = sizeof(VAR5);
+memcpy(VAR2, VAR5, VAR4);

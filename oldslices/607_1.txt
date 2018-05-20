@@ -1,0 +1,8 @@
+WCHAR exefullpath[MAX_PATH + 1];
+wcscpy(exefullpath, installationDir);
+if (!PathAppendSafe(exefullpath, exefile)) {
+BOOL PathAppendSafe(LPWSTR base, LPCWSTR extra);
+if (!PathGetSiblingFilePath(dlogFile, exefullpath, L"uninstall.update")) {
+LPCWSTR siblingFilePath,
+if (wcslen(siblingFilePath) >= MAX_PATH) {
+wcscpy(destinationBuffer, siblingFilePath);

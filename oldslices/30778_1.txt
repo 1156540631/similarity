@@ -1,0 +1,10 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+data = CWE121_Stack_Based_Buffer_Overflow__CWE135_61b_badSource(data);
+void * CWE121_Stack_Based_Buffer_Overflow__CWE135_61b_badSource(void * data)
+data = (void *)WIDE_STRING;
+return data;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

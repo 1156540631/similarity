@@ -1,0 +1,28 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+struct CLASS1 VAR3;
+int VAR4 = 44;
+char *VAR5;;
+FUN1(&VAR5,"4212",VAR4);
+VAR3 . VAR6 = ((char *)VAR5);
+VAR7 = FUN2(VAR3);
+VAR8 = malloc(65528);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR11-VAR12");
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR13-VAR12");
+FUN3(VAR9, VAR10, "*VAR8", *VAR8, "VAR13-VAR12");
+VAR14 = strlen( *VAR8);
+free(VAR8);
+void FUN1(char** VAR1, char* VAR15, int VAR16) {
+if ((VAR17 = FUN4(VAR18, VAR16, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR16, sizeof(char));
+FUN1(&VAR5,"4212",VAR4);
+VAR3 . VAR6 = ((char *)VAR5);
+VAR7 = FUN2(VAR3);
+struct CLASS1 FUN2(struct CLASS1 VAR19)
+return VAR19;
+VAR7 = FUN2(VAR3);
+VAR20 = ((char *)VAR7 . VAR6);
+strncpy(VAR21, VAR20, VAR22);
+*VAR8 = VAR20;
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR13-VAR12");
+free(VAR8);

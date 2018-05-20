@@ -1,0 +1,19 @@
+unsigned char *VAR1 = VAR2;
+int VAR3 = 0, VAR4, VAR5 = 0;
+void (*VAR6) = VAR7;
+VAR6(VAR8)
+void VAR7(void * VAR8)
+VAR8 = FUN1(VAR1, VAR4 + VAR9);
+if(!VAR8)
+FUN2(VAR1);
+return FUN3(VAR10);
+VAR1=VAR8;
+if ((VAR3 = FUN4(VAR11, VAR1 + VAR5, VAR4 - VAR5)) < 0)
+if (VAR3 != VAR12)
+FUN2(VAR1);
+return VAR3;
+VAR13 = 0;
+VAR3 = 0;
+VAR14.VAR15 = VAR5 += VAR3;
+VAR14.VAR1 = &VAR1[VAR16];
+memset(VAR14.VAR1 + VAR14.VAR15, 0, VAR9);

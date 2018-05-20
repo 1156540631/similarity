@@ -1,0 +1,2 @@
+name[sizeof name - 1] = '\0';
+strncat(name, " = ", sizeof name - strlen(name) - 1);

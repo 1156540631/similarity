@@ -1,0 +1,2 @@
+char VAR39[VAR319];
+while (fgets(VAR39, sizeof VAR39, VAR83->VAR322) != NULL)

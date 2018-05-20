@@ -1,0 +1,5 @@
+int avio_printf(AVIOContext *s,const char *fmt,... )
+va_list ap;
+char buf[4096];
+__builtin_va_start(ap,fmt);
+ret = vsnprintf(buf,sizeof(buf),fmt,ap);

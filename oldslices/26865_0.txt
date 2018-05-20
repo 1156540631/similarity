@@ -1,0 +1,4 @@
+char buf[MAXNAME + 1];
+printf ("sizeof(buf) = %d\n", sizeof(buf));
+buildfname(pw->pw_gecos, pw->pw_name, buf, sizeof(buf));
+if (strchr(buf, ' ') != NULL && !strcasecmp(buf, name))      {

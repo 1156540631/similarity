@@ -1,0 +1,8 @@
+VAR636 = getenv("SQUAMSCOT_TUNELESS");
+if (VAR636 != 0) {;
+VAR637 = ((char *)VAR636);
+for (VAR61 = 0; VAR61 < strlen(VAR637); ++VAR61) {
+tracepoint(VAR19, VAR414, "((int)STONESOUP_TAINT_SOURCE[VAR61])", ((int)VAR637[VAR61]), &(VAR637[VAR61]), "TRIGGER-STATE");
+VAR637[VAR61],
+VAR62[(int) VAR637[VAR61]]);
+void FUN68(char * VAR51, ...) {

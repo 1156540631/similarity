@@ -1,0 +1,32 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR122,"VAR123");
+if (VAR122 != 0) {;
+VAR124 = ((char *)VAR122);
+VAR16 = ((int )(strlen(VAR124)));
+for (; VAR16 >= 0; (--VAR11 , --VAR16)) {
+VAR9[VAR11] = VAR124[VAR16];
+FUNC5(VAR17, VAR18, "VAR9", VAR9, "CROSSOVER-STATE");
+VAR9[VAR10] = FUNC2(VAR9[VAR10]);
+FUNC3("%s\n",&(VAR9[VAR11+1]));
+free(VAR9);
+FUNC5(VAR17, VAR18, "VAR9", VAR9, "FINAL-STATE");
+if (VAR122 != 0)
+free(((char *)VAR122));
+int FUNC2(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+VAR9[VAR10] = FUNC2(VAR9[VAR10]);
+FUNC3("%s\n",&(VAR9[VAR11+1]));
+void FUNC3(char * format, ...) {
+FUNC3("%s\n",&(VAR9[VAR11+1]));

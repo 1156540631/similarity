@@ -1,0 +1,2 @@
+buf = malloc(MAXSIZE);
+printf("result: %s\n", buf);

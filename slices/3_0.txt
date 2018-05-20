@@ -1,0 +1,55 @@
+fread(VAR1, 13, 1, VAR2);
+VAR3->VAR4 = (VAR1[7] << 8) | VAR1[6];
+VAR3->VAR5 = (VAR1[9] << 8) | VAR1[8];
+VAR6    = 2 << (VAR1[10] & 0x07);
+if (VAR1[10] & VAR7)
+if (FUN1(VAR2, VAR6, VAR8, &VAR9))
+switch (getc(VAR2))
+fclose(VAR2);
+VAR1[0] = getc(VAR2);
+if (VAR1[0] == 0xf9)
+FUN2(VAR2, VAR1);
+fread(VAR1, 9, 1, VAR2);
+if (VAR1[8] & VAR7)
+VAR6 = 2 << (VAR1[8] & 0x07);
+if (FUN1(VAR2, VAR6, VAR8, &VAR9))
+VAR3->VAR4 = (VAR1[5] << 8) | VAR1[4];
+VAR3->VAR5 = (VAR1[7] << 8) | VAR1[6];
+if (VAR3->VAR4 == 0 || VAR3->VAR5 == 0)
+VAR3->VAR4, VAR3->VAR5);
+fprintf(stderr, "DEBUG: Bad GIF image dimensions: %dx%d\n",
+fclose(VAR2);
+VAR11 = FUN3(VAR2, VAR3, VAR8, VAR1[8] & VAR10);
+int interlace);
+VAR11 = FUN3(VAR2, VAR3, VAR8, VAR1[8] & VAR10);
+static int	FUN1(VAR3 *VAR2, int VAR6, CLASS1 VAR8,
+fclose(VAR2);
+fclose(VAR2);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN4(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN5(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN6(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN7(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN8(VAR8[VAR11], 1, saturation, hue);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN9(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN10(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN11(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN12(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN13(VAR8[VAR11], VAR8[VAR11], 1);
+for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)
+FUN14(VAR8[VAR11], VAR12, VAR13);
+static int	FUN3(VAR3 *VAR2, CLASS2 *VAR3, CLASS1 VAR8,
+fclose(VAR2);
+static int	FUN2(VAR3 *VAR2, unsigned char *VAR14);
+if (VAR1[0] & 1)
+VAR15 = VAR1[3];
+if (VAR15 >= 0)

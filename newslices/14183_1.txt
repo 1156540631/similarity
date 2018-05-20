@@ -1,0 +1,21 @@
+static int
+FUN1(CLASS1         *VAR1,
+CLASS2 *VAR2,
+VAR3   VAR4,
+int          VAR5)
+unsigned char		VAR6;
+VAR6 = getc(VAR1);
+if (FUN2(VAR1, 1, VAR6) < 0)
+static int FUN2(CLASS1 *VAR1,
+int  VAR7,
+int  VAR8)
+static short VAR9, VAR10;
+VAR9 = VAR8;
+VAR10  = FUN3(VAR9);
+short FUN3(short VAR9)
+short VAR11 = 1 << VAR9;
+return VAR11;
+VAR10    = FUN3(VAR9);
+for (VAR12 = 0; VAR12 < VAR10; VAR12 ++){
+VAR13[0][VAR12] = 0;
+VAR13[1][VAR12] = VAR12;

@@ -1,0 +1,14 @@
+int data;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+goodB2G2Static = 1;
+goodB2G2Sink(data);
+static void goodB2G2Sink(int data)
+if(goodB2G2Static)
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+printIntLine(buffer[data]);

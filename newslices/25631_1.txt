@@ -1,0 +1,11 @@
+char VAR1[8];
+struct CLASS1 VAR2 = {0};
+FUN1(&VAR2);
+VAR3 = FUN2(VAR2);
+strncpy(VAR1,VAR4,strlen(VAR4) + 1);
+struct CLASS1 FUN2(struct CLASS1 VAR5)
+return VAR5;
+VAR3 = FUN2(VAR2);
+VAR4 = ((char *)VAR3 . VAR6);
+FUN3(VAR7, VAR8, "STONESOUP_TAINT_SOURCE", strlen(VAR4)+1, VAR4, "VAR9-VAR10");
+strncpy(VAR1,VAR4,strlen(VAR4) + 1);

@@ -1,0 +1,11 @@
+char VAR1[VAR2], VAR3[VAR2], VAR4[VAR2];
+FUN1( VAR3, VAR5, sizeof( VAR3 ) );
+char * VAR6 = VAR3;
+char * VAR3 = VAR6;
+VAR4[0] = 0;
+VAR7 = strchr( VAR5, '/' );
+if( VAR7 )
+char *VAR8 = strchr( ++VAR7, '/' );
+if( VAR8 )
+FUN1( VAR4, VAR7, sizeof( VAR4 ) );
+sprintf( VAR1, "\\\\%s\\%s", VAR3, VAR4 );

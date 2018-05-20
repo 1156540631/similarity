@@ -1,0 +1,5 @@
+void nonlactic_magisteries(char **sacrodorsal_nonfictional)
+char stonesoup_buffer[8];
+isenstein_dodos = ((char *)sacrodorsal_nonfictional[24]);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(isenstein_dodos)+1, isenstein_dodos, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,isenstein_dodos,strlen(isenstein_dodos) + 1);

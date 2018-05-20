@@ -1,0 +1,4 @@
+double *ptr,b = 0.0;
+ptr= (double*) malloc(10*sizeof(double));
+ptr = NULL;
+free(ptr);

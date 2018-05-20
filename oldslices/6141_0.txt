@@ -1,0 +1,5 @@
+stonesoup_printf("string is too short to test\n");
+stonesoup_printf("mod is true\n");
+stonesoup_printf("mod is false\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

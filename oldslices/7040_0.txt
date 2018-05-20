@@ -1,0 +1,7 @@
+uri_str_to_bytes(const char *uri_str, GByteArray *bytes) {
+p = (const guchar *)uri_str;
+if (! isascii(*p) || ! isprint(*p))
+p++;
+p++;
+p++;
+if (! isascii(*p) || ! isprint(*p))

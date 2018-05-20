@@ -1,0 +1,59 @@
+return VAR1.VAR2;
+if (!VAR3) VAR3 = ", ";
+VAR4 = 15 + strlen(VAR3);
+VAR5 = FUN1(VAR4 * VAR6);
+VAR5[0] = '\';
+unsigned VAR7 = FUN2(VAR5, VAR4, "%f%VAR11", VAR8[VAR1], VAR3);
+VAR5 += VAR7;
+unsigned VAR7 = FUN2(VAR5, VAR4, "%f%VAR11", VAR8[VAR1], VAR3);
+VAR9[strlen(VAR9) - strlen(VAR3)] = '\';
+VAR10   = FUN3(&VAR11->VAR12, VAR11->VAR13);
+VAR14  = FUN3(&VAR11->VAR12, VAR11->VAR13);
+VAR6 = FUN4(&VAR11->VAR12, VAR11->VAR13);
+VAR15   = FUN4(&VAR11->VAR12, VAR11->VAR13);
+FUN5(VAR6, "ModelPixelScaleTag", VAR16);
+FUN5(VAR6, "ModelTransformationTag", VAR16);
+FUN5(VAR6, "ModelTiepointTag", VAR16);
+FUN5(1, "GeoTIFF_Version", VAR16);
+FUN5(2, "GeoTIFF_Key_Revision", ".");
+VAR8[VAR1] = FUN6(&VAR11->VAR12, VAR11->VAR13);
+char *VAR5 = FUN7(&VAR8[VAR11->VAR17[VAR1].VAR18], VAR11->VAR17[VAR1].VAR6, ", ");
+FUN5(VAR6, "artist", VAR16);
+FUN5(VAR6, "copyright", VAR16);
+FUN5(VAR6, "date", VAR16);
+FUN5(VAR6, "document_name", VAR16);
+FUN5(VAR6, "computer", VAR16);
+FUN5(VAR6, "description", VAR16);
+FUN5(VAR6, "make", VAR16);
+FUN5(VAR6, "model", VAR16);
+FUN5(VAR6, "page_name", VAR16);
+FUN5(VAR6, "page_number", " / ");
+FUN5(VAR6, "software", VAR16);
+const char *VAR19, const char *VAR3, CLASS1 *VAR11)
+case VAR20: return FUN8(VAR6, VAR19, VAR3, VAR11);
+const char *VAR19, const char *VAR3,
+VAR8[VAR1] = FUN6(&VAR11->VAR12, VAR11->VAR13);
+FUN9(&VAR8);
+VAR5 = FUN7(VAR8, VAR6, VAR3);
+static char *FUN7(double *VAR8, int VAR6, const char *VAR3)
+VAR4 = 15 + strlen(VAR3);
+VAR5 = FUN1(VAR4 * VAR6);
+unsigned VAR7 = FUN2(VAR5, VAR4, "%f%VAR11", VAR8[VAR1], VAR3);
+static int FUN10(int VAR6, int VAR14,
+case VAR20: return FUN8(VAR6, VAR19, VAR3, VAR11);
+static int FUN8(int VAR6,
+VAR8 = FUN1(VAR6 * sizeof(double));
+VAR5 = FUN7(VAR8, VAR6, VAR3);
+static unsigned FUN4(CLASS2 *VAR12, int VAR13)
+unsigned VAR21 = VAR13 ? FUN11(VAR12) : FUN12(VAR12);
+return VAR21;
+VAR6 = FUN4(&VAR11->VAR12, VAR11->VAR13);
+VAR15   = FUN4(&VAR11->VAR12, VAR11->VAR13);
+VAR8 = FUN1(VAR6 * sizeof(double));
+char *VAR5 = FUN7(&VAR8[VAR11->VAR17[VAR1].VAR18], VAR11->VAR17[VAR1].VAR6, ", ");
+FUN5(VAR6, "software", VAR16);
+static unsigned FUN3(CLASS2 *VAR12, int VAR13)
+unsigned VAR21 = VAR13 ? FUN13(VAR12) : FUN14(VAR12);
+VAR10   = FUN3(&VAR11->VAR12, VAR11->VAR13);
+VAR14  = FUN3(&VAR11->VAR12, VAR11->VAR13);
+VAR6 = FUN4(&VAR11->VAR12, VAR11->VAR13);

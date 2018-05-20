@@ -1,0 +1,11 @@
+String localName = shouldIgnoreAttributeCase(this) ? name.lower() : name;
+return !elem->hasAttribute(attr);
+if (!documentIsHTML && namespaces && shouldAddNamespaceElem(el))
+if (el->isHTMLElement() && (annotate || convert)) {
+Element* element = const_cast<Element*>(el);
+RefPtr<CSSMutableStyleDeclaration> styleFromMatchedRules = styleFromMatchedRulesForElement(const_cast<Element*>(el));
+styleFromMatchedRules->merge(style.get());
+style = styleFromMatchedRules;
+CSSMutableStyleDeclaration::const_iterator end = style->end();
+for (CSSMutableStyleDeclaration::const_iterator it = style->begin(); it != end; ++it) {
+styleFromMatchedRules->merge(style.get());

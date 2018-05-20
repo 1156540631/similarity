@@ -1,0 +1,44 @@
+VAR1[0] = getc(VAR4);
+while (FUN2(VAR4, VAR1) != 0);
+static int	FUN2(CLASS2 *VAR4, unsigned char *VAR2);
+FUN4 (getc(VAR4))
+fclose(VAR4);
+fread(VAR1, 9, 1, VAR4);
+if (VAR1[8] & VAR7)
+VAR3 = 2 << (VAR1[8] & 0x07);
+if (FUN1(VAR4, VAR3, VAR5, &VAR6))
+VAR8->VAR9 = (VAR1[5] << 8) | VAR1[4];
+VAR8->VAR10 = (VAR1[7] << 8) | VAR1[6];
+if (VAR8->VAR9 == 0 || VAR8->VAR10 == 0)
+VAR8->VAR9, VAR8->VAR10);
+fprintf(stderr, "DEBUG: Bad GIF image dimensions: %dx%VAR39\n",
+fclose(VAR4);
+VAR13 = FUN3(VAR4, VAR8, VAR5, VAR1[8] & VAR11);
+int VAR12);
+VAR13 = FUN3(VAR4, VAR8, VAR5, VAR1[8] & VAR11);
+static int	FUN1(CLASS2 *VAR4, int VAR3, CLASS1 VAR5,
+fclose(VAR4);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN5(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN6(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN7(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN8(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN9(VAR5[VAR13], 1, VAR14, VAR15);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN10(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN11(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN12(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN13(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+FUN14(VAR5[VAR13], VAR5[VAR13], 1);
+for (VAR13 = VAR3 - 1; VAR13 >= 0; VAR13 --)
+cupsImageLut(VAR5[VAR13], VAR16, VAR17);
+static int	FUN3(CLASS2 *VAR4, CLASS3 *VAR8, CLASS1 VAR5,
+fclose(VAR4);

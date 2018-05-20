@@ -1,0 +1,31 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+return VAR3 - 32;
+int VAR4 = 596;
+char *VAR5;
+FUN1(&VAR5,"5389",VAR4);
+VAR6 = ((char *)VAR5);
+VAR7[64 - 1] = '\';
+FUN2(VAR8, VAR9, "VAR7", VAR7, "VAR10-VAR11");
+VAR12 = ((int )(strlen(VAR6)));
+VAR7[VAR13] = VAR6[VAR12];
+FUN2(VAR8, VAR9, "VAR7", VAR7, "VAR14-VAR11");
+VAR7[VAR15] = FUN3(VAR7[VAR15]);
+FUN4("%s\n",&(VAR7[VAR13+1]));
+free(VAR7);
+void FUN1(char** VAR1, char* VAR16, int VAR17) {
+if ((VAR18 = FUN5(VAR19, VAR17, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR17, sizeof(char));
+FUN1(&VAR5,"5389",VAR4);
+VAR6 = ((char *)VAR5);
+VAR12 = ((int )(strlen(VAR6)));
+VAR7[VAR13] = VAR6[VAR12];
+FUN2(VAR8, VAR9, "VAR7", VAR7, "VAR14-VAR11");
+free(VAR7);
+int FUN3(int VAR3)
+return VAR3;
+VAR7[VAR15] = FUN3(VAR7[VAR15]);
+free(VAR7);
+void FUN4(char * VAR20, ...) {
+FUN4("%s\n",&(VAR7[VAR13+1]));
+free(VAR7);

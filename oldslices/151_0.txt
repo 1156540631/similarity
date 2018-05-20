@@ -1,0 +1,8 @@
+st = ic->streams[pkt->stream_index];
+double dts= (is_relative(pkt->dts) ?  pkt->dts - RELATIVE_TS_BASE : pkt->dts) * av_q2d(st->time_base);
+double sdts= dts*framerate/(1001*12);
+int ticks= lrintf(sdts+j*0.5);
+static int is_relative(int64_t ts) {
+double dts= (is_relative(pkt->dts) ?  pkt->dts - RELATIVE_TS_BASE : pkt->dts) * av_q2d(st->time_base);
+double sdts= dts*framerate/(1001*12);
+int ticks= lrintf(sdts+j*0.5);

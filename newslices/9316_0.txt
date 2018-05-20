@@ -1,0 +1,9 @@
+VAR1;
+VAR2 = ((VAR2 >> VAR1) - VAR3) -
+return -CLASS1 * pow(2, VAR2);
+return FUN1(VAR4.VAR5);
+return FUN1(VAR4.VAR5);
+FUN1(const VAR6 VAR7)
+VAR2 = VAR7 & VAR8;
+VAR2 = ((VAR2 >> VAR1) - VAR3) -
+return -CLASS1 * pow(2, VAR2);

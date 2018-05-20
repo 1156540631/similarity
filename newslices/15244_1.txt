@@ -1,0 +1,8 @@
+int * VAR1;
+int * &VAR2 = VAR1;
+int VAR3[50];
+int VAR4[100];
+VAR1 = VAR3;
+int * VAR1 = VAR2;
+int VAR5[100] = {0};
+memmove(VAR1, VAR5, 100*sizeof(int));

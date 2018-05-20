@@ -1,0 +1,3 @@
+jmp_buf torchlighted_cissies;
+ectocyst_anarchs = setjmp(torchlighted_cissies);
+longjmp(torchlighted_cissies,1);

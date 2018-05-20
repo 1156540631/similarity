@@ -1,0 +1,2 @@
+if (VAR1 = FUN1("OPENSSL_ia32cap")) {
+int VAR2 = VAR1[0] == '~'?1 : 0;

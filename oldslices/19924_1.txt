@@ -1,0 +1,6 @@
+data = NULL;
+data = new int[50];
+badSink(data);
+void badSink(int * data)
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

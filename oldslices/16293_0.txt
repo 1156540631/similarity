@@ -1,0 +1,5 @@
+char * &dataRef = data;
+data = (char *)malloc((10+1)*sizeof(char));
+char * data = dataRef;
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

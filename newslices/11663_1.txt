@@ -1,0 +1,7 @@
+VAR1=(char**) malloc(10*sizeof(char*));
+VAR1[VAR2]=(char*) malloc(10*sizeof(char));
+strcpy(VAR1[VAR2],"STRING00");
+FUN1();
+strcpy(VAR3,VAR1[VAR2]);
+free (VAR1[VAR2]);
+free(VAR1);

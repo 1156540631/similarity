@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+concavities_meropodite = ((char *)( *( *( *( *( *( *( *( *( *( *sophistress_odontolith)))))))))) . ring_stinkbugs);
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,concavities_meropodite,sizeof(stonesoup_source));

@@ -1,0 +1,19 @@
+#VAR1 VAR2
+#VAR3 VAR4 VAR5
+#else
+#VAR3 VAR4 VAR6
+#VAR7
+char VAR8[100] = "";
+VAR9 = VAR8;
+for(VAR10 = 0; VAR10 < 1; VAR10++)
+VAR11 VAR12 = strlen(VAR9);
+if (100-VAR12 > 1)
+if (fgets(VAR9+VAR12, (int)(100-VAR12), VAR13) != VAR14)
+VAR12 = strlen(VAR9);
+if (VAR12 > 0 && VAR9[VAR12-1] == '\')
+VAR9[VAR12-1] = '\';
+else
+VAR9[VAR12] = '\';
+for(VAR15 = 0; VAR15 < 1; VAR15++)
+char VAR16[100] = "";
+VAR4(VAR16, 100-1, VAR9);

@@ -1,0 +1,14 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&inductile_kaya,"ENTHRONIZING_CONVERTER");
+if (inductile_kaya != 0) {;
+supercordially_punner = inductile_kaya;
+fieldworker_jerkish = ((char *)supercordially_punner);
+stonesoup_buff_size = ((int )(strlen(fieldworker_jerkish)));
+memcpy(stonesoup_data->buffer, fieldworker_jerkish, 64);
+for (; stonesoup_i < stonesoup_buff_size; ++stonesoup_i){
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+free( stonesoup_data);
+if (supercordially_punner != 0)
+free(((char *)supercordially_punner));

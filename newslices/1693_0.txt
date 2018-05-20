@@ -1,0 +1,9 @@
+VAR1 = VAR2;
+VAR1 = FUN1(VAR1);
+static wchar_t * FUN1(wchar_t * VAR1)
+VAR1[0] = '\';
+return VAR1;
+VAR1 = FUN1(VAR1);
+FUN2(VAR1, 100, VAR3"%s", VAR4);
+FUN3(VAR1);
+free(VAR1);

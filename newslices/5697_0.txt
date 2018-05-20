@@ -1,0 +1,3 @@
+VAR1[2] = '\';
+if (! isxdigit(VAR1[0]) || ! isxdigit(VAR1[1]))
+VAR2 = (VAR3) FUN1((char *)VAR1, VAR4, 16);

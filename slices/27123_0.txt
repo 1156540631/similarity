@@ -1,0 +1,3 @@
+char FUN8[]="This is STRING";
+char *VAR407= (char*) malloc(15*sizeof(char));
+memcpy (VAR407,FUN8,15);

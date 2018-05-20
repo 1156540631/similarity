@@ -1,0 +1,28 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *trustlessly_gogglers;
+stonesoup_read_taint(&trustlessly_gogglers,"ANGIASTHENIA_SPLENATROPHY");
+carabidan_sentence . uglification_astto = trustlessly_gogglers;
+myowun_parasols(carabidan_sentence);
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&trustlessly_gogglers,"ANGIASTHENIA_SPLENATROPHY");
+carabidan_sentence . uglification_astto = trustlessly_gogglers;
+myowun_parasols(carabidan_sentence);
+void myowun_parasols(const union mortiferousness_vibrations grists_ravendale)
+thistles_stolewise = ((char *)((union mortiferousness_vibrations )grists_ravendale) . uglification_astto);
+stonesoup_buff_size = strlen(thistles_stolewise) + 1;
+thistles_stolewise[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+free (stonesoup_other_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

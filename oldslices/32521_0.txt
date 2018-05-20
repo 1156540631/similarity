@@ -1,0 +1,8 @@
+char * data;
+void (*funcPtr) (char *) = goodG2BSink;
+static void goodG2BSink(char * data)
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);
+char dataGoodBuffer[10+1];
+data = dataGoodBuffer;
+data[0] = '\0';

@@ -1,0 +1,3 @@
+register char *VAR527;
+VAR527++;
+printf ("strlen (VAR527)=%d\VAR7", strlen (VAR527));

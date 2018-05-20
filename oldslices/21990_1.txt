@@ -1,0 +1,8 @@
+swiving_gawkers = cephaline_beggarwoman(nonexportable_pertinent);
+CEPHALANTHUS_TRIBUTIST(swiving_gawkers);
+char stonesoup_buffer[8];
+strncpy(stonesoup_buffer,tonette_unlatinized,strlen(tonette_unlatinized) + 1);
+void tcg_chalkiest(char *hrip_exactress)
+tonette_unlatinized = ((char *)hrip_exactress);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(tonette_unlatinized)+1, tonette_unlatinized, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,tonette_unlatinized,strlen(tonette_unlatinized) + 1);

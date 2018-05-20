@@ -1,0 +1,13 @@
+map<int, TwoIntsClass *> dataMap;
+data = NULL;
+data = new TwoIntsClass[50];
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+badSink(dataMap);
+void badSink(map<int, TwoIntsClass *> dataMap)
+TwoIntsClass * data = dataMap[2];
+TwoIntsClass source[100];
+source[i].intOne = 0;
+source[i].intTwo = 0;
+memmove(data, source, 100*sizeof(TwoIntsClass));

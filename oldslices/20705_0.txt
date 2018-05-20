@@ -1,0 +1,5 @@
+HTAB *hash_create(const char *tabname,long nelem,HASHCTL *info,int flags)
+CurrentDynaHashCxt = AllocSetContextCreate(CurrentDynaHashCxt,tabname,0,(8 * 1024),(8 * 1024 * 1024));
+hashp = ((HTAB *)(DynaHashAlloc(sizeof(HTAB ) + strlen(tabname) + 1)));
+hashp -> tabname = ((char *)(hashp + 1));
+strcpy(hashp -> tabname,tabname);

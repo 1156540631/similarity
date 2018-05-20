@@ -1,0 +1,7 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = '\0';
+FUN1(VAR2);
+void FUN1(char * VAR2)
+char VAR3[50] = "";
+memcpy(VAR3, VAR2, strlen(VAR2)*sizeof(char));

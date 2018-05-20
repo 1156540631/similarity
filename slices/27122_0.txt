@@ -1,0 +1,4 @@
+STRUCT18* VAR405=malloc(15*sizeof(STRUCT18));
+STRUCT18  VAR406[15];
+memset(VAR405,1,15*sizeof(STRUCT18));
+memcpy(VAR406,VAR405,15*sizeof(STRUCT18));

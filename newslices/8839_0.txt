@@ -1,0 +1,4 @@
+double * &VAR1 = VAR2;
+double * VAR2 = VAR1;
+FUN1(*VAR2);
+free(VAR2);

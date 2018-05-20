@@ -1,0 +1,13 @@
+int globalFive = 5;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(globalFive!=5){}
+else
+strcpy(data, "fixedstringtest");
+if(globalFive==5)
+goodG2B1VaSinkB(data, data);
+static void goodG2B1VaSinkB(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

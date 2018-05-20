@@ -1,0 +1,12 @@
+void * data;
+CWE122_Heap_Based_Buffer_Overflow__CWE135_67_structType myStruct;
+data = NULL;
+char * dataGoodBuffer = (char *)malloc(50*sizeof(char));
+memset(dataGoodBuffer, 'A', 50-1);
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+myStruct.structFirst = data;
+CWE122_Heap_Based_Buffer_Overflow__CWE135_67b_goodG2BSink(myStruct);
+void CWE122_Heap_Based_Buffer_Overflow__CWE135_67b_goodG2BSink(CWE122_Heap_Based_Buffer_Overflow__CWE135_67_structType myStruct)
+void * data = myStruct.structFirst;
+size_t dataLen = strlen((char *)data);

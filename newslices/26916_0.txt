@@ -1,0 +1,4 @@
+VAR1 = fopen(VAR2, "w");
+VAR3 = FUN1();
+VAR4 =  FUN2(VAR5, VAR6, VAR7, VAR8, VAR9);
+printf("VAR10 VAR11 VAR12 = %s ...\n", VAR2);

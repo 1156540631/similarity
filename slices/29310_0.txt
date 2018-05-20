@@ -1,0 +1,15 @@
+typedef CLASS3
+char * VAR13;
+char * VAR14;
+} CLASS2;
+CLASS2 VAR15;
+char VAR5[100];
+memset(VAR5, 'A', 100-1);
+VAR5[100-1] = '\0';
+VAR6 = VAR5;
+VAR15.VAR13 = VAR6;
+char * VAR6 = VAR15.VAR14;
+char VAR7[100];
+memset(VAR7, 'C', 100-1);
+VAR7[100-1] = '\0';
+strcpy(VAR6, VAR7);

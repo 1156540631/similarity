@@ -1,0 +1,8 @@
+! memcmp( &VAR1.VAR2[1], "tarkin", 6 ) )
+! memcmp( VAR1.VAR2, "Annodex", 7 ) )
+! memcmp( VAR1.VAR2, "\x01vorbis", 7 ) )
+! memcmp( VAR1.VAR2, "Speex", 5 ) )
+! memcmp( VAR1.VAR2, "fLaC", 4 ) )
+! memcmp( VAR1.VAR2, "\x80theora", 7 ) )
+! memcmp( VAR1.VAR2, "VAR3-VAR4\x00", 9 ) ) )
+! memcmp( VAR1.VAR2, "VAR5\x00", 5 ) ) ||

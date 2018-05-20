@@ -1,0 +1,3 @@
+int FUN1(CLASS1 *VAR1, const char *VAR2)
+VAR2 += strspn(VAR2, VAR3);
+VAR4 = toupper((unsigned char) *VAR2++);

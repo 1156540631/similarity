@@ -1,0 +1,11 @@
+#define VAR8 L"AAAAAAAAAA"
+wchar_t * VAR1;
+VAR1 = NULL;
+switch(6)
+case 6:
+VAR1 = (wchar_t *)malloc(10*sizeof(wchar_t));
+break;
+default:
+break;
+wchar_t VAR9[10+1] = VAR8;
+wcscpy(VAR1, VAR9);

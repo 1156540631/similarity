@@ -1,0 +1,4 @@
+nuzzling_arminius = getenv("ORANGY_ZOOPHYTOGRAPHY");
+if (nuzzling_arminius != 0) {;
+costocoracoid_freers = ((char *)nuzzling_arminius);
+strncpy(stonesoup_source, costocoracoid_freers, sizeof(stonesoup_source));

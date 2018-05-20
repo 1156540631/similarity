@@ -1,0 +1,5 @@
+fprintf(VAR1, "%i ", *(VAR2++));
+fprintf(VAR1, "\n");
+fprintf(VAR1, "VAR3 VAR4 VAR5 %d VAR6 %d\n", VAR5, VAR6);
+fprintf(VAR1,
+fprintf(VAR1, "\n");

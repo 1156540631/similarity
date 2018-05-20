@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *hot_scungilli)
+downhearted_disgress = ((int )(strlen(hot_scungilli)));
+memcpy(wordle_backcourtman,hot_scungilli,downhearted_disgress);
+free(((char *)hot_scungilli));

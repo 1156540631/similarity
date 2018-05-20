@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+userstr = argv[1];
+char buf[MAXSIZE];
+if(strlen(userstr) <= MAXSIZE)
+test(userstr);
+test(char *str)
+char buf[MAXSIZE];
+snprintf(buf, 1024, "<%s>", str);

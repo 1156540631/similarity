@@ -1,0 +1,10 @@
+void stonesoup_handle_taint(char *mannerlessness_stipels)
+union loka_upperer stopgaps_peevishness;
+stopgaps_peevishness . succumbence_gaea = mannerlessness_stipels;
+involuntary_nonhistorically = virgilia_anthropopathy(stopgaps_peevishness);
+union loka_upperer virgilia_anthropopathy(union loka_upperer dicasteries_morandi)
+return dicasteries_morandi;
+involuntary_nonhistorically = virgilia_anthropopathy(stopgaps_peevishness);
+dalliance_profilers = ((char *)involuntary_nonhistorically . succumbence_gaea);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(dalliance_profilers)+1, dalliance_profilers, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, dalliance_profilers, strlen(dalliance_profilers) + 1);

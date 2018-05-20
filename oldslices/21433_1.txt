@@ -1,0 +1,3 @@
+int main(int argc, char *argv[])
+if ((argc < 5) || (atoi(argv[3]) > 17))
+buf[atoi(argv[3])] = 'A';

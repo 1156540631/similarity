@@ -1,0 +1,8 @@
+VAR1 = VAR2;
+VAR3[50-1] = '\';
+VAR1 = (void *)VAR3;
+memcpy(VAR4, VAR1, (VAR5+1));
+VAR6 VAR5 = strlen((char *)VAR1);
+void * VAR4 = (void *)calloc(VAR5+1, 1);
+memcpy(VAR4, VAR1, (VAR5+1));
+free(VAR4);

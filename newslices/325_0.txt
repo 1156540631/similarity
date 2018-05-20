@@ -1,0 +1,4 @@
+VAR1->VAR2->VAR3[VAR4] = '\';
+if (strlen(VAR1->VAR2->VAR3) != VAR4) {
+&& strncmp(VAR1->VAR2->VAR3,
+&& strlen(VAR1->VAR2->VAR3) == VAR4

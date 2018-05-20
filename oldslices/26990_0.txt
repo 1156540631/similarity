@@ -1,0 +1,3 @@
+fprintf(stderr, "Error opening file\n");
+fprintf(stderr, "Error reading file\n");
+fprintf(stderr, "Error closing file\n");

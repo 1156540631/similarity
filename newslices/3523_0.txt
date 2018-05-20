@@ -1,0 +1,6 @@
+char *VAR1 = 0;
+FUN1(&VAR1);
+VAR2 = 1;
+VAR3 = &VAR1;
+VAR4 = ((char **)(((unsigned long )VAR3) * VAR2 * VAR2)) + 5;
+free(((char *)( *(VAR4 - 5))));

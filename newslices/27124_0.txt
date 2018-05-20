@@ -1,0 +1,4 @@
+char VAR1[12],*VAR2 = VAR1;
+VAR3[11]='\';
+VAR3[VAR4]='';
+memcpy(VAR2,VAR3,12);

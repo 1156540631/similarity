@@ -1,0 +1,7 @@
+#define VAR1 "AAAAAAAAAA"
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);
+VAR2[0] = '\0';
+FUN37(VAR2);
+void FUN37(char * VAR2)
+strcpy(VAR2, VAR7);

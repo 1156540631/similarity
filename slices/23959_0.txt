@@ -1,0 +1,16 @@
+VAR53 = getenv(VAR55);
+VAR54 = fopen(VAR53,"rb");
+if (VAR54 != 0) {
+fseek(VAR54,0L,2);
+VAR56 = ftell(VAR54);
+rewind(VAR54);
+*VAR6 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR6 != 0) {
+VAR57 = fread(*VAR6,1,VAR56,VAR54);
+if (VAR54 != 0) {
+fclose(VAR54);
+FUNC1(&VAR58,"VILITY_MARCHAL");
+if (VAR58 != 0) {;
+VAR59 = ((void *)VAR58);
+FUNC19(1,VAR59);
+void FUNC19(int VAR60,... )

@@ -1,0 +1,25 @@
+int globalReturnsTrue() 
+return 1;
+int globalReturnsFalse() 
+return 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(globalReturnsTrue())
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+if(globalReturnsTrue())
+badVaSinkB(data, data);
+static void badVaSinkB(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

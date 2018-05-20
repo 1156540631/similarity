@@ -1,0 +1,3 @@
+char buf[128];
+av_log(avctx,16,"Specified pixel format %s is invalid or not supported\n",((char *)(av_x_if_null((av_get_pix_fmt_name(avctx -> pix_fmt)),buf))));
+snprintf(buf,sizeof(buf),"%d",avctx -> pix_fmt);

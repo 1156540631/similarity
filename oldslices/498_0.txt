@@ -1,0 +1,10 @@
+&wth->phdr, wth->frame_buffer, err, err_info);
+struct wtap_pkthdr *phdr, Buffer *buf,
+phdr, buf, err, err_info)) {
+struct wtap_pkthdr *phdr, Buffer *buf, int *err, gchar **err_info)
+guint                tmp[2];
+bytes_read = file_read(&tmp, 2, fh);
+payload_length = pletoh16(tmp);
+buffer_assure_space(buf, packet_size);
+pd = buffer_start_ptr(buf);
+memcpy(pd, tmp, 2);

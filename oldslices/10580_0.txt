@@ -1,0 +1,5 @@
+for (i = 0; i < NUM_RAND_ALLOCS; i++) {
+char		text[80];
+sprintf(text, "|OTHER-PRIVATE-CONFIDENTIAL-SECRET-MEMORY-%02d", i);
+pl = strlen(text) * 32 * (i+1);
+p = malloc(pl);

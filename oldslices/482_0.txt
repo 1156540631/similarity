@@ -1,0 +1,3 @@
+d = (unsigned char *)s->init_buf->data;
+p = &(d[DTLS1_HM_HEADER_LENGTH]);
+memcpy(p, s->s3->tmp.finish_md, i);

@@ -1,0 +1,9 @@
+char * VAR36[5];
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[50-1] = '\0';
+VAR36[2] = VAR1;
+FUN2(VAR36);
+void FUN2(char * VAR36[])
+char * VAR1 = VAR36[2];
+char VAR40[50] = "";
+strncpy(VAR40, VAR1, strlen(VAR1));

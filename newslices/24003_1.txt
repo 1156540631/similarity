@@ -1,0 +1,33 @@
+void FUN1(char** VAR1, char* VAR2) {
+VAR3 = FUN2(VAR2);
+VAR4 = fopen(VAR3,"rb");
+fseek(VAR4,0L,2);
+VAR5 = ftell(VAR4);
+rewind(VAR4);
+*VAR1 = ((char *)(malloc(sizeof(char ) * (VAR5 + 1))));
+VAR6 = fread(*VAR1,1,VAR5,VAR4);
+*VAR1 = VAR7;
+struct CLASS1 VAR8;
+char *VAR9;
+FUN1(&VAR9,"PARA_STORYMONGER");
+VAR8 . VAR10 = ((char *)VAR9);
+VAR11[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR12)))))))))))))))))))))))))))))))))))))))))))))))))] = VAR8;
+VAR13 = VAR11[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *VAR12)))))))))))))))))))))))))))))))))))))))))))))))))];
+VAR14 = ((char *)VAR13 . VAR10);
+VAR15 = 4;
+VAR16 = malloc(65528);
+strncpy(VAR16, VAR14, VAR15);
+VAR16[VAR15 - 1] = 0;
+FUN3("%s\n", VAR16);
+FUN4(VAR17, VAR18, "VAR15", VAR15, &VAR15, "VAR19-VAR20");
+FUN4(VAR17, VAR21, "VAR16", VAR16, "VAR22-VAR20");
+VAR23 = FUN5(VAR16);
+strncpy(VAR16, VAR14, VAR15);
+char FUN5(char *VAR24)
+free(VAR24);
+FUN4(VAR17, VAR21, "VAR16", VAR16, "VAR25-VAR20");
+strncpy(VAR16, VAR14, VAR15);
+void FUN3(char * VAR26, ...) {
+FUN4(VAR17, VAR21, "VAR16", VAR16, "VAR19-VAR20");
+FUN4(VAR17, VAR21, "VAR16", VAR16, "VAR25-VAR20");
+strncpy(VAR16, VAR14, VAR15);

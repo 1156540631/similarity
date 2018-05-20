@@ -1,0 +1,4 @@
+static void FUN1(char * VAR1)
+FUN2(VAR1, 100, "%s", VAR2);
+FUN3(VAR1);
+free(VAR1);

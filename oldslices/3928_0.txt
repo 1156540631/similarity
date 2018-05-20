@@ -1,0 +1,7 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hygrophyte_exobasidium,"CYBELE_ATTRITIVE");
+if (hygrophyte_exobasidium != 0) {;
+underrespected_clitellar = ((void *)hygrophyte_exobasidium);
+*lynchings_septicopyemic = underrespected_clitellar;

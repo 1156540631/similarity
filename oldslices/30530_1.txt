@@ -1,0 +1,11 @@
+data = -1;
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+badStatic = 1;
+badSink(data);
+static void badSink(int data)
+if(badStatic)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

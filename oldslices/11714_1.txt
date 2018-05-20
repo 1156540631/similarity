@@ -1,0 +1,11 @@
+int ptr[5] = {4,6,9,10,0};
+int *ptr1,i;
+invalid_memory_access_func_010(5,&ptr1);
+for(i=0;i<5;i++)
+*(ptr1+i) = ptr[i];
+free(ptr1);
+void invalid_memory_access_func_010 (int len ,int **Ptr)
+int * p = malloc(sizeof(int) * len);
+*Ptr = p;
+invalid_memory_access_func_010(5,&ptr1);
+free(ptr1);

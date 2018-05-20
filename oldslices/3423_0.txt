@@ -1,0 +1,14 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&conglobulate_tauchnitz,"REBBA_BRACHIOTOMY");
+if (conglobulate_tauchnitz != 0) {;
+hirling_morcha = ((int )(strlen(conglobulate_tauchnitz)));
+sergeantship_nondoubting = ((char *)(malloc(hirling_morcha + 1)));
+if (sergeantship_nondoubting == 0) {
+memcpy(sergeantship_nondoubting,conglobulate_tauchnitz,hirling_morcha);
+if (conglobulate_tauchnitz != 0)
+free(((char *)conglobulate_tauchnitz));
+WITHER_PREFRANKNESS(sergeantship_nondoubting);
+void morea_werefox(char *demonetizes_paronym)
+WITHER_PREFRANKNESS(sergeantship_nondoubting);

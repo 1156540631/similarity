@@ -1,0 +1,4 @@
+int FUN1(CLASS1 *VAR1,CLASS2 *VAR2,const char *VAR3)
+switch(( *(VAR3++))){
+if (( *(VAR3++)) == ':') {
+int VAR4 = (strtol(VAR3,((void *)0),0));

@@ -1,0 +1,6 @@
+char * *dataPtr2 = &data;
+data = new char[10+1];
+*dataPtr1 = data;
+char * data = *dataPtr2;
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

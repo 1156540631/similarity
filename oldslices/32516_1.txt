@@ -1,0 +1,11 @@
+char * data;
+char * *dataPtr1 = &data;
+char * *dataPtr2 = &data;
+char dataBadBuffer[10];
+char * data = *dataPtr1;
+data = dataBadBuffer;
+data[0] = '\0';
+*dataPtr1 = data;
+char * data = *dataPtr2;
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

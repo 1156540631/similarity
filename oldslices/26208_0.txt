@@ -1,0 +1,10 @@
+int shmsz;
+key_t key;
+char *str = NULL;
+if ((key = strtol(optarg, NULL, 10)) < 1000) {
+if ((shmsz = atoi(optarg)) <= 0) {
+str = optarg;
+} else if (strlen(str) >= shmsz) {
+if ((shmid = shmget(key, shmsz, IPC_CREAT | 0666)) < 0) {
+if ((shm = shmat(shmid, NULL, 0)) == (char *) -1) {
+strcpy(shm, str);

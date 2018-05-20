@@ -1,0 +1,6 @@
+char * data = badData;
+data = new char[10];
+badData = data;
+badSink();
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

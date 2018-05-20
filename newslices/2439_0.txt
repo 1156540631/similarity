@@ -1,0 +1,4 @@
+VAR1[11]='\';
+VAR1[VAR2]='';
+memcpy(VAR3,VAR1,12);
+free(VAR1);

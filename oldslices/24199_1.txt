@@ -1,0 +1,5 @@
+char stonesoup_stack_buffer_64[64];
+sulfato_minipanic = ((char *)((union amphipyrenin_winthrop )slappers_fibreless) . tenderish_recarbon);
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,sulfato_minipanic);

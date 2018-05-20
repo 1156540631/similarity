@@ -1,0 +1,3 @@
+*VAR1++ = '\';
+VAR1 = strchr(VAR1, VAR2);
+VAR1 = strchr(VAR1, '=');

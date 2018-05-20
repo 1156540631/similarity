@@ -1,0 +1,21 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&colation_prosecutes,"ODESSA_POLYGONALLY");
+if (colation_prosecutes != 0) {;
+waxy_shechina = ((char *)colation_prosecutes);
+stonesoup_taint_len = ((int )(strlen(waxy_shechina)));
+for (; stonesoup_taint_len >= 0; (--stonesoup_buff_size , --stonesoup_taint_len)) {
+stonesoup_data->buffer[stonesoup_buff_size] = waxy_shechina[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+free(stonesoup_data);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+if (colation_prosecutes != 0)
+free(((char *)colation_prosecutes));
+int stonesoup_toupper(int c)
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->before(stonesoup_data->buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data->before(stonesoup_data->buffer[stonesoup_i]));

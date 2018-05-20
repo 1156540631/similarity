@@ -1,0 +1,15 @@
+static void v9fs_xattrwalk(void *opaque)
+ssize_t err = 0;
+V9fsPDU *pdu = opaque;
+V9fsState *s = pdu->s;
+xattr_fidp->fs.xattr.value = g_malloc(size);
+err = pdu_marshal(pdu, offset, "q", size);
+complete_pdu(s, pdu, err);
+static void complete_pdu(V9fsState *s, V9fsPDU *pdu, ssize_t len)
+int err = func(len);
+ssize_t func(ssize_t len)
+return -len;
+int err = func(len);
+V9fsString str;
+str.data = strerror(err);
+str.size = strlen(str.data);

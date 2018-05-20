@@ -1,0 +1,14 @@
+char * data;
+map<int, char *> dataMap;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, char *> dataMap)
+char dest[50] = "";
+char * data = dataMap[2];
+memcpy(dest, data, strlen(data)*sizeof(char));

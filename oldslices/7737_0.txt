@@ -1,0 +1,11 @@
+int simmers_ramsons = 40;
+char *scopiform_synchromist;
+stonesoup_read_taint(&scopiform_synchromist,"8430",simmers_ramsons);
+soaking_sestertius = ((int )(strlen(scopiform_synchromist)));
+haematological_owercome = ((char *)(malloc(soaking_sestertius + 1)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&scopiform_synchromist,"8430",simmers_ramsons);
+soaking_sestertius = ((int )(strlen(scopiform_synchromist)));
+haematological_owercome = ((char *)(malloc(soaking_sestertius + 1)));

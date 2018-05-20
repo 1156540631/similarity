@@ -1,0 +1,17 @@
+void *data, int *data_size,
+const uint8_t *buf, int buf_size)
+unsigned char *output_samples = (unsigned char *)data;
+const unsigned char *p = buf + 16;
+*data_size = vmdaudio_loadsound(s, output_samples, p, 0, buf_size - 16);
+uint32_t flags = AV_RB32(p);
+int raw_block_size = s->block_align * s->bits / 8;
+silent_chunks = 32;
+silent_chunks = av_log2(flags + 1);
+memset(output_samples, 0, raw_block_size * silent_chunks);
+output_samples += raw_block_size * silent_chunks;
+*data_size += vmdaudio_loadsound(s, output_samples, p + 4, 0, buf_size - 20);
+*data_size = vmdaudio_loadsound(s, output_samples, p, 1, 0);
+const uint8_t *buf, int silence, int data_size)
+memset(data, 0, data_size * 2);
+static int vmdaudio_loadsound(VmdAudioContext *s, unsigned char *data,
+memset(data, 0, data_size * 2);

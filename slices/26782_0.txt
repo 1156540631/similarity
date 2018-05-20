@@ -1,0 +1,2 @@
+char VAR46[10];
+memset(VAR46, 'A', 10);

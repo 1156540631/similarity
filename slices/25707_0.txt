@@ -1,0 +1,3 @@
+VAR301 = (getenv( *VAR304));
+if (VAR301 && VAR301[0]) {
+fprintf(VAR302,"%VAR9: warning: cannot set LC_CTYPE locale\VAR25%VAR9: warning: environment variable %VAR9 is %VAR9\VAR25%VAR9: warning: please check that your locale VAR227 is correct\VAR25",VAR303,VAR303, *VAR304,VAR301,VAR303);

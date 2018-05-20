@@ -1,0 +1,6 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr, userstr2);
+test(char *str1, char *str2)
+snprintf(p, l, "<%s>", str1);
+x = strlen(p);

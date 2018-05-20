@@ -1,0 +1,4 @@
+size_t        len,
+asn1_debug(buffer, value_length, indent + 4);
+value_length = asn1_get_length(&buffer, bufend);
+value_length);

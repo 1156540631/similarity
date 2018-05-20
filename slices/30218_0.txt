@@ -1,0 +1,18 @@
+int VAR8;
+VAR8 = -1;
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+break;
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+FUN24(VAR8);
+void FUN24(int VAR8)
+FUN25(VAR8);
+void FUN25(int VAR8)
+FUN26(VAR8);
+void FUN26(int VAR8)
+FUN27(VAR8);
+void FUN27(int VAR8)
+int VAR7[10] = { 0 };
+if (VAR8 >= 0 && VAR8 < (10))
+FUN3(VAR7[VAR8]);

@@ -1,0 +1,2 @@
+VAR306[sizeof(VAR306) - 3] = '\0';
+strcat(VAR306,": ");

@@ -1,0 +1,23 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * data;
+CWE134_Uncontrolled_Format_String__char_console_snprintf_67_structType myStruct;
+char dataBuffer[100] = "";
+data = dataBuffer;
+size_t dataLen = strlen(data);
+if (100-dataLen > 1)
+if (fgets(data+dataLen, (int)(100-dataLen), stdin) != NULL)
+dataLen = strlen(data);
+if (dataLen > 0 && data[dataLen-1] == '\n')
+data[dataLen-1] = '\0';
+else
+data[dataLen] = '\0';
+myStruct.structFirst = data;
+CWE134_Uncontrolled_Format_String__char_console_snprintf_67b_badSink(myStruct);
+void CWE134_Uncontrolled_Format_String__char_console_snprintf_67b_badSink(CWE134_Uncontrolled_Format_String__char_console_snprintf_67_structType myStruct)
+char * data = myStruct.structFirst;
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);

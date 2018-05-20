@@ -1,0 +1,5 @@
+VAR1 = FUN1("RIVERWAY_ROSSEN");
+if (VAR1 != 0) {;
+VAR2 = VAR1;
+FUN2(1,VAR2);
+void FUN2(int VAR3,... )

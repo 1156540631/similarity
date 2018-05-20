@@ -1,0 +1,4 @@
+int *VAR1=(int*) calloc(5,sizeof(int));
+int VAR2[4] = {3, 4, 5, 6};
+*(VAR1-VAR2[VAR3]) = 1;
+free(VAR1);

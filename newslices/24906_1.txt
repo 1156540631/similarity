@@ -1,0 +1,22 @@
+FUN1(&VAR1,"HYPING_BONDSERVANT");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+if (VAR5 != 0) {
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+if (*VAR2 != 0) {
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+if (VAR5 != 0) {
+fclose(VAR5);
+if (VAR1 != 0) {;
+VAR8 = &VAR1;
+VAR9 = VAR8 + 5;
+if ( *(VAR9 - 5) != 0) {
+VAR10 = ((char *)( *(VAR9 - 5)));
+VAR11 = ((int )(strlen(VAR10)));
+strncpy(VAR12, VAR10, 64);
+for (; VAR13 < VAR11; ++VAR13){
+FUN3("%02x",VAR12[VAR13]);

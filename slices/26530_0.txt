@@ -1,0 +1,34 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR77,"VILLATE_EPICOELIAC");
+if (VAR77 != 0) {;
+VAR80 = ((char *)VAR77);
+VAR81[7] = VAR80;
+VAR70 = ((int )(strlen(VAR80)));
+tracepoint(VAR71, VAR72, "VAR81", VAR81, "INITIAL-STATE");
+for (; VAR70 >= 0; (--VAR82 , --VAR70)) {
+VAR78[VAR82] = VAR80[VAR70];
+tracepoint(VAR71, VAR72, "VAR78", VAR78, "CROSSOVER-STATE");
+VAR78[VAR79] = FUN12(VAR78[VAR79]);
+FUN4("%VAR1\VAR7",VAR78);
+FUN4("strlen VAR74 = %d\VAR7",strlen(VAR80));
+FUN4("strlen VAR74 = %d\VAR7",strlen(VAR81[7]));
+if (VAR77 != 0)
+free(((char *)VAR77));
+void FUN4(char * VAR36, ...) {
+FUN4("strlen VAR74 = %d\VAR7",strlen(VAR81[7]));
+tracepoint(VAR71, VAR72, "VAR78", VAR78, "FINAL-STATE");
+int FUN12(int VAR4)
+if (VAR4 >= 97 && VAR4 <= 122) {
+return VAR4 - 32;
+return VAR4;
+VAR78[VAR79] = FUN12(VAR78[VAR79]);

@@ -1,0 +1,21 @@
+VAR1 = FUN1("DEVINNA_FOXTON");
+if (VAR1 != 0) {;
+VAR2 = VAR1;
+VAR3 = &VAR2;
+FUN2(VAR3);
+void FUN3(CLASS1 *VAR4)
+FUN2(VAR3);
+VAR5 = ((char *)( *VAR4));
+VAR6 = malloc((strlen(VAR5) + 1) * sizeof(char ));
+if (VAR6 == 0) {
+strcpy(VAR6,VAR5);
+if (VAR6[0] >= 97) {
+FUN4("VAR7 VAR8 VAR9 char: %i\n",FUN5(VAR6));
+if (VAR6 != 0) {
+free(VAR6);
+char FUN5(char *VAR10)
+VAR11 = VAR10[0] - 97;
+free(VAR10);
+return VAR11;
+FUN4("VAR7 VAR8 VAR9 char: %i\n",FUN5(VAR6));
+void FUN4(char * VAR12, ...) {

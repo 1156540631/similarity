@@ -1,0 +1,4 @@
+nsBlockFrame* f = const_cast<nsBlockFrame*>(this);
+if (f->HasOverflowAreas()) {
+nsRect overflowArea = f->GetVisualOverflowRect();
+overflowArea.width, overflowArea.height);

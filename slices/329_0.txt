@@ -1,0 +1,12 @@
+if ((VAR4 = FUN2(VAR8, VAR2, sizeof(VAR2), 0, (void *)&VAR6,
+&VAR5)) < 0)
+VAR4, VAR1);
+if (FUN4(VAR2, VAR4, &VAR1))
+static int		FUN4(unsigned char *VAR2, CLASS1 VAR3,
+FUN1(VAR2, VAR4, 0);
+FUN1(VAR2, VAR4, 0);
+FUN3(VAR2, VAR4);
+static void		FUN1(const char *VAR8, ...);
+static void		FUN3(unsigned char *VAR2, CLASS1 VAR3);
+static void		FUN1(unsigned char *VAR2, CLASS1 VAR3,
+FUN3(VAR2, VAR4);

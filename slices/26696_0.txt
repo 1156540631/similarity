@@ -1,0 +1,15 @@
+VAR255 = getenv("NONRANDOMNESS_MIMBARS");
+if (VAR255 != 0) {;
+VAR256 . VAR257 = ((char *)VAR255);
+FUN47(VAR256);
+void FUN47(const struct STRUCT14 VAR258)
+if (((struct STRUCT14 )VAR258) . VAR257 != 0) {
+VAR259 = ((char *)((struct STRUCT14 )VAR258) . VAR257);
+strncpy(VAR125, VAR259, VAR260);
+*VAR261 = VAR259;
+tracepoint(VAR71, VAR208, "VAR261", VAR261, "TRIGGER-STATE");
+tracepoint(VAR71, VAR208, "*VAR261", *VAR261, "TRIGGER-STATE");
+strncpy(VAR125, VAR259, VAR260);
+VAR262 = strlen( *VAR261);
+if (VAR261 != 0) {
+free(VAR261);

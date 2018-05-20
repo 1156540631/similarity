@@ -1,0 +1,2 @@
+VAR1 = new char[100];
+memset(VAR1, '', 100-1);

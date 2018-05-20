@@ -1,0 +1,62 @@
+q = (enc -> coded_frame -> quality) / ((float )'v');
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+double error_sum = 0;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+p = psnr(error_sum / scale_sum);
+static double psnr(double d)
+return - 10.0 * log(d) / log(10.0);
+qp_histogram[qp]++;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%X",((int )(lrintf((log2((qp_histogram[j] + 1)))))));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+p = psnr(error / scale);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"*:%2.2f ",psnr(error_sum / scale_sum));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+static double psnr(double d)
+return - 10.0 * log(d) / log(10.0);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"*:%2.2f ",psnr(error_sum / scale_sum));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+static void close_output_stream(OutputStream *ost)
+ost -> finished = 1;
+static int qp_histogram['4'];
+buf[0] = '\0';
+float q = (- 1);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+av_bprintf(&buf_script,"stream_%d_%d_q=%.1f\n",ost -> file_index,ost -> index,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"q=%2.1f ",q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"L");
+if (qp >= 0 && qp < sizeof(qp_histogram) / sizeof(qp_histogram[0])) {
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%X",((int )(lrintf((log2((qp_histogram[j] + 1)))))));
+double scale_sum = 0;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"PSNR=");
+error_sum += error;
+scale_sum += scale;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+p = psnr(error_sum / scale_sum);
+output_streams[i] -> unavailable = 0;
+if (!need_output()) {
+ret = transcode_step();
+ost = choose_output();
+if (got_eagain()) {
+reset_eagain();
+ret = transcode_step();
+print_report(0,timer_start,cur_time);
+free_input_threads();
+flush_encoders();
+term_exit();
+print_report(1,timer_start,av_gettime());
+ost = output_streams[i];
+frame_number = ost -> frame_number;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+av_bprintf(&buf_script,"frame=%d\n",frame_number);
+scale = (enc -> width * enc -> height) * 255.0 * 255.0 * frame_number;
+p = psnr(error / scale);

@@ -1,0 +1,7 @@
+void (*funcPtr) (int *) = badSink;
+data = NULL;
+data = new int[50];
+funcPtr(data);
+void badSink(int * data)
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

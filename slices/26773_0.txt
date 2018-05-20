@@ -1,0 +1,13 @@
+char VAR39[VAR319];
+u_char VAR320[VAR319];
+VAR321 = VAR320;
+if (FUN67((u_char *) VAR39, &VAR321, 0, VAR319) == 0) {
+VAR321 = VAR320;
+printf ("VAR321-VAR320=%u\VAR7", VAR321-VAR320);
+printf ("VAR39-VAR320=%u\VAR7", VAR39-(char *)VAR320);
+while (fgets(VAR39, sizeof VAR39, VAR83->VAR322) != NULL)
+FUN67(VAR323, VAR324, VAR325, VAR326)
+if (FUN67((u_char *) VAR39, &VAR321, 0, VAR319) == 0) {
+printf ("VAR321-VAR320=%u\VAR7", VAR321-VAR320);
+printf ("VAR39-VAR320=%u\VAR7", VAR39-(char *)VAR320);
+while (fgets(VAR39, sizeof VAR39, VAR83->VAR322) != NULL)

@@ -1,0 +1,4 @@
+char magic[sizeof ngsniffer_magic];
+bytes_read = file_read(magic, sizeof magic, wth->fh);
+if (bytes_read != sizeof magic) {
+if (memcmp(magic, ngsniffer_magic, sizeof ngsniffer_magic)) {

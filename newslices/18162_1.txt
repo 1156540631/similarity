@@ -1,0 +1,8 @@
+wchar_t * &VAR1 = VAR2;
+wchar_t VAR3[50];
+wchar_t VAR4[100];
+* VAR5 VAR6 VAR7 VAR8 VAR9 VAR10 using VAR11 "large" VAR12 VAR5. */
+VAR2 = VAR3;
+wchar_t * VAR2 = VAR1;
+VAR12[100-1] = '\';
+FUN1(VAR2, VAR12);

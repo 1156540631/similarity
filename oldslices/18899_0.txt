@@ -1,0 +1,8 @@
+switch(5)
+printLine("Benign, fixed string");
+break;
+default:
+char source[10+1] = SRC_STRING;
+data = new char[10+1];
+break;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

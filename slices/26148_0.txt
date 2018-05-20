@@ -1,0 +1,5 @@
+VAR208 = getenv("TREE_COLORS");
+if (VAR208 == ((void *)0)) {
+if ((VAR208 == ((void *)0) || strlen(VAR208) == 0) && VAR209) {
+if (VAR208 == ((void *)0) || !VAR209 && (VAR210 || !FUN74(1))) {
+VAR211 = strcpy((xmalloc(strlen(VAR208) + 1)),VAR208);

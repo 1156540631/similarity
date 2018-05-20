@@ -1,0 +1,2 @@
+char source[100];
+memset(source, 'C', 100-1);

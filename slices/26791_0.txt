@@ -1,0 +1,3 @@
+VAR336 = (char *) malloc(400*sizeof(char));
+VAR189 = VAR336;
+strcpy(VAR189, "HEADER JUNK:");

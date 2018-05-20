@@ -1,0 +1,11 @@
+char * *VAR44 = &VAR2;
+char * *VAR45 = &VAR2;
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+char * VAR2 = *VAR44;
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+*VAR44 = VAR2;
+char * VAR2 = *VAR45;
+char VAR4[50] = "";
+memmove(VAR4, VAR2, strlen(VAR2)*sizeof(char));

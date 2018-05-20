@@ -1,0 +1,10 @@
+char * VAR1;
+char * VAR2 = (char *)FUN1(100*sizeof(char));
+VAR1 = VAR2;
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+const VAR3& VAR4 = FUN2();
+VAR4.FUN3(VAR1);
+void FUN2::FUN3(char * VAR1) const
+char VAR5[50] = "";
+strcat(VAR5, VAR1);

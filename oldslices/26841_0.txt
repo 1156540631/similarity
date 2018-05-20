@@ -1,0 +1,29 @@
+addr++;
+p = addrhead = addr;
+p++;
+while ((c = *p++) != '\0')
+if ((c = *p++) == '\0')
+while ((c = *p++) != '<')
+p--;
+p++;
+p++;
+while ((c = *p++) != ':')
+p++;
+SM_APPEND_CHAR(*p);
+bufhead = bp;
+addrhead = p;
+bp = bufhead;
+for (q = addrhead; q < p; )
+c = *q++;
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR('\\');
+#define SM_APPEND_CHAR(c)                   \
+do                          \
+{                           \
+printf ("bp-obp = %d   buflim-obp=%d\n", (bp-obp), (buflim-obp)); \
+if (SM_HAVE_ROOM)               \
+*bp++ = (c);                \
+else                        \
+goto returng;               \
+} while (0)

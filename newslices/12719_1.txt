@@ -1,0 +1,55 @@
+FUN1(int VAR1, char *VAR2[])
+VAR3 = FUN2(VAR2[0], FUN1);
+if (VAR3 != VAR4) {
+VAR3);
+fprintf(VAR5, "VAR6: 'VAR7 VAR8 VAR9 VAR10 VAR6 VAR11: %s.\n",
+FUN3 ((VAR12 = FUN4(VAR1, VAR2, VAR13)) != -1) {
+switch (VAR12) {
+if (VAR1 >= 2 && strcmp(VAR2[1], "-VAR14") == 0) {
+if (VAR1 == 2)
+if (strcmp(VAR2[2], "fields") == 0)
+else if (strcmp(VAR2[2], "fields2") == 0)
+else if (strcmp(VAR2[2], "fields3") == 0)
+else if (strcmp(VAR2[2], "protocols") == 0)
+else if (strcmp(VAR2[2], "values") == 0)
+else if (strcmp(VAR2[2], "decodes") == 0)
+else if (strcmp(VAR2[2], "defaultprefs") == 0)
+else if (strcmp(VAR2[2], "currentprefs") == 0) {
+FUN5("VAR15 \"%s\" VAR16 for -VAR14 VAR17", VAR2[2]);
+FUN3 ((VAR12 = FUN4(VAR1, VAR2, VAR13)) != -1) {
+switch (VAR12) {
+VAR18 = FUN6(&VAR19, VAR12, VAR20, &VAR21);
+if(VAR18 != 0) {
+FUN7(VAR18);
+if (VAR22 < VAR1) {
+VAR23 = FUN8(VAR1, VAR2, VAR22);
+VAR19.VAR24 = FUN8(VAR1, VAR2, VAR22);
+VAR25.VAR26.VAR27[VAR28] = (CLASS1 *) FUN9(sizeof(CLASS1) * VAR29);
+for (VAR28 = 0; VAR28 < VAR25.VAR26.VAR30; VAR28++) {
+if (VAR25.VAR26.VAR31[VAR28] == VAR32) {
+FUN10(VAR25.VAR26.VAR33[VAR28], VAR25.VAR26.VAR31[VAR28]);
+if (VAR25.VAR26.VAR31[VAR28] == VAR34)
+VAR25.VAR26.VAR27[VAR28] = (CLASS1 *) FUN9(sizeof(CLASS1) * VAR35);
+VAR25.VAR26.VAR36.VAR36[VAR28] = (CLASS1 *) FUN9(sizeof(CLASS1) * VAR35);
+VAR25.VAR26.VAR36.VAR37[VAR28] = (CLASS1 *) FUN9(sizeof(CLASS1) * VAR35);
+for (VAR28 = 0; VAR28 < VAR25.VAR26.VAR30; VAR28++) {
+if (!VAR25.VAR26.VAR33[VAR28][VAR38])
+if (VAR25.VAR26.VAR39[VAR38] == -1)
+FUN11(&VAR19, VAR40);
+FUN12(&VAR19);
+if (VAR23 != VAR4) {
+if (!FUN13(VAR23, &VAR41)) {
+if (FUN14(VAR42, &VAR43, VAR23, 0, 0) != -1) {
+FUN15();
+VAR44 = FUN16(&VAR25, VAR19.VAR45, VAR46,
+VAR19.VAR47 ? VAR19.VAR48 : 0,
+VAR19.VAR49 ? VAR19.VAR50 : 0);
+if (!FUN17(&VAR19,
+VAR18 = FUN18(&VAR19, VAR51);
+FUN7(VAR18);
+FUN19();
+if (!FUN20()) {
+FUN5(const char *VAR52, ...)
+static int FUN16(CLASS2 *, char *, int, int, VAR53);
+VAR19.VAR47 ? VAR19.VAR48 : 0,
+VAR19.VAR49 ? VAR19.VAR50 : 0);

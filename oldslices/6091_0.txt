@@ -1,0 +1,7 @@
+char *quartermasters_onychia = 0;
+planidorsate_lowl(&quartermasters_onychia);
+nonelective_outdress = lavations_pretences(quartermasters_onychia);
+char *lavations_pretences(char *dredger_orthophenylene)
+return dredger_orthophenylene;
+nonelective_outdress = lavations_pretences(quartermasters_onychia);
+free(((char *)nonelective_outdress));

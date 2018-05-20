@@ -1,0 +1,19 @@
+narratives_zeoscope = getenv("MASSASOIT_SUPERMINIS");
+if (narratives_zeoscope != 0) {;
+tritangential_cardale = ((void *)narratives_zeoscope);
+reinvestigation_deafened(platina_perfeti,tritangential_cardale);
+void reinvestigation_deafened(int gadling_vincristine,void *alcibiades_nonbusiness)
+reinvestigation_deafened(gadling_vincristine,alcibiades_nonbusiness);
+selenodonta_spirochaetotic = ((char *)((char *)alcibiades_nonbusiness));
+stonesoup_input_len = strlen(selenodonta_spirochaetotic);
+if (stonesoup_input_len < 2) {
+stonesoup_get_function(stonesoup_input_len, stonesoup_function_ptr);
+stonesoup_result = ( *stonesoup_function_ptr)(selenodonta_spirochaetotic);
+if (stonesoup_result == 0)
+void reinvestigation_deafened(int gadling_vincristine,void *alcibiades_nonbusiness)
+selenodonta_spirochaetotic = ((char *)((char *)alcibiades_nonbusiness));
+stonesoup_input_len = strlen(selenodonta_spirochaetotic);
+stonesoup_get_function(stonesoup_input_len, stonesoup_function_ptr);
+void stonesoup_get_function(int len, fptr * modulus_function) {
+if (len > 10) {
+if (len < 10) {

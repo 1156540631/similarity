@@ -1,0 +1,8 @@
+char *buf;
+register char *bp = buf;
+printf ("SPACELEFT(buf,bp)=%d\n", SPACELEFT(buf,bp));
+snprintf(bp, SPACELEFT(buf, bp), "%s", login);
+bp += strlen(bp);
+printf ("bp-buf=%d\n", (bp-buf));
+*bp++ = *p;
+printf ("sizeof(bp) = %d\n", sizeof(bp));

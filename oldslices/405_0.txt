@@ -1,0 +1,3 @@
+int ff_hex_to_data(uint8_t *data, const char *p)
+p += strspn(p, SPACE_CHARS);
+c = toupper((unsigned char) *p++);

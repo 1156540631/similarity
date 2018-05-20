@@ -1,0 +1,4 @@
+void signoras_electrophoric(char *leathernecks_cochranea)
+acraein_evonymuses(leathernecks_cochranea);
+void acraein_evonymuses(char *ramblers_wineyard)
+free(((char *)ramblers_wineyard));

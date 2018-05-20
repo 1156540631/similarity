@@ -1,0 +1,5 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+snprintf(buf, 1024, "<%*.*s>", MAXSIZE-3, MAXSIZE-3, str);

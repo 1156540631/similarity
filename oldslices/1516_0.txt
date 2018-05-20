@@ -1,0 +1,14 @@
+register char *gecos;
+char *login;
+char *buf;
+register char *bp = buf;
+gecos++;
+l += strlen(login);
+for (p = gecos; *p != '\0' && *p != ',' && *p != ';' && *p != '%'; p++)
+*bp = toupper(*bp);
+bp++;
+*bp++ = *p;
+printf ("bp-buf = %d\n", (bp-buf));
+strlen(bp), strlen(login));
+(void) strcpy(bp, login);
+*bp = toupper(*bp);

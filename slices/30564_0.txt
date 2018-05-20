@@ -1,0 +1,12 @@
+int VAR43[5];
+VAR5 = -1;
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+VAR43[2] = VAR5;
+FUN72(VAR43);
+void FUN72(int VAR43[])
+int VAR5 = VAR43[2];
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

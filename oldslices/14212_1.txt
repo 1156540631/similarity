@@ -1,0 +1,8 @@
+static void handle_satn(ESPState *s)
+uint8_t buf[32];
+len = get_cmd(s, buf);
+static uint32_t get_cmd(ESPState *s, uint8_t *buf)
+uint32_t dmalen;
+uint32_t *dataCopy = &s->ti_size;
+dmalen = *dataCopy;
+memcpy(buf, s->ti_buf, dmalen);

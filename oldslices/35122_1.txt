@@ -1,0 +1,7 @@
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_34_unionType myUnion;
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+char * data = myUnion.unionSecond;
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

@@ -1,0 +1,8 @@
+register char *gecos;
+char *buf;
+int buflen;
+gecos++;
+printf ("sizeof (buf) = %d\n", sizeof (buf));
+printf ("buflen = %d\n", buflen);
+printf ("strlen (gecos)=%d\n", strlen (gecos));
+snprintf(buf, buflen, "%s", gecos);

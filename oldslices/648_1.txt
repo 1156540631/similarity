@@ -1,0 +1,42 @@
+ogg_page page;
+PRInt64 pageOffset = ReadOggPage(&page);
+int serial = ogg_page_serialno(&page);
+nsOggCodecState* codecState = 0;
+if (ogg_page_bos(&page)) {
+codecState = nsOggCodecState::Create(&page);
+mCodecStates.Put(serial, codecState);
+bitstreams.AppendElement(codecState);
+codecState->GetType() == nsOggCodecState::TYPE_VORBIS &&
+mVorbisState = static_cast<nsVorbisState*>(codecState);
+codecState->GetType() == nsOggCodecState::TYPE_THEORA &&
+mTheoraState = static_cast<nsTheoraState*>(codecState);
+codecState->GetType() == nsOggCodecState::TYPE_SKELETON &&
+mSkeletonState = static_cast<nsSkeletonState*>(codecState);
+mCodecStates.Get(serial, &codecState);
+NS_ENSURE_TRUE(codecState, NS_ERROR_FAILURE);
+if (NS_FAILED(codecState->PageIn(&page))) {
+codecState = nsOggCodecState::Create(&page);
+codecState->GetType() == nsOggCodecState::TYPE_THEORA &&
+mTheoraState = static_cast<nsTheoraState*>(codecState);
+if (mTheoraState && ReadHeaders(mTheoraState)) {
+mInfo.mPicture = nsIntRect(mTheoraState->mInfo.pic_x,
+mTheoraState->mInfo.pic_y,
+mTheoraState->mInfo.pic_width,
+mTheoraState->mInfo.pic_height);
+mInfo.mFrame = nsIntSize(mTheoraState->mInfo.frame_width,
+mTheoraState->mInfo.frame_height);
+memcpy(&mTheoraInfo, &mTheoraState->mInfo, sizeof(mTheoraInfo));
+PRBool nsOggReader::ReadHeaders(nsOggCodecState* aState)
+while (!aState->DoneReadingHeaders()) {
+if (mTheoraState && ReadHeaders(mTheoraState)) {
+memcpy(&mTheoraInfo, &mTheoraState->mInfo, sizeof(mTheoraInfo));
+PRBool nsOggReader::ReadHeaders(nsOggCodecState* aState)
+if (mTheoraState && ReadHeaders(mTheoraState)) {
+memcpy(&mTheoraInfo, &mTheoraState->mInfo, sizeof(mTheoraInfo));
+PRInt64 nsOggReader::ReadOggPage(ogg_page* aPage)
+while((ret = ogg_sync_pageseek(&mOggState, aPage)) <= 0) {
+PRInt64 pageOffset = ReadOggPage(&page);
+codecState = nsOggCodecState::Create(&page);
+codecState->GetType() == nsOggCodecState::TYPE_THEORA &&
+mTheoraState = static_cast<nsTheoraState*>(codecState);
+if (mTheoraState && ReadHeaders(mTheoraState)) {

@@ -1,0 +1,2 @@
+buf = (char *)malloc(100*sizeof(char));
+memset(buf, 'A', 100-1);

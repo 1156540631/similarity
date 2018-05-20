@@ -1,0 +1,17 @@
+char * VAR1;
+VAR1 = NULL;
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6 - 8;
+FUN49(VAR1);
+void FUN49(char * VAR1)
+FUN50(VAR1);
+void FUN50(char * VAR1)
+FUN51(VAR1);
+void FUN51(char * VAR1)
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));
+VAR8[100-1] = '\0';

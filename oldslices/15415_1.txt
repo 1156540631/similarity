@@ -1,0 +1,9 @@
+char * data;
+void (*funcPtr) (char *) = badSink;
+data = new char[100];
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+funcPtr(data);
+void badSink(char * data)
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

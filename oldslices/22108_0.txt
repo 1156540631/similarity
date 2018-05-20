@@ -1,0 +1,5 @@
+int main(int argc, char * argv[])
+usage(argv[0]);
+void usage(char *pname)
+char usageStr[1024];
+snprintf(usageStr, 1024, "Usage: %s <target>\n", pname);

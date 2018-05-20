@@ -1,0 +1,14 @@
+typedef union
+int VAR37;
+int VAR38;
+}CLASS13;
+CLASS13 CLASS2;
+VAR5 = -1;
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+CLASS2.VAR37 = VAR5;
+int VAR5 = CLASS2.VAR38;
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

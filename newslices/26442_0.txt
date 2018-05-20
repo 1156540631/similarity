@@ -1,0 +1,16 @@
+VAR1 = FUN1("BORESOMENESS_TEETY");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = malloc((strlen(VAR2) + 1) * sizeof(char ));
+if (VAR3 == 0) {
+strcpy(VAR3,VAR2);
+if (VAR3[0] >= 97) {
+FUN2("VAR4 VAR5 VAR6 char: %i\n",FUN3(VAR3));
+if (VAR3 != 0) {
+free(VAR3);
+char FUN3(char *VAR7)
+VAR8 = VAR7[0] - 97;
+free(VAR7);
+return VAR8;
+FUN2("VAR4 VAR5 VAR6 char: %i\n",FUN3(VAR3));
+void FUN2(char * VAR9, ...) {

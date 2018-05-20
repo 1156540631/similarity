@@ -1,0 +1,3 @@
+sproil_premarital = getenv("TAVERT_SWADDY");
+if (sproil_premarital != 0) {;
+centaurus_jara . adjoust_thermophilous = sproil_premarital;

@@ -1,0 +1,3 @@
+int    hash;
+line[pos + 1] = '\0';
+if (sscanf(&line[0], "%x", &hash) != 1)

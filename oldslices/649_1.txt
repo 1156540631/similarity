@@ -1,0 +1,59 @@
+string GetEntryName(const cdir_entry *entry)
+string name = reader.GetEntryName(entry);
+while ((entry = reader.GetNextEntry(entry))) {
+file = reader.GetLocalEntry(entry);
+const cdir_entry * GetNextEntry(const cdir_entry *prev)
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+return sizeof(cdir_entry) + letoh16(filename_size) +
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+const local_file_header * GetLocalEntry(const cdir_entry *entry)
+(local_file_header *)(mBuf + letoh32(entry->offset));
+const local_file_header * data =
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+letoh16(extra_field_size) + GetDataSize();
+return sizeof(local_file_header) + letoh16(filename_size) +
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+bool OpenArchive(const char *path)
+fd = open(path, O_RDONLY);
+struct stat sb;
+if (fstat(fd, &sb) == -1 || sb.st_size < sizeof(cdir_end)) {
+mBuf = (char *)mmap(nullptr, sb.st_size, PROT_READ, MAP_SHARED, fd, 0);
+mBuf = nullptr;
+uint16_t len = letoh16(entry->filename_size);
+name.append(entry->data, len);
+if (!reader.OpenArchive("/system/media/bootanimation.zip")) {
+while ((entry = reader.GetNextEntry(entry))) {
+entry = (cdir_entry *)(mBuf + letoh32(mEnd->cdir_offset));
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {

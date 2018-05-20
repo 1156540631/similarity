@@ -1,0 +1,3 @@
+FUN1(const char *VAR1)
+this->VAR1 = new char[strlen(VAR1) + 1];
+strcpy(this->VAR1, VAR1);

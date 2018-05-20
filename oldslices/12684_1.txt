@@ -1,0 +1,4 @@
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+stonesoup_printf("\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

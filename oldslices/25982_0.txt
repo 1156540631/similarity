@@ -1,0 +1,5 @@
+void hypogenetic_access(void **ioniser_leegrant)
+char stonesoup_source[1024];
+ergonomically_monotelephonic = ((char *)((char *)( *(ioniser_leegrant - 5))));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, ergonomically_monotelephonic, sizeof(stonesoup_source));

@@ -1,0 +1,21 @@
+char *gwynfa_cryptozonia;
+stonesoup_read_taint(&gwynfa_cryptozonia,"CASUISTICAL_RESTIACEOUS");
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+nutgrasses_disloyalist = ((void *)gwynfa_cryptozonia);
+drawbridges_walsh[5] = nutgrasses_disloyalist;
+scourfishes_daiquiri = 5;
+aeolodicon_soundheaded = &scourfishes_daiquiri;
+hawkbills_bluelegs =  *(drawbridges_walsh +  *aeolodicon_soundheaded);
+dekaliters_dorados = ((char *)((char *)hawkbills_bluelegs));
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, dekaliters_dorados);

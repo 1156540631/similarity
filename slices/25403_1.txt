@@ -1,0 +1,13 @@
+VAR13 = getenv("MADEGASSY_DEVOTIONALITY");
+if (VAR13 != 0) {;
+VAR14 = ((char *)VAR13);
+VAR15 = FUN3(VAR14);
+STRUCT1 FUN3(char *VAR16)
+VAR17 = strlen(VAR16) % 3;
+if (VAR17 == 0) {
+else if (VAR17 == 1) {
+sscanf(VAR16,"%VAR143",&VAR18);
+return VAR18;
+VAR15 = FUN3(VAR14);
+tracepoint(VAR19, VAR20, "VAR15", VAR15, "TRIGGER-STATE");
+VAR21 = ( *VAR15)(VAR22,VAR14);

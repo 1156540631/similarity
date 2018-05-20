@@ -1,0 +1,14 @@
+static const int VAR24 = 1;
+static const int VAR23 = 0;
+int VAR20;
+VAR20 = -1;
+if(VAR24)
+VAR14 = FUN43(VAR15, VAR16, VAR17 - 1, 0);
+if (VAR14 == VAR18 || VAR14 == 0)
+break;
+VAR16[VAR14] = '\0';
+VAR20 = atoi(VAR16);
+if(VAR24)
+int VAR19[10] = { 0 };
+if (VAR20 >= 0 && VAR20 < (10))
+printIntLine(VAR19[VAR20]);

@@ -1,0 +1,5 @@
+VAR5 = 0;
+while (FUN1(VAR4, VAR1, sizeof(VAR1), &VAR3, &VAR5))
+fprintf(stderr,
+fprintf(stderr, "VAR9: Unknown directive %VAR1 on VAR1 %VAR39 of %VAR1!\n",
+fprintf(stderr, "VAR9: Missing VAR3 on VAR1 %VAR39 of %VAR1!\n", VAR5,

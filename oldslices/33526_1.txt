@@ -1,0 +1,8 @@
+wchar_t * dataBadBuffer = (wchar_t *)ALLOCA(50*sizeof(wchar_t));
+data = dataBadBuffer;
+source[100-1] = L'\0';
+wcsncat(data, source, 100);
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncat_41_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncat_41_badSink(wchar_t * data)
+wcsncat(data, source, 100);

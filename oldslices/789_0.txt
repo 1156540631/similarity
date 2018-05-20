@@ -1,0 +1,7 @@
+*modulus_function = stonesoup_modulus_function1;
+*modulus_function = stonesoup_modulus_function2;
+stonesoup_function_ptr = malloc(sizeof(void *));
+stonesoup_get_function(stonesoup_input_len, stonesoup_function_ptr);
+free(stonesoup_function_ptr);
+void stonesoup_get_function(int len, fptr * modulus_function) {
+free(stonesoup_function_ptr);

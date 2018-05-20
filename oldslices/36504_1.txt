@@ -1,0 +1,11 @@
+data[100-1] = L'\0';
+return data;
+wchar_t dataBuffer[100];
+data = dataBuffer;
+data = badSource(data);
+wchar_t dest[50] = L"";
+SNPRINTF(dest, wcslen(data), L"%s", data);
+static wchar_t * badSource(wchar_t * data)
+return data;
+data = badSource(data);
+SNPRINTF(dest, wcslen(data), L"%s", data);

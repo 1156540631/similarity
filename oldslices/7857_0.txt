@@ -1,0 +1,4 @@
+char test[]="This is a test code";
+char *newTest= (char*) malloc(10*sizeof(char));
+memcpy (newTest,test,10);
+free(newTest);

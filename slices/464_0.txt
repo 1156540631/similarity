@@ -1,0 +1,6 @@
+VAR2[VAR1] = '\0';
+VAR4 = VAR7 = 0;
+if ((VAR3 = strstr(VAR2, VAR5))) {
+if ((VAR3 = strstr(VAR2, VAR6))) {
+VAR3 += strlen(VAR6);
+if (sscanf(VAR3, "%u-%u", &VAR4, &VAR7) < 1) {

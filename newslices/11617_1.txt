@@ -1,0 +1,19 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"SCIMITARED_FURNESS");
+if (VAR5 != 0) {;
+VAR6 = &VAR5;
+VAR7 = VAR6 + 5;
+VAR8 = ((char *)( *(VAR7 - 5)));
+VAR9 = ((int )(strlen(VAR8)));
+for (; VAR9 >= 0; (--VAR10 , --VAR9)) {
+VAR11[VAR10] = VAR8[VAR9];
+FUN2(VAR12, VAR13, "VAR11", VAR11, "VAR14-VAR15");
+FUN3("%s\n",&(VAR11[VAR10+1]));
+free(VAR11);
+FUN2(VAR12, VAR13, "VAR11", VAR11, "VAR16-VAR15");
+if ( *(VAR7 - 5) != 0)
+free(((char *)( *(VAR7 - 5))));
+void FUN3(char * VAR17, ...) {
+FUN3("%s\n",&(VAR11[VAR10+1]));

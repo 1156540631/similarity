@@ -1,0 +1,6 @@
+data = NULL;
+goodG2BSource(data);
+void goodG2BSource(char * &data)
+data = (char *)malloc((10+1)*sizeof(char));
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

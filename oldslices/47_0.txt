@@ -1,0 +1,3 @@
+strcat(result, array[i].get());
+for (uint32_t i = 1; i < array.Length(); i++) {
+CHECK_LENGTH(len, strlen(array[i].get()), maxlen)

@@ -1,0 +1,11 @@
+vector<int *> dataVector;
+data = (int *)ALLOCA(10*sizeof(int));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+int source[10] = {0};
+memcpy(data, source, 10*sizeof(int));
+void goodG2BSink(vector<int *> dataVector)
+int * data = dataVector[2];
+memcpy(data, source, 10*sizeof(int));

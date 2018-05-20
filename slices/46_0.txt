@@ -1,0 +1,12 @@
+CLASS1 VAR3[VAR2 + 1] = {L'\0'};
+wcsncpy(VAR3, VAR1, VAR2);
+if (!FUN1(VAR3, L"update.status")) {
+VAR4 |
+NULL, VAR5, 0, NULL));
+CLASS3 VAR6(FUN2(VAR3, VAR9,
+VAR4 |
+VAR7 |
+VAR4 |
+char VAR1[32] = { 0 };
+CLASS2 VAR8;
+if (!ReadFile(VAR6, VAR1, sizeof(VAR1), &VAR8, NULL)) {

@@ -1,0 +1,8 @@
+char * &dataRef = data;
+char dataBadBuffer[50];
+char dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = '\0';
+char * data = dataRef;
+source[100-1] = '\0';
+strcat(data, source);

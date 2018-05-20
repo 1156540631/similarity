@@ -1,0 +1,12 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&iin_magnesia,"UNACCEPTANT_MULTIFAROUSLY");
+if (iin_magnesia != 0) {;
+bluenesses_aleron = ((char *)iin_magnesia);
+stonesoup_buff_size = ((int )(strlen(bluenesses_aleron)));
+memcpy(stonesoup_data.buffer, bluenesses_aleron, 64);
+for (; stonesoup_i < stonesoup_buff_size; ++stonesoup_i){
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+if (iin_magnesia != 0)
+free(((char *)iin_magnesia));

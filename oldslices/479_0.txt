@@ -1,0 +1,3 @@
+value_type   = asn1_get_type(&buffer, bufend);
+value_length = asn1_get_length(&buffer, bufend);
+value_type, value_length);

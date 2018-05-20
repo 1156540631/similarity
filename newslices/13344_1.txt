@@ -1,0 +1,15 @@
+int (*VAR1)(const CLASS1* , const CLASS1* ) = VAR2;
+static VAR3 FUN1(const CLASS1 *VAR4, VAR5 VAR6, CLASS2 *VAR7)
+const CLASS1 *VAR8;
+int           VAR9;
+VAR10         VAR11[4];
+if (VAR6 >= 5 && FUN2("VAR12/", VAR4, 5) == 0) {
+*VAR7 = VAR13;
+VAR9 = VAR1(VAR4, VAR8);
+int VAR2(const CLASS1* VAR4, const CLASS1*& VAR8)
+return  FUN3(VAR4, VAR4+5, &VAR8);
+VAR9 = VAR1(VAR4, VAR8);
+if (VAR9 != 0) {
+VAR9 = FUN3(VAR8, VAR4+VAR6, &VAR8);
+if (VAR9 >= 3) {
+memcpy(VAR11, VAR8, 3);

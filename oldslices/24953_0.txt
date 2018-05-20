@@ -1,0 +1,13 @@
+int passionaries_interlinkage = 596;
+char *daubing_cowbind;
+stonesoup_read_taint(&daubing_cowbind,"3281",passionaries_interlinkage);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+kherson_fraternal = ((char *)daubing_cowbind);
+stonesoup_heap_buff_64 = (char*) malloc(64 * sizeof(char));
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(kherson_fraternal)));
+strncpy(stonesoup_heap_buff_64, kherson_fraternal, 64);

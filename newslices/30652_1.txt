@@ -1,0 +1,15 @@
+typedef struct CLASS1
+int VAR1;
+} CLASS2;
+CLASS2 VAR2;
+VAR3 = -1;
+VAR4 = FUN1(VAR5, VAR6, VAR7 - 1, 0);
+VAR6[VAR4] = '\';
+VAR3 = atoi(VAR6);
+VAR2.VAR1 = VAR3;
+FUN2(VAR2);
+void FUN2(CLASS2 VAR2)
+int VAR3 = VAR2.VAR1;
+int VAR8[10] = { 0 };
+if (VAR3 >= 0)
+VAR8[VAR3] = 1;

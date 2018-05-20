@@ -1,0 +1,4 @@
+const char *spec)
+switch (*spec++) {
+if (*spec++ == ':') {
+int i, index = strtol(spec, NULL, 0);

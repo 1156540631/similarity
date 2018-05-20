@@ -1,0 +1,26 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&lymphocytotoxin_findjan,"PRIVATE_SHOPPE");
+if (lymphocytotoxin_findjan != 0) {;
+breakwaters_ubi . pourboires_aeruginous = ((char *)lymphocytotoxin_findjan);
+dishonour_candollea = &breakwaters_ubi;
+bajardo_savers = &dishonour_candollea;
+alonzo_precorrection = &bajardo_savers;
+samsonite_unscowling = &alonzo_precorrection;
+unpitifulness_repoint = &samsonite_unscowling;
+lubbi_hyperrealizing = &unpitifulness_repoint;
+cutup_aspic = &lubbi_hyperrealizing;
+cacara_monotrochal = &cutup_aspic;
+cycasin_renewably = &cacara_monotrochal;
+southcottian_graydon = &cycasin_renewably;
+amelia_formularise(exiguousness_blueprints,southcottian_graydon);
+void amelia_formularise(int unbeheld_disqualifying,struct fouqu_palpebral **********scote_mayoralties);

@@ -1,0 +1,19 @@
+for (CLASS1 VAR17 = FUN1(), VAR6 = FUN2();
+if (VAR1 && !VAR17->FUN4()) {
+static_cast<void*>(VAR17.FUN5()),
+static_cast<void*>((VAR17.FUN2() != FUN2() ? VAR17.FUN2().FUN5() : nullptr)),
+VAR17->FUN5() ? "block" : "inline",
+VAR17->FUN3() ? "has-break-after " : "",
+VAR17->FUN5() ? "has-floats " : "",
+VAR17->FUN6() ? "impacted " : "",
+VAR17->FUN7(), VAR17->FUN8(),
+VAR17->FUN6() ||
+VAR17->FUN9() ||
+((VAR3 || !VAR17->FUN10()) && !VAR2) ||
+(!VAR3 && !VAR17->FUN3()) ||
+VAR17->FUN5() ||
+if (VAR17->FUN5() ||
+VAR17->FUN6() ||
+VAR17->FUN11();
+if (!VAR17->FUN5()) {
+VAR17.FUN5(), VAR17->FUN6() ? "" : "not ");

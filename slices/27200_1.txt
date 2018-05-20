@@ -1,0 +1,14 @@
+typedef STRUCT15
+int VAR300;
+int VAR301;
+} STRUCT1;
+STRUCT1 VAR302;
+VAR154 = -1;
+VAR266 = FUN49(VAR421, VAR268, VAR269 - 1, 0);
+VAR268[VAR266] = '\0';
+VAR154 = atoi(VAR268);
+VAR302.VAR300 = VAR154;
+int VAR154 = VAR302.VAR301;
+int * VAR34 = (int *)malloc(10 * sizeof(int));
+if (VAR154 >= 0)
+VAR34[VAR154] = 1;

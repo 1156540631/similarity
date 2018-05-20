@@ -1,0 +1,8 @@
+VAR1 = {0};
+VAR2;
+FUNC1(VAR2,VAR3);
+VAR4 = (va_arg(VAR2,union tardive_finner ));
+VAR5 = ((char *)VAR4 . VAR9);
+VAR4 = (char*) malloc(8 * sizeof(char));
+FUNC2(VAR6, VAR7, "VAR8", strlen(VAR5)+1, VAR5, "VAR9");
+strncpy(VAR4, VAR5, strlen(VAR5) + 1);

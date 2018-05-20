@@ -1,0 +1,7 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+char * dataCopy = data;
+char * data = dataCopy;
+fprintf(stdout, data);

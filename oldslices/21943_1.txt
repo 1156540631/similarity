@@ -1,0 +1,11 @@
+struct ransomers_isogon meadowlarks_coadjudicator = {0};
+va_list suffisance_divisa;
+__builtin_va_start(suffisance_divisa,pittsford_overcure);
+meadowlarks_coadjudicator = (va_arg(suffisance_divisa,struct ransomers_isogon ));
+elutriating_uci(meadowlarks_coadjudicator);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+strncpy(stonesoup_data->buffer, infirmable_gerardia, strlen(infirmable_gerardia) + 1);
+void elutriating_uci(struct ransomers_isogon commodation_inbreathed)
+infirmable_gerardia = ((char *)commodation_inbreathed . intersessions_belies);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(infirmable_gerardia)+1, infirmable_gerardia, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, infirmable_gerardia, strlen(infirmable_gerardia) + 1);

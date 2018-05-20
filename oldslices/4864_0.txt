@@ -1,0 +1,4 @@
+signal(3,sigterm_handler);
+signal(2,sigterm_handler);
+signal(15,sigterm_handler);
+signal(24,sigterm_handler);

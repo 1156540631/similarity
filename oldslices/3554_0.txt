@@ -1,0 +1,25 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int moriform_cogener = 53;
+char *laccol_devotedly;;
+stonesoup_read_taint(&laccol_devotedly,"1979",moriform_cogener);
+gothish_saints = ((int )(strlen(laccol_devotedly)));
+minidisks_disparpling = ((char *)(malloc(gothish_saints + 1)));
+memset(minidisks_disparpling,0,gothish_saints + 1);
+memcpy(minidisks_disparpling,laccol_devotedly,gothish_saints);
+page_antimoralism[5] = minidisks_disparpling;
+recalculated_tantric[1] = 5;
+balsamweed_tigereyes =  *(page_antimoralism + recalculated_tantric[1]);
+MICROELECTRONIC_TUMULOUS(balsamweed_tigereyes);
+void compreg_resurrects(char *currents_asclepiade)
+free(((char *)currents_asclepiade));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&laccol_devotedly,"1979",moriform_cogener);
+gothish_saints = ((int )(strlen(laccol_devotedly)));
+memcpy(minidisks_disparpling,laccol_devotedly,gothish_saints);
+page_antimoralism[5] = minidisks_disparpling;
+balsamweed_tigereyes =  *(page_antimoralism + recalculated_tantric[1]);
+MICROELECTRONIC_TUMULOUS(balsamweed_tigereyes);

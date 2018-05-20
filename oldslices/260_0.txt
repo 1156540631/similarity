@@ -1,0 +1,18 @@
+const char *p, *ls, *ls2, *at, *col, *brk;
+av_strlcpy(proto, url, FFMIN(proto_size, p + 1 - url));
+p++;
+if (*p == '/') p++;
+if (*p == '/') p++;
+ls = strchr(p, '/');
+ls2 = strchr(p, '?');
+ls = ls2;
+ls = FFMIN(ls, ls2);
+av_strlcpy(path, ls, path_size);
+ls = &p[strlen(p)];
+if ((at = strchr(p, '@')) && at < ls) {
+FFMIN(authorization_size, at + 1 - p));
+p = at + 1;
+if (*p == '[' && (brk = strchr(p, ']')) && brk < ls) {
+} else if ((col = strchr(p, ':')) && col < ls) {
+FFMIN(col + 1 - p, hostname_size));
+if (port_ptr) *port_ptr = atoi(col + 1);

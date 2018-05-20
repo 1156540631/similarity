@@ -1,0 +1,9 @@
+#define VAR8 "AAAAAAAAAA"
+char * VAR1;
+VAR1 = NULL;
+VAR1 = (char *)malloc((10+1)*sizeof(char));
+const CLASS2& VAR39 = FUN2();
+VAR39.FUN10(VAR1);
+void FUN2::FUN10(char * VAR1) const
+char VAR9[10+1] = VAR8;
+strncpy(VAR1, VAR9, strlen(VAR9) + 1);

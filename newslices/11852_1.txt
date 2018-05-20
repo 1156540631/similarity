@@ -1,0 +1,5 @@
+void VAR1::FUN1(void * VAR2) const
+VAR3 VAR4 = strlen((char *)VAR2);
+void * VAR5 = (void *)calloc(VAR4+1, 1);
+memcpy(VAR5, VAR2, (VAR4+1));
+free(VAR5);

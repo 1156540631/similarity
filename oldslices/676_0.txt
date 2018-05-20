@@ -1,0 +1,4 @@
+buf = (char *) malloc (25 * sizeof(char));
+buf = NULL;
+strcpy(buf,"This is String");
+free(buf);

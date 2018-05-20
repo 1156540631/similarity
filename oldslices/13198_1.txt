@@ -1,0 +1,8 @@
+void NetworkUtils::setInterfaceDns(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+int written;
+if (SDK_VERSION <= 20) {
+component_data = sizeof(command);
+written = snprintf(command, component_data, "resolver setifdns %s %s", GET_CHAR(mIfname), GET_CHAR(mDomain));

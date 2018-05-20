@@ -1,0 +1,8 @@
+VAR1 = FUN1("AFFIRMABLY_PARATROOPS");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = ((int )(strlen(VAR2)));
+memcpy(VAR4.VAR5, VAR2, 64);
+for (; VAR6 < VAR3; ++VAR6){
+FUN2("%x",VAR4.VAR5[VAR6]);
+FUN3(VAR7, VAR8, "VAR4.VAR5", VAR4.VAR5, "VAR9-VAR10");

@@ -1,0 +1,11 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAA"
+wchar_t * VAR4;
+VAR4 = VAR5;
+switch(6)
+case 6:
+VAR4 = (wchar_t *)malloc(10*sizeof(wchar_t));
+break;
+default:
+break;
+wchar_t VAR6[10+1] = VAR2;
+FUN1(VAR4, VAR6);

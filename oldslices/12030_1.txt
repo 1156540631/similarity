@@ -1,0 +1,5 @@
+char * &dataRef = data;
+char * data = dataRef;
+strncat(data, source, 100);
+printLine(data);
+free(data);

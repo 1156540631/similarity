@@ -1,0 +1,4 @@
+va_list ap2;
+G_VA_COPY(ap2, ap);
+g_vsnprintf (dst, (gulong) len, fmt, ap2);
+va_end(ap2);

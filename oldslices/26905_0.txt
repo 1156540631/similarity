@@ -1,0 +1,4 @@
+int main(int argc, char **argv){
+temp = fopen(argv[1],"r");
+e->e_dfp = temp;
+fclose(temp);

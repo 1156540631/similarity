@@ -1,0 +1,29 @@
+VAR1  VAR2;
+VAR3 = FUN1(&VAR2, 2, VAR4->VAR5);
+VAR6 = FUN2(&VAR2);
+VAR7 = FUN2(&VAR2);
+VAR8 = (CLASS1 *) FUN3(5 * 4 + VAR6);
+VAR3 = FUN1(VAR8, 5 * 4 + VAR6, VAR4->VAR5);
+if (VAR3 != 5 * 4 + VAR6)
+if (VAR3 != 4 * 4 + VAR6)
+*VAR9 = FUN4(VAR4->VAR5, VAR10);
+if (*VAR9 == 0 && VAR3 != 0)
+*VAR9 = VAR11;
+FUN5(VAR8);
+return -1;
+if (VAR7 == 24)
+VAR12 = (VAR13)strlen(VAR8 + 5 * 4 + 1) + 1;
+VAR14 = (VAR13)strlen(VAR8 + 5 * 4 + 1 + VAR12) + 1;
+if (VAR6 == 1 + VAR12 + VAR14)
+FUN5(VAR8);
+return 2;
+VAR12 = (VAR13)strlen(VAR8 + 4 * 4 + 1) + 1;
+VAR14 = (VAR13)strlen(VAR8 + 4 * 4 + 1 + VAR12) + 1;
+if (VAR6 == 1 + VAR12 + VAR14)
+if (FUN6(VAR4->VAR5, VAR15 + 4 * 4 + 1 + VAR12 + VAR14, VAR16, VAR9) == -1)
+FUN5(VAR8);
+return -1;
+FUN5(VAR8);
+return 1;
+FUN5(VAR8);
+return 0;

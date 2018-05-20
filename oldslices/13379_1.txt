@@ -1,0 +1,12 @@
+void NetworkUtils::addRouteToLocalNetwork(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+uint32_t prefix = atoi(GET_CHAR(mPrefix));
+uint32_t ip = inet_addr(GET_CHAR(mIp));
+char* networkAddr = func(ip, prefix);
+char* func(uint32_t ip, uint32_t prefix)
+return getNetworkAddr(ip, prefix);
+char* networkAddr = func(ip, prefix);
+snprintf(command, MAX_COMMAND_SIZE - 1, "network route add local %s %s/%s",
+GET_CHAR(mInternalIfname), networkAddr, GET_CHAR(mPrefix));

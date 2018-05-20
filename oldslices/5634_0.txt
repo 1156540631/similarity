@@ -1,0 +1,8 @@
+while ((c1 = fgetc(e->e_dfp)) != EOF)
+c2 = fgetc(e->e_dfp);
+c3 = fgetc(e->e_dfp);
+c4 = fgetc(e->e_dfp);
+} while (isascii(c4) && isspace(c4));
+if (c4 == EOF)
+if (c4 == '=')
+c4 = CHAR64(c4);

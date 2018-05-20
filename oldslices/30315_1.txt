@@ -1,0 +1,9 @@
+static int staticTrue = 1;
+static int staticFalse = 0;
+data = -1;
+if(staticTrue)
+fscanf(stdin, "%d", &data);
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

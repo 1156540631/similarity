@@ -1,0 +1,5 @@
+VAR395[VAR5] = '\0';
+return VAR395;
+VAR39 = malloc(25*sizeof(char));
+char *VAR395 = rand_text();
+strncpy(VAR39,VAR395,25*sizeof(char));

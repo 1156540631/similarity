@@ -1,0 +1,15 @@
+char * data;
+list<char *> dataList;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+char dest[50] = "";
+strncat(dest, data, strlen(data));
+void goodG2BSink(list<char *> dataList)
+char * data = dataList.back();
+strncat(dest, data, strlen(data));

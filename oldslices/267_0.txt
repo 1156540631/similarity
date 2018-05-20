@@ -1,0 +1,4 @@
+static void DumpLine(const nsBlockReflowState& aState, nsLineBox* aLine,
+nsRect ovis(aLine->GetVisualOverflowArea());
+nsRect oscr(aLine->GetScrollableOverflowArea());
+oscr.x, oscr.y, oscr.width, oscr.height,

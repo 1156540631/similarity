@@ -1,0 +1,35 @@
+ss_tc_root = getenv("SS_TC_ROOT");
+if (ss_tc_root != NULL) {
+size_dirpath = strlen(ss_tc_root) + strlen("testData") + 2;
+dirpath = (char*) malloc (size_dirpath * sizeof(char));
+if (dirpath != NULL) {
+sprintf(dirpath, "%s/%s", ss_tc_root, "testData");
+if (stat(dirpath, &st) == -1) {
+retval = mkdir(dirpath, 0700);
+if (retval == 0) {
+size_filepath = strlen(dirpath) + strlen("logfile.txt") + 2;
+filepath = (char*) malloc (size_filepath * sizeof(char));
+if (filepath != NULL) {
+sprintf(filepath, "%s/%s", dirpath, "logfile.txt");
+stonesoup_printf_context = fopen(filepath, "w");
+free(filepath);
+free(dirpath);
+if (stonesoup_printf_context == NULL) {
+stonesoup_setup_printf_context();
+set_time_seconds(&fd -> del_dis_ts,cinfo -> col_expr . col_expr_val[col]);
+col_set_delta_time_dis(fd,cinfo,col);
+col_set_fmt_time(fd,cinfo,cinfo -> col_fmt[col],col);
+col_fill_in_frame_data(fdata,cinfo,i,fill_col_exprs);
+col_set_fmt_time(fd,cinfo,cinfo -> col_fmt[col],col);
+col_set_cls_time(fd,cinfo,col);
+col_set_rel_time(fd,cinfo,col);
+set_time_seconds(&fd -> rel_ts,cinfo -> col_buf[col]);
+stonesoup_setup_printf_context();
+stonesoup_printf("Error: Failed to allocate memory\n");
+vfprintf(stonesoup_printf_context, format, argptr);
+fflush(stonesoup_printf_context);
+misforms_procellose(sclerocornea_amygdalus);
+stonesoup_close_printf_context();
+if (stonesoup_printf_context != NULL &&
+stonesoup_printf_context != stderr) {
+fclose(stonesoup_printf_context);

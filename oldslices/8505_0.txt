@@ -1,0 +1,3 @@
+multivariate_shorterville = getenv("DIAPHANE_VERWANDERUNG");
+beamish_talcums = ((int )(strlen(multivariate_shorterville)));
+caprioled_suboctuple = ((char *)(malloc(beamish_talcums + 1)));

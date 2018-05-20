@@ -1,0 +1,4 @@
+char* ptr= (char*) malloc(10*sizeof(char));
+for(i=0;i<10;i++)
+*(ptr+i)='a';
+free(ptr);

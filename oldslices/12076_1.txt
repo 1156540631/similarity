@@ -1,0 +1,4 @@
+wchar_t * &dataRef = data;
+wchar_t * data = dataRef;
+wchar_t dest[50] = L"";
+wcscat(dest, data);

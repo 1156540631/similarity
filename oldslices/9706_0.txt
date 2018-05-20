@@ -1,0 +1,5 @@
+arg = split(colors,":",&n);
+c = split(arg[i],"=",&n);
+free(arg);
+char **split(char *str,char *delim,int *nwrds);
+free(arg);

@@ -1,0 +1,17 @@
+if (line->IsBlock() ||
+line->IsImpactedByFloat() ||
+line->ResizeReflowOptimizationDisabled() ||
+((isLastLine || !line->IsLineWrapped()) && !skipLastLine) ||
+(!isLastLine && !line->HasBreakAfter()) ||
+line->HasFloats() ||
+line->MarkDirty();
+if (!line->IsBlock()) {
+line.get(), line->IsImpactedByFloat() ? "" : "not ");
+if (gNoisyReflow && !line->IsDirty()) {
+static_cast<void*>(line.get()),
+static_cast<void*>((line.next() != end_lines() ? line.next().get() : nullptr)),
+line->IsBlock() ? "block" : "inline",
+line->HasBreakAfter() ? "has-break-after " : "",
+line->HasFloats() ? "has-floats " : "",
+line->IsImpactedByFloat() ? "impacted " : "",
+line->GetBreakTypeBefore(), line->GetBreakTypeAfter(),

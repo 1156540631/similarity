@@ -1,0 +1,13 @@
+char * data;
+list<char *> dataList;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<char *> dataList)
+char * data = dataList.back();
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

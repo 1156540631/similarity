@@ -1,0 +1,15 @@
+void NetworkUtils::setAccessPoint(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+char *dataType = command;
+nsCString ssid(GET_CHAR(mSsid));
+nsCString key(GET_CHAR(mKey));
+if (SDK_VERSION < 16) {
+char* command = dataType;
+PR_snprintf(command, MAX_COMMAND_SIZE - 1, "softap set %s %s \"%s\" %s \"%s\" 6 0 8",
+GET_CHAR(mIfname),
+GET_CHAR(mWifictrlinterfacename),
+ssid.get(),
+GET_CHAR(mSecurity),
+key.get());

@@ -1,0 +1,6 @@
+data = new char[10+1];
+goodG2BSink(data);
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);
+void goodG2BSink(char * data)
+strncpy(data, source, strlen(source) + 1);

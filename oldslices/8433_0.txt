@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int prenebular_teleplays = 44;
+char *utees_torbay;;
+stonesoup_read_taint(&utees_torbay,"2314",prenebular_teleplays);
+shifrah_meandrite = ((int )(strlen(utees_torbay)));
+memcpy(unamusingly_monogynoecial,utees_torbay,shifrah_meandrite);
+free(((char *)utees_torbay));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&utees_torbay,"2314",prenebular_teleplays);
+shifrah_meandrite = ((int )(strlen(utees_torbay)));
+memcpy(unamusingly_monogynoecial,utees_torbay,shifrah_meandrite);
+free(((char *)utees_torbay));

@@ -1,0 +1,9 @@
+union confectioneries_oromo omnipotently_ugroid = {0};
+va_list crispation_nontidal;
+__builtin_va_start(crispation_nontidal,overlard_macroergate);
+omnipotently_ugroid = (va_arg(crispation_nontidal,union confectioneries_oromo ));
+archai_turbith = ((char *)omnipotently_ugroid . unmetallic_camelot);
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(archai_turbith)));
+strncpy(stonesoup_heap_buff_64, archai_turbith, 64);

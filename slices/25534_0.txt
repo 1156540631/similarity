@@ -1,0 +1,6 @@
+main(int argc, char **argv)
+VAR281 = argv[1];
+test(VAR281);
+test(char *VAR240)
+char VAR34[VAR486];
+strncpy(VAR34, VAR240, VAR486);

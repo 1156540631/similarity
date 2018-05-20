@@ -1,0 +1,7 @@
+data = goodG2B1Source(data);
+if(goodG2B1Global)
+printLine("Benign, fixed string");
+else
+data = new wchar_t[10+1];
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);

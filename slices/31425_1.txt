@@ -1,0 +1,16 @@
+typedef union
+char * VAR39;
+char * VAR41;
+} CLASS17;
+char * VAR40;
+CLASS17 CLASS18;
+char * VAR38 = (char *)ALLOCA(100*sizeof(char));
+memset(VAR38, 'A', 100-1);
+VAR38[100-1] = '\0';
+VAR40 = VAR38 - 8;
+CLASS18.VAR39 = VAR40;
+char * VAR40 = CLASS18.VAR41;
+char VAR43[100*2];
+memset(VAR43, 'C', 100*2-1);
+VAR43[100*2-1] = '\0';
+strcpy(VAR43, VAR40);

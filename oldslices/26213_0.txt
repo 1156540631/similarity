@@ -1,0 +1,6 @@
+char target[64];
+char command[256];
+char arg[256] = {(0)};
+double time;
+buf[i] = 0;
+if (k > 0 && (n = sscanf(buf,"%63[^ ] %lf %255[^ ] %255[^\n]",target,&time,command,arg)) >= 3) {

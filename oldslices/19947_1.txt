@@ -1,0 +1,8 @@
+data = NULL;
+data = new int[50];
+badSink(&data);
+void badSink(void * dataVoidPtr)
+int * * dataPtr = (int * *)dataVoidPtr;
+int * data = (*dataPtr);
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

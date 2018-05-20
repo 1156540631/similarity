@@ -1,0 +1,8 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+data = CWE134_Uncontrolled_Format_String__char_console_fprintf_61b_goodG2BSource(data);
+char * CWE134_Uncontrolled_Format_String__char_console_fprintf_61b_goodG2BSource(char * data)
+strcpy(data, "fixedstringtest");
+return data;
+fprintf(stdout, data);

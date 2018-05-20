@@ -1,0 +1,3 @@
+char *VAR39,VAR235[25];
+VAR39 = "This is VAR396 string";
+strcpy(VAR235,VAR39);

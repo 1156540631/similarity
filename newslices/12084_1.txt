@@ -1,0 +1,5 @@
+CLASS1 * &VAR1 = VAR2;
+CLASS1 * VAR2 = VAR1;
+memcpy(VAR2, VAR3, 100*sizeof(CLASS1));
+FUN1(VAR2[0]);
+free(VAR2);

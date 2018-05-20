@@ -1,0 +1,4 @@
+monosiphonic_remits = getenv("EMPORIA_UNWANTED");
+if (monosiphonic_remits != 0) {;
+adventured_wolffian . witneys_nolan = ((char *)monosiphonic_remits);
+*underwhistle_bywalking = adventured_wolffian;

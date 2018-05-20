@@ -1,0 +1,18 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR261,"WOOLFELLS_SCLEROTIZED");
+if (VAR261 != 0) {;
+VAR262 . VAR263 = ((char *)VAR261);
+VAR264[5] = VAR262;
+VAR265 =  *(VAR264 + VAR266[1]);
+FUN78(VAR265);
+void FUN78(struct STRUCT14 VAR267);

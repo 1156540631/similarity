@@ -1,0 +1,6 @@
+demotion_prebetray = getenv("FOSSILS_PRUNABLE");
+if (demotion_prebetray != 0) {;
+remonetized_monomaniac = ((char *)demotion_prebetray);
+stonesoup_buffer_len = 4;
+stonesoup_buffer = malloc(65528);
+strncpy(stonesoup_buffer, remonetized_monomaniac, stonesoup_buffer_len);

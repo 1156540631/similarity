@@ -1,0 +1,11 @@
+planidorsate_thermidor = getenv("TERNAR_REFINDS");
+if (planidorsate_thermidor != 0) {;
+huskroot_eupolidean = ((int )(strlen(planidorsate_thermidor)));
+tripolar_pose = ((char *)(malloc(huskroot_eupolidean + 1)));
+if (tripolar_pose == 0) {
+memset(tripolar_pose,0,huskroot_eupolidean + 1);
+memcpy(tripolar_pose,planidorsate_thermidor,huskroot_eupolidean);
+unmashed_galliard = &tripolar_pose;
+middorsal_resinified = unmashed_galliard + 5;
+briney_landmeier(phytography_geotaxis,middorsal_resinified);
+void briney_landmeier(int pompom_jophiel,char **synarthrosis_actg);

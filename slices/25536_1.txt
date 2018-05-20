@@ -1,0 +1,5 @@
+VAR487 = getenv("STRINGLEN_MIN");
+if (VAR487 != NULL)
+VAR24 = strlen(VAR487);
+if (VAR24 > 10)
+VAR34[VAR24] = 'A';

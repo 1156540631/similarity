@@ -1,0 +1,17 @@
+VAR1 = FUN1("MERMIS_DILATOMETRY");
+if (VAR1 != 0) {;
+VAR2[20] = VAR1;
+VAR3[5] = VAR2;
+VAR4 =  *(VAR3 +  *VAR5);
+FUN2(VAR4);
+void FUN3(char **VAR6)
+FUN2(VAR4);
+VAR7 = ((char *)VAR6[20]);
+strncpy(VAR8, VAR7, VAR9);
+*VAR10 = VAR7;
+FUN4(VAR11, VAR12, "VAR10", VAR10, "VAR13-VAR14");
+FUN4(VAR11, VAR12, "*VAR10", *VAR10, "VAR13-VAR14");
+strncpy(VAR8, VAR7, VAR9);
+VAR15 = strlen( *VAR10);
+if (VAR10 != 0) {
+free(VAR10);

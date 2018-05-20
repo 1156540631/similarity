@@ -1,0 +1,7 @@
+buf[line_len] = '\0';
+if ((tmp = strstr(buf, rtsp_sps))) {
+if ((tmp = strstr(buf, rtsp_cps))) {
+guint               s_data_chan, s_mon_chan;
+if ((tmp = strstr(buf, rtsp_inter)) == NULL) {
+tmp += strlen(rtsp_inter);
+i = sscanf(tmp, "%u-%u", &s_data_chan, &s_mon_chan);

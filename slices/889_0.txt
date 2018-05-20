@@ -1,0 +1,7 @@
+VAR7 = (CLASS4 *)malloc((10+1)*sizeof(CLASS4));
+VAR2 = VAR7;
+FUN1();
+CLASS4 * VAR7 = VAR2;
+wcsncpy(VAR7, VAR1, wcslen(VAR1) + 1);
+FUN3(VAR7);
+free(VAR7);

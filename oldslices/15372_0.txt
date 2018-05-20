@@ -1,0 +1,8 @@
+wchar_t * data;
+wchar_t * &dataRef = data;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+wchar_t * data = dataRef;
+source[100-1] = L'\0';
+wcsncat(data, source, 100);

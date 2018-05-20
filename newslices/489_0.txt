@@ -1,0 +1,4 @@
+static void FUN1(CLASS1 *VAR1, CLASS2 **VAR2)
+CLASS3 *VAR3 = FUN2(VAR1);
+CLASS4 *VAR4 = FUN3(VAR1);
+assert(VAR4->VAR5 != -1);

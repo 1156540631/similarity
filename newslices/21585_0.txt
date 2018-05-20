@@ -1,0 +1,6 @@
+char VAR1[64];
+char VAR2[256];
+char VAR3[256] = {(0)};
+double time;
+VAR4[VAR5] = 0;
+if (VAR6 > 0 && (VAR7 = sscanf(VAR4,"%63[^ ] %lf %255[^ ] %255[^\VAR7]",VAR1,&time,VAR2,VAR3)) >= 3) {

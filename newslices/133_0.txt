@@ -1,0 +1,17 @@
+void *VAR1, int *VAR2,
+const CLASS1 *VAR3, int VAR4)
+unsigned char *VAR5 = (unsigned char *)VAR1;
+const unsigned char *VAR6 = VAR3 + 16;
+*VAR2 = FUN1(VAR7, VAR5, VAR6, 0, VAR4 - 16);
+VAR8 VAR9 = FUN2(VAR6);
+int VAR10 = VAR7->CLASS2 * VAR7->VAR11 / 8;
+VAR12 = 32;
+VAR12 = FUN3(VAR9 + 1);
+memset(VAR5, 0, VAR10 * VAR12);
+VAR5 += VAR10 * VAR12;
+*VAR2 += FUN1(VAR7, VAR5, VAR6 + 4, 0, VAR4 - 20);
+*VAR2 = FUN1(VAR7, VAR5, VAR6, 1, 0);
+const CLASS1 *VAR3, int VAR13, int VAR2)
+memset(VAR1, 0, VAR2 * 2);
+static int FUN1(CLASS3 *VAR7, unsigned char *VAR1,
+memset(VAR1, 0, VAR2 * 2);

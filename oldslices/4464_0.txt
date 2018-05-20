@@ -1,0 +1,19 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+union truncated_nonreverential subtetanical_nondefeasibness;
+int pakse_abominably = 596;
+char *radiancy_matutinely;;
+stonesoup_read_taint(&radiancy_matutinely,"5302",pakse_abominably);
+subtetanical_nondefeasibness . hasky_subordinator = radiancy_matutinely;
+thrifts_scorpio[5] = subtetanical_nondefeasibness;
+palatialness_artiste[1] = 5;
+itabuna_mallum =  *(thrifts_scorpio + palatialness_artiste[1]);
+free(((char *)itabuna_mallum . hasky_subordinator));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&radiancy_matutinely,"5302",pakse_abominably);
+subtetanical_nondefeasibness . hasky_subordinator = radiancy_matutinely;
+itabuna_mallum =  *(thrifts_scorpio + palatialness_artiste[1]);
+free(((char *)itabuna_mallum . hasky_subordinator));

@@ -1,0 +1,11 @@
+uint32_t (*funcPtr)(ESPState *) = badSource;
+static void handle_satn(ESPState *s)
+uint8_t buf[32];
+len = get_cmd(s, buf);
+static uint32_t get_cmd(ESPState *s, uint8_t *buf)
+uint32_t dmalen;
+damlen = funcPtr(s);
+uint32_t badSource(ESPState *s)
+return s->ti_size;
+damlen = funcPtr(s);
+memcpy(buf, s->ti_buf, dmalen);

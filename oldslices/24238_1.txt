@@ -1,0 +1,20 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int culmen_lumbye = 596;
+char *outkeeper_deprotestantize;
+stonesoup_read_taint(&outkeeper_deprotestantize,"8962",culmen_lumbye);
+unmigratory_valerians . oxamate_counsels = outkeeper_deprotestantize;
+subsyndicate_reimprint(unmigratory_valerians);
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, rhetorical_gypped);
+void subsyndicate_reimprint(const union tribady_parkston clervaux_obolos)
+rhetorical_gypped = ((char *)((union tribady_parkston )clervaux_obolos) . oxamate_counsels);
+strcpy(stonesoup_heap_buffer_64, rhetorical_gypped);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&outkeeper_deprotestantize,"8962",culmen_lumbye);
+unmigratory_valerians . oxamate_counsels = outkeeper_deprotestantize;
+subsyndicate_reimprint(unmigratory_valerians);

@@ -1,0 +1,6 @@
+VAR75.VAR76[64 - 1] = '\0';
+VAR107[1023] = '\0';
+if (strlen(VAR107) + 1 <= 64) {
+tracepoint(VAR19, VAR74, "VAR107", strlen(VAR107)+1, VAR107, "TRIGGER-STATE");
+tracepoint(VAR19, VAR74, "VAR75.VAR76", strlen(VAR75.VAR76)+1, VAR75.VAR76, "TRIGGER-STATE");
+strncpy(VAR75.VAR76, VAR107, sizeof(VAR107));

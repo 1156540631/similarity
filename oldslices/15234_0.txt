@@ -1,0 +1,12 @@
+int * data;
+map<int, int *> dataMap;
+int * dataBadBuffer = (int *)ALLOCA(50*sizeof(int));
+int * dataGoodBuffer = (int *)ALLOCA(100*sizeof(int));
+data = dataGoodBuffer;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));
+void goodG2BSink(map<int, int *> dataMap)
+int * data = dataMap[2];
+memmove(data, source, 100*sizeof(int));

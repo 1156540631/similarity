@@ -1,0 +1,9 @@
+char VAR466[VAR359 + 1];	114
+VAR5 = strlen(VAR396->VAR459);
+if (VAR5 >= sizeof VAR466)
+VAR39 = xalloc(VAR5 + 1);
+VAR39 = VAR466;
+(void) strcpy(VAR39, VAR396->VAR459);
+auto enum bool VAR467;
+VAR463 = FUN109(VAR39, &VAR467);
+if (strcmp(VAR463->pw_dir, "/") == 0)

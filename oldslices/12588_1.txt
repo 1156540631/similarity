@@ -1,0 +1,48 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+return c;
+union desc_pretrying tachypnoeic_prorata;
+int reposition_elephantoid = 596;
+char *russomania_unorderable;;
+stonesoup_read_taint(&russomania_unorderable,"9420",reposition_elephantoid);
+tachypnoeic_prorata . antaranga_vanquishable = russomania_unorderable;
+bediapers_collochemistry[5] = tachypnoeic_prorata;
+misteacher_faso = 5;
+heterochromic_jacobitely = &misteacher_faso;
+unbarricadoed_bretelle =  *(bediapers_collochemistry +  *heterochromic_jacobitely);
+inferiors_absorptiometer(squareflipper_bondless,unbarricadoed_bretelle);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before = stonesoup_toupper;
+memset(stonesoup_data->buffer,0,64);
+stonesoup_data->after = stonesoup_toupper;
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->before", stonesoup_data->before, &stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->after", stonesoup_data->after, &stonesoup_data->after, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, milkshop_domdaniel);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+void inferiors_absorptiometer(int grossification_emergently,union desc_pretrying phosphoresce_polyphonies)
+milkshop_domdaniel = ((char *)phosphoresce_polyphonies . antaranga_vanquishable);
+strcpy(stonesoup_data->buffer, milkshop_domdaniel);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&russomania_unorderable,"9420",reposition_elephantoid);
+tachypnoeic_prorata . antaranga_vanquishable = russomania_unorderable;
+unbarricadoed_bretelle =  *(bediapers_collochemistry +  *heterochromic_jacobitely);
+inferiors_absorptiometer(squareflipper_bondless,unbarricadoed_bretelle);
+int stonesoup_toupper(int c)
+return c - 32;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+free(stonesoup_data);

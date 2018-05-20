@@ -1,0 +1,4 @@
+va_list ap;
+va_start(ap, fmt);
+if (debugging) vfprintf(stderr, fmt, ap);
+va_end(ap);

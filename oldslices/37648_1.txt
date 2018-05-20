@@ -1,0 +1,7 @@
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+baseObject->action(data);
+if (data >= 0)
+buffer[data] = 1;

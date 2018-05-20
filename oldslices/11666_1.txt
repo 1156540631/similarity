@@ -1,0 +1,13 @@
+data = (char *)malloc(10*sizeof(char));
+return data;
+data = NULL;
+data = badSource(data);
+strcpy(data, source);
+printLine(data);
+free(data);
+static char * badSource(char * data)
+return data;
+data = badSource(data);
+strcpy(data, source);
+printLine(data);
+free(data);

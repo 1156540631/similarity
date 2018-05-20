@@ -1,0 +1,5 @@
+char VAR1[1024];
+VAR2 = FUN1("DIACHRONIC_STATESMANESE");
+VAR3 = ((char *)VAR2);
+VAR1[VAR4] = 0;
+strncpy(VAR1, VAR3, sizeof(VAR1));

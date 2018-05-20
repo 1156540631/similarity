@@ -1,0 +1,6 @@
+aAvailableSpaceHeight = NS_MAX(aAvailableSpaceHeight, aLine->mBounds.height);
+aState.GetFloatAvailableSpaceForHeight(aLine->mBounds.y,
+if (CRAZY_HEIGHT(aLine->mBounds.y)) {
+lastHeight = aLine->mBounds.y;
+if (abs(aLine->mBounds.y - lastHeight) > CRAZY_H/10) {
+aLine->mBounds.y, aLine->mBounds.height);

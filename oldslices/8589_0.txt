@@ -1,0 +1,9 @@
+static char * goodG2B1Source(char * data)
+data = NULL;
+data = goodG2B1Source(data);
+data[0] = '\0';
+return data;
+data = goodG2B1Source(data);
+strcat(data, source);
+printLine(data);
+free(data);

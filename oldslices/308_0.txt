@@ -1,0 +1,5 @@
+fprintf(stderr, "%i ", *(sdata++));
+fprintf(stderr, "\n");
+fprintf(stderr, "Received extension type %d size %d\n", type, size);
+fprintf(stderr,
+fprintf(stderr, "\n");

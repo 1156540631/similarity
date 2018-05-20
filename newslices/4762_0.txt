@@ -1,0 +1,7 @@
+VAR1 = fgetc(VAR2->VAR3);
+VAR4 = fgetc(VAR2->VAR3);
+VAR5 = fgetc(VAR2->VAR3);
+FUN1 ((VAR6 = fgetc(VAR2->VAR3)) != VAR7)
+if (isascii(VAR6) && isspace(VAR6))
+if (VAR6 == '=' || VAR1 == '=')
+VAR6 = FUN2(VAR6);

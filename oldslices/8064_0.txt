@@ -1,0 +1,5 @@
+ret = (fread(( *bufptr),1, *size,f));
+if (ret <  *size) {
+av_free(( *bufptr));
+if (ferror(f)) {
+fclose(f);

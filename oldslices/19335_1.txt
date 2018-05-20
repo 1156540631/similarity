@@ -1,0 +1,4 @@
+data = new wchar_t[10];
+badSink(data);
+void badSink(wchar_t * data)
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

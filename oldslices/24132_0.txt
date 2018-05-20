@@ -1,0 +1,36 @@
+void Element::formatForDebugger(char* buffer, unsigned length) const
+s = nodeName();
+if (s.length() > 0) {
+result += s;
+if (result.length() > 0)
+result += s;
+if (result.length() > 0)
+result += "; ";
+result += "class=";
+result += s;
+strncpy(buffer, result.utf8().data(), length - 1);
+const AtomicString& Element::getAttribute(const QualifiedName& name) const
+if (Attribute* a = namedAttrMap->getAttributeItem(name))
+return a->value();
+s = getAttribute(idAttributeName());
+if (s.length() > 0) {
+result += s;
+s = getAttribute(classAttr);
+if (s.length() > 0) {
+result += s;
+strncpy(buffer, result.utf8().data(), length - 1);
+const AtomicString& Element::getAttribute(const String& name) const
+bool ignoreCase = shouldIgnoreAttributeCase(this);
+if (!m_isStyleAttributeValid && equalPossiblyIgnoringCase(name, styleAttr.localName(), ignoreCase))
+updateAnimatedSVGAttribute(QualifiedName(nullAtom, name, nullAtom));
+if (Attribute* attribute = namedAttrMap->getAttributeItem(name, ignoreCase))
+return attribute->value();
+return nullAtom;
+String result;
+s = getAttribute(idAttributeName());
+if (s.length() > 0) {
+result += "; ";
+result += "id=";
+result += s;
+s = getAttribute(classAttr);
+strncpy(buffer, result.utf8().data(), length - 1);

@@ -1,0 +1,14 @@
+int VAR1[5];
+VAR2 = -1;
+char VAR3[VAR4] = "";
+if (fgets(VAR3, VAR4, VAR5) != VAR6)
+VAR2 = atoi(VAR3);
+VAR1[2] = VAR2;
+FUN1(VAR1);
+void FUN1(int VAR1[])
+int VAR2 = VAR1[2];
+int * VAR7 = (int *)malloc(10 * sizeof(int));
+for (VAR8 = 0; VAR8 < 10; VAR8++)
+VAR7[VAR8] = 0;
+if (VAR2 >= 0 && VAR2 < (10))
+VAR7[VAR2] = 1;

@@ -1,0 +1,4 @@
+while ((pw = getpwent()) != NULL)
+if (strcasecmp(pw->pw_name, name) == 0)
+buildfname(pw->pw_gecos, pw->pw_name, buf);
+printf("fuzzy matches %s\n", pw->pw_name);

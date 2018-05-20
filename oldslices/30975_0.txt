@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+static int staticTrue = 1;
+static int staticFalse = 0;
+char * data;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+if(staticTrue)
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

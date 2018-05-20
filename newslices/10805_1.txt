@@ -1,0 +1,4 @@
+static void FUN1(char * VAR1)
+strncat(VAR1, VAR2, 100);
+FUN2(VAR1);
+free(VAR1);

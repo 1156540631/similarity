@@ -1,0 +1,6 @@
+VAR1 FUN1(const char* VAR2, const char* VAR3, char* VAR4, CLASS1* VAR5) {
+char VAR6[VAR7];
+char *VAR8 = VAR6;
+if (!strcmp(VAR2, "p2p0")) {
+char* VAR6 = VAR8;
+FUN2(VAR6, VAR7, "%s", VAR3);

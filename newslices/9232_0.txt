@@ -1,0 +1,5 @@
+void FUN1(char * VAR1[])
+char * VAR2 = VAR1[2];
+FUN2(VAR2, 100, "%s", VAR3);
+FUN3(VAR2);
+free(VAR2);

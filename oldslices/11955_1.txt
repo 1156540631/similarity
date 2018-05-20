@@ -1,0 +1,4 @@
+static void badSink(wchar_t * data)
+wcsncat(data, source, 100);
+printWLine(data);
+free(data);

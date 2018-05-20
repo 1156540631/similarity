@@ -1,0 +1,39 @@
+int32_t dstLength;
+int32_t pos1, pos2;
+nsresult saveResult = NS_OK;
+rv = mEncoder->GetMaxLength(inString, inStringLength, &dstLength);
+if (NS_FAILED(rv)) return rv;
+bufferLength = dstLength + RESERVE_FALLBACK_BYTES;
+char *dstPtr = (char *) PR_Malloc(bufferLength + 1);
+if (!dstPtr)
+return NS_ERROR_OUT_OF_MEMORY;
+for (pos1 = 0, pos2 = 0; pos1 < inStringLength;)
+dstLength = bufferLength - pos2;
+NS_ASSERTION(dstLength >= 0, "out of bounds write");
+rv = mEncoder->Convert(&inString[pos1], &srcLength, &dstPtr[pos2], &dstLength);
+pos1 += srcLength ? srcLength : 1;
+pos2 += dstLength;
+dstPtr[pos2] = '\0';
+rv = mEncoder->Finish(&dstPtr[pos2], &dstLength);
+if (NS_SUCCEEDED(rv))
+pos2 += dstLength;
+dstPtr[pos2] = '\0';
+rv = HandleFallBack(unMappedChar, &dstPtr, &bufferLength, &pos2, dstLength);
+nsSaveAsCharset::HandleFallBack(uint32_t character, char **outString, int32_t *bufferLength, int32_t *currentPos, int32_t estimatedLength)
+char fallbackStr[256];
+nsresult rv = DoConversionFallBack(character, fallbackStr, 256);
+if (NS_SUCCEEDED(rv))
+int32_t tempLen = (int32_t) PL_strlen(fallbackStr);
+if ((tempLen + estimatedLength) >= (*bufferLength - *currentPos))
+int32_t addLength = tempLen + RESERVE_FALLBACK_BYTES;
+char *temp = (char *) PR_Realloc(*outString, *bufferLength + addLength + 1);
+char * dataCopy = temp;
+char * temp = dataCopy;
+if (temp)
+*bufferLength += addLength;
+*outString = temp;
+else
+*outString = nullptr;
+*bufferLength =0;
+return NS_ERROR_OUT_OF_MEMORY;
+memcpy((*outString + *currentPos), fallbackStr, tempLen);

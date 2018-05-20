@@ -1,0 +1,5 @@
+data = (void *)WIDE_STRING;
+return data;
+data = badSource(data);
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);

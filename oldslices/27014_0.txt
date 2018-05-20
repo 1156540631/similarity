@@ -1,0 +1,2 @@
+char buf[5012];
+strncpy(buf, argv[1], sizeof buf - 1);

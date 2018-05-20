@@ -1,0 +1,14 @@
+int VAR11 = 0;
+! memcmp ( VAR1->VAR6, "Annodex", 7 ) )
+! memcmp ( VAR1->VAR6, "AnxData", 7 ) )
+VAR1->VAR6 += 9;
+VAR1->VAR6, VAR3->VAR4 );
+VAR1->VAR2, VAR1->VAR6 ) )
+FUN3( VAR3, VAR1 );
+VAR11 = (*VAR1->VAR6 & VAR20) >> 6;
+VAR11++;
+VAR1->VAR2 - VAR11 );
+static void FUN3    ( CLASS2 *, CLASS3 * );
+FUN3( VAR3, VAR1 );
+VAR11 |= (*VAR1->VAR6 & VAR21) << 1;
+VAR1->VAR2 - VAR11 );

@@ -1,0 +1,3 @@
+char buf[MAXSIZE];
+l = sizeof buf;
+printf("result: %s\n", buf);

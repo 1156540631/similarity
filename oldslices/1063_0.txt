@@ -1,0 +1,4 @@
+void badSink(list<twoIntsStruct *> dataList)
+twoIntsStruct * data = dataList.back();
+printStructLine(data);
+free(data);

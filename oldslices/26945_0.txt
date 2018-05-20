@@ -1,0 +1,10 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+filter(str, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789: ");
+filter(char *str, const char *whitelist)
+for(src = str, dst = str; *src; src++)
+*dst = '\0';
+snprintf(buf, sizeof buf, "<%s>", str);
+syslog(LOG_CRIT, "%s", buf);

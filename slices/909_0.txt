@@ -1,0 +1,8 @@
+VAR7 = (int64_t *)malloc(100*sizeof(int64_t));
+VAR2[2] = VAR7;
+FUN1(VAR2);
+void FUN1(VAR3<int, int64_t *> VAR2)
+int64_t * VAR7 = VAR2[2];
+memcpy(VAR7, VAR1, 100*sizeof(int64_t));
+FUN2(VAR7[0]);
+free(VAR7);

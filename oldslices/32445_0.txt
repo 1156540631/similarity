@@ -1,0 +1,18 @@
+static int staticTrue = 1;
+static int staticFalse = 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(staticTrue)
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+if(staticTrue)
+fprintf(stdout, "%s\n", data);

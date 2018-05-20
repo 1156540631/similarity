@@ -1,0 +1,9 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&coaxal_archoverseer,"MULTITUDINISTIC_OFFICIATION");
+if (coaxal_archoverseer != 0) {;
+glossina_recognosce . endosteoma_maudlinize = ((char *)coaxal_archoverseer);
+sequesterment_wuzzled[5] = glossina_recognosce;
+mothering_isogone =  *(sequesterment_wuzzled +  *nonlethal_semifloscular);
+arcs_dreamless(mothering_isogone);

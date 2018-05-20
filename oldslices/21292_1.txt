@@ -1,0 +1,6 @@
+void preoverthrew_zilvia(void *forthcome_cathedras)
+traceable_unserene(forthcome_cathedras);
+void traceable_unserene(void *acetophenine_hornlike)
+solemnly_mensa = ((char *)((char *)((void *)acetophenine_hornlike)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(solemnly_mensa)+1, solemnly_mensa, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, solemnly_mensa, strlen(solemnly_mensa) + 1);

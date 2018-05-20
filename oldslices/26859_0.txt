@@ -1,0 +1,3 @@
+char test_buf[10];
+strcpy(test_buf, "GOOD");
+printf("test_buf should be GOOD.  test_buf = %s\n", test_buf);

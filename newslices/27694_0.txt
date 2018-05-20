@@ -1,0 +1,8 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+static const int VAR3 = 5;
+char * VAR4;
+VAR4 = VAR5;
+if(VAR3==5)
+VAR4 = (char *)malloc((10+1)*sizeof(char));
+char VAR6[10+1] = VAR2;
+strncpy(VAR4, VAR6, strlen(VAR6) + 1);

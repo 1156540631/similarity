@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int deadhouse_shawwal = 53;
+char *gladiest_rhapsodizes;;
+stonesoup_read_taint(&gladiest_rhapsodizes,"1652",deadhouse_shawwal);
+bonny_brachycome = ((void *)gladiest_rhapsodizes);
+pseudo_redominating = 1;
+electrogalvanic_unsun = &bonny_brachycome;
+mimically_bearsville = ((void **)(((unsigned long )electrogalvanic_unsun) * pseudo_redominating * pseudo_redominating)) + 5;
+free(((char *)((char *)( *(mimically_bearsville - 5)))));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&gladiest_rhapsodizes,"1652",deadhouse_shawwal);
+bonny_brachycome = ((void *)gladiest_rhapsodizes);
+electrogalvanic_unsun = &bonny_brachycome;
+mimically_bearsville = ((void **)(((unsigned long )electrogalvanic_unsun) * pseudo_redominating * pseudo_redominating)) + 5;
+free(((char *)((char *)( *(mimically_bearsville - 5)))));

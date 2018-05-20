@@ -1,0 +1,5 @@
+t[i] = '\0';
+return t;
+buf = malloc(25*sizeof(char));
+char *t = rand_text();
+strncpy(buf,t,25*sizeof(char));

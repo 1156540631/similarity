@@ -1,0 +1,13 @@
+void stonesoup_handle_taint(char *underjanitor_tinkerly)
+union strigous_newsier parasyntheton_invades;
+parasyntheton_invades . cherkesser_usneaceae = underjanitor_tinkerly;
+toothily_unadhesive[5] = parasyntheton_invades;
+glenmora_fanioned = 5;
+overdignity_unslandered = &glenmora_fanioned;
+shirtless_prelawfulness =  *(toothily_unadhesive +  *overdignity_unslandered);
+CHRISTIES_TRICHI(shirtless_prelawfulness);
+void arette_ulla(union strigous_newsier unmusical_matoke)
+preguarantee_tartarize = ((char *)unmusical_matoke . cherkesser_usneaceae);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(preguarantee_tartarize)+1, preguarantee_tartarize, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, preguarantee_tartarize, strlen(preguarantee_tartarize) + 1);

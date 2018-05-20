@@ -1,0 +1,3 @@
+char buf1[MAXSIZE], buf2 [MAXSIZE], * p, * q, ch;
+q = buf2;
+free (q);

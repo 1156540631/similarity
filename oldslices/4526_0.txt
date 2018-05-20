@@ -1,0 +1,5 @@
+twoIntsStruct * &dataRef = data;
+twoIntsStruct * data = dataRef;
+memcpy(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

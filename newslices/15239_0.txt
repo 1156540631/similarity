@@ -1,0 +1,13 @@
+int * VAR1;
+VAR2<int *> VAR3;
+int VAR4[100];
+VAR1 = VAR4;
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+FUN3(VAR3);
+int VAR5[100] = {0};
+memcpy(VAR1, VAR5, 100*sizeof(int));
+void FUN3(VAR2<int *> VAR3)
+int * VAR1 = VAR3[2];
+memcpy(VAR1, VAR5, 100*sizeof(int));

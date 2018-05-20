@@ -1,0 +1,10 @@
+int VAR14;
+key_t VAR15;
+char *VAR16 = NULL;
+if ((VAR15 = strtol(optarg, NULL, 10)) < 1000) {
+if ((VAR14 = atoi(optarg)) <= 0) {
+VAR16 = optarg;
+} else if (strlen(VAR16) >= VAR14) {
+if ((VAR17 = shmget(VAR15, VAR14, VAR18 | 0666)) < 0) {
+if ((VAR19 = shmat(VAR17, NULL, 0)) == (char *) -1) {
+strcpy(VAR19, VAR16);

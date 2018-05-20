@@ -1,0 +1,5 @@
+VAR1 = getenv("VAR2");
+if (VAR1 != 0) {;
+VAR3[3] = VAR1;
+FUNC1(1,VAR3);
+void FUNC1(int VAR4,... )

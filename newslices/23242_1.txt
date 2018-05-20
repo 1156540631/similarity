@@ -1,0 +1,19 @@
+void FUN1(char** VAR1, char* VAR2, int VAR3) {
+*VAR1 = VAR4;
+if ((VAR5 = FUN2(VAR6, VAR3, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR3, sizeof(char));
+*VAR1 = VAR4;
+int VAR7 = 53;
+char *VAR8;;
+FUN1(&VAR8,"2414",VAR7);
+VAR9 = ((int )(strlen(VAR8)));
+VAR10 = ((char *)(malloc(VAR9 + 1)));
+memset(VAR10,0,VAR9 + 1);
+memcpy(VAR10,VAR8,VAR9);
+VAR11[5] = VAR10;
+VAR12[1] = 5;
+VAR13 =  *(VAR11 + VAR12[1]);
+VAR14 = ((char *)VAR13);
+VAR15 = (struct CLASS1*) malloc(sizeof (struct CLASS1));
+FUN3(VAR16, VAR17, "STONESOUP_TAINT_SOURCE", strlen(VAR14)+1, VAR14, "VAR18-VAR19");
+strncpy(VAR15->VAR20, VAR14, strlen(VAR14) + 1);

@@ -1,0 +1,3 @@
+wchar_t * &dataRef = data;
+wchar_t * data = dataRef;
+dataLen = wcslen(data);

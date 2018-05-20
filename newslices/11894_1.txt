@@ -1,0 +1,13 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"RUPESTRAL_UNCUMBER");
+if (VAR5 != 0) {;
+VAR6 = ((char *)VAR5);
+VAR7 = ((int )(strlen(VAR6)));
+memcpy(VAR8->VAR9, VAR6, 64);
+for (; VAR10 < VAR7; ++VAR10){
+FUN2(VAR11, VAR12, "VAR8->VAR9", VAR8->VAR9, "VAR13-VAR14");
+free( VAR8);
+if (VAR5 != 0)
+free(((char *)VAR5));

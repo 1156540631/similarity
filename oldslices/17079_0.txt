@@ -1,0 +1,8 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+goodG2BSource(data);
+void goodG2BSource(char * &data)
+memset(data, 'A', 50-1);
+char dest[50] = "";
+strncat(dest, data, strlen(data));

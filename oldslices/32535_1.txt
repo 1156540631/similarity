@@ -1,0 +1,10 @@
+char * data;
+char dataBadBuffer[10];
+data = dataBadBuffer;
+data[0] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_64b_badSink(&data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_char_declare_ncpy_64b_badSink(void * dataVoidPtr)
+char * * dataPtr = (char * *)dataVoidPtr;
+char * data = (*dataPtr);
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

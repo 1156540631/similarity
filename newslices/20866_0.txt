@@ -1,0 +1,6 @@
+char VAR1[1024];
+VAR2 = ((char *)(VAR3 - 5)[27]);
+VAR1[VAR4] = 0;
+VAR1[1023] = '\';
+if (strlen(VAR1) + 1 <= 64) {
+strncpy(VAR1, VAR2, sizeof(VAR1));

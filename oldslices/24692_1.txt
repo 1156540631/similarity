@@ -1,0 +1,17 @@
+goosebone_nynex = getenv("UPCURVED_JUNCTION");
+if (goosebone_nynex != 0) {;
+heteromorphae_vetiveria = ((int )(strlen(goosebone_nynex)));
+disdainfulness_allness = ((char *)(malloc(heteromorphae_vetiveria + 1)));
+if (disdainfulness_allness == 0) {
+memset(disdainfulness_allness,0,heteromorphae_vetiveria + 1);
+memcpy(disdainfulness_allness,goosebone_nynex,heteromorphae_vetiveria);
+mistetch_monobromized[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *domesticates_dolthead)))))))))))))))))))))))))))))))))))))))))))))))))] = disdainfulness_allness;
+purchased_whirlies = mistetch_monobromized[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *domesticates_dolthead)))))))))))))))))))))))))))))))))))))))))))))))))];
+if (purchased_whirlies != 0) {
+eliga_unbrand = ((char *)purchased_whirlies);
+tracepoint(stonesoup_trace, variable_buffer, "STONESOUP_TAINT_SOURCE", eliga_unbrand, "INITIAL-STATE");
+for (stonesoup_i = 0; stonesoup_i < strlen(eliga_unbrand); ++stonesoup_i) {
+s
+eliga_unbrand[stonesoup_i],
+stonesoup_data.buffer[(int) eliga_unbrand[stonesoup_i]]);
+tracepoint(stonesoup_trace, variable_signed_integral, "((int) STONESOUP_TAINT_SOURCE[stonesoup_i])", ((int) eliga_unbrand[stonesoup_i]), &(eliga_unbrand[stonesoup_i]), "TRIGGER-STATE");

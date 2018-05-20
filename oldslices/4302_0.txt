@@ -1,0 +1,3 @@
+woodbox_gaiters = getenv("PELECYPODOUS_AUSGLEICHE");
+perceivability_cabbagehead = ((int )(strlen(woodbox_gaiters)));
+nonfaltering_sublating = ((char *)(malloc(perceivability_cabbagehead + 1)));

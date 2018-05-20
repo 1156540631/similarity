@@ -1,0 +1,10 @@
+char psz_remote[MAX_PATH], psz_server[MAX_PATH], psz_share[MAX_PATH];
+strlcpy( psz_server, psz_path, sizeof( psz_server ) );
+psz_share[0] = 0;
+psz_parser = strchr( psz_path, '/' );
+if( psz_parser )
+char *psz_parser2 = strchr( ++psz_parser, '/' );
+n = sizeof( psz_share ) +5;
+if( psz_parser2 )
+strlcpy( psz_share, psz_parser, n-5 );
+snprintf( psz_remote, sizeof( psz_remote ), "\\\\%s\\%s", psz_server, psz_share );

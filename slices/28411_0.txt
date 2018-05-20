@@ -1,0 +1,13 @@
+typedef CLASS1
+wchar_t * VAR30;
+wchar_t * VAR31;
+} CLASS2;
+wchar_t * VAR1;
+CLASS2 VAR32;
+VAR1 = (wchar_t *)malloc(100*sizeof(wchar_t));
+wmemset(VAR1, L'A', 50-1);
+VAR1[50-1] = L'\0';
+VAR32.VAR30 = VAR1;
+wchar_t * VAR1 = VAR32.VAR31;
+wchar_t VAR40[50] = L"";
+wcsncpy(VAR40, VAR1, wcslen(VAR1));

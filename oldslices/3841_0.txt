@@ -1,0 +1,4 @@
+CWE121_Stack_Based_Buffer_Overflow__CWE135_34_unionType myUnion;
+void * data = myUnion.unionSecond;
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));

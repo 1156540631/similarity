@@ -1,0 +1,15 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+void FUN2(char *VAR5)
+VAR6[4] = VAR5;
+VAR7[ *VAR8] = VAR6;
+VAR9 = VAR7[ *VAR8];
+VAR10 = ((char *)VAR9[4]);
+FUN3(VAR11, VAR12, "STONESOUP_TAINT_SOURCE", strlen(VAR10)+1, VAR10, "VAR13-VAR14");
+strncpy(VAR15.VAR16, VAR10, strlen(VAR10) + 1);

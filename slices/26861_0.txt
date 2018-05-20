@@ -1,0 +1,4 @@
+char VAR462[VAR359 + 1];
+FUN108(VAR463->VAR464, VAR463->VAR465, VAR462, sizeof(VAR462));
+printf("VAR462 FUN13 call to FUN108 = %VAR1\VAR7", VAR462);
+printf ("sizeof(VAR462) = %d\VAR7", sizeof(VAR462));

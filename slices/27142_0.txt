@@ -1,0 +1,3 @@
+VAR39 = (char *) malloc (25 * sizeof(char));
+VAR39 = NULL;
+strcpy(VAR39,"This is String");

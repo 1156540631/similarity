@@ -1,0 +1,10 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+const int GLOBAL_CONST_FIVE = 5;
+data = NULL;
+if(GLOBAL_CONST_FIVE==5)
+data = (void *)WIDE_STRING;
+if(GLOBAL_CONST_FIVE==5)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

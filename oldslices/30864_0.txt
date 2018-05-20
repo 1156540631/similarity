@@ -1,0 +1,12 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+data = dataGoodBuffer;
+data[0] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_52b_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_52b_goodG2BSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_52c_goodG2BSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_cpy_52c_goodG2BSink(char * data)
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

@@ -1,0 +1,33 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"VAR359");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR495,"THAPSIA_PULVINIC");
+if (VAR495 != 0) {;
+VAR496 = VAR495;
+VAR497[5] = VAR496;
+VAR498 =  *(VAR497 +  *VAR499);
+VAR500 = ((char *)VAR498);
+strcpy(VAR11.VAR12, VAR500);
+tracepoint(VAR31, VAR249, "VAR11.VAR12", VAR11.VAR12, "CROSSOVER-STATE");
+VAR250 = strlen( VAR11.VAR12);
+for (VAR10 = 0; VAR10 < VAR250; ++VAR10) {
+VAR11.VAR12[VAR10] = FUN68(VAR11.VAR12[VAR10]);
+tracepoint(VAR31, VAR249, "VAR11.VAR12", VAR11.VAR12, "FINAL-STATE");
+if (VAR498 != 0)
+free(((char *)VAR498));
+int FUN68(int VAR13)
+if (VAR13 >= 97 && VAR13 <= 122) {
+return VAR13 - 32;
+return VAR13;
+VAR11.VAR12[VAR10] = FUN68(VAR11.VAR12[VAR10]);
+FUN69("%VAR13",VAR11.after(VAR11.VAR12[VAR10]));
+void FUN69(char * VAR205, ...) {
+FUN69("%VAR13",VAR11.after(VAR11.VAR12[VAR10]));

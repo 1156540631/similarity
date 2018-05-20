@@ -1,0 +1,2 @@
+VAR338 = time(NULL);
+printf("Signing at = %d\VAR7", VAR338);

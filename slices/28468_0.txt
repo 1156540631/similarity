@@ -1,0 +1,16 @@
+#ifdef _WIN32
+#define FUN11 FUN14
+#else
+#define FUN11 FUN13
+#endif
+static int FUN1()
+return 1;
+static int FUN2()
+return 0;
+wchar_t * VAR1;
+VAR1 = (wchar_t *)malloc(100*sizeof(wchar_t));
+if(FUN1())
+wmemset(VAR1, L'A', 50-1);
+VAR1[50-1] = L'\0';
+wchar_t VAR40[50] = L"";
+FUN11(VAR40, wcslen(VAR1), L"%s", VAR1);

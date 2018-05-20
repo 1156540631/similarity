@@ -1,0 +1,3 @@
+void NetworkUtils::clearWifiTetherParms(CommandChain* aChain,
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);

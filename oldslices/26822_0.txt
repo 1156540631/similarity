@@ -1,0 +1,38 @@
+u_char *name = (u_char *) malloc(100*sizeof(u_char));
+u_char *msg = (u_char *) malloc(1000 * sizeof(u_char));
+msglen = create_msg(msg);
+int create_msg(u_char *buf) {
+char exp_dn[200], exp_dn2[200];
+int i,len = 0, comp_size;
+dnptrs = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+dnptrs2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+comp_dn = (unsigned char *) malloc(200*sizeof(unsigned char));
+comp_dn2 = (unsigned char *) malloc(200*sizeof(unsigned char));
+temp1 = (char *) malloc(400*sizeof(char));
+temp = temp1;
+strcpy(temp, "HEADER JUNK:");
+len += strlen(temp);
+strcpy(exp_dn, "lcs.mit.edu");
+*dnptrs++ = (u_char *) exp_dn;
+*dnptrs-- = NULL;
+comp_size = dn_comp((const char *) exp_dn, comp_dn, 200, dnptrs, lastdnptr);
+printf("comp_size = %d\n", comp_size);
+len += comp_size;
+len += 10;
+strcpy(exp_dn2, "sls.lcs.mit.edu");
+*dnptrs2-- = NULL;
+lastdnptr = NULL;
+comp_size = dn_comp((const char *) exp_dn2, comp_dn2, 200, dnptrs2, lastdnptr);
+printf("comp_size = %d\n", comp_size);
+len += comp_size;
+len += 16;
+return (len);}
+printf("msglen = %d\n", msglen);
+dp = msg + sizeof(HEADER);
+ret = rrextract(msg, msglen, dp, name, 100);
+rrextract(u_char *msg, int msglen, u_char *rrp, u_char *dname, int namelen)
+cp = rrp;
+eom = msg + msglen;
+printf("msg = %s, msglen = %d, rrp = %s, namelen = %d\n", (char *) msg, msglen, (char *)rrp, namelen);
+if ((n = dn_expand(msg, eom, cp, (char *) dname, namelen)) < 0) {
+printf("dn_expand returned %d\n", n);

@@ -1,0 +1,44 @@
+static bool FUN1( CLASS1 *VAR1, CLASS2 *VAR2 );
+if( FUN1( VAR1, VAR2 ) )
+if( !( VAR3 = FUN2( VAR1, VAR4->VAR5 ) ) ) return;
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,
+static void FUN3    ( CLASS2 *, CLASS3 * );
+FUN3( VAR2, VAR4 );
+if( !( VAR3 = FUN2( VAR1, VAR4->VAR5 ) ) ) return;
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,
+VAR4->VAR5 - VAR8 );
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,
+static void FUN4( CLASS1 *, CLASS2 *, CLASS3 * );
+FUN4( VAR1, VAR2, VAR4 );
+if( !( VAR3 = FUN2( VAR1, VAR4->VAR5 ) ) ) return;
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,
+static void FUN5( CLASS1 *VAR1, VAR9 VAR10, const CLASS4 *VAR11, int VAR12 );
+FUN5( VAR1, VAR2->VAR13.VAR10,
+if( !( VAR3 = FUN2( VAR1, VAR4->VAR5 ) ) ) return;
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,
+static void FUN6( CLASS1 *VAR1,
+int VAR8 = 0;
+! memcmp ( VAR4->VAR7, "Annodex", 7 ) )
+! memcmp ( VAR4->VAR7, "AnxData", 7 ) )
+FUN7( VAR1->VAR14, VAR15,
+FUN4( VAR1, VAR2, VAR4 );
+VAR4->VAR7 += 9;
+VAR4->VAR5 -= 9;
+VAR2->VAR12 += VAR4->VAR5;
+VAR2->VAR11 = realloc( VAR2->VAR11, VAR2->VAR12 );
+memcpy( (unsigned char *)VAR2->VAR11 + VAR2->VAR12 - VAR4->VAR5,
+VAR4->VAR7, VAR2->VAR12 );
+VAR4->VAR5, VAR4->VAR7 ) )
+if( FUN1( VAR1, VAR2 ) )
+FUN7( VAR1->VAR14, VAR16,
+FUN5( VAR1, VAR2->VAR13.VAR10,
+FUN7( VAR1->VAR14, VAR17 );
+FUN7( VAR1->VAR14, VAR18,
+FUN3( VAR2, VAR4 );
+FUN7( VAR1->VAR14, VAR17 );
+FUN7( VAR1->VAR14, VAR18, VAR19 + VAR2->VAR20 );
+if( !( VAR3 = FUN2( VAR1, VAR4->VAR5 ) ) ) return;
+VAR8 = (*VAR4->VAR7 & VAR21) >> 6;
+VAR8 |= (*VAR4->VAR7 & VAR22) << 1;
+VAR8++;
+memcpy( VAR3->VAR6, VAR4->VAR7 + VAR8,

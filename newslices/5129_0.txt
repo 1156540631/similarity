@@ -1,0 +1,4 @@
+CLASS1 * &VAR1 = VAR2;
+CLASS1 * VAR2 = VAR1;
+FUN1(*VAR2);
+free(VAR2);

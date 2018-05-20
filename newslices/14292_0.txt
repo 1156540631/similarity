@@ -1,0 +1,4 @@
+FUN1(FUN1 &VAR1)
+FUN1 FUN2("One"), FUN3("Two");
+this->VAR2 = new char[strlen(VAR1.VAR2) + 1];
+strcpy(this->VAR2, VAR1.VAR2);

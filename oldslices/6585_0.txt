@@ -1,0 +1,6 @@
+char *rehypothecation_hypogeic = 0;
+pyruline_lingulae(&rehypothecation_hypogeic);
+perspirate_melolonthidan[5] = rehypothecation_hypogeic;
+whereinto_quadricostate[1] = 5;
+internetworking_lorriker =  *(perspirate_melolonthidan + whereinto_quadricostate[1]);
+free(((char *)internetworking_lorriker));

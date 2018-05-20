@@ -1,0 +1,20 @@
+int StreamOpen( vlc_object_t *p_this )
+stream_t *s = (stream_t*) p_this;
+stream_sys_t *p_sys;
+if( stream_Peek( s->p_source, &p_peek, i_zip_marker ) < i_zip_marker )
+s->p_sys = p_sys = calloc( 1, sizeof( *p_sys ) );
+s->pf_read = Read;
+s->pf_peek = Peek;
+s->pf_control = Control;
+calloc( 1, sizeof( zlib_filefunc_def ) );
+p_sys->fileFunctions = ( zlib_filefunc_def * )
+p_sys->fileFunctions->zopen_file   = ZipIO_Open;
+p_sys->fileFunctions->zread_file   = ZipIO_Read;
+p_sys->fileFunctions->zwrite_file  = ZipIO_Write;
+p_sys->fileFunctions->ztell_file   = ZipIO_Tell;
+p_sys->fileFunctions->zseek_file   = ZipIO_Seek;
+p_sys->fileFunctions->zclose_file  = ZipIO_Close;
+p_sys->fileFunctions->zerror_file  = ZipIO_Error;
+p_sys->fileFunctions->opaque       = ( void * ) s;
+p_sys->zipFile = unzOpen2( NULL
+free( p_sys->fileFunctions );

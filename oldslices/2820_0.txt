@@ -1,0 +1,6 @@
+c = *p++;
+p--;
+p--;
+char *ptr = p;
+ptr++;
+while (isascii((int)*ptr) && isspace((int)*ptr))

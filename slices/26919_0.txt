@@ -1,0 +1,7 @@
+char VAR371[VAR372];
+strcpy(VAR371, "LL.MIT.EDU");
+VAR373 = strlen(VAR371);
+VAR360->VAR369.VAR374 = (char *) strdup(VAR371);
+strcpy(VAR371,"BLAH.MIT.EDU");
+VAR373 = strlen(VAR371);
+printf("VAR373 returned = %d\VAR7", VAR373);

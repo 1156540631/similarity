@@ -1,0 +1,4 @@
+data[50-1] = '\0';
+memmove(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

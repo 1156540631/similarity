@@ -1,0 +1,5 @@
+void glycyl_undeludedly(char *apepsy_preindemnifying)
+char stonesoup_source[1024];
+octometer_saucemen = ((char *)apepsy_preindemnifying);
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,octometer_saucemen,sizeof(stonesoup_source));

@@ -1,0 +1,7 @@
+CLASS1 **VAR1 = VAR2;
+int VAR3 = 0;
+CLASS1 *VAR4 = (CLASS1 *) malloc(sizeof(struct CLASS2));
+VAR4->VAR5 = 0x00000000;
+VAR4->VAR6 = "rpc";
+VAR7 = (CLASS1 *) FUN1(VAR4, VAR1, VAR3);
+printf("VAR8 VAR9 VAR10 VAR11 %s = %s\n", VAR4->VAR6, VAR7->VAR12);

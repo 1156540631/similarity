@@ -1,0 +1,15 @@
+typedef struct _CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67_structType
+int structFirst;
+} CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67_structType;
+CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67_structType myStruct;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myStruct.structFirst = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67b_goodB2GSink(myStruct);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67b_goodB2GSink(CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_67_structType myStruct)
+int data = myStruct.structFirst;
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

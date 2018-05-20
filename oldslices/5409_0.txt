@@ -1,0 +1,5 @@
+void badSink(map<int, wchar_t *> dataMap)
+wchar_t * data = dataMap[2];
+memcpy(dest, data, wcslen(data)*sizeof(wchar_t));
+printWLine(data);
+free(data);

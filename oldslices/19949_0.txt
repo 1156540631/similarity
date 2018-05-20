@@ -1,0 +1,7 @@
+void (*funcPtr) (int *) = goodG2BSink;
+data = NULL;
+data = new int[100];
+funcPtr(data);
+void goodG2BSink(int * data)
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

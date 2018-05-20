@@ -1,0 +1,7 @@
+char host[MAXHOSTNAMELEN];
+strcpy(host, "LL.MIT.EDU");
+status = strlen(host);
+r->dns_r_q.dns_q_domain = (char *) strdup(host);
+strcpy(host,"BLAH.MIT.EDU");
+status = strlen(host);
+printf("status returned = %d\n", status);

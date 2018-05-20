@@ -1,0 +1,10 @@
+void *p_org = p_stream->p_headers;
+p_stream->i_headers = func(&p_stream->i_headers);
+static int func(int * ptr)
+int p_stream->i_headers = *ptr;
+p_stream->i_headers += p_oggpacket->bytes;
+return p_stream->i_headers;
+p_stream->i_headers = func(&p_stream->i_headers);
+p_stream->p_headers = realloc( p_stream->p_headers, p_stream->i_headers );
+if( p_stream->p_headers )
+memcpy( (unsigned char *)p_stream->p_headers + p_stream->i_headers - p_oggpacket->bytes, p_oggpacket->packet, p_oggpacket->bytes );

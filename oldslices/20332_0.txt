@@ -1,0 +1,2 @@
+int debug = 0;
+if (scanf("%d",&debug) != 1) {

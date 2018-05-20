@@ -1,0 +1,4 @@
+void finaglers_mia(char **shakingly_pepper)
+rewed_kula(shakingly_pepper);
+void rewed_kula(char **simity_haftara)
+free(((char *)( *(simity_haftara - 5))));

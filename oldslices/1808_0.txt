@@ -1,0 +1,3 @@
+s = getenv("LS_COLORS");
+if ((s == ((void *)0) || strlen(s) == 0) && force_color) {
+if (s == ((void *)0) || !force_color && (nocolor || !isatty(1))) {

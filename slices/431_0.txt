@@ -1,0 +1,4 @@
+CLASS1	VAR1;
+FUN1(VAR1, VAR2);
+vfprintf(stderr, VAR2, VAR1);
+FUN2(VAR1);

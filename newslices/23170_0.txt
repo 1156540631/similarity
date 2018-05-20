@@ -1,0 +1,7 @@
+VAR1 VAR2 = (VAR1 )0;
+sscanf(VAR3,"%p",&VAR2);
+VAR4 = ((char *)( *(VAR5 - 5)) . VAR6);
+VAR7 = FUN1(VAR4);
+VAR1 FUN1(char *VAR3)
+VAR8 = strlen(VAR3) % 3;
+sscanf(VAR3,"%p",&VAR2);

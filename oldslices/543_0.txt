@@ -1,0 +1,4 @@
+unsigned char **buffer,
+char          *string,
+int           strsize)
+memcpy(string, buffer, strsize - 1);

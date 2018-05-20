@@ -1,0 +1,21 @@
+unsigned int payload;
+unsigned int padding = 16;
+if (1 + 2 + 16 > s->s3->rrec.length)
+return 0;
+hbtype = *p++;
+n2s(p, payload);
+if (1 + 2 + payload + 16 > s->s3->rrec.length)
+return 0;
+pl = p;
+if (hbtype == TLS1_HB_REQUEST)
+unsigned char *buffer, *bp;
+int r;
+if (3 + payload + padding; > SSL3_RT_MAX_PLAIN_LENGTH)
+return 0;
+buffer = OPENSSL_malloc(3 + payload + padding;);
+bp = buffer;
+r = dtls1_write_bytes(s, TLS1_RT_HEARTBEAT, buffer, 3 + payload + padding;);
+if (r >= 0 && s->msg_callback)
+s->msg_callback(1, s->version, TLS1_RT_HEARTBEAT,
+buffer, 3 + payload + padding;,
+s, s->msg_callback_arg);

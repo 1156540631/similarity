@@ -1,0 +1,6 @@
+CLASS1 *VAR1 = (CLASS1 * )malloc(5*sizeof( CLASS1 ));
+VAR1->VAR2 = (CLASS2 *) malloc(sizeof(CLASS2));
+VAR1->VAR2->VAR3 = (int *) malloc(5*sizeof(int));
+free(VAR1->VAR2->VAR3);
+free(VAR1->VAR2);
+free(VAR1);

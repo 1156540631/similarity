@@ -1,0 +1,5 @@
+void badSink(list<char *> dataList)
+char * data = dataList.back();
+strcat(dest, data);
+printLine(data);
+free(data);

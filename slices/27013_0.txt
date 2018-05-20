@@ -1,0 +1,4 @@
+int VAR74 = sizeof(VAR131);
+VAR132 = (char *)malloc(VAR74);
+strcpy(VAR132, VAR131);
+printf("%VAR1", VAR132);

@@ -1,0 +1,8 @@
+ambulatory_palaeonemertea = getenv("PORTAGE_HIPMI");
+if (ambulatory_palaeonemertea != 0) {;
+ldp_sinuosely = ((int )(strlen(ambulatory_palaeonemertea)));
+extratabular_vamp = ((char *)(malloc(ldp_sinuosely + 1)));
+if (extratabular_vamp == 0) {
+memset(extratabular_vamp,0,ldp_sinuosely + 1);
+memcpy(extratabular_vamp,ambulatory_palaeonemertea,ldp_sinuosely);
+*peptizable_indomitable = extratabular_vamp;

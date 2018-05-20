@@ -1,0 +1,5 @@
+int * &VAR1 = VAR2;
+VAR2 = (int *)malloc(50*sizeof(int));
+int * VAR2 = VAR1;
+int VAR3[100] = {0};
+memcpy(VAR2, VAR3, 100*sizeof(int));

@@ -1,0 +1,9 @@
+VAR349 = (char *) malloc(sizeof(char) * 500);
+VAR349[VAR5+1] = VAR353;
+VAR354->VAR355 = (char *) malloc(strlen(VAR349) * sizeof(char) + 1);
+strcpy(VAR354->VAR355, VAR349);
+FUN73(VAR349, VAR350, VAR352);
+char *VAR349;
+VAR348 = FUN72(VAR349, VAR350, VAR351, sizeof VAR351, VAR352, NULL, VAR327);
+char *VAR349;
+if (strlen(VAR349) > (STRUCT17) VAR359)

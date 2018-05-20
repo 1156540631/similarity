@@ -1,0 +1,24 @@
+AVDictionaryEntry *tag=NULL;
+while((tag=av_dict_get(m, "", tag, AV_DICT_IGNORE_SUFFIX))) {
+if(strcmp("language", tag->key)){
+av_log(ctx, AV_LOG_INFO, "%s  %-16s: ", indent, tag->key);
+while((tag=av_dict_get(m, "", tag, AV_DICT_IGNORE_SUFFIX))) {
+if(strcmp("language", tag->key)){
+uint8_t *printed = ic->nb_streams ? av_mallocz(ic->nb_streams) : NULL;
+dump_metadata(NULL, ic->metadata, "  ");
+us = ic->duration % AV_TIME_BASE;
+(100 * us) / AV_TIME_BASE);
+us = abs(ic->start_time % AV_TIME_BASE);
+AVChapter *ch = ic->chapters[i];
+dump_metadata(NULL, ch->metadata, "    ");
+dump_metadata(NULL, ic->programs[j]->metadata, "    ");
+dump_stream_format(ic, ic->programs[j]->stream_index[k], index, is_output);
+static void dump_stream_format(AVFormatContext *ic, int i, int index, int is_output)
+AVStream *st = ic->streams[i];
+AVDictionaryEntry *lang = av_dict_get(st->metadata, "language", NULL, 0);
+dump_metadata(NULL, st->metadata, "    ");
+dump_stream_format(ic, ic->programs[j]->stream_index[k], index, is_output);
+static void dump_metadata(void *ctx, AVDictionary *m, const char *indent)
+if(m && !(av_dict_count(m) == 1 && av_dict_get(m, "language", NULL, 0))){
+while((tag=av_dict_get(m, "", tag, AV_DICT_IGNORE_SUFFIX))) {
+if(strcmp("language", tag->key)){

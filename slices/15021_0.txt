@@ -1,0 +1,8 @@
+VAR1[0] = L'\0';
+VAR2[2] = VAR1;
+FUN1(VAR2);
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(VAR1, source, wcslen(source) + 1);
+void FUN1(map<int, wchar_t *> VAR2)
+wchar_t * VAR1 = VAR2[2];
+wcsncpy(VAR1, source, wcslen(source) + 1);

@@ -1,0 +1,7 @@
+int **VAR1 = (int**) calloc(5,sizeof(int*));
+VAR1[VAR2]=(int*) calloc(5,sizeof(int));
+for(VAR2=-1;VAR2<5;VAR2++)
+for(VAR3=0;VAR3<5;VAR3++)
+*(*(VAR1+VAR2)+VAR3)=VAR2;
+free(VAR1[VAR2]);
+free(VAR1);

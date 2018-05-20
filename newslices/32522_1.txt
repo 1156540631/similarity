@@ -1,0 +1,8 @@
+char * VAR1;
+void (*VAR2) (char *) = VAR3;
+static void VAR3(char * VAR1)
+char VAR4[10+1] = VAR5;
+strncpy(VAR1, VAR4, strlen(VAR4) + 1);
+char VAR6[10];
+VAR1 = VAR6;
+VAR1[0] = '\';

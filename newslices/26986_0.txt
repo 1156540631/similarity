@@ -1,0 +1,5 @@
+VAR1[VAR2] = '\';
+return VAR1;
+VAR3 = malloc(25*sizeof(char));
+char *VAR1 = FUN1();
+strncpy(VAR3,VAR1,25*sizeof(char));

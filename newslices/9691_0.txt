@@ -1,0 +1,6 @@
+VAR1 = strlen(VAR2);
+VAR3 = malloc(sizeof(void *));
+FUN1(VAR4, VAR5, "VAR6-VAR7: VAR8");
+FUN2("VAR9 VAR10 true\n");
+void FUN2(char * VAR11, ...) {
+FUN3(VAR12, VAR11);

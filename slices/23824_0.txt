@@ -1,0 +1,5 @@
+VAR56 = getenv("VAR57");
+if (VAR56 != 0) {;
+VAR58 = ((void *)VAR56);
+FUNC14(VAR58);
+void FUNC14(void *const VAR59);

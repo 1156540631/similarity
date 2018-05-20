@@ -1,0 +1,10 @@
+furcule_malayalam = getenv("COALFIELD_COMIQUE");
+eugeny_animadversions = ((int )(strlen(furcule_malayalam)));
+fringelike_lactation = ((char *)(malloc(eugeny_animadversions + 1)));
+memset(fringelike_lactation,0,eugeny_animadversions + 1);
+memcpy(fringelike_lactation,furcule_malayalam,eugeny_animadversions);
+fredrick_porchlike = ower_unfarsighted(fringelike_lactation);
+char *ower_unfarsighted(char *furtherer_rabiform)
+return furtherer_rabiform;
+fredrick_porchlike = ower_unfarsighted(fringelike_lactation);
+free(((char *)fredrick_porchlike));

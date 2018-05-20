@@ -1,0 +1,9 @@
+asn1_debug(buffer, value_length, indent + 4);
+asn1_debug(buffer, value_length, indent + 4);
+int           indent)
+fprintf(stderr, "DEBUG: %*sINTEGER %d bytes %d\n", indent, "",
+asn1_debug(buffer, value_length, indent + 4);
+fprintf(stderr, "DEBUG: %*sOCTET STRING %d bytes \"%s\"\n", indent, "",
+fprintf(stderr, ".%d", oid[i]);
+putc('\n', stderr);
+fprintf(stderr, "DEBUG: %*sBOOLEAN %d bytes %d\n", indent, "",

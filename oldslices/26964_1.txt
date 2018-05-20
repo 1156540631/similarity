@@ -1,0 +1,7 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+buf = malloc(MAXSIZE);
+if(strlen(str) >= MAXSIZE) {
+strcpy(buf, str);

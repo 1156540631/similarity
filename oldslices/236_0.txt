@@ -1,0 +1,6 @@
+char		filename[1024],
+if ((cups_serverroot = getenv("CUPS_SERVERROOT")) == NULL)
+cups_serverroot = CUPS_SERVERROOT;
+snprintf(filename, sizeof(filename), "%s/snmp.conf", cups_serverroot);
+if ((fp = cupsFileOpen(filename, "r")) != NULL)
+filename);

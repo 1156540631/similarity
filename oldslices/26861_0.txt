@@ -1,0 +1,11 @@
+char buf0[MAXNAME + 1];
+i = strlen(a->q_user);
+if (i >= sizeof buf0)
+buf = xalloc(i + 1);
+buf = buf0;
+(void) strcpy(buf, a->q_user);
+auto enum bool fuzzy;
+pw = finduser(buf, &fuzzy);
+buildfname(pw->pw_gecos, pw->pw_name, nbuf, sizeof(nbuf));
+a->q_ruser = newstr(pw->pw_name);
+printf("Before call to builfname, pw_gecos = %s, and pw_name = %s\n", pw->pw_gecos, pw->pw_name);

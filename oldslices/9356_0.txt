@@ -1,0 +1,15 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&valeted_epitaphize,"NONIMMIGRANT_QUINCUNXES");
+if (valeted_epitaphize != 0) {;
+overtaxation_tantaluses = ((int )(strlen(valeted_epitaphize)));
+gloom_ungnawed = ((char *)(malloc(overtaxation_tantaluses + 1)));
+if (gloom_ungnawed == 0) {
+memcpy(gloom_ungnawed,valeted_epitaphize,overtaxation_tantaluses);
+if (valeted_epitaphize != 0)
+free(((char *)valeted_epitaphize));
+acondylose_cigarillos = &gloom_ungnawed;
+SAGGIER_OUTRAKE(acondylose_cigarillos);
+void relata_watertightness(char **bentonville_semisilica)
+SAGGIER_OUTRAKE(acondylose_cigarillos);

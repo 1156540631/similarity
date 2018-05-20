@@ -1,0 +1,3 @@
+jmp_buf boycotted_clinometrical;
+homovec_ostectomies = setjmp(boycotted_clinometrical);
+longjmp(boycotted_clinometrical,1);

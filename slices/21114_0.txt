@@ -1,0 +1,4 @@
+VAR1 = split(VAR5[VAR2],"=",&VAR4);
+VAR3 -> term_flg = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR3 -> ext = strcpy((xmalloc(strlen((VAR1[0] + 1)) + 1)),(VAR1[0] + 1));
+VAR3 -> term_flg = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);

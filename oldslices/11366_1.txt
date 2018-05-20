@@ -1,0 +1,3 @@
+double *a = (double *) calloc(3,sizeof(double));
+printf("%lf ",a[1]);
+free(a);

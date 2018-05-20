@@ -1,0 +1,6 @@
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+badVaSink(data, data);
+static void badVaSink(char * data, ...)
+va_start(args, data);

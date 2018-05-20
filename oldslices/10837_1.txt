@@ -1,0 +1,69 @@
+static void dissect_sdp_media_attribute(tvbuff_t *tvb, packet_info *pinfo, proto_item * ti, int length, transport_info_t *transport_info) {
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+static gint find_sdp_media_attribute_names(tvbuff_t *tvb, int offset, guint len)
+(tvb_strncaseeql(tvb, offset, sdp_media_attribute_names[i].name, len) == 0))
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+offset = colon_offset + 1;
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+attribute_value = tvb_get_ephemeral_string(tvb, offset, tvb_length_remaining(tvb, offset));
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+proto_tree_add_uint(sdp_media_attribute_tree, hf_sdp_crypto_tag, tvb, offset, tokenlen,
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+if (tvb_strncaseeql(tvb, offset, "AES_CM_128_HMAC_SHA1_80", tokenlen) == 0) {
+} else if (tvb_strncaseeql(tvb, offset, "AES_CM_128_HMAC_SHA1_32", tokenlen) == 0) {
+} else if (tvb_strncaseeql(tvb, offset, "F8_128_HMAC_SHA1_80", tokenlen) == 0) {
+offset = next_offset + 1;
+param_end_offset = tvb_find_guint8(tvb, offset, -1, ';');
+tvb, offset, param_end_offset-offset, "Key parameters");
+next_offset = tvb_find_guint8(tvb, offset, -1, ':');
+tvb, offset, param_end_offset-offset, "Key parameters");
+if (tvb_strncaseeql(tvb, offset, "inline", next_offset-offset) == 0) {
+next_offset = tvb_find_guint8(tvb, offset, -1, '|');
+data_p = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+key_salt_tvb = base64_to_tvb(tvb, data_p);
+proto_tree_add_text(parameter_tree, tvb, offset, tokenlen, "Key and Salt");
+next_offset = tvb_find_guint8(tvb, offset, -1, '|');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+offset   = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, ':');
+proto_tree_add_item(parameter_tree, hf_sdp_crypto_mki, tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+offset      = next_offset + 1;
+next_offset = param_end_offset;
+tokenlen    = next_offset - offset;
+transport_info->mki_len = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+next_offset = tvb_find_guint8(tvb, offset, -1, ':');
+proto_tree_add_item(parameter_tree, hf_sdp_crypto_mki, tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+offset      = next_offset + 1;
+transport_info->mki_len = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));
+offset = param_end_offset;
+param_end_offset = tvb_find_guint8(tvb, offset, -1, ';');
+tvb, offset, param_end_offset-offset, "Key parameters");
+next_offset = param_end_offset;
+tokenlen    = next_offset - offset;
+transport_info->mki_len = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));
+proto_tree_add_text(parameter_tree, tvb, next_offset + 1, tokenlen,
+param_end_offset = tvb_find_guint8(tvb, offset, -1, ';');
+tvb, offset, param_end_offset-offset, "Key parameters");
+next_offset = param_end_offset;
+tokenlen    = next_offset - offset;
+transport_info->mki_len = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));
+offset = param_end_offset;
+param_end_offset = tvb_find_guint8(tvb, offset, -1, ';');
+param_end_offset = tvb_length(tvb);
+tvb, offset, param_end_offset-offset, "Key parameters");
+next_offset = tvb_find_guint8(tvb, offset, -1, ':');
+if (tvb_strncaseeql(tvb, offset, "inline", next_offset-offset) == 0) {
+offset      = next_offset +1;
+next_offset = tvb_find_guint8(tvb, offset, -1, '|');
+offset = next_offset + 1;
+next_offset = tvb_find_guint8(tvb, offset, -1, '|');
+next_offset = tvb_find_guint8(tvb, offset, -1, ':');
+offset      = next_offset + 1;
+next_offset = param_end_offset;
+tokenlen    = next_offset - offset;
+transport_info->mki_len = atoi((char*)tvb_get_ephemeral_string(tvb, offset, tokenlen));

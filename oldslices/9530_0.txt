@@ -1,0 +1,4 @@
+void badSink(map<int, int64_t *> dataMap)
+int64_t * data = dataMap[2];
+printLongLongLine(*data);
+free(data);

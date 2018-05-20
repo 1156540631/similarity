@@ -1,0 +1,13 @@
+typedef union
+char * VAR1;
+char * VAR2;
+} CLASS1;
+char * VAR3;
+CLASS1 VAR4;
+VAR3 = (char *)malloc(100*sizeof(char));
+memset(VAR3, '', 50-1);
+VAR3[50-1] = '\';
+VAR4.VAR1 = VAR3;
+char * VAR3 = VAR4.VAR2;
+char VAR5[50] = "";
+strcat(VAR5, VAR3);

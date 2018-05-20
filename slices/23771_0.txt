@@ -1,0 +1,5 @@
+VAR1 = getenv("CUTLING_DISSUASIONS");
+if (VAR1 != 0) {;
+VAR2[40] = VAR1;
+VAR4 = FUNC1(VAR2);
+char **FUNC1(char **VAR4);

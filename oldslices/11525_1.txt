@@ -1,0 +1,6 @@
+data[0] = L'\0';
+CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_snprintf_41_badSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE805_wchar_t_snprintf_41_badSink(wchar_t * data)
+SNPRINTF(data, 100, L"%s", source);
+printWLine(data);
+free(data);

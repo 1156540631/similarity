@@ -1,0 +1,7 @@
+char * &dataRef = data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+data = dataGoodBuffer;
+char * data = dataRef;
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

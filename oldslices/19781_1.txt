@@ -1,0 +1,11 @@
+vector<int64_t *> dataVector;
+data = NULL;
+data = new int64_t[50];
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+badSink(dataVector);
+void badSink(vector<int64_t *> dataVector)
+int64_t * data = dataVector[2];
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

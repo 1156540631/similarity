@@ -1,0 +1,12 @@
+static int badStatic = 0;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+badStatic = 1;
+badSink(data);
+static void badSink(int data)
+if(badStatic)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

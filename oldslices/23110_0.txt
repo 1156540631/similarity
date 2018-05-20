@@ -1,0 +1,4 @@
+mfb_disporous = getenv("HARDWICKIA_CYRTOGRAPH");
+if (mfb_disporous != 0) {;
+mournfulnesses_deeds . cleanups_carneades = ((char *)mfb_disporous);
+*catalyst_trainer = mournfulnesses_deeds;

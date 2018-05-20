@@ -1,0 +1,12 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAA"
+wchar_t * VAR4;
+VAR4 = VAR5;
+VAR6 = 0;
+VAR4 = FUN1(VAR4);
+static wchar_t * FUN1(wchar_t * VAR4)
+if(VAR6) {}
+else
+VAR4 = (wchar_t *)malloc((10+1)*sizeof(wchar_t));
+return VAR4;
+wchar_t VAR7[10+1] = VAR2;
+FUN2(VAR4, VAR7);

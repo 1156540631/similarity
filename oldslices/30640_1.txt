@@ -1,0 +1,15 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54b_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54b_badSink(int data)
+CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54c_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54c_badSink(int data)
+CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54d_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54d_badSink(int data)
+CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54e_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_54e_badSink(int data)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

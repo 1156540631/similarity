@@ -1,0 +1,11 @@
+vector<char *> dataVector;
+data = new char[10+1];
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

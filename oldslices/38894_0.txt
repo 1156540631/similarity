@@ -1,0 +1,2 @@
+char * CWE134_Uncontrolled_Format_String__char_console_printf_61b_goodG2BSource(char * data)
+strcpy(data, "fixedstringtest");

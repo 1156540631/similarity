@@ -1,0 +1,5 @@
+void predeclaration_pipecoline(trialogue_wovens aube_unadduceable)
+char stonesoup_source[1024];
+perigord_camauro = ((char *)aube_unadduceable);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, perigord_camauro, sizeof(stonesoup_source));

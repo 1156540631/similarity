@@ -1,0 +1,4 @@
+char VAR2[100] = "";
+VAR1 = VAR2;
+size_t VAR7 = strlen(VAR1);
+if (fgets(VAR1+VAR7, (int)(100-VAR7), stdin) != NULL)

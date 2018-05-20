@@ -1,0 +1,2 @@
+VAR1 = (CLASS1 *) FUN1(sizeof(*VAR1));
+memset(VAR1, 0, sizeof(*VAR1));

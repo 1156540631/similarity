@@ -1,0 +1,9 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+goto VAR4;
+VAR4:
+strcpy(VAR1, "fixedstringtest");
+goto sink;
+sink:
+printf(VAR1);

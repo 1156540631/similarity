@@ -1,0 +1,4 @@
+VAR1 = VAR2;
+VAR1 = new int[100];
+int VAR3[100] = {0};
+memcpy(VAR1, VAR3, 100*sizeof(int));

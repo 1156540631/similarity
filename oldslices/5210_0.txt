@@ -1,0 +1,3 @@
+buf1R2 = (char *) malloc(BUFSIZE1);
+strncpy(buf1R2, argv[1], BUFSIZE1-1);
+free(buf1R2);

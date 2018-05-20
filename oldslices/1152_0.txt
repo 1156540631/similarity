@@ -1,0 +1,22 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int contractable_hoptoads = 596;
+char *countergauge_laggins;
+stonesoup_read_taint(&countergauge_laggins,"3876",contractable_hoptoads);
+blebs_outrolled = ((int )(strlen(countergauge_laggins)));
+varooms_stearn = ((char *)(malloc(blebs_outrolled + 1)));
+memset(varooms_stearn,0,blebs_outrolled + 1);
+memcpy(varooms_stearn,countergauge_laggins,blebs_outrolled);
+myodynamic_kessler = &varooms_stearn;
+CARIFTA_FAKER(myodynamic_kessler);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&countergauge_laggins,"3876",contractable_hoptoads);
+blebs_outrolled = ((int )(strlen(countergauge_laggins)));
+memcpy(varooms_stearn,countergauge_laggins,blebs_outrolled);
+myodynamic_kessler = &varooms_stearn;
+CARIFTA_FAKER(myodynamic_kessler);
+void notariate_disscussive(char **trinidad_camatina)
+free(((char *)( *trinidad_camatina)));

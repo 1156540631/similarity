@@ -1,0 +1,5 @@
+VAR1 = (int*)malloc(CLASS1 * sizeof(int));
+CLASS1 = 20;
+VAR1[VAR2] = 0;
+FUN1(VAR1[0]);
+free(VAR1);

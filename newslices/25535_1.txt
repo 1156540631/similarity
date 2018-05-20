@@ -1,0 +1,5 @@
+VAR1 = FUN1("STRINGLEN_MIN");
+if (VAR1 != VAR2)
+VAR3 = strlen(VAR1);
+if (VAR3 > 10)
+VAR4[VAR3] = '';

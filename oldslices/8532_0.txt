@@ -1,0 +1,8 @@
+invalid_memory_access_013_s_001_s_gbl = (invalid_memory_access_013_s_001 *)calloc(1,sizeof(invalid_memory_access_013_s_001));
+invalid_memory_access_013_s_001_s_gbl->a = 10;
+invalid_memory_access_013_s_001_s_gbl->b = 10;
+invalid_memory_access_013_s_001_s_gbl->uninit = 10;
+invalid_memory_access_013_func_001 (1);
+invalid_memory_access_013_func_003 (1);
+ret = invalid_memory_access_013_func_002 (1);
+free(invalid_memory_access_013_s_001_s_gbl);

@@ -1,0 +1,14 @@
+bool (*VAR1))(int , int ) = VAR2;
+static char *
+FUN1(
+unsigned char **VAR3,
+unsigned char *VAR4,
+int           VAR5,
+char          *VAR6,
+int           VAR7)
+bool VAR8 = VAR1(VAR5, VAR7);
+bool VAR2(int VAR5, int VAR7)
+return VAR5 < VAR7;
+bool VAR8 = VAR1(VAR5, VAR7)
+if (VAR8)
+memcpy(VAR6, *VAR3, VAR5);

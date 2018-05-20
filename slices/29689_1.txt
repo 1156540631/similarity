@@ -1,0 +1,14 @@
+wchar_t * VAR6;
+VAR6 = NULL;
+wchar_t * VAR5 = (wchar_t *)malloc(100*sizeof(wchar_t));
+wmemset(VAR5, L'A', 100-1);
+VAR5[100-1] = L'\0';
+VAR6 = VAR5 - 8;
+FUN1(&VAR6);
+void FUN1(void * VAR17)
+wchar_t * * VAR16 = (wchar_t * *)VAR17;
+wchar_t * VAR6 = (*VAR16);
+wchar_t VAR7[100];
+wmemset(VAR7, L'C', 100-1);
+VAR7[100-1] = L'\0';
+wcscpy(VAR6, VAR7);

@@ -1,0 +1,12 @@
+process_header(tvbuff_t *tvb, int offset, int next_offset,
+const guchar *line, int linelen, int colon_offset,
+line_end_offset = offset + linelen;
+header_name = se_strndup(&line[0], header_len);
+value_offset = colon_offset + 1;
+value_offset++;
+value_len = line_end_offset - value_offset;
+value = ep_strndup(&line[value_offset - offset], value_len);
+tmp=strtol(value, NULL, 10);
+value, "%s", format_text(line, len));
+c = value[i];
+if (c == ';' || isspace(c)) {

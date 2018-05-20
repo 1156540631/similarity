@@ -1,0 +1,20 @@
+typedef struct CLASS1
+int VAR1;
+} CLASS2;
+int VAR2;
+CLASS2 VAR3;
+VAR2 = -1;
+VAR4 = FUN1(VAR5, VAR6, VAR7 - 1, 0);
+if (VAR4 == VAR8 || VAR4 == 0)
+break;
+VAR6[VAR4] = '\';
+VAR2 = atoi(VAR6);
+VAR3.VAR1 = VAR2;
+FUN2(VAR3);
+void FUN2(CLASS2 VAR3)
+int VAR2 = VAR3.VAR1;
+int * VAR9 = (int *)malloc(10 * sizeof(int));
+for (VAR10 = 0; VAR10 < 10; VAR10++)
+VAR9[VAR10] = 0;
+if (VAR2 >= 0)
+VAR9[VAR2] = 1;

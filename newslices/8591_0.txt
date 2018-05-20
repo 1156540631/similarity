@@ -1,0 +1,3 @@
+FUN1("%s\n",&(VAR1[VAR2+1]));
+void FUN1(char * VAR3, ...) {
+FUN2(VAR4, VAR3);

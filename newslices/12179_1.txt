@@ -1,0 +1,25 @@
+void FUN1(int VAR1,void *VAR2)
+VAR3 = ((char *)((char *)VAR2));
+VAR4 = (char*) malloc(64 * sizeof(char));
+memset(VAR4,0,64);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR7-VAR8");
+strcpy(VAR4, VAR3);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR9-VAR8");
+VAR10 = strlen( VAR4);
+VAR4[VAR11] = FUN3(VAR4[VAR11]);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR12-VAR13");
+FUN4("%s\n",VAR4);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR14-VAR8");
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR12-VAR13");
+FUN4("%s\n",VAR4);
+void FUN4(char * VAR15, ...) {
+return VAR16 - 32;
+VAR4[VAR11] = FUN3(VAR4[VAR11]);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR12-VAR13");
+FUN4("%s\n",VAR4);
+free(VAR4);
+int FUN3(int VAR16)
+return VAR16;
+VAR4[VAR11] = FUN3(VAR4[VAR11]);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR12-VAR13");
+FUN4("%s\n",VAR4);

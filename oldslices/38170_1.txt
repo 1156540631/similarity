@@ -1,0 +1,22 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_82_base* baseObject = new CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_82_bad;
+baseObject->action(data);
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_82_bad::action(char * data)
+badVaSink(data, data);
+static void badVaSink(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

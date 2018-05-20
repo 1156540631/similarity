@@ -1,0 +1,17 @@
+if (VAR1->FUN1() ||
+VAR1->FUN2() ||
+VAR1->FUN3() ||
+((VAR2 || !VAR1->FUN4()) && !VAR3) ||
+(!VAR2 && !VAR1->FUN5()) ||
+VAR1->FUN6() ||
+VAR1->FUN7();
+if (!VAR1->FUN1()) {
+VAR1.FUN8(), VAR1->FUN2() ? "" : "not ");
+if (VAR4 && !VAR1->FUN9()) {
+static_cast<void*>(VAR1.FUN8()),
+static_cast<void*>((VAR1.FUN10() != FUN11() ? VAR1.FUN10().FUN8() : VAR5)),
+VAR1->FUN1() ? "block" : "inline",
+VAR1->FUN5() ? "VAR6-break-VAR7 " : "",
+VAR1->FUN6() ? "VAR6-VAR8 " : "",
+VAR1->FUN2() ? "impacted " : "",
+VAR1->FUN12(), VAR1->FUN13(),

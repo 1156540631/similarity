@@ -1,0 +1,3 @@
+const guint8 *pd, int *err)
+tag = (const char *) (pd + 6 * 4 + 1);
+log = tag + strlen(tag) + 1;

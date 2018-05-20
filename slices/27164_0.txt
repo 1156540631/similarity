@@ -1,0 +1,4 @@
+char **VAR413[5] = {&VAR235, &VAR414, &VAR415, &VAR416, &VAR417};
+int VAR5,VAR10=4;
+*((*VAR413[VAR5])+VAR10)='VAR396';
+printf("uninit %VAR4 \VAR7",*((*VAR413[VAR5])+VAR10));

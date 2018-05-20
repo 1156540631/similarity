@@ -1,0 +1,3 @@
+jmp_buf cavaedium_paraperiodic;
+phenylthiourea_heteroecismal = setjmp(cavaedium_paraperiodic);
+longjmp(cavaedium_paraperiodic,1);

@@ -1,0 +1,3 @@
+*p++ = '\0';
+p = strchr(p, quote);
+p = strchr(p, '=');

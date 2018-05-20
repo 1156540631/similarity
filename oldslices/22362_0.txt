@@ -1,0 +1,2 @@
+if (getenv("STONESOUP_DISABLE_WEAKNESS") == NULL ||
+strcmp(getenv("STONESOUP_DISABLE_WEAKNESS"), "1") != 0) {

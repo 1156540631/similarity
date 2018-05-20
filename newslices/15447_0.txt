@@ -1,0 +1,8 @@
+char * VAR1;
+VAR1 = new char[100];
+if(0)
+else
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+char VAR2[50] = "";
+FUN1(VAR2, strlen(VAR1), "%s", VAR1);

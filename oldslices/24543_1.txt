@@ -1,0 +1,4 @@
+char src[18];
+char buf[10];
+src[18 - 1] = '\0';
+strcpy(buf, src);

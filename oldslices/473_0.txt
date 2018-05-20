@@ -1,0 +1,3 @@
+LPCWSTR baseRegPath = L"SOFTWARE\\Mozilla\\"
+wcsncpy(registryPath, baseRegPath, MAX_PATH);
+registryPath + wcslen(baseRegPath));

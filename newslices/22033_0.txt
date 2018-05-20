@@ -1,0 +1,7 @@
+int VAR1, const char *VAR2, VAR3 VAR4, const char *VAR5, int VAR6, const char *VAR7)
+int VAR8 = (VAR1 && (*VAR9)->VAR10) ? (*VAR9)->VAR11 : 0;
+VAR3 VAR12;
+FUN1(VAR12);
+FUN1(VAR12);
+FUN2(VAR12, VAR4);
+VAR13 = FUN3((*VAR9)->VAR14 + VAR8, (*VAR9)->VAR10 - VAR8, VAR2, VAR12);

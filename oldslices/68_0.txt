@@ -1,0 +1,14 @@
+int            version,
+const unsigned request_id,
+packet.version      = version;
+packet.request_type = ASN1_GET_REQUEST;
+packet.request_id   = request_id;
+packet.object_type  = ASN1_NULL_VALUE;
+strlcpy(packet.community, community, sizeof(packet.community));
+bytes = asn1_encode_snmp(buffer, sizeof(buffer), &packet);
+snmp_packet_t *packet);
+memset(&packet, 0, sizeof(packet));
+bytes = asn1_encode_snmp(buffer, sizeof(buffer), &packet);
+snmp_packet_t	packet;
+bytes = asn1_encode_snmp(buffer, sizeof(buffer), &packet);
+packet.error);

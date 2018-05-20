@@ -1,0 +1,5 @@
+chutzpah_toader = getenv("SILKWORKER_REFORMER");
+if (chutzpah_toader != 0) {;
+toxophile_depraver = chutzpah_toader;
+rockman_ottweilian(1,toxophile_depraver);
+void rockman_ottweilian(int unwithered_necroscopy,... );

@@ -1,0 +1,3 @@
+doubleptr[0][loc2]='T';
+free(doubleptr[i]);
+free(doubleptr);

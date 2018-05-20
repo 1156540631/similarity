@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int posho_undeclarative = 596;
+char *colluvia_laris;;
+stonesoup_read_taint(&colluvia_laris,"5936",posho_undeclarative);
+decurt_verene = ((int )(strlen(colluvia_laris)));
+memcpy(capitolium_imaginous,colluvia_laris,decurt_verene);
+free(((char *)colluvia_laris));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&colluvia_laris,"5936",posho_undeclarative);
+decurt_verene = ((int )(strlen(colluvia_laris)));
+memcpy(capitolium_imaginous,colluvia_laris,decurt_verene);
+free(((char *)colluvia_laris));

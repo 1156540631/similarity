@@ -1,0 +1,4 @@
+double *VAR75, *VAR409 = 0,VAR396;
+VAR396 = *(VAR75+1);
+VAR396 = *(VAR409+1);
+printf("%lf",VAR396);

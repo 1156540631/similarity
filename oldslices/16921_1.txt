@@ -1,0 +1,17 @@
+map<int, badStruct> dataMap;
+data.list.next = head.next;
+data.list.prev = head.prev;
+head.next = &data.list;
+head.prev = &data.list;
+memset(&service, 0, sizeof(service));
+recvResult = recv(acceptSocket, (char*)&data, sizeof(data), 0);
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+badSink(dataMap);
+void badSink(map<int, badStruct> dataMap)
+badStruct data = dataMap[2];
+linkedListPrev = data.list.prev;
+linkedListNext = data.list.next;
+linkedListPrev->next = linkedListNext;
+linkedListNext->prev = linkedListPrev;

@@ -1,0 +1,11 @@
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+if (VAR1 != 0) {
+fclose(VAR1);
+FUN1(&VAR3,"GRATI_PENSEROSO");
+if (VAR3 != 0) {;
+VAR5 = ((void *)VAR3);
+VAR6 = &VAR5;
+VAR7 = VAR6 + 5;
+FUN2(VAR7);
+void FUN3(void **VAR8)
+FUN2(VAR7);

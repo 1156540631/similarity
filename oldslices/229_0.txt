@@ -1,0 +1,21 @@
+va_list args;
+va_start( args, psz_fmt_src );
+char *psz_tmp;
+int i_ret = vasprintf( &psz_tmp, psz_fmt_src, args );
+int i_len = strlen( *ppsz_dest ) + strlen( psz_tmp ) + 1;
+strcat( psz_out, psz_tmp );
+free( psz_tmp );
+if( astrcatf( &psz_pathtozip, "%s", ZIP_SEP ) < 0 ) return -1;
+if( astrcatf( &psz_path, "%s", psz_escapedName ) < 0 ) return -1;
+"  <track>\n"
+" </trackList>\n"
+if( astrcatf( pp_buffer, " </extension>\n</playlist>\n" ) < 0 ) return -1;
+if( astrcatf( pp_buffer, "  <vlc:node title=\"%s\">\n", n->name ) < 0 )
+if( astrcatf( pp_buffer, "   <vlc:item tid=\"%d\" />\n", i->id ) < 0 )
+if( astrcatf( pp_buffer, "  </vlc:node>\n" ) < 0 )
+static int astrcatf( char **ppsz_dest, const char *psz_fmt_src, ... )
+va_start( args, psz_fmt_src );
+int i_ret = vasprintf( &psz_tmp, psz_fmt_src, args );
+int i_len = strlen( *ppsz_dest ) + strlen( psz_tmp ) + 1;
+strcat( psz_out, psz_tmp );
+free( psz_tmp );

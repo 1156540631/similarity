@@ -1,0 +1,23 @@
+static void * FUN1(void *)
+VAR1 VAR2, VAR3, VAR4;
+const char *VAR5 = VAR6.FUN2();
+const char *VAR7;
+bool VAR8 = true;
+VAR9<VAR10> VAR11;
+do {
+VAR7 = strstr(VAR5, "\n");
+VAR10 VAR12;
+if (VAR8 &&
+sscanf(VAR5, "%d %d %d", &VAR2, &VAR3, &VAR4) == 3) {
+VAR8 = false;
+} else if (sscanf(VAR5, "VAR13 %d %d %s",&VAR12.VAR14, &VAR12.VAR15, VAR12.VAR16)) {
+VAR11.FUN3(VAR12);        }
+} CLASS1 (VAR7 && *(VAR5 = VAR7 + 1));
+for (VAR17 VAR18 = 0; VAR18 < VAR11.FUN4(); VAR18++) {
+VAR10 &VAR12 = FUN5(VAR11, &VAR18);
+VAR10 FUN5(VAR9<VAR10>& VAR11, VAR17 *VAR18)
+return VAR11[*VAR18];
+VAR10 &VAR12 = FUN5(VAR11, &VAR18);
+VAR19 = VAR20;
+char VAR21[256];
+FUN6(VAR21, sizeof(VAR21), "%s/", VAR12.VAR16);

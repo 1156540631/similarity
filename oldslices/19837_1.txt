@@ -1,0 +1,8 @@
+data = NULL;
+data = badSource(data);
+static int * badSource(int * data)
+data = new int[50];
+return data;
+data = badSource(data);
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

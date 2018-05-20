@@ -1,0 +1,2 @@
+VAR39[sizeof VAR39 - 1] = 0;
+printf("%VAR1\VAR7", VAR39);

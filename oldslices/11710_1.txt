@@ -1,0 +1,4 @@
+data[100-1] = L'\0';
+wcscpy(dest, data);
+printWLine(data);
+free(data);

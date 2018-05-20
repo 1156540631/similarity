@@ -1,0 +1,13 @@
+char * data;
+data = NULL;
+data = CWE124_Buffer_Underwrite__malloc_char_ncpy_61b_badSource(data);
+char * CWE124_Buffer_Underwrite__malloc_char_ncpy_61b_badSource(char * data)
+char * dataBuffer = (char *)malloc(100*sizeof(char));
+memset(dataBuffer, 'A', 100-1);
+dataBuffer[100-1] = '\0';
+data = dataBuffer - 8;
+return data;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);

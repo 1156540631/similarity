@@ -1,0 +1,5 @@
+VAR1 VAR2 = 0;
+VAR1 VAR3 = 0;
+VAR3++;
+VAR2++;
+static_cast<void*>(VAR4), VAR2, VAR3);

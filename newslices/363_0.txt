@@ -1,0 +1,19 @@
+static void FUN1( CLASS1 *VAR1, char *VAR2,
+VAR3 = FUN2( &VAR4, "
+free( VAR4 );
+FUN3( VAR5, VAR2, sizeof( VAR5 ) );
+VAR6 = strchr( VAR2, '/' );
+VAR3 = FUN2( &VAR4, "
+free( VAR4 );
+static int FUN4( CLASS2 *VAR7 )
+char         *VAR2, *VAR4;
+VAR2 = strchr( VAR1->VAR2, '/' );
+char *VAR8 = strdup( VAR1->VAR2 );
+VAR8[ VAR2 - VAR1->VAR2 ] = 0;
+VAR2 = VAR1->VAR2;
+VAR6 = strchr( VAR8, '@' );
+*VAR6 = 0;
+VAR2 = VAR1->VAR2 + (VAR6 - VAR8) + 1;
+FUN1( VAR1, VAR2, VAR9, VAR10, VAR11);
+VAR3 = FUN2( &VAR4, "
+free( VAR4 );

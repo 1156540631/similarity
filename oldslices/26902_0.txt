@@ -1,0 +1,5 @@
+int main(int argc, char **argv){
+assert (argc==2);
+temp = fopen(argv[1],"r");
+e->e_dfp = temp;
+fclose(temp);

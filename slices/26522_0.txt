@@ -1,0 +1,22 @@
+VAR63 = getenv("REPRESSOR_POMMELS");
+if (VAR63 != 0) {;
+VAR64 = ((void *)VAR63);
+VAR65[5] = VAR64;
+VAR66 =  *(VAR65 + VAR67[1]);
+if (((char *)VAR66) != 0) {
+VAR68 = ((char *)((char *)VAR66));
+VAR69 = ((int )(strlen(VAR68)));
+for (; VAR69 >= 0; (--VAR70 , --VAR69)) {
+VAR33->VAR34[VAR70] = VAR68[VAR69];
+tracepoint(VAR71, VAR72, "VAR33->VAR34", VAR33->VAR34, "CROSSOVER-STATE");
+VAR33->VAR34[VAR35] = FUN12(VAR33->VAR34[VAR35]);
+free(VAR33);
+tracepoint(VAR71, VAR72, "VAR33->VAR34", VAR33->VAR34, "FINAL-STATE");
+int FUN12(int VAR4)
+if (VAR4 >= 97 && VAR4 <= 122) {
+return VAR4 - 32;
+return VAR4;
+VAR33->VAR34[VAR35] = FUN12(VAR33->VAR34[VAR35]);
+FUN4("%VAR4",VAR33->FUN13(VAR33->VAR34[VAR35]));
+void FUN4(char * VAR36, ...) {
+FUN4("%VAR4",VAR33->FUN13(VAR33->VAR34[VAR35]));

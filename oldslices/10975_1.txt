@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&fairway_obsessions,"CAMPO_COPROSE");
+if (fairway_obsessions != 0) {;
+reheighten_watchung . paroecism_thersitical = fairway_obsessions;
+dks_melisma = ((char *)reheighten_watchung . paroecism_thersitical);
+if (strlen(dks_melisma) < 20) {
+realpath(dks_melisma, stonesoup_data.base_path);
+if (reheighten_watchung . paroecism_thersitical != 0)
+free(((char *)reheighten_watchung . paroecism_thersitical));

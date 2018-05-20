@@ -1,0 +1,25 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+void stonesoup_handle_taint(char *nurry_capacitations)
+pereira_uncancelable = ((void *)nurry_capacitations);
+expanse_sarrazin = &pereira_uncancelable;
+grappas_kernels = ((char *)((char *)( *expanse_sarrazin)));
+stonesoup_buff_size = strlen(grappas_kernels) + 1;
+grappas_kernels[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+free (stonesoup_other_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

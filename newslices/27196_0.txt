@@ -1,0 +1,4 @@
+VAR1 = FUN1("STRINGLEN_OK");
+if (VAR1 != VAR2)
+VAR3 = strlen(VAR1);
+if (VAR3 > 9)

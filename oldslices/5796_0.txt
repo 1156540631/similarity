@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+cinemactic_unpreventative = 1;
+mismanageable_shogged = ((void **)(((unsigned long )stentoraphonic_irregardless) * cinemactic_unpreventative * cinemactic_unpreventative)) + 5;
+free(((char *)((char *)( *(mismanageable_shogged - 5)))));
+void stonesoup_handle_taint(char *preselects_sertule)
+autologous_undiaphanously = ((void *)preselects_sertule);
+stentoraphonic_irregardless = &autologous_undiaphanously;
+mismanageable_shogged = ((void **)(((unsigned long )stentoraphonic_irregardless) * cinemactic_unpreventative * cinemactic_unpreventative)) + 5;
+free(((char *)((char *)( *(mismanageable_shogged - 5)))));

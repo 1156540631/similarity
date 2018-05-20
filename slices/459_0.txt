@@ -1,0 +1,34 @@
+CLASS1 *VAR2 = (CLASS1*) calloc( 1, sizeof(CLASS1) );
+return VAR2;
+char *VAR5 = strchr( VAR6, '/' );
+*VAR5 = '\0';
+CLASS1 *VAR1 = VAR7->VAR8;
+if( !strcmp( VAR1->VAR4, VAR6 ) )
+return FUN3( VAR1, VAR5 );
+VAR1 = VAR1->FUN2;
+return FUN3( VAR1, VAR5 );
+CLASS1 *VAR3 = FUN4( VAR6 );
+CLASS1 *VAR2 = (CLASS1*) calloc( 1, sizeof(CLASS1) );
+return VAR2;
+CLASS1 *VAR3 = FUN4( VAR6 );
+VAR7->VAR8 = VAR3;
+return FUN3( VAR1, VAR5 );
+CLASS1 *VAR3 = FUN4( VAR6 );
+VAR3 = FUN3( VAR3, VAR5 );
+return VAR3;
+VAR3 = FUN3( VAR3, VAR5 );
+static CLASS1* FUN3( CLASS1 *VAR7, const char *VAR9 )
+char *VAR4 = strdup( VAR9 );
+VAR6 = VAR4;
+FUN1( VAR7 );
+char *VAR5 = strchr( VAR6, '/' );
+return VAR7;
+CLASS1 *VAR3 = FUN4( VAR6 );
+VAR3 = FUN3( VAR3, VAR5 );
+inline static CLASS1* FUN4( char *VAR4 )
+VAR2->VAR4 = FUN5( VAR4 );
+return VAR2;
+CLASS1 *VAR3 = FUN4( VAR6 );
+VAR3 = FUN3( VAR3, VAR5 );
+static CLASS1* FUN3( CLASS1 *VAR7, const char *VAR9 )
+FUN1( VAR7 );

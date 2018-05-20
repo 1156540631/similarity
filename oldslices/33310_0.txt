@@ -1,0 +1,11 @@
+wchar_t * data;
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncat_34_unionType myUnion;
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataGoodBuffer;
+data[0] = L'\0';
+myUnion.unionFirst = data;
+wchar_t * data = myUnion.unionSecond;
+wchar_t source[100];
+wmemset(source, L'C', 100-1);
+source[100-1] = L'\0';
+wcsncat(data, source, 100);

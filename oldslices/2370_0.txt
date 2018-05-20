@@ -1,0 +1,9 @@
+data = (wchar_t *)malloc(100*sizeof(wchar_t));
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_22_goodG2B2Source(data);
+wchar_t * CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_22_goodG2B2Source(wchar_t * data)
+data[50-1] = L'\0';
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_wchar_t_ncpy_22_goodG2B2Source(data);
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

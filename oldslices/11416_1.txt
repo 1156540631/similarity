@@ -1,0 +1,20 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hexaseme_egide,"INAMISSIBLENESS_CUSTOMING");
+if (hexaseme_egide != 0) {;
+mohock_treadling = ((int )(strlen(hexaseme_egide)));
+chichewa_scorified = ((char *)(malloc(mohock_treadling + 1)));
+if (chichewa_scorified == 0) {
+memcpy(chichewa_scorified,hexaseme_egide,mohock_treadling);
+if (hexaseme_egide != 0)
+free(((char *)hexaseme_egide));
+recapitalizes_archantagonist = &chichewa_scorified;
+mycotoxic_preeminently = ((char **)(((unsigned long )recapitalizes_archantagonist) * aphetism_avis * aphetism_avis)) + 5;
+roslyn_barrabkie = ((char *)( *(mycotoxic_preeminently - 5)));
+stonesoup_input_len = strlen(roslyn_barrabkie);
+if (stonesoup_input_len < 2) {
+stonesoup_result = ( *stonesoup_function_ptr)(roslyn_barrabkie);
+if (stonesoup_result == 0)
+if ( *(mycotoxic_preeminently - 5) != 0)
+free(((char *)( *(mycotoxic_preeminently - 5))));

@@ -1,0 +1,4 @@
+char stonesoup_buffer[8];
+agitating_commie = ((char *)( *(revokingly_limitative - 5)) . abashless_agoniada);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(agitating_commie)+1, agitating_commie, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,agitating_commie,strlen(agitating_commie) + 1);

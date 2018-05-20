@@ -1,0 +1,3 @@
+memory_allocation_failure_015_s_001 s = {MAX_V,20};
+return s.b;
+memory_allocation_failure_015_gbl_ptr = (int *) malloc (memory_allocation_failure_015_func_001()*sizeof(int));

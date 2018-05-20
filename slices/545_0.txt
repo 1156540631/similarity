@@ -1,0 +1,13 @@
+if ((VAR2 = getenv("VAR2")) == NULL)
+snprintf(VAR6, sizeof(VAR6), "%VAR6/snmp.conf", VAR2);
+if ((VAR3 = FUN1(VAR6, "r")) != NULL)
+while (FUN2(VAR3, VAR17, sizeof(VAR17), &VAR7, &VAR3))
+VAR6);
+fprintf(stderr, "VAR30: Missing VAR7 on VAR17 %VAR1 of %VAR6!\VAR2", VAR3,
+"VAR17 %VAR1 of %VAR6!\VAR2", VAR3, VAR6);
+fprintf(stderr,
+VAR17, VAR3, VAR6);
+fprintf(stderr, "VAR30: Unknown directive %VAR6 on VAR17 %VAR1 of %VAR6!\VAR2",
+FUN3(VAR3);
+VAR6);
+fprintf(stderr,

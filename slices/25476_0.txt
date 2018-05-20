@@ -1,0 +1,25 @@
+VAR130 = VAR148[VAR24];
+VAR186 = VAR130 -> VAR186;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+FUN45(&VAR189,"frame=%VAR219\VAR25",VAR186);
+char VAR216[3] = {('Y'), ('U'), ('V')};
+VAR191 = VAR156 -> VAR191[VAR215];
+VAR190 = (VAR156 -> VAR168 * VAR156 -> VAR173) * 255.0 * 255.0 * VAR186;
+VAR191 = VAR156 -> VAR193 -> VAR191[VAR215];
+VAR190 = (VAR156 -> VAR168 * VAR156 -> VAR173) * 255.0 * 255.0;
+VAR190 /= 4;
+VAR143 = FUN46(VAR191 / VAR190);
+FUN45(&VAR189,"stream_%d_%d_psnr_%VAR23=%2.2f\VAR25",VAR130 -> VAR159,VAR130 -> VAR138,VAR216[VAR215] | 32,VAR143);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",VAR216[VAR215],VAR143);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"*:%2.2f ",FUN46(VAR181 / VAR182));
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");
+static double FUN46(double VAR219)
+return - 10.0 * log(VAR219) / log(10.0);
+VAR143 = FUN46(VAR191 / VAR190);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",VAR216[VAR215],VAR143);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"*:%2.2f ",FUN46(VAR181 / VAR182));
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");

@@ -1,0 +1,11 @@
+char * data;
+void (*funcPtr) (char *, ...) = goodG2BVaSink;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+funcPtr(data);
+static void goodG2BVaSink(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

@@ -1,0 +1,34 @@
+unsigned char *VAR1 = NULL;
+return NULL;
+VAR2->VAR4 = VAR1;
+(unsigned char *)FUN2(FUN1(VAR2));
+VAR3 =
+return NULL;
+memset(VAR3, 0, FUN1(VAR2));
+VAR2->VAR5 = VAR3;
+return VAR2;
+VAR1->VAR11->VAR12 = VAR1->VAR11->VAR14;
+VAR1->VAR11->VAR14++;
+FUN1(VAR1->VAR11->VAR12, VAR2);
+FUN6(VAR1, VAR15, 0,
+VAR1->VAR11->VAR12, 0, 0);
+unsigned short VAR16,
+unsigned char *VAR3 = NULL;
+VAR2 = (CLASS2 *)FUN2(sizeof(CLASS2));
+return NULL;
+VAR2->VAR5 = VAR3;
+return VAR2;
+FUN7(VAR1, 1);
+VAR2 = VAR30(VAR1->VAR22, 0);
+memcpy(VAR2->VAR4, VAR1->VAR6->VAR7, VAR1->VAR22);
+static void FUN6(CLASS2 *VAR1, unsigned char VAR20,
+FUN6(VAR1, VAR15, 0,
+FUN7(VAR1, 1);
+int FUN7(CLASS2 *VAR1, int VAR21)
+VAR2 = VAR30(VAR1->VAR22, 0);
+static CLASS2 *VAR30(unsigned long VAR2,
+VAR1 = (unsigned char *)FUN2(VAR2);
+VAR2->VAR4 = VAR1;
+return VAR2;
+VAR2 = VAR30(VAR1->VAR22, 0);
+memcpy(VAR2->VAR4, VAR1->VAR6->VAR7, VAR1->VAR22);

@@ -1,0 +1,5 @@
+void badSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

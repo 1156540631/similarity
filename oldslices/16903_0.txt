@@ -1,0 +1,10 @@
+map<int, twoIntsStruct *> dataMap;
+data = NULL;
+data = (twoIntsStruct *)malloc(sizeof(*data));
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, twoIntsStruct *> dataMap)
+twoIntsStruct * data = dataMap[2];
+printStructLine(data);

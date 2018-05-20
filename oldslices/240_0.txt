@@ -1,0 +1,10 @@
+*value;
+while (cupsFileGetConf(fp, line, sizeof(line), &value, &linenum))
+add_device_uri(value);
+!strcasecmp(value, "double");
+!strcasecmp(value, "true") ||
+!strcasecmp(value, "yes") ||
+HostNameLookups = !strcasecmp(value, "on") ||
+DebugLevel = atoi(value);
+static device_uri_t	*add_device_uri(char *value);
+DebugLevel = atoi(value);

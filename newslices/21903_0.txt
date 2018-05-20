@@ -1,0 +1,36 @@
+void FUN1(char *VAR1,int VAR2,CLASS1 *VAR3,int VAR4)
+const char *VAR5 = ((void *)0);
+FUN2(VAR1,VAR2,"%s: %s%s",(VAR6?VAR6 : "unknown"),VAR7,(VAR3 -> VAR8?" (VAR9)" : ""));
+VAR1[0] ^= '' ^ '';
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s)",VAR5);
+char VAR10[32];
+FUN3(VAR10,sizeof(VAR10),VAR3 -> VAR11);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%d VAR12)",VAR3 -> VAR13);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %dx%d",VAR3 -> VAR14,VAR3 -> VAR15);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," [VAR16 %d:%d VAR17 %d:%d]",VAR3 -> VAR18 . VAR19,VAR3 -> VAR18 . VAR20,VAR21 . VAR19,VAR21 . VAR20);
+int VAR22 = (FUN4(VAR3 -> VAR23 . VAR19,VAR3 -> VAR23 . VAR20));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d/%d",VAR3 -> VAR23 . VAR19 / VAR22,VAR3 -> VAR23 . VAR20 / VAR22);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR24=%d-%d",VAR3 -> VAR25,VAR3 -> VAR26);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d VAR27",VAR3 -> VAR28);
+FUN5(VAR1,", ",VAR2);
+FUN6(VAR1 + strlen(VAR1),(VAR2 - strlen(VAR1)),VAR3 -> VAR29,VAR3 -> VAR30);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %s",FUN7(VAR3 -> VAR31));
+int VAR22 = (FUN4(VAR3 -> VAR23 . VAR19,VAR3 -> VAR23 . VAR20));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d/%d",VAR3 -> VAR23 . VAR19 / VAR22,VAR3 -> VAR23 . VAR20 / VAR22);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR32 1");
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR32 2");
+return ((void *)0);
+VAR5 = FUN8(VAR33,VAR3 -> VAR5);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s)",VAR5);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR32 2");
+return ((void *)0);
+VAR5 = FUN8(VAR33,VAR3 -> VAR5);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s)",VAR5);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR32 2");
+VAR34 FUN3(char *VAR1,VAR34 VAR2,unsigned int VAR11)
+VAR35 = FUN2(VAR1,VAR2,(((VAR11 & 0xff) >= 48 && (VAR11 & 0xff) <= '' || (VAR11 & 0xff) >= '' && (VAR11 & 0xff) <= '' || (VAR11 & 0xff) >= '' && (VAR11 & 0xff) <= '' || ((VAR11 & 0xff) == '.' || (VAR11 & 0xff) == 32 || (VAR11 & 0xff) == '-' || (VAR11 & 0xff) == '')?"%c" : "[%d]")),VAR11 & 0xff);
+VAR1 += VAR35;
+VAR11 >>= 8;
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s / 0x%04X)",VAR10,VAR3 -> VAR11);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %s",FUN9(VAR3 -> VAR36));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR32 2");

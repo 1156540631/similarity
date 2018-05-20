@@ -1,0 +1,7 @@
+static void FUN2(const CLASS1& VAR1, CLASS2* VAR2,
+CLASS4 VAR4, int32_t VAR5) {
+CLASS3 VAR3(VAR2->FUN1());
+CLASS3 VAR8(VAR2->FUN3());
+static_cast<void*>(VAR2), VAR1.VAR6,
+VAR2->IsDirty() ? "yes" : "no",
+VAR4, VAR1.VAR7.FUN8(), VAR2->FUN4());

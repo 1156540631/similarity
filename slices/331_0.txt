@@ -1,0 +1,11 @@
+for (CLASS4 VAR1 = FUN9(), VAR9 = FUN8();
+VAR1->FUN1() ||
+if (!VAR1->FUN13()) {
+if (VAR2 && !VAR1->FUN2()) {
+static_cast<void*>(VAR1.FUN8()),
+VAR1->FUN13() ? "block" : "inline",
+VAR1->FUN3() ? "has-break-after " : "",
+VAR1->FUN4() ? "has-floats " : "",
+VAR1->FUN1() ? "impacted " : "",
+VAR1->FUN5(), VAR1->FUN6(),
+VAR1->VAR4.FUN7());

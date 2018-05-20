@@ -1,0 +1,4 @@
+char VAR39[10];
+VAR40 = fopen("VAR420", "VAR360");
+assert(VAR40 != NULL);
+fgets(VAR39, 10, VAR40);

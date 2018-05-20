@@ -1,0 +1,14 @@
+static const int VAR1 = 1;
+static const int VAR2 = 0;
+char VAR3[100] = "";
+VAR4 = VAR3;
+if(VAR2){}
+else
+strcpy(VAR4, "fixedstringtest");
+if(VAR1)
+FUN1(VAR4, VAR4);
+static void FUN1(char * VAR4, ...)
+VAR5 VAR6;
+FUN2(VAR6, VAR4);
+vfprintf(VAR7, VAR4, VAR6);
+FUN3(VAR6);

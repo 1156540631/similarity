@@ -1,0 +1,13 @@
+nsIFrame*           aFloat,
+NS_PRECONDITION(aFloat->GetStateBits() & NS_FRAME_OUT_OF_FLOW,
+aFloat, this,
+nsBlockReflowContext brc(aState.mPresContext, aState.mReflowState);
+if (!aFloat->GetPrevInFlow()) {
+rv = brc.ReflowBlock(aAdjustedAvailableSpace, true, margin,
+if (aFloat->GetType() == nsGkAtoms::letterFrame) {
+const nsHTMLReflowMetrics& metrics = brc.GetMetrics();
+aFloat->SetSize(nsSize(metrics.width, metrics.height));
+if (aFloat->HasView()) {
+nsContainerFrame::SyncFrameViewAfterReflow(aState.mPresContext, aFloat,
+aFloat->DidReflow(aState.mPresContext, &floatRS,
+aFloat, metrics.width, metrics.height);

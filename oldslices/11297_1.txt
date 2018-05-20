@@ -1,0 +1,7 @@
+va_list ap;
+va_start(ap,fmt);
+dst = se_strdup_vprintf(fmt, ap);
+gchar* se_strdup_vprintf(const gchar* fmt, va_list ap) {
+G_VA_COPY(ap2, ap);
+len = g_printf_string_upper_bound(fmt, ap);
+va_end(ap);

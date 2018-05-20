@@ -1,0 +1,15 @@
+static void dissect_channelised_ex_header(tvbuff_t *tvb,  packet_info *pinfo, proto_tree *pseudo_hdr_tree, int idx)
+guint64            hdr              = pinfo->pseudo_header->erf.ehdr_list[idx].ehdr;
+guint8             vc_id            = (guint8)((hdr >> 24) & 0xFF);
+guint8             vc_size          = (guint8)((hdr >> 16) & 0xFF);
+guint8             line_speed       = (guint8)((hdr >> 8) & 0xFF);
+sdh_g707_format_t  g707_format;
+sdh_g707_format_t  g707_format;
+channelised_fill_sdh_g707_format(&g707_format, vc_id, vc_size, line_speed);
+static int channelised_fill_sdh_g707_format(sdh_g707_format_t* in_fmt, guint16 bit_flds, guint8 vc_size, guint8 speed)
+in_fmt->m_vc_size = func(&vc_size);
+guint8 func(guint8 *vc_size)
+return *vc_size;
+in_fmt->m_vc_size = func(&vc_size);
+in_fmt->m_sdh_line_rate = speed;
+memset(&(in_fmt->m_vc_index_array[0]), 0xff, DECHAN_MAX_AUG_INDEX);

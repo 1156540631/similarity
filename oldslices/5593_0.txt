@@ -1,0 +1,3 @@
+PassRefPtr<Attr> Element::getAttributeNodeNS(const String& namespaceURI, const String& localName)
+NamedNodeMap* attrs = attributes(true);
+return static_pointer_cast<Attr>(attrs->getNamedItem(QualifiedName(nullAtom, localName, namespaceURI)));

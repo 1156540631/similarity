@@ -1,0 +1,23 @@
+static int FUN1(unsigned char *VAR1, VAR2 VAR3, unsigned char *VAR4,
+VAR2 VAR5, int *VAR6)
+unsigned char * VAR7 = VAR4;
+unsigned char * VAR8  = VAR1;
+if ( VAR8 + 2 >= VAR9 ) {
+*VAR6 = VAR10;
+return ( -1 );                        }
+CLASS1 = FUN2(VAR8);
+VAR11  = 0x8000;
+VAR8 += 2;
+if ( !(VAR11 & CLASS1) )
+if ( VAR7 + 1 > VAR12 )
+*VAR6 = VAR13;
+return ( -1 );
+*(VAR7++) = *(VAR8++);
+*(VAR7++) = *(VAR8++);
+VAR14 = (unsigned int) ((*VAR8) >> 4 ) & 0xF;
+VAR15  = (unsigned int) ((*VAR8) & 0xF );
+VAR8++;
+CLASS1 = FUN2(VAR8);
+*(VAR7++) = *(VAR8++);
+VAR16 = VAR15 + 3;
+memset( VAR7, *VAR8++, VAR16 );

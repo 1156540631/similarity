@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+if(argc > 1) {
+userstr = argv[1];
+test(userstr);
+test(char *str)
+if(strlen(str) > MAXSIZE)
+sprintf(buf, "<%s>", str);
+printf("result: %s\n", buf);

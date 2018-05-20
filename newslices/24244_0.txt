@@ -1,0 +1,7 @@
+int FUN1(const char *VAR1,CLASS1 *VAR2)
+char VAR3[64];
+fprintf(VAR2,"%s: VAR4: VAR5 VAR6 VAR7 VAR8\n%s: VAR4: VAR9 VAR10 %s VAR11 %s\n%s: VAR4: VAR12 VAR13 VAR14 VAR15 VAR8 VAR16 VAR11 VAR17\n",VAR1,VAR1, *VAR18,VAR19,VAR1);
+strncpy(VAR3,VAR1,sizeof(VAR3) - 3);
+VAR3[sizeof(VAR3) - 3] = '\';
+strcat(VAR3,": ");
+strncpy(VAR3,VAR1,sizeof(VAR3) - 3);

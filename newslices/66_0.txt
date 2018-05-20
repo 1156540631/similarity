@@ -1,0 +1,21 @@
+const char *VAR1,
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+VAR2 = *VAR1++;
+if (isdigit((unsigned char)VAR2)) {

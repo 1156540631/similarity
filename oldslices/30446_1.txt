@@ -1,0 +1,14 @@
+typedef union
+int unionFirst;
+int unionSecond;
+} CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_34_unionType;
+CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_34_unionType myUnion;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myUnion.unionFirst = data;
+int data = myUnion.unionSecond;
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

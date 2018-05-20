@@ -1,0 +1,10 @@
+void stonesoup_handle_taint(char *playthings_unrelaxable)
+asbestine_kirver = playthings_unrelaxable;
+primsie_testify = &asbestine_kirver;
+BURROCK_VRILLING(primsie_testify);
+void hadder_haleigh(waterage_marksville *evangelised_barres)
+tetterwort_unclamping = ((char *)( *evangelised_barres));
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, tetterwort_unclamping);

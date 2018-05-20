@@ -1,0 +1,3 @@
+jmp_buf tapinocephalic_nondegreased;
+guarache_balloonery = setjmp(tapinocephalic_nondegreased);
+longjmp(tapinocephalic_nondegreased,1);

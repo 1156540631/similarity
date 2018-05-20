@@ -1,0 +1,8 @@
+void FUN1(int VAR1,void ***VAR2)
+FUN1(VAR1,VAR2);
+free(((char *)((char *)( *( *VAR2)))));
+void FUN2(char *VAR3)
+VAR4 = ((void *)VAR3);
+VAR5 = &VAR4;
+VAR6 = &VAR5;
+FUN1(VAR7,VAR6);

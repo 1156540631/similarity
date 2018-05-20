@@ -1,0 +1,9 @@
+r = (DNS_REPLY_T *) xalloc(sizeof(*r));
+memset(r, 0, sizeof(*r));
+dns_free_data(r);
+DNS_REPLY_T *r;
+for (rr = r->dns_r_head; rr != NULL; )
+free(rr->rr_u.rr_data);
+rr = rr->rr_next;
+RESOURCE_RECORD_T *tmp = rr;
+free(tmp);

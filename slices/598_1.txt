@@ -1,0 +1,93 @@
+return FUN1(VAR3);
+return sizeof(VAR7) + FUN2(VAR5) +
+VAR4.FUN7(VAR2->VAR27, VAR13);
+(VAR7 *)(VAR1 + FUN1(VAR2->VAR12));
+const VAR7 * VAR27 =
+if (((char *)VAR27 + VAR27->FUN8()) > (char *)VAR4)
+FUN2(VAR6) + FUN3();
+uint16_t VAR13 = FUN2(VAR2->VAR5);
+if (((char *)VAR27 + VAR27->FUN8()) > (char *)VAR4)
+return nullptr;
+return VAR27;
+CLASS4 = VAR11.FUN4(VAR2);
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return VAR27 + FUN2(VAR5) + FUN2(VAR6);
+const char *VAR1;
+VAR2 = (CLASS1 *)(VAR1 + FUN1(VAR4->VAR3));
+!VAR2->FUN9())
+if (((char *)VAR2 + VAR2->FUN8()) > VAR18 ||
+return sizeof(CLASS1) + FUN2(VAR5) +
+FUN2(VAR6) + FUN2(VAR19);
+VAR1 = (char *)mmap(nullptr, VAR29.VAR30, VAR31, VAR32, VAR6, 0);
+FUN13(VAR1, VAR29.VAR30, VAR33);
+VAR1 = nullptr;
+VAR2 = (CLASS1 *)((char *)VAR20 + VAR20->FUN8());
+if (!VAR11.FUN14("/system/media/bootanimation.zip")) {
+while ((VAR2 = VAR11.FUN10(VAR2))) {
+VAR2 = (CLASS1 *)(VAR1 + FUN1(VAR4->VAR3));
+!VAR2->FUN9())
+if (((char *)VAR2 + VAR2->FUN8()) > VAR18 ||
+return VAR27;
+CLASS4 = VAR11.FUN4(VAR2);
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return nullptr;
+return VAR2;
+while ((VAR2 = VAR11.FUN10(VAR2))) {
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return FUN1(VAR21);
+VAR1 VAR8;
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+const char *VAR17 = VAR8.FUN6();
+vector<CLASS2> VAR22;
+VAR10 = strstr(VAR17, "\VAR2");
+} while (VAR10 && *(VAR17 = VAR10 + 1));
+VAR10 = strstr(VAR17, "\VAR2");
+CLASS2 VAR23;
+sscanf(VAR17, "%VAR1 %VAR1 %VAR1", &VAR13, &VAR14, &VAR9) == 3) {
+} else if (sscanf(VAR17, "VAR6 %VAR1 %VAR1 %VAR6",
+&VAR23.VAR9, &VAR23.VAR24, VAR23.VAR4)) {
+VAR22.FUN11(VAR23);
+for (uint32_t VAR2 = 0; VAR2 < VAR22.VAR10(); VAR2++) {
+CLASS2 &VAR23 = VAR22[VAR2];
+sort(VAR23.VAR28.begin(), VAR23.VAR28.VAR10());
+VAR1 FUN12(const CLASS1 *VAR2)
+VAR1 VAR4 = VAR11.FUN12(VAR2);
+while ((VAR2 = VAR11.FUN10(VAR2))) {
+CLASS4 = VAR11.FUN4(VAR2);
+const VAR7 * FUN4(const CLASS1 *VAR2)
+(VAR7 *)(VAR1 + FUN1(VAR2->VAR12));
+const VAR7 * VAR27 =
+if (((char *)VAR27 + VAR27->FUN8()) > (char *)VAR4)
+FUN2(VAR6) + FUN3();
+return VAR27;
+CLASS4 = VAR11.FUN4(VAR2);
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return VAR27 + FUN2(VAR5) + FUN2(VAR6);
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+const char *VAR17 = VAR8.FUN6();
+VAR10 = strstr(VAR17, "\VAR2");
+sscanf(VAR17, "%VAR1 %VAR1 %VAR1", &VAR13, &VAR14, &VAR9) == 3) {
+} else if (sscanf(VAR17, "VAR6 %VAR1 %VAR1 %VAR6",
+&VAR23.VAR9, &VAR23.VAR24, VAR23.VAR4)) {
+VAR22.FUN11(VAR23);
+for (uint32_t VAR2 = 0; VAR2 < VAR22.VAR10(); VAR2++) {
+CLASS2 &VAR23 = VAR22[VAR2];
+sort(VAR23.VAR28.begin(), VAR23.VAR28.VAR10());
+const CLASS1 * FUN10(const CLASS1 *VAR20)
+VAR2 = (CLASS1 *)((char *)VAR20 + VAR20->FUN8());
+!VAR2->FUN9())
+if (((char *)VAR2 + VAR2->FUN8()) > VAR18 ||
+return VAR2;
+while ((VAR2 = VAR11.FUN10(VAR2))) {
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return FUN1(VAR21);
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+const char *VAR17 = VAR8.FUN6();
+VAR10 = strstr(VAR17, "\VAR2");
+sscanf(VAR17, "%VAR1 %VAR1 %VAR1", &VAR13, &VAR14, &VAR9) == 3) {
+} else if (sscanf(VAR17, "VAR6 %VAR1 %VAR1 %VAR6",
+&VAR23.VAR9, &VAR23.VAR24, VAR23.VAR4)) {
+VAR22.FUN11(VAR23);
+for (uint32_t VAR2 = 0; VAR2 < VAR22.VAR10(); VAR2++) {
+CLASS2 &VAR23 = VAR22[VAR2];
+sort(VAR23.VAR28.begin(), VAR23.VAR28.VAR10());

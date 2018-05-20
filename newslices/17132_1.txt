@@ -1,0 +1,8 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+FUN1(VAR1);
+static void FUN1(char * &VAR1)
+memset(VAR1, '', 100-1);
+char VAR3[50] = "";
+memmove(VAR3, VAR1, strlen(VAR1)*sizeof(char));

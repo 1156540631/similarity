@@ -1,0 +1,12 @@
+VAR1 = VAR4;
+CLASS1 VAR2 = strlen(VAR1);
+if (fgets(VAR1+VAR2, (int)(100-VAR2), VAR3) != NULL)
+VAR2 = strlen(VAR1);
+VAR1[VAR2-1] = '\0';
+VAR1[VAR2] = '\0';
+VAR5 = VAR1;
+FUN2();
+char * VAR1 = VAR5;
+FUN3(VAR1, VAR1);
+static void FUN3(char * VAR1, ...)
+FUN1(VAR6, VAR1);

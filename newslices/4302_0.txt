@@ -1,0 +1,3 @@
+VAR1 = FUN1("PELECYPODOUS_AUSGLEICHE");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));

@@ -1,0 +1,13 @@
+nsBlockFrame::List(ClASS1* VAR1, int32_t VAR2, uint32_t VAR3) const
+FUN1(VAR1, VAR2);
+FUN2(VAR1);
+fprintf(VAR1, " [parent=%p]", VAR4);
+fprintf(VAR1, " [view=%p]", static_cast<void*>(FUN3()));
+fprintf(VAR1, " next=%p", static_cast<void*>(FUN4()));
+fprintf(VAR1, " prev-in-flow=%p", static_cast<void*>(FUN5()));
+fprintf(VAR1, " next-in-flow=%p", static_cast<void*>(FUN6()));
+fprintf(VAR1, " IBSplitSpecialSibling=%p", VAR5);
+fprintf(VAR1, " IBSplitSpecialPrevSibling=%p", VAR6);
+fprintf(VAR1, " [content=%p]", static_cast<void*>(VAR7));
+fprintf(VAR1, " {%d,%d,%d,%d}", VAR8.VAR9, VAR8.VAR10, VAR8.VAR11, VAR8.VAR12);
+fprintf(VAR1, " [state=%016llx]", (unsigned long long)VAR13);

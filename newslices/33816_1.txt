@@ -1,0 +1,6 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+VAR3 = 1;
+VAR2 = FUN2(VAR2);
+char VAR4[50] = "";
+memmove(VAR4, VAR2, strlen(VAR2)*sizeof(char));

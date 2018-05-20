@@ -1,0 +1,16 @@
+FUN1 (*VAR1)(char*) = VAR2;
+void VAR3::FUN2(CLASS1* VAR4)
+char* VAR5 = (char*)VAR4->VAR6;
+char* VAR7 = strtok(VAR5, VAR8);
+FUN1 VAR9 = VAR1(VAR7);
+FUN1 VAR2(char*VAR7)
+return atoi(VAR7);
+FUN1 VAR9 = VAR1(VAR7);
+char* VAR10 = strtok(VAR11, "\0");
+if (FUN3(VAR9)) {
+if (VAR9 == VAR12) {
+if (VAR13) {
+char VAR14[VAR15];
+FUN4(VAR14, VAR15 - 1,
+"VAR16 VAR17 %s VAR18",
+FUN5(VAR13->VAR19).FUN6());

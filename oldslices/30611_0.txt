@@ -1,0 +1,9 @@
+data = -1;
+for(i = 0; i < 1; i++)
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+for(k = 0; k < 1; k++)
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

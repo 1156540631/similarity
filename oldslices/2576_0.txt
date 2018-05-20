@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *disorganizing_outlook)
+protevangelion_beat = ((int )(strlen(disorganizing_outlook)));
+julies_realisers = ((char *)(malloc(protevangelion_beat + 1)));

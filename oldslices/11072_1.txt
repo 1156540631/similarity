@@ -1,0 +1,9 @@
+data = NULL;
+data = badSource(data);
+static char * badSource(char * data)
+data[0] = '\0';
+return data;
+data = badSource(data);
+strcpy(data, source);
+printLine(data);
+free(data);

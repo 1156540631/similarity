@@ -1,0 +1,10 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data = goodG2BSource(data);
+static char * goodG2BSource(char * data)
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+return data;
+data = goodG2BSource(data);
+char dest[50] = "";
+SNPRINTF(dest, strlen(data), "%s", data);

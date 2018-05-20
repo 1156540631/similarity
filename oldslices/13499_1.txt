@@ -1,0 +1,18 @@
+void NetworkUtils::onNetdMessage(NetdCommand* aCommand)
+char* data = (char*)aCommand->mData;
+char* result = strtok(data, NETD_MESSAGE_DELIMIT);
+structType myStruct;
+myStruct.structFirst = result;
+uint32_t code = func(myStruct);
+uint32_t func(structType myStruct)
+char *result = myStruct.structFirst;
+return atoi(result);
+uint32_t code = func(myStruct);
+char* reason = strtok(nullptr, "\0");
+if (isBroadcastMessage(code)) {
+if (code == NETD_COMMAND_INTERFACE_CHANGE) {
+if (gWifiTetheringParms) {
+char linkdownReason[MAX_COMMAND_SIZE];
+snprintf(linkdownReason, MAX_COMMAND_SIZE - 1,
+"Iface linkstate %s down",
+NS_ConvertUTF16toUTF8(gWifiTetheringParms->mIfname).get());

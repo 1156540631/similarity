@@ -1,0 +1,4 @@
+char *login;
+l += strlen(login);
+snprintf(bp, SPACELEFT(buf, bp), "%s", login);
+printf ("strlen(login)=%d\n", strlen(login));

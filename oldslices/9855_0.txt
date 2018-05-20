@@ -1,0 +1,11 @@
+int mexico_shellmonger = 596;
+char *quebracho_archpriesthood;
+stonesoup_read_taint(&quebracho_archpriesthood,"9440",mexico_shellmonger);
+euktolite_yamshik = ((int )(strlen(quebracho_archpriesthood)));
+repousse_casavant = ((char *)(malloc(euktolite_yamshik + 1)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&quebracho_archpriesthood,"9440",mexico_shellmonger);
+euktolite_yamshik = ((int )(strlen(quebracho_archpriesthood)));
+repousse_casavant = ((char *)(malloc(euktolite_yamshik + 1)));

@@ -1,0 +1,10 @@
+char * VAR2;
+VAR2 = NULL;
+if(5!=5)
+else
+VAR2 = new char[100];
+VAR2[0] = '\0';
+char VAR20[100];
+memset(VAR20, 'C', 100-1);
+VAR20[100-1] = '\0';
+strncat(VAR2, VAR20, 100);

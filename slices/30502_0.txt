@@ -1,0 +1,10 @@
+static int VAR9 = 5;
+VAR5 = -1;
+if(VAR9==5)
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+if(VAR9==5)
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

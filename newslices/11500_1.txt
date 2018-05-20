@@ -1,0 +1,3 @@
+float *VAR1=(float*) calloc(5,sizeof(float));
+VAR1[VAR2]=1.0;
+free(VAR1);

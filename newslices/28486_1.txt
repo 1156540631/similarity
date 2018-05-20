@@ -1,0 +1,13 @@
+#VAR1 VAR2
+#VAR3 VAR4 VAR5
+#else
+#VAR3 VAR4 VAR6
+#VAR7
+wchar_t * VAR8;
+VAR8 = (wchar_t *)malloc(100*sizeof(wchar_t));
+FUN1(1)
+FUN2(VAR8, '', 100-1);
+VAR8[100-1] = '\';
+break;
+wchar_t VAR9[50] = VAR10"";
+VAR4(VAR9, FUN3(VAR8), VAR10"%s", VAR8);

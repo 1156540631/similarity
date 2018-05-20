@@ -1,0 +1,7 @@
+nsAutoTArray<nsIFrame*, 8> storedFloats;
+for (nsIFrame* f = mFloats.FirstChild(); f; f = f->GetNextSibling()) {
+if (f->GetStateBits() & NS_FRAME_IS_PUSHED_FLOAT)
+storedFloats.AppendElement(f);
+if ((!equal || lineFloats.Length() != storedFloats.Length()) && !anyLineDirty) {
+for (i = 0; i < storedFloats.Length(); ++i) {
+printf("Stored float: %p\n", storedFloats.ElementAt(i));

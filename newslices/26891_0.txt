@@ -1,0 +1,16 @@
+register char *VAR1;
+char *VAR2;
+char *VAR3;
+register char *VAR4 = VAR3;
+VAR1++;
+VAR5 += strlen(VAR2);
+for (VAR6 = VAR1; *VAR6 != '\' && *VAR6 != ',' && *VAR6 != ';' && *VAR6 != '%'; VAR6++)
+*VAR4 = toupper(*VAR4);
+VAR4 += strlen(VAR4);
+*VAR4++ = *VAR6;
+printf ("sizeof(VAR4) = %d\n", sizeof(VAR4));
+FUN1(VAR4, FUN2(VAR3, VAR4), "%s", VAR2);
+printf ("VAR4-VAR3=%d\n", (VAR4-VAR3));
+printf ("FUN2(VAR3,VAR4)=%d\n", FUN2(VAR3,VAR4));
+printf ("strlen(VAR2)=%d\n", strlen(VAR2));
+FUN1(VAR4, FUN2(VAR3, VAR4), "%s", VAR2);

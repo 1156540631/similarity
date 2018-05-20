@@ -1,0 +1,71 @@
+void NetworkUtils::finalizeSuccess(CommandChain* aChain,
+next(aChain, false, aResult);
+NetworkResultOptions& aResult)
+gWifiTetheringParms = new NetworkParams(aChain->getParams());
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+NetworkResultOptions& aResult)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+NetworkResultOptions& aResult)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+NetworkResultOptions& aResult)
+ASSIGN_FIELD(mCurInternalIfname)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+aResult.mSuccess = true;
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+NetworkResultOptions& aResult)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+aResult.mRet = true;
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+void NetworkUtils::wifiOperationModeSuccess(CommandChain* aChain,
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+void NetworkUtils::updateUpStreamSuccess(CommandChain* aChain,
+ASSIGN_FIELD(mCurExternalIfname)
+ASSIGN_FIELD(mCurInternalIfname)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+void NetworkUtils::setDhcpServerSuccess(CommandChain* aChain, CommandCallback aCallback, NetworkResultOptions& aResult)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+void NetworkUtils::wifiTetheringSuccess(CommandChain* aChain,
+ASSIGN_FIELD(mEnable)
+if (aChain->getParams().mEnable) {
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+void NetworkUtils::networkInterfaceAlarmSuccess(CommandChain* aChain,
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+void NetworkUtils::usbTetheringSuccess(CommandChain* aChain,
+ASSIGN_FIELD(mEnable)
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);
+NetworkResultOptions& aResult)
+next(aChain, false, aResult);
+void NetworkUtils::defaultAsyncSuccessHandler(CommandChain* aChain,
+postMessage(aChain->getParams(), aResult);
+finalizeSuccess(aChain, aResult);

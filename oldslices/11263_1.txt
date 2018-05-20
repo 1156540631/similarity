@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+buf = malloc(MAXSIZE);
+strcpy(buf, str);
+printf("result: %s\n", buf);
+free(buf);

@@ -1,0 +1,15 @@
+int politest_deathfulness = 91;
+char *splenectomy_firebaugh;
+stonesoup_read_taint(&splenectomy_firebaugh,"3930",politest_deathfulness);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+papery_overskim = splenectomy_firebaugh;
+belvidere_sidonia[ *( *( *( *( *( *( *( *( *( *friendsville_mydriatine)))))))))] = papery_overskim;
+tallaged_proegumenal = belvidere_sidonia[ *( *( *( *( *( *( *( *( *( *friendsville_mydriatine)))))))))];
+rebutment_salema(jeffersontown_kingdomless,tallaged_proegumenal);
+void rebutment_salema(int slushiest_callo,snippier_leering dryden_twifoldly)
+char stonesoup_source[1024];
+memset(stonesoup_source, 0, 1024);
+untouching_untranquilize = ((char *)dryden_twifoldly);
+strncpy(stonesoup_source, untouching_untranquilize, sizeof(stonesoup_source));

@@ -1,0 +1,8 @@
+wchar_t * data;
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA((10+1)*sizeof(wchar_t));
+data = dataGoodBuffer;
+data[0] = L'\0';
+const CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_ncpy_82_base& baseObject = CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_ncpy_82_goodG2B();
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_alloca_ncpy_82_goodG2B::action(wchar_t * data) const
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

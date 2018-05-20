@@ -1,0 +1,5 @@
+int almeta_nondecadence = 596;
+stonesoup_read_taint(&gasped_melilites,"1045",almeta_nondecadence);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));

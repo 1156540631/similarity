@@ -1,0 +1,5 @@
+(*partition_end).dataPtr + (*partition_end).sizeBytes - (*it).dataPtr;
+fragmentation->fragmentationLength[partition_id] =
+assert(fragmentation->fragmentationLength[partition_id] <=
+frame_buffer_length);
+assert(fragmentation->fragmentationOffset[partition_id] <

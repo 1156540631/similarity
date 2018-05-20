@@ -1,0 +1,7 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+for(l = 0; str[l]; l++)
+strcpy(buf, str);
+printf("result: %s\n", buf);

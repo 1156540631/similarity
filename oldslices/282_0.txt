@@ -1,0 +1,6 @@
+stream_header_t tmp;
+stream_header_t *st = &tmp;
+memcpy( st->streamtype, &oggpacket.packet[1+0], 8 );
+if( !strncmp( st->streamtype, "video", 5 ) &&
+else if( !strncmp( st->streamtype, "audio", 5 ) &&
+else if( !strncmp(st->streamtype, "text", 4) )

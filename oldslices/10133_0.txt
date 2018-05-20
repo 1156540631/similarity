@@ -1,0 +1,5 @@
+computerizing_infaust beryllonite_hexosamine = 0;
+va_list pyrolignous_myrrhis;
+__builtin_va_start(pyrolignous_myrrhis,posi_unimplicated);
+beryllonite_hexosamine = (va_arg(pyrolignous_myrrhis,computerizing_infaust ));
+free(((char *)beryllonite_hexosamine));

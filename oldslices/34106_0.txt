@@ -1,0 +1,4 @@
+good2();
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+structCharVoid->voidSecond = (void *)SRC_STR;
+memcpy(structCharVoid->charFirst, SRC_STR, sizeof(structCharVoid->charFirst));

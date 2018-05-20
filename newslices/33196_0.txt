@@ -1,0 +1,10 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+VAR1[0] = '\';
+CLASS1* VAR3 = new VAR4;
+void VAR4::FUN1(char * VAR1)
+char VAR5[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+strncpy(VAR1, VAR5, 100-1);

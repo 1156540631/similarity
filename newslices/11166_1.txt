@@ -1,0 +1,21 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+int VAR3 = 44;
+char *VAR4;
+FUN1(&VAR4,"7362",VAR3);
+VAR5 = ((char *)VAR4);
+VAR6 = malloc((strlen(VAR5) + 1) * sizeof(char ));
+strcpy(VAR6,VAR5);
+FUN2("VAR7 VAR8 VAR9 char: %i\n",FUN3(VAR6));
+free(VAR6);
+void FUN1(char** VAR1, char* VAR10, int VAR11) {
+if ((VAR12 = FUN4(VAR13, VAR11, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR11, sizeof(char));
+FUN1(&VAR4,"7362",VAR3);
+VAR5 = ((char *)VAR4);
+VAR6 = malloc((strlen(VAR5) + 1) * sizeof(char ));
+strcpy(VAR6,VAR5);
+free(VAR6);
+char FUN3(char *VAR14)
+free(VAR14);
+free(VAR6);

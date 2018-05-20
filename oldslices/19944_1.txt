@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(int * &data);
+data = new int[50];
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

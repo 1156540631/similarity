@@ -1,0 +1,4 @@
+data = NULL;
+data = (twoIntsStruct *)malloc(sizeof(data));
+twoIntsStruct * data = dataRef;
+printStructLine(data);

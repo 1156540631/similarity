@@ -1,0 +1,9 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+while(1)
+strcpy(VAR1, "fixedstringtest");
+break;
+while(1)
+printf(VAR1);
+break;

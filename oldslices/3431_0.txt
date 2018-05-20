@@ -1,0 +1,4 @@
+void stonesoup_handle_taint(char *intendit_trullisatios)
+owenist_cinereal(intendit_trullisatios);
+void owenist_cinereal(char *const unhitching_bundweed)
+free(((char *)((char *)unhitching_bundweed)));

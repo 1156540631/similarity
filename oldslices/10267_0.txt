@@ -1,0 +1,7 @@
+data = NULL;
+data = (void *)WIDE_STRING;
+size_t dataLen = wcslen((wchar_t *)data);
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+free(dest);

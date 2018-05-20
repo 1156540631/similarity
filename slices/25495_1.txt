@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+if(argc > 1) {
+VAR281 = argv[1];
+if(VAR281[0] == '!')
+test("<%VAR9>", VAR281);
+test("[%VAR9]", VAR281);
+test(char *VAR282, char *VAR240)
+printf(VAR240, VAR282);

@@ -1,0 +1,10 @@
+VAR1 = FUN1(VAR2,VAR3,VAR4,"v");
+char *VAR5;
+if (!strcmp(VAR6[VAR7] . VAR8,VAR9)) {
+VAR10 = (strtol(VAR9,&VAR5,'\'));
+int FUN1(int VAR2,char **VAR3,const CLASS1 *VAR4,const char *VAR11)
+FUN2(((void *)0),"loglevel",VAR3[VAR1 + 1]);
+int FUN2(void *VAR12,const char *VAR13,const char *VAR9)
+VAR10 = (strtol(VAR9,&VAR5,'\'));
+void FUN3(int VAR2,char **VAR3,const CLASS1 *VAR4)
+int VAR1 = FUN1(VAR2,VAR3,VAR4,"loglevel");

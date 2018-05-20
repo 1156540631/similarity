@@ -1,0 +1,69 @@
+return ((void *)0);
+int n = 1;
+int64_t *VAR11;
+VAR31 = n;
+VAR11 = (FUNC12(FUNC9(( *VAR11)) * VAR31));
+char *VAR1 = strchr(p,',');
+*(VAR1++) = 0;
+if (VAR33 -> VAR42 > (2147483647 - VAR31) || !(VAR11 = (FUNC2(VAR11,(VAR31 += VAR33 -> VAR42 - 1),FUNC9(( *VAR11)))))) {
+AVChapter *VAR73 = VAR33 -> VAR67[j];
+VAR11[index++] = FUNC2(VAR73 -> VAR59,VAR73 -> VAR60,VAR53 -> VAR60) + t;
+VAR25 = VAR1;
+char *VAR1 = strchr(p,',');
+if (!memcmp(p,"VAR67",8)) {
+t = (p[8]?FUNC14("force_key_frames",(p + 8),1) : 0);
+VAR11[index++] = FUNC2(VAR73 -> VAR59,VAR73 -> VAR60,VAR53 -> VAR60) + t;
+qsort(VAR11,VAR31,FUNC9(( *VAR11)),VAR70);
+VAR22 -> VAR72 = VAR11;
+VAR14[j + ifile -> VAR1] -> VAR59 = av_gettime();
+for (VAR74 = 0; VAR74 < nb_VAR5; VAR74++) {
+VAR22 = VAR5[VAR74];
+VAR10 = FUNC3(VAR22);
+return VAR14[VAR22 -> VAR37];
+VAR10 = FUNC3(VAR22);
+VAR22 -> VAR71 -> VAR61 = VAR10 -> VAR71 -> VAR61;
+if (copy_tb < 0 && FUNC11(VAR10 -> VAR71 -> r_VAR16) >= FUNC11(VAR10 -> VAR71 -> VAR58) && 0.5 / FUNC11(VAR10 -> VAR71 -> r_VAR16) > FUNC11(VAR10 -> VAR71 -> VAR60) && 0.5 / FUNC11(VAR10 -> VAR71 -> r_VAR16) > FUNC11(iVAR63 -> VAR60) && FUNC11(VAR10 -> VAR71 -> VAR60) < 1.0 / 500 && FUNC11(iVAR63 -> VAR60) < 1.0 / 500 || copy_tb == 2) {
+VAR22 -> VAR71 -> VAR58 = VAR10 -> VAR71 -> VAR58;
+VAR22 -> VAR14 = FUNC18(VAR63 -> VAR62);
+snprintf(VAR8,FUNC9(VAR8),"Encoder (VAR63 %s) not found for output stream #%d:%d",avVAR63_get_name(VAR22 -> VAR71 -> VAR63 -> VAR62),VAR22 -> VAR3,VAR22 -> VAR23);
+VAR22 -> VAR14oding_needed = 1;
+VAR22 -> VAR16 = VAR15(VAR22 -> VAR68 -> VAR68);
+VAR22 -> VAR16 = VAR10 -> VAR19;
+int VAR64 = FUNC13(VAR22 -> VAR16,VAR22 -> VAR14 -> VAR35);
+VAR22 -> VAR16 = VAR22 -> VAR14 -> VAR35[VAR64];
+VAR63 -> channels = FUNC5(VAR22 -> VAR68 -> VAR68 -> inputs[0]);
+VAR63 -> VAR60 = FUNC17(VAR22 -> VAR16);
+VAR63 -> VAR15 = VAR22 -> VAR68 -> VAR68 -> inputs[0] -> w;
+VAR63 -> VAR16 = VAR22 -> VAR68 -> VAR68 -> inputs[0] -> h;
+VAR63 -> VAR65 = VAR22 -> VAR71 -> VAR65 = (VAR22 -> VAR69?FUNC15((VAR22 -> VAR69 * (VAR63 -> VAR16) / (VAR63 -> VAR15)),255) : VAR22 -> VAR68 -> VAR68 -> inputs[0] -> VAR65);
+if (!strncmp((VAR22 -> VAR34),"expr:",5)) {
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+char VAR66[1024];
+snprintf(VAR66,FUNC9(VAR66),"%s-%d.log",(VAR22 -> VAR57?VAR22 -> VAR57 : "ffmpeg2pass"),i);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+VAR25 = VAR46;
+char *VAR1 = strchr(p,',');
+if (!memcmp(p,"VAR67",8)) {
+t = (p[8]?FUNC14("force_key_frames",(p + 8),1) : 0);
+VAR11[index++] = FUNC2(c -> VAR59,c -> VAR60,VAR53 -> VAR60) + t;
+if (VAR33 -> VAR42 > (2147483647 - VAR31) || !(VAR11 = (FUNC2(VAR11,(VAR31 += VAR33 -> VAR42 - 1),FUNC9(( *VAR11)))))) {
+qsort(VAR11,VAR31,FUNC9(( *VAR11)),VAR70);
+VAR22 -> VAR72 = VAR11;
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+VAR75 = FUNC16(VAR10,VAR22);
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+snprintf(VAR66,FUNC9(VAR66),"%s-%d.log",(VAR22 -> VAR57?VAR22 -> VAR57 : "ffmpeg2pass"),i);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+static void FUNC1(char *VAR46,OutputStream *VAR22,AVCodecContext *VAR53)
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR71 -> VAR63);
+snprintf(VAR66,FUNC9(VAR66),"%s-%d.log",(VAR22 -> VAR57?VAR22 -> VAR57 : "ffmpeg2pass"),i);
+static InputStream *FUNC3(OutputStream *VAR22)
+VAR10 = FUNC3(VAR22);
+snprintf(VAR66,FUNC9(VAR66),"%s-%d.log",(VAR22 -> VAR57?VAR22 -> VAR57 : "ffmpeg2pass"),i);

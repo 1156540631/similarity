@@ -1,0 +1,3 @@
+VAR1 = 0;
+VAR2 = VAR1;
+printf("VAR3: open: %s\n", FUN1(VAR2));

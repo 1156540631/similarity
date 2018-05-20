@@ -1,0 +1,11 @@
+VAR1 = FUN1("CIRCUMLITIO_TAMILIAN");
+if (VAR1 != 0) {;
+VAR2 = VAR1;
+VAR3 = &VAR2;
+if ( *VAR3 != 0) {
+VAR4 = ((char *)( *VAR3));
+for (VAR5 = 0; VAR5 < strlen(VAR4); ++VAR5) {
+VAR4[VAR5],
+VAR6->VAR7[(int) VAR4[VAR5]]);
+FUN2(VAR8, VAR9, "((int) VAR10[VAR5])", ((int) VAR4[VAR5]), &(VAR4[VAR5]), "VAR11-VAR12");
+void FUN3(char * VAR13, ...) {

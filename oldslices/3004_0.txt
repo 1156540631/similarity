@@ -1,0 +1,5 @@
+int *buf1=(int*)calloc(5,sizeof(int));
+int *buf2=(int*)calloc(5,sizeof(int));
+int *buf3=(int*)calloc(5,sizeof(int));
+int *buf4=(int*)calloc(5,sizeof(int));
+free(buf4);

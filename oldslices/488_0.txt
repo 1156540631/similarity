@@ -1,0 +1,3 @@
+char updaterIdentity[64];
+updaterIdentity, sizeof(updaterIdentity))) {
+if (strcmp(updaterIdentity, UPDATER_IDENTITY_STRING)) {

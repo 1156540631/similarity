@@ -1,0 +1,13 @@
+VAR7 = (char *)malloc((10+1)*sizeof(char));
+return VAR7;
+VAR7 = NULL;
+VAR7 = FUN1(VAR7);
+strcpy(VAR7, VAR1);
+printLine(VAR7);
+free(VAR7);
+static char * FUN1(char * VAR7)
+return VAR7;
+VAR7 = FUN1(VAR7);
+strcpy(VAR7, VAR1);
+printLine(VAR7);
+free(VAR7);

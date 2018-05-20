@@ -1,0 +1,2 @@
+VAR1 = (void *)malloc(128);
+strcpy(VAR1, "something");

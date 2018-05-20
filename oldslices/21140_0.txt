@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+sscanf(param,"%p",&fct_ptr_addr);
+void stonesoup_handle_taint(char *nonreliably_vetchiest)
+indeprivability_misandry = ((char *)nonreliably_vetchiest);
+stonesoup_fp = stonesoup_switch_func(indeprivability_misandry);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

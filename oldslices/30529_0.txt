@@ -1,0 +1,11 @@
+data = -1;
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+goodB2G2Static = 1;
+goodB2G2Sink(data);
+static void goodB2G2Sink(int data)
+if(goodB2G2Static)
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

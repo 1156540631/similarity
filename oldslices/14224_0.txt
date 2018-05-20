@@ -1,0 +1,16 @@
+static char *
+asn1_get_string(
+unsigned char **buffer,
+unsigned char *bufend,
+int           length,
+char          *string,
+int           strsize)
+int dataArray[5];
+dataArray[2] = length;
+bool flag = func(dataArray, 0);
+bool func(int dataArray[], int strsize);
+int length = dataArray[2];
+return length < strsize;
+bool flag = func(dataArray, 0);
+if (flag)
+memcpy(string, *buffer, length);

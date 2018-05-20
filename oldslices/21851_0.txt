@@ -1,0 +1,5 @@
+envvar = getenv("STRINGLEN_LARGE");
+if (envvar != NULL)
+i = strlen(envvar);
+if (i > 4105)
+buf[i] = 'A';

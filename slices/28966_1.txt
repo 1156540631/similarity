@@ -1,0 +1,11 @@
+char * VAR1;
+char * *VAR28 = &VAR1;
+char * *VAR29 = &VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+char * VAR1 = *VAR28;
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+*VAR28 = VAR1;
+char * VAR1 = *VAR29;
+char VAR40[50] = "";
+strcpy(VAR40, VAR1);

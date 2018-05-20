@@ -1,0 +1,10 @@
+wchar_t * data;
+wchar_t dataGoodBuffer[10+1];
+data = dataGoodBuffer;
+data[0] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_45_goodG2BData = data;
+goodG2BSink();
+static void goodG2BSink()
+wchar_t * data = CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_ncpy_45_goodG2BData;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

@@ -1,0 +1,3 @@
+e -> ext = strcpy((xmalloc(strlen((c[0] + 1)) + 1)),(c[0] + 1));
+e -> term_flg = strcpy((xmalloc(strlen(c[1]) + 1)),c[1]);
+e -> ext = strcpy((xmalloc(strlen((c[0] + 1)) + 1)),(c[0] + 1));

@@ -1,0 +1,13 @@
+int * data;
+vector<int *> dataVector;
+int * dataBadBuffer = (int *)ALLOCA(50*sizeof(int));
+int * dataGoodBuffer = (int *)ALLOCA(100*sizeof(int));
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<int *> dataVector)
+int * data = dataVector[2];
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

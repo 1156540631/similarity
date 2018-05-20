@@ -1,0 +1,3 @@
+double *VAR1=(double*) calloc(5,sizeof(double));
+VAR1[VAR2]=1.0;
+free(VAR1);

@@ -1,0 +1,12 @@
+register char *addr;
+p = addrhead = addr;
+while ((c = *p++) != '<')
+while ((c = *p++) != '\0')
+if ((c = *p++) == '\0')
+p--;
+p++;
+p++;
+p++;
+while ((c = *p++) != ':')
+*bp++ = *p++;
+while (isascii((int)*--p) && isspace((int)*p))

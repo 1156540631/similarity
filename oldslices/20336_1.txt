@@ -1,0 +1,39 @@
+ss_tc_root = getenv("SS_TC_ROOT");
+if (ss_tc_root != NULL) {
+size_dirpath = strlen(ss_tc_root) + strlen("testData") + 2;
+dirpath = (char*) malloc (size_dirpath * sizeof(char));
+if (dirpath != NULL) {
+sprintf(dirpath, "%s/%s", ss_tc_root, "testData");
+if (stat(dirpath, &st) == -1) {
+retval = mkdir(dirpath, 0700);
+if (retval == 0) {
+size_filepath = strlen(dirpath) + strlen("logfile.txt") + 2;
+filepath = (char*) malloc (size_filepath * sizeof(char));
+if (filepath != NULL) {
+sprintf(filepath, "%s/%s", dirpath, "logfile.txt");
+stonesoup_printf_context = fopen(filepath, "w");
+free(filepath);
+free(dirpath);
+if (stonesoup_printf_context == NULL) {
+stonesoup_setup_printf_context();
+sub2video_update(ist2,((void *)0));
+sub2video_push_ref(ist2,pts2);
+sub2video_heartbeat(ist,pkt . pts);
+ret = output_packet(ist,(&pkt));
+ret = decode_audio(ist,&avpkt,&got_output);
+ret = output_packet(ist,(&pkt));
+sub2video_heartbeat(ist,pkt . pts);
+stonesoup_setup_printf_context();
+capsidae_preoutfitted(1,pressor_palaestrian);
+ret = process_input(ist -> file_index);
+ret = transcode_step();
+print_report(0,timer_start,cur_time);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%02d:%02d:%02d.%02d ",hours,mins,secs,100 * us / 1000000);
+s
+vfprintf(stonesoup_printf_context, format, argptr);
+fflush(stonesoup_printf_context);
+stonesoup_close_printf_context();
+if (stonesoup_printf_context != NULL &&
+stonesoup_printf_context != stderr) {
+fclose(stonesoup_printf_context);

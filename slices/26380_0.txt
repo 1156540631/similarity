@@ -1,0 +1,8 @@
+void FUN80(int VAR283,char **VAR284)
+char VAR30[1024];
+VAR285 = ((char *)((char **)VAR284)[1]);
+VAR30[VAR10] = 0;
+strncpy(VAR30, VAR285, sizeof(VAR30));
+VAR30[1023] = '\0';
+if (strlen(VAR30) + 1 <= 64) {
+strncpy(VAR30, VAR285, sizeof(VAR30));

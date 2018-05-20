@@ -1,0 +1,5 @@
+WriteStatusFailure(LPCWSTR updateDirPath, int errorCode)
+char failure[32];
+sprintf(failure, "failed: %d", errorCode);
+DWORD toWrite = strlen(failure);
+BOOL ok = WriteFile(statusFile, failure,

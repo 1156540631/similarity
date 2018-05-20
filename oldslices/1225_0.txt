@@ -1,0 +1,13 @@
+vector<twoIntsStruct *> dataVector;
+data = NULL;
+data = (twoIntsStruct *)malloc(sizeof(*data));
+data->intOne = 1;
+data->intTwo = 2;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<twoIntsStruct *> dataVector)
+twoIntsStruct * data = dataVector[2];
+printStructLine(data);
+free(data);

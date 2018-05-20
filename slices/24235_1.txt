@@ -1,0 +1,37 @@
+char* VAR34;
+int VAR80 = 1000;
+VAR34 = (char*) malloc(VAR80 * sizeof(char));
+VAR78 = FUNC16(VAR79, "data", VAR34, VAR80 * sizeof(char));
+VAR34 = (char*) malloc(VAR80 * sizeof(char));
+VAR78 = FUNC16(VAR79, "data", VAR34, VAR80 * sizeof(char));
+VAR80 = VAR80 * 2;
+VAR34 = (char*) malloc(VAR80 * sizeof(char));
+VAR78 = FUNC16(VAR79, "data", VAR34, VAR80 * sizeof(char));
+free(VAR34);
+FUNC17(VAR34);
+VAR81[1] = 5;
+VAR82 =  *(VAR87 + VAR81[1]);
+VAR76 = ((char *)VAR82[3]);
+VAR77 = 4;
+strncpy(VAR74, VAR76, VAR77);
+VAR74[VAR77 - 1] = 0;
+FUNC3("%s\n", VAR74);
+FUNC5(VAR17, VAR83, "VAR77", VAR77, &VAR77, "INITIAL-STATE");
+FUNC5(VAR17, VAR84, "VAR74", VAR74, "CROSSOVER-STATE");
+VAR88 = FUNC18(VAR74);
+strncpy(VAR74, VAR76, VAR77);
+void FUNC17(char *VAR85)
+VAR86[3] = VAR85;
+VAR87[5] = VAR86;
+VAR82 =  *(VAR87 + VAR81[1]);
+VAR76 = ((char *)VAR82[3]);
+strncpy(VAR74, VAR76, VAR77);
+strncpy(VAR74, VAR76, VAR77);
+char FUNC18(char *VAR89)
+free(VAR89);
+FUNC5(VAR17, VAR84, "VAR74", VAR74, "TRIGGER-STATE");
+strncpy(VAR74, VAR76, VAR77);
+void FUNC3(char * VAR1, ...) {
+FUNC5(VAR17, VAR84, "VAR74", VAR74, "INITIAL-STATE");
+FUNC5(VAR17, VAR84, "VAR74", VAR74, "TRIGGER-STATE");
+strncpy(VAR74, VAR76, VAR77);

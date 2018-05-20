@@ -1,0 +1,5 @@
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = (void *)CHAR_STRING;
+void * &dataRef = data;
+void * data = dataRef;
+size_t dataLen = strlen((char *)data);

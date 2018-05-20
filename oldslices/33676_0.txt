@@ -1,0 +1,8 @@
+wchar_t * data;
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_snprintf_51b_goodG2BSink(data);
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_snprintf_51b_goodG2BSink(wchar_t * data)
+SNPRINTF(data, 100, L"%s", source);

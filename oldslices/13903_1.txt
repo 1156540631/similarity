@@ -1,0 +1,6 @@
+void *p_org = p_stream->p_headers;
+p_stream->i_headers += p_oggpacket->bytes;
+n = p_stream->i_headers +5
+p_stream->p_headers = realloc( p_stream->p_headers, n-5 );
+if( p_stream->p_headers )
+memcpy( (unsigned char *)p_stream->p_headers +n-5 - p_oggpacket->bytes, p_oggpacket->packet, n-5 );

@@ -1,0 +1,9 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&fustigated_turboalternator,"DESCOMBES_FINIST");
+if (fustigated_turboalternator != 0) {;
+carbonation_sparing[24] = fustigated_turboalternator;
+joypopper_excussion = carbonation_sparing;
+hypomnematic_chimopelagic = joypopper_excussion + 5;
+anciennete_dispar(hypomnematic_chimopelagic);

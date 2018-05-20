@@ -1,0 +1,3 @@
+memset( p_chk, 0, sizeof( avi_chunk_t ) );
+p_chk = malloc( sizeof( avi_chunk_t ) );
+memset( p_chk, 0, sizeof( avi_chunk_t ) );

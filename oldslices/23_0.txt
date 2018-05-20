@@ -1,0 +1,4 @@
+char *endptr;
+prog_id = strtol(spec, &endptr, 0);
+if (*endptr++ == ':') {
+int stream_idx = strtol(endptr, NULL, 0);

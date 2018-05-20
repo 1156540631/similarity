@@ -1,0 +1,18 @@
+main(int argc, char **argv)
+if(argc > 2) {
+VAR44 = argv[1];
+VAR141 = argv[2];
+FUN8(VAR44, VAR141);
+FUN8(char *VAR142, char *VAR137)
+snprintf(VAR138, VAR140, "<%VAR1>", VAR142);
+VAR143 = strlen(VAR138);
+VAR138 += VAR143;
+VAR140 -= VAR143;
+if(VAR140 > 2) {
+*VAR138++ = ' ';
+*VAR138++ = '-';
+VAR140 -= 2;
+snprintf(VAR138, VAR140, "<%VAR1>\VAR7", VAR137);
+VAR143 = strlen(VAR138);
+VAR138 += VAR143;
+VAR140 -= VAR143;

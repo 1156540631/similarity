@@ -1,0 +1,4 @@
+unsigned char **VAR1,
+int           VAR2,
+char          *VAR3,
+memcpy(VAR3, *VAR1, VAR2);

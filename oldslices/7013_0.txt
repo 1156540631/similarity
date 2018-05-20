@@ -1,0 +1,3 @@
+ss_tc_root = getenv("SS_TC_ROOT");
+size_dirpath = strlen(ss_tc_root) + strlen("testData") + 2;
+dirpath = (char*) malloc (size_dirpath * sizeof(char));

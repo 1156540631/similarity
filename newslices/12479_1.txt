@@ -1,0 +1,9 @@
+VAR1 = ((char *)( *( *( *( *( *( *( *( *( *( *VAR2))))))))))[1]);
+strncpy(VAR3, VAR1, VAR4);
+VAR5 = malloc(65528);
+FUN1(VAR6, VAR7, "VAR5", VAR5, "VAR8-VAR9");
+*VAR5 = VAR1;
+FUN1(VAR6, VAR7, "VAR5", VAR5, "VAR10-VAR9");
+FUN1(VAR6, VAR7, "*VAR5", *VAR5, "VAR10-VAR9");
+VAR11 = strlen( *VAR5);
+free(VAR5);

@@ -1,0 +1,18 @@
+void FUN1(union VAR1 VAR2)
+char VAR3[1024];
+VAR4 = ((char *)VAR2 . VAR5);
+memset(VAR3, 0, 1024);
+strncpy(VAR3, VAR4, sizeof(VAR3));
+void FUN2(char** VAR6, char* VAR7, int VAR8) {
+*VAR6 = VAR9;
+if ((VAR10 = FUN3(VAR11, VAR8, 0666)) >= 0) {
+*VAR6 = (char*)calloc(VAR8, sizeof(char));
+*VAR6 = VAR9;
+union VAR1 VAR12;
+int VAR13 = 91;
+char *VAR14;;
+FUN2(&VAR14,"5201",VAR13);
+VAR12 . VAR5 = VAR14;
+VAR15[ *( *VAR16)] = VAR12;
+VAR17 = VAR15[ *( *VAR16)];
+FUN4(VAR17);

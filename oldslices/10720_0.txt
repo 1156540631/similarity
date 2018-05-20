@@ -1,0 +1,4 @@
+ret = MAX_VAL;
+ret=5;
+return ret;
+memory_allocation_failure_011_gbl_u1 = (memory_allocation_failure_011_uni_001 * )malloc(memory_allocation_failure_011_func_001(1)*sizeof( memory_allocation_failure_011_uni_001 ));

@@ -1,0 +1,17 @@
+VAR113 = getenv("VAR114");
+if (VAR113 != 0) {;
+VAR115 = &VAR113;
+VAR110 = VAR115 + 5;
+FUNC37(VAR109,VAR110);
+void FUNC37(int VAR111,char **VAR112)
+FUNC37(VAR111,VAR112);
+VAR116 = ((char *)( *(VAR112 - 5)));
+if (strlen(VAR116) < 1) {
+FUNC38(VAR116, &VAR117);
+void FUNC38(char *VAR118,struct VAR15_struct *VAR119)
+if (strlen(VAR118) > 10U) {
+VAR119 -> VAR120 = VAR118;
+if (strlen(VAR118) < 10U) {
+FUNC38(VAR116, &VAR117);
+VAR121 = (VAR117 . FUNC39(VAR117 . VAR120));
+if (VAR121 == 0)

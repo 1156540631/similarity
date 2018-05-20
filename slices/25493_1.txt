@@ -1,0 +1,7 @@
+void FUN71(char *VAR275)
+FUN72(VAR275);
+void FUN72(char *const VAR276)
+VAR277 = ((char *)((char *)VAR276));
+VAR75 = (char*) malloc(8 * sizeof(char));
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR277)+1, VAR277, "TRIGGER-STATE");
+strncpy(VAR75, VAR277, strlen(VAR277) + 1);

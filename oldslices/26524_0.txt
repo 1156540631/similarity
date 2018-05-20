@@ -1,0 +1,3 @@
+static int file_gets(BIO *bp,char *buf,int size)
+buf[0] = '\0';
+if (!fgets(buf,size,((FILE *)(bp -> ptr)))) {

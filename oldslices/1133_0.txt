@@ -1,0 +1,8 @@
+data = new wchar_t[100];
+data = goodG2B2Source(data);
+static wchar_t * goodG2B2Source(wchar_t * data)
+data[50-1] = L'\0';
+return data;
+data = goodG2B2Source(data);
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

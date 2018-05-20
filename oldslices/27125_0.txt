@@ -1,0 +1,2 @@
+dynamic_buffer_underrun_s_008* ptr_s1=malloc(15*sizeof(dynamic_buffer_underrun_s_008));
+memset(ptr_s1,1,15*sizeof(dynamic_buffer_underrun_s_008));

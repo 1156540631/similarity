@@ -1,0 +1,2 @@
+gets(Password);
+if (!strcmp(Password, "goodpass"))

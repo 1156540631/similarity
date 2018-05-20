@@ -1,0 +1,10 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_68_goodG2BData = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_68b_goodG2BSink();
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_68b_goodG2BSink();
+char * data = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_alloca_memmove_68_goodG2BData;
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

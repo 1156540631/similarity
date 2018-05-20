@@ -1,0 +1,7 @@
+void badSource(twoIntsStruct * &data);
+data = NULL;
+badSource(data);
+badSource(data);
+memmove(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

@@ -1,0 +1,3 @@
+jmp_buf galimatias_torbay;
+bottomchrome_conglutination = setjmp(galimatias_torbay);
+longjmp(galimatias_torbay,1);

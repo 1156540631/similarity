@@ -1,0 +1,5 @@
+char buf[32] = { 0 };
+if (!ReadFile(statusFile, buf, sizeof(buf), &read, NULL)) {
+LOG(("updater.exe returned status: %s", buf));
+const char kApplying[] = "applying";
+isApplying = strncmp(buf, kApplying,

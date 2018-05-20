@@ -1,0 +1,19 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR205,"SYNTONIZER_HOARSER");
+if (VAR205 != 0) {;
+VAR206 = &VAR205;
+VAR207 = VAR206 + 5;
+VAR208 = ((char *)( *(VAR207 - 5)));
+strncpy(VAR137, VAR208, sizeof(VAR137));
+if ( *(VAR207 - 5) != 0)
+free(((char *)( *(VAR207 - 5))));

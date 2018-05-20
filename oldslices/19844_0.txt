@@ -1,0 +1,7 @@
+data = NULL;
+data = new int[100];
+goodG2BSink(data);
+static void goodG2BSink()
+int * data = goodG2BData;
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

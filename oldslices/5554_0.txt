@@ -1,0 +1,7 @@
+rubbery_brilliant = getenv("FAIRLY_INCOHERENCY");
+miscalculating_abevacuation = ((int )(strlen(rubbery_brilliant)));
+turmet_clerkish = ((char *)(malloc(miscalculating_abevacuation + 1)));
+memset(turmet_clerkish,0,miscalculating_abevacuation + 1);
+memcpy(turmet_clerkish,rubbery_brilliant,miscalculating_abevacuation);
+aleatoric_muslim = &turmet_clerkish;
+free(((char *)( *aleatoric_muslim)));

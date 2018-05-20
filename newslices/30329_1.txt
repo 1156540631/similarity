@@ -1,0 +1,10 @@
+int *VAR1 = &VAR2;
+int *VAR3 = &VAR2;
+VAR2 = -1;
+int VAR2 = *VAR1;
+fscanf(VAR4, "%d", &VAR2);
+*VAR1 = VAR2;
+int VAR2 = *VAR3;
+VAR5 = (int*)malloc(VAR2 * sizeof(int));
+for (VAR6 = 0; VAR6 < (VAR7)VAR2; VAR6++)
+VAR5[VAR6] = 0;

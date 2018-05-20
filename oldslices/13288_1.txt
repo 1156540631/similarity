@@ -1,0 +1,31 @@
+static void * AnimationThread(void *)
+vector<AnimationPart> parts;
+AnimationPart part;
+if (headerRead &&
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+headerRead = false;
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+parts.push_back(part);        }
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+AnimationPart dataArray[5];
+dataArray[2] = part;
+AnimationFrame &frame = badSource(dataArray, k);
+AnimationFrame badSource(AnimationFrame dataArray, uint32_t k)
+AnimationFrame &part = dataArray[2];
+return part.frames[k];
+AnimationFrame &frame = badSource(dataArray, k);
+if (!frame.buf) {
+frame.ReadPngFrame(format);             }
+void *vaddr;
+if (grmodule->lock(grmodule, buf->handle,
+GRALLOC_USAGE_SW_READ_NEVER |
+GRALLOC_USAGE_SW_WRITE_OFTEN |
+GRALLOC_USAGE_HW_FB,
+0, 0, width, height, &vaddr)) {
+LOGW("Failed to lock buffer_handle_t");
+display->QueueBuffer(buf);
+break;                }
+if (buf->height == frame.height && buf->stride == frame.width) {
+memcpy(vaddr, frame.buf,  frame.width * frame.height * frame.bytepp);

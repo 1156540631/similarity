@@ -1,0 +1,11 @@
+list<void *> dataList;
+data = (void *)WIDE_STRING;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodB2GSink(dataList);
+void goodB2GSink(list<void *> dataList)
+void * data = dataList.back();
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));

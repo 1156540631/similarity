@@ -1,0 +1,12 @@
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+char * data;
+data = (char *)malloc(100*sizeof(char));
+if(staticReturnsFalse()){ }
+else
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+char dest[50] = "";
+strcpy(dest, data);

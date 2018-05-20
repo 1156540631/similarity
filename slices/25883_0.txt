@@ -1,0 +1,3 @@
+char VAR34[128];
+FUN80(VAR141,16,"Specified pixel VAR51 %VAR9 is invalid or not supported\VAR25",((char *)(FUN99((FUN100(VAR141 -> VAR452)),VAR34))));
+snprintf(VAR34,sizeof(VAR34),"%VAR219",VAR141 -> VAR452);

@@ -1,0 +1,24 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+int luny_dungan = 20;
+char *alehoof_nagualism;
+stonesoup_read_taint(&alehoof_nagualism,"8966",luny_dungan);
+strawy_jesuist = ((int )(strlen(alehoof_nagualism)));
+conidiophorous_paraebius = ((char *)(malloc(strawy_jesuist + 1)));
+memset(conidiophorous_paraebius,0,strawy_jesuist + 1);
+memcpy(conidiophorous_paraebius,alehoof_nagualism,strawy_jesuist);
+unaffecting_verbalised[5] = conidiophorous_paraebius;
+designatum_convoke = 5;
+reattain_sarcast = &designatum_convoke;
+yeo_obus =  *(unaffecting_verbalised +  *reattain_sarcast);
+free(((char *)yeo_obus));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&alehoof_nagualism,"8966",luny_dungan);
+strawy_jesuist = ((int )(strlen(alehoof_nagualism)));
+memcpy(conidiophorous_paraebius,alehoof_nagualism,strawy_jesuist);
+unaffecting_verbalised[5] = conidiophorous_paraebius;
+yeo_obus =  *(unaffecting_verbalised +  *reattain_sarcast);
+free(((char *)yeo_obus));

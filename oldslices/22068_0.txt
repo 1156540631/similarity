@@ -1,0 +1,5 @@
+norpinic_orpington = getenv("SOMNAMBULOUS_ILYSIOID");
+if (norpinic_orpington != 0) {;
+vintnership_kaufman[2] = norpinic_orpington;
+eulytine_duplon(vintnership_kaufman);
+void eulytine_duplon(char **const noneuphonious_afips);

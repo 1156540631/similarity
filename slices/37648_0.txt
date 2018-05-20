@@ -1,0 +1,8 @@
+VAR2 = recv(VAR3, VAR4, VAR5 - 1, 0);
+if (VAR2 == SOCKET_ERROR || VAR2 == 0)
+VAR4[VAR2] = '\0';
+VAR1 = atoi(VAR4);
+CLASS1.FUN1(VAR1);
+void CLASS2::FUN1(int VAR1) const
+if (VAR1 >= 0 && VAR1 < (10))
+VAR6[VAR1] = 1;

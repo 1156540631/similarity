@@ -1,0 +1,11 @@
+data = NULL;
+switch(5)
+case 6:
+printLine("Benign, fixed string");
+break;
+default:
+data = new char[10+1];
+break;
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

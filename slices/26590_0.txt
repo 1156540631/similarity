@@ -1,0 +1,18 @@
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+if (VAR55 != 0) {
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+rewind(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR22 != 0) {
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+if (VAR55 != 0) {
+fclose(VAR55);
+FUN1(&VAR113,"CHROMITE_ROSTRATED");
+if (VAR113 != 0) {;
+VAR114[3] = VAR113;
+VAR115[5] = VAR114;
+VAR116 =  *(VAR115 +  *VAR117);
+FUN16(VAR116);
+void FUN16(char **VAR118);

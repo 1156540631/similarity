@@ -1,0 +1,6 @@
+char   *p;
+buf[line_len] = '\0';
+tmp = buf + STRLEN_CONST(rtsp_content_length);
+while (*tmp && isspace(*tmp))
+tmp++;
+content_length = strtol(tmp, &p, 10);

@@ -1,0 +1,8 @@
+VAR1[VAR2] = '\';
+VAR3 = atoi(VAR1);
+int VAR4 = VAR3;
+int VAR3 = VAR4;
+VAR5 = (int*)malloc(VAR3 * sizeof(int));
+VAR5[VAR6] = 0;
+FUN1(VAR5[0]);
+free(VAR5);

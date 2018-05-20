@@ -1,0 +1,5 @@
+void FUN2(CLASS2<char *> VAR3)
+char * VAR1 = VAR3[2];
+strncat(VAR2, VAR1, strlen(VAR1));
+FUN2(VAR1);
+free(VAR1);

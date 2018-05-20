@@ -1,0 +1,23 @@
+rewind(VAR55);
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+*VAR22 = NULL;
+STRUCT3 VAR51 = (STRUCT3 )0;
+sscanf(VAR50,"%VAR138",&VAR51);
+char *VAR205;
+FUN1(&VAR205,"PHOTOETCHING_INQUILINISM");
+VAR206 = VAR205;
+VAR207 = ((char *)VAR206);
+VAR49 = FUN10(VAR207);
+void FUN1(char** VAR22, char* VAR54) {
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+FUN1(&VAR205,"PHOTOETCHING_INQUILINISM");
+VAR206 = VAR205;
+VAR207 = ((char *)VAR206);
+VAR49 = FUN10(VAR207);
+STRUCT3 FUN10(char *VAR50)
+VAR52 = strlen(VAR50) % 3;
+sscanf(VAR50,"%VAR138",&VAR51);

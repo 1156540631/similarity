@@ -1,0 +1,5 @@
+data = NULL;
+if(globalTrue)
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

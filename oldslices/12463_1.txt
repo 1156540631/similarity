@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(char * &data);
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);

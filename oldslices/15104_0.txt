@@ -1,0 +1,15 @@
+char * data;
+vector<char *> dataVector;
+char * dataBadBuffer = (char *)ALLOCA(50*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataGoodBuffer;
+data[0] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+source[100-1] = '\0';
+strncpy(data, source, 100-1);
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+strncpy(data, source, 100-1);

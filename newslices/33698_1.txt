@@ -1,0 +1,5 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+VAR2[100-1] = '\';
+char VAR3[50] = "";
+memcpy(VAR3, VAR2, strlen(VAR2)*sizeof(char));

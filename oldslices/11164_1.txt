@@ -1,0 +1,4 @@
+data = (int *)malloc(50*sizeof(int));
+memcpy(data, source, 100*sizeof(int));
+printIntLine(data[0]);
+free(data);

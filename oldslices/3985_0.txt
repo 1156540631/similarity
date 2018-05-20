@@ -1,0 +1,5 @@
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_66b_goodG2BSink(char * dataArray[])
+char * data = dataArray[2];
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_start(args, data);

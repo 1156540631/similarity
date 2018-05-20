@@ -1,0 +1,3 @@
+debatter_suppertime = getenv("TRANSGRESSED_SULFONAL");
+laicity_akutagawa = ((int )(strlen(debatter_suppertime)));
+waki_fritillaria = ((char *)(malloc(laicity_akutagawa + 1)));

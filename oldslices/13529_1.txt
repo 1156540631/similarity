@@ -1,0 +1,17 @@
+void NetworkUtils::setInterfaceDns(CommandChain* aChain, ommandCallback aCallback,NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+int written;
+if (SDK_VERSION >= 20) {
+written = snprintf(command, sizeof command, "resolver setnetdns %d %s",
+GET_FIELD(mNetId), GET_CHAR(mDomain));
+nsTArray<nsString>& dnses = GET_FIELD(mDnses);
+uint32_t length = dnses.Length;
+for (uint32_t i = 0; i < length; i++) {
+unionType myUnion;
+myUnion.unionFirst = dnses;
+NS_ConvertUTF16toUTF8 autoDns = func(myUnion, i);
+nsTArray func(unionType myUnion, uint32_t i)
+nsTArray<nsString>& dnses = myUnion.unionSecond;
+return dnses[i];
+NS_ConvertUTF16toUTF8 autoDns = func(myUnion, i);
+int ret = snprintf(command + written, sizeof(command) - written, " %s", autoDns.get());

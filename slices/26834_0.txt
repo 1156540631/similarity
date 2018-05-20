@@ -1,0 +1,7 @@
+int main(int argc, char **argv){
+assert(argc==2);
+VAR40 = fopen (argv[1], "VAR360");
+assert(VAR40!=NULL);
+assert ((fscanf(VAR40, "%d", &VAR423)) != 0);
+VAR341 = FUN102(VAR340, 10000);
+FUN103(VAR424, &VAR346, VAR347, &VAR341, VAR340);

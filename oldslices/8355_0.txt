@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&bluffly_bluegums,"CLYTIUS_DERMESTES");
+if (bluffly_bluegums != 0) {;
+multifarously_warbeck = ((int )(strlen(bluffly_bluegums)));
+quaterion_congruence = ((char *)(malloc(multifarously_warbeck + 1)));
+if (quaterion_congruence == 0) {
+memcpy(quaterion_congruence,bluffly_bluegums,multifarously_warbeck);
+if (bluffly_bluegums != 0)
+free(((char *)bluffly_bluegums));

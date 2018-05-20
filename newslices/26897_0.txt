@@ -1,0 +1,6 @@
+int FUN1(int VAR1, char **VAR2){
+VAR3 = fopen (VAR2[1], "r");
+assert (VAR3 != VAR4);
+VAR5->VAR6 = VAR3;
+FUN2(VAR7, VAR5);
+fclose(VAR3);

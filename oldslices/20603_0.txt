@@ -1,0 +1,5 @@
+solstitia_bodgie = getenv("EMPEXA_SWARTZITE");
+if (solstitia_bodgie != 0) {;
+refilm_soothsayer = ((void *)solstitia_bodgie);
+amortises_scillonian(refilm_soothsayer);
+void amortises_scillonian(void *const assagaiing_noncontumacious);

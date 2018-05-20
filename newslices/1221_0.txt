@@ -1,0 +1,3 @@
+register int VAR1;
+VAR1 = 1;
+VAR2 = malloc((unsigned) VAR1);

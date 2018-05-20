@@ -1,0 +1,3 @@
+void NetworkUtils::disableNat(CommandChain* aChain,
+if (!GET_FIELD(mIp).IsEmpty() && !GET_FIELD(mPrefix).IsEmpty()) {
+uint32_t prefix = atoi(GET_CHAR(mPrefix));

@@ -1,0 +1,13 @@
+(void) sendtolist(p, NULLADDR, &e->e_sendqueue, 0, e);
+int aliaslevel;
+aliaslevel, MaxAliasRecursion);
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+alias(a, sendq, aliaslevel, e);
+if (udbexpand(a, sendq, aliaslevel, e) == EX_TEMPFAIL)
+maplocaluser(a, sendq, aliaslevel + 1, e);
+forward(a, sendq, aliaslevel, e);
+int aliaslevel;
+a = recipient(a, sendq, aliaslevel, e);
+int aliaslevel;
+printf("\nrecipient (%d): ", aliaslevel);

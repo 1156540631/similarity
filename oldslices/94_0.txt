@@ -1,0 +1,4 @@
+snmp_cache_t	key,
+key.addrname = addrname;
+device       = (snmp_cache_t *)cupsArrayFind(Devices, &key);
+free(device->make_and_model);

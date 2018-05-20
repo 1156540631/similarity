@@ -1,0 +1,15 @@
+char * data;
+list<char *> dataList;
+char dataBadBuffer[50];
+char dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+source[100-1] = '\0';
+memcpy(data, source, 100*sizeof(char));
+void goodG2BSink(list<char *> dataList)
+char * data = dataList.back();
+memcpy(data, source, 100*sizeof(char));

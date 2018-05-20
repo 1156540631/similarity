@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+static int staticTrue = 1;
+static int staticFalse = 0;
+char * data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+if(staticTrue)
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

@@ -1,0 +1,75 @@
+VAR12 -> VAR23 = 1;
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"L");
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"q=%2.1f ",VAR7);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+FUNC12(VAR21[of -> VAR12_index + j]);
+VAR21[i] -> VAR22 = 0;
+FUNC6();
+VAR4 = FUNC11();
+int64_t VAR3 = FUNC11();
+if (FUNC2(VAR3) < 0) {
+if (!FUNC13()) {
+VAR13 = FUNC7();
+VAR12 = FUNC14();
+if (FUNC5()) {
+FUNC6();
+VAR13 = FUNC7();
+FUNC3(0,VAR4,VAR3);
+VAR12 = VAR21[i];
+VAR2 = VAR12 -> VAR2;
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+FUNC1(&VAR1,"frame=%d\n",VAR2);
+VAR16 = (VAR18 -> VAR19 * VAR18 -> VAR20) * 255.0 * 255.0 * VAR2;
+p = FUNC4(VAR17 / VAR16);
+VAR21[i] -> VAR22 = 0;
+if (!FUNC13()) {
+VAR13 = FUNC7();
+VAR12 = FUNC14();
+if (FUNC5()) {
+FUNC6();
+VAR13 = FUNC7();
+FUNC3(0,VAR4,VAR3);
+FUNC8();
+FUNC9();
+FUNC10();
+FUNC3(1,VAR4,FUNC11());
+VAR12 = VAR21[i];
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"q=%2.1f ",VAR7);
+FUNC1(&VAR1,"stream_%d_%d_q=%.1f\n",VAR12 -> file_index,VAR12 -> index,VAR7);
+VAR2 = VAR12 -> VAR2;
+VAR5 = (VAR6 > 1?VAR2 / VAR6 : 0);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+FUNC1(&VAR1,"frame=%d\n",VAR2);
+FUNC1(&VAR1,"stream_%d_%d_q=%.1f\n",VAR12 -> file_index,VAR12 -> index,VAR7);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+static int FUNC2(int64_t VAR3)
+FUNC3(0,VAR4,VAR3);
+static void FUNC3(int VAR11,int64_t VAR4,int64_t VAR3)
+float VAR6 = ((VAR3 - VAR4) / 1000000.0);
+VAR5 = (VAR6 > 1?VAR2 / VAR6 : 0);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+static double FUNC4(double VAR9)
+VAR13urn - 10.0 * log(VAR9) / log(10.0);
+VAR8 = FUNC4(VAR14 / VAR15);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"%c:%2.2f ",type[j],VAR8);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"*:%2.2f ",FUNC4(VAR23/ VAR24));
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"q=%2.1f ",VAR7);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+static void FUNC12(OutputStream *VAR12)
+if (!FUNC13()) {
+VAR13 = FUNC7();
+VAR12 = FUNC14();
+if (FUNC5()) {
+FUNC6();
+VAR13 = FUNC7();
+FUNC3(0,VAR4,VAR3);
+FUNC8();
+FUNC9();
+FUNC10();
+FUNC3(1,VAR4,FUNC11());
+VAR12 = VAR21[i];
+VAR2 = VAR12 -> VAR2;
+VAR5 = (VAR6 > 1?VAR2 / VAR6 : 0);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);
+FUNC1(&VAR1,"frame=%d\n",VAR2);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d VAR5=%3.*f q=%3.1f ",VAR2,VAR5 < 9.95,VAR5,VAR7);

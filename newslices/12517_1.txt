@@ -1,0 +1,14 @@
+return VAR1 - 32;
+VAR2 = (struct CLASS1*) malloc(sizeof (struct CLASS1));
+VAR2->VAR3 = VAR2->VAR4;
+strncpy(VAR2->VAR4, VAR5, strlen(VAR5) + 1);
+VAR6 = strlen( VAR2->VAR3);
+VAR2->VAR4[VAR7] = FUN1(VAR2->VAR4[VAR7]);
+FUN2("%s\n", VAR2->VAR4);
+free(VAR2);
+void FUN2(char * VAR8, ...) {
+free(VAR2);
+int FUN1(int VAR1)
+return VAR1;
+VAR2->VAR4[VAR7] = FUN1(VAR2->VAR4[VAR7]);
+FUN2("%s\n", VAR2->VAR4);

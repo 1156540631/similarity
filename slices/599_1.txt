@@ -1,0 +1,3 @@
+const WCHAR *VAR1,
+WCHAR VAR2[VAR8 + 1];
+wcscpy(VAR2, VAR1);

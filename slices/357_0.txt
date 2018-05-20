@@ -1,0 +1,4 @@
+if (VAR1 >= 20) {
+if (VAR1 >= 20) {
+#ifdef _DEBUG
+FUN1("     VAR4: %VAR1", FUN5(VAR2));

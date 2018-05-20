@@ -1,0 +1,11 @@
+static const int VAR10 = 1;
+static const int VAR11 = 0;
+char * VAR1;
+VAR1 = NULL;
+if(VAR10)
+VAR1 = (char *)malloc(50*sizeof(char));
+VAR1[0] = '\0';
+char VAR9[100];
+memset(VAR9, 'C', 100-1);
+VAR9[100-1] = '\0';
+strcat(VAR1, VAR9);

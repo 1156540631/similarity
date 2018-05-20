@@ -1,0 +1,4 @@
+void VAR1::FUN1(char * VAR2) const
+FUN2(VAR2, 100, "%s", VAR3);
+FUN3(VAR2);
+free(VAR2);

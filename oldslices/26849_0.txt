@@ -1,0 +1,74 @@
+char address[100];
+scanf("%99s", address);
+res_addr = crackaddr(address);
+char * crackaddr(addr)
+register char *addr;
+static char buf[MAXNAME + 1];
+addr++;
+buflim = bufend = &buf[sizeof(buf) - 1];
+bp = bufhead = buf;
+obp = bp;
+p = addrhead = addr;
+p++;
+while ((c = *p++) != '<')
+while ((c = *p++) != '\0')
+printf("c = %c\n", c);
+SM_APPEND_CHAR(MACROEXPAND);
+SM_APPEND_CHAR('g');
+SM_APPEND_CHAR(c);
+if ((c = *p++) == '\0')
+p--;
+SM_APPEND_CHAR(c);
+buflim--;
+buflim++;
+buflim--;
+SM_APPEND_CHAR(' ');
+SM_APPEND_CHAR(c);
+buflim++;
+bp--;
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(*p);
+p++;
+bufhead = bp;
+bp = bufhead;
+SM_APPEND_CHAR('"');
+p++;
+addrhead = p;
+for (q = addrhead; q < p; )
+c = *q++;
+SM_APPEND_CHAR('\\');
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(c);
+bp--;
+SM_APPEND_CHAR('"');
+while ((c = *p++) != ':')
+SM_APPEND_CHAR(c);
+p++;
+SM_APPEND_CHAR(*p);
+SM_APPEND_CHAR(c);
+if (strchr(MustQuoteChars, c) != NULL)
+buflim--;
+bp = bufhead;
+SM_APPEND_CHAR('"');
+for (q = addrhead; q < p; )
+c = *q++;
+SM_APPEND_CHAR('\\');
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(c);
+bp--;
+SM_APPEND_CHAR('"');
+while ((c = *p++) != '<')
+SM_APPEND_CHAR(c);
+buflim++;
+bp--;
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(' ');
+#define SM_APPEND_CHAR(c)                   \
+do                          \
+{                           \
+printf ("bp-obp = %d   buflim-obp=%d\n", (bp-obp), (buflim-obp)); \
+if (SM_HAVE_ROOM)               \
+*bp++ = (c);                \
+else                        \
+goto returng;               \
+} while (0)

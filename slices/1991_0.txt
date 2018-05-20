@@ -1,0 +1,6 @@
+void FUN1(void * VAR3)
+char * * VAR4 = (char * *)VAR3;
+char * VAR1 = (*VAR4);
+memmove(VAR2, VAR1, strlen(VAR1)*sizeof(char));
+FUN2(VAR1);
+free(VAR1);

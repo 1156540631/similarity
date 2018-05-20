@@ -1,0 +1,16 @@
+int globalReturnsTrue() 
+return 1;
+int globalReturnsFalse() 
+return 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(globalReturnsTrue())
+strcpy(data, "fixedstringtest");
+if(globalReturnsTrue())
+goodG2B2VaSinkB(data, data);
+static void goodG2B2VaSinkB(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

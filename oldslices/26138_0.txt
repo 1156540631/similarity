@@ -1,0 +1,16 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&pozzuolanic_gynecophorous,"ANTHROPOIDEA_RAILWAYED");
+if (pozzuolanic_gynecophorous != 0) {;
+candiel_unspherical = pozzuolanic_gynecophorous;
+galactopathy_renoir(1,candiel_unspherical);
+void galactopathy_renoir(int posi_unimplicated,... )

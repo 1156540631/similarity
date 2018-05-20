@@ -1,0 +1,19 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *plusiinae_skeletin;
+stonesoup_read_taint(&plusiinae_skeletin,"DIETARIES_FLOCCULATING");
+fugitating_hydrophilite = ((char *)plusiinae_skeletin);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(fugitating_hydrophilite)+1, fugitating_hydrophilite, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, fugitating_hydrophilite, strlen(fugitating_hydrophilite) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&plusiinae_skeletin,"DIETARIES_FLOCCULATING");
+fugitating_hydrophilite = ((char *)plusiinae_skeletin);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(fugitating_hydrophilite)+1, fugitating_hydrophilite, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, fugitating_hydrophilite, strlen(fugitating_hydrophilite) + 1);

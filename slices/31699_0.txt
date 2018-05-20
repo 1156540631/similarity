@@ -1,0 +1,18 @@
+typedef struct _CLASS28
+char * VAR10;
+} CLASS28;
+char * VAR4;
+CLASS28 CLASS2;
+char VAR2[100];
+memset(VAR2, 'A', 100-1);
+VAR2[100-1] = '\0';
+VAR4 = VAR2;
+CLASS2.VAR10 = VAR4;
+FUN50(CLASS2);
+void FUN50(CLASS28 CLASS2)
+char * VAR4 = CLASS2.VAR10;
+char VAR5[100];
+memset(VAR5, 'C', 100-1);
+VAR5[100-1] = '\0';
+strncpy(VAR5, VAR4, strlen(VAR5));
+VAR5[100-1] = '\0';

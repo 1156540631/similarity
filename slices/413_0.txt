@@ -1,0 +1,3 @@
+char	VAR1[255];
+strlcpy(VAR1, VAR2 + 4, sizeof(VAR1));
+VAR1[strlen(VAR1) - 1] = '\0';

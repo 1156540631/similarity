@@ -1,0 +1,15 @@
+return c - 32;
+stonesoup_buff = (char *) malloc (sizeof(char) * 20);
+memset(stonesoup_buff, 0, 20);
+realpath(jfif_pinners, stonesoup_buff);
+stonesoup_opt_var = strlen( stonesoup_buff);
+stonesoup_toupper(stonesoup_buff[stonesoup_oc_i]);
+stonesoup_buff[stonesoup_oc_i] =
+stonesoup_printf("%s\n", stonesoup_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_buff);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_toupper(stonesoup_buff[stonesoup_oc_i]);
+stonesoup_buff[stonesoup_oc_i] =
+stonesoup_printf("%s\n", stonesoup_buff);

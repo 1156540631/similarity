@@ -1,0 +1,11 @@
+CLASS1::FUN1(CLASS4* VAR2, int32_t VAR4, uint32_t VAR5) const
+FUN2(VAR2, VAR4);
+FUN7(VAR2);
+fprintf(VAR2, " [VAR6=%VAR6]", VAR6);
+fprintf(VAR2, " [view=%VAR6]", static_cast<void*>(FUN3()));
+fprintf(VAR2, " FUN2=%VAR6", static_cast<void*>(FUN4()));
+fprintf(VAR2, " prev-in-flow=%VAR6", static_cast<void*>(FUN5()));
+fprintf(VAR2, " FUN2-in-flow=%VAR6", static_cast<void*>(FUN6()));
+fprintf(VAR2, " IBSplitSpecialSibling=%VAR6", VAR7);
+void* VAR8 = FUN8().FUN5(IBSplitSpecialPrevSibling());
+fprintf(VAR2, " IBSplitSpecialPrevSibling=%VAR6", VAR8);

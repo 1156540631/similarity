@@ -1,0 +1,5 @@
+va_list ap;
+va_start(ap, fmt);
+failure_message(fmt, ap);
+static void failure_message(const char *msg_format, va_list ap);
+va_end(ap);

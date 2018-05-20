@@ -1,0 +1,12 @@
+char * VAR2;
+VAR2 = NULL;
+switch(5)
+default:
+VAR2 = new char[100];
+VAR2[0] = '\0';
+char VAR20[100];
+memset(VAR20, 'C', 100-1);
+VAR20[100-1] = '\0';
+for (VAR21 = 0; VAR21< 100; VAR21++)
+VAR2[VAR21] = VAR20[VAR21];
+VAR2[100-1] = '\0';

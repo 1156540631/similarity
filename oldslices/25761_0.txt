@@ -1,0 +1,3 @@
+assam_gorhen = getenv("LYCANTHROPOUS_CARBOLXYLOL");
+if (assam_gorhen != 0) {;
+bescourge_mids(assam_gorhen);

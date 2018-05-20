@@ -1,0 +1,18 @@
+rewind(VAR31);
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+*VAR34 = NULL;
+char VAR137[1024];
+char *VAR164;
+FUNC6(&VAR164,"VAR1");
+VAR166 = ((char *)VAR164);
+memset(VAR137,0,1024);
+strncpy(VAR137,VAR166,sizeof(VAR137));
+void FUNC6(char** VAR34, char* VAR30) {
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+FUNC6(&VAR164,"VAR1");
+VAR166 = ((char *)VAR164);
+strncpy(VAR137,VAR166,sizeof(VAR137));

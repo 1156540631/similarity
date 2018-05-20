@@ -1,0 +1,11 @@
+woodbox_gaiters = getenv("PELECYPODOUS_AUSGLEICHE");
+if (woodbox_gaiters != 0) {;
+perceivability_cabbagehead = ((int )(strlen(woodbox_gaiters)));
+nonfaltering_sublating = ((char *)(malloc(perceivability_cabbagehead + 1)));
+if (nonfaltering_sublating == 0) {
+memset(nonfaltering_sublating,0,perceivability_cabbagehead + 1);
+memcpy(nonfaltering_sublating,woodbox_gaiters,perceivability_cabbagehead);
+galactoscope_soaked[ *extrasomatic_subaffluence] = nonfaltering_sublating;
+subtilely_conoidal = galactoscope_soaked[ *extrasomatic_subaffluence];
+signoras_electrophoric(subtilely_conoidal);
+void signoras_electrophoric(char *leathernecks_cochranea);

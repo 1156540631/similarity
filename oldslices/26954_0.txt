@@ -1,0 +1,2 @@
+char buf[MAXSIZE];
+if(fgets(buf, sizeof buf, stdin))

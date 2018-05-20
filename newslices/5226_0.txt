@@ -1,0 +1,3 @@
+int FUN1(CLASS1 *VAR1,CLASS2 *VAR2,const char *VAR3)
+char *VAR4;
+VAR5 = (strtol(VAR3 + 1,&VAR4,0));

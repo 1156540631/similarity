@@ -1,0 +1,5 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+memcpy(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

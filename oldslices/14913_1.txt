@@ -1,0 +1,11 @@
+void * data;
+vector<void *> dataVector;
+data = NULL;
+data = (void *)WIDE_STRING;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+badSink(dataVector);
+void badSink(vector<void *> dataVector)
+void * data = dataVector[2];
+size_t dataLen = strlen((char *)data);

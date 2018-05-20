@@ -1,0 +1,4 @@
+VAR1 = FUN1("GRANDNEPHEWS_OUTBEGGED");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = ((char *)VAR1);
+VAR4 = &VAR2;

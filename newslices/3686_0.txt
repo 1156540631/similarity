@@ -1,0 +1,5 @@
+int * &VAR1 = VAR2;
+int * VAR2 = VAR1;
+memmove(VAR2, VAR3, 100*sizeof(int));
+FUN1(VAR2[0]);
+free(VAR2);

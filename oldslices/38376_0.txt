@@ -1,0 +1,8 @@
+int h,j;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+for(h = 0; h < 1; h++)
+strcpy(data, "fixedstringtest");
+for(j = 0; j < 1; j++)
+fprintf(stdout, data);

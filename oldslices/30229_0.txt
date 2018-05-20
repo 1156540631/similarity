@@ -1,0 +1,18 @@
+typedef struct _CWE126_Buffer_Overread__CWE129_connect_socket_67_structType
+int structFirst;
+} CWE126_Buffer_Overread__CWE129_connect_socket_67_structType;
+int data;
+CWE126_Buffer_Overread__CWE129_connect_socket_67_structType myStruct;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myStruct.structFirst = data;
+CWE126_Buffer_Overread__CWE129_connect_socket_67b_goodB2GSink(myStruct);
+void CWE126_Buffer_Overread__CWE129_connect_socket_67b_goodB2GSink(CWE126_Buffer_Overread__CWE129_connect_socket_67_structType myStruct)
+int data = myStruct.structFirst;
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+printIntLine(buffer[data]);

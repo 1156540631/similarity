@@ -1,0 +1,5 @@
+int (*ptr1)[4];
+ptr1 = memory_allocation_failure_014_func_001();
+for ( j=0 ;j<4; j++)
+*(ptr1[i]+j) += *(ptr1[i]+j);
+free(ptr1);

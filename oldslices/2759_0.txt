@@ -1,0 +1,11 @@
+list<int *> dataList;
+data = (int *)malloc(10*sizeof(int));
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<int *> dataList)
+int * data = dataList.back();
+memcpy(data, source, 10*sizeof(int));
+printIntLine(data[0]);
+free(data);

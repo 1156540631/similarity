@@ -1,0 +1,5 @@
+data = NULL;
+badSource(data);
+void badSource(int64_t * &data);
+printLongLongLine(*data);
+free(data);

@@ -1,0 +1,3 @@
+jmp_buf fifine_tunisian;
+seriation_quadrateness = setjmp(fifine_tunisian);
+longjmp(fifine_tunisian,1);

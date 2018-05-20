@@ -1,0 +1,4 @@
+VAR1 = FUN1("CARIA_PRODUCIBLE");
+if (VAR1 != 0) {;
+FUN2(VAR1);
+void FUN2(char *const VAR2);

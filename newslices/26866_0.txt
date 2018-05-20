@@ -1,0 +1,2 @@
+VAR1 = 0;
+printf("VAR2: read VAR3: %s\n", FUN1(VAR1));

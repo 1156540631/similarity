@@ -1,0 +1,8 @@
+char * data;
+CWE134_Uncontrolled_Format_String__char_console_printf_34_unionType myUnion;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+myUnion.unionFirst = data;
+char * data = myUnion.unionSecond;
+printf(data);

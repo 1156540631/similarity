@@ -1,0 +1,4 @@
+dnptrs = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+dnptrs2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+comp_dn = (unsigned char *) malloc(200*sizeof(unsigned char));
+comp_dn2 = (unsigned char *) malloc(200*sizeof(unsigned char));

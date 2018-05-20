@@ -1,0 +1,11 @@
+list<char *> dataList;
+data = new char[10+1];
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));
+void goodG2BSink(list<char *> dataList)
+char * data = dataList.back();
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

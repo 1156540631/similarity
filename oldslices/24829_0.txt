@@ -1,0 +1,11 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+void stonesoup_handle_taint(char *carthy_numinously)
+char stonesoup_source[1024];
+bsgened_cosmical = ((char *)carthy_numinously);
+strncpy(stonesoup_source, bsgened_cosmical, sizeof(stonesoup_source));

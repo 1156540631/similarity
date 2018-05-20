@@ -1,0 +1,20 @@
+#define BUFFER_INC 
+static int doapr_outch(
+char **sbuffer,
+char **buffer,
+size_t *currlen,
+size_t *maxlen,
+int c)
+if (buffer) {
+while (*currlen >= *maxlen) {
+*maxlen += BUFFER_INC;
+if (*buffer == NULL) {
+*buffer = func(buffer, &maxlen)
+static char** func(char **buffer, size_t **maxlen)
+*buffer = OPENSSL_malloc(**maxlen);
+return *buffer
+*buffer = func(buffer, maxlen)
+if (*buffer == NULL)
+return 0;
+if (*currlen > 0) {
+memcpy(*buffer, *sbuffer, *currlen);

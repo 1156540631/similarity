@@ -1,0 +1,9 @@
+ep_packet_mem.debug_use_chunks = (getenv("WIRESHARK_DEBUG_EP_NO_CHUNKS") == NULL);
+ep_packet_mem.debug_use_canary = ep_packet_mem.debug_use_chunks && (getenv("WIRESHARK_DEBUG_EP_NO_CANARY") == NULL);
+emem_init_chunk(&ep_packet_mem);
+emem_init_chunk(emem_header_t *mem)
+if (mem->debug_use_canary)
+emem_canary_init(mem->canary);
+if (mem->debug_use_chunks)
+emem_init_chunk(&ep_packet_mem);
+emem_canary_init(guint8 *canary)

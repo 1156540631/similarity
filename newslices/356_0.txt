@@ -1,0 +1,4 @@
+if (VAR1 >= 20) {
+if (VAR1 >= 20) {
+#VAR2 VAR3
+FUN1("     VAR4: %s", FUN2(VAR5));

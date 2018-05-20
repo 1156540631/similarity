@@ -1,0 +1,17 @@
+apium_philipsburg = getenv("MERMIS_DILATOMETRY");
+if (apium_philipsburg != 0) {;
+lustiness_counterfix[20] = apium_philipsburg;
+butadiene_necrophagous[5] = lustiness_counterfix;
+wakamba_avaria =  *(butadiene_necrophagous +  *dorsoventrad_reedplot);
+CONOIDAL_BACKPOINTER(wakamba_avaria);
+void scorbutic_muteness(char **indirectly_yearth)
+CONOIDAL_BACKPOINTER(wakamba_avaria);
+effortlessly_vashon = ((char *)indirectly_yearth[20]);
+strncpy(stonesoup_buffer, effortlessly_vashon, stonesoup_buffer_len);
+*stonesoup_buffer_ptr = effortlessly_vashon;
+tracepoint(stonesoup_trace, variable_address, "stonesoup_buffer_ptr", stonesoup_buffer_ptr, "TRIGGER-STATE");
+tracepoint(stonesoup_trace, variable_address, "*stonesoup_buffer_ptr", *stonesoup_buffer_ptr, "TRIGGER-STATE");
+strncpy(stonesoup_buffer, effortlessly_vashon, stonesoup_buffer_len);
+stonesoup_tainted_len = strlen( *stonesoup_buffer_ptr);
+if (stonesoup_buffer_ptr != 0) {
+free(stonesoup_buffer_ptr);

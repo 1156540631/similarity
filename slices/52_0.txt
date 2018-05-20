@@ -1,0 +1,94 @@
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+const char *name,
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+DisplaySurface *surface = qemu_console_surface(VAR1->vga.con);
+if (!vmsvga_verify_rect(surface, "vmsvga_copy_rect/src", x0, y0, w, h)) {
+const char *name,
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+if (!vmsvga_verify_rect(surface, "vmsvga_copy_rect/dst", x1, y1, w, h)) {
+const char *name,
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+DisplaySurface *surface = qemu_console_surface(VAR1->vga.con);
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+const char *name,
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+dpy_cursor_define(VAR1->vga.con, qc);
+dx = vmsvga_fifo_read(VAR1);
+if (vmsvga_copy_rect(VAR1, x, y, dx, dy, VAR13, VAR14) == 0) {
+int x0, int y0, int x1, int y1, int w, int h)
+if (!vmsvga_verify_rect(surface, "vmsvga_copy_rect/dst", x1, y1, w, h)) {
+int x, int y, int w, int h)
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+trace_vmware_palette_write(VAR1->index, value);
+trace_vmware_value_write(VAR1->index, value);
+vmsvga_fifo_run(VAR1);
+DisplaySurface *surface = qemu_console_surface(VAR1->vga.con);
+VAR1->vga.vram_ptr);
+dpy_gfx_replace_surface(VAR1->vga.con, surface);
+struct vmsvga_state_s *VAR1 = opaque;
+vmsvga_value_write(VAR1, VAR6, VAR17);
+static inline int vmsvga_fill_rect(struct vmsvga_state_s *VAR1,
+if (vmsvga_fill_rect(VAR1, colour, x, y, VAR13, VAR14) == 0) {
+vmsvga_fifo_read(VAR1);
+static inline uint32_t vmsvga_fifo_read(struct vmsvga_state_s *VAR1)
+return le32_to_cpu(vmsvga_fifo_read_raw(VAR1));
+vmsvga_fifo_read(VAR1);
+vmsvga_fifo_read(VAR1);
+args = 7 + (vmsvga_fifo_read(VAR1) >> 2);
+vmsvga_fifo_read(VAR1);
+x = vmsvga_fifo_read(VAR1);
+static inline uint32_t vmsvga_fifo_read_raw(struct vmsvga_state_s *VAR1)
+uint32_t cmd = VAR1->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(VAR1));
+x = vmsvga_fifo_read(VAR1);
+if (vmsvga_copy_rect(VAR1, x, y, dx, dy, VAR13, VAR14) == 0) {
+int x0, int y0, int x1, int y1, int w, int h)
+if (!vmsvga_verify_rect(surface, "vmsvga_copy_rect/src", x0, y0, w, h)) {
+int x, int y, int w, int h)
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+static inline uint32_t vmsvga_fifo_read(struct vmsvga_state_s *VAR1)
+vmsvga_fifo_read(VAR1);
+x = vmsvga_fifo_read(VAR1);
+static inline uint32_t vmsvga_fifo_read(struct vmsvga_state_s *VAR1)
+return le32_to_cpu(vmsvga_fifo_read_raw(VAR1));
+static inline uint32_t vmsvga_fifo_read_raw(struct vmsvga_state_s *VAR1)
+uint32_t cmd = VAR1->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(VAR1));
+x = vmsvga_fifo_read(VAR1);
+if (vmsvga_copy_rect(VAR1, x, y, dx, dy, VAR13, VAR14) == 0) {
+int x0, int y0, int x1, int y1, int w, int h)
+if (!vmsvga_verify_rect(surface, "vmsvga_copy_rect/src", x0, y0, w, h)) {
+int x, int y, int w, int h)
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+static void vmsvga_fifo_run(struct vmsvga_state_s *VAR1)
+VAR6 = vmsvga_fifo_length(VAR1);
+vmsvga_fifo_run(VAR1);
+vmsvga_update_rect_flush(VAR1);
+static inline int vmsvga_fifo_length(struct vmsvga_state_s *VAR1)
+VAR6 = vmsvga_fifo_length(VAR1);
+x = vmsvga_fifo_read(VAR1);
+static void vmsvga_value_write(void *opaque, uint32_t VAR5, uint32_t value)
+trace_vmware_scratch_write(VAR1->index, value);
+vmsvga_fifo_run(VAR1);
+static void vmsvga_update_display(void *opaque)
+vmsvga_check_size(VAR1);
+static inline void vmsvga_check_size(struct vmsvga_state_s *VAR1)
+vmsvga_check_size(VAR1);
+vmsvga_fifo_run(VAR1);
+static inline void vmsvga_update_rect_flush(struct vmsvga_state_s *VAR1)
+rect = &VAR1->redraw_fifo[VAR1->redraw_fifo_first++];
+vmsvga_update_rect(VAR1, rect->x, rect->y, rect->w, rect->h);
+int x, int y, int w, int h)
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+int x, int y, int w, int h)
+fprintf(stderr, "%VAR1: x was < 0 (%d)\n", name, x);
+static inline int vmsvga_copy_rect(struct vmsvga_state_s *VAR1,
+if (vmsvga_copy_rect(VAR1, x, y, dx, dy, VAR13, VAR14) == 0) {
+x = vmsvga_fifo_read(VAR1);
+static void vmsvga_io_write(void *opaque, hwaddr VAR6,
+vmsvga_value_write(VAR1, VAR6, VAR17);
+static inline void vmsvga_cursor_define(struct vmsvga_state_s *VAR1,
+vmsvga_cursor_define(VAR1, &cursor);
+vmsvga_fifo_read(VAR1);

@@ -1,0 +1,9 @@
+char * VAR1;
+VAR1 = NULL;
+if(VAR43)
+VAR1 = new char[100];
+VAR1[0] = '\0';
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncpy(VAR1, VAR3, 100-1);

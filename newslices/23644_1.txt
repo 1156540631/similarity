@@ -1,0 +1,6 @@
+VAR1[64 - 1] = '\';
+VAR2[1023] = '\';
+if (strlen(VAR2) + 1 <= 64) {
+FUN1(VAR3, VAR4, "VAR2", strlen(VAR2)+1, VAR2, "VAR5-VAR6");
+FUN1(VAR3, VAR4, "VAR1", strlen(VAR1)+1, VAR1, "VAR5-VAR6");
+strncpy(VAR1, VAR2, sizeof(VAR2));

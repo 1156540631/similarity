@@ -1,0 +1,15 @@
+VAR1 = -1;
+VAR2 = FUN1(VAR3, VAR4, VAR5 - 1, 0);
+if (VAR2 == VAR6 || VAR2 == 0)
+break;
+VAR4[VAR2] = '\';
+VAR1 = atoi(VAR4);
+VAR7 = 1;
+FUN2(VAR1);
+static void FUN2(int VAR1)
+if(VAR7)
+int * VAR8 = (int *)malloc(10 * sizeof(int));
+for (VAR9 = 0; VAR9 < 10; VAR9++)
+VAR8[VAR9] = 0;
+if (VAR1 >= 0 && VAR1 < (10))
+VAR8[VAR1] = 1;

@@ -1,0 +1,2 @@
+char buf[BUFSIZE];
+strcpy(buf, argv[1]);

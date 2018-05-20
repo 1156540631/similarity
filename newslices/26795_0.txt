@@ -1,0 +1,11 @@
+char VAR1[200], VAR2[200];
+VAR3 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR4 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR5 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR6 = (unsigned char *) malloc(200*sizeof(unsigned char));
+strcpy(VAR2, "VAR7.VAR8.VAR9.VAR10");
+*VAR4++ = (CLASS1 *) VAR2;
+*VAR4-- = VAR11;
+VAR12 = VAR11;
+VAR13 = FUN1((const char *) VAR2, VAR6, 200, VAR4, VAR12);
+printf("VAR13 = %d\n", VAR13);

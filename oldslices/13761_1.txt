@@ -1,0 +1,10 @@
+GetBackupLogPath(LPWSTR path, LPCWSTR basePath, int logNumber)
+WCHAR logName[64];
+wchar * dataCopy = logName;
+wchar * logName = dataCopy;
+wcscpy(path, basePath);
+if (logNumber <= 0)
+swprintf(logName, sizeof(logName) / sizeof(logName[0]),L"maintenanceservice.log");
+else
+swprintf(logName, sizeof(logName) / sizeof(logName[0]),L"maintenanceservice-%d.log", logNumber);
+return PathAppendSafe(path, logName);

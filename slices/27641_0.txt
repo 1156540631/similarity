@@ -1,0 +1,12 @@
+#define VAR8 "AAAAAAAAAA"
+char * VAR1;
+VAR1 = NULL;
+VAR2 = 0;
+VAR1 = FUN2(VAR1);
+char * FUN2(char * VAR1)
+if(VAR2) {}
+else
+VAR1 = (char *)malloc((10+1)*sizeof(char));
+return VAR1;
+char VAR9[10+1] = VAR8;
+memmove(VAR1, VAR9, (strlen(VAR9) + 1) * sizeof(char));

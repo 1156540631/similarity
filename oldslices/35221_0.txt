@@ -1,0 +1,8 @@
+char dataBuffer[100];
+data = dataBuffer;
+data = goodG2BSource(data);
+static char * goodG2BSource(char * data)
+data[50-1] = '\0';
+return data;
+char dest[50] = "";
+strncat(dest, data, strlen(data));

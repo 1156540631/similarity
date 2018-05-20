@@ -1,0 +1,13 @@
+#define VAR1 "AAAAAAAAAA"
+static int FUN29()
+return 1;
+static int FUN30()
+return 0;
+char * VAR2;
+char VAR3[10];
+char VAR4[10+1];
+if(FUN29())
+VAR2 = VAR4;
+VAR2[0] = '\0';
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);

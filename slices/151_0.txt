@@ -1,0 +1,3 @@
+char *VAR1 = nullptr;
+VAR8 = VAR2->FUN1(VAR3, VAR4, &VAR1);
+if (!VAR1 || (int32_t)strlen(VAR1) > VAR5) {

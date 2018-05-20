@@ -1,0 +1,11 @@
+list<wchar_t *> dataList;
+data = new wchar_t[10+1];
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+wchar_t source[10+1] = SRC_STRING;
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

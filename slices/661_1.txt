@@ -1,0 +1,10 @@
+WCHAR VAR3[VAR2 + 1];
+wcscpy(VAR3, VAR1);
+if (!FUN1(VAR3, VAR3"update.status")) {
+VAR4,
+VAR5 |
+CLASS1 VAR7(FUN5(VAR3, VAR11,
+NULL, VAR6, 0, NULL));
+char VAR27[32] = { 0 };
+DWORD FUN2;
+if (!FUN3(VAR7, VAR27, sizeof(VAR27), &FUN2, NULL)) {

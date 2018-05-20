@@ -1,0 +1,8 @@
+VAR143=NULL;
+char *str = "This is a string";
+FUNC43(strlen(str));
+strcpy(VAR143,str);
+void FUNC43 (int VAR144)
+VAR143= malloc(sizeof(char) * (VAR144+1));
+FUNC43(strlen(str));
+strcpy(VAR143,str);

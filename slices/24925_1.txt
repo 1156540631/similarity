@@ -1,0 +1,7 @@
+void FUNC25(char *VAR127)
+FUNC26(VAR127);
+void FUNC26(char *VAR126)
+VAR125 = ((char *)VAR126);
+VAR27 = (char*) malloc(8 * sizeof(char));
+FUNC5(VAR17, VAR252, "VAR98", strlen(VAR125)+1, VAR125, "TRIGGER-STATE");
+strncpy(VAR27, VAR125, strlen(VAR125) + 1);

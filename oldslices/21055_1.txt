@@ -1,0 +1,20 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&tanghin_sunsetty,"MOLDS_BABAYLAN");
+if (tanghin_sunsetty != 0) {;
+cereus_albatrosses = ((char *)tanghin_sunsetty);
+sprintf(stonesoup_buffer_stack,cereus_albatrosses);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_buffer_stack", stonesoup_buffer_stack, "TRIGGER-STATE");
+stonesoup_printf("%s\n",stonesoup_buffer_stack);
+if (tanghin_sunsetty != 0)
+free(((char *)tanghin_sunsetty));
+void stonesoup_printf(char * format, ...) {

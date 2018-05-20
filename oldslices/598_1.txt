@@ -1,0 +1,3 @@
+const WCHAR *updateInfoDir,
+WCHAR slogFile[MAX_PATH + 1];
+wcscpy(slogFile, updateInfoDir);

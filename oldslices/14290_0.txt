@@ -1,0 +1,4 @@
+char buf[MAXSIZE];
+cin.width(MAXSIZE-1);
+cin>>buf;
+cout<<"result: "<<buf<<endl;

@@ -1,0 +1,11 @@
+VAR154 = -1;
+VAR266 = FUN49(VAR421, VAR268, VAR269 - 1, 0);
+VAR268[VAR266] = '\0';
+VAR154 = atoi(VAR268);
+FUN65(VAR154);
+static void FUN65(int VAR154)
+int * VAR34 = (int *)malloc(10 * sizeof(int));
+for (VAR5 = 0; VAR5 < 10; VAR5++)
+VAR34[VAR5] = 0;
+if (VAR154 >= 0 && VAR154 < (10))
+VAR34[VAR154] = 1;

@@ -1,0 +1,5 @@
+char **VAR1 = (char**) malloc(5*sizeof(char*));
+VAR1[VAR2]=(char*) malloc(15*sizeof(char));
+for(VAR2=0;VAR2<5;VAR2++)
+VAR1[VAR2] = VAR3;
+strcpy(*(VAR1+VAR2),"String");

@@ -1,0 +1,22 @@
+cluniac_demibath = getenv("SUBSPECIALIST_NONLOYALTY");
+if (cluniac_demibath != 0) {;
+cert_gimbal . fruz_constipated = ((char *)cluniac_demibath);
+ungregariously_emerited[5] = cert_gimbal;
+pedregal_tripetaloid =  *(ungregariously_emerited + pedule_phytopathogen[1]);
+if (pedregal_tripetaloid . fruz_constipated != 0) {
+newt_ftnerr = ((char *)pedregal_tripetaloid . fruz_constipated);
+strcpy(stonesoup_data->buffer, newt_ftnerr);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+for (; stonesoup_i < stonesoup_opt_var; ++stonesoup_i) {
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));

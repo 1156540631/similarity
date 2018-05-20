@@ -1,0 +1,4 @@
+const char *VAR1 = "";
+if (VAR28 == 8) VAR1 = "0";
+if (VAR28 == 16) VAR1 = "0x";
+VAR2 = VAR3 - FUN1(VAR4, VAR5) - (VAR6 ? 1 : 0) - strlen(VAR1);

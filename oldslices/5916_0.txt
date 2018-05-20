@@ -1,0 +1,5 @@
+void badSink(vector<twoIntsStruct *> dataVector)
+twoIntsStruct * data = dataVector[2];
+memmove(data, source, 100*sizeof(twoIntsStruct));
+printStructLine(&data[0]);
+free(data);

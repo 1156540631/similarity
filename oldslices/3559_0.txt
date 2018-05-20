@@ -1,0 +1,3 @@
+jmp_buf palladinize_choloidinic;
+bueche_mansuetude = setjmp(palladinize_choloidinic);
+longjmp(palladinize_choloidinic,1);

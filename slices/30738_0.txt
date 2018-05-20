@@ -1,0 +1,13 @@
+#define VAR8 L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define VAR9 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int VAR22 = 0;
+VAR2 = NULL;
+VAR2 = (void *)VAR8;
+VAR22 = 0;
+FUN5(VAR2);
+static void FUN5(void * VAR2)
+if(VAR22) { }
+else
+size_t VAR12 = wcslen((wchar_t *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, sizeof(wchar_t));
+memcpy(VAR13, VAR2, (VAR12+1)*sizeof(wchar_t));

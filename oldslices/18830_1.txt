@@ -1,0 +1,4 @@
+void badSink_c(char * data)
+data = new char[10];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

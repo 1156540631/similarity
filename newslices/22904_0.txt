@@ -1,0 +1,32 @@
+return FUN1("image2",((void *)0),((void *)0));
+return FUN2(VAR1 -> VAR2,&VAR1 -> VAR3,VAR4,VAR1,0,VAR1 -> VAR5);
+if ((VAR6 = FUN3(&VAR1 -> VAR2,VAR4,1 | VAR1 -> VAR7,(&VAR1 -> VAR8),VAR9)) < 0) {
+return FUN2(VAR1 -> VAR2,&VAR1 -> VAR3,VAR4,VAR1,0,VAR1 -> VAR5);
+if (!FUN4(VAR4)) {
+char VAR10[20];
+VAR11 = 0;
+FUN5(FUN6(( *VAR12))){
+VAR13 =  *(VAR12++);
+VAR11 = VAR11 * '\' + ( *(VAR12++)) - 48;
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR11,VAR15);
+VAR16 = (strlen(VAR10));
+memcpy(VAR17,VAR10,VAR16);
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR11,VAR15);
+int FUN4(const char *VAR4)
+return VAR4 && FUN8(VAR18,(sizeof(VAR18)),VAR4,1) >= 0;
+int FUN8(char *VAR18,int VAR19,const char *VAR20,int VAR15)
+VAR12 = VAR20;
+VAR13 =  *(VAR12++);
+VAR11 = VAR11 * '\' + ( *(VAR12++)) - 48;
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR11,VAR15);
+VAR16 = (strlen(VAR10));
+FUN7(VAR10,sizeof(VAR10),"%0*VAR14",VAR11,VAR15);
+CLASS1 *FUN1(const char *VAR21,const char *VAR4,const char *VAR22)
+if (!VAR21 && VAR4 && FUN4(VAR4) && (FUN9(VAR4)) != VAR23) {
+int FUN2(CLASS2 *VAR2,CLASS3 **VAR24,const char *VAR4,void *VAR25,unsigned int VAR26,unsigned int VAR27)
+if (!FUN4(VAR4)) {
+int FUN10(CLASS4 **VAR28,const char *VAR4,CLASS3 *VAR24,CLASS5 **VAR9)
+if ((VAR6 = FUN11(VAR1,VAR4,&VAR29)) < 0) {
+static int FUN11(CLASS4 *VAR1,const char *VAR4,CLASS5 **VAR9)
+if ((VAR6 = FUN3(&VAR1 -> VAR2,VAR4,1 | VAR1 -> VAR7,(&VAR1 -> VAR8),VAR9)) < 0) {
+if (!FUN4(VAR4)) {

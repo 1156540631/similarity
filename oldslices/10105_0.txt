@@ -1,0 +1,5 @@
+PassRefPtr<Attr> Element::removeAttributeNode(Attr* attr, ExceptionCode& ec)
+if (attr->ownerElement() != this) {
+if (document() != attr->document()) {
+NamedNodeMap* attrs = attributes(true);
+return static_pointer_cast<Attr>(attrs->removeNamedItem(attr->qualifiedName(), ec));

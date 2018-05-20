@@ -1,0 +1,3 @@
+int VAR1 = 0;
+if (!VAR2) VAR1 |= 1;
+printf("record(%d): %02x %02x\n", VAR1, VAR3[0], VAR3[1]);

@@ -1,0 +1,5 @@
+char buf[][25]={"This is a String",
+str = invalid_memory_access_015_func_001(buf[j]);
+static char * invalid_memory_access_015_func_001 (char *str1)
+i = strlen(str1);
+str_rev = (char *) malloc(i+1);

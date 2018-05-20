@@ -1,0 +1,49 @@
+CLASS1 VAR3;
+FUN4( VAR3, VAR4 );
+char *VAR5;
+int VAR16 = vasprintf( &VAR5, VAR4, VAR3 );
+int VAR2 = strlen( *VAR7 ) + strlen( VAR5 ) + 1;
+char *VAR10 = realloc( *VAR7, VAR2 );
+strcat( VAR10, VAR5 );
+*VAR7 = VAR10;
+CLASS1 VAR1 = 0, VAR2 = 0;
+VAR2++;
+VAR2++;
+VAR1++;
+*VAR3 = malloc( VAR2 + 1 );
+memcpy( *VAR3, VAR4, VAR2 + 1 );
+char *VAR15 = malloc( VAR2 + 3*VAR1 + 2 );
+*VAR3 = VAR15;
+VAR7 = FUN2( VAR7 ? (VAR7+1) : VAR5 );
+" <trackList>\VAR17", VAR7 ) == -1)
+char *VAR8;
+FUN1( &VAR8, VAR5 );
+if( FUN1( &VAR8, "%VAR1", VAR12 ) < 0 ) return -1;
+char *VAR14 = strdup( VAR8 );
+if( FUN1( &VAR14, "%VAR1", VAR9 ) < 0 ) return -1;
+if( FUN1( VAR11,
+"  <track>\VAR17"
+if( FUN1( VAR11,
+" </trackList>\VAR17"
+if( FUN3( VAR11, VAR18, true ) < 0 ) return -1;
+if( FUN1( VAR11, " </VAR6>\VAR17</playlist>\VAR17" ) < 0 ) return -1;
+if( FUN1( VAR11, "  <vlc:node title=\"%VAR1\">\VAR17", VAR17->VAR23 ) < 0 )
+FUN3( VAR11, VAR17->child, false );
+if( FUN1( VAR11, "   <vlc:item tid=\"%d\" />\VAR17", VAR13->VAR2 ) < 0 )
+if( FUN1( VAR11, "  </vlc:node>\VAR17" ) < 0 )
+static int FUN1( char **VAR7, const char *VAR4, ... )
+FUN4( VAR3, VAR4 );
+int VAR16 = vasprintf( &VAR5, VAR4, VAR3 );
+int VAR2 = strlen( *VAR7 ) + strlen( VAR5 ) + 1;
+char *VAR10 = realloc( *VAR7, VAR2 );
+strcat( VAR10, VAR5 );
+static int FUN4( char **VAR11, CLASS2 *VAR12,
+if( asprintf( VAR11, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\VAR17"
+if( FUN1( VAR11,
+static int FUN3( char **VAR11, node *VAR17, bool b_root )
+if( FUN1( VAR11, "  </vlc:node>\VAR17" ) < 0 )
+static int FUN3( char **VAR11, node *VAR17, bool b_root );
+if( FUN1( VAR11, " </VAR6>\VAR17</playlist>\VAR17" ) < 0 ) return -1;
+static int FUN1( char **VAR3, const char *VAR4 )
+FUN1( &VAR8, VAR5 );
+if( FUN1( &VAR8, "%VAR1", VAR12 ) < 0 ) return -1;

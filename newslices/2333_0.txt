@@ -1,0 +1,5 @@
+union VAR1 VAR2 = {0};
+VAR3 VAR4;
+FUN1(VAR4,VAR5);
+VAR2 = (FUN2(VAR4,union VAR1 ));
+free(((char *)VAR2 . VAR6));

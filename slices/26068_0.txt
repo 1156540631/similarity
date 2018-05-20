@@ -1,0 +1,17 @@
+VAR412 = getenv("TRANSGRESSED_SULFONAL");
+if (VAR412 != 0) {;
+VAR413 = ((int )(strlen(VAR412)));
+VAR411 = ((char *)(malloc(VAR413 + 1)));
+if (VAR411 == 0) {
+memset(VAR411,0,VAR413 + 1);
+memcpy(VAR411,VAR412,VAR413);
+FUN111(VAR411);
+void FUN111(char *const VAR414)
+VAR415 = ((char *)((char *)VAR414));
+for (VAR10 = 0; VAR10 < strlen(VAR415); ++VAR10) {
+VAR415[VAR10],
+VAR11->VAR12[(int) VAR415[VAR10]]);
+tracepoint(VAR31, VAR251, "((int) STONESOUP_TAINT_SOURCE[VAR10])", ((int) VAR415[VAR10]), &(VAR415[VAR10]), "TRIGGER-STATE");
+if (((char *)VAR414) != 0)
+free(((char *)((char *)VAR414)));
+void FUN69(char * VAR205, ...) {

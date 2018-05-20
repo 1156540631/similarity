@@ -1,0 +1,4 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+size_t dataLen = strlen(data);
+if (fgets(data+dataLen, (int)(100-dataLen), stdin) != NULL)

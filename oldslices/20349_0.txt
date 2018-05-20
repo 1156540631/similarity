@@ -1,0 +1,17 @@
+va_list va;
+char buf[1024];
+__builtin_va_start(va,fmt);
+vsnprintf(buf,sizeof(buf),fmt,va);
+update_benchmark(((void *)0));
+update_benchmark("encode_audio %d.%d",ost -> file_index,ost -> index);
+update_benchmark(((void *)0));
+update_benchmark("encode_video %d.%d",ost -> file_index,ost -> index);
+update_benchmark(((void *)0));
+update_benchmark("flush %s %d.%d",desc,ost -> file_index,ost -> index);
+update_benchmark(((void *)0));
+update_benchmark("decode_audio %d.%d",ist -> file_index,ist -> st -> index);
+update_benchmark(((void *)0));
+update_benchmark("decode_video %d.%d",ist -> file_index,ist -> st -> index);
+static void update_benchmark(const char *fmt,... )
+__builtin_va_start(va,fmt);
+vsnprintf(buf,sizeof(buf),fmt,va);

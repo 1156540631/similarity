@@ -1,0 +1,2 @@
+if ((container.foo.b = (char *)malloc(256*sizeof(char))) != NULL)
+strcpy(container.foo.b, "Falut!");

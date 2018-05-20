@@ -1,0 +1,11 @@
+wchar_t * data;
+wchar_t dataBuffer[100];
+wmemset(dataBuffer, L'A', 100-1);
+dataBuffer[100-1] = L'\0';
+data = dataBuffer;
+CWE124_Buffer_Underwrite__wchar_t_declare_ncpy_41_goodG2BSink(data);
+void CWE124_Buffer_Underwrite__wchar_t_declare_ncpy_41_goodG2BSink(wchar_t * data)
+wchar_t source[100];
+wmemset(source, L'C', 100-1);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

@@ -1,0 +1,4 @@
+uint64_t VAR27, unsigned VAR10)
+FUN1(VAR1, VAR2, VAR27);
+static void FUN1(void *VAR3, uint32_t VAR2, uint32_t VAR27)
+printf("%VAR1: what are we supposed to do with (%08x)?\VAR2", __func__, VAR27);

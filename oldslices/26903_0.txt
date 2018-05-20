@@ -1,0 +1,3 @@
+char canary[10];
+strcpy(canary, "GOOD");
+printf("canary = %s\n", canary);

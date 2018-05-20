@@ -1,0 +1,10 @@
+rifler_krait = getenv("PLUMBONIOBATE_COUNCILMAN");
+if (rifler_krait != 0) {;
+andris_evincing = ((char *)rifler_krait);
+stonesoup_taint_len = ((int )(strlen(andris_evincing)));
+for (; stonesoup_taint_len >= 0; (--stonesoup_buff_size , --stonesoup_taint_len)) {
+stonesoup_data.buffer[stonesoup_buff_size] = andris_evincing[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+for (stonesoup_i = 0; stonesoup_i < 64; ++stonesoup_i) {
+stonesoup_data.buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data.buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data.before(stonesoup_data.buffer[stonesoup_i]));

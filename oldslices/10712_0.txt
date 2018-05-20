@@ -1,0 +1,15 @@
+data = -1;
+data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_22_goodG2B2Source(data);
+data = 20;
+return data;
+data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_22_goodG2B2Source(data);
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+int CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_22_goodG2B2Source(int data)
+return data;
+data = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_22_goodG2B2Source(data);
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

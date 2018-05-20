@@ -1,0 +1,17 @@
+void (*VAR1) (char *, ...) = VAR2;
+char VAR3[100] = "";
+VAR4 = VAR3;
+VAR5 VAR6 = strlen(VAR4);
+if (100-VAR6 > 1)
+if (fgets(VAR4+VAR6, (int)(100-VAR6), VAR7) != VAR8)
+VAR6 = strlen(VAR4);
+if (VAR6 > 0 && VAR4[VAR6-1] == '\')
+VAR4[VAR6-1] = '\';
+else
+VAR4[VAR6] = '\';
+VAR1(VAR4, VAR4);
+static void VAR2(char * VAR4, ...)
+VAR9 VAR10;
+FUN1(VAR10, VAR4);
+vfprintf(VAR11, VAR4, VAR10);
+FUN2(VAR10);

@@ -1,0 +1,26 @@
+static bool isElementPresentational(const Node* node)
+if (node->hasTagName(uTag) || node->hasTagName(sTag) || node->hasTagName(strikeTag) ||
+node->hasTagName(iTag) || node->hasTagName(emTag) || node->hasTagName(bTag) || node->hasTagName(strongTag))
+RefPtr<CSSMutableStyleDeclaration> style = styleFromMatchedRulesAndInlineDecl(node);
+String createMarkup(const Range* range, Vector<Node*>* nodes, EAnnotateForInterchange annotate, bool convertBlocksToInlines)
+Document* document = range->ownerDocument();
+Frame* frame = document->frame();
+DeleteButtonController* deleteButton = frame ? frame->editor()->deleteButtonController() : 0;
+RefPtr<Range> updatedRange = avoidIntersectionWithNode(range, deleteButton ? deleteButton->containerElement() : 0);
+ExceptionCode ec = 0;
+bool collapsed = updatedRange->collapsed(ec);
+ASSERT(ec == 0);
+Node* commonAncestor = updatedRange->commonAncestorContainer(ec);
+Node* commonAncestorBlock = commonAncestor ? enclosingBlock(commonAncestor) : 0;
+if (!specialCommonAncestor && isTabSpanTextNode(commonAncestor))
+specialCommonAncestor = commonAncestor->parentNode();
+if (!specialCommonAncestor && isTabSpanNode(commonAncestor))
+Node* body = enclosingNodeWithTag(Position(commonAncestor, 0), bodyTag);
+Node* fullySelectedRoot = body && areRangesEqual(VisibleSelection::selectionFromContentsOfNode(body).toNormalizedRange().get(), updatedRange.get()) ? body : 0;
+RefPtr<CSSMutableStyleDeclaration> fullySelectedRootStyle = fullySelectedRoot ? styleFromMatchedRulesAndInlineDecl(fullySelectedRoot) : 0;
+static PassRefPtr<CSSMutableStyleDeclaration> styleFromMatchedRulesAndInlineDecl(const Node* node)
+if (!node->isHTMLElement())
+HTMLElement* element = const_cast<HTMLElement*>(static_cast<const HTMLElement*>(node));
+RefPtr<CSSMutableStyleDeclaration> style = styleFromMatchedRulesForElement(element);
+RefPtr<CSSMutableStyleDeclaration> inlineStyleDecl = element->getInlineStyleDecl();
+style->merge(inlineStyleDecl.get());

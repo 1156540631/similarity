@@ -1,0 +1,5 @@
+VAR153 = ((char *)VAR154 . VAR130);
+VAR155 = (char*) malloc(64 * sizeof(char));
+memset(VAR155,0,64);
+FUNC5(VAR17, VAR18, "VAR155", VAR155, "INITIAL-STATE");
+strcpy(VAR155, VAR153);

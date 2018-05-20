@@ -1,0 +1,28 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+pyrolytic_desmodactyli[1] = 5;
+mlechchha_unobdurate =  *(huang_whiteclay + pyrolytic_desmodactyli[1]);
+muleteers_sideshows = ((char *)mlechchha_unobdurate);
+stonesoup_buffer = malloc((strlen(muleteers_sideshows) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,muleteers_sideshows);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+free(stonesoup_buffer);
+void stonesoup_handle_taint(char *brett_legitimisation)
+huang_whiteclay[5] = brett_legitimisation;
+mlechchha_unobdurate =  *(huang_whiteclay + pyrolytic_desmodactyli[1]);
+muleteers_sideshows = ((char *)mlechchha_unobdurate);
+stonesoup_buffer = malloc((strlen(muleteers_sideshows) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,muleteers_sideshows);
+free(stonesoup_buffer);
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);
+free(stonesoup_buffer);

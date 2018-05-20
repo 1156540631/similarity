@@ -1,0 +1,12 @@
+const int GLOBAL_CONST_FIVE = 5;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(GLOBAL_CONST_FIVE==5)
+strcpy(data, "fixedstringtest");
+if(GLOBAL_CONST_FIVE==5)
+goodG2B2VaSinkB(data, data);
+static void goodG2B2VaSinkB(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

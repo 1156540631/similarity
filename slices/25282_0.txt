@@ -1,0 +1,4 @@
+VAR12 = getenv("LS_COLORS");
+if ((VAR12 == ((void *)0) || strlen(VAR12) == 0) && VAR13) {
+if (VAR12 == ((void *)0) || !VAR13 && (VAR14 || !FUN2(1))) {
+VAR15 = strcpy((xmalloc(strlen(VAR12) + 1)),VAR12);

@@ -1,0 +1,7 @@
+int VAR1 = 0;
+const int VAR2 = 10;
+FUN1(static_cast<PRUint64>(VAR3) * pow(2.0, VAR2) < PR_INT32_MAX,
+VAR1 = FUN2(VAR1 + 1, VAR2);
+VAR1 = 0;
+static_cast<PRInt32>(VAR3 * pow(2.0, VAR1)), VAR1));
+VAR4 -= VAR3 * static_cast<ogg_int64_t>(pow(2.0, VAR1));

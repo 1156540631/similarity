@@ -1,0 +1,14 @@
+vector<wchar_t *> VAR1;
+VAR2 = NULL;
+VAR2 = new wchar_t[100];
+VAR2[0] = L'\0';
+VAR1.FUNC1(VAR1.FUNC2(), 1, VAR2);
+VAR1.FUNC1(VAR1.FUNC2(), 1, VAR2);
+VAR1.FUNC1(VAR1.FUNC2(), 1, VAR2);
+FUNC3(VAR1);
+void FUNC3(vector<wchar_t *> VAR1)
+wchar_t * VAR2 = VAR1[2];
+wchar_t VAR3[100];
+wmemset(VAR3, L'C', 100-1);
+VAR3[100-1] = L'\0';
+memcpy(VAR2, VAR3, 100*sizeof(wchar_t));

@@ -1,0 +1,13 @@
+char * VAR1;
+VAR2<char *> VAR3;
+char * VAR4 = (char *)FUN1(50*sizeof(char));
+char * VAR5 = (char *)FUN1(100*sizeof(char));
+VAR1 = VAR4;
+VAR1[0] = '\';
+VAR3.FUN2(VAR1);
+VAR3.FUN2(VAR1);
+VAR3.FUN2(VAR1);
+void FUN3(VAR2<char *> VAR3)
+char * VAR1 = VAR3.FUN4();
+VAR6[100-1] = '\';
+strcat(VAR1, VAR6);

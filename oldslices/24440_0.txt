@@ -1,0 +1,5 @@
+void titmall_sherurd(char *angelita_philathletic)
+char stonesoup_source[1024];
+century_bilberries = ((char *)((char *)angelita_philathletic));
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,century_bilberries,sizeof(stonesoup_source));

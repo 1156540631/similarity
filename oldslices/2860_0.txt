@@ -1,0 +1,5 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_67b_badSink(CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_67_structType myStruct)
+char * data = myStruct.structFirst;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);

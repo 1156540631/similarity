@@ -1,0 +1,4 @@
+SERVICE_STATUS status;
+if (ControlService(schService, SERVICE_CONTROL_STOP, &status)) {
+} while (QueryServiceStatus(schService, &status));
+Sleep(status.dwWaitHint);

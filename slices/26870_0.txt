@@ -1,0 +1,3 @@
+char *VAR229;
+int VAR202;
+printf("writable(%VAR1, 0x%VAR143)\VAR7", VAR229, VAR202);

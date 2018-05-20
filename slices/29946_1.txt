@@ -1,0 +1,16 @@
+typedef CLASS3
+wchar_t * VAR13;
+wchar_t * VAR14;
+} CLASS1;
+wchar_t * VAR6;
+CLASS1 VAR15;
+wchar_t * VAR5 = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+wmemset(VAR5, L'A', 100-1);
+VAR5[100-1] = L'\0';
+VAR6 = VAR5 - 8;
+VAR15.VAR13 = VAR6;
+wchar_t * VAR6 = VAR15.VAR14;
+wchar_t VAR7[100];
+wmemset(VAR7, L'C', 100-1);
+VAR7[100-1] = L'\0';
+wcsncpy(VAR6, VAR7, 100-1);

@@ -1,0 +1,19 @@
+e = (getenv("EDITOR"));
+if (!e) {
+if (e) {
+for (c = e;  *c; c++)
+if (!( *c)) {
+*editor = e;
+svn_error_t *svn_err__temp = find_editor_binary(&editor,editor_cmd,config);
+cmd = (apr_psprintf(pool,"%s %s",editor,file_name));
+sys_err = system(cmd);
+if (sys_err) {
+return svn_error_createf(SVN_ERR_EXTERNAL_PROGRAM,((void *)0),(dgettext("subversion","system('%s') returned %d")),cmd,sys_err);
+svn_error_t *svn_err__temp = find_editor_binary(&editor,editor_cmd,config);
+cmd = (apr_psprintf(pool,"%s %s",editor,tmpfile_native));
+sys_err = system(cmd);
+if (sys_err != 0) {
+err = svn_error_createf(SVN_ERR_EXTERNAL_PROGRAM,((void *)0),(dgettext("subversion","system('%s') returned %d")),cmd,sys_err);
+if (!err && err2) {
+return err;
+static svn_error_t *find_editor_binary(const char **editor,const char *editor_cmd,apr_hash_t *config)

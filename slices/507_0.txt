@@ -1,0 +1,3 @@
+static void FUN12(char* str, const char* VAR5, nsTArray<nsString>& result)
+char *VAR6 = strtok(str, VAR5);
+VAR6 = strtok(nullptr, VAR5);

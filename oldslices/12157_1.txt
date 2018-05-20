@@ -1,0 +1,13 @@
+uninit_memory_access_014_u_001 *u;
+u = (uninit_memory_access_014_u_001 *)calloc(1,sizeof(uninit_memory_access_014_u_001));
+u->a = 40;
+return u;
+u = (uninit_memory_access_014_u_001 *)calloc(2,sizeof(uninit_memory_access_014_u_001));
+u->a = 20;
+return u;
+u = (uninit_memory_access_014_u_001 *)calloc(3,sizeof(uninit_memory_access_014_u_001));
+u->a = 30;
+return u;
+return (uninit_memory_access_014_u_001 *)(-1);
+p = uninit_memory_access_014_func_001 ();
+free(p);

@@ -1,0 +1,12 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+const CWE124_Buffer_Underwrite__CWE839_listen_socket_81_base& baseObject = CWE124_Buffer_Underwrite__CWE839_listen_socket_81_bad();
+baseObject.action(data);
+void CWE124_Buffer_Underwrite__CWE839_listen_socket_81_bad::action(int data) const
+int buffer[10] = { 0 };
+if (data < 10)
+buffer[data] = 1;

@@ -1,0 +1,12 @@
+data = (char *)malloc(100*sizeof(char));
+data[100-1] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54b_badSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54b_badSink(char * data)
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54c_badSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54c_badSink(char * data)
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54d_badSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54d_badSink(char * data)
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54e_badSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_54e_badSink(char * data)
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

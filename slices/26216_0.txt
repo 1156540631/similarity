@@ -1,0 +1,8 @@
+int main(int argc,char **argv)
+FUN6(argc,argv,VAR58);
+if (argc > 1 && !strcmp(argv[1],"-VAR83")) {
+argc--;
+argv++;
+FUN7(argc,argv,VAR58);
+VAR59 = FUN8(argc,argv);
+if (VAR59 < 0) {

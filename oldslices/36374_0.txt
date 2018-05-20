@@ -1,0 +1,4 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

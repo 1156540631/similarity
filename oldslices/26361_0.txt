@@ -1,0 +1,6 @@
+abrus_ultraobstinate = getenv("XUI_BASKETRY");
+if (abrus_ultraobstinate != 0) {;
+amides_alguazil . narrows_dichroiscope = abrus_ultraobstinate;
+naggers_retrenchments[5] = amides_alguazil;
+venosities_recognition =  *(naggers_retrenchments +  *counterirritate_ralph);
+arginines_apotropaically(venosities_recognition);

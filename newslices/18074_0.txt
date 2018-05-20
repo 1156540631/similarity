@@ -1,0 +1,11 @@
+VAR1<char *> VAR2;
+VAR3[0] = '\';
+VAR2.FUN1(VAR3);
+VAR2.FUN1(VAR3);
+VAR2.FUN1(VAR3);
+FUN2(VAR2);
+VAR4[100-1] = '\';
+strcat(VAR3, VAR4);
+void FUN2(VAR1<char *> VAR2)
+char * VAR3 = VAR2.FUN3();
+strcat(VAR3, VAR4);

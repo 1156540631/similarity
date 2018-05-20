@@ -1,0 +1,13 @@
+static void handle_satn(ESPState *s)
+uint8_t buf[32];
+len = get_cmd(s, buf);
+static uint32_t get_cmd(ESPState *s, uint8_t *buf)
+structType myStruct;
+uint32_t dmalen;
+myStruct.structFirst = s;
+damlen = func(myStruct);
+uint32_t func(structType myStruct)
+ESPState s = myStruct.structFirst;
+return s->ti_size;
+damlen = func(myStruct);
+memcpy(buf, s->ti_buf, dmalen);

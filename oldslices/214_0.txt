@@ -1,0 +1,26 @@
+const char *filename, void *logctx,
+if ((ret = avio_open2(&s->pb, filename, AVIO_FLAG_READ | s->avio_flags,
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+unsigned int offset, unsigned int max_probe_size)
+AVProbeData pd = { filename ? filename : "", NULL, -offset };
+memset(pd.buf + pd.buf_size, 0, AVPROBE_PADDING_SIZE);
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+unsigned int offset, unsigned int max_probe_size)
+AVProbeData pd = { filename ? filename : "", NULL, -offset };
+max_probe_size = PROBE_BUF_MAX;
+max_probe_size = PROBE_BUF_MAX;
+for(probe_size= PROBE_BUF_MIN; probe_size<=max_probe_size && !*fmt;
+int buf_offset = (probe_size == PROBE_BUF_MIN) ? 0 : probe_size>>1;
+if ((ret = avio_read(pb, buf + buf_offset, probe_size - buf_offset)) < 0) {
+av_log(logctx, AV_LOG_DEBUG, "Format %s probed with size=%d and score=%d\n", (*fmt)->name, probe_size, score);
+probe_size = FFMIN(probe_size<<1, FFMAX(max_probe_size, probe_size+1))) {
+buftmp = av_realloc(buf, probe_size + AVPROBE_PADDING_SIZE);
+memset(pd.buf + pd.buf_size, 0, AVPROBE_PADDING_SIZE);
+int avformat_open_input(AVFormatContext **ps, const char *filename, AVInputFormat *fmt, AVDictionary **options)
+if ((ret = init_input(s, filename, &tmp)) < 0)
+static int init_input(AVFormatContext *s, const char *filename, AVDictionary **options)
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+const char *filename, void *logctx,
+AVProbeData pd = { filename ? filename : "", NULL, -offset };
+memset(pd.buf + pd.buf_size, 0, AVPROBE_PADDING_SIZE);

@@ -1,0 +1,6 @@
+char *winklehole_musettes = 0;
+pointers_petrologically(&winklehole_musettes);
+superlocally_gumboils = &winklehole_musettes;
+lumpishness_anorthoscope = superlocally_gumboils + 5;
+tacitus_knitch[37] = lumpishness_anorthoscope;
+free(((char *)( *(tacitus_knitch[37] - 5))));

@@ -1,0 +1,15 @@
+VAR1 = FUN1("COALFIELD_COMIQUE");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = FUN2(VAR3);
+VAR5[63] = '\';
+FUN3(VAR6, VAR7, "VAR5", VAR5, "VAR8-VAR9");
+strncpy(VAR5, VAR10, 64);
+char *FUN2(char *VAR11)
+return VAR11;
+VAR4 = FUN2(VAR3);
+VAR10 = ((char *)VAR4);
+VAR12 = ((int )(strlen(VAR10)));
+strncpy(VAR5, VAR10, 64);

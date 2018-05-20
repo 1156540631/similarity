@@ -1,0 +1,6 @@
+VAR14 = getenv("VAR21");
+if (VAR14 != 0) {;
+VAR15[3] = VAR14;
+VAR20 = VAR15;
+VAR16(VAR17,VAR20);
+void VAR16(int VAR18,char **VAR19);

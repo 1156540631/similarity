@@ -1,0 +1,15 @@
+(yy_last_accepting_cpos) = yy_cp;
+yy_cp = (yy_last_accepting_cpos);
+YY_DO_BEFORE_ACTION;
+*yy_cp = (yy_hold_char);
+int yy_amount_of_matched_text = (int) (yy_cp - (yytext_ptr)) - 1;
+(yy_c_buf_p) = (yytext_ptr) + yy_amount_of_matched_text;
+yy_next_state = yy_try_NUL_trans( yy_current_state );
+if ( ascendwrap( ) )
+(yy_c_buf_p) = (yytext_ptr) + YY_MORE_ADJ;
+yy_cp = (yy_c_buf_p);
+YY_DO_BEFORE_ACTION;
+*yy_cp = (yy_hold_char);
+yy_bp = yy_cp;
+YY_DO_BEFORE_ACTION;
+ascendlval.d = strtoul(ascendtext, NULL, 16);

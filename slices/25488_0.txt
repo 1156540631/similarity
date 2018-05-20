@@ -1,0 +1,4 @@
+VAR265 = getenv("GRANDNEPHEWS_OUTBEGGED");
+if (VAR265 != 0) {;
+VAR266 . VAR267 = ((char *)VAR265);
+VAR268 = &VAR266;

@@ -1,0 +1,3 @@
+RawReader(png_structp png_ptr, png_bytep data, png_size_t length)
+RawReadState *state = (RawReadState *)png_get_io_ptr(png_ptr);
+memcpy(data, state->start + state->offset, length);

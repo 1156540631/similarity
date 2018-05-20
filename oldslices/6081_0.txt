@@ -1,0 +1,7 @@
+void molehead_mesoprescutal(int conli_deerstalker,void **etymonic_jarra)
+molehead_mesoprescutal(conli_deerstalker,etymonic_jarra);
+free(((char *)((char *)( *etymonic_jarra))));
+void stonesoup_handle_taint(char *menaccanite_prememorandum)
+chindee_precovering = ((void *)menaccanite_prememorandum);
+aeipathy_cassy = &chindee_precovering;
+molehead_mesoprescutal(sabin_loudish,aeipathy_cassy);

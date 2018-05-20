@@ -1,0 +1,4 @@
+static int FUN1(CLASS2 *VAR1, CLASS1 *VAR5)
+memcpy(VAR5, &VAR3->VAR2[VAR11], sizeof(CLASS1));
+VAR3->VAR2[VAR11].VAR17 = NULL;
+memcpy(VAR5, &VAR3->VAR2[VAR11], sizeof(CLASS1));

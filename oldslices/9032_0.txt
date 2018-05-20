@@ -1,0 +1,5 @@
+char * *dataPtr2 = &data;
+char * data = *dataPtr2;
+badVaSink(data, data);
+static void badVaSink(char * data, ...)
+va_start(args, data);

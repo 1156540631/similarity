@@ -1,0 +1,30 @@
+return FUNC39("image2",((void *)0),((void *)0));
+if ((VAR227 = FUNC40(&VAR228 -> FUNC44,VAR216,1 | VAR228 -> VAR230,(&VAR228 -> VAR224),VAR221)) < 0) {
+if (!FUNC41(VAR216)) {
+memcpy(q,VAR215,len);
+snprintf(VAR215,sizeof(VAR215),"%0*d",VAR219,VAR220);
+static int FUNC43(AVFormatContext *VAR228,const char *VAR216,AVDictionary **VAR221)
+return FUNC45(VAR228 -> FUNC44,&VAR228 -> VAR217,VAR216,VAR228,0,VAR228 -> VAR218);
+if ((VAR227 = FUNC40(&VAR228 -> FUNC44,VAR216,1 | VAR228 -> VAR230,(&VAR228 -> VAR224),VAR221)) < 0) {
+return FUNC45(VAR228 -> FUNC44,&VAR228 -> VAR217,VAR216,VAR228,0,VAR228 -> VAR218);
+if (!FUNC41(VAR216)) {
+int FUNC41(const char *VAR216)
+return VAR216 && FUNC46(VAR229,(sizeof(VAR229)),VAR216,1) >= 0;
+int FUNC46(char *VAR229,int VAR229_size,const char *path,int VAR220)
+char VAR215[20];
+VAR232 = path;
+VAR233 =  *(VAR232++);
+VAR219 = 0;
+while(VAR231(( *VAR232))){
+VAR219 = VAR219 * '\n' + ( *(VAR232++)) - 48;
+VAR233 =  *(VAR232++);
+VAR219 = VAR219 * '\n' + ( *(VAR232++)) - 48;
+snprintf(VAR215,sizeof(VAR215),"%0*d",VAR219,VAR220);
+len = (strlen(VAR215));
+snprintf(VAR215,sizeof(VAR215),"%0*d",VAR219,VAR220);
+int FUNC45(AVIOContext *FUNC44,AVInputFormat **VAR222,const char *VAR216,void *VAR223,unsigned int offset,unsigned int max_probe_size)
+if (!FUNC41(VAR216)) {
+AVOutputFormat *FUNC39(const char *VAR226,const char *VAR216,const char *mime_type)
+if (!VAR226 && VAR216 && FUNC41(VAR216) && (FUNC47(VAR216)) != AV_CODEC_ID_NONE) {
+int FUNC42(AVFormatContext **VAR234,const char *VAR216,AVInputFormat *VAR222,AVDictionary **VAR221)
+if ((VAR227 = FUNC43(VAR228,VAR216,&tmp)) < 0) {

@@ -1,0 +1,28 @@
+void FUN1(char** VAR1, char* VAR2) {
+VAR3 = fopen(VAR4,"rb");
+fseek(VAR3,0L,2);
+VAR5 = ftell(VAR3);
+rewind(VAR3);
+*VAR1 = ((char *)(malloc(sizeof(char ) * (VAR5 + 1))));
+VAR6 = fread(*VAR1,1,VAR5,VAR3);
+*VAR1 = VAR7;
+char *VAR8;
+FUN1(&VAR8,"TARSOCLASIS_DEPOSING");
+VAR9 = ((int )(strlen(VAR8)));
+VAR10 = ((char *)(malloc(VAR9 + 1)));
+memset(VAR10,0,VAR9 + 1);
+memcpy(VAR10,VAR8,VAR9);
+VAR11 = &VAR10;
+VAR12 = &VAR11;
+VAR13 = &VAR12;
+VAR14 = &VAR13;
+VAR15 = &VAR14;
+VAR16 = &VAR15;
+VAR17 = &VAR16;
+VAR18 = &VAR17;
+VAR19 = &VAR18;
+VAR20 = &VAR19;
+VAR21 = ((char *)( *( *( *( *( *( *( *( *( *( *VAR20)))))))))));
+VAR22 = (struct CLASS1*) malloc(sizeof (struct CLASS1));
+FUN2(VAR23, VAR24, "STONESOUP_TAINT_SOURCE", strlen(VAR21)+1, VAR21, "VAR25-VAR26");
+strncpy(VAR22->VAR27, VAR21, strlen(VAR21) + 1);

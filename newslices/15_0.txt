@@ -1,0 +1,6 @@
+FUN1(VAR1 VAR2, int VAR3)
+char VAR4[32];
+sprintf(VAR4, "VAR5: %d", VAR3);
+VAR6 VAR7 = strlen(VAR4);
+VAR6 VAR8;
+VAR7, &VAR8, VAR9);

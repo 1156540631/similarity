@@ -1,0 +1,3 @@
+char       *VAR1,
+int        VAR2)
+snprintf(VAR1, VAR2, "HP DeskJet%VAR6", VAR3 + 7);

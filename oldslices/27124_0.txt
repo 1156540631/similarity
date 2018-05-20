@@ -1,0 +1,4 @@
+char a[12],*ptr2 = a;
+ptr1[11]='\0';
+ptr1[i]='a';
+memcpy(ptr2,ptr1,12);

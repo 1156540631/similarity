@@ -1,0 +1,9 @@
+VAR11=(char**) malloc(10*sizeof(char*));
+VAR11[VAR5]=(char*) malloc(10*sizeof(char));
+strcpy(VAR11[VAR5],"STRING00");
+char *VAR1=(char*) malloc(10*sizeof(char));
+FUN101();
+free (VAR11[VAR5]);
+printf("unint VAR138 %VAR1 \VAR7",VAR11[VAR5]);
+strcpy(VAR1,VAR11[VAR5]);
+printf("unint VAR138 %VAR1 \VAR7",VAR1);

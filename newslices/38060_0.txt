@@ -1,0 +1,20 @@
+char * VAR1;
+void (*VAR2) (char *, ...) = VAR3;
+char VAR4[100] = "";
+VAR1 = VAR4;
+VAR5 = FUN1(VAR6, (char *)(VAR1 + VAR7), sizeof(char) * (100 - VAR7 - 1), 0);
+if (VAR5 == VAR8 || VAR5 == 0)
+break;
+VAR1[VAR7 + VAR5 / sizeof(char)] = '\';
+VAR9 = strchr(VAR1, '\');
+if (VAR9)
+*VAR9 = '\';
+VAR9 = strchr(VAR1, '\');
+if (VAR9)
+*VAR9 = '\';
+VAR2(VAR1);
+static void VAR3(char * VAR1, ...)
+char VAR10[100] = "";
+VAR11 VAR12;
+FUN2(VAR12, VAR1);
+FUN3(VAR10, 100-1, "%s", VAR12);

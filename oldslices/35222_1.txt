@@ -1,0 +1,8 @@
+char dataBuffer[100];
+data = dataBuffer;
+data = badSource(data);
+static char * badSource(char * data)
+data[100-1] = '\0';
+return data;
+char dest[50] = "";
+strncat(dest, data, strlen(data));

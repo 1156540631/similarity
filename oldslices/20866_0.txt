@@ -1,0 +1,6 @@
+char stonesoup_source[1024];
+beckville_sippers = ((char *)(palladia_deckle - 5)[27]);
+stonesoup_source[stonesoup_i] = 0;
+stonesoup_source[1023] = '\0';
+if (strlen(stonesoup_source) + 1 <= 64) {
+strncpy(stonesoup_source, beckville_sippers, sizeof(stonesoup_source));

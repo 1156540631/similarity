@@ -1,0 +1,12 @@
+data = (char *)malloc(100*sizeof(char));
+data[50-1] = '\0';
+FUN1(data);
+void FUN1(char * data)
+FUN2(data);
+void FUN2(char * data)
+FUN3(data);
+void FUN3(char * data)
+FUN4(data);
+void FUN4(char * data)
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

@@ -1,0 +1,44 @@
+static bool Ogg_LogicalStreamResetEsFormat( demux_t *p_demux, logical_stream_t *p_stream );
+if( Ogg_LogicalStreamResetEsFormat( p_demux, p_stream ) )
+if( !( p_block = block_New( p_demux, p_oggpacket->bytes ) ) ) return;
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,
+static void Ogg_UpdatePCR    ( logical_stream_t *, ogg_packet * );
+Ogg_UpdatePCR( p_stream, p_oggpacket );
+if( !( p_block = block_New( p_demux, p_oggpacket->bytes ) ) ) return;
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,
+p_oggpacket->bytes - i_header_len );
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,
+static void Ogg_ReadFlacHeader( demux_t *, logical_stream_t *, ogg_packet * );
+Ogg_ReadFlacHeader( p_demux, p_stream, p_oggpacket );
+if( !( p_block = block_New( p_demux, p_oggpacket->bytes ) ) ) return;
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,
+static void Ogg_ExtractMeta( demux_t *p_demux, vlc_fourcc_t i_codec, const uint8_t *p_headers, int i_headers );
+Ogg_ExtractMeta( p_demux, p_stream->fmt.i_codec,
+if( !( p_block = block_New( p_demux, p_oggpacket->bytes ) ) ) return;
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,
+static void Ogg_DecodePacket( demux_t *p_demux,
+int i_header_len = 0;
+! memcmp ( p_oggpacket->packet, "Annodex", 7 ) )
+! memcmp ( p_oggpacket->packet, "AnxData", 7 ) )
+es_out_Control( p_demux->out, ES_OUT_GET_ES_STATE,
+Ogg_ReadFlacHeader( p_demux, p_stream, p_oggpacket );
+p_oggpacket->packet += 9;
+p_oggpacket->bytes -= 9;
+p_stream->i_headers += p_oggpacket->bytes;
+p_stream->p_headers = realloc( p_stream->p_headers, p_stream->i_headers );
+memcpy( (unsigned char *)p_stream->p_headers + p_stream->i_headers - p_oggpacket->bytes,
+p_oggpacket->packet, p_stream->i_headers );
+p_oggpacket->bytes, p_oggpacket->packet ) )
+if( Ogg_LogicalStreamResetEsFormat( p_demux, p_stream ) )
+es_out_Control( p_demux->out, ES_OUT_SET_ES_FMT,
+Ogg_ExtractMeta( p_demux, p_stream->fmt.i_codec,
+es_out_Control( p_demux->out, ES_OUT_RESET_PCR );
+es_out_Control( p_demux->out, ES_OUT_SET_PCR,
+Ogg_UpdatePCR( p_stream, p_oggpacket );
+es_out_Control( p_demux->out, ES_OUT_RESET_PCR );
+es_out_Control( p_demux->out, ES_OUT_SET_PCR, VLC_TS_0 + p_stream->i_pcr );
+if( !( p_block = block_New( p_demux, p_oggpacket->bytes ) ) ) return;
+i_header_len = (*p_oggpacket->packet & PACKET_LEN_BITS01) >> 6;
+i_header_len |= (*p_oggpacket->packet & PACKET_LEN_BITS2) << 1;
+i_header_len++;
+memcpy( p_block->p_buffer, p_oggpacket->packet + i_header_len,

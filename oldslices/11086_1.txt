@@ -1,0 +1,3 @@
+stonesoup_printf("%s\n",stonesoup_base_path);
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

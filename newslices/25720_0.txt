@@ -1,0 +1,3 @@
+int    VAR1;
+VAR2[VAR3 + 1] = '\';
+if (sscanf(&VAR2[0], "%x", &VAR1) != 1)

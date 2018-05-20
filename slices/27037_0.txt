@@ -1,0 +1,12 @@
+main(int argc, char **argv)
+VAR44 = argv[1];
+FUN8(VAR44);
+FUN8(char *VAR14)
+char VAR39[VAR45], *VAR137;
+VAR137 = FUN22(VAR14, strlen(VAR14), VAR45-1);
+FUN22(char *VAR138, int VAR7, int VAR139)
+if(VAR7 > VAR139){
+return FUN22(VAR138+1, VAR7-1, VAR139);}
+return VAR138;
+strcpy(VAR39, VAR137);
+printf("result: %VAR1\VAR7", VAR39);

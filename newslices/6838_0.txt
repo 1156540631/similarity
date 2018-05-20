@@ -1,0 +1,36 @@
+VAR1 = VAR2+3;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+isxdigit(*VAR4) && isxdigit(*VAR1)) {
+VAR5 = VAR1 + 1;
+if (FUN1(*VAR5)) {
+VAR2 = VAR5;
+else if (*VAR3 && isxdigit(*VAR2) && isxdigit(*VAR3)) {
+VAR5 = VAR3 + 1;
+VAR2 = VAR5;
+VAR2 = VAR3;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+if (FUN1(*VAR5)) {
+else if (*VAR3 && isxdigit(*VAR2) && FUN1(*VAR3)) {
+VAR2 = VAR3;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+FUN2(const char *VAR6, CLASS1 *VAR7, VAR8 VAR9) {
+VAR2 = (const CLASS2 *)VAR6;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+VAR2 = VAR3 + 1;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+FUN1(VAR10 VAR11)
+if (FUN1(*VAR5)) {
+VAR2 = VAR5;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+if (FUN1(*VAR5)) {
+VAR2 = VAR5;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&
+else if (*VAR3 && isxdigit(*VAR2) && FUN1(*VAR3)) {
+VAR2 = VAR3;
+VAR3 = VAR2+1;
+&& isxdigit(*VAR2) && isxdigit(*VAR3) &&

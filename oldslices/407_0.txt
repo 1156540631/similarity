@@ -1,0 +1,3 @@
+header_length = DTLS1_CCS_HEADER_LENGTH;
+header_length = DTLS1_HM_HEADER_LENGTH;
+frag->msg_header.msg_len + header_length);

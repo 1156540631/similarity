@@ -1,0 +1,20 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+dogmata_garibaldian = 5;
+nonmalignantly_noncreditor = &dogmata_garibaldian;
+boqueron_sequesterment =  *(chondrichthyes_caen +  *nonmalignantly_noncreditor);
+free(((char *)boqueron_sequesterment));
+void stonesoup_handle_taint(char *paradoxurus_furl)
+adephaga_concordial = paradoxurus_furl;
+chondrichthyes_caen[5] = adephaga_concordial;
+boqueron_sequesterment =  *(chondrichthyes_caen +  *nonmalignantly_noncreditor);
+free(((char *)boqueron_sequesterment));

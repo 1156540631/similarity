@@ -1,0 +1,2 @@
+VAR188 = FUN80(VAR376, sizeof(VAR376));
+printf("FUN80 returned VAR188 = %d\VAR7", VAR188);

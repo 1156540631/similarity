@@ -1,0 +1,2 @@
+FUN1(VAR1);
+if (!strcmp(VAR1, "goodpass"))

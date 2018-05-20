@@ -1,0 +1,8 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+FUN47(VAR2);
+void FUN48(char * VAR2)
+char VAR4[50] = "";
+strncat(VAR4, VAR2, strlen(VAR2));

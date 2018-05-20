@@ -1,0 +1,15 @@
+static int FUN1(unsigned char *VAR1, VAR2 VAR3, unsigned char *VAR4, VAR2 VAR5, int *VAR6)
+unsigned char * VAR7 = VAR4;
+int VAR8;
+int VAR9;
+if ( !(VAR10 & VAR11) )
+*(VAR7++) = *(VAR12++);		}
+VAR9 = VAR13 + ((unsigned int)(*VAR12++) << 4) + 3;
+if ( VAR7 - VAR9 < VAR4 )
+*VAR6 = VAR14;
+return ( -1 );}
+VAR8 = VAR15;
+if ( VAR7 + VAR8 > VAR16 )
+*VAR6 = VAR17;
+return ( -1 );}
+memcpy( VAR7, VAR7 - VAR9, VAR8 );

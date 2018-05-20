@@ -1,0 +1,5 @@
+VAR1 = (signed char *) getenv("VAR2");
+if (VAR1 != 0) {
+for (VAR3 = 0; VAR3 < strlen((char *) VAR1); ++VAR3) {
+if (VAR1[VAR3] < 0)
+++VAR4->VAR4[VAR1[VAR3]];

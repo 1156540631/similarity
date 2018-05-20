@@ -1,0 +1,13 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE124_Buffer_Underwrite__CWE839_listen_socket_45_goodB2GData = data;
+goodB2GSink();
+static void goodB2GSink()
+int data = CWE124_Buffer_Underwrite__CWE839_listen_socket_45_goodB2GData;
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

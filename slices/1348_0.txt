@@ -1,0 +1,10 @@
+VAR1[VAR2 + VAR4 / sizeof(char)] = '\0';
+VAR5 = strchr(VAR1, '\r');
+VAR5 = strchr(VAR1, '\VAR9');
+VAR3[2] = VAR1;
+FUN2(VAR3);
+void FUN2(char * VAR3[])
+char * VAR1 = VAR3[2];
+FUN3(VAR1, VAR1);
+static void FUN3(char * VAR1, ...)
+FUN1(VAR6, VAR1);

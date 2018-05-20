@@ -1,0 +1,4 @@
+int index[4] = {3, 5, 4, 6};
+ptr = (int *)malloc(sizeof(int) * 4);
+ptr[i] = index[i];
+free(ptr);

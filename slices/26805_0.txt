@@ -1,0 +1,3 @@
+char VAR329[200], VAR330[200];
+strcpy(VAR329, "lcs.mit.edu");
+printf("uncomp_size = %d\VAR7", strlen(VAR329));

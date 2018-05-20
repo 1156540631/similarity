@@ -1,0 +1,5 @@
+int main(int argc, char **argv) {
+FUN145(argv[1]);
+void FUN145(char *VAR9) {
+char VAR34[1024];
+strcpy(VAR34, VAR9);

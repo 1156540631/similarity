@@ -1,0 +1,18 @@
+static const int STATIC_CONST_TRUE = 1;
+static const int STATIC_CONST_FALSE = 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(STATIC_CONST_TRUE)
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+if(STATIC_CONST_TRUE)
+fprintf(stdout, "%s\n", data);

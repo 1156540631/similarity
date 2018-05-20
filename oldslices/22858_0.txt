@@ -1,0 +1,4 @@
+int c = getchar();
+int yesno = av_toupper(c) == 'Y';
+while(c != '\n' && c != - 1)
+return yesno;

@@ -1,0 +1,3 @@
+static void DumpLine(const nsBlockReflowState& aState, nsLineBox* aLine,
+nsRect ovis(aLine->GetVisualOverflowArea());
+ovis.x, ovis.y, ovis.width, ovis.height,

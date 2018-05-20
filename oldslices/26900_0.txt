@@ -1,0 +1,2 @@
+char buf[MAXLINE];
+while (fgets(buf, sizeof buf, e->e_dfp) != NULL)

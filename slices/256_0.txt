@@ -1,0 +1,25 @@
+int  FUN1( CLASS1 *VAR1, CLASS2 *VAR2, CLASS2 *VAR3 )
+if( FUN2( VAR1, VAR2 ) )
+static int FUN2( CLASS1 *VAR1, CLASS2 *VAR2 )
+if( ( VAR20 = FUN3( VAR1, &VAR4, 8 ) ) < 8 )
+VAR2->VAR5.VAR6    = FUN4( VAR1 );
+VAR21;
+FUN5( VAR7->VAR8 );
+FUN6 ( VAR7->VAR9 );
+FUN7( VAR7->VAR10 );
+FUN8( VAR7->VAR11 );
+FUN7( VAR12 );
+VAR13 = FUN9( VAR7->VAR14, VAR15 / 8 );
+VAR7->VAR18.VAR19 = calloc( sizeof( VAR16 ), VAR13 );
+if( FUN2( VAR1, VAR2 ) )
+return FUN10( VAR1, VAR2 );
+static int FUN10( CLASS1 *VAR1, CLASS2 *VAR2 )
+VAR21;
+VAR13 = FUN9( VAR7->VAR14, VAR15 / 8 );
+VAR7->VAR18.VAR19 = calloc( sizeof( VAR16 ), VAR13 );
+static inline uint8_t FUN11( uint8_t *VAR17 )
+FUN6 ( VAR7->i_indextype );
+static inline uint8_t FUN11( uint8_t *VAR17 )
+FUN7( VAR7->VAR14 );
+VAR13 = FUN9( VAR7->VAR14, VAR15 / 8 );
+VAR7->VAR18.VAR19 = calloc( sizeof( VAR16 ), VAR13 );

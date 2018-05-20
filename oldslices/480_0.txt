@@ -1,0 +1,9 @@
+const char *url)
+if ((p = strchr(url, ':'))) {
+av_strlcpy(proto, url, FFMIN(proto_size, p + 1 - url));
+p++;
+if (*p == '/') p++;
+if (*p == '/') p++;
+ls = strchr(p, '/');
+ls2 = strchr(p, '?');
+ls = &p[strlen(p)];

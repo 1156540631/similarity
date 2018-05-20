@@ -1,0 +1,4 @@
+g_strlcpy(log_part, str_begin, strlen(str_begin));
+log_part[strlen(str_begin)] = '\0';
+log_part = (gchar *) g_malloc(strlen(str_begin) + 1);
+g_strlcpy(log_part, str_begin, strlen(str_begin));

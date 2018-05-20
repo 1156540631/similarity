@@ -1,0 +1,4 @@
+CLASS1* VAR1=malloc(15*sizeof(CLASS1));
+memset(VAR1,1,15*sizeof(CLASS1));
+memcpy(VAR2,VAR1,15*sizeof(CLASS1));
+free(VAR1);

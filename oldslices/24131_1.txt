@@ -1,0 +1,6 @@
+void *unpurported_scandalmonging = 0;
+lorianne_cadillac(&unpurported_scandalmonging);
+scallage_unadjacently = ((char *)((char *)unpurported_scandalmonging));
+stonesoup_data.buffer[stonesoup_i] = 0;
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, scallage_unadjacently);

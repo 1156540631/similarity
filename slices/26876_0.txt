@@ -1,0 +1,3 @@
+VAR392 = 0;
+VAR511 = VAR392;
+printf("FUN113: open: %VAR1\VAR7", errstring(VAR511));

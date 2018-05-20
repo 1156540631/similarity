@@ -1,0 +1,16 @@
+int FUN1() 
+return 1;
+int FUN2() 
+return 0;
+char * VAR1;
+VAR1 = VAR2;
+if(FUN2()) { }
+else
+char * VAR3 = (char *)malloc(100*sizeof(char));
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+VAR1 = VAR3;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+strcpy(VAR1, VAR4);

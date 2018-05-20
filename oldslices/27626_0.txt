@@ -1,0 +1,8 @@
+#define SRC_STRING "AAAAAAAAAA"
+int globalFive = 5; 
+char * data;
+data = NULL;
+if(globalFive==5)
+data = (char *)malloc((10+1)*sizeof(char));
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

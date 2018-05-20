@@ -1,0 +1,13 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data[100-1] = L'\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54b_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54b_badSink(wchar_t * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54c_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54c_badSink(wchar_t * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54d_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54d_badSink(wchar_t * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54e_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_ncat_54e_badSink(wchar_t * data)
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

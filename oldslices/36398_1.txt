@@ -1,0 +1,7 @@
+void (*funcPtr) (char *) = badSink;
+data = (char *)malloc(100*sizeof(char));
+data[100-1] = '\0';
+funcPtr(data);
+static void badSink(char * data)
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

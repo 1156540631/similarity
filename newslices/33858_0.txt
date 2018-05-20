@@ -1,0 +1,9 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, '', 50-1);
+VAR2[50-1] = '\';
+CLASS1* VAR3 = new VAR4;
+VAR3->FUN2(VAR2);
+void VAR4::FUN2(char * VAR2)
+char VAR5[50] = "";
+memmove(VAR5, VAR2, strlen(VAR2)*sizeof(char));

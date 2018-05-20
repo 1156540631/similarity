@@ -1,0 +1,4 @@
+int avformat_match_stream_specifier(AVFormatContext *s,AVStream *st,const char *spec)
+char *endptr;
+spec += 2;
+prog_id = (strtol(spec,&endptr,0));

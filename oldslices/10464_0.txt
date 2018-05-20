@@ -1,0 +1,5 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+badSource(data);
+void badSource(wchar_t * &data);
+dataLen = wcslen(data);

@@ -1,0 +1,25 @@
+int64_t pts = - 9223372036854775807L - 1;
+secs = (pts / 1000000);
+us = (pts % 1000000);
+mins = secs / 60;
+secs %= 60;
+hours = mins / 60;
+mins %= 60;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%02d:%02d:%02d.%02d ",hours,mins,secs,100 * us / 1000000);
+output_streams[i] -> unavailable = 0;
+reset_eagain();
+ret = transcode_step();
+print_report(0,timer_start,cur_time);
+ost = output_streams[i];
+frame_number = ost -> frame_number;
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"frame=%5d fps=%3.*f q=%3.1f ",frame_number,fps < 9.95,fps,q);
+av_bprintf(&buf_script,"frame=%d\n",frame_number);
+scale = (enc -> width * enc -> height) * 255.0 * 255.0 * frame_number;
+p = psnr(error / scale);
+static double psnr(double d)
+return - 10.0 * log(d) / log(10.0);
+p = psnr(error / scale);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%c:%2.2f ",type[j],p);
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"*:%2.2f ",psnr(error_sum / scale_sum));
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"size=N/A time=");
+snprintf(buf + strlen(buf),sizeof(buf) - strlen(buf),"%02d:%02d:%02d.%02d ",hours,mins,secs,100 * us / 1000000);

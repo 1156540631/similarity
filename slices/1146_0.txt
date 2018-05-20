@@ -1,0 +1,16 @@
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+if (VAR1 != 0) {
+fclose(VAR1);
+FUN1(&VAR5,"GONZALO_TIECLASPS");
+if (VAR5 != 0) {;
+VAR6 = ((char *)VAR5);
+VAR7 = strlen(VAR6) + 1;
+VAR8 = VAR9 < VAR7 ? VAR9 : VAR7;
+for (VAR10 = 0; VAR10 < VAR8; VAR10++) {
+VAR6[VAR7 - VAR10 - 1];
+VAR11[VAR9 - VAR10 - 1] =
+for (VAR10 = 0; VAR10 < VAR7; VAR10++) {
+free (VAR11);
+FUN2(VAR12, VAR13, "VAR7", VAR7, &VAR7, "TRIGGER-STATE");
+if (VAR5 != 0)
+free(((char *)VAR5));

@@ -1,0 +1,4 @@
+char buf[10];
+src[10 - 1] = '\0';
+len = 10;
+strncpy(buf, src, len);

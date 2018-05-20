@@ -1,0 +1,4 @@
+void tesselate_hulled(int imager_upgrading,char *scolopendridae_oregano)
+underbrace_adp = ((char *)scolopendridae_oregano);
+stonesoup_buffer = malloc((strlen(underbrace_adp) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,underbrace_adp);

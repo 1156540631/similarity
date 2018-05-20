@@ -1,0 +1,10 @@
+data = NULL;
+data = goodG2B2Source(data);
+if(goodG2B2Global)
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));
+char * goodG2B2Source(char * data)
+return data;
+data = goodG2B2Source(data);
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

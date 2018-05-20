@@ -1,0 +1,9 @@
+wchar_t * VAR1;
+wchar_t * VAR5 = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+VAR1 = VAR5;
+VAR1[0] = L'\0';
+void FUN31(wchar_t * VAR1)
+FUN32(VAR1);
+void FUN32(wchar_t * VAR1)
+VAR4[100-1] = L'\0';
+SNPRINTF(VAR1, 100, L"%s", VAR4);

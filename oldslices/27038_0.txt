@@ -1,0 +1,10 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+char buf[MAXSIZE], *str2;
+str2 = shortstr(str, strlen(str), MAXSIZE-1);
+shortstr(char *p, int n, int targ)
+if(n > targ){
+return shortstr(p+1, n-1, targ);}
+return p;

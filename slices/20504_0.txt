@@ -1,0 +1,36 @@
+VAR1 = getenv(VAR2);
+VAR3 = fopen(VAR1,"rb");
+if (VAR3 != 0) {
+fseek(VAR3,0L,2);
+VAR4 = ftell(VAR3);
+rewind(VAR3);
+*VAR5 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+if (*VAR5 != 0) {
+VAR6 = fread(*VAR5,1,VAR4,VAR3);
+if (VAR3 != 0) {
+fclose(VAR3);
+FUNC1(&VAR7,"BURKES_STORZ");
+if (VAR7 != 0) {;
+VAR8 = VAR7;
+VAR9 = FUNC4(VAR8);
+FUNC3(VAR8)
+return VAR10;
+VAR9 = FUNC4(VAR8);
+VAR12 = ((char *)VAR9);
+VAR13 = ((int )(strlen(VAR12)));
+for (; VAR13 >= 0; (--VAR14 , --VAR13)) {
+VAR4->VAR12[VAR14] = VAR12[VAR13];
+FUNC2(VAR6, VAR15, "VAR4->VAR12", VAR4->VAR12, "CROSSOVER-STATE");
+VAR4->VAR12[VAR3] = FUNC5(VAR4->VAR12[VAR3]);
+free(VAR4);
+FUNC2(VAR6, VAR15, "VAR4->VAR12", VAR4->VAR12, "FINAL-STATE");
+if (VAR9 != 0)
+free(((char *)VAR9));
+int FUNC5(int VAR14)
+if (VAR14 >= 97 && VAR14 <= 122) {
+return VAR14 - 32;
+return VAR14;
+VAR4->VAR12[VAR3] = FUNC5(VAR4->VAR12[VAR3]);
+FUNC6("%c",VAR4->FUNC7(VAR4->VAR12[VAR3]));
+void FUNC6(char * VAR13, ...) {
+FUNC6("%c",VAR4->FUNC7(VAR4->VAR12[VAR3]));

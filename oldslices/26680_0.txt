@@ -1,0 +1,5 @@
+key_t stonesoup_key;
+if(sscanf(stonesoup_envKey, "%d", &stonesoup_key) > 0) {
+stonesoup_read_taint(&axiolite_scumboard,"2674",zeugobranchia_overbar);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if(sscanf(stonesoup_envKey, "%d", &stonesoup_key) > 0) {

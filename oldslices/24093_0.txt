@@ -1,0 +1,4 @@
+char stonesoup_source[1024];
+fraternizer_theer = ((char *)( *(mucinous_jerkingly - 5)) . targed_justicial);
+memset(stonesoup_source,0,1024);
+strncpy(stonesoup_source,fraternizer_theer,sizeof(stonesoup_source));

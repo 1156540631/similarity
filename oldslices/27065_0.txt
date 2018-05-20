@@ -1,0 +1,14 @@
+main(int argc, char **argv)
+userstr = argv[1];
+userstr2 = argv[2];
+test(userstr, userstr2);
+test(char *str1, char *str2)
+char buf[MAXSIZE];
+p = buf;
+snprintf(p, l, "<%s>", str1);
+x = strlen(p);
+p += x;
+*p++ = ' ';
+*p++ = '-';
+snprintf(p, l, "<%s>\n", str2);
+x = strlen(p);

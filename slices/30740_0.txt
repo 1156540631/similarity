@@ -1,0 +1,12 @@
+#define VAR8 L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define VAR9 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int FUN6 = 0;
+VAR2 = NULL;
+VAR2 = (void *)VAR9;
+FUN6 = 1;
+FUN7(VAR2);
+static void FUN7(void * VAR2)
+if(FUN6)
+size_t VAR12 = strlen((char *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, 1);
+memcpy(VAR13, VAR2, (VAR12+1));

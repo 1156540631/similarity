@@ -1,0 +1,5 @@
+goodB2GSource(data);
+static void goodB2GSource(int &data)
+fscanf(stdin, "%d", &data);
+if (data >= 0 && data < (10))
+buffer[data] = 1;

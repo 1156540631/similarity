@@ -1,0 +1,4 @@
+char *VAR1 = 0;
+VAR2 = (struct CLASS1*) malloc(sizeof (struct CLASS1));
+FUN1(VAR3, VAR4, "STONESOUP_TAINT_SOURCE", strlen(VAR1)+1, VAR1, "VAR5-VAR6");
+strncpy(VAR2->VAR7, VAR1, strlen(VAR1) + 1);

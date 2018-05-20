@@ -1,0 +1,3 @@
+char *VAR1 = (char *) calloc(25,sizeof(char));
+char *VAR2 ;
+strcpy(VAR1, VAR2);

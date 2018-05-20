@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(wchar_t * &data);
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));
+printWLine(data);
+free(data);

@@ -1,0 +1,5 @@
+void FUN1(list<char *> VAR1)
+char * VAR7 = VAR1.FUN2();
+memcpy(VAR25, VAR7, strlen(VAR7)*sizeof(char));
+printLine(VAR7);
+free(VAR7);

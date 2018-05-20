@@ -1,0 +1,11 @@
+wchar_t * VAR1;
+CLASS17 CLASS4;
+wchar_t VAR5[10+1];
+VAR1 = VAR5;
+VAR1[0] = L'\0';
+CLASS4.VAR14 = VAR1;
+FUN40(CLASS4);
+void FUN40(CLASS17 CLASS4)
+wchar_t * VAR1 = CLASS4.VAR14;
+wchar_t VAR4[10+1] = VAR30;
+wcsncpy(VAR1, VAR4, wcslen(VAR4) + 1);

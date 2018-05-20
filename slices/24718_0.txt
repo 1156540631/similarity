@@ -1,0 +1,8 @@
+VAR241 . VAR242 = getenv("VAR243") != ((void *)0);
+FUNC48(&VAR241);
+static void FUNC48(eVAR244_header_t *VAR244)
+if (VAR244 -> VAR245) {
+FUNC52(VAR244 -> VAR246);
+if (VAR244 -> VAR237) {
+FUNC48(&VAR241);
+static void FUNC52(guint8 *VAR246)

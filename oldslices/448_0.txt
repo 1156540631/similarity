@@ -1,0 +1,7 @@
+WCHAR newServiceBinaryPath[MAX_PATH + 1];
+if (!GetModuleFileNameW(NULL, newServiceBinaryPath,
+if (!GetVersionNumberFromPath(newServiceBinaryPath, newA,
+GetVersionNumberFromPath(LPWSTR path, DWORD &A, DWORD &B,
+DWORD fileVersionInfoSize = GetFileVersionInfoSizeW(path, 0);
+if (!GetFileVersionInfoW(path, 0, fileVersionInfoSize,
+if (!wcscmp(newServiceBinaryPath, serviceConfig.lpBinaryPathName)) {

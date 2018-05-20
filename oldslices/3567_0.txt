@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int predifferent_unroll = 20;
+char *overnumerously_accoutres;;
+stonesoup_read_taint(&overnumerously_accoutres,"5475",predifferent_unroll);
+humorless_iroko = ((int )(strlen(overnumerously_accoutres)));
+memcpy(enouncement_ambaris,overnumerously_accoutres,humorless_iroko);
+free(((char *)overnumerously_accoutres));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&overnumerously_accoutres,"5475",predifferent_unroll);
+humorless_iroko = ((int )(strlen(overnumerously_accoutres)));
+memcpy(enouncement_ambaris,overnumerously_accoutres,humorless_iroko);
+free(((char *)overnumerously_accoutres));

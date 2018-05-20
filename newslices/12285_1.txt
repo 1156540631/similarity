@@ -1,0 +1,6 @@
+VAR1 = VAR2;
+VAR1=1;
+return VAR1;
+unsigned int *VAR3 = (unsigned int*) malloc(FUN1(0)*sizeof(unsigned int));
+*(VAR3+1) = 10;
+free(VAR3);

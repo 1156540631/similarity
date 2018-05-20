@@ -1,0 +1,4 @@
+static void FUN1(char * VAR7)
+memmove(VAR7, VAR1, (strlen(VAR1) + 1) * sizeof(char));
+printLine(VAR7);
+free(VAR7);

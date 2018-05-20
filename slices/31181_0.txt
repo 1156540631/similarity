@@ -1,0 +1,15 @@
+#define VAR1 "AAAAAAAAAA"
+typedef union
+char * VAR26;
+char * VAR27;
+} CLASS13;
+char * VAR2;
+CLASS13 CLASS2;
+char VAR3[10];
+char VAR4[10+1];
+VAR2 = VAR4;
+VAR2[0] = '\0';
+CLASS2.VAR26 = VAR2;
+char * VAR2 = CLASS2.VAR27;
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);

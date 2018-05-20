@@ -1,0 +1,7 @@
+wchar_t * VAR1;
+wchar_t VAR5[10+1];
+if(VAR6)
+VAR1 = VAR5;
+VAR1[0] = L'\0';
+wchar_t VAR4[10+1] = VAR30;
+wcscpy(VAR1, VAR4);

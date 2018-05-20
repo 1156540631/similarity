@@ -1,0 +1,10 @@
+static void badVaSinkB(char * data, ...)
+char dataBuffer[100] = "";
+data = dataBuffer;
+badVaSinkB(data, data);
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+badVaSinkB(data, data);
+static void badVaSinkB(char * data, ...)
+va_start(args, data);

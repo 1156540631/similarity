@@ -1,0 +1,22 @@
+*VAR22 = NULL;
+*VAR22 = NULL;
+char VAR166[1024];
+int VAR165 = 91;
+char *VAR164;;
+FUN1(&VAR164,"7594",VAR165);
+VAR167 = ((void *)VAR164);
+VAR168 = 1;
+VAR169 = &VAR167;
+VAR170 = ((void **)(((unsigned long )VAR169) * VAR168 * VAR168)) + 5;
+VAR171 = ((char *)((char *)( *(VAR170 - 5))));
+memset(VAR166, 0, 1024);
+strncpy(VAR166, VAR171, sizeof(VAR166));
+void FUN1(char** VAR22, char* VAR19, int VAR23) {
+if ((VAR106 = shmget(VAR18, VAR23, 0666)) >= 0) {
+*VAR22 = (char*)calloc(VAR23, sizeof(char));
+FUN1(&VAR164,"7594",VAR165);
+VAR167 = ((void *)VAR164);
+VAR169 = &VAR167;
+VAR170 = ((void **)(((unsigned long )VAR169) * VAR168 * VAR168)) + 5;
+VAR171 = ((char *)((char *)( *(VAR170 - 5))));
+strncpy(VAR166, VAR171, sizeof(VAR166));

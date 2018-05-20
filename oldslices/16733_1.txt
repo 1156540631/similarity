@@ -1,0 +1,12 @@
+list<char *> dataList;
+data = (char *)malloc(100*sizeof(char));
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<char *> dataList)
+char * data = dataList.back();
+char dest[50] = "";
+SNPRINTF(dest, strlen(data), "%s", data);

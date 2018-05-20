@@ -1,0 +1,4 @@
+int main(int argc, char **argv) {
+if(argc >= 2) {
+char buf[5012];
+strncpy(buf, argv[1], sizeof buf - 1);

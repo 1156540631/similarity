@@ -1,0 +1,11 @@
+struct annunciation_halftimes cert_gimbal;
+cluniac_demibath = getenv("SUBSPECIALIST_NONLOYALTY");
+cert_gimbal . fruz_constipated = ((char *)cluniac_demibath);
+ungregariously_emerited[5] = cert_gimbal;
+pedule_phytopathogen[1] = 5;
+pedregal_tripetaloid =  *(ungregariously_emerited + pedule_phytopathogen[1]);
+newt_ftnerr = ((char *)pedregal_tripetaloid . fruz_constipated);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+memset(stonesoup_data->buffer,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, newt_ftnerr);

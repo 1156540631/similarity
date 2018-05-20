@@ -1,0 +1,6 @@
+nsTArray<nsCString> configFuncs;
+char persistConfig[PROPERTY_VALUE_MAX];
+join(configFuncs, USB_CONFIG_DELIMIT, PROPERTY_VALUE_MAX, newConfig);
+if (strcmp(currentConfig, newConfig)) {
+property_set(SYS_USB_CONFIG_PROPERTY, newConfig);
+}

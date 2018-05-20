@@ -1,0 +1,4 @@
+int main(int argc, char **argv) {
+if(argc >= 2) {
+strncpy(VAR39, argv[1], sizeof VAR39 - 1);
+VAR39[sizeof VAR39 - 1] = 0;

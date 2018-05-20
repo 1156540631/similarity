@@ -1,0 +1,13 @@
+uint8_t* frame_buffer,
+size_t frame_buffer_length,
+size_t new_length = 0;
+(*it).dataPtr - frame_buffer;
+fragmentation->fragmentationOffset[partition_id] =
+frame_buffer_length);
+assert(fragmentation->fragmentationOffset[partition_id] <
+(*partition_end).dataPtr + (*partition_end).sizeBytes - (*it).dataPtr;
+fragmentation->fragmentationLength[partition_id] =
+frame_buffer_length);
+assert(fragmentation->fragmentationLength[partition_id] <=
+new_length += fragmentation->fragmentationLength[partition_id];
+assert(new_length <= frame_buffer_length);

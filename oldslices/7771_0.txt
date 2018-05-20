@@ -1,0 +1,5 @@
+if(fread(&r, sizeof r, 1, f) != 1)
+fclose(f);
+if(fclose(f) != 0)
+return r;
+f

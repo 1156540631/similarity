@@ -1,0 +1,23 @@
+int FUN1(CLASS1 **VAR1,const char *VAR2,CLASS2 *VAR3,CLASS3 **VAR4)
+if ((VAR5 = FUN2(VAR6,VAR2,&VAR7)) < 0) {
+static int FUN2(CLASS1 *VAR6,const char *VAR2,CLASS3 **VAR4)
+return FUN3(VAR6 -> VAR8,&VAR6 -> VAR9,VAR2,VAR6,0,VAR6 -> VAR10);
+if ((VAR5 = FUN4(&VAR6 -> VAR8,VAR2,1 | VAR6 -> VAR11,(&VAR6 -> VAR12),VAR4)) < 0) {
+return FUN3(VAR6 -> VAR8,&VAR6 -> VAR9,VAR2,VAR6,0,VAR6 -> VAR10);
+if (!FUN5(VAR2)) {
+int FUN5(const char *VAR2)
+return VAR2 && FUN6(VAR13,(sizeof(VAR13)),VAR2,1) >= 0;
+int FUN6(char *VAR13,int VAR14,const char *VAR15,int VAR16)
+char VAR17[20];
+VAR18 = VAR15;
+VAR19 =  *(VAR18++);
+VAR20 = 0;
+FUN7(FUN8(( *VAR18))){
+VAR20 = VAR20 * '\' + ( *(VAR18++)) - 48;
+VAR19 =  *(VAR18++);
+VAR20 = VAR20 * '\' + ( *(VAR18++)) - 48;
+FUN9(VAR17,sizeof(VAR17),"%0*VAR21",VAR20,VAR16);
+VAR22 = (strlen(VAR17));
+FUN9(VAR17,sizeof(VAR17),"%0*VAR21",VAR20,VAR16);
+memcpy(VAR23,VAR17,VAR22);
+FUN9(VAR17,sizeof(VAR17),"%0*VAR21",VAR20,VAR16);

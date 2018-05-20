@@ -1,0 +1,16 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"VAR359");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR456,"TOYER_MCA");
+if (VAR456 != 0) {;
+VAR457 . VAR455 = ((char *)VAR456);
+VAR458 = &VAR457;
+FUN141(VAR458);

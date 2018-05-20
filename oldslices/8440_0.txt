@@ -1,0 +1,9 @@
+data = (char *)malloc(100*sizeof(char));
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_22_goodG2B2Source(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_22_goodG2B2Source(char * data)
+data[50-1] = '\0';
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memmove_22_goodG2B2Source(data);
+memmove(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

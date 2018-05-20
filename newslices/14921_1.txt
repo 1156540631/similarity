@@ -1,0 +1,12 @@
+void * VAR1;
+VAR2<void *> VAR3;
+VAR1 = VAR4;
+VAR1 = (void *)VAR5;
+VAR3.FUN1(VAR1);
+VAR3.FUN1(VAR1);
+VAR3.FUN1(VAR1);
+void FUN2(VAR2<void *> VAR3)
+void * VAR1 = VAR3.FUN3();
+VAR6 VAR7 = strlen((char *)VAR1);
+void * VAR8 = (void *)calloc(VAR7+1, 1);
+memcpy(VAR8, VAR1, (VAR7+1));

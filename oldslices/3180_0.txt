@@ -1,0 +1,6 @@
+void stonesoup_handle_taint(char *playthings_unrelaxable)
+asbestine_kirver = playthings_unrelaxable;
+primsie_testify = &asbestine_kirver;
+BURROCK_VRILLING(primsie_testify);
+void hadder_haleigh(waterage_marksville *evangelised_barres)
+free(((char *)( *evangelised_barres)));

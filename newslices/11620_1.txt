@@ -1,0 +1,4 @@
+int *VAR1=(int*) calloc(5,sizeof(int));
+int VAR2 = 3;
+*(VAR1 +((2 * VAR2) + 1)) = 1;
+free(VAR1);

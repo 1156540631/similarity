@@ -1,0 +1,8 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+VAR2 = FUN24(VAR2);
+char * FUN24(char * VAR2)
+VAR2[50-1] = '\0';
+return VAR2;
+char VAR4[50] = "";
+memmove(VAR4, VAR2, strlen(VAR2)*sizeof(char));

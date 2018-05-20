@@ -1,0 +1,5 @@
+void badSink(list<int64_t *> dataList)
+int64_t * data = dataList.back();
+memcpy(data, source, 100*sizeof(int64_t));
+printLongLongLine(data[0]);
+free(data);

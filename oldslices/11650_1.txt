@@ -1,0 +1,71 @@
+int FixedTableLayout::calcWidthArray(int)
+int usedWidth = 0;
+RenderObject* child = m_table->firstChild();
+int nEffCols = m_table->numEffCols();
+m_width.resize(nEffCols);
+int currentEffectiveColumn = 0;
+Length grpWidth;
+toRenderTableCol(child)->calcPrefWidths();
+RenderObject* next = child->firstChild();
+next = child->nextSibling();
+child = next;
+int bs = m_table->bordersPaddingAndSpacing();
+int tableWidth = m_table->style()->width().isFixed() ? m_table->style()->width().value() - bs : 0;
+int mw = calcWidthArray(tableWidth) + bs;
+if (child->isTableCol()) {
+if (!next && child->parent()->isTableCol()) {
+next = child->parent()->nextSibling();
+child = next;
+RenderTableCol* col = toRenderTableCol(child);
+if (col->firstChild())
+grpWidth = col->style()->width();
+Length w = col->style()->width();
+if (w.isAuto())
+grpWidth = Length();
+w = grpWidth;
+int effWidth = 0;
+if (w.isFixed() && w.value() > 0)
+effWidth = w.value();
+int span = col->span();
+m_table->splitColumn(currentEffectiveColumn, span);
+span -= spanInCurrentEffectiveColumn;
+m_table->appendColumn(span);
+nEffCols++;
+spanInCurrentEffectiveColumn = span;
+currentEffectiveColumn++;
+if (span < m_table->spanOfEffCol(currentEffectiveColumn)) {
+m_table->splitColumn(currentEffectiveColumn, span);
+nEffCols++;
+spanInCurrentEffectiveColumn = m_table->spanOfEffCol(currentEffectiveColumn);
+if ((w.isFixed() || w.isPercent()) && w.isPositive()) {
+m_width[currentEffectiveColumn].setRawValue(w.type(), w.rawValue() * spanInCurrentEffectiveColumn);
+usedWidth += effWidth * spanInCurrentEffectiveColumn;
+RenderTableSection* section = m_table->header();
+section = m_table->firstBody();
+section = m_table->footer();
+if (section && !section->numRows())
+section = m_table->sectionBelow(section, true);
+int cCol = 0;
+RenderObject* firstRow = section->firstChild();
+child = firstRow->firstChild();
+child = child->nextSibling();
+if (child->isTableCell()) {
+RenderTableCell* cell = toRenderTableCell(child);
+if (cell->prefWidthsDirty())
+cell->calcPrefWidths();
+Length w = cell->styleOrColWidth();
+int span = cell->colSpan();
+int effWidth = 0;
+if (w.isFixed() && w.isPositive())
+effWidth = w.value();
+int i = 0;
+i++;
+cCol += i;
+ASSERT(cCol + i < nEffCols);
+int eSpan = m_table->spanOfEffCol(cCol + i);
+if (m_width[cCol + i].isAuto() && w.type() != Auto) {
+m_width[cCol + i].setRawValue(w.type(), w.rawValue() * eSpan / span);
+usedWidth += effWidth * eSpan / span;
+return usedWidth;
+int mw = calcWidthArray(tableWidth) + bs;
+minWidth = max(mw, tableWidth);

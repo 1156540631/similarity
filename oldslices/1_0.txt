@@ -1,0 +1,5 @@
+char *psz_fileName = calloc( ZIP_FILENAME_LEN, 1 );
+ZIP_FILENAME_LEN, NULL, 0, NULL, 0 )
+if( unzGetCurrentFileInfo( file, p_fileInfo, psz_fileName,
+vlc_array_append( p_filenames, strdup( psz_fileName ) );
+free( psz_fileName );

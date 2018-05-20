@@ -1,0 +1,11 @@
+int globalTrue = 1;
+int globalFalse = 0;
+data = -1;
+if(globalTrue)
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+if(globalTrue)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

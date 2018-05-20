@@ -1,0 +1,24 @@
+char * data;
+char * *dataPtr1 = &data;
+char * *dataPtr2 = &data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+char * data = *dataPtr1;
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+*dataPtr1 = data;
+char * data = *dataPtr2;
+badVaSink(data, data);
+static void badVaSink(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

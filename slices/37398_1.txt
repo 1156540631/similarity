@@ -1,0 +1,10 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+VAR4 = 1;
+VAR1 = FUN1(VAR1);
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+return VAR1;
+char VAR3[50] = "";
+strcpy(VAR3, VAR1);

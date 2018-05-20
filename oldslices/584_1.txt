@@ -1,0 +1,73 @@
+uint16_t len = letoh16(entry->filename_size);
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+const char *mBuf;
+entry = (cdir_entry *)(mBuf + letoh32(mEnd->cdir_offset));
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return sizeof(cdir_entry) + letoh16(filename_size) +
+letoh16(extra_field_size) + letoh16(file_comment_size);
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return entry;
+return nullptr;
+while ((entry = reader.GetNextEntry(entry))) {
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+return sizeof(cdir_entry) + letoh16(filename_size) +
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+string descCopy;
+descCopy.append(file->GetData(), entry->GetDataSize());
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+vector<AnimationPart> parts;
+end = strstr(line, "\n");
+} while (end && *(line = end + 1));
+end = strstr(line, "\n");
+AnimationPart part;
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+parts.push_back(part);
+for (uint32_t i = 0; i < parts.size(); i++) {
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+gettimeofday(&tv1, nullptr);
+AnimationFrame &frame = part.frames[k];
+memcpy(vaddr, frame.buf,
+gettimeofday(&tv2, nullptr);
+frame.buf = nullptr;
+free(frame.buf);
+string GetEntryName(const cdir_entry *entry)
+string name = reader.GetEntryName(entry);
+file = reader.GetLocalEntry(entry);
+const local_file_header * GetLocalEntry(const cdir_entry *entry)
+(local_file_header *)(mBuf + letoh32(entry->offset));
+const local_file_header * data =
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+letoh16(extra_field_size) + GetDataSize();
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+parts.push_back(part);
+for (uint32_t i = 0; i < parts.size(); i++) {
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+AnimationFrame &frame = part.frames[k];
+free(frame.buf);

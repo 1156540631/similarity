@@ -1,0 +1,7 @@
+int main(int argc,char*argv[])
+if(argv[1])
+VAR399 = atoi(argv[1]);
+VAR400 = (int)floor((double)VAR399/1000.0);
+VAR401 = (int)floor((int)VAR399%1000);
+printf("VAR400 = %d vflag_func = %d VAR399 =%d \VAR7" , VAR400, VAR401,VAR399);
+if (VAR400 ==44 || VAR400 == 888)

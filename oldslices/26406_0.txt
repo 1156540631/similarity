@@ -1,0 +1,2 @@
+stonesoup_buffer = malloc(65528);
+strncpy(stonesoup_buffer, outdreaming_lilburn, stonesoup_buffer_len);

@@ -1,0 +1,9 @@
+VAR1 = 0;
+STRUCT2 VAR119;
+FUN7(VAR119,VAR120);
+VAR121 = (FUN17(VAR119,VAR122 ));
+FUN18(VAR121);
+void FUN19(VAR122 VAR123)
+VAR124 = ((char *)VAR123);
+VAR125 = malloc((strlen(VAR124) + 1) * sizeof(char ));
+strcpy(VAR125,VAR124);

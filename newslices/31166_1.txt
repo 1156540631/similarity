@@ -1,0 +1,14 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+char * VAR3;
+char VAR4[10];
+char VAR5[10+1];
+switch(6)
+case 6:
+VAR3 = VAR4;
+VAR3[0] = '\';
+break;
+default:
+FUN1("VAR6, VAR7 VAR8");
+break;
+char VAR9[10+1] = VAR2;
+strcpy(VAR3, VAR9);

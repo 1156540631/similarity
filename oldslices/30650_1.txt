@@ -1,0 +1,12 @@
+int dataArray[5];
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+dataArray[2] = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_66b_badSink(dataArray);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_listen_socket_66b_badSink(int dataArray[])
+int data = dataArray[2];
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

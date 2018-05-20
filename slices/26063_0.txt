@@ -1,0 +1,34 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"VAR359");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR405,"SCIMITARED_FURNESS");
+if (VAR405 != 0) {;
+VAR406 = &VAR405;
+VAR407 = VAR406 + 5;
+VAR408 = ((char *)( *(VAR407 - 5)));
+VAR409 = ((int )(strlen(VAR408)));
+for (; VAR409 >= 0; (--VAR346 , --VAR409)) {
+VAR410[VAR346] = VAR408[VAR409];
+tracepoint(VAR31, VAR249, "VAR410", VAR410, "CROSSOVER-STATE");
+VAR410[VAR10] = FUN68(VAR410[VAR10]);
+FUN69("%VAR208\VAR213",&(VAR410[VAR346+1]));
+free(VAR410);
+tracepoint(VAR31, VAR249, "VAR410", VAR410, "FINAL-STATE");
+if ( *(VAR407 - 5) != 0)
+free(((char *)( *(VAR407 - 5))));
+void FUN69(char * VAR205, ...) {
+FUN69("%VAR208\VAR213",&(VAR410[VAR346+1]));
+int FUN68(int VAR13)
+if (VAR13 >= 97 && VAR13 <= 122) {
+return VAR13 - 32;
+return VAR13;
+VAR410[VAR10] = FUN68(VAR410[VAR10]);
+FUN69("%VAR208\VAR213",&(VAR410[VAR346+1]));

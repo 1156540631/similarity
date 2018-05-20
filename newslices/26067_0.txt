@@ -1,0 +1,17 @@
+VAR1 = FUN1("TRANSGRESSED_SULFONAL");
+if (VAR1 != 0) {;
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+if (VAR3 == 0) {
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+FUN2(VAR3);
+void FUN2(char *const VAR4)
+VAR5 = ((char *)((char *)VAR4));
+for (VAR6 = 0; VAR6 < strlen(VAR5); ++VAR6) {
+VAR5[VAR6],
+VAR7->VAR8[(int) VAR5[VAR6]]);
+FUN3(VAR9, VAR10, "((int) VAR11[VAR6])", ((int) VAR5[VAR6]), &(VAR5[VAR6]), "VAR12-VAR13");
+if (((char *)VAR4) != 0)
+free(((char *)((char *)VAR4)));
+void FUN4(char * VAR14, ...) {

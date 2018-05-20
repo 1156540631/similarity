@@ -1,0 +1,15 @@
+int main(int argc, char** argv) {
+switch (argc) {
+dname = argv[i++];
+fname = argv[i];
+fprintf(stderr,"%s: usage [dictionary_dir] dictionary_filename\n",argv[0]);
+d = ddict_scan(dname,fname,1);
+ddict_t* ddict_scan(const char* system_directory, const char* filename, int dbg) {
+sys_dir = system_directory;
+DiamDictin = ddict_open(sys_dir,filename);
+DiamDictlex();
+static FILE* ddict_open(const char*, const char*);
+D(("unable to open %s\n", filename));
+D(("\n---------------\n%s\n------- %d -------\n",strbuf,len_strbuf));
+DiamDictlex();
+static void ddict_debug(const char* fmt, ...);

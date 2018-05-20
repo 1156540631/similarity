@@ -1,0 +1,76 @@
+VAR130 -> VAR180 = 1;
+double VAR181 = 0;
+VAR143 = FUN46(VAR181 / VAR182);
+if (!FUN36()) {
+VAR183 = FUN37();
+VAR130 = FUN38();
+if (FUN39()) {
+VAR183 = FUN37();
+FUN40(0,VAR184,VAR185);
+FUN41();
+FUN42();
+FUN43();
+FUN40(1,VAR184,FUN44());
+VAR130 = VAR148[VAR24];
+VAR186 = VAR130 -> VAR186;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+FUN45(&VAR189,"frame=%VAR192\VAR25",VAR186);
+VAR190 = (VAR156 -> VAR168 * VAR156 -> VAR173) * 255.0 * 255.0 * VAR186;
+VAR143 = FUN46(VAR191 / VAR190);
+static double FUN46(double VAR192)
+return - 10.0 * log(VAR192) / log(10.0);
+VAR188 = (VAR156 -> VAR193 -> VAR194) / ((float )'v');
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+FUN45(&VAR189,"stream_%d_%d_q=%.1f\VAR25",VAR130 -> VAR159,VAR130 -> VAR138,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+VAR195[VAR196]++;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%X",((int )(lrintf((log2((VAR195[VAR197] + 1)))))));
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");
+VAR143 = FUN46(VAR191 / VAR190);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",type[VAR197],VAR143);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"*:%2.2f ",FUN46(VAR181 / VAR182));
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",type[VAR197],VAR143);
+static double FUN46(double VAR192)
+return - 10.0 * log(VAR192) / log(10.0);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"*:%2.2f ",FUN46(VAR181 / VAR182));
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",type[VAR197],VAR143);
+static void FUN47(STRUCT8 *VAR130)
+static int VAR195['4'];
+VAR34[0] = '\0';
+float VAR188 = (- 1);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"VAR188=%2.1f ",VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"L");
+if (VAR196 >= 0 && VAR196 < sizeof(VAR195) / sizeof(VAR195[0])) {
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%X",((int )(lrintf((log2((VAR195[VAR197] + 1)))))));
+double VAR182 = 0;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"PSNR=");
+VAR181 += VAR191;
+VAR182 += VAR190;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"%VAR23:%2.2f ",type[VAR197],VAR143);
+VAR143 = FUN46(VAR181 / VAR182);
+VAR148[VAR24] -> VAR198 = 0;
+FUN48();
+if (!FUN36()) {
+VAR183 = FUN37();
+VAR130 = FUN38();
+if (FUN39()) {
+VAR183 = FUN37();
+FUN40(0,VAR184,VAR185);
+FUN41();
+FUN42();
+FUN43();
+FUN40(1,VAR184,FUN44());
+VAR130 = VAR148[VAR24];
+VAR186 = VAR130 -> VAR186;
+snprintf(VAR34 + strlen(VAR34),sizeof(VAR34) - strlen(VAR34),"frame=%5d VAR187=%3.*f VAR188=%3.1f ",VAR186,VAR187 < 9.95,VAR187,VAR188);
+FUN45(&VAR189,"frame=%VAR192\VAR25",VAR186);
+VAR190 = (VAR156 -> VAR168 * VAR156 -> VAR173) * 255.0 * 255.0 * VAR186;
+VAR143 = FUN46(VAR191 / VAR190);

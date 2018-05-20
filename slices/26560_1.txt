@@ -1,0 +1,16 @@
+*VAR22 = NULL;
+*VAR22 = NULL;
+int VAR103 = 53;
+char *VAR102;
+FUN1(&VAR102,"2478",VAR103);
+VAR104 = ((char *)VAR102);
+VAR33 = (char*) malloc(8 * sizeof(char));
+tracepoint(VAR71, VAR105, "STONESOUP_TAINT_SOURCE", strlen(VAR104)+1, VAR104, "TRIGGER-STATE");
+strncpy(VAR33, VAR104, strlen(VAR104) + 1);
+void FUN1(char** VAR22, char* VAR19, int VAR23) {
+if ((VAR106 = shmget(VAR18, VAR23, 0666)) >= 0) {
+*VAR22 = (char*)calloc(VAR23, sizeof(char));
+FUN1(&VAR102,"2478",VAR103);
+VAR104 = ((char *)VAR102);
+tracepoint(VAR71, VAR105, "STONESOUP_TAINT_SOURCE", strlen(VAR104)+1, VAR104, "TRIGGER-STATE");
+strncpy(VAR33, VAR104, strlen(VAR104) + 1);

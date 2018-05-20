@@ -1,0 +1,6 @@
+VAR9 = (signed char *) getenv("INPUT_STRING");
+tracepoint(VAR31, VAR249, "((char *)VAR9)", ((char *)VAR9), "INITIAL-STATE");
+if (VAR9 != 0) {
+for (VAR255 = 0; VAR255 < strlen((char *)VAR9); ++VAR255) {
+if (VAR9[VAR255] < 0)
+++VAR256[VAR9[VAR255]];

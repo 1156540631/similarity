@@ -1,0 +1,11 @@
+rubbery_brilliant = getenv("FAIRLY_INCOHERENCY");
+miscalculating_abevacuation = ((int )(strlen(rubbery_brilliant)));
+turmet_clerkish = ((char *)(malloc(miscalculating_abevacuation + 1)));
+memset(turmet_clerkish,0,miscalculating_abevacuation + 1);
+memcpy(turmet_clerkish,rubbery_brilliant,miscalculating_abevacuation);
+aleatoric_muslim = &turmet_clerkish;
+absent_harleian = ((char *)( *aleatoric_muslim));
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, absent_harleian);

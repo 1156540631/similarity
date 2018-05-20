@@ -1,0 +1,8 @@
+atef_kodurite = getenv("SILKMEN_OVEREMPIRICALLY");
+thesmothetes_milyukov = atef_kodurite;
+audiovisual_enhydris[ *( *nefandousness_belonging)] = thesmothetes_milyukov;
+stomatodynia_vandyke = audiovisual_enhydris[ *( *nefandousness_belonging)];
+repegged_woodfish = ((char *)stomatodynia_vandyke);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(repegged_woodfish)+1, repegged_woodfish, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, repegged_woodfish, strlen(repegged_woodfish) + 1);

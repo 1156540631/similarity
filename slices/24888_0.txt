@@ -1,0 +1,28 @@
+return FUNC4("image2",((void *)0),((void *)0));
+return FUNC45(VAR1 -> VAR2,&VAR1 -> VAR159,VAR83,VAR1,0,VAR1 -> VAR4);
+return FUNC45(VAR1 -> VAR2,&VAR1 -> VAR159,VAR83,VAR1,0,VAR1 -> VAR4);
+memcpy(VAR5,VAR80,VAR3);
+snprintf(VAR80,sizeof(VAR80),"%0*d",VAR8,VAR10);
+int FUNC46(AVFormatContext **ps,const char *VAR83,AVInputFormat *VAR84,AVDictionary **VAR12)
+if ((VAR6 = FUNC5(VAR1,VAR83,&tmp)) < 0) {
+static int FUNC5(AVFormatContext *VAR1,const char *VAR83,AVDictionary **VAR12)
+if ((VAR6 = FUNC3(&VAR1 -> VAR2,VAR83,1 | VAR1 -> VAR79,(&VAR1 -> VAR85),VAR12)) < 0) {
+if (!FUNC7(VAR83)) {
+int FUNC7(const char *VAR83)
+return VAR83 && FUNC6(VAR13,(sizeof(VAR13)),VAR83,1) >= 0;
+int FUNC6(char *VAR13,int VAR13_size,const char *VAR9,int VAR10)
+char VAR80[20];
+VAR7 = VAR9;
+c =  *(VAR7++);
+VAR8 = 0;
+while(stat8(( *VAR7))){
+VAR8 = VAR8 * '\n' + ( *(VAR7++)) - 48;
+c =  *(VAR7++);
+VAR8 = VAR8 * '\n' + ( *(VAR7++)) - 48;
+snprintf(VAR80,sizeof(VAR80),"%0*d",VAR8,VAR10);
+VAR3 = (strlen(VAR80));
+snprintf(VAR80,sizeof(VAR80),"%0*d",VAR8,VAR10);
+AVOutputFormat *FUNC4(const char *VAR11,const char *VAR83,const char *VAR14)
+if (!VAR11 && VAR83 && FUNC7(VAR83) && (FUNC30(VAR83)) != VAR18) {
+int FUNC45(AVIOContext *VAR2,AVInputFormat **VAR84,const char *VAR83,void *VAR15,unsigned int VAR16,unsigned int VAR17)
+if (!FUNC7(VAR83)) {

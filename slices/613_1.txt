@@ -1,0 +1,40 @@
+ExecuteServiceCommand(int VAR6, LPWSTR *VAR7)
+if (!lstrcmpi(VAR7[2], VAR3"software-update")) {
+result = ProcessSoftwareUpdateCommand(VAR6 - 3, VAR7 + 3);
+ProcessSoftwareUpdateCommand(DWORD VAR6, LPWSTR *VAR7)
+if (!FUN2(VAR6, VAR7, VAR1)) {
+FUN2(int VAR9, LPWSTR *VAR4, WCHAR VAR3[VAR2])
+wcscpy(VAR3, VAR4[2]);
+bool backgroundUpdate = IsUpdateBeingStaged(VAR9, VAR4);
+if (!IsLocalFile(VAR7[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(VAR7[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(VAR7[0], VAR8,
+HMODULE updaterModule = LoadLibraryEx(VAR7[0], NULL,
+VAR7[0]);
+if (StartUpdateProcess(VAR6, VAR7, VAR1,
+LPWSTR *VAR7,
+LPWSTR cmdLine = MakeCommandLine(VAR6, VAR7);
+PRUnichar* MakeCommandLine(int VAR6, PRUnichar **VAR7);
+WCHAR VAR3[VAR2 + 1];
+wcscpy(VAR3, VAR1);
+FUN2(updaterINITemp, VAR7[0], VAR3"updater.tmp")) {
+BOOL FUN2(LPWSTR VAR9,  LPCWSTR VAR8,
+if (FUN2(updaterINI, VAR7[0], VAR3"updater.ini") &&
+processStarted = CreateProcessW(VAR7[0], cmdLine,
+if (IsStatusApplying(VAR7[1], isApplying) && isApplying) {
+BOOL FUN2(LPWSTR VAR9,  LPCWSTR VAR8,
+processStarted = CreateProcessW(VAR7[0], cmdLine,
+if (IsStatusApplying(VAR7[1], isApplying) && isApplying) {
+IsStatusApplying(LPCWSTR VAR1, BOOL &isApplying)
+wcscpy(VAR3, VAR1);
+IsUpdateBeingStaged(int VAR6, LPWSTR *VAR7)
+return VAR6 == 4 && !wcscmp(VAR7[3], VAR3"-1");
+bool replaceRequest = (VAR9 >= 4 && wcsstr(VAR4[3], VAR3"/replace"));
+if (!IsLocalFile(VAR7[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(VAR7[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(VAR7[0], VAR8,
+HMODULE updaterModule = LoadLibraryEx(VAR7[0], NULL,
+VAR7[0]);
+if (StartUpdateProcess(VAR6, VAR7, VAR1,
+LPWSTR *VAR7,
+LPWSTR cmdLine = MakeCommandLine(VAR6, VAR7);

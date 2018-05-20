@@ -1,0 +1,7 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&photograph_dworak,"UNFEARY_HYBRIDISER");
+if (photograph_dworak != 0) {;
+egrep_adiathermancy[36] = photograph_dworak;
+obdurately_buckman(egrep_adiathermancy);

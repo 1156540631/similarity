@@ -1,0 +1,7 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[100-1] = '\0';
+char * dataCopy = data;
+char * data = dataCopy;
+memcpy(dest, data, strlen(data)*sizeof(char));

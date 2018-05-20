@@ -1,0 +1,6 @@
+char VAR2[100] = "";
+VAR1 = VAR2;
+VAR1[VAR5 + VAR3 / sizeof(char)] = '\0';
+VAR6 = strchr(VAR1, '\r');
+VAR6 = strchr(VAR1, '\n');
+size_t VAR5 = strlen(VAR1);

@@ -1,0 +1,3 @@
+VAR1 VAR2 = FUN1(VAR3, 0);
+if (!FUN2(VAR2, &VAR4)) {
+FUN3(VAR2);

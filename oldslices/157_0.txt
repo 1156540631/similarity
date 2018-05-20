@@ -1,0 +1,9 @@
+UpdateJumpTargets(jt->kids[JT_LEFT], pivot, delta);
+UpdateJumpTargets(jt->kids[JT_RIGHT], pivot, delta);
+JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN);
+UpdateJumpTargets(JSJumpTarget *jt, ptrdiff_t pivot, ptrdiff_t delta)
+delta += JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN;
+growth += delta;
+growth / (JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN), cg->numSpanDeps,
+passes, offset + growth, offset, growth);
+growth / (JUMPX_OFFSET_LEN - JUMP_OFFSET_LEN), cg->numSpanDeps,

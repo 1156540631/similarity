@@ -1,0 +1,5 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&blurry_pyrographies,"UNQUALIFIABLE_BILLITON");
+if (blurry_pyrographies != 0) {;

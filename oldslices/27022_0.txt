@@ -1,0 +1,4 @@
+int main(char * argv[])
+myfunc(argv[1]);
+int myfunc(const char *arg)
+if (strlen(arg) >= sizeof(buff))

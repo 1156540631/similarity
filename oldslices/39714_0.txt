@@ -1,0 +1,14 @@
+char * dataArray[5];
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+dataArray[2] = data;
+CWE134_Uncontrolled_Format_String__char_console_vfprintf_66b_goodG2BSink(dataArray);
+void CWE134_Uncontrolled_Format_String__char_console_vfprintf_66b_goodG2BSink(char * dataArray[])
+char * data = dataArray[2];
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

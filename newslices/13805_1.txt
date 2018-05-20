@@ -1,0 +1,16 @@
+void VAR1::FUN1(const char* VAR2, CLASS1* VAR3, VAR4 VAR5)
+VAR6 VAR7;
+VAR7.VAR8 = VAR2;
+VAR2 = FUN2(VAR7);
+void FUN2(VAR6 VAR7)
+char * VAR2 = VAR7.VAR8;
+FUN3("VAR9 VAR10 VAR11 \'%s\' VAR12...", VAR2);
+return VAR2;
+CLASS2* VAR13 = new CLASS2();
+if (VAR14 >= 16)
+FUN4((char*)VAR13->VAR15, VAR16 - 1, "0 %s", VAR2);
+else
+FUN4((char*)VAR13->VAR15, VAR16 - 1, "%s", VAR2);
+VAR13->VAR17 = strlen((char*)VAR13->VAR15) + 1;
+VAR18.FUN5(FUN6(VAR13, VAR3, VAR5));
+FUN7();

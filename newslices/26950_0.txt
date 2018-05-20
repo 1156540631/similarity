@@ -1,0 +1,3 @@
+char VAR1[VAR2];
+if(fgets(VAR1, sizeof VAR1, VAR3))
+printf("VAR4: %s\n", VAR1);

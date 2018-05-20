@@ -1,0 +1,3 @@
+jmp_buf opalesque_ethnish;
+propylitic_imprecision = setjmp(opalesque_ethnish);
+longjmp(opalesque_ethnish,1);

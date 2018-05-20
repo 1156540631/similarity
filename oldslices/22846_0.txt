@@ -1,0 +1,5 @@
+void imbathe_rhodophyta(char *beseecher_exhilarating)
+blackberrylike_strolling = ((char *)beseecher_exhilarating);
+stonesoup_data.buffer[stonesoup_i] = 0;
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, blackberrylike_strolling);

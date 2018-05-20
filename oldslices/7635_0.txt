@@ -1,0 +1,9 @@
+data = (char *)malloc(100*sizeof(char));
+data = goodG2B2Source(data);
+static char * goodG2B2Source(char * data)
+data[50-1] = '\0';
+return data;
+data = goodG2B2Source(data);
+strcpy(dest, data);
+printLine(data);
+free(data);

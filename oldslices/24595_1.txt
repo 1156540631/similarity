@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+char buf[10];
+if ((argc < 5) || (atoi(argv[2]) > 10))
+buf[atoi(argv[2])] = 'A';

@@ -1,0 +1,11 @@
+char * VAR1;
+void (*VAR2) (char *, ...) = VAR3;
+char VAR4[100] = "";
+VAR1 = VAR4;
+strcpy(VAR1, "fixedstringtest");
+VAR2(VAR1);
+void VAR3(char * VAR1, ...)
+char VAR5[100] = "";
+VAR6 VAR7;
+FUN1(VAR7, VAR1);
+FUN2(VAR5, 100-1, VAR1, VAR7);

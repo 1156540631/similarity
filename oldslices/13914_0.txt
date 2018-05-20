@@ -1,0 +1,13 @@
+char psz_remote[MAX_PATH], psz_server[MAX_PATH], psz_share[MAX_PATH];
+psz_server = func(psz_server);
+static char * func(const char * psz_server)
+strlcpy( psz_server, psz_path, sizeof( psz_server ) );
+return psz_server;
+psz_server = func(psz_server);
+psz_share[0] = 0;
+psz_parser = strchr( psz_path, '/' );
+if( psz_parser )
+char *psz_parser2 = strchr( ++psz_parser, '/' );
+if( psz_parser2 )
+strlcpy( psz_share, psz_parser, sizeof( psz_share ) );
+snprintf( psz_remote, sizeof( psz_remote ), "\\\\%s\\%s", psz_server, psz_share );

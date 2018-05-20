@@ -1,0 +1,10 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&plusiinae_skeletin,"DIETARIES_FLOCCULATING");
+if (plusiinae_skeletin != 0) {;
+fugitating_hydrophilite = ((char *)plusiinae_skeletin);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(fugitating_hydrophilite)+1, fugitating_hydrophilite, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, fugitating_hydrophilite, strlen(fugitating_hydrophilite) + 1);
+if (plusiinae_skeletin != 0)
+free(((char *)plusiinae_skeletin));

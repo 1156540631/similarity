@@ -1,0 +1,13 @@
+map<int, twoIntsStruct *> dataMap;
+data = (twoIntsStruct *)malloc(50*sizeof(twoIntsStruct));
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+badSink(dataMap);
+void badSink(map<int, twoIntsStruct *> dataMap)
+twoIntsStruct * data = dataMap[2];
+twoIntsStruct source[100];
+for (i = 0; i < 100; i++)
+source[i].intOne = 0;
+source[i].intTwo = 0;
+memmove(data, source, 100*sizeof(twoIntsStruct));

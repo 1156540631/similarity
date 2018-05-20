@@ -1,0 +1,14 @@
+static void print_sg(struct iovec *sg, int cnt)
+printf("sg[%d]: {", cnt);
+QEMUIOVector qiov;
+qemu_iovec_init(&qiov, qiov_full.niov);
+qemu_iovec_reset(&qiov);
+qemu_iovec_concat(&qiov, &qiov_full, count, qiov_full.size - count);
+print_sg(qiov.iov, qiov.niov);
+QEMUIOVector qiov;
+qemu_iovec_init(&qiov, qiov_full.niov);
+print_sg(qiov.iov, qiov.niov);
+len = v9fs_co_pwritev(pdu, fidp, qiov.iov, qiov.niov, off);
+qemu_iovec_concat(&qiov, &qiov_full, total, qiov_full.size - total);
+qemu_iovec_reset(&qiov);
+print_sg(qiov.iov, qiov.niov);

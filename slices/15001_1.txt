@@ -1,0 +1,13 @@
+char * VAR1;
+vector<char *> VAR2;
+char var3[10];
+char dataGoodBuffer[10+1];
+VAR1 = var3;
+data[0] = '\0';
+VAR2.insert(VAR2.end(), 1, ata);
+VAR2.insert(VAR2.end(), 1, VAR1);
+VAR2.insert(VAR2.end(), 1, VAR1);
+void badSink(vector<wchar_t *> VAR2)
+wchar_t * VAR1 = VAR2[2];
+wchar_t source[10+1] = SRC_STRING;
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

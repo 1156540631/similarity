@@ -1,0 +1,3 @@
+jmp_buf limnoriidae_wanderoo;
+indestrucible_outbaking = setjmp(limnoriidae_wanderoo);
+longjmp(limnoriidae_wanderoo,1);

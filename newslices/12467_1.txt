@@ -1,0 +1,13 @@
+void FUN1(char * VAR1, ...) {
+free (VAR2);
+void FUN2(VAR3 VAR4)
+FUN3(VAR4);
+void FUN3(VAR3 VAR5)
+VAR6 = ((char *)VAR5);
+VAR7 = strlen(VAR6) + 1;
+VAR8 = 64;
+VAR2 = (char*) malloc (VAR8 * sizeof (char));
+VAR6[VAR7 - VAR9 - 1];
+VAR2[VAR8 - VAR9 - 1] =
+FUN1("%02x",VAR2[VAR8 - VAR9 - 1]);
+free (VAR2);

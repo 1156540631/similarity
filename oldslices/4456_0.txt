@@ -1,0 +1,3 @@
+jmp_buf pronger_carbonisable;
+guarachas_minden = setjmp(pronger_carbonisable);
+longjmp(pronger_carbonisable,1);

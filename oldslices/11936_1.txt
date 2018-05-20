@@ -1,0 +1,4 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_81_bad::action(char * data) const
+strcat(data, source);
+printLine(data);
+free(data);

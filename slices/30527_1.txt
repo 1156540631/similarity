@@ -1,0 +1,9 @@
+VAR5 = -1;
+for(VAR22 = 0; VAR22 < 1; VAR22++)
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+for(VAR49 = 0; VAR49 < 1; VAR49++)
+int VAR16[10] = { 0 };
+if (VAR5 >= 0)
+VAR16[VAR5] = 1;

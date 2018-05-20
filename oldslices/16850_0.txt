@@ -1,0 +1,12 @@
+vector<char *> dataVector;
+data = (char *)malloc(100*sizeof(char));
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+char dest[50] = "";
+strcpy(dest, data);

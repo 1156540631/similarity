@@ -1,0 +1,10 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+data = (void *)WIDE_STRING;
+const CWE121_Stack_Based_Buffer_Overflow__CWE135_81_base& baseObject = CWE121_Stack_Based_Buffer_Overflow__CWE135_81_bad();
+baseObject.action(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_81_bad::action(void * data) const
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

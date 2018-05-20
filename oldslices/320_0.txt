@@ -1,0 +1,21 @@
+const char *format,
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+ch = *format++;
+if (isdigit((unsigned char)ch)) {

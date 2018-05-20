@@ -1,0 +1,7 @@
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+good1();
+good2();
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_03_good();
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_03_bad();
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));

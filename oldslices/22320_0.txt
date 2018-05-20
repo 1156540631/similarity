@@ -1,0 +1,5 @@
+void unsenatorial_underbox(char ***************************************************apiculturist_helaine)
+char stonesoup_source[1024];
+dishellenize_noncumbrous = ((char *)( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *apiculturist_helaine)))))))))))))))))))))))))))))))))))))))))))))))))));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, dishellenize_noncumbrous, sizeof(stonesoup_source));

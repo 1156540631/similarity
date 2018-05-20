@@ -1,0 +1,3 @@
+us = ic->duration % AV_TIME_BASE;
+(100 * us) / AV_TIME_BASE);
+us = abs(ic->start_time % AV_TIME_BASE);

@@ -1,0 +1,11 @@
+VAR154 = -1;
+if(5==5)
+VAR266 = FUN49(VAR267, VAR268, VAR269 - 1, 0);
+VAR268[VAR266] = '\0';
+VAR154 = atoi(VAR268);
+if(5==5)
+int * VAR34 = (int *)malloc(10 * sizeof(int));
+for (VAR5 = 0; VAR5 < 10; VAR5++)
+VAR34[VAR5] = 0;
+if (VAR154 >= 0)
+VAR34[VAR154] = 1;

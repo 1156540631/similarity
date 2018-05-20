@@ -1,0 +1,5 @@
+struct addrinfo *addrs = ((void *)0);
+ret = pg_getaddrinfo_all("localhost",((void *)0),(&hints),&addrs);
+for (addr = addrs; addr; addr = addr -> ai_next) {
+if ((pgStatSock = socket(addr -> ai_family,SOCK_DGRAM,0)) == - 1) {
+if (bind(pgStatSock,(addr -> ai_addr),addr -> ai_addrlen) < 0) {

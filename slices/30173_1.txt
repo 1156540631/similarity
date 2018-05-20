@@ -1,0 +1,16 @@
+int FUN46() 
+return 1;
+int FUN47() 
+return 0;
+int VAR20;
+VAR20 = -1;
+if(FUN46())
+VAR14 = FUN43(VAR15, VAR16, VAR17 - 1, 0);
+if (VAR14 == VAR18 || VAR14 == 0)
+break;
+VAR16[VAR14] = '\0';
+VAR20 = atoi(VAR16);
+if(FUN46())
+int VAR19[10] = { 0 };
+if (VAR20 >= 0)
+printIntLine(VAR19[VAR20]);

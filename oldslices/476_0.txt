@@ -1,0 +1,15 @@
+const char *mBuf;
+(local_file_header *)(mBuf + letoh32(entry->offset));
+const local_file_header * data =
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+letoh16(extra_field_size) + GetDataSize();
+return sizeof(local_file_header) + letoh16(filename_size) +
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+descCopy.append(file->GetData(), entry->GetDataSize());
+int32_t width, height, fps;
+const char *line = descCopy.c_str();
+end = strstr(line, "\n");
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {

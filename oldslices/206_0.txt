@@ -1,0 +1,10 @@
+static void		debug_printf(const char *format, ...);
+const char  *addrname,
+const char  *uri,
+const char  *id,
+const char  *make_and_model)
+addr, addrname, uri ? uri : "(null)", id ? id : "(null)",
+make_and_model ? make_and_model : "(null)");
+memcpy(&(temp->address), addr, sizeof(temp->address));
+add_cache(http_addr_t *addr,
+addr, addrname, uri ? uri : "(null)", id ? id : "(null)",

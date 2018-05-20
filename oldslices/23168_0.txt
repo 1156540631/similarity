@@ -1,0 +1,3 @@
+sca_paleocyclic = getenv("GRUMBLETONIAN_BLASTOMERE");
+if (sca_paleocyclic != 0) {;
+chronol_bme . ficklety_sabellian = ((char *)sca_paleocyclic);

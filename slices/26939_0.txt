@@ -1,0 +1,4 @@
+while((VAR388 = getc(stdin)) != EOF && VAR388 != '\VAR7' && VAR138 < VAR389)
+*VAR138++ = VAR388;
+while((VAR388 = getc(stdin)) != EOF && VAR388 != '\VAR7' && VAR138 < VAR389)
+*VAR138++ = 0;

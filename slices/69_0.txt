@@ -1,0 +1,14 @@
+int            VAR1,
+const unsigned VAR3,
+VAR2.VAR1      = VAR1;
+VAR2.VAR4 = VAR5;
+VAR2.VAR3   = VAR3;
+VAR2.VAR6  = VAR7;
+strlcpy(VAR2.VAR8, VAR8, sizeof(VAR2.VAR8));
+VAR9 = FUN1(VAR14, sizeof(VAR14), &VAR2);
+CLASS1 *VAR2);
+memset(&VAR2, 0, sizeof(VAR2));
+VAR9 = FUN1(VAR14, sizeof(VAR14), &VAR2);
+CLASS1	VAR2;
+VAR9 = FUN1(VAR14, sizeof(VAR14), &VAR2);
+VAR2.VAR10);

@@ -1,0 +1,11 @@
+union resina_unedging chairmen_ebenezer = {0};
+va_list nonirritability_upwafts;
+__builtin_va_start(nonirritability_upwafts,budgereegah_unpropagable);
+chairmen_ebenezer = (va_arg(nonirritability_upwafts,union resina_unedging ));
+debs_adoniad(deathsman_workouts,chairmen_ebenezer);
+char stonesoup_source[1024];
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, microfilaria_homeochromatism, sizeof(stonesoup_source));
+void debs_adoniad(int hartsel_scribblemania,union resina_unedging ambari_trangams)
+microfilaria_homeochromatism = ((char *)ambari_trangams . terzet_alkalinuria);
+strncpy(stonesoup_source, microfilaria_homeochromatism, sizeof(stonesoup_source));

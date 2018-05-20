@@ -1,0 +1,13 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+memset(VAR1, 'A', 100-1);
+VAR1[100-1] = '\0';
+FUN1(VAR1);
+void FUN1(char * VAR1)
+FUN2(VAR1);
+void FUN3(char * VAR1)
+VAR4(VAR1);
+void VAR4(char * VAR1)
+char VAR3[50] = "";
+strcat(VAR3, VAR1);

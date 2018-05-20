@@ -1,0 +1,3 @@
+buf2R1 = (char *) malloc(BUFSIZE2);
+free(buf2R1);
+free(buf2R1);

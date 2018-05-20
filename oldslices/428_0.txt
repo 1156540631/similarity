@@ -1,0 +1,5 @@
+FILE            *fp,
+fread(buf, 13, 1, fp);
+if (gif_read_cmap(fp, ncolors, cmap, &gray))
+static int	gif_read_cmap(FILE *fp, int ncolors, gif_cmap_t cmap,
+fclose(fp);

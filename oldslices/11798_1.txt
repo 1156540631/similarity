@@ -1,0 +1,6 @@
+data[100-1] = L'\0';
+wchar_t * dataCopy = data;
+wchar_t * data = dataCopy;
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

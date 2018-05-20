@@ -1,0 +1,24 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR160,"DANIELLE_BRUSHBALL");
+if (VAR160 != 0) {;
+VAR163 = ((char *)VAR160);
+strncpy(VAR74, VAR163, VAR77);
+*VAR161 = VAR163;
+FUNC5(VAR17, VAR84, "VAR161", VAR161, "TRIGGER-STATE");
+FUNC5(VAR17, VAR84, "*VAR161", *VAR161, "TRIGGER-STATE");
+strncpy(VAR74, VAR163, VAR77);
+VAR162 = strlen( *VAR161);
+if (VAR161 != 0) {
+free(VAR161);
+if (VAR160 != 0)
+free(((char *)VAR160));

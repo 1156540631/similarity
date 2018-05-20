@@ -1,0 +1,5 @@
+FUN1(const CLASS1 *VAR1, VAR2 VAR3)
+CLASS1  VAR4[256];
+if (VAR3 > sizeof(VAR4) - 1) {
+VAR3 = sizeof(VAR4) - 1;
+memcpy(VAR4, VAR1, VAR3);

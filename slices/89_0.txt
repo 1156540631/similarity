@@ -1,0 +1,9 @@
+const char *VAR1,
+if (!strncasecmp(VAR1, "Hewlett-Packard", 15))
+mmptr = (char *)VAR1 + 15;
+while (isspace(*mmptr & 255))
+mmptr ++;
+if (!strncasecmp(mmptr, "hp", 2))
+mmptr += 2;
+mmptr ++;
+while (isspace(*mmptr & 255))

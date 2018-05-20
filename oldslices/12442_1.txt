@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(wchar_t * &data);
+SNPRINTF(data, 100, L"%s", source);
+printWLine(data);
+free(data);

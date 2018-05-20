@@ -1,0 +1,7 @@
+void (*FUN2) (char *) = FUN3;
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+VAR2[50-1] = '\0';
+FUN2(VAR2);
+static void FUN3(char * VAR2)
+memcpy(VAR4, VAR2, strlen(VAR2)*sizeof(char));

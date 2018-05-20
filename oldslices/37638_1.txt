@@ -1,0 +1,4 @@
+fscanf(stdin, "%d", &data);
+o.action(data);
+if (data >= 0)
+buffer[data] = 1;

@@ -1,0 +1,12 @@
+CLASS1<double *> VAR2;
+VAR1 = NULL;
+VAR1 = (double *)malloc(sizeof(*VAR1));
+*VAR1 = 1.7E300;
+VAR2.FUN1(VAR2.FUN3(), 1, VAR1);
+VAR2.FUN1(VAR2.FUN3(), 1, VAR1);
+VAR2.FUN1(VAR2.FUN3(), 1, VAR1);
+FUN4(VAR2);
+void FUN4(CLASS1<double *> VAR2)
+double * VAR1 = VAR2[2];
+FUN2(*VAR1);
+free(VAR1);

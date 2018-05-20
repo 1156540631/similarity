@@ -1,0 +1,3 @@
+infraspinate_mccabe = getenv("RUDENTURE_SABELLIAN");
+if (infraspinate_mccabe != 0) {;
+*devaluates_grommets = infraspinate_mccabe;

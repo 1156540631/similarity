@@ -1,0 +1,7 @@
+char       *make_model,
+const char *old_make_model,
+int        make_model_size)
+if (!strncasecmp(old_make_model, "Hewlett-Packard", 15))
+else if (!strncasecmp(old_make_model, "deskjet", 7))
+else if (!strncasecmp(old_make_model, "officejet", 9))
+snprintf(make_model, make_model_size, "HP OfficeJet%s", old_make_model + 9);

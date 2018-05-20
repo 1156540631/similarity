@@ -1,0 +1,6 @@
+void badSink(map<int, int> dataMap)
+int data = dataMap[2];
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

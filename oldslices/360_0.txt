@@ -1,0 +1,3 @@
+free_array(cups_array_t *a)
+for (s = (char *)cupsArrayFirst(a); s; s = (char *)cupsArrayNext(a))
+free(s);

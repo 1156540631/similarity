@@ -1,0 +1,7 @@
+VAR1 = VAR2;
+if(FUN1())
+char VAR3[10+1] = VAR4;
+else
+VAR1 = new char[10+1];
+char VAR3[10+1] = VAR4;
+strcpy(VAR1, VAR3);

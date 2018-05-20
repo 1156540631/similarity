@@ -1,0 +1,8 @@
+void (*funcPtr) (char *) = CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncpy_65b_badSink;
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_ncpy_65b_badSink(char * data)
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

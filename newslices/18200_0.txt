@@ -1,0 +1,3 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, '', 50-1);

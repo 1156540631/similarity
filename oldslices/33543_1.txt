@@ -1,0 +1,9 @@
+wchar_t * data;
+void (*funcPtr) (wchar_t *) = CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncat_65b_badSink;
+wchar_t dataBadBuffer[50];
+data = dataBadBuffer;
+data[0] = L'\0';
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncat_65b_badSink(wchar_t * data)
+source[100-1] = L'\0';
+wcsncat(data, source, 100);

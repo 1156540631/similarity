@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+goto source;
+source:
+strcpy(data, "fixedstringtest");
+goto sink;
+sink:
+fprintf(stdout, data);

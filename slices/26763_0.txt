@@ -1,0 +1,3 @@
+VAR313 = getenv("RUDENTURE_SABELLIAN");
+if (VAR313 != 0) {;
+*VAR314 = VAR313;

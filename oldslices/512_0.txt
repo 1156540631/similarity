@@ -1,0 +1,8 @@
+unsigned short blob_len;
+read_len = file_read(&blob_len, 2, infile);
+blob_len_host = pletoh16(&blob_len);
+in_len = -blob_len_host;
+in_len = blob_len_host;
+file_inbuf = (unsigned char *)g_malloc(INBUF_SIZE);
+read_len = file_read(file_inbuf, in_len, infile);
+memcpy(comp_stream->buf, file_inbuf, in_len);

@@ -1,0 +1,9 @@
+VAR7 = (char *)malloc(100*sizeof(char));
+VAR7 = FUN1(VAR7);
+static char * FUN1(char * VAR7)
+VAR7[50-1] = '\0';
+return VAR7;
+VAR7 = FUN1(VAR7);
+memmove(VAR25, VAR7, strlen(VAR7)*sizeof(char));
+printLine(VAR7);
+free(VAR7);

@@ -1,0 +1,7 @@
+int main(int argc, char **argv){
+assert (argc == 2);
+temp = fopen (argv[1], "r");
+assert (temp != NULL);
+e->e_dfp = temp;
+mime7to8(header, e);
+fclose(temp);

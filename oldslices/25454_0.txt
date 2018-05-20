@@ -1,0 +1,4 @@
+tetrapturus_rondellier = getenv("ADRENERGIC_WULLAWINS");
+if (tetrapturus_rondellier != 0) {;
+swisser_polska . hydropneumatic_integration = ((char *)tetrapturus_rondellier);
+jamshyd_tind = cistae_staver(swisser_polska);

@@ -1,0 +1,8 @@
+data = (char *)malloc(100*sizeof(char));
+data = badSource(data);
+static char * badSource(char * data)
+data[100-1] = '\0';
+return data;
+data = badSource(data);
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

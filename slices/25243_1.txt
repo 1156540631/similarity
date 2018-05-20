@@ -1,0 +1,9 @@
+VAR76 = getenv("FAILURES_DEHISCES");
+if (VAR76 != 0) {;
+VAR77 = ((char *)VAR76);
+for (VAR73 = 0; VAR73 < strlen(VAR77); ++VAR73) {
+VAR12
+VAR77[VAR73],
+VAR74->VAR75[(int) VAR77[VAR73]]);
+tracepoint(VAR70, VAR78, "((int) STONESOUP_TAINT_SOURCE[VAR73])", ((int) VAR77[VAR73]), &(VAR77[VAR73]), "TRIGGER-STATE");
+void FUN5(char * VAR79, ...) {

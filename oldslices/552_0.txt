@@ -1,0 +1,4 @@
+value_length = asn1_get_length(&buffer, bufend);
+asn1_get_oid(&buffer, bufend, value_length, oid, SNMP_MAX_OID);
+int length, int *oid, int oidsize);
+value_length);

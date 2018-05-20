@@ -1,0 +1,8 @@
+#define VAR4 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+VAR5 = NULL;
+if(5==5)
+VAR5 = (void *)VAR4;
+if(5==5)
+size_t VAR7 = strlen((char *)VAR5);
+void * VAR6 = (void *)calloc(VAR7+1, 1);
+memcpy(VAR6, VAR5, (VAR7+1));

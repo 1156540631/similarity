@@ -1,0 +1,5 @@
+goodG2BSource(data);
+void goodG2BSource(wchar_t * &data)
+wchar_t source[10+1] = SRC_STRING;
+data = (wchar_t *)malloc((10+1)*sizeof(wchar_t));
+memcpy(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

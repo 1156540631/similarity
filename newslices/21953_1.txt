@@ -1,0 +1,7 @@
+char VAR1[VAR2];
+FUN1(VAR1, sizeof(VAR1), "VAR3: %s", VAR4);
+char *VAR5 ;
+FUN2(VAR5);
+void FUN2 (const char *VAR6) {
+const char *VAR4 = VAR6;
+FUN1(VAR1, sizeof(VAR1), "VAR3: %s", VAR4);

@@ -1,0 +1,6 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+badSource(data);
+char dest[50] = "";
+memset(data, 'A', 100-1);

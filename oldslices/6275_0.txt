@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&woodwind_pseudapospory,"ANTIPLEURITIC_PEACEKEEPER");
+if (woodwind_pseudapospory != 0) {;
+mycorrhizic_chicanos = ((int )(strlen(woodwind_pseudapospory)));
+plagioclinal_reconciliated = ((char *)(malloc(mycorrhizic_chicanos + 1)));
+if (plagioclinal_reconciliated == 0) {
+memcpy(plagioclinal_reconciliated,woodwind_pseudapospory,mycorrhizic_chicanos);
+if (woodwind_pseudapospory != 0)
+free(((char *)woodwind_pseudapospory));

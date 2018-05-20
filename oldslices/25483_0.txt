@@ -1,0 +1,24 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&jaguarondi_pseudolarix,"SCRUNCHING_KLEPHTISM");
+if (jaguarondi_pseudolarix != 0) {;
+photomurals_welf = ((int )(strlen(jaguarondi_pseudolarix)));
+grillage_communized = ((char *)(malloc(photomurals_welf + 1)));
+if (grillage_communized == 0) {
+memset(grillage_communized,0,photomurals_welf + 1);
+memcpy(grillage_communized,jaguarondi_pseudolarix,photomurals_welf);
+if (jaguarondi_pseudolarix != 0)
+free(((char *)jaguarondi_pseudolarix));
+grs_shortfall[ *( *palaeogene_lub)] = grillage_communized;
+opalotype_preadolescents = grs_shortfall[ *( *palaeogene_lub)];
+respiring_arcos(harmfulness_glimmerite,opalotype_preadolescents);
+void respiring_arcos(int papicolar_ribband,char *presspack_scribblemania);

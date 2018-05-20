@@ -1,0 +1,5 @@
+data = NULL;
+badSource(data);
+void badSource(double * &data);
+printDoubleLine(*data);
+free(data);

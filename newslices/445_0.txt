@@ -1,0 +1,11 @@
+VAR1 VAR2,
+VAR3<char> VAR4 = new char[VAR5];
+reinterpret_cast<CLASS1*>(VAR4.FUN1()),
+*reinterpret_cast<CLASS1*>(VAR4.FUN1());
+CLASS1 &VAR6 =
+if (!FUN2(VAR7, VAR6.VAR8,
+VAR9 VAR10 = FUN3(VAR2);
+!FUN4(VAR2, VAR11"VAR12.VAR13") &&
+VAR2));
+VAR14 VAR15[VAR16 + 1] = { '\' };
+FUN5(VAR15, VAR2, VAR16);

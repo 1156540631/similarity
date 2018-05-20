@@ -1,0 +1,8 @@
+data = badSource(data);
+data = new char[10];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);
+static char * badSource(char * data)
+return data;
+data = badSource(data);
+strcpy(data, source);

@@ -1,0 +1,8 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[50-1] = '\';
+CLASS1* VAR3 = new VAR4;
+VAR3->FUN1(VAR2);
+void VAR4::FUN1(char * VAR2)
+char VAR5[50] = "";
+strncpy(VAR5, VAR2, strlen(VAR2));

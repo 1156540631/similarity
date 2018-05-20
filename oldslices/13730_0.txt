@@ -1,0 +1,9 @@
+installDir = func(&installDir);
+static WCHAR * func(WCHAR * * ptr)
+WCHAR * installDir = * ptr
+WCHAR installDir[MAX_PATH + 1] = {L'\0'};
+return installDir;
+installDir = func(&installDir);
+if (!GetInstallationDir(argc, argv, installDir)) {
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH])
+wcscpy(aResultDir, argvTmp[2]);

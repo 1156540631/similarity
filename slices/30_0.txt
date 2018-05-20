@@ -1,0 +1,3 @@
+const uint8_t *VAR1;
+if( FUN1( VAR2->VAR3, &VAR1, VAR4 ) < VAR4 )
+if( memcmp( VAR1, VAR5, VAR4 ) )

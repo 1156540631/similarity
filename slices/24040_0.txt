@@ -1,0 +1,18 @@
+VAR29 = getenv(VAR30);
+VAR31 = fopen(VAR29,"rb");
+if (VAR31 != 0) {
+fseek(VAR31,0L,2);
+VAR32 = ftell(VAR31);
+rewind(VAR31);
+*VAR34 = ((char *)(malloc(sizeof(char ) * (VAR32 + 1))));
+if (*VAR34 != 0) {
+VAR35 = fread(*VAR34,1,VAR32,VAR31);
+if (VAR31 != 0) {
+fclose(VAR31);
+FUNC6(&VAR194,"KAIK_ABOLITIONIZED");
+if (VAR194 != 0) {;
+VAR195[27] = VAR194;
+VAR196 = VAR195;
+VAR197 = ((char **)(((unsigned long )VAR196) * harpp_seculars * harpp_seculars)) + 5;
+FUNC378(VAR198,VAR197);
+void FUNC378(int VAR199,char **VAR200);

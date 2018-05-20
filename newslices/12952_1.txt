@@ -1,0 +1,30 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+int VAR3 = 596;
+char *VAR4;
+FUN1(&VAR4,"6156",VAR3);
+VAR5 = ((char *)VAR4);
+VAR6 = (struct CLASS1*) malloc(sizeof(struct CLASS1));
+VAR6->VAR7[63] = '\';
+VAR6->VAR8[63] = '\';
+VAR6->VAR9[63] = '\';
+FUN2(VAR10, VAR11, "VAR6->VAR7", VAR6->VAR7, "VAR12-VAR13");
+FUN2(VAR10, VAR11, "VAR6->VAR8", VAR6->VAR8, "VAR12-VAR13");
+FUN2(VAR10, VAR11, "VAR6->VAR9", VAR6->VAR9, "VAR12-VAR13");
+VAR14 = ((int )(strlen(VAR5)));
+memcpy(VAR6->VAR8, VAR5, 64);
+FUN3("%x",VAR6->VAR8[VAR15]);
+FUN2(VAR10, VAR11, "VAR6->VAR8", VAR6->VAR8, "VAR16-VAR13");
+free( VAR6);
+void FUN3(char * VAR17, ...) {
+FUN2(VAR10, VAR11, "VAR6->VAR8", VAR6->VAR8, "VAR16-VAR13");
+free( VAR6);
+void FUN1(char** VAR1, char* VAR18, int VAR19) {
+if ((VAR20 = FUN4(VAR21, VAR19, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR19, sizeof(char));
+FUN1(&VAR4,"6156",VAR3);
+VAR5 = ((char *)VAR4);
+VAR14 = ((int )(strlen(VAR5)));
+memcpy(VAR6->VAR8, VAR5, 64);
+FUN2(VAR10, VAR11, "VAR6->VAR8", VAR6->VAR8, "VAR16-VAR13");
+free( VAR6);

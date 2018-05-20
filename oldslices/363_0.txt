@@ -1,0 +1,19 @@
+static void Win32AddConnection( access_t *p_access, char *psz_path,
+i_ret = asprintf( &psz_uri, "
+free( psz_uri );
+strlcpy( psz_server, psz_path, sizeof( psz_server ) );
+psz_parser = strchr( psz_path, '/' );
+i_ret = asprintf( &psz_uri, "
+free( psz_uri );
+static int Open( vlc_object_t *p_this )
+char         *psz_path, *psz_uri;
+psz_path = strchr( p_access->psz_path, '/' );
+char *psz_tmp = strdup( p_access->psz_path );
+psz_tmp[ psz_path - p_access->psz_path ] = 0;
+psz_path = p_access->psz_path;
+psz_parser = strchr( psz_tmp, '@' );
+*psz_parser = 0;
+psz_path = p_access->psz_path + (psz_parser - psz_tmp) + 1;
+Win32AddConnection( p_access, psz_path, psz_user, psz_pwd, psz_domain);
+i_ret = asprintf( &psz_uri, "
+free( psz_uri );

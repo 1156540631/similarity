@@ -1,0 +1,10 @@
+VAR3 = NULL;
+VAR3 = FUNC1(VAR3);
+wchar_t * FUNC1(wchar_t * VAR3)
+VAR3 = new wchar_t[50];
+VAR3[0] = L'\0';
+return VAR3;
+VAR3 = FUNC1(VAR3);
+VAR3 = FUNC1(VAR3);
+VAR4[100-1] = L'\0';
+wcsncpy(VAR3, VAR4, 100-1);

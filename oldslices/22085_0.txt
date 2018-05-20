@@ -1,0 +1,8 @@
+void stonesoup_handle_taint(char *emblemist_stours)
+tuberculiferous_pollaiuolo = emblemist_stours;
+EUPHONICALLY_SENSUALIZE(tuberculiferous_pollaiuolo);
+void rightabout_valerye(tereshkova_reinterrogates joisted_rice)
+char stonesoup_source[1024];
+gamasid_dimity = ((char *)joisted_rice);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, gamasid_dimity, sizeof(stonesoup_source));

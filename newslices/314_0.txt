@@ -1,0 +1,15 @@
+if (!FUN1(VAR1, VAR2, VAR3))
+return !FUN2(VAR1, VAR2);
+return FUN3("image2", VAR4, VAR4);
+if (VAR5->VAR1 && VAR6 && FUN4(VAR6, VAR5->VAR1))
+VAR7 = FUN3(VAR4, VAR8, VAR4);
+static int FUN4(const char *VAR1, const char *VAR2)
+VAR9 = strlen(VAR1);
+CLASS1 *FUN3(const char *VAR6, const char *VAR8,
+if (VAR5->VAR1 && VAR6 && FUN4(VAR6, VAR5->VAR1))
+CLASS2 *FUN5(const char *VAR6)
+if (FUN4(VAR6, VAR5->VAR1))
+CLASS3 *FUN6(const char *VAR10,
+int VAR11 = FUN7(&VAR12, VAR7, VAR10, VAR8);
+const char *VAR10, const char *VAR8)
+VAR7 = FUN3(VAR10, VAR4, VAR4);

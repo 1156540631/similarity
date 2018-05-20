@@ -1,0 +1,5 @@
+static uint32_t vmsvga_value_read(void *opaque, uint32_t address)
+printf("%s: Bad register %02x\n", __func__, s->index);
+static uint64_t vmsvga_io_read(void *opaque, hwaddr addr, unsigned size)
+struct vmsvga_state_s *s = opaque;
+case SVGA_IO_MUL * SVGA_VALUE_PORT: return vmsvga_value_read(s, addr);

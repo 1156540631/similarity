@@ -1,0 +1,25 @@
+return VAR1 - 32;
+char *VAR2 = 0;
+FUN1(&VAR2);
+VAR3 = FUN2(VAR2);
+VAR4[64 - 1] = '\';
+FUN3(VAR5, VAR6, "VAR4", VAR4, "VAR7-VAR8");
+FUN3(VAR5, VAR6, "VAR4", VAR4, "VAR9-VAR8");
+VAR4[VAR10] = FUN4(VAR4[VAR10]);
+FUN5("%s\n",&(VAR4[VAR11+1]));
+free(VAR4);
+void FUN5(char * VAR12, ...) {
+FUN5("%s\n",&(VAR4[VAR11+1]));
+free(VAR4);
+int FUN4(int VAR1)
+return VAR1;
+VAR4[VAR10] = FUN4(VAR4[VAR10]);
+free(VAR4);
+char *FUN2(char *VAR13)
+return VAR13;
+VAR3 = FUN2(VAR2);
+VAR14 = ((char *)VAR3);
+VAR15 = ((int )(strlen(VAR14)));
+VAR4[VAR11] = VAR14[VAR15];
+FUN3(VAR5, VAR6, "VAR4", VAR4, "VAR9-VAR8");
+free(VAR4);

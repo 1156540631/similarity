@@ -1,0 +1,3 @@
+const uint8_t *p_peek;
+if( stream_Peek( s->p_source, &p_peek, i_zip_marker ) < i_zip_marker )
+if( memcmp( p_peek, p_zip_marker, i_zip_marker ) )

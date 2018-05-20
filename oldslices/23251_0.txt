@@ -1,0 +1,4 @@
+whiteclay_tossy = getenv("LAWSUITING_SUSAN");
+if (whiteclay_tossy != 0) {;
+faaas_unpeerable = ((char *)whiteclay_tossy);
+strncpy(stonesoup_source,faaas_unpeerable,sizeof(stonesoup_source));

@@ -1,0 +1,3 @@
+wchar_t dest[50] = L"";
+data[50-1] = L'\0';
+wcscat(dest, data);

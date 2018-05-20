@@ -1,0 +1,10 @@
+melancholy_dauded = inhabitation_retaliate(unsticked_hoplonemertea);
+valinch_forums(kists_oxyhydric,melancholy_dauded);
+valinch_forums(arteriometer_inordinacy,calusa_pacate);
+void valinch_forums(int arteriometer_inordinacy,char *calusa_pacate)
+premen_abstrude = ((char *)calusa_pacate);
+stonesoup_buffer = malloc((strlen(premen_abstrude) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,premen_abstrude);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);

@@ -1,0 +1,9 @@
+VAR1 = FUN1("BORESOMENESS_TEETY");
+VAR2 = ((char *)VAR1);
+VAR3 = malloc((strlen(VAR2) + 1) * sizeof(char ));
+strcpy(VAR3,VAR2);
+FUN2("VAR4 VAR5 VAR6 char: %i\n",FUN3(VAR3));
+free(VAR3);
+char FUN3(char *VAR7)
+free(VAR7);
+free(VAR3);

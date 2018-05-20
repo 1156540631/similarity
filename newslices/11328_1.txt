@@ -1,0 +1,3 @@
+VAR1 = (void *)malloc(256);
+free(VAR1);
+free(VAR1);

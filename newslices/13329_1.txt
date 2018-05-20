@@ -1,0 +1,14 @@
+char* (*VAR1)() = VAR2;
+void VAR3::FUN1(CLASS1* VAR4)
+char* VAR5 = VAR1();
+char* VAR2()
+return strtok(VAR6, "\0");
+char* VAR5 = VAR1();
+FUN2(VAR7, VAR5);
+if (VAR7 == VAR8) {
+if (VAR9) {
+char VAR10[VAR11];
+FUN3(VAR10, VAR11 - 1,
+"VAR12 VAR13 %s VAR14",
+FUN4(VAR9->VAR15).FUN5());
+if (!strcmp(VAR5, VAR10)) {

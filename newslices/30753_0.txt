@@ -1,0 +1,12 @@
+typedef union
+void * VAR1;
+void * VAR2;
+} CLASS1;
+CLASS1 VAR3;
+VAR4 = VAR5;
+VAR4 = (void *)VAR6;
+VAR3.VAR1 = VAR4;
+void * VAR4 = VAR3.VAR2;
+VAR7 VAR8 = FUN1((wchar_t *)VAR4);
+void * VAR9 = (void *)calloc(VAR8+1, sizeof(wchar_t));
+memcpy(VAR9, VAR4, (VAR8+1)*sizeof(wchar_t));

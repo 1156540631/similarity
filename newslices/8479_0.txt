@@ -1,0 +1,4 @@
+VAR1 VAR2 = 0;
+FUN1(&VAR2);
+VAR3 = &VAR2;
+free(((char *)( *VAR3)));

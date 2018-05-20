@@ -1,0 +1,8 @@
+static void Ogg_LogicalStreamDelete( demux_t *p_demux, logical_stream_t *p_stream )
+es_out_Del( p_demux->out, p_stream->p_es );
+ogg_stream_clear( &p_stream->os );
+free( p_stream->p_headers );
+es_format_Clean( &p_stream->fmt_old );
+es_format_Clean( &p_stream->fmt );
+oggseek_index_entries_free( p_stream->idx );
+free( p_stream );

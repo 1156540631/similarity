@@ -1,0 +1,48 @@
+return '?';
+VAR1 = FUN1(VAR2, *VAR3, *VAR4 / 1000000, *VAR5, *VAR6,
+VAR7, VAR8, VAR9);
+VAR10 VAR11, VAR10 VAR5, VAR10 VAR6, VAR12 VAR7, const VAR12 *VAR8,
+const CLASS1 *VAR13, int *VAR14)
+VAR5 = (const VAR10 *) (VAR13 + 4);
+VAR1 = FUN1(VAR2, *VAR3, *VAR4 / 1000000, *VAR5, *VAR6,
+VAR6 = (const VAR10 *) (VAR13 + 2 * 4);
+VAR4 = (const CLASS2 *) (VAR13 + 4 * 4);
+VAR7 = FUN2((const CLASS1 *) (VAR13 + 5 * 4));
+VAR8 = (const VAR12 *) (VAR13 + 5 * 4 + 1);
+log = VAR8 + strlen(VAR8) + 1;
+VAR5 = (const VAR10 *) (VAR13 + 4);
+VAR6 = (const VAR10 *) (VAR13 + 2 * 4);
+VAR4 = (const CLASS2 *) (VAR13 + 4 * 4);
+VAR7 = FUN2((const CLASS1 *) (VAR13 + 6 * 4));
+VAR8 = (const char *) (VAR13 + 6 * 4 + 1);
+log = VAR8 + strlen(VAR8) + 1;
+VAR1 = FUN1(VAR2, *VAR3, *VAR4 / 1000000, *VAR5, *VAR6,
+VAR1 = FUN1(VAR2, *VAR3, *VAR4 / 1000000, *VAR5, *VAR6,
+VAR7, VAR8, VAR9);
+VAR10 VAR11, VAR10 VAR5, VAR10 VAR6, VAR12 VAR7, const VAR12 *VAR8,
+VAR9[strlen(VAR15)] = '\';
+VAR7, VAR8, VAR9);
+const VAR12 *log)
+VAR12  VAR16[15];
+VAR7, VAR8, VAR5, log);
+VAR17
+VAR7, VAR5, log, VAR8);
+VAR17
+VAR7, VAR8, log);
+VAR17
+VAR7, VAR5, VAR6, log);
+VAR17
+FUN3(VAR16, sizeof(VAR16), "%m-%d %H:%M:%S",
+VAR16, VAR11, VAR7, VAR8, VAR5, log);
+VAR17
+FUN3(VAR16, sizeof(VAR16), "%m-%d %H:%M:%S",
+VAR16, VAR11, VAR5, VAR6, VAR7, VAR8, log);
+VAR17
+FUN3(VAR16, sizeof(VAR16), "%m-%d %H:%M:%S",
+VAR16, VAR11, VAR5, VAR6, VAR7, VAR8, log);
+VAR17
+return VAR18;
+VAR1 = FUN1(VAR2, *VAR3, *VAR4 / 1000000, *VAR5, *VAR6,
+VAR19 = (CLASS2)strlen(VAR1);
+if (!FUN4(VAR20, VAR1, VAR19, VAR14)) {
+VAR19 = (CLASS2)strlen(VAR1);

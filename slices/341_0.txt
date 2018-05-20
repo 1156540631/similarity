@@ -1,0 +1,3 @@
+CLASS1 VAR1(VAR2.VAR3);
+char VAR4[VAR4];
+snprintf(VAR4, sizeof VAR4 - 1, "net.%VAR1.gw", VAR1.FUN8());

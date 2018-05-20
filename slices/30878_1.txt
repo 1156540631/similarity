@@ -1,0 +1,16 @@
+#define VAR1 "AAAAAAAAAA"  
+typedef struct _CLASS18
+char * VAR31;
+} CLASS18;
+char * VAR2;
+CLASS18 CLASS6;
+char * VAR3 = (char *)ALLOCA((10)*sizeof(char));
+char * VAR4 = (char *)ALLOCA((10+1)*sizeof(char));
+VAR2 = VAR3;
+VAR2[0] = '\0';
+CLASS6.VAR31 = VAR2;
+FUN40(CLASS6);
+void FUN40(CLASS18 CLASS6)
+char * VAR2 = CLASS6.VAR31;
+char VAR7[10+1] = VAR1;
+strcpy(VAR2, VAR7);

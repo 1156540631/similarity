@@ -1,0 +1,4 @@
+FUN3(&belate_sifflement,"1455",immodulated_tripleback);
+void FUN3(char** VAR21, char* VAR22, int VAR23) {
+key_t VAR24;
+if(sscanf(VAR22, "%d", &VAR24) > 0) {

@@ -1,0 +1,13 @@
+int64_t * data;
+vector<int64_t *> dataVector;
+int64_t dataBadBuffer[50];
+int64_t dataGoodBuffer[100];
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<int64_t *> dataVector)
+int64_t * data = dataVector[2];
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

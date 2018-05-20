@@ -1,0 +1,15 @@
+VAR1 = FUN1("NONRANDOMNESS_MIMBARS");
+if (VAR1 != 0) {;
+VAR2 . VAR3 = ((char *)VAR1);
+FUN2(VAR2);
+void FUN2(const struct CLASS1 VAR4)
+if (((struct CLASS1 )VAR4) . VAR3 != 0) {
+VAR5 = ((char *)((struct CLASS1 )VAR4) . VAR3);
+strncpy(VAR6, VAR5, VAR7);
+*VAR8 = VAR5;
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR11-VAR12");
+FUN3(VAR9, VAR10, "*VAR8", *VAR8, "VAR11-VAR12");
+strncpy(VAR6, VAR5, VAR7);
+VAR13 = strlen( *VAR8);
+if (VAR8 != 0) {
+free(VAR8);

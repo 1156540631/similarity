@@ -1,0 +1,6 @@
+data[50-1] = '\0';
+char * dataCopy = data;
+char * data = dataCopy;
+memmove(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

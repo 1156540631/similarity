@@ -1,0 +1,4 @@
+void CWE134_Uncontrolled_Format_String__char_console_vfprintf_51b_badSink(char * data)
+badVaSink(data, data);
+static void badVaSink(char * data, ...)
+va_start(args, data);

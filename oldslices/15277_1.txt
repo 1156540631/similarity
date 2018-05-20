@@ -1,0 +1,8 @@
+twoIntsStruct * data;
+twoIntsStruct * &dataRef = data;
+twoIntsStruct dataBadBuffer[50];
+data = dataBadBuffer;
+twoIntsStruct * data = dataRef;
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memmove(data, source, 100*sizeof(twoIntsStruct));

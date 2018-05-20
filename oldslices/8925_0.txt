@@ -1,0 +1,3 @@
+char *message = (char*) calloc(12, sizeof(char));
+message[len]='\n';
+free(message);

@@ -1,0 +1,4 @@
+if ((device_uri = calloc(1, sizeof(device_uri_t))) == NULL)
+if ((device_uri->uris = cupsArrayNew(NULL, NULL)) == NULL)
+cupsArrayDelete(device_uri->uris);
+free(device_uri);

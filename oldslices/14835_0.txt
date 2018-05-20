@@ -1,0 +1,5 @@
+data = -1;
+goodB2GSource(data);
+static void goodB2GSource(int &data)
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)

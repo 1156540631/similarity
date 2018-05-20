@@ -1,0 +1,13 @@
+char		VAR3[1024],
+if (!FUN2(&(VAR2->VAR5), VAR2->VAR1, 5353))
+snprintf(VAR3, sizeof(VAR3), "socket:
+static int		FUN2(CLASS1 *VAR6, const char *VAR1,
+if (!FUN2(&(VAR2->VAR5), VAR2->VAR1, 9100))
+static int		FUN2(CLASS1 *VAR6, const char *VAR1,
+FUN1("DEBUG: %VAR1 supports AppSocket!\n", VAR2->VAR1);
+static void		FUN1(const char *VAR8, ...);
+snprintf(VAR3, sizeof(VAR3), "socket:
+FUN3(VAR2, VAR3, NULL, NULL);
+const char   *VAR3,
+VAR2->VAR3 = strdup(VAR3);
+snprintf(VAR3, sizeof(VAR3), "socket:

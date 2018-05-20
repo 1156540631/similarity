@@ -1,0 +1,17 @@
+wchar_t * VAR7;
+wchar_t VAR1[100];
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+VAR7 = VAR1 - 8;
+FUN7(VAR7);
+void FUN7(wchar_t * VAR7)
+FUN8(VAR7);
+void FUN8(wchar_t * VAR7)
+FUN9(VAR7);
+void FUN9(wchar_t * VAR7)
+FUN10(VAR7);
+void FUN10(wchar_t * VAR7)
+wchar_t VAR8[100];
+wmemset(VAR8, L'C', 100-1);
+VAR8[100-1] = L'\0';
+wcscpy(VAR7, VAR8);

@@ -1,0 +1,4 @@
+va_list args;
+va_start( args, psz_fmt_src );
+int i_ret = vasprintf( &psz_tmp, psz_fmt_src, args );
+va_end( args );

@@ -1,0 +1,7 @@
+VAR1 = FUN1("UNIQUEST_NONPHILOLOGIC");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = &VAR3;
+free(((char *)( *VAR4)));

@@ -1,0 +1,11 @@
+list<wchar_t *> dataList;
+data[50-1] = L'\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+memcpy(dest, data, wcslen(data)*sizeof(wchar_t));
+printWLine(data);
+free(data);

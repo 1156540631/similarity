@@ -1,0 +1,2 @@
+VAR189 = "HEADER JUNK:";
+VAR188 += strlen(VAR189);

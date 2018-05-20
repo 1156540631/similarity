@@ -1,0 +1,4 @@
+while ( ( ch = getc( stdin ) ) != EOF && ch != '\n' )
+* p++ = ch;
+* p++ = 0;
+free (p);

@@ -1,0 +1,44 @@
+buf = (unsigned char *)OPENSSL_malloc(frag_len);
+(unsigned char *)OPENSSL_malloc(RSMBLY_BITMASK_SIZE(frag_len));
+bitmask =
+memset(bitmask, 0, RSMBLY_BITMASK_SIZE(frag_len));
+unsigned long frag_len = msg_hdr->frag_len;
+frag = dtls1_hm_fragment_new(frag_len, 0);
+unsigned char wire[DTLS1_HM_HEADER_LENGTH];
+struct hm_header_st msg_hdr;
+i = s->method->ssl_read_bytes(s, SSL3_RT_HANDSHAKE, wire,
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_reassemble_fragment(s, &msg_hdr, ok);
+s->d1->handshake_write_seq = s->d1->next_handshake_write_seq;
+s->d1->next_handshake_write_seq++;
+s2n(s->d1->handshake_write_seq, p);
+dtls1_set_message_header_int(s, SSL3_MT_CCS, 0,
+s->d1->handshake_write_seq, 0, 0);
+unsigned short seq_num,
+dtls1_buffer_message(s, 1);
+n2l3(data, msg_hdr->msg_len);
+n2s(data, msg_hdr->seq);
+n2l3(data, msg_hdr->frag_off);
+n2l3(data, msg_hdr->frag_len);
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_process_out_of_seq_message(s, &msg_hdr, ok);
+dtls1_process_out_of_seq_message(SSL *s, const struct hm_header_st *msg_hdr,
+return dtls1_reassemble_fragment(s, msg_hdr, ok);
+dtls1_reassemble_fragment(SSL *s, const struct hm_header_st *msg_hdr, int *ok)
+frag = dtls1_hm_fragment_new(msg_hdr->msg_len, 1);
+static hm_fragment *dtls1_hm_fragment_new(unsigned long frag_len,
+(unsigned char *)OPENSSL_malloc(RSMBLY_BITMASK_SIZE(frag_len));
+bitmask =
+memset(bitmask, 0, RSMBLY_BITMASK_SIZE(frag_len));
+static void dtls1_set_message_header_int(SSL *s, unsigned char mt,
+dtls1_set_message_header_int(s, SSL3_MT_CCS, 0,
+dtls1_buffer_message(s, 1);
+int dtls1_buffer_message(SSL *s, int is_ccs)
+frag = dtls1_hm_fragment_new(s->init_num, 0);
+dtls1_get_message_header(unsigned char *data, struct hm_header_st *msg_hdr)
+memset(msg_hdr, 0x00, sizeof(struct hm_header_st));
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_process_out_of_seq_message(s, &msg_hdr, ok);
+msg_hdr->type = *(data++);
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_reassemble_fragment(s, &msg_hdr, ok);

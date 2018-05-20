@@ -1,0 +1,10 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+VAR65 = VAR2;
+FUN3();
+static void FUN3()
+char * VAR2 = VAR65;
+char VAR4[50] = "";
+SNPRINTF(VAR4, strlen(VAR2), "%s", VAR2);

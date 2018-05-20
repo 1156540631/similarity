@@ -1,0 +1,17 @@
+void FUNC1(char** VAR6, char* VAR3, int VAR7) {
+*VAR6 = NULL;
+if ((VAR8 = FUNC2(VAR2, VAR7, 0666)) >= 0) {
+*VAR6 = (char*)calloc(VAR7, sizeof(char));
+*VAR6 = NULL;
+int VAR9 = 53;
+char *VAR1;
+FUNC1(&VAR1,"7626",VAR9);
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = &VAR3;
+VAR5 = VAR4 + 5;
+VAR7 = ((char *)( *(VAR5 - 5)));
+FUNC18(VAR50, VAR67_VAR22, "STONESOUP_TAINT_SOURCE", strlen(VAR7)+1, VAR7, "TRIGGER-STATE");
+strncpy(VAR15.VAR17, VAR7, strlen(VAR7) + 1);

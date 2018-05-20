@@ -1,0 +1,8 @@
+VAR1 = (int *)FUN1(10*sizeof(int));
+VAR2[2] = VAR1;
+FUN2(VAR2);
+int VAR3[10] = {0};
+memcpy(VAR1, VAR3, 10*sizeof(int));
+void FUN2(VAR4<int, int *> VAR2)
+int * VAR1 = VAR2[2];
+memcpy(VAR1, VAR3, 10*sizeof(int));

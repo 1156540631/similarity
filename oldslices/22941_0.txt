@@ -1,0 +1,6 @@
+void stackman_sobralite(char **remisrepresent_pictureless)
+newfeld_baptistown = ((char *)remisrepresent_pictureless[11]);
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(newfeld_baptistown)));
+strncpy(stonesoup_heap_buff_64, newfeld_baptistown, 64);

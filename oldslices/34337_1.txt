@@ -1,0 +1,9 @@
+wchar_t * data;
+data = NULL;
+data = new wchar_t[10];
+CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_wchar_t_ncpy_68_badData = data;
+badSink();
+void badSink()
+wchar_t * data = CWE122_Heap_Based_Buffer_Overflow__cpp_CWE193_wchar_t_ncpy_68_badData;
+wchar_t source[10+1] = SRC_STRING;
+wcsncpy(data, source, wcslen(source) + 1);

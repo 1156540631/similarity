@@ -1,0 +1,7 @@
+char stonesoup_source[1024];
+aneurysm_nasrol keita_praxinoscope = 0;
+yowlring_sandweed(&keita_praxinoscope);
+typotelegraphy_assertorically = &keita_praxinoscope;
+fungosity_senarius = ((char *)( *typotelegraphy_assertorically));
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, fungosity_senarius, sizeof(stonesoup_source));

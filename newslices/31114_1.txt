@@ -1,0 +1,12 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+char * VAR3;
+char * VAR4 = (char *)FUN1((10)*sizeof(char));
+char * VAR5 = (char *)FUN1((10+1)*sizeof(char));
+VAR3 = VAR4;
+VAR3[0] = '\';
+FUN2(&VAR3);
+void FUN2(void * VAR6)
+char * * VAR7 = (char * *)VAR6;
+char * VAR3 = (*VAR7);
+char VAR8[10+1] = VAR2;
+strncpy(VAR3, VAR8, strlen(VAR8) + 1);

@@ -1,0 +1,5 @@
+VAR419 = getenv("TAMARAITE_BECKFORD");
+if (VAR419 != 0) {;
+VAR420 = ((char *)VAR419);
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR420)+1, VAR420, "TRIGGER-STATE");
+strncpy(VAR75, VAR420, strlen(VAR420) + 1);

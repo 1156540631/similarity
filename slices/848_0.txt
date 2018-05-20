@@ -1,0 +1,4 @@
+void FUN1(char * VAR7)
+strncat(VAR25, VAR7, strlen(VAR7));
+printLine(VAR7);
+free(VAR7);

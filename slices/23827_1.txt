@@ -1,0 +1,17 @@
+char* VAR6;
+int VAR38 = 1000;
+VAR39 = FUNC16(VAR48, "data", VAR6, VAR38 * sizeof(char));
+VAR6 = (char*) malloc(VAR38 * sizeof(char));
+VAR39 = FUNC16(VAR48, "data", VAR6, VAR38 * sizeof(char));
+VAR38 = VAR38 * 2;
+VAR6 = (char*) malloc(VAR38 * sizeof(char));
+VAR39 = FUNC16(VAR48, "data", VAR6, VAR38 * sizeof(char));
+free(VAR6);
+FUNC17(VAR6);
+VAR49 = (char*) malloc(64 * sizeof(char));
+memset(VAR49,0,64);
+FUNC18(VAR50, variable_VAR17, "VAR49", VAR49, "INITIAL-STATE");
+strcpy(VAR49, VAR51);
+void FUNC17(char *VAR52)
+VAR51 = ((char *)VAR52);
+strcpy(VAR49, VAR51);

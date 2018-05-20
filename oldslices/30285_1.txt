@@ -1,0 +1,11 @@
+int globalReturnsTrueOrFalse() 
+return (rand() % 2);
+data = -1;
+if(globalReturnsTrueOrFalse())
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

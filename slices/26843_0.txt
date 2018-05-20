@@ -1,0 +1,5 @@
+VAR39[4]= '\0';
+return VAR39;
+VAR435 = FUN105(VAR434);
+printf("result = %VAR1\VAR7", VAR435);
+printf("VAR39 VAR188 = %d\VAR7", strlen(VAR435));

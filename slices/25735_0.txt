@@ -1,0 +1,19 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR366,"GAVIIFORMES_PATIENCE");
+if (VAR366 != 0) {;
+VAR367 . VAR368 = VAR366;
+VAR369 = &VAR367;
+VAR370 = ((union VAR371 *)(((unsigned long )VAR369) * VAR372 * VAR372)) + 5;
+FUN90(VAR373,VAR370);
+void FUN90(int VAR374,union VAR371 *VAR375)
+FUN90(VAR374,VAR375);

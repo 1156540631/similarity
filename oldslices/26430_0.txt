@@ -1,0 +1,7 @@
+void heliolatrous_petaurist(void ***************************************************riane_anapaestic)
+bonjour_rarotonga(riane_anapaestic);
+void bonjour_rarotonga(void ***************************************************poa_noncooperation)
+char stonesoup_source[1024];
+outslip_oneill = ((char *)((char *)( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *poa_noncooperation))))))))))))))))))))))))))))))))))))))))))))))))))));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, outslip_oneill, sizeof(stonesoup_source));

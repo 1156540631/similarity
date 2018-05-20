@@ -1,0 +1,4 @@
+VAR476 = fopen(VAR477,"r");
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208-%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR434,VAR480);
+VAR476 = fopen(VAR477,"r");
+snprintf(VAR477,VAR478,"%VAR208%VAR208/%VAR208.ffpreset",VAR479[VAR56],(VAR56 != 1?"" : "/.ffmpeg"),VAR480);

@@ -1,0 +1,5 @@
+intPointer = (int*)malloc(data * sizeof(int));
+data = 20;
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

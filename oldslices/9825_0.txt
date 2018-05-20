@@ -1,0 +1,4 @@
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+structCharVoid->voidSecond = (void *)SRC_STR;
+structCharVoid->charFirst[(sizeof(structCharVoid->charFirst)/sizeof(char))-1] = '\0';
+free(structCharVoid);

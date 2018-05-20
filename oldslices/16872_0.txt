@@ -1,0 +1,6 @@
+data = NULL;
+goodG2BSource(data);
+void goodG2BSource(double * &data)
+data = (double *)malloc(sizeof(*data));
+*data = 1.7E300;
+printDoubleLine(*data);

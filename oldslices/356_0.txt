@@ -1,0 +1,4 @@
+if (SDK_VERSION >= 20) {
+if (SDK_VERSION >= 20) {
+#ifdef _DEBUG
+NU_DBG("     ssid: %s", GET_CHAR(mSsid));

@@ -1,0 +1,6 @@
+char VAR1[1024];
+VAR2 = FUN1("OVERCRITICIZE_AUBYN");
+VAR3 . VAR4 = VAR2;
+VAR5 = ((char *)VAR3 . VAR4);
+memset(VAR1,0,1024);
+strncpy(VAR1,VAR5,sizeof(VAR1));

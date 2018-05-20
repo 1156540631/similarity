@@ -1,0 +1,12 @@
+wchar_t * VAR1;
+wchar_t * VAR6 = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+wmemset(VAR6, L'A', 100-1);
+VAR6[100-1] = L'\0';
+VAR1 = VAR6 - 8;
+const CLASS26& CLASS2 = CLASS27();
+CLASS2.FUN2(VAR1);
+void CLASS27::FUN2(wchar_t * VAR1) const
+wchar_t VAR8[100*2];
+wmemset(VAR8, L'C', 100*2-1);
+VAR8[100*2-1] = L'\0';
+wcscpy(VAR8, VAR1);

@@ -1,0 +1,41 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&valeted_epitaphize,"NONIMMIGRANT_QUINCUNXES");
+if (valeted_epitaphize != 0) {;
+overtaxation_tantaluses = ((int )(strlen(valeted_epitaphize)));
+gloom_ungnawed = ((char *)(malloc(overtaxation_tantaluses + 1)));
+if (gloom_ungnawed == 0) {
+memset(gloom_ungnawed,0,overtaxation_tantaluses + 1);
+memcpy(gloom_ungnawed,valeted_epitaphize,overtaxation_tantaluses);
+if (valeted_epitaphize != 0)
+free(((char *)valeted_epitaphize));
+acondylose_cigarillos = &gloom_ungnawed;
+SAGGIER_OUTRAKE(acondylose_cigarillos);
+void relata_watertightness(char **bentonville_semisilica)
+SAGGIER_OUTRAKE(acondylose_cigarillos);
+ribbonmaker_virulented = ((char *)( *bentonville_semisilica));
+stonesoup_taint_len = ((int )(strlen(ribbonmaker_virulented)));
+for (; stonesoup_taint_len >= 0; (--stonesoup_buff_size , --stonesoup_taint_len)) {
+stonesoup_data.buffer[stonesoup_buff_size] = ribbonmaker_virulented[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_data.buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data.buffer[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "FINAL-STATE");
+if ( *bentonville_semisilica != 0)
+free(((char *)( *bentonville_semisilica)));
+int stonesoup_toupper(int c)
+if (c >= 97 && c <= 122) {
+return c - 32;
+return c;
+stonesoup_data.buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data.buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data.before(stonesoup_data.buffer[stonesoup_i]));
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%c",stonesoup_data.before(stonesoup_data.buffer[stonesoup_i]));

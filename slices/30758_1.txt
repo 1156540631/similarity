@@ -1,0 +1,8 @@
+VAR2 = NULL;
+VAR2 = FUN11(VAR2);
+static void * FUN11(void * VAR2)
+VAR2 = (void *)VAR8;
+return VAR2;
+size_t VAR12 = strlen((char *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, 1);
+memcpy(VAR13, VAR2, (VAR12+1));

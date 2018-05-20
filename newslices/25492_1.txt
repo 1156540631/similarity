@@ -1,0 +1,7 @@
+void FUN1(char *VAR1)
+FUN2(VAR1);
+void FUN2(char *const VAR2)
+VAR3 = ((char *)((char *)VAR2));
+VAR4 = (char*) malloc(8 * sizeof(char));
+FUN3(VAR5, VAR6, "STONESOUP_TAINT_SOURCE", strlen(VAR3)+1, VAR3, "VAR7-VAR8");
+strncpy(VAR4, VAR3, strlen(VAR3) + 1);

@@ -1,0 +1,6 @@
+broiling_airfields = getenv("BIOFLAVINOID_PHOTOSTABILITY");
+if (broiling_airfields != 0) {;
+outgrowing_plashy[3] = broiling_airfields;
+laft_spinors = outgrowing_plashy;
+androgynic_freeze(withdrawnness_blotchiness,laft_spinors);
+void androgynic_freeze(int presharpen_concernment,char **serpivolant_fieldworker);

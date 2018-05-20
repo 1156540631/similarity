@@ -1,0 +1,4 @@
+scanf("%d", &ColonOkInAddr);
+res_addr = crackaddr(address);
+!gotcolon && !ColonOkInAddr)
+if (c == ';' && copylev <= 0 && !ColonOkInAddr)

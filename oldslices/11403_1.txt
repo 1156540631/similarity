@@ -1,0 +1,6 @@
+int &dataRef = data;
+int data = dataRef;
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

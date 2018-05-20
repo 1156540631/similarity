@@ -1,0 +1,7 @@
+int FUN1(int VAR1, char **VAR2){
+assert(VAR1==2);
+VAR3 = fopen (VAR2[1], "r");
+assert(VAR3!=VAR4);
+assert ((fscanf(VAR3, "%d", &VAR5)) != 0);
+VAR6 = FUN2(VAR7, 10000);
+FUN3(VAR8, &VAR9, VAR10, &VAR6, VAR7);

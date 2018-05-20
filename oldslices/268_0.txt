@@ -1,0 +1,5 @@
+const nsRect& aDirtyRect, nsBlockFrame::line_iterator& aLine,
+DebugOutputDrawLine(aDepth, aLine.get(), intersect);
+static void DebugOutputDrawLine(int32_t aDepth, nsLineBox* aLine, bool aDrawn) {
+nsRect lineArea = aLine->GetVisualOverflowArea();
+static_cast<void*>(aLine),

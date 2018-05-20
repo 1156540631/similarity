@@ -1,0 +1,11 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#VAR1 VAR4 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+static int VAR5 = 5;
+VAR6 = VAR7;
+if(VAR5==5)
+VAR6 = (void *)VAR2;
+if(VAR5==5){}
+else{
+VAR8 VAR9 = FUN1((wchar_t *)VAR6);
+void * VAR10 = (void *)calloc(VAR9+1, sizeof(wchar_t));
+memcpy(VAR10, VAR6, (VAR9+1)*sizeof(wchar_t));

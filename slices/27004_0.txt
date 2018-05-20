@@ -1,0 +1,2 @@
+int main(int argc, char **argv)
+if (argc > 1 && strlen(argv[1]) < VAR127)

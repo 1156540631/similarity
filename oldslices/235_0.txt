@@ -1,0 +1,3 @@
+void *data, int *data_size,
+unsigned char *output_samples = (unsigned char *)data;
+memset(output_samples, 0, raw_block_size * silent_chunks);

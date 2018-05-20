@@ -1,0 +1,7 @@
+main(int argc, char **argv)
+userstr = argv[1];
+p = test(userstr);
+test(char *str)
+p = strdup(str);
+printf("result: %s\n", p);
+free(p);

@@ -1,0 +1,4 @@
+VAR1 = malloc(25*sizeof(char));
+VAR1[24] = '\';
+printf("%s\n", VAR1);
+free(VAR1);

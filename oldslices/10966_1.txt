@@ -1,0 +1,6 @@
+int *buf1=(int*) calloc(5,sizeof(int));
+int *buf2=(int*) calloc(3,sizeof(int));
+for(i=0;i<5;i++)
+*(buf1+i)=i;
+*(buf2+*(buf1+5))=1;
+free(buf2);

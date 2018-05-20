@@ -1,0 +1,11 @@
+void (*VAR1) (int *) = VAR2;
+static int FUN1( CLASS1 *VAR3, void *VAR4, unsigned int VAR5 )
+CLASS2 *VAR6 = VAR3->VAR6;
+if( !VAR4 )
+return 0;
+if( FUN2( VAR3 ) )
+return -1;
+VAR1(VAR7)
+void VAR2(int * VAR7)
+int VAR7 = FUN3( VAR5, VAR6->VAR7 - VAR6->VAR8 );
+memcpy( VAR4, VAR6->VAR9 + VAR6->VAR8, VAR7 );

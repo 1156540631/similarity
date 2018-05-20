@@ -1,0 +1,4 @@
+p_child = p_chk->common.p_first;
+p_next = p_child->common.p_next;
+p_child = p_next;
+free( p_child );

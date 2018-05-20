@@ -1,0 +1,3 @@
+LPCWSTR VAR1 = L"SOFTWARE\\Mozilla\\"
+wcsncpy(VAR2, VAR1, VAR8);
+VAR2 + wcslen(VAR1));

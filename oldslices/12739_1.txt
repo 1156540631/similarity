@@ -1,0 +1,28 @@
+return c - 32;
+return c;
+pyretic_gunmen(borocarbide_lituite,monomya_graving);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before = stonesoup_toupper;
+memset(stonesoup_data->buffer,0,64);
+stonesoup_data->after = stonesoup_toupper;
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->before", stonesoup_data->before, &stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->after", stonesoup_data->after, &stonesoup_data->after, "INITIAL-STATE");
+strcpy(stonesoup_data->buffer, exchanger_autophytography);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->after(stonesoup_data->buffer[stonesoup_i]));
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);
+void stonesoup_handle_taint(char *attemperator_goodly)
+enviroment_peripheroceptor[7] = attemperator_goodly;
+dogfishes_panspermatist = enviroment_peripheroceptor;
+pyretic_gunmen(topotaxis_limmu,dogfishes_panspermatist);
+void pyretic_gunmen(int borocarbide_lituite,char **monomya_graving)
+exchanger_autophytography = ((char *)monomya_graving[7]);
+strcpy(stonesoup_data->buffer, exchanger_autophytography);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data->buffer);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "FINAL-STATE");
+free(stonesoup_data);

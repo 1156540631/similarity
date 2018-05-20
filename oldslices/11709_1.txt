@@ -1,0 +1,10 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&zorilla_agnathic,"ENTOZOOLOGICAL_UNRESTRICTIVE");
+if (zorilla_agnathic != 0) {;
+sarcosepta_lacet = ((char *)zorilla_agnathic);
+if (strlen(sarcosepta_lacet) < 20) {;
+realpath(sarcosepta_lacet, stonesoup_data->base_path);
+if (zorilla_agnathic != 0)
+free(((char *)zorilla_agnathic));

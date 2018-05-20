@@ -1,0 +1,63 @@
+return FUN1(VAR3);
+return sizeof(VAR7) + FUN2(VAR5) +
+FUN2(VAR6) + FUN3();
+return sizeof(CLASS1) + FUN2(VAR5) +
+FUN2(VAR6) + FUN2(VAR19);
+if (((char *)VAR2 + VAR2->FUN8()) > VAR18 ||
+return nullptr;
+return VAR2;
+if (((char *)VAR27 + VAR27->FUN8()) > (char *)VAR4)
+return nullptr;
+return VAR27;
+VAR12.VAR32 = VAR15.VAR25;
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+((VAR12.VAR32 & 0xFC) << 3) |
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+return (VAR31 << 16) | VAR31;
+while ((VAR2 = VAR11.FUN10(VAR2))) {
+CLASS4 = VAR11.FUN4(VAR2);
+VAR1 VAR8;
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+return VAR27 + FUN2(VAR5) + FUN2(VAR6);
+return FUN1(VAR21);
+VAR12.VAR33 = VAR15.VAR34;
+return VAR12.VAR35;
+return VAR12.VAR35;
+((VAR12.VAR32 & 0xFC) << 3) |
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+((VAR12.VAR33       ) >> 3);
+((VAR12.VAR32 & 0xFC) << 3) |
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+return (VAR31 << 16) | VAR31;
+return 0;
+VAR8.FUN7(CLASS4->FUN5(), VAR2->FUN3());
+const char *VAR17 = VAR8.FUN6();
+vector<CLASS2> VAR22;
+VAR10 = strstr(VAR17, "\VAR2");
+CLASS2 VAR23;
+sscanf(VAR17, "%VAR1 %VAR1 %VAR1", &VAR13, &VAR14, &VAR9) == 3) {
+} else if (sscanf(VAR17, "VAR6 %VAR1 %VAR1 %VAR6",
+&VAR23.VAR9, &VAR23.VAR24, VAR23.VAR4)) {
+VAR22.FUN11(VAR23);
+} while (VAR10 && *(VAR17 = VAR10 + 1));
+VAR10 = strstr(VAR17, "\VAR2");
+sscanf(VAR17, "%VAR1 %VAR1 %VAR1", &VAR13, &VAR14, &VAR9) == 3) {
+} else if (sscanf(VAR17, "VAR6 %VAR1 %VAR1 %VAR6",
+&VAR23.VAR9, &VAR23.VAR24, VAR23.VAR4)) {
+VAR22.FUN11(VAR23);
+for (uint32_t VAR2 = 0; VAR2 < VAR22.VAR10(); VAR2++) {
+for (uint32_t VAR2 = 0; VAR2 < VAR22.VAR10(); VAR2++) {
+CLASS2 &VAR23 = VAR22[VAR2];
+CLASS3 &VAR26 = VAR23.VAR28[VAR16];
+void *VAR29;
+0, 0, VAR13, VAR14, &VAR29)) {
+CLASS5 VAR36 = FUN9(VAR26.VAR37, VAR2);
+wmemset((CLASS5*)VAR29, VAR36,
+FUN9(const png_color_16& VAR15, int VAR38)
+VAR12.VAR30 = VAR15.VAR39;
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+((VAR12.VAR32 & 0xFC) << 3) |
+uint16_t VAR31 = ((VAR12.VAR30 & 0xF8) << 8) |
+return (VAR31 << 16) | VAR31;
+CLASS5 VAR36 = FUN9(VAR26.VAR37, VAR2);
+wmemset((CLASS5*)VAR29, VAR36,

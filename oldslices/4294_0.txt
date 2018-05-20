@@ -1,0 +1,5 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&hercynian_pontypool,"NEMATOLOGY_IMID");
+if (hercynian_pontypool != 0) {;

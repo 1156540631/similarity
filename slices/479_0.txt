@@ -1,0 +1,14 @@
+fprintf(stderr, "DEBUG: %*sSEQUENCE %d bytes\VAR2", VAR3, "",
+FUN1(VAR6, VAR2, VAR3 + 4);
+fprintf(stderr, "DEBUG: %*sGet-Request-VAR15 %d bytes\VAR2", VAR3, "",
+FUN1(VAR6, VAR2, VAR3 + 4);
+FUN1(VAR6, VAR2, VAR3 + 4);
+int           VAR3)
+fprintf(stderr, "DEBUG: %*sBOOLEAN %d bytes %d\VAR2", VAR3, "",
+fprintf(stderr, "DEBUG: %*sINTEGER %d bytes %d\VAR2", VAR3, "",
+fprintf(stderr, "DEBUG: %*sOCTET STRING %d bytes \"%VAR6\"\VAR2", VAR3, "",
+fprintf(stderr, "DEBUG: %*sOID %d bytes ", VAR3, "",
+fprintf(stderr, ".%d", VAR3[VAR3]);
+putc('\VAR2', stderr);
+fprintf(stderr, "DEBUG: %*sGet-Response-VAR15 %d bytes\VAR2", VAR3, "",
+fprintf(stderr, "DEBUG: %*sUNKNOWN(%VAR11) %d bytes\VAR2", VAR3, "",

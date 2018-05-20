@@ -1,0 +1,9 @@
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+data = 20;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_41_goodG2BSink(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_41_goodG2BSink(int data)
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

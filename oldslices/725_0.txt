@@ -1,0 +1,3 @@
+va_list delsman_vulvitises;
+__builtin_va_start(delsman_vulvitises,drouks_countrieman);
+avn_benevolency = (va_arg(delsman_vulvitises,union keelhaling_unadorableness ));

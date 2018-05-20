@@ -1,0 +1,4 @@
+char* VAR1="VAR2 VAR3";
+char* VAR4=(char*) malloc(10*sizeof(char));
+for(VAR5=0;VAR5<strlen(VAR1);VAR5++)
+strncpy(&VAR4[VAR6],&VAR1[VAR6],1);

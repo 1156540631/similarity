@@ -1,0 +1,4 @@
+! memcmp ( p_oggpacket->packet, "Annodex", 7 ) )
+! memcmp ( p_oggpacket->packet, "AnxData", 7 ) )
+p_oggpacket->packet += 9;
+p_oggpacket->packet, p_stream->i_headers );

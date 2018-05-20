@@ -1,0 +1,11 @@
+map<int, int *> dataMap;
+data = NULL;
+data = new int[100];
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, int *> dataMap)
+int * data = dataMap[2];
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

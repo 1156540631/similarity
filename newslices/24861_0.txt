@@ -1,0 +1,5 @@
+char VAR1[1024];
+void *VAR2 = 0;
+VAR3 = ((char *)((char *)VAR2));
+memset(VAR1, 0, 1024);
+strncpy(VAR1, VAR3, sizeof(VAR1));

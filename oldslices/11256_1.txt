@@ -1,0 +1,4 @@
+ptr1[11]='\0';
+ptr1[i]='a';
+memcpy(ptr2,ptr1,12);
+free(ptr1);

@@ -1,0 +1,16 @@
+!memcmp( VAR1->VAR2, "Annodex", 7 ) )
+!memcmp( VAR1->VAR2, "AnxData", 7 ) )
+VAR3 = FUN1( &VAR1->VAR2[8] );
+VAR4 = FUN1( &VAR1->VAR2[16] );
+FUN2( &VAR1->VAR2[24] );
+VAR5[0] = '\';
+CLASS1 *VAR6 = memchr( &VAR1->VAR2[42], '\',
+sscanf( (char*)(&VAR1->VAR2[42]), "%1023s\r\n",
+VAR5 );
+if( !strncmp(VAR5, "VAR7/VAR8-VAR9", 11) )
+else if( !strncmp(VAR5, "VAR7/VAR8-VAR10", 14) )
+else if( !strncmp(VAR5, "VAR7/VAR8-VAR11", 13) )
+else if( !strncmp(VAR5, "VAR12/VAR8-VAR13", 14) )
+else if( !strncmp(VAR5, "VAR12/VAR8-VAR14", 12) )
+else if( !strncmp(VAR5, "VAR12/VAR15", 10) )
+else if( !strncmp(VAR5, "VAR16/VAR8-VAR17", 11) )

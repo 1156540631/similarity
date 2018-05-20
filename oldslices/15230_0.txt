@@ -1,0 +1,14 @@
+int * data
+vector<int *> dataVector;
+int * dataBadBuffer = (int *)ALLOCA(50*sizeof(int));
+int * dataGoodBuffer = (int *)ALLOCA(100*sizeof(int));
+data = dataGoodBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));
+void goodG2BSink(vector<int *> dataVector)
+int * data = dataVector[2];
+memmove(data, source, 100*sizeof(int));

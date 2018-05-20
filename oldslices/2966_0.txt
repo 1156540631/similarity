@@ -1,0 +1,13 @@
+register char *gecos;
+char *buf;
+register char *bp = buf;
+gecos++;
+for (p = gecos; *p != '\0' && *p != ',' && *p != ';' && *p != '%'; p++)
+*bp = toupper(*bp);
+bp += strlen(bp);
+*bp++ = *p;
+printf ("sizeof(bp) = %d\n", sizeof(bp));
+printf ("bp-buf=%d\n", (bp-buf));
+printf ("SPACELEFT(buf,bp)=%d\n", SPACELEFT(buf,bp));
+snprintf(bp, SPACELEFT(buf, bp), "%s", login);
+*bp = toupper(*bp);

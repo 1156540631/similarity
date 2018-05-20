@@ -1,0 +1,9 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAA"
+wchar_t * VAR4;
+VAR4 = VAR5;
+VAR4 = (wchar_t *)malloc(10*sizeof(wchar_t));
+const VAR6& VAR7 = FUN1();
+VAR7.FUN2(VAR4);
+void FUN1::FUN2(wchar_t * VAR4) const
+wchar_t VAR8[10+1] = VAR2;
+FUN3(VAR4, VAR8, FUN4(VAR8) + 1);

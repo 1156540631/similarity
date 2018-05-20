@@ -1,0 +1,37 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+return VAR3 - 32;
+int VAR4 = 596;
+char *VAR5;
+FUN1(&VAR5,"8962",VAR4);
+VAR6 . VAR7 = VAR5;
+FUN2(VAR6);
+VAR8 = (char*) malloc(64 * sizeof(char));
+memset(VAR8,0,64);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR11-VAR12");
+strcpy(VAR8, VAR13);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR14-VAR12");
+VAR15 = strlen( VAR8);
+VAR8[VAR16] = FUN4(VAR8[VAR16]);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR17-VAR18");
+FUN5("%s\n",VAR8);
+void FUN2(const union VAR19 VAR20)
+VAR13 = ((char *)((union VAR19 )VAR20) . VAR7);
+strcpy(VAR8, VAR13);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR14-VAR12");
+VAR15 = strlen( VAR8);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR17-VAR18");
+FUN5("%s\n",VAR8);
+void FUN5(char * VAR21, ...) {
+free(VAR8);
+int FUN4(int VAR3)
+return VAR3;
+VAR8[VAR16] = FUN4(VAR8[VAR16]);
+FUN3(VAR9, VAR10, "VAR8", VAR8, "VAR17-VAR18");
+FUN5("%s\n",VAR8);
+void FUN1(char** VAR1, char* VAR22, int VAR23) {
+if ((VAR24 = FUN6(VAR25, VAR23, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR23, sizeof(char));
+FUN1(&VAR5,"8962",VAR4);
+VAR6 . VAR7 = VAR5;
+FUN2(VAR6);

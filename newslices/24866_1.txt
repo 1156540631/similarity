@@ -1,0 +1,20 @@
+union VAR1 VAR2;
+int VAR3 = 596;
+char *VAR4;;
+FUN1(&VAR4,"9420",VAR3);
+void FUN1(char** VAR5, char* VAR6, int VAR7) {
+*VAR5 = VAR8;
+if ((VAR9 = FUN2(VAR10, VAR7, 0666)) >= 0) {
+*VAR5 = (char*)calloc(VAR7, sizeof(char));
+VAR2 . VAR11 = VAR4;
+VAR12[5] = VAR2;
+VAR13 = 5;
+VAR14 = &VAR13;
+VAR15 =  *(VAR12 +  *VAR14);
+FUN3(VAR16,VAR15);
+void FUN3(int VAR17,union VAR1 VAR18)
+VAR19 = ((char *)VAR18 . VAR11);
+VAR20 = (struct CLASS1*) malloc(sizeof(struct CLASS1));
+memset(VAR20->VAR21,0,64);
+FUN4(VAR22, VAR23, "VAR20->VAR21", VAR20->VAR21, "VAR24-VAR25");
+strcpy(VAR20->VAR21, VAR19);

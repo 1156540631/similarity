@@ -1,0 +1,4 @@
+const char* VAR1 = "VAR2 0 ";
+VAR1 = "";
+const char* VAR3 = VAR4 ? "add" : "remove";
+VAR1, VAR3,

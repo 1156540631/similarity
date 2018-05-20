@@ -1,0 +1,16 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR349,"MICROMEMBRANE_INDUBIOUSLY");
+if (VAR349 != 0) {;
+VAR350 . VAR351 = VAR349;
+VAR352 = FUN87(VAR350);
+union VAR353 FUN87(union VAR353 VAR354);

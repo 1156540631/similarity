@@ -1,0 +1,8 @@
+const AVCodecDescriptor **codecs;
+unsigned int nb_codecs = 0;
+nb_codecs++;
+if (!(codecs = (av_calloc(nb_codecs,sizeof(( *codecs)))))) {
+desc = ((void *)0);
+while(desc = avcodec_descriptor_next(desc))
+codecs[i++] = desc;
+qsort(codecs,nb_codecs,sizeof(( *codecs)),compare_codec_desc);

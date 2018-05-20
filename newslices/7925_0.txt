@@ -1,0 +1,3 @@
+CLASS1 *FUN1(CLASS2 *VAR1,const char *VAR2,const char **VAR3)
+char *VAR4;
+CLASS2 VAR5 = strtol(VAR2,&VAR4,10);

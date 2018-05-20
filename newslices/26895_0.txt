@@ -1,0 +1,3 @@
+register char *VAR1;
+VAR1++;
+printf ("strlen (VAR1)=%d\n", strlen (VAR1));

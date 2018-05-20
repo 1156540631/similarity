@@ -1,0 +1,14 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR26,"BABAKOTO_PSYCHODRAMAS");
+if (VAR26 != 0) {;
+VAR27 . VAR28 = VAR26;

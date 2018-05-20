@@ -1,0 +1,6 @@
+if(fread(&r, sizeof r, 1, f) != 1)
+fclose(f);
+if(fclose(f) != 0)
+return r;
+return getRand() % 256;
+buffer[plop()] = '!';

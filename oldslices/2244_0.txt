@@ -1,0 +1,4 @@
+void badSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

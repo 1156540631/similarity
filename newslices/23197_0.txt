@@ -1,0 +1,2 @@
+char *VAR1 = FUN1("WIRESHARK_DEBUG_MIBS");
+VAR2 = ((VAR1?FUN2(VAR1,((void *)0),10) : 0));

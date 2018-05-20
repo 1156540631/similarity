@@ -1,0 +1,8 @@
+struct sockaddr_in service;
+listenSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+memset(&service, 0, sizeof(service));
+service.sin_family = AF_INET;
+service.sin_addr.s_addr = INADDR_ANY;
+service.sin_port = htons(TCP_PORT);
+if (bind(listenSocket, (struct sockaddr*)&service, sizeof(service)) == SOCKET_ERROR)
+memset(&service, 0, sizeof(service));

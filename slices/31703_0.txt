@@ -1,0 +1,13 @@
+char * VAR1;
+char VAR6[100];
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6;
+const CLASS1& CLASS2 = CLASS4();
+CLASS2.FUN2(VAR1);
+void CLASS4::FUN2(char * VAR1) const
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));
+VAR8[100-1] = '\0';

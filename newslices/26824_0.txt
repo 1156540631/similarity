@@ -1,0 +1,3 @@
+VAR1 = (char *) malloc(400*sizeof(char));
+VAR2 = VAR1;
+strcpy(VAR2, "VAR3 VAR4:");

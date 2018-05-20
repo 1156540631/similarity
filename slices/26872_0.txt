@@ -1,0 +1,3 @@
+FUN83(VAR519, "%VAR1: user %VAR1 has bad shell %VAR1, marked %VAR1",FUN119(VAR428, 203),VAR463->VAR465, VAR520, VAR517 ? "bogus" : "unsafe");
+FUN83(VAR519, "%VAR1: world writable %VAR1 file, marked unsafe", FUN119(VAR428, 203), VAR518 ? "FUN118" : ":FUN113:");
+FUN83(VAR519, "%VAR1: FUN118 %.200s => %VAR1", VAR83->VAR521 == NULL ? "NOQUEUE" : VAR83->VAR521, VAR476, FUN119(VAR39, 203));

@@ -1,0 +1,15 @@
+typedef struct _CLASS14
+int VAR44;
+} CLASS14;
+CLASS14 CLASS5;
+VAR5 = -1;
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+CLASS5.VAR44 = VAR5;
+FUN75(CLASS5);
+void FUN75(CLASS14 CLASS5)
+int VAR5 = CLASS5.VAR44;
+int VAR16[10] = { 0 };
+if (VAR5 >= 0)
+VAR16[VAR5] = 1;

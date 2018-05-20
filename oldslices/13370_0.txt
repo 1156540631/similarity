@@ -1,0 +1,14 @@
+static gboolean is_rtsp_request_or_reply(const guchar *line, size_t linelen, rtsp_type_t *type)
+const guchar *next_token;
+int           tokenlen;
+gchar         response_chars[4];
+if (linelen >= 5 && g_ascii_strncasecmp("RTSP/", line, 5) == 0) {
+*type = RTSP_REPLY;
+tokenlen = func(line, token);
+int func(const guchar* line, const guchar*& token)
+return  get_token_len(line, line+5, &token);
+tokenlen = func(line, token);
+if (tokenlen != 0) {
+tokenlen = get_token_len(token, line+linelen, &next_token);
+if (tokenlen >= 3) {
+memcpy(response_chars, token, 3);

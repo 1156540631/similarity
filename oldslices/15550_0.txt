@@ -1,0 +1,2 @@
+char * goodG2B1Source(char * data)
+memset(data, 'A', 50-1);

@@ -1,0 +1,13 @@
+char * VAR1;
+VAR2<char *> VAR3;
+char VAR4[10];
+char VAR5[10+1];
+VAR1 = VAR4;
+VAR1[0] = '\';
+VAR3.FUN1(VAR3.FUN2(), 1, VAR6);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+VAR3.FUN1(VAR3.FUN2(), 1, VAR1);
+void FUN3(VAR2<char *> VAR3)
+char * VAR1 = VAR3[2];
+char VAR7[10+1] = VAR8;
+memmove(VAR1, VAR7, (strlen(VAR7) + 1) * sizeof(char));

@@ -1,0 +1,8 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[50-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memcpy_82_base* baseObject = new CLASS1;
+baseObject->FUN1(VAR2);
+void CLASS1::FUN1(char * VAR2)
+char VAR3[50] = "";
+memcpy(VAR3, VAR2, strlen(VAR2)*sizeof(char));

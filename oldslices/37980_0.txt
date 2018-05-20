@@ -1,0 +1,6 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+size_t dataLen = strlen(data);

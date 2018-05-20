@@ -1,0 +1,9 @@
+wchar_t * VAR1;
+CLASS1 VAR4;
+wchar_t * VAR2 = (wchar_t *)alloca(100*sizeof(wchar_t));
+VAR1 = VAR2;
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+wchar_t * VAR1 = VAR4.VAR5;
+wchar_t VAR3[50] = L"";
+wcscpy(VAR3, VAR1);

@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+if(argc > 1) {
+userstr = argv[1];
+if(userstr[0] == '!')
+test("<%s>", userstr);
+test("[%s]", userstr);
+test(char *fmt, char *str)
+printf(str, fmt);

@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int skyborne_mattoir = 91;
+char *ensnares_claman;
+stonesoup_read_taint(&ensnares_claman,"5024",skyborne_mattoir);
+keggmiengg_frankforter . centaurus_unprismatical = ((char *)ensnares_claman);
+trundler_daedalid(keggmiengg_frankforter);
+void trundler_daedalid(const struct stentors_friskers tubercularness_khrushchev)
+free(((char *)((struct stentors_friskers )tubercularness_khrushchev) . centaurus_unprismatical));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&ensnares_claman,"5024",skyborne_mattoir);
+keggmiengg_frankforter . centaurus_unprismatical = ((char *)ensnares_claman);
+trundler_daedalid(keggmiengg_frankforter);

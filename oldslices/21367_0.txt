@@ -1,0 +1,10 @@
+char stonesoup_source[1024];
+cohobated_corotating = getenv("DONSY_UNMACHO");
+unchurchly_apophlegmatic = cohobated_corotating;
+deste_leddy[5] = unchurchly_apophlegmatic;
+intarsia_stashie = 5;
+streambed_halch = &intarsia_stashie;
+valentines_oversweet =  *(deste_leddy +  *streambed_halch);
+carthamin_renominate = ((char *)valentines_oversweet);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, carthamin_renominate, sizeof(stonesoup_source));

@@ -1,0 +1,7 @@
+cohobated_corotating = getenv("DONSY_UNMACHO");
+if (cohobated_corotating != 0) {;
+unchurchly_apophlegmatic = cohobated_corotating;
+deste_leddy[5] = unchurchly_apophlegmatic;
+valentines_oversweet =  *(deste_leddy +  *streambed_halch);
+carthamin_renominate = ((char *)valentines_oversweet);
+strncpy(stonesoup_source, carthamin_renominate, sizeof(stonesoup_source));

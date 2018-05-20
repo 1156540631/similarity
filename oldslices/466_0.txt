@@ -1,0 +1,36 @@
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+int x, int y, int w, int h)
+int width = surface_bytes_per_pixel(surface) * w;
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+uint32_t cmd = s->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(s));
+x = vmsvga_fifo_read(s);
+if (vmsvga_fill_rect(s, colour, x, y, width, height) == 0) {
+uint32_t c, int x, int y, int w, int h)
+if (!vmsvga_verify_rect(surface, __func__, x, y, w, h)) {
+fprintf(stderr, "%s: x was < 0 (%d)\n", name, x);
+fprintf(stderr, "%s: x was > %d (%d)\n", name, SVGA_MAX_WIDTH, x);
+if (x + w > surface_width(surface)) {
+name, surface_width(surface), x, w);
+fprintf(stderr, "%s: y was < 0 (%d)\n", name, y);
+fprintf(stderr, "%s: y was > %d (%d)\n", name, SVGA_MAX_HEIGHT, y);
+if (y + h > surface_height(surface)) {
+name, surface_height(surface), y, h);
+uint32_t cmd = s->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(s));
+width = vmsvga_fifo_read(s);
+if (vmsvga_fill_rect(s, colour, x, y, width, height) == 0) {
+uint32_t c, int x, int y, int w, int h)
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+int bypl = surface_stride(surface);
+int width = surface_bytes_per_pixel(surface) * w;
+fst = s->vga.vram_ptr + surface_bytes_per_pixel(surface) * x + bypl * y;
+dst = fst;
+dst += bypl;
+memcpy(dst, fst, width);
+static inline bool vmsvga_verify_rect(DisplaySurface *surface,
+fst = s->vga.vram_ptr + surface_bytes_per_pixel(surface) * x + bypl * y;
+dst = fst;
+memcpy(dst, fst, width);

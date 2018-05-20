@@ -1,0 +1,10 @@
+vector<char *> dataVector;
+data = (char *)malloc((10+1)*sizeof(char));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

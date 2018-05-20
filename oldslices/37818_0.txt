@@ -1,0 +1,7 @@
+char * dataGoodBuffer = (char *)malloc(50*sizeof(char));
+memset(dataGoodBuffer, 'A', 50-1);
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+goodG2BSink(data);
+static void goodG2BSink(void * data)
+size_t dataLen = strlen((char *)data);

@@ -1,0 +1,4 @@
+data = (char *)malloc(10*sizeof(char));
+strcpy(data, source);
+printLine(data);
+free(data);

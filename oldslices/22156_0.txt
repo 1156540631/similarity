@@ -1,0 +1,5 @@
+walden_middleland = getenv("AMOEBIDAE_PRESBYACUSIA");
+if (walden_middleland != 0) {;
+hartungen_skirtless = ((char *)walden_middleland);
+if (strlen(hartungen_skirtless) < 20) {;
+realpath(hartungen_skirtless, stonesoup_data->base_path);

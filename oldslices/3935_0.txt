@@ -1,0 +1,5 @@
+void *qsl_scuddy = 0;
+kamloops_prud(&qsl_scuddy);
+unpromotive_lachnanthes(qsl_scuddy);
+void unpromotive_lachnanthes(void *const sarods_peculiarness)
+free(((char *)((char *)((void *)sarods_peculiarness))));

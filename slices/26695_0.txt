@@ -1,0 +1,8 @@
+VAR249 = getenv("RENORMALIZE_DRUMORE");
+if (VAR249 != 0) {;
+VAR250 = VAR249;
+VAR251 = &VAR250;
+VAR252 = ((STRUCT13 *)(((unsigned long )VAR251) * VAR253 * VAR253)) + 5;
+VAR254 = ((char *)( *(VAR252 - 5)));
+if (strlen(VAR254) < 20) {;
+realpath(VAR254, VAR33->VAR247);

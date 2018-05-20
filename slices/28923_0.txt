@@ -1,0 +1,10 @@
+static int VAR12 = 1;
+static int VAR13 = 0;
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+if(VAR13){ }
+else
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+char VAR40[50] = "";
+strcpy(VAR40, VAR1);

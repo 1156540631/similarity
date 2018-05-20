@@ -1,0 +1,2 @@
+buf[sizeof buf - 1] = 0;
+printf("%s\n", buf);

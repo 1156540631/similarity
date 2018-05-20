@@ -1,0 +1,13 @@
+char * *VAR11 = &VAR6;
+char * *VAR12 = &VAR6;
+char * VAR5 = (char *)ALLOCA(100*sizeof(char));
+memset(VAR5, 'A', 100-1);
+VAR5[100-1] = '\0';
+char * VAR6 = *VAR11;
+VAR6 = VAR5;
+*VAR11 = VAR6;
+char * VAR6 = *VAR12;
+char VAR7[100];
+memset(VAR7, 'C', 100-1);
+VAR7[100-1] = '\0';
+strcpy(VAR6, VAR7);

@@ -1,0 +1,5 @@
+char VAR398[64];
+VAR549 = ((char *)(VAR547 - 5)[82]);
+memset(VAR398,0,64);
+tracepoint(VAR19, VAR60, "VAR398", VAR398, "INITIAL-STATE");
+strcpy(VAR398,VAR549);

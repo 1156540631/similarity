@@ -1,0 +1,29 @@
+VAR53 = getenv(VAR55);
+VAR54 = fopen(VAR53,"rb");
+if (VAR54 != 0) {
+fseek(VAR54,0L,2);
+VAR56 = ftell(VAR54);
+rewind(VAR54);
+*VAR6 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+if (*VAR6 != 0) {
+VAR57 = fread(*VAR6,1,VAR56,VAR54);
+if (VAR54 != 0) {
+fclose(VAR54);
+FUNC1(&VAR64,"WHOOPLAS_PLUFFY");
+if (VAR64 != 0) {;
+VAR66 = ((char *)VAR64);
+strcpy(VAR63,VAR66);
+FUNC18(VAR50, VAR67, "VAR63", VAR63, "CROSSOVER-STATE");
+VAR63[VAR65] = FUNC5(VAR63[VAR65]);
+FUNC18(VAR50, VAR67, "VAR63", VAR63, "FINAL-STATE");
+FUNC7("%s\n",VAR63);
+if (VAR64 != 0)
+free(((char *)VAR64));
+int FUNC5(int VAR68) {
+if (VAR68 >= 97 && VAR68 <= 122) {
+return VAR68 - 32;
+return VAR68;
+VAR63[VAR65] = FUNC5(VAR63[VAR65]);
+FUNC18(VAR50, VAR67, "VAR63", VAR63, "FINAL-STATE");
+FUNC7("%s\n",VAR63);
+void FUNC7(char * VAR19, ...) {

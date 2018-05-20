@@ -1,0 +1,8 @@
+VAR55 = getenv("PORTAGE_HIPMI");
+if (VAR55 != 0) {;
+VAR56 = ((int )(strlen(VAR55)));
+VAR57 = ((char *)(malloc(VAR56 + 1)));
+if (VAR57 == 0) {
+memset(VAR57,0,VAR56 + 1);
+memcpy(VAR57,VAR55,VAR56);
+*VAR58 = VAR57;

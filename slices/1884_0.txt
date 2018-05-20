@@ -1,0 +1,8 @@
+VAR1[50-1] = '\0';
+VAR3[2] = VAR1;
+FUN4(VAR3);
+void FUN4(VAR3<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+SNPRINTF(VAR2, strlen(VAR1), "%VAR6", VAR1);
+FUN2(VAR1);
+free(VAR1);

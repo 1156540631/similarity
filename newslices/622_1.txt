@@ -1,0 +1,11 @@
+unsigned char *VAR1 = &VAR2->VAR3->VAR4.VAR5[0], *VAR6;
+unsigned int VAR7;
+unsigned int VAR8 = 16;
+VAR9 = *VAR1++;
+FUN1(VAR1, VAR7);
+VAR6 = VAR1;
+VAR10 = FUN2(1 + 2 + VAR7 + VAR8);
+VAR11 = VAR10;
+*VAR11++ = VAR12;
+FUN3(VAR7, VAR11);
+memcpy(VAR11, VAR6, VAR7);

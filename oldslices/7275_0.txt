@@ -1,0 +1,21 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int footing_disgracers = 131;
+char *ricercars_feelinglessly;
+stonesoup_read_taint(&ricercars_feelinglessly,"9197",footing_disgracers);
+ungird_uncensuring = ((void *)ricercars_feelinglessly);
+cerebralization_nogales = 1;
+scatoma_cudgels = &ungird_uncensuring;
+isiac_baneberry = ((void **)(((unsigned long )scatoma_cudgels) * cerebralization_nogales * cerebralization_nogales)) + 5;
+blepharoclonus_wiley(sherrymoor_nuangola,isiac_baneberry);
+blepharoclonus_wiley(wrixle_relisted,zanjona_unrefuting);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&ricercars_feelinglessly,"9197",footing_disgracers);
+ungird_uncensuring = ((void *)ricercars_feelinglessly);
+scatoma_cudgels = &ungird_uncensuring;
+isiac_baneberry = ((void **)(((unsigned long )scatoma_cudgels) * cerebralization_nogales * cerebralization_nogales)) + 5;
+blepharoclonus_wiley(sherrymoor_nuangola,isiac_baneberry);
+void blepharoclonus_wiley(int wrixle_relisted,void **zanjona_unrefuting)
+free(((char *)((char *)( *(zanjona_unrefuting - 5)))));

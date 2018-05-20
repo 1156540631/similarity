@@ -1,0 +1,16 @@
+return VAR1 - 32;
+VAR2[64 - 1] = '\';
+FUN1(VAR3, VAR4, "VAR2", strlen(VAR2)+1, VAR2, "VAR5-VAR6");
+strncpy(VAR2, VAR7, sizeof(VAR7));
+VAR8 = strlen(VAR2);
+FUN2(VAR2[VAR9]);
+VAR2[VAR9] =
+FUN2(VAR2[VAR9]);
+FUN3("%s\n", VAR2);
+void FUN3(char * VAR10, ...) {
+free(VAR2);
+int FUN2(int VAR1)
+return VAR1;
+FUN2(VAR2[VAR9]);
+VAR2[VAR9] =
+FUN3("%s\n", VAR2);

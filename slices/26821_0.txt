@@ -1,0 +1,36 @@
+u_char *VAR339 = (u_char *) malloc(100*sizeof(u_char));
+u_char *VAR340 = (u_char *) malloc(1000 * sizeof(u_char));
+VAR341 = FUN102(VAR340);
+int FUN102(u_char *VAR39) {
+char VAR329[200], VAR330[200];
+int VAR5,VAR188 = 0, VAR331;
+VAR332 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR333 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR334 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR335 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR336 = (char *) malloc(400*sizeof(char));
+VAR189 = VAR336;
+strcpy(VAR189, "HEADER JUNK:");
+VAR188 += strlen(VAR189);
+strcpy(VAR329, "lcs.mit.edu");
+*VAR332++ = (u_char *) VAR329;
+*VAR332-- = NULL;
+VAR337 = NULL;
+VAR331 = FUN68((const char *) VAR329, VAR334, 200, VAR332, VAR337);
+printf("VAR331 = %d\VAR7", VAR331);
+VAR188 += VAR331;
+VAR188 += 10;
+strcpy(VAR330, "sls.lcs.mit.edu");
+*VAR333++ = (u_char *) VAR330;
+*VAR333-- = NULL;
+VAR337 = NULL;
+VAR331 = FUN68((const char *) VAR330, VAR335, 200, VAR333, VAR337);
+printf("VAR331 = %d\VAR7", VAR331);
+VAR188 += VAR331;
+VAR188 += 16;
+return (VAR188);}
+printf("VAR341 = %d\VAR7", VAR341);
+VAR342 = VAR340 + sizeof(VAR2);
+VAR43 = FUN70(VAR340, VAR341, VAR342, VAR339, 100);
+FUN70(u_char *VAR340, int VAR341, u_char *VAR343, u_char *VAR344, int VAR345)
+printf("VAR340 = %VAR1, VAR341 = %d, VAR343 = %VAR1, VAR345 = %d\VAR7", (char *) VAR340, VAR341, (char *)VAR343, VAR345);

@@ -1,0 +1,62 @@
+VAR1 VAR2, VAR3;
+VAR3.FUN1(VAR4, VAR5);
+FUN2(!!VAR3, VAR6);
+VAR7->VAR7 = FUN3(VAR3.FUN4());
+static VAR8 FUN3(char *VAR9)
+char *VAR10;
+if (VAR9 == VAR11)
+return VAR12;
+FUN5 (isspace(VAR9[0])) VAR9++;
+VAR10 = strchr(VAR9, '\');
+if (VAR10 == VAR11)
+return VAR12;
+VAR10--;
+FUN5 (isspace(*VAR10)) VAR10--;
+VAR10[1] = '\';
+if (strcmp(VAR9, "VAR13-VAR14") == 0) {
+return VAR15;
+} else if (strcmp(VAR9, "VAR13-VAR16-VAR17") == 0) {
+return VAR18;
+} else if (strcmp(VAR9, "VAR13-VAR19") == 0) {
+return VAR20;
+} else if (strcmp(VAR9, "VAR13-VAR19-VAR21") == 0) {
+return VAR22;
+} else if (strcmp(VAR9, "VAR13-VAR21") == 0) {
+return VAR23;
+} else if (strcmp(VAR9, "VAR24-VAR14") == 0) {
+return VAR25;
+} else if (strcmp(VAR9, "VAR24-VAR16-VAR17") == 0) {
+return VAR26;
+} else if (strcmp(VAR9, "VAR24-VAR19") == 0) {
+return VAR27;
+} else if (strcmp(VAR9, "VAR24-VAR19-VAR21") == 0) {
+return VAR28;
+} else if (strcmp(VAR9, "VAR24-VAR21") == 0) {
+return VAR29;
+} else if (strcmp(VAR9, "VAR30-VAR19-VAR21") == 0) {
+return VAR31;
+} else if (strcmp(VAR9, "VAR30-VAR19") ==0 ){
+return VAR32;
+} else if (strcmp(VAR9, "VAR30-VAR21") == 0) {
+return VAR33;
+} else if (strcmp(VAR9, "VAR34-VAR14") == 0) {
+return VAR35;
+return VAR12;
+if (VAR7->VAR7 == VAR12)
+FUN6(VAR4, "%s%s%s", VAR36,
+"VAR37 VAR38 VAR39 VAR40:",
+VAR3.FUN4());
+goto VAR41;
+if (*VAR42 == VAR11)
+*VAR42 = FUN7(VAR7->VAR7, VAR43);
+if (*VAR42 == VAR11)
+goto VAR41;
+VAR44 = FUN8(VAR4,VAR7,VAR45,VAR2.FUN4(),VAR43, *VAR42,VAR46);
+if (VAR44 != VAR47)
+FUN6(VAR4,"%s%s%s", VAR36,
+"VAR48 VAR49 VAR50 VAR51 VAR38 for VAR52 ",
+VAR3.FUN4());
+goto VAR41;
+return VAR47;
+VAR41:
+return VAR53;

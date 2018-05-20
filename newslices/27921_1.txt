@@ -1,0 +1,13 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAA"
+typedef union
+wchar_t * VAR4;
+wchar_t * VAR5;
+} CLASS1;
+wchar_t * VAR6;
+CLASS1 VAR7;
+VAR6 = VAR8;
+VAR6 = (wchar_t *)malloc(10*sizeof(wchar_t));
+VAR7.VAR4 = VAR6;
+wchar_t * VAR6 = VAR7.VAR5;
+wchar_t VAR9[10+1] = VAR2;
+FUN1(VAR6, VAR9, FUN2(VAR9) + 1);

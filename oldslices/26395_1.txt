@@ -1,0 +1,12 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+str2 = shortstr(str, strlen(str), 80);
+shortstr(char *p, int n, int targ)
+return shortstr(p+1, n-1, targ);
+return p;
+return shortstr(p+1, n-1, targ);
+char buf[MAXSIZE], *str2;
+str2 = shortstr(str, strlen(str), 80);
+strcpy(buf, str2);

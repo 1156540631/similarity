@@ -1,0 +1,11 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR2 = 1;
+VAR1 = FUN1(VAR1);
+static char * FUN1(char * VAR1)
+if(VAR2)
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+return VAR1;
+char VAR3[50] = "";
+strcat(VAR3, VAR1);

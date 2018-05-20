@@ -1,0 +1,5 @@
+wchar_t dataBuffer[100];
+data = dataBuffer;
+data = goodG2B2Source(data);
+static wchar_t * goodG2B2Source(wchar_t * data)
+wmemset(data, L'A', 50-1);

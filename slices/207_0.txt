@@ -1,0 +1,10 @@
+static void		FUN1(const char *VAR8, ...);
+const char  *VAR1,
+const char  *VAR3,
+const char  *VAR2,
+const char  *VAR4)
+VAR6, VAR1, VAR3 ? VAR3 : "(null)", VAR2 ? VAR2 : "(null)",
+VAR4 ? VAR4 : "(null)");
+memcpy(&(VAR7->VAR5), VAR6, sizeof(VAR7->VAR5));
+add_cache(CLASS1 *VAR6,
+VAR6, VAR1, VAR3 ? VAR3 : "(null)", VAR2 ? VAR2 : "(null)",

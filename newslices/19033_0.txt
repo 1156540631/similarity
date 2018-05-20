@@ -1,0 +1,6 @@
+VAR1 = new char[10+1];
+VAR2 = VAR1;
+FUN1();
+char * VAR1 = VAR2;
+char VAR3[10+1] = VAR4;
+memmove(VAR1, VAR3, (strlen(VAR3) + 1) * sizeof(char));

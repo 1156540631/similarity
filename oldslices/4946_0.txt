@@ -1,0 +1,5 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_67b_badSink(CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncat_67_structType myStruct)
+char * data = myStruct.structFirst;
+strncat(dest, data, strlen(data));
+printLine(data);
+free(data);

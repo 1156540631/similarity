@@ -1,0 +1,4 @@
+void badSink(list<int64_t *> dataList)
+int64_t * data = dataList.back();
+printLongLongLine(*data);
+free(data);

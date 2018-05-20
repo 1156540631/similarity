@@ -1,0 +1,7 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"CYBELE_ATTRITIVE");
+if (VAR5 != 0) {;
+VAR6 = ((void *)VAR5);
+*VAR7 = VAR6;

@@ -1,0 +1,10 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+data = goodG2BSource(data);
+static char * goodG2BSource(char * data)
+strcpy(data, "fixedstringtest");
+return data;
+data = goodG2BSource(data);
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_start(args, data);

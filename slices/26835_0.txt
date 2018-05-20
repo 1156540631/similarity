@@ -1,0 +1,26 @@
+VAR340 = (u_char *) malloc(10000*sizeof(u_char));
+VAR341 = FUN102(VAR340, 10000);
+int FUN102(u_char *VAR340, int VAR188){
+int VAR5 = 0;
+if ((VAR40 = fopen("iquery-file", "VAR360")) == NULL)
+return -1;
+while (((VAR4 = fgetc(VAR40)) != EOF) && (VAR5 < VAR188)) {
+*VAR340++ = (u_char) VAR4;
+VAR5++;
+return VAR5;}
+VAR346 = VAR340 + sizeof(VAR2);
+VAR347 = VAR340 + VAR341;
+FUN103(VAR424, &VAR346, VAR347, &VAR341, VAR340);
+FUN103(VAR2 *VAR424, u_char **VAR425, u_char *VAR347, int *VAR426, u_char *VAR340)
+char VAR427[2], *VAR154, *VAR428;
+if ((VAR7 = FUN104(*VAR425, VAR347)) < 0) {
+*VAR425 += VAR7;
+FUN79(VAR375, *VAR425);
+*VAR425 += VAR429;
+FUN79(VAR430, *VAR425);
+*VAR425 += VAR430;
+VAR428 = (char *)VAR340 + VAR431;
+VAR432 = (char *)*VAR425 - VAR428;
+if ((size_t)VAR432 > sizeof VAR427){
+printf("BUFFER OVERFLOW DETECTED!\VAR7");
+printf("Copying %d bytes from VAR428 to VAR427 which can store %d bytes\VAR7", VAR432, sizeof(VAR427));

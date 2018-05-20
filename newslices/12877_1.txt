@@ -1,0 +1,4 @@
+char* VAR1= (char*) malloc(10*sizeof(char));
+for(VAR2=0;VAR2<10;VAR2++)
+*(VAR1+VAR2)='';
+free(VAR1);

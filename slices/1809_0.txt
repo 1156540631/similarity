@@ -1,0 +1,3 @@
+VAR6 = getenv("LS_COLORS");
+if ((VAR6 == ((void *)0) || strlen(VAR6) == 0) && VAR1) {
+if (VAR6 == ((void *)0) || !VAR1 && (VAR2 || !FUN1(1))) {

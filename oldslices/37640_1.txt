@@ -1,0 +1,4 @@
+fscanf(stdin, "%d", &data);
+baseObject->action(data);
+if (data >= 0)
+buffer[data] = 1;

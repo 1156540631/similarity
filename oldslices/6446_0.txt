@@ -1,0 +1,6 @@
+data[0] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_51b_goodG2BSink(data);
+void CWE122_Heap_Based_Buffer_Overflow__c_dest_char_cat_51b_goodG2BSink(char * data)
+strcat(data, source);
+printLine(data);
+free(data);

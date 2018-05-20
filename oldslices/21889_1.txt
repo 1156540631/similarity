@@ -1,0 +1,33 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *bluffly_bluegums;;
+stonesoup_read_taint(&bluffly_bluegums,"CLYTIUS_DERMESTES");
+multifarously_warbeck = ((int )(strlen(bluffly_bluegums)));
+quaterion_congruence = ((char *)(malloc(multifarously_warbeck + 1)));
+memset(quaterion_congruence,0,multifarously_warbeck + 1);
+memcpy(quaterion_congruence,bluffly_bluegums,multifarously_warbeck);
+buboed_schaffel[ *( *( *( *( *( *( *( *( *( *arcadias_algesis)))))))))] = quaterion_congruence;
+immodulated_semipublic = buboed_schaffel[ *( *( *( *( *( *( *( *( *( *arcadias_algesis)))))))))];
+roothold_thymoquinone(brunizems_yearning,immodulated_semipublic);
+char stonesoup_buffer[8];
+roothold_thymoquinone(anthracoid_geoscopic,fragmentarily_overflatly);
+strncpy(stonesoup_buffer,unfixable_hotspur,strlen(unfixable_hotspur) + 1);
+void roothold_thymoquinone(int anthracoid_geoscopic,char *fragmentarily_overflatly)
+unfixable_hotspur = ((char *)fragmentarily_overflatly);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(unfixable_hotspur)+1, unfixable_hotspur, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,unfixable_hotspur,strlen(unfixable_hotspur) + 1);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&bluffly_bluegums,"CLYTIUS_DERMESTES");
+multifarously_warbeck = ((int )(strlen(bluffly_bluegums)));
+quaterion_congruence = ((char *)(malloc(multifarously_warbeck + 1)));
+memset(quaterion_congruence,0,multifarously_warbeck + 1);
+memcpy(quaterion_congruence,bluffly_bluegums,multifarously_warbeck);
+buboed_schaffel[ *( *( *( *( *( *( *( *( *( *arcadias_algesis)))))))))] = quaterion_congruence;
+immodulated_semipublic = buboed_schaffel[ *( *( *( *( *( *( *( *( *( *arcadias_algesis)))))))))];
+roothold_thymoquinone(brunizems_yearning,immodulated_semipublic);

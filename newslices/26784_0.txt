@@ -1,0 +1,6 @@
+VAR1 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR3 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR4 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR5 = FUN1((const char *) VAR6, VAR4, 200, VAR2, VAR7);
+printf("VAR5 = %d\n", VAR5);

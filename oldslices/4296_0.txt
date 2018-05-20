@@ -1,0 +1,4 @@
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, "%s", args);
+va_end(args);

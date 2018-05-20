@@ -1,0 +1,4 @@
+data[100-1] = '\0';
+SNPRINTF(dest, strlen(data), "%s", data);
+printLine(data);
+free(data);

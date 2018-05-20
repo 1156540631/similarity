@@ -1,0 +1,3 @@
+first = (void *)malloc(256);
+free(first);
+free(first);

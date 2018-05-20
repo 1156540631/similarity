@@ -1,0 +1,4 @@
+static void goodG2BSink(char * data)
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);

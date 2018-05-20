@@ -1,0 +1,2 @@
+VAR1[FUN1()] = '!';
+printf("%s\n", VAR1);

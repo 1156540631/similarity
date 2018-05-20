@@ -1,0 +1,3 @@
+int *ptr, a;
+a = *(ptr+1);
+printf("%d",a);

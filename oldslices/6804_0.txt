@@ -1,0 +1,5 @@
+int sagbut_rouges = 20;
+stonesoup_read_taint(&bolognas_twaddliest,"1893",sagbut_rouges);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));

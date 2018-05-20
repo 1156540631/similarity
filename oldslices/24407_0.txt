@@ -1,0 +1,4 @@
+stonesoup_read_taint(&rhodochrosite_emballonurid,"6508",unlitigiously_lentic);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+key_t stonesoup_key;
+if(sscanf(stonesoup_envKey, "%d", &stonesoup_key) > 0) {

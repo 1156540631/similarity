@@ -1,0 +1,19 @@
+rewind(VAR92);
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+*VAR65 = NULL;
+char *VAR499;
+FUN5(&VAR499,"DIETARIES_FLOCCULATING");
+VAR500 = ((char *)VAR499);
+VAR75 = (struct STRUCT3*) malloc(sizeof (struct STRUCT3));
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR500)+1, VAR500, "TAINTED-SOURCE");
+strncpy(VAR75->VAR76, VAR500, strlen(VAR500) + 1);
+void FUN5(char** VAR65, char* VAR90) {
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+FUN5(&VAR499,"DIETARIES_FLOCCULATING");
+VAR500 = ((char *)VAR499);
+tracepoint(VAR19, VAR74, "STONESOUP_TAINT_SOURCE", strlen(VAR500)+1, VAR500, "TAINTED-SOURCE");
+strncpy(VAR75->VAR76, VAR500, strlen(VAR500) + 1);

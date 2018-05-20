@@ -1,0 +1,62 @@
+JSAutoByteString params, keyGenAlg;
+keyGenAlg.encode(cx, jsString);
+NS_ENSURE_TRUE(!!keyGenAlg, NS_ERROR_OUT_OF_MEMORY);
+keyGenType->keyGenType = cryptojs_interpret_key_gen_type(keyGenAlg.ptr());
+static nsKeyGenType cryptojs_interpret_key_gen_type(char *keyAlg)
+char *end;
+if (keyAlg == nullptr)
+return invalidKeyGen;
+while (isspace(keyAlg[0])) keyAlg++;
+end = strchr(keyAlg, '\0');
+if (end == nullptr)
+return invalidKeyGen;
+end--;
+while (isspace(*end)) end--;
+end[1] = '\0';
+if (strcmp(keyAlg, "rsa-ex") == 0) {
+return rsaEnc;
+} else if (strcmp(keyAlg, "rsa-dual-use") == 0) {
+return rsaDualUse;
+} else if (strcmp(keyAlg, "rsa-sign") == 0) {
+return rsaSign;
+} else if (strcmp(keyAlg, "rsa-sign-nonrepudiation") == 0) {
+return rsaSignNonrepudiation;
+} else if (strcmp(keyAlg, "rsa-nonrepudiation") == 0) {
+return rsaNonrepudiation;
+} else if (strcmp(keyAlg, "ec-ex") == 0) {
+return ecEnc;
+} else if (strcmp(keyAlg, "ec-dual-use") == 0) {
+return ecDualUse;
+} else if (strcmp(keyAlg, "ec-sign") == 0) {
+return ecSign;
+} else if (strcmp(keyAlg, "ec-sign-nonrepudiation") == 0) {
+return ecSignNonrepudiation;
+} else if (strcmp(keyAlg, "ec-nonrepudiation") == 0) {
+return ecNonrepudiation;
+} else if (strcmp(keyAlg, "dsa-sign-nonrepudiation") == 0) {
+return dsaSignNonrepudiation;
+} else if (strcmp(keyAlg, "dsa-sign") ==0 ){
+return dsaSign;
+} else if (strcmp(keyAlg, "dsa-nonrepudiation") == 0) {
+return dsaNonrepudiation;
+} else if (strcmp(keyAlg, "dh-ex") == 0) {
+return dhEx;
+return invalidKeyGen;
+if (keyGenType->keyGenType == invalidKeyGen)
+JS_ReportError(cx, "%s%s%s", JS_ERROR,
+"invalid key generation argument:",
+keyGenAlg.ptr());
+goto loser;
+if (*slot == nullptr)
+*slot = nsGetSlotForKeyGen(keyGenType->keyGenType, uiCxt);
+if (*slot == nullptr)
+goto loser;
+rv = cryptojs_generateOneKeyPair(cx,keyGenType,keySize,params.ptr(),uiCxt, *slot,willEscrow);
+if (rv != NS_OK)
+JS_ReportError(cx,"%s%s%s", JS_ERROR,
+"could not generate the key for algorithm ",
+keyGenAlg.ptr());
+goto loser;
+return NS_OK;
+loser:
+return NS_ERROR_FAILURE;

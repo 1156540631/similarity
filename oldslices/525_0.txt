@@ -1,0 +1,5 @@
+return av_guess_format("image2", NULL, NULL);
+oformat = av_guess_format(format, NULL, NULL);
+oformat = av_guess_format(NULL, filename, NULL);
+const char *mime_type)
+if (fmt->mime_type && mime_type && !strcmp(fmt->mime_type, mime_type))

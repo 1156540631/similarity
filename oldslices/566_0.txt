@@ -1,0 +1,7 @@
+(frag->msg_header.seq,
+frag->msg_header.is_ccs), 0,
+int dtls1_get_queue_priority(unsigned short seq, int is_ccs)
+return seq * 2 - is_ccs;
+(frag->msg_header.seq,
+dtls1_retransmit_message(SSL *s, unsigned short seq, unsigned long frag_off,
+fprintf(stderr, "retransmit:  message %d non-existant\n", seq);

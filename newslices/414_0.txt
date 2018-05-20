@@ -1,0 +1,13 @@
+VAR1, VAR2);
+const unsigned VAR3,
+const int *VAR4);
+FUN1(&VAR5, VAR6);
+VAR1 = VAR5.VAR7;
+VAR8 = VAR5.VAR7 + 1;
+for (VAR9 = (char *)FUN2(VAR10);
+VAR9 = (char *)FUN3(VAR10))
+fprintf(VAR11, "VAR12: VAR13 VAR14 VAR15 \"%s\"!\n", VAR9);
+for (VAR16 = (char *)FUN2(VAR17);
+VAR16 = (char *)FUN3(VAR17))
+VAR1, VAR2);
+fprintf(VAR11, "VAR12: %.3f FUN4() for %d VAR18: %s\n", FUN5(),

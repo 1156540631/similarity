@@ -1,0 +1,11 @@
+VAR1 = FUN1("CABOOSE_WHANGEE");
+VAR2 = ((char *)VAR1);
+VAR3 = strlen(VAR2) + 1;
+VAR4 = 64;
+VAR5 = (char*) malloc (VAR4 * sizeof (char));
+VAR2[VAR3 - VAR6 - 1];
+VAR5[VAR4 - VAR6 - 1] =
+FUN2("%02x",VAR5[VAR4 - VAR6 - 1]);
+free (VAR5);
+void FUN2(char * VAR7, ...) {
+free (VAR5);

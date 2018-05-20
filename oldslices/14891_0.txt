@@ -1,0 +1,3 @@
+int source[10] = {0};
+data = (int *)ALLOCA(10*sizeof(int));
+memmove(data, source, 10*sizeof(int));

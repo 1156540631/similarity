@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+userstr = argv[1];
+char buf[MAXSIZE];
+test(userstr);
+test(char *str)
+char buf[MAXSIZE];
+if(strlen(str) > MAXSIZE)
+strcpy(buf, str);

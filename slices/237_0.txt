@@ -1,0 +1,6 @@
+char		VAR3[1024],
+if ((VAR2 = getenv("VAR2")) == NULL)
+VAR2 = VAR2;
+snprintf(VAR3, sizeof(VAR3), "%VAR1/snmp.conf", VAR2);
+if ((VAR4 = FUN1(VAR3, "r")) != NULL)
+VAR3);

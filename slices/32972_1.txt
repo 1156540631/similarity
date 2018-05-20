@@ -1,0 +1,13 @@
+char * VAR1;
+char * VAR13[5];
+char * VAR2 = (char *)ALLOCA(50*sizeof(char));
+VAR1 = VAR2;
+VAR1[0] = '\0';
+VAR13[2] = VAR1;
+FUN51(VAR13);
+void FUN51(char * VAR13[])
+char * VAR1 = VAR13[2];
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+strncpy(VAR1, VAR4, 100-1);

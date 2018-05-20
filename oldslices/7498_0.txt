@@ -1,0 +1,4 @@
+void badSink(map<int, double *> dataMap)
+double * data = dataMap[2];
+printDoubleLine(*data);
+free(data);

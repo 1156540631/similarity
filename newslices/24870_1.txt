@@ -1,0 +1,25 @@
+FUN1(&VAR1,"ORILLION_MISUNDERSTOOD");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+if (VAR5 != 0) {
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+if (*VAR2 != 0) {
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+if (VAR5 != 0) {
+fclose(VAR5);
+if (VAR1 != 0) {;
+VAR8 = ((void *)VAR1);
+VAR9[5] = VAR8;
+VAR10 =  *(VAR9 + VAR11[1]);
+FUN3(VAR12,VAR10);
+void FUN3(int VAR13,void *VAR14)
+VAR15 = ((char *)((char *)VAR14));
+for (VAR16 = 0; VAR16 < strlen(VAR15); ++VAR16) {
+VAR17->VAR18[(int) VAR15[VAR16]]);
+FUN4(VAR19, VAR20, "((int) VAR21[VAR16])", ((int) VAR15[VAR16]), &(VAR15[VAR16]), "VAR22-VAR23");
+if (((char *)VAR14) != 0)
+free(((char *)((char *)VAR14)));

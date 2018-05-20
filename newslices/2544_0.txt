@@ -1,0 +1,14 @@
+VAR1 = fread(*VAR2,1,VAR3,VAR4);
+if (VAR4 != 0) {
+fclose(VAR4);
+FUN1(&VAR5,"COMPACTILE_DIVORCING");
+if (VAR5 != 0) {;
+VAR6 = ((int )(strlen(VAR5)));
+VAR7 = ((char *)(malloc(VAR6 + 1)));
+if (VAR7 == 0) {
+memcpy(VAR7,VAR5,VAR6);
+if (VAR5 != 0)
+free(((char *)VAR5));
+VAR8 = &VAR7;
+VAR9 = &VAR8;
+FUN2(VAR9);

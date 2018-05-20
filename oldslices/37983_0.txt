@@ -1,0 +1,21 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+for(i = 0; i < 1; i++)
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+for(k = 0; k < 1; k++)
+goodB2GVaSinkG(data, data);
+static void goodB2GVaSinkG(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, "%s", args);

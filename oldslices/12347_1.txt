@@ -1,0 +1,19 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&seroot_improvidences,"CASSANDRE_STEVINSON");
+if (seroot_improvidences != 0) {;
+duramens_tintinnabulous = ((int )(strlen(seroot_improvidences)));
+sogat_claw = ((char *)(malloc(duramens_tintinnabulous + 1)));
+if (sogat_claw == 0) {
+memcpy(sogat_claw,seroot_improvidences,duramens_tintinnabulous);
+if (seroot_improvidences != 0)
+free(((char *)seroot_improvidences));
+sandro_knublet = &sogat_claw;
+unstaid_venatorial = sandro_knublet + 5;
+globetrotter_prechallenge = ((char *)( *(unstaid_venatorial - 5)));
+stonesoup_buff_size = ((int )(strlen(globetrotter_prechallenge)));
+strncpy(stonesoup_heap_buff_64, globetrotter_prechallenge, 64);
+for (; stonesoup_ss_i < stonesoup_buff_size; ++stonesoup_ss_i){
+if ( *(unstaid_venatorial - 5) != 0)
+free(((char *)( *(unstaid_venatorial - 5))));

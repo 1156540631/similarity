@@ -1,0 +1,6 @@
+if(fread(&VAR1, sizeof VAR1, 1, VAR2) != 1)
+fclose(VAR2);
+if(fclose(VAR2) != 0)
+return VAR1;
+return FUN1() % 256;
+VAR3[FUN2()] = '!';

@@ -1,0 +1,12 @@
+VAR1<int, char *> VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR4 = VAR3;
+memset(VAR4, '', 50-1);
+VAR4[50-1] = '\';
+VAR2[2] = VAR4;
+FUN2(VAR2);
+char VAR5[50] = "";
+strcat(VAR5, VAR4);
+void FUN2(VAR1<int, char *> VAR2)
+char * VAR4 = VAR2[2];
+strcat(VAR5, VAR4);

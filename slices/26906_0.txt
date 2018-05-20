@@ -1,0 +1,4 @@
+int main(int argc, char **argv){
+VAR189 = fopen(argv[1],"r");
+VAR83->VAR322 = VAR189;
+fclose(VAR189);

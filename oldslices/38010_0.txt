@@ -1,0 +1,12 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_22_goodG2BGlobal = 1;
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_22_goodG2BVaSink(data, data);
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_22_goodG2BVaSink(char * data, ...)
+if(CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_22_goodG2BGlobal)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

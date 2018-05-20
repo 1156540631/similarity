@@ -1,0 +1,12 @@
+char * data;
+char dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_68_goodG2BData = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_68b_goodG2BSink();
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_68b_goodG2BSink()
+char * data = CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_68_goodG2BData;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+strncat(data, source, 100);

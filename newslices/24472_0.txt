@@ -1,0 +1,7 @@
+void FUN1(union VAR1 VAR2)
+VAR3 = ((char *)VAR2 . VAR4);
+VAR5 = FUN2(VAR3);
+VAR6 FUN2(char *VAR7)
+VAR6 VAR8 = (VAR6 )0;
+VAR9 = strlen(VAR7) % 3;
+sscanf(VAR7,"%p",&VAR8);

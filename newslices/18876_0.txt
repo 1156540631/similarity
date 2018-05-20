@@ -1,0 +1,6 @@
+if(VAR1!=5)
+FUN1("VAR2, VAR3 VAR4");
+else
+VAR5 = new char[10+1];
+char VAR6[10+1] = VAR7;
+memcpy(VAR5, VAR6, (strlen(VAR6) + 1) * sizeof(char));

@@ -1,0 +1,11 @@
+void NetworkUtils::setInterfaceDns(CommandChain* aChain, ommandCallback aCallback,NetworkResultOptions& aResult)
+int written;
+char command[MAX_COMMAND_SIZE];
+if (SDK_VERSION >= 20) {
+written = PR_snprintf(command, sizeof command, "resolver setnetdns %d %s",
+GET_FIELD(mNetId), GET_CHAR(mDomain));
+uint32_t length = dnses.Length();
+nsTArray<nsString>& dnses = GET_FIELD(mDnses);
+for (uint32_t i = 0; i < length; i++) {
+NS_ConvertUTF16toUTF8 autoDns(dnses[i]);
+int ret = PR_snprintf(command + written, sizeof(command) - written, " %s", autoDns.get());

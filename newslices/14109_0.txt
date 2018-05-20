@@ -1,0 +1,22 @@
+int FUN1(CLASS1 *VAR1)
+VAR2 VAR3;
+unsigned char *VAR4 = &VAR1->VAR5->VAR6.VAR7[0], *VAR8;
+unsigned int VAR9 = 16;
+unsigned int VAR10;
+unsigned char *VAR11, *VAR12;
+VAR13 = *VAR4++;
+FUN2(VAR4, VAR10);
+if (1 + 2 + VAR10 + 16 > VAR1->VAR5->VAR6.VAR14)
+return 0;
+VAR8 = VAR4;
+VAR11 = FUN3(VAR15);
+VAR12 = VAR11;
+VAR3.VAR16 = VAR12;
+VAR12 = FUN4(VAR3);
+static unsigned char* FUN4(VAR2 VAR3)
+unsigned char* VAR12 = VAR3.VAR17;
+*VAR12++ = VAR18
+return VAR12
+VAR12 = FUN4(VAR3)
+FUN5(VAR10, VAR12);
+memcpy(VAR12, VAR8, VAR10);

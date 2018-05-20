@@ -1,0 +1,7 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[100-1] = '\';
+const VAR2& VAR3 = FUN1();
+VAR3.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+char VAR4[50] = "";
+memmove(VAR4, VAR1, strlen(VAR1)*sizeof(char));

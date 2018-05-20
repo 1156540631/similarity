@@ -1,0 +1,8 @@
+if (fread((&VAR1),1,sizeof(VAR1),VAR2) != sizeof(VAR1) || VAR1 != 0x01A5BC9A) {
+FUN1(VAR2);
+if (fread((&VAR3),1,sizeof(VAR3),VAR2) != sizeof(VAR3)) {
+FUN1(VAR2);
+*VAR4 = VAR3 . VAR5;
+FUN1(VAR2);
+if (FUN2(((bool )0),&VAR6) && VAR6 >= VAR7) {
+static bool FUN2(bool VAR8,CLASS1 *VAR4)

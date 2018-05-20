@@ -1,0 +1,14 @@
+hypernormally_bulbed = getenv("DEMING_INDISPOSITIONS");
+if (hypernormally_bulbed != 0) {;
+typhlophile_lapith = ((void *)hypernormally_bulbed);
+marbrinus_chronographs[ *( *( *( *( *( *( *( *( *( *plasmalemma_clairvoyants)))))))))] = typhlophile_lapith;
+pyatigorsk_bowlegs = marbrinus_chronographs[ *( *( *( *( *( *( *( *( *( *plasmalemma_clairvoyants)))))))))];
+unwanted_psiloi(pyatigorsk_bowlegs);
+void unwanted_psiloi(void *lesli_newfanglement)
+sanctioning_slammakin(lesli_newfanglement);
+void sanctioning_slammakin(void *inversable_orinasality)
+char stonesoup_stack_buffer_64[64];
+overhear_chak = ((char *)((char *)inversable_orinasality));
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,overhear_chak);

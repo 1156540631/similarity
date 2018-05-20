@@ -1,0 +1,3 @@
+fprintf(stderr, "buffered messge: \ttype = %xx\n", VAR1->VAR23);
+fprintf(stderr, "\t\t\t\t\tlen = %VAR39\n", VAR1->VAR3);
+fprintf(stderr, "\t\t\t\t\tseq_num = %VAR39\n", VAR1->VAR16);

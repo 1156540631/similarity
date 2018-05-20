@@ -1,0 +1,12 @@
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+wchar_t * data;
+data = (wchar_t *)malloc(100*sizeof(wchar_t));
+if(staticReturnsFalse()){ }
+else
+wmemset(data, L'A', 50-1);
+data[50-1] = L'\0';
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

@@ -1,0 +1,11 @@
+char * *VAR1 = &VAR2;
+char * *VAR3 = &VAR2;
+char * VAR4 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR4;
+char * VAR2 = *VAR1;
+memset(VAR2, '', 100-1);
+VAR2[100-1] = '\';
+*VAR1 = VAR2;
+char * VAR2 = *VAR3;
+char VAR5[50] = "";
+memmove(VAR5, VAR2, strlen(VAR2)*sizeof(char));

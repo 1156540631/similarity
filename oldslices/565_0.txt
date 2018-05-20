@@ -1,0 +1,99 @@
+if (aState.GetFlag(BRS_APPLYTOPMARGIN)) {
+if (!aState.IsAdjacentWithTop()) {
+if (aState.GetFlag(BRS_HAVELINEADJACENTTOTOP)) {
+aState.SetFlag(BRS_HAVELINEADJACENTTOTOP, true);
+if (ShouldApplyTopMargin(aState, aLine)) {
+nsFlowAreaRect floatAvailableSpace = aState.GetFloatAvailableSpace();
+lineLayout.Init(&aState, aState.mMinLineHeight, aState.mLineNumber);
+rv = DoReflowInlineFrames(aState, lineLayout, aLine,
+!aFrame->IsFrameOfType(nsIFrame::eReplaced) &&
+return aFrame->IsFrameOfType(nsIFrame::eBlockFrame) &&
+(line->GetBreakTypeBefore() != NS_STYLE_CLEAR_NONE ||
+bool previousMarginWasDirty = line->IsPreviousMarginDirty();
+(line->IsBlock() || line->HasFloats() || line->HadFloatPushed())) {
+if (!line->IsDirty()) {
+if (needToRecoverState && line->IsDirty()) {
+if (line->IsDirty() && (line->HasFloats() || !willReflowAgain)) {
+NS_ASSERTION(!willReflowAgain || !line->IsBlock(),
+rv = ReflowLine(aState, line, &keepGoing);
+line_iterator aLine,
+rv = ReflowInlineFrames(aState, aLine, aKeepReflowGoing);
+line_iterator aLine,
+aLine->SetLineIsImpactedByFloat(false);
+if (ShouldApplyTopMargin(aState, aLine)) {
+nsLineBox* aLine)
+if (ShouldApplyTopMargin(aState, aLine)) {
+rv = DoReflowInlineFrames(aState, lineLayout, aLine,
+line_iterator aLine,
+aLine->EnableResizeReflowOptimization();
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+rv = ReflowInlineFrame(aState, aLineLayout, aLine, frame,
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+aLine = mLines.erase(aLine);
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+line_iterator aLine,
+rv = DoReflowInlineFrames(aState, lineLayout, aLine,
+line_iterator aLine,
+aLine->EnableResizeReflowOptimization();
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+if (!PlaceLine(aState, aLineLayout, aLine, aFloatStateBeforeLine,
+line_iterator       aLine,
+IsLastLine(aState, aLine)));
+aLine->SetOverflowAreas(overflowAreas);
+if (!aLine->CachedIsEmpty()) {
+aLine->AppendFloats(aState.mCurrentLineFloats);
+if (aLine->HasFloats()) {
+o = aLine->GetOverflowArea(otype);
+o.x, o.y, o.width, o.height,
+nsBlockFrame::DoReflowInlineFrames(nsBlockReflowState& aState,
+rv = ReflowInlineFrame(aState, aLineLayout, aLine, frame,
+nsBlockFrame::ReflowInlineFrame(nsBlockReflowState& aState,
+rv = ReflowInlineFrame(aState, aLineLayout, aLine, frame,
+(NS_STYLE_CLEAR_NONE != aState.mFloatBreakType), "bad break type");
+NS_ASSERTION((NS_STYLE_CLEAR_NONE != breakType) ||
+NS_ASSERTION(NS_STYLE_CLEAR_PAGE != breakType, "no page breaks yet");
+aLine->SetBreakTypeAfter(breakType);
+rv = ReflowInlineFrame(aState, aLineLayout, aLine, frame,
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+aLine = mLines.erase(aLine);
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+line_iterator aLine,
+rv = DoReflowInlineFrames(aState, lineLayout, aLine,
+line_iterator aLine,
+aLine->EnableResizeReflowOptimization();
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+if (!PlaceLine(aState, aLineLayout, aLine, aFloatStateBeforeLine,
+line_iterator       aLine,
+IsLastLine(aState, aLine)));
+aLine->SetOverflowAreas(overflowAreas);
+if (!aLine->CachedIsEmpty()) {
+aLine->AppendFloats(aState.mCurrentLineFloats);
+if (aLine->HasFloats()) {
+o = aLine->GetOverflowArea(otype);
+o.x, o.y, o.width, o.height,
+nsBlockFrame::ReflowInlineFrame(nsBlockReflowState& aState,
+(NS_STYLE_CLEAR_NONE != aState.mFloatBreakType), "bad break type");
+NS_ASSERTION((NS_STYLE_CLEAR_NONE != breakType) ||
+NS_ASSERTION(NS_STYLE_CLEAR_PAGE != breakType, "no page breaks yet");
+aLine->SetBreakTypeAfter(breakType);
+rv = ReflowInlineFrame(aState, aLineLayout, aLine, frame,
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+aLine = mLines.erase(aLine);
+while ((aLine != end_lines()) && (0 == aLine->GetChildCount())) {
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+line_iterator aLine,
+rv = DoReflowInlineFrames(aState, lineLayout, aLine,
+line_iterator aLine,
+aLine->EnableResizeReflowOptimization();
+for (i = 0; LINE_REFLOW_OK == lineReflowStatus && i < aLine->GetChildCount();
+if (!PlaceLine(aState, aLineLayout, aLine, aFloatStateBeforeLine,
+line_iterator       aLine,
+IsLastLine(aState, aLine)));
+aLine->SetOverflowAreas(overflowAreas);
+if (!aLine->CachedIsEmpty()) {
+aLine->AppendFloats(aState.mCurrentLineFloats);
+if (aLine->HasFloats()) {
+o = aLine->GetOverflowArea(otype);
+o.x, o.y, o.width, o.height,

@@ -1,0 +1,6 @@
+char  **dptr,a = 0;
+dptr=(char**) malloc(10*sizeof(char*));
+dptr[i]=(char*) malloc(10*sizeof(char));
+strcpy( dptr[1],"STRING TEST" );
+free(dptr[i]);
+free(dptr);

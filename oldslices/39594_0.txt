@@ -1,0 +1,11 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+char * dataCopy = data;
+char * data = dataCopy;
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

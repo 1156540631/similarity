@@ -1,0 +1,18 @@
+static void sysbus_esp_gpio_demux(void *opaque, int irq, int level)
+SysBusESPState *sysbus = ESP(opaque);
+ESPState *s = &sysbus->esp;
+parent_esp_reset(s, irq, level);
+static void parent_esp_reset(ESPState *s, int irq, int level)
+esp_soft_reset(s);
+static void esp_soft_reset(ESPState *s)
+qemu_irq_lower(s->irq);
+esp_hard_reset(s);
+void esp_hard_reset(ESPState *s)
+memset(s->rregs, 0, ESP_REGS);
+static void sysbus_esp_mem_write(void *opaque, hwaddr addr,
+esp_reg_write(&sysbus->esp, saddr, val);
+void esp_reg_write(ESPState *s, uint32_t saddr, uint64_t val)
+esp_soft_reset(s);
+static void sysbus_esp_hard_reset(DeviceState *dev)
+SysBusESPState *sysbus = ESP(dev);
+esp_hard_reset(&sysbus->esp);

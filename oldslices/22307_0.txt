@@ -1,0 +1,4 @@
+void trilloes_arranger(char **arterialization_jebel)
+temesv_threefolded = ((char *)( *(arterialization_jebel - 5)));
+stonesoup_buffer = malloc((strlen(temesv_threefolded) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,temesv_threefolded);

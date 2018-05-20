@@ -1,0 +1,9 @@
+char * VAR1;
+char * &VAR2 = VAR1;
+char VAR3[100];
+VAR1 = VAR3;
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+char * VAR1 = VAR2;
+char VAR4[50] = "";
+memmove(VAR4, VAR1, strlen(VAR1)*sizeof(char));

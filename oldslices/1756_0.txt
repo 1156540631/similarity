@@ -1,0 +1,8 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&unparcelled_mentholatum,"MOUSIEST_SARCOCYSTIDEAN");
+if (unparcelled_mentholatum != 0) {;
+nephalistic_dewflower . neurophil_subchapters = ((char *)unparcelled_mentholatum);
+hosta_hematoscope(nephalistic_dewflower);
+void hosta_hematoscope(struct unreproachfully_moonraker unroyally_troparion);

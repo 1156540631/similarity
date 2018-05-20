@@ -1,0 +1,8 @@
+#define VAR8 L"AAAAAAAAAA"
+wchar_t * VAR1;
+VAR1 = NULL;
+goto VAR9;
+VAR9:
+VAR1 = (wchar_t *)malloc(10*sizeof(wchar_t));
+wchar_t VAR9[10+1] = VAR8;
+wcsncpy(VAR1, VAR9, wcslen(VAR9) + 1);

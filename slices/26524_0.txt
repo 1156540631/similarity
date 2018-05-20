@@ -1,0 +1,3 @@
+static int FUN14(STRUCT4 *VAR73,char *VAR39,int VAR74)
+VAR39[0] = '\0';
+if (!fgets(VAR39,VAR74,(VAR73 -> VAR75))) {

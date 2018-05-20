@@ -1,0 +1,4 @@
+VAR40 = fopen(VAR361, "w");
+VAR362 = FUN77();
+VAR363 =  FUN78(VAR364, VAR365, VAR366, VAR367, VAR368);
+printf("Reading from file = %VAR1 ...\VAR7", VAR361);

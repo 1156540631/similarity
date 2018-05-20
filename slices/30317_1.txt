@@ -1,0 +1,9 @@
+static const int VAR26 = 5;
+VAR8 = -1;
+if(VAR26==5)
+fscanf(stdin, "%d", &VAR8);
+int *VAR22;
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

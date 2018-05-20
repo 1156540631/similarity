@@ -1,0 +1,8 @@
+int i=0;
+s->a = 10;
+i=s->a;
+s->a = 20;
+i=s->a;
+return i;
+ret = invalid_memory_access_012_func_001 (1);
+printf("%d",ret);

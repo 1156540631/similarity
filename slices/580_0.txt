@@ -1,0 +1,34 @@
+unsigned char *FUN1(CLASS1 *VAR6, unsigned char *VAR2,
+unsigned char *VAR2 = VAR2;
+VAR2 += 2;
+long VAR2;
+strlen(VAR6->VAR5)) > (unsigned long)VAR2)
+FUN2(VAR6, VAR2);
+FUN2(VAR7 + 5, VAR2);
+FUN2(VAR7 + 3, VAR2);
+*(VAR2++) = (unsigned char)VAR8;
+FUN2(VAR7, VAR2);
+memcpy(VAR2, VAR6->VAR5, VAR7);
+VAR2 += VAR7;
+int VAR9;
+if (!FUN3(VAR6, 0, &VAR9, 0)) {
+FUN2(VAR10, VAR2);
+FUN2(VAR9, VAR2);
+if (!FUN3(VAR6, VAR2, &VAR9, VAR9)) {
+VAR2 += VAR9;
+int VAR11 = strlen(VAR6->VAR12.VAR13);
+FUN2(VAR14, VAR2);
+FUN2(VAR11 + 1, VAR2);
+(*VAR2++) = (unsigned char)VAR11;
+memcpy(VAR2, VAR6->VAR12.VAR13, VAR11);
+VAR2 += VAR11;
+FUN2(VAR15, VAR2);
+FUN2(VAR6->VAR16 + 1, VAR2);
+*(VAR2++) = (unsigned char)VAR6->VAR16;
+memcpy(VAR2, VAR6->VAR17,
+VAR6->VAR16);
+VAR2 += VAR6->VAR16;
+FUN2(VAR18, VAR2);
+FUN2(VAR6->VAR19 + 2, VAR2);
+FUN2(VAR6->VAR19, VAR2);
+memcpy(VAR2, VAR6->VAR20,

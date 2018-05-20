@@ -1,0 +1,4 @@
+char * VAR7 = VAR2;
+strncpy(VAR7, VAR1, strlen(VAR1) + 1);
+printLine(VAR7);
+free(VAR7);

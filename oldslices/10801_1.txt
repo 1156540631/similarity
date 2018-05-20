@@ -1,0 +1,27 @@
+return c - 32;
+struct hyposensitivity_pam overactivity_itchily = {0};
+valentine_unprying(&overactivity_itchily);
+durables_breakthrough(overactivity_itchily);
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, totty_grillage);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_heap_buffer_64);
+stonesoup_heap_buffer_64[stonesoup_i] = stonesoup_toupper(stonesoup_heap_buffer_64[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "BEFORE-FREE");
+stonesoup_printf("%s\n",stonesoup_heap_buffer_64);
+void stonesoup_printf(char * format, ...) {
+free(stonesoup_heap_buffer_64);
+void durables_breakthrough(const struct hyposensitivity_pam breastwork_galvanometry)
+totty_grillage = ((char *)((struct hyposensitivity_pam )breastwork_galvanometry) . cleanups_carneades);
+strcpy(stonesoup_heap_buffer_64, totty_grillage);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_heap_buffer_64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "BEFORE-FREE");
+stonesoup_printf("%s\n",stonesoup_heap_buffer_64);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_heap_buffer_64[stonesoup_i] = stonesoup_toupper(stonesoup_heap_buffer_64[stonesoup_i]);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "BEFORE-FREE");
+stonesoup_printf("%s\n",stonesoup_heap_buffer_64);

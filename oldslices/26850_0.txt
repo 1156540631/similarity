@@ -1,0 +1,2 @@
+static char test_buf[10];
+strcpy(test_buf, "GOOD");

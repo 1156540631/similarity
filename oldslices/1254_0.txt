@@ -1,0 +1,4 @@
+va_list args;
+va_start(args, data);
+vfprintf(stdout, "%s", args);
+va_end(args);

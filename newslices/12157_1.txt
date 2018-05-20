@@ -1,0 +1,13 @@
+CLASS1 *VAR1;
+VAR1 = (CLASS1 *)calloc(1,sizeof(CLASS1));
+VAR1->VAR2 = 40;
+return VAR1;
+VAR1 = (CLASS1 *)calloc(2,sizeof(CLASS1));
+VAR1->VAR2 = 20;
+return VAR1;
+VAR1 = (CLASS1 *)calloc(3,sizeof(CLASS1));
+VAR1->VAR2 = 30;
+return VAR1;
+return (CLASS1 *)(-1);
+VAR3 = FUN1 ();
+free(VAR3);

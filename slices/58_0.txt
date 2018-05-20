@@ -1,0 +1,9 @@
+FUN1(VAR14, VAR1, VAR2 + 4);
+FUN1(VAR14, VAR1, VAR2 + 4);
+int           VAR2)
+fprintf(stderr, "DEBUG: %*sINTEGER %d bytes %d\n", VAR2, "",
+FUN1(VAR14, VAR1, VAR2 + 4);
+fprintf(stderr, "DEBUG: %*sOCTET STRING %d bytes \"%VAR1\"\n", VAR2, "",
+fprintf(stderr, ".%d", oid[VAR11]);
+putc('\n', stderr);
+fprintf(stderr, "DEBUG: %*sBOOLEAN %d bytes %d\n", VAR2, "",

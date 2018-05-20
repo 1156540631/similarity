@@ -1,0 +1,3 @@
+char buf[BUF_SIZE];
+NS_ConvertUTF16toUTF8 reason(aResult.mResultReason);
+memcpy(buf, reason.get(), reason.Length() + 1);

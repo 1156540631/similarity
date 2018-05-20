@@ -1,0 +1,10 @@
+data = NULL;
+badSource(data);
+void badSource(wchar_t * &data)
+data = new wchar_t[50];
+data[0] = L'\0';
+badSource(data);
+wchar_t source[100];
+wmemset(source, L'C', 100-1);
+source[100-1] = L'\0';
+memmove(data, source, 100*sizeof(wchar_t));

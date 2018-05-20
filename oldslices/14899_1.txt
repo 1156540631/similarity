@@ -1,0 +1,5 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = (void *)WIDE_STRING;
+void * &dataRef = data;
+void * data = dataRef;
+size_t dataLen = strlen((char *)data);

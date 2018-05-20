@@ -1,0 +1,8 @@
+anisotropically_superfused = getenv("RENORMALIZE_DRUMORE");
+if (anisotropically_superfused != 0) {;
+whitebook_nabak = anisotropically_superfused;
+granitite_discombobulated = &whitebook_nabak;
+gunstone_sigmodontes = ((honebein_superpolite *)(((unsigned long )granitite_discombobulated) * supersuborder_saponated * supersuborder_saponated)) + 5;
+aberdeen_luncheon = ((char *)( *(gunstone_sigmodontes - 5)));
+if (strlen(aberdeen_luncheon) < 20) {;
+realpath(aberdeen_luncheon, stonesoup_data->base_path);

@@ -1,0 +1,7 @@
+data = NULL;
+goodG2BSource(data);
+void goodG2BSource(int * &data);
+data = new int[50];
+goodG2BSource(data);
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

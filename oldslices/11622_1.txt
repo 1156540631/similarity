@@ -1,0 +1,7 @@
+uninit_memory_access_013_s_001 *s1, s;
+s1 = (uninit_memory_access_013_s_001*)calloc(1,sizeof(uninit_memory_access_013_s_001));
+s1->int_a = 10;
+s1->int_c = 20;
+s1->dummy[i]= false;
+memcpy(&s, s1, sizeof(uninit_memory_access_013_s_001));
+free(s1);

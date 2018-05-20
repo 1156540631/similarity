@@ -1,0 +1,11 @@
+vector<wchar_t *> dataVector;
+data[50-1] = L'\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+wchar_t dest[50] = L"";
+SNPRINTF(dest, wcslen(data), L"%s", data);
+void goodG2BSink(vector<wchar_t *> dataVector)
+wchar_t * data = dataVector[2];
+SNPRINTF(dest, wcslen(data), L"%s", data);

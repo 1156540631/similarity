@@ -1,0 +1,7 @@
+char *posner_nonchurchgoing = 0;
+gooseweed_substrings(&posner_nonchurchgoing);
+scutellaria_vexedly = 1;
+mungy_bursa = &posner_nonchurchgoing;
+snarls_nealah = ((char **)(((unsigned long )mungy_bursa) * scutellaria_vexedly * scutellaria_vexedly)) + 5;
+tracklessly_marybella[52] = snarls_nealah;
+free(((char *)( *(tracklessly_marybella[52] - 5))));

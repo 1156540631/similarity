@@ -1,0 +1,7 @@
+data = goodG2B1Source(data);
+printLine("Benign, fixed string");
+if(goodG2B1Global)
+else
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

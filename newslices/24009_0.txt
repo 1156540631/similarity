@@ -1,0 +1,5 @@
+VAR1 = FUN1("MYOXIDAE_DEVOUTLESSNESS");
+if (VAR1 != 0) {;
+VAR2 = ((void *)VAR1);
+FUN2(VAR2);
+void FUN2(void *VAR3);

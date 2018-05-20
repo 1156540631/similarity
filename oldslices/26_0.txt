@@ -1,0 +1,3 @@
+char propP2pSupported[PROPERTY_VALUE_MAX];
+property_get("ro.moz.wifi.p2p_supported", propP2pSupported, "0");
+return (0 == strcmp(propP2pSupported, "1"));

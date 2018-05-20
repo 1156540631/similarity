@@ -1,0 +1,3 @@
+char *VAR1 = 0;
+VAR2 = &VAR3;
+VAR4 = FUN1(VAR5);

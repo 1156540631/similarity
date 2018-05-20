@@ -1,0 +1,65 @@
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+struct vmsvga_cursor_definition_s *c)
+qc = cursor_alloc(c->width, c->height);
+dpy_cursor_define(s->vga.con, qc);
+struct vmsvga_cursor_definition_s cursor;
+cursor.hot_x = vmsvga_fifo_read(s);
+cursor.hot_y = vmsvga_fifo_read(s);
+cursor.width = x = vmsvga_fifo_read(s);
+cursor.height = y = vmsvga_fifo_read(s);
+cursor.bpp = vmsvga_fifo_read(s);
+if (SVGA_BITMAP_SIZE(x, y) > sizeof cursor.mask ||
+SVGA_PIXMAP_SIZE(x, y, cursor.bpp) > sizeof cursor.image) {
+cursor.mask[args] = vmsvga_fifo_read_raw(s);
+cursor.image[args] = vmsvga_fifo_read_raw(s);
+vmsvga_cursor_define(s, &cursor);
+struct vmsvga_cursor_definition_s *c)
+__func__, c->bpp);
+trace_vmware_palette_write(s->index, value);
+trace_vmware_value_write(s->index, value);
+vmsvga_fifo_run(s);
+DisplaySurface *surface = qemu_console_surface(s->vga.con);
+s->vga.vram_ptr);
+dpy_gfx_replace_surface(s->vga.con, surface);
+struct vmsvga_state_s *s = opaque;
+vmsvga_value_write(s, addr, data);
+static void vmsvga_fifo_run(struct vmsvga_state_s *s)
+len = vmsvga_fifo_length(s);
+static inline int vmsvga_fifo_length(struct vmsvga_state_s *s)
+len = vmsvga_fifo_length(s);
+cursor.id = vmsvga_fifo_read(s);
+static inline uint32_t vmsvga_fifo_read(struct vmsvga_state_s *s)
+return le32_to_cpu(vmsvga_fifo_read_raw(s));
+vmsvga_fifo_read(s);
+vmsvga_fifo_read(s);
+args = 7 + (vmsvga_fifo_read(s) >> 2);
+vmsvga_fifo_read(s);
+cursor.id = vmsvga_fifo_read(s);
+static inline uint32_t vmsvga_fifo_read_raw(struct vmsvga_state_s *s)
+uint32_t cmd = s->fifo[CMD(stop) >> 2];
+return cmd;
+return le32_to_cpu(vmsvga_fifo_read_raw(s));
+cursor.id = vmsvga_fifo_read(s);
+vmsvga_cursor_define(s, &cursor);
+struct vmsvga_cursor_definition_s *c)
+__func__, c->bpp);
+static inline void vmsvga_check_size(struct vmsvga_state_s *s)
+vmsvga_check_size(s);
+vmsvga_fifo_run(s);
+static void vmsvga_update_display(void *opaque)
+vmsvga_check_size(s);
+static inline void vmsvga_cursor_define(struct vmsvga_state_s *s,
+vmsvga_cursor_define(s, &cursor);
+vmsvga_fifo_read(s);
+static void vmsvga_value_write(void *opaque, uint32_t address, uint32_t value)
+trace_vmware_scratch_write(s->index, value);
+vmsvga_fifo_run(s);
+static inline int vmsvga_fill_rect(struct vmsvga_state_s *s,
+if (vmsvga_fill_rect(s, colour, x, y, width, height) == 0) {
+vmsvga_fifo_read(s);
+static void vmsvga_io_write(void *opaque, hwaddr addr,
+vmsvga_value_write(s, addr, data);
+static inline int vmsvga_copy_rect(struct vmsvga_state_s *s,
+if (vmsvga_copy_rect(s, x, y, dx, dy, width, height) == 0) {
+cursor.id = vmsvga_fifo_read(s);

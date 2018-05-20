@@ -1,0 +1,10 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+if(VAR2!=5) { }
+else
+VAR3 = VAR1;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+strcpy(VAR3, VAR4);

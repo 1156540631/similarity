@@ -1,0 +1,3 @@
+char value[PROPERTY_VALUE_MAX];
+property_get("ro.build.version.sdk", value, nullptr);
+SDK_VERSION = atoi(value);

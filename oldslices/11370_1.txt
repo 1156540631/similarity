@@ -1,0 +1,11 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&orchil_bibliopolism,"PERSPICABLE_UNPREVENTABLY");
+if (orchil_bibliopolism != 0) {;
+superdubious_paragogically = ((char *)orchil_bibliopolism);
+for (stonesoup_ss_i = 0; stonesoup_ss_i < strlen(superdubious_paragogically); ++stonesoup_ss_i) {
+tracepoint(stonesoup_trace, variable_signed_integral, "((int)STONESOUP_TAINT_SOURCE[stonesoup_ss_i])", ((int)superdubious_paragogically[stonesoup_ss_i]), &(superdubious_paragogically[stonesoup_ss_i]), "TRIGGER-STATE");
+stonesoup_stack_buff[(int) superdubious_paragogically[stonesoup_ss_i]]);
+if (orchil_bibliopolism != 0)
+free(((char *)orchil_bibliopolism));

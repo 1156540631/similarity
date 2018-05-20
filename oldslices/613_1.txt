@@ -1,0 +1,4 @@
+CalculateRegistryPathFromFilePath(const LPCWSTR filePath,
+size_t filePathLen = wcslen(filePath);
+WCHAR *lowercasePath = new WCHAR[filePathLen + 2];
+wcscpy(lowercasePath, filePath);

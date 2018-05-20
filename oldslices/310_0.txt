@@ -1,0 +1,4 @@
+struct hm_header_st msg_hdr;
+dtls1_get_message_header(wire, &msg_hdr);
+dtls1_get_message_header(unsigned char *data, struct hm_header_st *msg_hdr)
+memset(msg_hdr, 0x00, sizeof(struct hm_header_st));

@@ -1,0 +1,5 @@
+char src[4106];
+char buf[10];
+src[4106 - 1] = '\0';
+i = 1026;
+strncpy(buf, src, (4 * i) + 2);

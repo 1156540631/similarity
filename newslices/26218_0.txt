@@ -1,0 +1,49 @@
+double VAR1 = 0;
+VAR2 = FUN1(VAR3 / VAR1);
+static double FUN1(double VAR4)
+return - 10.0 * log(VAR4) / log(10.0);
+VAR2 = FUN1(VAR5 / VAR6);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%c:%2.2f ",VAR8[VAR9],VAR2);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"*:%2.2f ",FUN1(VAR3 / VAR1));
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR10=%2.1f ",VAR10);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR11=%5d VAR12=%3.*VAR13 VAR10=%3.1f ",VAR14,VAR12 < 9.95,VAR12,VAR10);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR15=");
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%c:%2.2f ",VAR8[VAR9],VAR2);
+static void FUN3(CLASS1 *VAR16)
+VAR16 -> VAR17 = 1;
+static int VAR18[''];
+VAR7[0] = '\';
+float VAR10 = (- 1);
+VAR10 = (VAR19 -> VAR20 -> VAR21) / ((float )'');
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR10=%2.1f ",VAR10);
+FUN4(&VAR22,"VAR23%d_%d_q=%.1f\n",VAR16 -> VAR24,VAR16 -> VAR25,VAR10);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR10=%2.1f ",VAR10);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR11=%5d VAR12=%3.*VAR13 VAR10=%3.1f ",VAR14,VAR12 < 9.95,VAR12,VAR10);
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"L");
+if (VAR26 >= 0 && VAR26 < sizeof(VAR18) / sizeof(VAR18[0])) {
+VAR18[VAR26]++;
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%X",((int )(FUN5((FUN6((VAR18[VAR9] + 1)))))));
+double VAR3 = 0;
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR15=");
+VAR3 += VAR5;
+VAR1 += VAR6;
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"%c:%2.2f ",VAR8[VAR9],VAR2);
+VAR2 = FUN1(VAR3 / VAR1);
+VAR27[VAR28] -> VAR29 = 0;
+if (!FUN7()) {
+VAR30 = FUN8();
+VAR16 = FUN9();
+if (FUN10()) {
+FUN11();
+VAR30 = FUN8();
+FUN12(0,VAR31,VAR32);
+FUN13();
+FUN14();
+FUN15();
+FUN12(1,VAR31,FUN16());
+VAR16 = VAR27[VAR28];
+VAR14 = VAR16 -> VAR14;
+FUN2(VAR7 + strlen(VAR7),sizeof(VAR7) - strlen(VAR7),"VAR11=%5d VAR12=%3.*VAR13 VAR10=%3.1f ",VAR14,VAR12 < 9.95,VAR12,VAR10);
+FUN4(&VAR22,"VAR11=%VAR4\n",VAR14);
+VAR6 = (VAR19 -> CLASS2 * VAR19 -> VAR33) * 255.0 * 255.0 * VAR14;
+VAR2 = FUN1(VAR5 / VAR6);

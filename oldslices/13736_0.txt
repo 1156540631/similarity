@@ -1,0 +1,10 @@
+WCHAR * dataArray[5];
+dataArray[2] = installDir;
+installDir = badSource(dataArray);
+void badSource(WCHAR * dataArray[])
+WCHAR * installDir = dataArray[2];
+WCHAR installDir[MAX_PATH + 1] = {L'\0'};
+return installDir;
+if (!GetInstallationDir(argc, argv, installDir)) {
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH])
+wcscpy(aResultDir, argvTmp[2]);

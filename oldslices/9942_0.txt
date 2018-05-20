@@ -1,0 +1,4 @@
+PassRefPtr<Attr> Element::getAttributeNode(const String& name)
+NamedNodeMap* attrs = attributes(true);
+String localName = shouldIgnoreAttributeCase(this) ? name.lower() : name;
+return static_pointer_cast<Attr>(attrs->getNamedItem(localName));

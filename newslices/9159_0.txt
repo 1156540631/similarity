@@ -1,0 +1,25 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+VAR5 = ((int )(strlen(VAR6)));
+VAR7 = ((char *)(malloc(VAR5 + 1)));
+memset(VAR7,0,VAR5 + 1);
+memcpy(VAR7,VAR6,VAR5);
+VAR8 = 1;
+VAR9 = &VAR7;
+VAR10 = ((char **)(((unsigned long )VAR9) * VAR8 * VAR8)) + 5;
+free(((char *)( *(VAR10 - 5))));
+void FUN2(char *VAR6)
+VAR5 = ((int )(strlen(VAR6)));
+memcpy(VAR7,VAR6,VAR5);
+VAR9 = &VAR7;
+VAR10 = ((char **)(((unsigned long )VAR9) * VAR8 * VAR8)) + 5;
+free(((char *)( *(VAR10 - 5))));

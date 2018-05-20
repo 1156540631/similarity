@@ -1,0 +1,12 @@
+map<int, char *> dataMap;
+char dataBadBuffer[50];
+char dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = '\0';
+dataMap[2] = data;
+goodG2BSink(dataMap);
+source[100-1] = '\0';
+strcpy(data, source);
+void goodG2BSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+strcpy(data, source);

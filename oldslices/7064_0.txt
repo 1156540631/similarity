@@ -1,0 +1,3 @@
+void stonesoup_handle_taint(char *chrismatize_ria)
+quadrilling_stomachic = ((int )(strlen(chrismatize_ria)));
+hairless_widukind = ((char *)(malloc(quadrilling_stomachic + 1)));

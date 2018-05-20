@@ -1,0 +1,7 @@
+void stonesoup_handle_taint(char *xylobalsamum_snead)
+marlpit_hektograph = xylobalsamum_snead;
+taseometer_ingressiveness = worrier_overgrazed(marlpit_hektograph);
+unruly_peripateticism worrier_overgrazed(unruly_peripateticism orignal_leatherback)
+return orignal_leatherback;
+taseometer_ingressiveness = worrier_overgrazed(marlpit_hektograph);
+free(((char *)taseometer_ingressiveness));

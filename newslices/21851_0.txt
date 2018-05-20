@@ -1,0 +1,5 @@
+VAR1 = FUN1("STRINGLEN_LARGE");
+if (VAR1 != VAR2)
+VAR3 = strlen(VAR1);
+if (VAR3 > 4105)
+VAR4[VAR3] = '';

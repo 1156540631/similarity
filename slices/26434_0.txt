@@ -1,0 +1,4 @@
+int VAR13 = getchar();
+int VAR474 = FUN144(VAR13) == 'Y';
+while(VAR13 != '\VAR213' && VAR13 != - 1)
+return VAR474;

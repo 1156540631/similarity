@@ -1,0 +1,12 @@
+wchar_t * data;
+map<int, wchar_t *> dataMap;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = L'\0';
+dataMap[2] = data;
+void goodG2BSink(map<int, wchar_t *> dataMap)
+wchar_t source[100];
+wchar_t * data = dataMap[2];
+source[100-1] = L'\0'
+wcsncpy(data, source, 100-1);

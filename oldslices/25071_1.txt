@@ -1,0 +1,3 @@
+int main(int argc, char *argv[])
+first = malloc(666);
+strcpy(first, argv[1]);

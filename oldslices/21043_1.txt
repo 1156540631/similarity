@@ -1,0 +1,33 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&darlingtonia_jordans,"OFFLOADED_DUMBFOUNDED");
+if (darlingtonia_jordans != 0) {;
+vouchees_enterotoxemia . toponymical_belime = ((char *)darlingtonia_jordans);
+thissen_preinflict(vouchees_enterotoxemia);
+void thissen_preinflict(const struct tricentenary_diaspidinae muckibus_tobruk)
+if (((struct tricentenary_diaspidinae )muckibus_tobruk) . toponymical_belime != 0) {
+hearten_photomagnetism = ((char *)((struct tricentenary_diaspidinae )muckibus_tobruk) . toponymical_belime);
+stonesoup_buffer = malloc((strlen(hearten_photomagnetism) + 1) * sizeof(char ));
+if (stonesoup_buffer == 0) {
+strcpy(stonesoup_buffer,hearten_photomagnetism);
+if (stonesoup_buffer[0] >= 97) {
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+if (stonesoup_buffer != 0) {
+free(stonesoup_buffer);
+if (((struct tricentenary_diaspidinae )muckibus_tobruk) . toponymical_belime != 0)
+free(((char *)((struct tricentenary_diaspidinae )muckibus_tobruk) . toponymical_belime));
+char stonesoup_process_buffer(char *buffer_param)
+first_char = buffer_param[0] - 97;
+free(buffer_param);
+return first_char;
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+void stonesoup_printf(char * format, ...) {

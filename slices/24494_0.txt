@@ -1,0 +1,7 @@
+void VAR1(void *VAR2)
+FUNC1(VAR2);
+void FUNC1(void *VAR3)
+char VAR158[1024];
+VAR4 = ((char *)((char *)((void *)VAR3)));
+memset(VAR158,0,1024);
+strncpy(VAR158,VAR4,sizeof(VAR158));

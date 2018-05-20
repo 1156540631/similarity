@@ -1,0 +1,15 @@
+int VAR114 = 91;
+char *VAR115;
+FUN3(&VAR115,"3930",VAR114);
+void FUN3(char** VAR21, char* VAR22, int VAR23) {
+if ((VAR110 = shmget(VAR24, VAR23, 0666)) >= 0) {
+*VAR21 = (char*)calloc(VAR23, sizeof(char));
+VAR116 = VAR115;
+VAR117[ *( *( *( *( *( *( *( *( *( *VAR118)))))))))] = VAR116;
+VAR119 = VAR117[ *( *( *( *( *( *( *( *( *( *VAR118)))))))))];
+FUN9(VAR120,VAR119);
+void FUN9(int VAR121,VAR122 VAR123)
+char VAR67[1024];
+memset(VAR67, 0, 1024);
+VAR124 = ((char *)VAR123);
+strncpy(VAR67, VAR124, sizeof(VAR67));

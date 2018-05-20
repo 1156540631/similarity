@@ -1,0 +1,8 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[50-1] = '\0';
+CLASS1* VAR4 = new CLASS2;
+VAR4->FUN1(VAR2);
+void CLASS2::FUN1(char * VAR2)
+char VAR3[50] = "";
+snprintf(VAR3, strlen(VAR2), "%s", VAR2);

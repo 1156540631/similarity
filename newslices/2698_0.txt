@@ -1,0 +1,9 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = FUN2(VAR2[1], 0, 10);
+FUN3((unsigned int)VAR3);
+FUN3(unsigned int VAR4)
+int *VAR5, VAR6;
+VAR5 = malloc(VAR4 * sizeof *VAR5);
+for(VAR6 = 0; VAR6 < VAR4; VAR6++)
+printf("%x ", VAR5[VAR6] = VAR6);
+free(VAR5);

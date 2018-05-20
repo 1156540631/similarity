@@ -1,0 +1,6 @@
+static VAR1<VAR2> FUN1(CLASS1* VAR3, bool VAR4 = true)
+VAR5<VAR6> VAR7 = VAR3->FUN2()->FUN3()->FUN4(VAR3, VAR4);
+for (unsigned VAR8 = 0; VAR8 < VAR7->FUN5(); VAR8++) {
+if (VAR7->FUN6(VAR8)->FUN7() == VAR9::VAR10) {
+VAR5<VAR2> VAR11 = static_cast<CLASS2*>(VAR7->FUN6(VAR8))->FUN8();
+FUN8->FUN9(VAR11.FUN10(), true);

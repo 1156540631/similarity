@@ -1,0 +1,3 @@
+void FUN1(char * VAR1)
+VAR2[100-1] = '\0';
+strcpy(VAR1, VAR2);

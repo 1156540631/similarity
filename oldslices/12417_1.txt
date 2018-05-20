@@ -1,0 +1,6 @@
+data = NULL;
+badSource(data);
+void badSource(char * &data);
+strcat(data, source);
+printLine(data);
+free(data);

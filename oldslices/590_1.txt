@@ -1,0 +1,4 @@
+const char* legacyOrEmpty = "legacy 0 ";
+legacyOrEmpty = "";
+const char* action = aDoAdd ? "add" : "remove";
+legacyOrEmpty, action,

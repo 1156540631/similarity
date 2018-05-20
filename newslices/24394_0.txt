@@ -1,0 +1,26 @@
+static CLASS1 *FUN1(const char **VAR1,const char *VAR2,CLASS2 *VAR3)
+VAR4 = (FUN2("SVN_EDITOR"));
+if (!VAR4) {
+FUN3(VAR5,&VAR4,"helpers","VAR1-VAR6",((void *)0));
+if (!VAR4) {
+VAR4 = (FUN2("VISUAL"));
+if (!VAR4) {
+VAR4 = (FUN2("EDITOR"));
+if (!VAR4) {
+VAR4 = "/VAR7/VAR8/VAR9";
+if (VAR4) {
+for (VAR10 = VAR4;  *VAR10; VAR10++)
+if (!( *VAR10)) {
+*VAR1 = VAR4;
+CLASS1 *VAR11 = FUN1(&VAR1,VAR2,VAR3);
+VAR6 = (FUN4(VAR12,"%s %s",VAR1,VAR13));
+VAR14 = system(VAR6);
+if (VAR14) {
+return FUN5(VAR15,((void *)0),(FUN6("subversion","system('%') VAR16 %d")),VAR6,VAR14);
+CLASS1 *VAR11 = FUN1(&VAR1,VAR2,VAR3);
+VAR6 = (FUN4(VAR12,"%s %s",VAR1,VAR17));
+VAR14 = system(VAR6);
+if (VAR14 != 0) {
+VAR18 = FUN5(VAR15,((void *)0),(FUN6("subversion","system('%') VAR16 %d")),VAR6,VAR14);
+if (!VAR18 && VAR19) {
+return VAR18;

@@ -1,0 +1,26 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR615,"PRIVATE_SHOPPE");
+if (VAR615 != 0) {;
+VAR616 . VAR617 = ((char *)VAR615);
+VAR618 = &VAR616;
+VAR619 = &VAR618;
+VAR620 = &VAR619;
+VAR621 = &VAR620;
+VAR622 = &VAR621;
+VAR623 = &VAR622;
+VAR624 = &VAR623;
+VAR625 = &VAR624;
+VAR626 = &VAR625;
+VAR627 = &VAR626;
+FUN162(VAR628,VAR627);
+void FUN162(int VAR629,struct STRUCT629 **********VAR630);

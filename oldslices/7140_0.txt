@@ -1,0 +1,3 @@
+va_list suffisance_divisa;
+__builtin_va_start(suffisance_divisa,pittsford_overcure);
+meadowlarks_coadjudicator = (va_arg(suffisance_divisa,struct ransomers_isogon ));

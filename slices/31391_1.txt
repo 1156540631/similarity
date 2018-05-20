@@ -1,0 +1,11 @@
+static int VAR18 = 5;
+char * VAR4;
+char * VAR2 = (char *)ALLOCA(100*sizeof(char));
+memset(VAR2, 'A', 100-1);
+VAR2[100-1] = '\0';
+if(VAR18==5)
+VAR4 = VAR2 - 8;
+char VAR5[100*2];
+memset(VAR5, 'C', 100*2-1);
+VAR5[100*2-1] = '\0';
+strcpy(VAR5, VAR4);

@@ -1,0 +1,2 @@
+char VAR339 [2048];
+strncpy(VAR339, argv[1], sizeof VAR339 - 1);

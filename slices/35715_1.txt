@@ -1,0 +1,9 @@
+wchar_t * VAR1 = (wchar_t *)alloca(100*sizeof(wchar_t));
+VAR2 = VAR1;
+VAR2[100-1] = L'\0';
+FUN1(&VAR2);
+void FUN1(void * VAR4)
+wchar_t * * VAR4 = (wchar_t * *)VAR4;
+wchar_t * VAR2 = (*VAR4);
+wchar_t VAR3[50] = L"";
+snprintf(VAR3, wcslen(VAR2), L"%s", VAR2);

@@ -1,0 +1,8 @@
+#define SRC_STRING "AAAAAAAAAA"
+static int staticFive = 5;
+char * data;
+data = NULL;
+if(staticFive==5)
+data = (char *)malloc((10+1)*sizeof(char));
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

@@ -1,0 +1,10 @@
+char * VAR1;
+VAR1 = VAR2;
+if(5!=5) {}
+else
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[0] = '\';
+char VAR3[100];
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+strncpy(VAR1, VAR3, 100-1);

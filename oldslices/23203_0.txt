@@ -1,0 +1,17 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+int zoomastigoda_overembellishes = 91;
+char *pentstock_hypoergic;
+stonesoup_read_taint(&pentstock_hypoergic,"6829",zoomastigoda_overembellishes);
+ellie_belsire = pentstock_hypoergic;
+disparted_gauffer = ((char *)ellie_belsire);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, disparted_gauffer, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&pentstock_hypoergic,"6829",zoomastigoda_overembellishes);
+ellie_belsire = pentstock_hypoergic;
+disparted_gauffer = ((char *)ellie_belsire);
+strncpy(stonesoup_source, disparted_gauffer, sizeof(stonesoup_source));

@@ -1,0 +1,18 @@
+*VAR1 = VAR2;
+*VAR1 = (char*)calloc(VAR3, sizeof(char));
+*VAR1 = VAR2;
+struct CLASS1 VAR4;
+int VAR5 = 20;
+char *VAR6;
+FUN1(&VAR6,"2655",VAR5);
+VAR4 . VAR7 = ((char *)VAR6);
+VAR8[ *( *( *( *( *( *( *( *( *( *VAR9)))))))))] = VAR4;
+VAR10 = VAR8[ *( *( *( *( *( *( *( *( *( *VAR9)))))))))];
+free(((char *)VAR10 . VAR7));
+void FUN1(char** VAR1, char* VAR11, int VAR3) {
+if ((VAR12 = FUN2(VAR13, VAR3, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR3, sizeof(char));
+FUN1(&VAR6,"2655",VAR5);
+VAR4 . VAR7 = ((char *)VAR6);
+VAR10 = VAR8[ *( *( *( *( *( *( *( *( *( *VAR9)))))))))];
+free(((char *)VAR10 . VAR7));

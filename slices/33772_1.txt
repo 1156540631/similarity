@@ -1,0 +1,10 @@
+CLASS1 CLASS2;
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+VAR2[100-1] = '\0';
+CLASS2.VAR10 = VAR2;
+FUN19(CLASS2);
+void FUN19(CLASS1 CLASS2)
+char * VAR2 = CLASS2.VAR10;
+char VAR4[50] = "";
+memcpy(VAR4, VAR2, strlen(VAR2)*sizeof(char));

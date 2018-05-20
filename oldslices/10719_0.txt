@@ -1,0 +1,3 @@
+char *interplait_transformance = 0;
+acondylous_meconophagist(&interplait_transformance);
+free(((char *)interplait_transformance));

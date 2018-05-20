@@ -1,0 +1,13 @@
+char * data;
+map<int, char *> dataMap;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+data = dataBadBuffer;
+data[0] =  '\0';
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+void badSink(map<int, char *> dataMap)
+char * data = dataMap[2];
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

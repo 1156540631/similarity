@@ -1,0 +1,27 @@
+CLASS1::FUN1(CLASS4* VAR2, int32_t VAR4, uint32_t VAR5) const
+FUN2(VAR2, VAR4);
+FUN7(VAR2);
+fprintf(VAR2, " [VAR6=%VAR6]", VAR6);
+fprintf(VAR2, " [view=%VAR6]", static_cast<void*>(FUN3()));
+fprintf(VAR2, " FUN2=%VAR6", static_cast<void*>(FUN4()));
+fprintf(VAR2, " prev-in-flow=%VAR6", static_cast<void*>(FUN5()));
+fprintf(VAR2, " FUN2-in-flow=%VAR6", static_cast<void*>(FUN6()));
+fprintf(VAR2, " IBSplitSpecialSibling=%VAR6", VAR7);
+fprintf(VAR2, " IBSplitSpecialPrevSibling=%VAR6", VAR8);
+fprintf(VAR2, " [content=%VAR6]", static_cast<void*>(VAR9));
+fprintf(VAR2, " {%VAR1,%VAR1,%VAR1,%VAR1}", VAR10.VAR11, VAR10.VAR12, VAR10.VAR13, VAR10.VAR14);
+fprintf(VAR2, " [state=%016llx]", (unsigned long long)VAR15);
+fprintf(VAR2, " [vis-overflow=%VAR1,%VAR1,%VAR1,%VAR1]", VAR16.VAR11, VAR16.VAR12,
+fprintf(VAR2, " [scr-overflow=%VAR1,%VAR1,%VAR1,%VAR1]", VAR16.VAR11, VAR16.VAR12,
+fprintf(VAR2, " sc=%VAR6(VAR3=%VAR1,VAR6=%VAR1)",
+fprintf(VAR2, " pst=%VAR6",
+fprintf(VAR2, " transformed");
+fprintf(VAR2, " perspective");
+fprintf(VAR2, " preserves-3d-children");
+fprintf(VAR2, " preserves-3d");
+fputs("<\VAR2", VAR2);
+VAR17->FUN1(VAR2, VAR4, VAR5);
+FUN2(VAR2, VAR4);
+fputs("Overflow-lines<\VAR2", VAR2);
+FUN2(VAR2, VAR4);
+fputs(">\VAR2", VAR2);

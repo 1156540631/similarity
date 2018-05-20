@@ -1,0 +1,5 @@
+IsLocalFile(LPCWSTR file, BOOL &isLocal)
+WCHAR rootPath[MAX_PATH + 1] = { L'\0' };
+if (wcslen(file) > MAX_PATH) {
+return FALSE;
+wcsncpy(rootPath, file, MAX_PATH);

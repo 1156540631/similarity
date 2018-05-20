@@ -1,0 +1,4 @@
+CLASS4 * VAR7 = VAR1;
+wcsncpy(VAR25, VAR7, wcslen(VAR7));
+FUN3(VAR7);
+free(VAR7);

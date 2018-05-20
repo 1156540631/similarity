@@ -1,0 +1,17 @@
+data = -1;
+switch(6)
+case 6:
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+break;
+default:
+break;
+switch(8)
+case 7:
+break;
+default:
+int i;
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

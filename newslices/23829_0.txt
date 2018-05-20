@@ -1,0 +1,12 @@
+VAR1 = FUN1("COIFFE_SMOKYSEEMING");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+if (strlen(VAR2) < 1) {
+FUN2(VAR2, &VAR3);
+void FUN2(char *VAR4,struct CLASS1 *VAR5)
+if (strlen(VAR4) > 10U) {
+VAR5 -> VAR6 = VAR4;
+if (strlen(VAR4) < 10U) {
+FUN2(VAR2, &VAR3);
+VAR7 = (VAR3 . FUN3(VAR3 . VAR6));
+if (VAR7 == 0)

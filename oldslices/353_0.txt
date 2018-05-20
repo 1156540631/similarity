@@ -1,0 +1,5 @@
+PROCESS_INFORMATION pi = {0};
+&pi);
+&pi);
+WaitForSingleObject(pi.hProcess, INFINITE);
+CloseHandle(pi.hProcess);

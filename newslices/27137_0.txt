@@ -1,0 +1,10 @@
+VAR1=(char**) malloc(10*sizeof(char*));
+VAR1[VAR2]=(char*) malloc(10*sizeof(char));
+strcpy(VAR1[VAR2],"STRING00");
+char VAR3[10] ;
+FUN1();
+if(FUN2(VAR4)==0)
+FUN3();
+printf("VAR5 VAR6= %VAR3 \n",VAR1[0]);
+strcpy(VAR3,VAR1[0]);
+printf("VAR5 VAR7= %VAR3 \n",VAR3);

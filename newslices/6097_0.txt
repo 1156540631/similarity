@@ -1,0 +1,4 @@
+VAR1[0] = '\';
+strcat(VAR1, VAR2);
+FUN1(VAR1);
+free(VAR1);

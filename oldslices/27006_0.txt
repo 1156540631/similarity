@@ -1,0 +1,7 @@
+str[0] = 'S';
+if ((str = (char *)malloc(256*sizeof(char))) != NULL)
+strcpy(str, "Falut!");
+doSomething(str);
+printf("%s\n", str);
+void doSomething(char *str)
+printf("%s\n", str);

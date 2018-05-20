@@ -1,0 +1,8 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1 = FUN7(VAR1);
+static char * FUN7(char * VAR1)
+VAR1[50-1] = '\0';
+return VAR1;
+VAR1 = FUN7(VAR1);
+char VAR40[50] = "";
+strncat(VAR40, VAR1, strlen(VAR1));

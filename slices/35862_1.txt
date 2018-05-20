@@ -1,0 +1,5 @@
+wchar_t VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = L'\0';
+wchar_t VAR3[50] = L"";
+wcsncpy(VAR3, VAR2, wcslen(VAR2));

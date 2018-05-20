@@ -1,0 +1,16 @@
+static char *
+asn1_get_string(
+unsigned char **buffer,
+unsigned char *bufend,
+int           length,
+char          *string,
+int           strsize)
+structType myStruct;
+myStruct.structFirst = length;
+bool flag = func(myStruct, strsize);
+bool func(structType myStruct, int strsize)
+int length = myStruct.structFirst;
+return length < strsize;
+bool flag = func(myStruct, strsize)
+if (flag)
+memcpy(string, *buffer, length);

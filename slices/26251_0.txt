@@ -1,0 +1,32 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"rb");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR328,"SPECTERLIKE_SEMICARBAZONE");
+if (VAR328 != 0) {;
+VAR333 . VAR343 = VAR328;
+VAR332 = FUN93(VAR333);
+union STRUCT17 FUN93(union STRUCT17 VAR344)
+return VAR344;
+VAR332 = FUN93(VAR333);
+if (VAR332 . VAR343 != 0) {
+VAR345 = ((char *)VAR332 . VAR343);
+VAR346 = strlen(VAR345) + 1;
+VAR347 = VAR335 < VAR346 ? VAR335 : VAR346;
+for (VAR10 = 0; VAR10 < VAR347; VAR10++) {
+VAR345[VAR346 - VAR10 - 1];
+VAR334[VAR335 - VAR10 - 1] =
+for (VAR10 = 0; VAR10 < VAR346; VAR10++) {
+FUN69("%02x",VAR334[VAR335 - VAR10 - 1]);
+free (VAR334);
+tracepoint(VAR31, VAR251, "VAR346", VAR346, &VAR346, "TRIGGER-STATE");
+if (VAR332 . VAR343 != 0)
+free(((char *)VAR332 . VAR343));
+void FUN69(char * VAR205, ...) {

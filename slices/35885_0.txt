@@ -1,0 +1,7 @@
+wchar_t VAR1[100];
+VAR2 = VAR1;
+VAR2[50-1] = L'\0';
+FUN1(VAR2);
+void FUN1(wchar_t * VAR2)
+wchar_t VAR3[50] = L"";
+wcsncpy(VAR3, VAR2, wcslen(VAR2));

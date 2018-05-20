@@ -1,0 +1,3 @@
+HINSTANCE hdll = LoadLibrary(_T("MPR.DLL"));
+(void *)GetProcAddress( hdll, _T("WNetAddConnection2A") );
+FreeLibrary( hdll );

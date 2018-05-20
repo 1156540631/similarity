@@ -1,0 +1,5 @@
+FUN1(const guchar *VAR3, CLASS1 VAR2)
+guchar  VAR1[256];
+if (VAR2 > sizeof(VAR1) - 1) {
+VAR2 = sizeof(VAR1) - 1;
+memcpy(VAR1, VAR3, VAR2);

@@ -1,0 +1,12 @@
+line = line_end;
+TryAllLines(&line, &line_start, &line_end, &searchingOverflowList,
+nsBlockFrame::TryAllLines(nsLineList::iterator* aIterator,
+TryAllLines(&line, &line_start, &line_end, &searchingOverflowList,
+searchingOverflowList?"overflow":"normal", line.get());
+NS_ASSERTION(line->Contains(aDeletedFrame), "frame not in line");
+bool isLastFrameOnLine = 1 == line->GetChildCount();
+if (line != line_end && !line->IsBlock()) {
+line->NoteFrameRemoved(aDeletedFrame);
+searchingOverflowList?"overflow":"normal", line.get());
+if (0 == line->GetChildCount()) {
+searchingOverflowList?"overflow":"normal", line.get());

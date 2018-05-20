@@ -1,0 +1,8 @@
+static FILE *fp;
+fp = fopen("/tmp/srcnotes.hist", "w");
+setvbuf(fp, NULL, _IONBF, 0);
+fprintf(fp, "SrcNote size histogram:\n");
+fprintf(fp, "%4u %4u ", JS_BIT(i), hist[i]);
+fputc('*', fp);
+fputc('\n', fp);
+fputc('\n', fp);

@@ -1,0 +1,11 @@
+const int GLOBAL_CONST_FIVE = 5; 
+data = -1;
+if(GLOBAL_CONST_FIVE==5)
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+printLine("fgets() failed.");
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

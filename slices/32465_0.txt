@@ -1,0 +1,19 @@
+const int VAR15 = 1;
+const int VAR16 = 0;
+char * VAR1;
+char VAR6[100] = "";
+VAR1 = VAR6;
+if(VAR15)
+VAR52 = recv(VAR54, (char *)(VAR1 + VAR53), sizeof(char) * (100 - VAR53 - 1), 0);
+if (VAR52 == VAR55 || VAR52 == 0)
+break;
+VAR1[VAR53 + VAR52 / sizeof(char)] = '\0';
+VAR56 = strchr(VAR1, '\r');
+if (VAR56)
+*VAR56 = '\0';
+VAR56 = strchr(VAR1, '\n');
+if (VAR56)
+*VAR56 = '\0';
+if(VAR16){}
+else
+fprintf(stdout, "%s\n", VAR1);

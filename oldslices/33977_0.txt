@@ -1,0 +1,9 @@
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+goodG2B1Static = 0;
+data = goodG2B1Source(data);
+static char * goodG2B1Source(char * data)
+data[50-1] = '\0';
+return data;
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

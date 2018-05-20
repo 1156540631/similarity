@@ -1,0 +1,4 @@
+void FUN1(char *VAR1)
+VAR2 = ((char *)VAR1);
+VAR3 = malloc((strlen(VAR2) + 1) * sizeof(char ));
+strcpy(VAR3,VAR2);

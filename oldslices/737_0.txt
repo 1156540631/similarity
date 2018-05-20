@@ -1,0 +1,3 @@
+void Geolocation::Watchers::remove(GeoNotifier* notifier)
+NotifierToIdMap::iterator iter = m_notifierToIdMap.find(notifier);
+m_idToNotifierMap.remove(iter->second);

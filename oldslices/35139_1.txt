@@ -1,0 +1,13 @@
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54b_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54b_badSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54c_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54c_badSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54d_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54d_badSink(char * data)
+CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54e_badSink(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_char_declare_memmove_54e_badSink(char * data)
+char dest[50] = "";
+memmove(dest, data, strlen(data)*sizeof(char));

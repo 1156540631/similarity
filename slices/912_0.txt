@@ -1,0 +1,3 @@
+VAR1 = getenv("PORTAGE_HIPMI");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));

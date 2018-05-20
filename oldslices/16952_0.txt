@@ -1,0 +1,10 @@
+vector<int> dataVector;
+fscanf(stdin, "%d", &data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodB2GSink(dataVector);
+void goodB2GSink(vector<int> dataVector)
+int data = dataVector[2];
+if (data >= 0 && data < (10))
+buffer[data] = 1;

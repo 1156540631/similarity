@@ -1,0 +1,11 @@
+behaviorist_roughers = getenv("CABOOSE_WHANGEE");
+macarthur_moraler = ((char *)behaviorist_roughers);
+stonesoup_buff_size = strlen(macarthur_moraler) + 1;
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+macarthur_moraler[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

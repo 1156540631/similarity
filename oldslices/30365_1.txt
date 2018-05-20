@@ -1,0 +1,12 @@
+int *dataPtr1 = &data;
+int *dataPtr2 = &data;
+data = -1;
+int data = *dataPtr1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+*dataPtr1 = data;
+int data = *dataPtr2;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

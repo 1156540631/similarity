@@ -1,0 +1,11 @@
+char		addrname[32];
+bytes, httpAddrString(addr, addrname, sizeof(addrname)));
+asn1_debug(buffer, bytes, 0);
+hex_debug(buffer, bytes);
+bytes, addrname, strerror(errno));
+static void		hex_debug(unsigned char *buffer, size_t len);
+if (sendto(fd, buffer, bytes, 0, (void *)addr, sizeof(addr->ipv4)) < bytes)
+bytes, addrname, strerror(errno));
+static void		asn1_debug(unsigned char *buffer, size_t len,
+if (sendto(fd, buffer, bytes, 0, (void *)addr, sizeof(addr->ipv4)) < bytes)
+bytes, addrname, strerror(errno));

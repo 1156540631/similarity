@@ -1,0 +1,3 @@
+fprintf(VAR1, "VAR2 VAR3: \ttype = %xx\n", VAR4->VAR5);
+fprintf(VAR1, "\t\t\t\t\tlen = %d\n", VAR4->VAR6);
+fprintf(VAR1, "\t\t\t\t\tseq_num = %d\n", VAR4->VAR7);

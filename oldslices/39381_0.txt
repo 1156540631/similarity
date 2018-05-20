@@ -1,0 +1,12 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(5!=5){}
+else
+strcpy(data, "fixedstringtest");
+if(5==5)
+goodG2B1VaSinkB(data, data);
+static void goodG2B1VaSinkB(char * data, ...)
+va_list args;
+va_start(args, data);
+vfprintf(stdout, data, args);
+va_end(args);

@@ -1,0 +1,7 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+if(strlen(VAR3) < VAR4 - 3)
+FUN2(VAR3);
+FUN2(char *VAR5)
+VAR6 = malloc(VAR4);
+FUN3(VAR6, 1024, "<%s>", VAR5);

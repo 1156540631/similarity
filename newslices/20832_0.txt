@@ -1,0 +1,20 @@
+VAR1 = (FUN1("VISUAL"));
+if (!VAR1) {
+if (!VAR1) {
+if (VAR1) {
+for (VAR2 = VAR1;  *VAR2; VAR2++)
+if (!( *VAR2)) {
+*VAR3 = VAR1;
+CLASS1 *VAR4 = FUN2(&VAR3,VAR5,VAR6);
+VAR7 = (FUN3(VAR8,"%s %s",VAR3,VAR9));
+VAR10 = system(VAR7);
+if (VAR10) {
+return FUN4(VAR11,((void *)0),(FUN5("subversion","system('%') VAR12 %d")),VAR7,VAR10);
+CLASS1 *VAR4 = FUN2(&VAR3,VAR5,VAR6);
+VAR7 = (FUN3(VAR8,"%s %s",VAR3,VAR13));
+VAR10 = system(VAR7);
+if (VAR10 != 0) {
+VAR14 = FUN4(VAR11,((void *)0),(FUN5("subversion","system('%') VAR12 %d")),VAR7,VAR10);
+if (!VAR14 && VAR15) {
+return VAR14;
+static CLASS1 *FUN2(const char **VAR3,const char *VAR5,CLASS2 *VAR6)

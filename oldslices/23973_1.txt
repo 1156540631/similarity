@@ -1,0 +1,6 @@
+cirrhoses_uninformatively = getenv("MOTLIER_ELIMINANT");
+if (cirrhoses_uninformatively != 0) {;
+araguaia_unimprecated = ((char *)cirrhoses_uninformatively);
+if (strlen(araguaia_unimprecated) < 20) {
+realpath(araguaia_unimprecated, stonesoup_data.base_path);
+

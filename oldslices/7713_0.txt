@@ -1,0 +1,8 @@
+data = (int *)malloc(10*sizeof(int));
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, int *> dataMap)
+int * data = dataMap[2];
+memcpy(data, source, 10*sizeof(int));
+printIntLine(data[0]);
+free(data);

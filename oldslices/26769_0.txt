@@ -1,0 +1,4 @@
+parson_outfieldsmen = getenv("ARISTOGENICS_PREINDULGE");
+if (parson_outfieldsmen != 0) {;
+pusey_electricans . trochophore_causticized = ((char *)parson_outfieldsmen);
+*burned_flinthead = pusey_electricans;

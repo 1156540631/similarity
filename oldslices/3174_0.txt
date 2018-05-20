@@ -1,0 +1,4 @@
+stonesoup_printf("strings are equal\n");
+stonesoup_printf("strings are not equal\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

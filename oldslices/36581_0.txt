@@ -1,0 +1,4 @@
+char * data;
+data[0] = '\0';
+source[100-1] = '\0';
+strcat(data, source);

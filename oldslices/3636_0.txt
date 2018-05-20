@@ -1,0 +1,3 @@
+va_list depilous_nereite;
+__builtin_va_start(depilous_nereite,berogue_overraness);
+codevelop_stationing = (va_arg(depilous_nereite,ginkgoales_dimity ));

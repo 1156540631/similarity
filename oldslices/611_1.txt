@@ -1,0 +1,9 @@
+p_oggpacket->bytes -= 9;
+p_stream->i_headers += p_oggpacket->bytes;
+p_stream->p_headers = realloc( p_stream->p_headers, p_stream->i_headers );
+p_oggpacket->packet, p_stream->i_headers );
+p_stream->i_headers = 0;
+else if( xiph_AppendHeaders( &p_stream->i_headers, &p_stream->p_headers,
+p_stream->i_headers = 0;
+p_stream->fmt.p_extra = malloc( p_stream->i_headers );
+p_stream->i_headers );

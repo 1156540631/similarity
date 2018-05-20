@@ -1,0 +1,8 @@
+int * data;
+int * &dataRef = data;
+int * dataBadBuffer = (int *)ALLOCA(50*sizeof(int));
+int * dataGoodBuffer = (int *)ALLOCA(100*sizeof(int));
+data = dataGoodBuffer;
+int * data = dataRef;
+int source[100] = {0};
+memcpy(data, source, 100*sizeof(int));

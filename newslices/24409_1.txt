@@ -1,0 +1,7 @@
+char VAR1[128] = {0};
+char *VAR2 = 0;
+int VAR3 = 76;
+FUN1(&VAR4,"6508",VAR3);
+if (VAR4 != 0) {;
+VAR2 = ((char *)VAR4);
+sprintf(VAR1,VAR2);

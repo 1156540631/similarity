@@ -1,0 +1,8 @@
+PgBackendStatus *localtable;
+localtable = ((PgBackendStatus *)(MemoryContextAlloc(pgStatLocalContext,sizeof(PgBackendStatus ) * MaxBackends)));
+localappname = ((char *)(MemoryContextAlloc(pgStatLocalContext,(64 * MaxBackends))));
+localactivity = ((char *)(MemoryContextAlloc(pgStatLocalContext,(pgstat_track_activity_query_size * MaxBackends))));
+beentry = BackendStatusArray;
+beentry++;
+localactivity += pgstat_track_activity_query_size;
+strcpy(localactivity,((char *)(beentry -> st_activity)));

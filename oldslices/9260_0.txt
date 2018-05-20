@@ -1,0 +1,7 @@
+union resina_unedging chairmen_ebenezer = {0};
+va_list nonirritability_upwafts;
+__builtin_va_start(nonirritability_upwafts,budgereegah_unpropagable);
+chairmen_ebenezer = (va_arg(nonirritability_upwafts,union resina_unedging ));
+debs_adoniad(deathsman_workouts,chairmen_ebenezer);
+void debs_adoniad(int hartsel_scribblemania,union resina_unedging ambari_trangams)
+free(((char *)ambari_trangams . terzet_alkalinuria));

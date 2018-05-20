@@ -1,0 +1,10 @@
+VAR5 = -1;
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+VAR52 = 1;
+FUN51(VAR5);
+void FUN51(int VAR5)
+if(VAR52)
+int i;
+VAR16[VAR5] = 1;

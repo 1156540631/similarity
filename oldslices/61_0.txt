@@ -1,0 +1,9 @@
+static int ws_snd_decode_frame(AVCodecContext *avctx, void *data,
+const uint8_t *buf = avpkt->data;
+out_size = AV_RL16(&buf[0]);
+in_size  = AV_RL16(&buf[2]);
+buf += 4;
+s->frame.nb_samples = out_size;
+if ((ret = avctx->get_buffer(avctx, &s->frame)) < 0) {
+samples     = s->frame.data[0];
+memcpy(samples, buf, out_size);

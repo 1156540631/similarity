@@ -1,0 +1,6 @@
+memory_allocation_failure_006_gbl_doubleptr=(int**) malloc(10*sizeof(int*));
+memory_allocation_failure_006_gbl_doubleptr[i][0] =10;
+memory_allocation_failure_006_func_002();
+if(memory_allocation_failure_006_func_001(flag)==0)
+memory_allocation_failure_006_gbl_doubleptr[i] = NULL;
+free(memory_allocation_failure_006_gbl_doubleptr);

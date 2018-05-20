@@ -1,0 +1,18 @@
+rewind(VAR55);
+VAR57 = fread(*VAR22,1,VAR56,VAR55);
+*VAR22 = NULL;
+char VAR166[1024];
+char *VAR186;
+FUN1(&VAR186,"WORDISHLY_GROUSY");
+VAR187 = ((char *)VAR186);
+memset(VAR166, 0, 1024);
+strncpy(VAR166, VAR187, sizeof(VAR166));
+void FUN1(char** VAR22, char* VAR54) {
+VAR53 = getenv(VAR54);
+VAR55 = fopen(VAR53,"rb");
+fseek(VAR55,0L,2);
+VAR56 = ftell(VAR55);
+*VAR22 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+FUN1(&VAR186,"WORDISHLY_GROUSY");
+VAR187 = ((char *)VAR186);
+strncpy(VAR166, VAR187, sizeof(VAR166));

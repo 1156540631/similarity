@@ -1,0 +1,6 @@
+char * &VAR1 = VAR2;
+VAR2 = VAR3;
+VAR2[0] = '\';
+char * VAR2 = VAR1;
+char VAR4[10+1] = VAR5;
+strncpy(VAR2, VAR4, strlen(VAR4) + 1);

@@ -1,0 +1,3 @@
+dynamic_buffer_overrun_010_s_001* sbuf= calloc(5,sizeof(dynamic_buffer_overrun_010_s_001)) ;
+sbuf[5].a = 1;
+free(sbuf);

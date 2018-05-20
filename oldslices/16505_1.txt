@@ -1,0 +1,10 @@
+list<int64_t *> dataList;
+data = (int64_t *)malloc(50*sizeof(int64_t));
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+badSink(dataList);
+void badSink(list<int64_t *> dataList)
+int64_t * data = dataList.back();
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

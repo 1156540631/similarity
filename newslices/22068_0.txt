@@ -1,0 +1,5 @@
+VAR1 = FUN1("SOMNAMBULOUS_ILYSIOID");
+if (VAR1 != 0) {;
+VAR2[2] = VAR1;
+FUN2(VAR2);
+void FUN2(char **const VAR3);

@@ -1,0 +1,3 @@
+jmp_buf tomming_contemporaries;
+demarks_subtrist = setjmp(tomming_contemporaries);
+longjmp(tomming_contemporaries,1);

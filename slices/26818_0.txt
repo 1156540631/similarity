@@ -1,0 +1,4 @@
+VAR333 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR334 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR331 = FUN68((const char *) VAR329, VAR334, 200, VAR332, VAR337);
+printf("VAR331 = %d\VAR7", VAR331);

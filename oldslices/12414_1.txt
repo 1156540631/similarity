@@ -1,0 +1,79 @@
+cmdarg_err("Parameter \"%s\" doesn't follow the template \"%s\"", cl_param, decode_as_arg_template);
+cmdarg_err("No layer type specified");
+cmdarg_err("Unknown layer type -- %s", table_name);
+cmdarg_err("Valid layer types are:");
+cmdarg_err("WARNING: -d requires \"==\" instead of \"=\". Option will be treated as \"%s==%s\"", table_name, remaining_param + 1);
+cmdarg_err("Parameter \"%s\" doesn't follow the template \"%s\"", cl_param, decode_as_arg_template);
+cmdarg_err("Invalid selector number \"%s\"", selector_str);
+cmdarg_err("Valid protocols for layer type \"%s\" are:", table_name);
+cmdarg_err("No protocol name specified");
+cmdarg_err("WARNING: Protocol \"%s\" matched %u dissectors, first one will be used", dissector_str, user_protocol_name.nb_match);
+cmdarg_err("Unknown protocol -- \"%s\"", dissector_str);
+cmdarg_err("Protocol \"%s\" isn't valid for layer type \"%s\"",
+cmdarg_err("Valid protocols for layer type \"%s\" are:", table_name);
+cmdarg_err("Configuration Profile \"%s\" does not exist", optarg);
+cmdarg_err("Invalid \"%s\" option for -G flag", argv[2]);
+cmdarg_err("Can't open global preferences file \"%s\": %s.",
+cmdarg_err("I/O error reading global preferences file \"%s\": %s.",
+cmdarg_err("Can't open your preferences file \"%s\": %s.", pf_path,
+cmdarg_err("I/O error reading your preferences file \"%s\": %s.",
+cmdarg_err("Could not open global disabled protocols file\n\"%s\": %s.",
+cmdarg_err("I/O error reading global disabled protocols file\n\"%s\": %s.",
+"Could not open your disabled protocols file\n\"%s\": %s.", dp_path,
+"I/O error reading your disabled protocols file\n\"%s\": %s.", dp_path,
+cmdarg_err("\"%s\" is not a valid field output option=value pair.", optarg);
+cmdarg_err("\"%s\" isn't a valid capture file type", optarg);
+cmdarg_err("-N specifies unknown resolving option '%c';",
+cmdarg_err("Invalid -o flag \"%s\"", optarg);
+cmdarg_err("-o flag \"%s\" specifies unknown preference", optarg);
+cmdarg_err("Invalid time stamp type \"%s\"",
+cmdarg_err("Invalid -T parameter.");
+cmdarg_err("invalid -z argument.");
+cmdarg_err("Output fields were specified with \"-e\", "
+cmdarg_err("\"-Tfields\" was specified, but no fields were "
+cmdarg_err("Read filters were specified both with \"-R\" "
+cmdarg_err("Capture filters were specified both with \"-f\""
+cmdarg_err("You can't write both raw packet data and dissected packets"
+cmdarg_err("This version of TShark was not built with support for capturing packets.");
+cmdarg_err("Only read filters, not capture filters, "
+cmdarg_err("Raw packet hex data can only be printed as text or PostScript");
+cmdarg_err("You can't specify -L and a capture file to be read.");
+cmdarg_err("Ring buffer requested, but a capture isn't being done.");
+cmdarg_err("Multiple capture files requested, but "
+cmdarg_err("Switching capture files after a time interval was specified, but "
+cmdarg_err("A ring buffer of capture files was specified, but "
+cmdarg_err("A maximum number of capture files was specified, but "
+cmdarg_err("A maximum capture time was specified, but "
+cmdarg_err("Live captures can only be saved in libpcap format.");
+cmdarg_err("Multiple capture files requested, but "
+cmdarg_err("Multiple capture files requested, but "
+cmdarg_err("Multiple capture files requested, but "
+cmdarg_err("Maximum capture file size specified, but "
+cmdarg_err("Multiple capture files requested, but "
+cmdarg_err("%s", dfilter_error_msg);
+cmdarg_err("WinPcap couldn't be found.");
+"Invalid capture filter: \"%s\"!\n"
+"Invalid capture filter: \"%s\"!\n"
+cmdarg_err("Capture files can't be written in that format.");
+cmdarg_err("The capture file being read can't be written in "
+cmdarg_err("The %s couldn't be created for some "
+cmdarg_err("A full header couldn't be written to the %s.",
+cmdarg_err("The %s could not be created: %s.", save_file_string,
+cmdarg_err("\"%s\" has a packet with a network type that TShark doesn't support.\n(%s)",
+cmdarg_err("An attempt to read from \"%s\" failed for some unknown reason.",
+cmdarg_err("\"%s\" appears to have been cut short in the middle of a packet.",
+cmdarg_err("\"%s\" appears to be damaged or corrupt.\n(%s)",
+cmdarg_err("An error occurred while reading \"%s\": %s.",
+cmdarg_err("Not all the packets could be written to the %s because there is "
+cmdarg_err("Not all the packets could be written to the %s because you are "
+cmdarg_err("The %s couldn't be closed for some unknown reason.",
+cmdarg_err("Not all the packets could be written to the %s.",
+cmdarg_err("The %s could not be closed: %s.", save_file_string,
+cmdarg_err("An error occurred while writing to the %s: %s.",
+cmdarg_err("Not all the packets could be printed because there is "
+cmdarg_err("Not all the packets could be printed because you are "
+cmdarg_err("An error occurred while printing packets: %s.",
+cmdarg_err("An error occurred while reading from the file \"%s\": %s.",
+cmdarg_err("An error occurred while writing to the file \"%s\": %s.",
+cmdarg_err(const char *fmt, ...)
+va_start(ap, fmt);

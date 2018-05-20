@@ -1,0 +1,5 @@
+char stonesoup_buffer[8];
+nonregression_isodimorphic = getenv("SAVOR_FEI");
+viper_ganda = ((char *)nonregression_isodimorphic);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(viper_ganda)+1, viper_ganda, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,viper_ganda,strlen(viper_ganda) + 1);

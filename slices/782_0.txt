@@ -1,0 +1,4 @@
+VAR7 = FUN1(VAR7);
+wcscpy(VAR7, VAR1);
+FUN3(VAR7);
+free(VAR7);

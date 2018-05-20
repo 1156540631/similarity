@@ -1,0 +1,31 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+union undercommander_overfee tupler_omnivident;
+char *cellular_studite;;
+stonesoup_read_taint(&cellular_studite,"SPECTERLIKE_SEMICARBAZONE");
+tupler_omnivident . unwaving_pycnogonidium = cellular_studite;
+pococurantism_aceldamas = polyesters_immaturely(tupler_omnivident);
+stonesoup_other_size = 64;
+stonesoup_other_buff = (char*) malloc (stonesoup_other_size * sizeof (char));
+stonesoup_printf("%02x",stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1]);
+free (stonesoup_other_buff);
+union undercommander_overfee polyesters_immaturely(union undercommander_overfee talmudize_unintentionally)
+return talmudize_unintentionally;
+pococurantism_aceldamas = polyesters_immaturely(tupler_omnivident);
+bastard_studbook = ((char *)pococurantism_aceldamas . unwaving_pycnogonidium);
+stonesoup_buff_size = strlen(bastard_studbook) + 1;
+bastard_studbook[stonesoup_buff_size - stonesoup_i - 1];
+stonesoup_other_buff[stonesoup_other_size - stonesoup_i - 1] =
+free (stonesoup_other_buff);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&cellular_studite,"SPECTERLIKE_SEMICARBAZONE");
+tupler_omnivident . unwaving_pycnogonidium = cellular_studite;
+pococurantism_aceldamas = polyesters_immaturely(tupler_omnivident);
+void stonesoup_printf(char * format, ...) {
+free (stonesoup_other_buff);

@@ -1,0 +1,11 @@
+vector<char *> dataVector;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+void badSink(vector<char *> dataVector)
+char * data = dataVector[2];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

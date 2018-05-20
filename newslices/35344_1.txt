@@ -1,0 +1,8 @@
+char VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = '\';
+const VAR3& VAR4 = FUN1();
+VAR4.FUN2(VAR2);
+void FUN1::FUN2(char * VAR2) const
+char VAR5[50] = "";
+strncpy(VAR5, VAR2, strlen(VAR2));

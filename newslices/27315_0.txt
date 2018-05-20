@@ -1,0 +1,17 @@
+typedef struct CLASS1
+int VAR1;
+} CLASS2;
+CLASS2 VAR2;
+VAR3 = -1;
+char VAR4[VAR5] = "";
+if (fgets(VAR4, VAR5, VAR6) != VAR7)
+VAR3 = atoi(VAR4);
+VAR2.VAR1 = VAR3;
+FUN1(VAR2);
+void FUN1(CLASS2 VAR2)
+int VAR3 = VAR2.VAR1;
+int * VAR8 = (int *)malloc(10 * sizeof(int));
+for (VAR9 = 0; VAR9 < 10; VAR9++)
+VAR8[VAR9] = 0;
+if (VAR3 >= 0 && VAR3 < (10))
+VAR8[VAR3] = 1;

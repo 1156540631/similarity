@@ -1,0 +1,2 @@
+snprintf(VAR73, FUN132(VAR39, VAR73), "%VAR1", VAR529);
+printf ("strlen(VAR529)=%d\VAR7", strlen(VAR529));

@@ -1,0 +1,7 @@
+void (*funcPtr) (char *) = goodG2BSink;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data[50-1] = '\0';
+funcPtr(data);
+static void goodG2BSink(char * data)
+memcpy(dest, data, strlen(data)*sizeof(char));

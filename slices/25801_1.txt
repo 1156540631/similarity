@@ -1,0 +1,5 @@
+int main(int argc, char **argv) {
+char *VAR415;
+VAR415 = (char *) malloc(VAR416);
+free(VAR415);
+strncpy(VAR415, argv[1], VAR416-1);

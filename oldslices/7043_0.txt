@@ -1,0 +1,3 @@
+overwheel_orthopraxia = getenv("ALIUS_OVERTHICKNESS");
+wittekind_supernaturally = ((int )(strlen(overwheel_orthopraxia)));
+sclerocornea_amygdalus = ((char *)(malloc(wittekind_supernaturally + 1)));

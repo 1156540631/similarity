@@ -1,0 +1,17 @@
+VAR182 = getenv("COALFIELD_COMIQUE");
+if (VAR182 != 0) {;
+VAR183 = ((int )(strlen(VAR182)));
+VAR179 = ((char *)(malloc(VAR183 + 1)));
+if (VAR179 == 0) {
+memset(VAR179,0,VAR183 + 1);
+memcpy(VAR179,VAR182,VAR183);
+VAR178 = FUN28(VAR179);
+char *FUN28(char *VAR184)
+return VAR184;
+VAR178 = FUN28(VAR179);
+VAR185 = ((char *)VAR178);
+VAR70 = ((int )(strlen(VAR185)));
+strncpy(VAR180, VAR185, 64);
+for (; VAR181 < VAR70; ++VAR181){
+if (VAR178 != 0)
+free(((char *)VAR178));

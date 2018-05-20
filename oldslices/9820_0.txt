@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+trautvetteria_autodrome[1] = 5;
+horsy_moonery =  *(oxytylote_insanitariness + trautvetteria_autodrome[1]);
+free(((char *)horsy_moonery));
+void stonesoup_handle_taint(char *tweeter_kwannon)
+accommodating_filespec = tweeter_kwannon;
+oxytylote_insanitariness[5] = accommodating_filespec;
+horsy_moonery =  *(oxytylote_insanitariness + trautvetteria_autodrome[1]);
+free(((char *)horsy_moonery));

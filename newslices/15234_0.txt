@@ -1,0 +1,12 @@
+int * VAR1;
+VAR2<int, int *> VAR3;
+int * VAR4 = (int *)FUN1(50*sizeof(int));
+int * VAR5 = (int *)FUN1(100*sizeof(int));
+VAR1 = VAR5;
+VAR3[2] = VAR1;
+FUN2(VAR3);
+int VAR6[100] = {0};
+memmove(VAR1, VAR6, 100*sizeof(int));
+void FUN2(VAR2<int, int *> VAR3)
+int * VAR1 = VAR3[2];
+memmove(VAR1, VAR6, 100*sizeof(int));

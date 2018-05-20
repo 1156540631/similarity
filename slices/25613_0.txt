@@ -1,0 +1,8 @@
+void FUN152(char *VAR582)
+FUN153(VAR582);
+void FUN153(char *VAR583)
+VAR584 = ((char *)VAR583);
+VAR262[63] = '\0';
+tracepoint(VAR19, VAR60, "VAR262", VAR262, "INITIAL-STATE");
+VAR264 = ((int )(strlen(VAR584)));
+strncpy(VAR262, VAR584, 64);

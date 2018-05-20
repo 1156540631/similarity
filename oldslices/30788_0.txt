@@ -1,0 +1,10 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+void (*funcPtr) (void *) = CWE121_Stack_Based_Buffer_Overflow__CWE135_65b_goodG2BSink;
+data = NULL;
+data = (void *)CHAR_STRING;
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_65b_goodG2BSink(void * data)
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

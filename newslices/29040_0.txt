@@ -1,0 +1,13 @@
+VAR1 = -1;
+FUN1(1)
+VAR2 = FUN2(VAR3, VAR4, VAR5 - 1, 0);
+if (VAR2 == VAR6 || VAR2 == 0)
+break;
+VAR4[VAR2] = '\';
+VAR1 = atoi(VAR4);
+break;
+FUN1(1)
+int VAR7[10] = { 0 };
+if (VAR1 >= 0 && VAR1 < (10))
+VAR7[VAR1] = 1;
+break;

@@ -1,0 +1,13 @@
+VAR5, VAR6);
+const unsigned VAR7,
+const int *VAR3);
+FUN1(&VAR8, NULL);
+VAR5 = VAR8.VAR9;
+VAR12 = VAR8.VAR9 + 1;
+for (VAR2 = (char *)FUN2(VAR10);
+VAR2 = (char *)FUN3(VAR10))
+fprintf(stderr, "ERROR: Unable to scan \"%VAR1\"!\n", VAR2);
+for (VAR4 = (char *)FUN2(VAR11);
+VAR4 = (char *)FUN3(VAR11))
+VAR5, VAR6);
+fprintf(stderr, "ERROR: %.3f FUN5() for %d failed: %VAR1\n", FUN4(),

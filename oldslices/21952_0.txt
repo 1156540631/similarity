@@ -1,0 +1,25 @@
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&lobo_buteo,"CHRISOM_CALCANEI");
+if (lobo_buteo != 0) {;
+meuniere_hydrocoralline . pseudomaniac_lilibelle = lobo_buteo;
+wool_dialectologies = &meuniere_hydrocoralline;
+bipartisanship_haphsiba = &wool_dialectologies;
+tigernut_spectators = &bipartisanship_haphsiba;
+citynesses_pupilability = &tigernut_spectators;
+prerefusal_cytoma = &citynesses_pupilability;
+ulvan_revaccinate = &prerefusal_cytoma;
+immember_mulloway = &ulvan_revaccinate;
+aerographical_ebon = &immember_mulloway;
+textuaries_arilli = &aerographical_ebon;
+untroubled_bradykinesia = &textuaries_arilli;
+ethic_puelchean(untroubled_bradykinesia);

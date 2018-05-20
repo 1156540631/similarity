@@ -1,0 +1,5 @@
+wchar_t * VAR1 = (wchar_t *)FUN1(100*sizeof(wchar_t));
+VAR2 = VAR1;
+VAR2[50-1] = '\';
+wchar_t VAR3[50] = VAR4"";
+FUN2(VAR3, VAR2, FUN3(VAR2));

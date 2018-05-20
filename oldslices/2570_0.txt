@@ -1,0 +1,27 @@
+is_byte_sep(guint8 c)
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+if (is_byte_sep(*punct)) {
+p = punct;
+if (is_byte_sep(*punct)) {
+p = punct;
+else if (*q && isxdigit(*p) && is_byte_sep(*q)) {
+p = q + 1;
+else if (!*q && isxdigit(*p)) {
+p = q;
+else if (!*q && isxdigit(*p)) {
+hex_str_to_bytes(const char *hex_str, GByteArray *bytes, gboolean force_separators) {
+p = (const guchar *)hex_str;
+s = p+3;
+isxdigit(*r) && isxdigit(*s)) {
+punct = s + 1;
+if (is_byte_sep(*punct)) {
+p = punct;
+else if (*q && isxdigit(*p) && isxdigit(*q)) {
+punct = q + 1;
+if (is_byte_sep(*punct)) {
+p = punct;
+else if (*q && isxdigit(*p) && is_byte_sep(*q)) {
+else if (!*q && isxdigit(*p)) {
+p = q;
+else if (!*q && isxdigit(*p)) {

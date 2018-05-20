@@ -1,0 +1,14 @@
+unsigned char *VAR8 = &VAR4->VAR1->VAR2.VAR7[0], *VAR6;
+unsigned int VAR3;
+unsigned int VAR5 = 16;
+VAR12 = *VAR8++;
+VAR8(VAR8, VAR3);
+VAR6 = VAR8;
+
+VAR3 + VAR5;
+unsigned int VAR13 =
+VAR9 = FUN3(VAR13);
+VAR10 = VAR9;
+*VAR10++ = VAR11;
+FUN2(VAR3, VAR10);
+memcpy(VAR10, VAR6, VAR3);

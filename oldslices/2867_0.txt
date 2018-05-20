@@ -1,0 +1,5 @@
+stonesoup_printf("%s\n", stonesoup_buffer);
+stonesoup_printf("%c\n", stonesoup_main_first_char);
+stonesoup_printf("%s\n", stonesoup_buffer);
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

@@ -1,0 +1,10 @@
+while ((p = strchr(names, ','))) {
+len = FFMAX(p - names, namelen);
+if (!av_strncasecmp(name, names, len))
+names = p+1;
+while ((p = strchr(names, ','))) {
+return !av_strcasecmp(name, names);
+if (fmt->name && short_name && match_format(short_name, fmt->name))
+if (match_format(short_name, fmt->name))
+static int match_format(const char *name, const char *names)
+while ((p = strchr(names, ','))) {

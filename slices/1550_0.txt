@@ -1,0 +1,4 @@
+void FUN1(CLASS1 * VAR1)
+wcsncat(VAR1, VAR2, 100);
+FUN2(VAR1);
+free(VAR1);

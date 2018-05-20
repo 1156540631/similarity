@@ -1,0 +1,2 @@
+VAR1 VAR2;
+VAR3 = sscanf(VAR4->VAR5,VAR6,&VAR2);

@@ -1,0 +1,14 @@
+typedef union
+int unionFirst;
+int unionSecond;
+} CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_34_unionType;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_34_unionType myUnion;
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+myUnion.unionFirst = data;
+int data = myUnion.unionSecond;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

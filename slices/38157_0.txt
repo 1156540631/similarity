@@ -1,0 +1,23 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+VAR5 = recv(VAR6, (char *)(VAR1 + VAR7), sizeof(char) * (100 - VAR7 - 1), 0);
+if (VAR5 == SOCKET_ERROR || VAR5 == 0)
+break;
+VAR1[VAR7 + VAR5 / sizeof(char)] = '\0';
+VAR8 = strchr(VAR1, '\r');
+if (VAR8)
+*VAR8 = '\0';
+VAR8 = strchr(VAR1, '\n');
+if (VAR8)
+*VAR8 = '\0';
+VAR9 = VAR1;
+FUN2();
+void FUN2()
+char * VAR1 = VAR9;
+FUN1(VAR1, VAR1);
+static void FUN1(char * VAR1, ...)
+char VAR3[100] = "";
+va_list VAR4;
+va_start(VAR4, VAR1);
+vsnprintf(VAR3, 100-1, "%s", VAR4);

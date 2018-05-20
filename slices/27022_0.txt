@@ -1,0 +1,3 @@
+char *VAR14[1] = {(char *)NULL};
+if ((*VAR14 = (char *)malloc(256*sizeof(char))) != NULL)
+strcpy(*VAR14, "Falut!");

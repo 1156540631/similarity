@@ -1,0 +1,11 @@
+const int VAR16 = 1;
+const int VAR17 = 0;
+wchar_t * VAR1;
+VAR1 = NULL;
+if(VAR16)
+VAR1 = (wchar_t *)malloc(50*sizeof(wchar_t));
+VAR1[0] = L'\0';
+wchar_t VAR9[100];
+wmemset(VAR9, L'C', 100-1);
+VAR9[100-1] = L'\0';
+wcscpy(VAR1, VAR9);

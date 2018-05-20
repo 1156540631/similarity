@@ -1,0 +1,10 @@
+char * VAR1;
+void (*VAR4) (char *) = FUN1;
+char * VAR2 = (char *)alloca(100*sizeof(char));
+VAR1 = VAR2;
+memset(VAR1, 'A', 50-1);
+VAR1[50-1] = '\0';
+VAR4(VAR1);
+void FUN1(char * VAR1)
+char VAR3[50] = "";
+strcat(VAR3, VAR1);

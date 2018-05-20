@@ -1,0 +1,5 @@
+char *str1 = (char *) calloc(25,sizeof(char));
+char *str2 ;
+strcpy(str1, str2);
+printf("%s %s\n",str1,str2);
+free(str1);

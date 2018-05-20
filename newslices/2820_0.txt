@@ -1,0 +1,6 @@
+VAR1 = *VAR2++;
+VAR2--;
+VAR2--;
+char *VAR3 = VAR2;
+VAR3++;
+FUN1 (isascii((int)*VAR3) && isspace((int)*VAR3))

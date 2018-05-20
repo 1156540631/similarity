@@ -1,0 +1,9 @@
+char * VAR1 = (char *)ALLOCA(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, 'A', 50-1);
+VAR2[50-1] = '\0';
+FUN26(&VAR2);
+void FUN26(char * * VAR7)
+char * VAR2 = *VAR7;
+char VAR4[50] = "";
+memmove(VAR4, VAR2, strlen(VAR2)*sizeof(char));

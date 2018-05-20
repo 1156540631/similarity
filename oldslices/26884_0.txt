@@ -1,0 +1,112 @@
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+char *fname;
+FILE *volatile fp = NULL;
+printf("include(%s)\n", fname);
+rval = safefile(fname, uid, gid, uname, sfflags, S_IREAD, NULL);
+fp = fopen(fname, "r");
+if (fstat(fileno(fp), &st) < 0)
+safechown = chownsafe(fileno(fp));
+while (fgets(buf, sizeof buf, fp) != NULL)
+register char *p = strchr(buf, '\n');
+forwarding ? "forwarding" : "sending", buf);
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+char *list;
+register ADDRESS *a;
+while (a != NULL && !bitset(QGOODUID, a->q_flags))
+a = a->q_alias;
+return (a);
+ca = getctladdr(ctladdr);
+ctladdr->q_flags |= ca->q_flags & QBOGUSSHELL;
+ctladdr->q_ruser = ca->q_ruser;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+alias(a, sendq, aliaslevel, e);
+if (udbexpand(a, sendq, aliaslevel, e) == EX_TEMPFAIL)
+maplocaluser(a, sendq, aliaslevel + 1, e);
+forward(a, sendq, aliaslevel, e);
+printaddr(*sendq, TRUE);
+register ADDRESS **sendq;
+a = recipient(a, sendq, aliaslevel, e);
+register ADDRESS **sendq;
+for (pq = sendq; (q = *pq) != NULL; pq = &q->q_next)
+if (sameaddr(q, a))
+a = q;
+if (sameaddr(q, a))
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+ca = getctladdr(ctladdr);
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+ca = getctladdr(ctladdr);
+ctladdr->q_gid = st.st_gid;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+ca = getctladdr(ctladdr);
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+(void) strcpy(buf, a->q_user);
+message("including file %s", a->q_user);
+ctladdr->q_ruser = ca->q_ruser;
+pw = sm_getpwuid(st.st_uid);
+ctladdr->q_ruser = newstr(pw->pw_name);
+ADDRESS *ctladdr;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ADDRESS *ctladdr;
+ca = getctladdr(ctladdr);
+register ADDRESS *a;
+return (a);
+ca = getctladdr(ctladdr);
+ctladdr->q_flags |= ca->q_flags & QBOGUSSHELL;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+ADDRESS *ctladdr;
+(time_t) 0, e);
+alias(a, sendq, aliaslevel, e);
+if (udbexpand(a, sendq, aliaslevel, e) == EX_TEMPFAIL)
+e->e_message = newstr("Deferred: user database error");
+e->e_nrcpts++;
+maplocaluser(a, sendq, aliaslevel + 1, e);
+(time_t) 0, e);
+forward(a, sendq, aliaslevel, e);
+e->e_nrcpts++;
+a = recipient(a, sendq, aliaslevel, e);
+(void) sendtolist(p, NULLADDR, &e->e_sendqueue, 0, e);
+register ENVELOPE *e;
+a = recipient(a, sendq, aliaslevel, e);
+register ENVELOPE *e;
+a = recipient(a, sendq, aliaslevel, e);
+register ENVELOPE *e;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ENVELOPE *e;
+ret = include(a->q_user, FALSE, a, sendq, aliaslevel, e);
+ENVELOPE *e;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+register ENVELOPE *e;
+nincludes += sendtolist(buf, ctladdr, sendq, aliaslevel + 1, e);
+register ENVELOPE *e;
+strchr(list, '<') != NULL || strchr(list, '(') != NULL))
+(strchr(list, ',') != NULL || strchr(list, ';') != NULL ||
+i = strlen(list) + 1;
+strcpy(bufp, denlstring(list, FALSE, TRUE));
+for (p = bufp; *p != '\0'; )
+a = parseaddr(p, NULLADDR, RF_COPYALL, delimiter, &delimptr, e);
+if (sameaddr(ctladdr, a))
+a->q_flags |= ctladdr->q_flags & QINHERITEDBITS;
+a->q_flags &= ~QINHERITEDBITS;
+a->q_flags |= ctladdr->q_flags & QINHERITEDBITS;
+al = a;
+register ADDRESS *a = al;
+a = recipient(a, sendq, aliaslevel, e);
+register ADDRESS *a;
+i = strlen(a->q_user);

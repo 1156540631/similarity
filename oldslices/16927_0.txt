@@ -1,0 +1,8 @@
+goodB2GSource(data);
+void goodB2GSource(int &data)
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+if (data >= 0 && data < (10))
+buffer[data] = 1;

@@ -1,0 +1,27 @@
+VAR1 = FUN1("SYNARTESIS_ANCIENNETE");
+if (VAR1 != 0) {;
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+if (VAR3 == 0) {
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = &VAR3;
+VAR5 = ((char **)(((unsigned long )VAR4) * CLASS1 * CLASS1)) + 5;
+VAR6 = ((char *)( *(VAR5 - 5)));
+strcpy(VAR7->VAR8, VAR6);
+FUN2(VAR9, VAR10, "VAR7->VAR8", VAR7->VAR8, "VAR11-VAR12");
+VAR13 = strlen( VAR7->VAR8);
+for (; VAR14 < VAR13; ++VAR14) {
+VAR7->VAR8[VAR14] = FUN3(VAR7->VAR8[VAR14]);
+FUN2(VAR9, VAR10, "VAR7->VAR8", VAR7->VAR8, "VAR15-VAR12");
+free(VAR7);
+if ( *(VAR5 - 5) != 0)
+free(((char *)( *(VAR5 - 5))));
+int FUN3(int VAR16)
+if (VAR16 >= 97 && VAR16 <= 122) {
+return VAR16 - 32;
+return VAR16;
+VAR7->VAR8[VAR14] = FUN3(VAR7->VAR8[VAR14]);
+FUN4("%VAR16",VAR7->FUN5(VAR7->VAR8[VAR14]));
+void FUN4(char * VAR17, ...) {
+FUN4("%VAR16",VAR7->FUN5(VAR7->VAR8[VAR14]));

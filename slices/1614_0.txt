@@ -1,0 +1,9 @@
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+FUN1();
+FUN2();
+FUN3();
+CLASS1 * VAR1 = (CLASS1 *)malloc(sizeof(CLASS1));
+VAR1->VAR2 = (void *)VAR4;
+VAR1->VAR3[(sizeof(VAR1->VAR3)/sizeof(char))-1] = '\0';
+free(VAR1);

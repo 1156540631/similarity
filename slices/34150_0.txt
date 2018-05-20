@@ -1,0 +1,5 @@
+FUN52();
+FUN51();
+CLASS22 * CLASS21 = (CLASS22 *)malloc(sizeof(CLASS22));
+CLASS21->VAR64 = (void *)VAR63;
+memcpy(CLASS21->VAR62, VAR63, sizeof(CLASS21->VAR62));

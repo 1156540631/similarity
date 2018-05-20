@@ -1,0 +1,25 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&unmythical_tyrannisingly,"UNLEARNABLENESS_AMERINDIAN");
+if (unmythical_tyrannisingly != 0) {;
+unsimulating_pharyngoxerosis = ((int )(strlen(unmythical_tyrannisingly)));
+insectary_rightly = ((char *)(malloc(unsimulating_pharyngoxerosis + 1)));
+if (insectary_rightly == 0) {
+memcpy(insectary_rightly,unmythical_tyrannisingly,unsimulating_pharyngoxerosis);
+if (unmythical_tyrannisingly != 0)
+free(((char *)unmythical_tyrannisingly));
+photophonic_retool[5] = insectary_rightly;
+interstellar_elfins =  *(photophonic_retool +  *driers_neuromyelitis);
+if (interstellar_elfins != 0) {
+labourism_mispaint = ((char *)interstellar_elfins);
+if (strlen(labourism_mispaint) < 1) {
+stonesoup_set_function(labourism_mispaint, &stonesoup_my_foo);
+if (interstellar_elfins != 0)
+free(((char *)interstellar_elfins));
+void stonesoup_set_function(char *set_param_str,struct stonesoup_data_struct *set_param_data_struct)
+if (strlen(set_param_str) > 10U) {
+set_param_data_struct -> str_member = set_param_str;
+stonesoup_set_function(labourism_mispaint, &stonesoup_my_foo);
+stonesoup_val = (stonesoup_my_foo . func_member(stonesoup_my_foo . str_member));
+if (stonesoup_val == 0)

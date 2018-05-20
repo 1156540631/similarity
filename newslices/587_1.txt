@@ -1,0 +1,36 @@
+return VAR1;
+VAR2 = VAR3.FUN1(VAR4);
+VAR5.FUN2(VAR2->FUN3(), VAR4->FUN4());
+return VAR1 + FUN5(VAR6) + FUN5(VAR7);
+return sizeof(VAR8) + FUN5(VAR6) +
+return VAR9;
+VAR2 = VAR3.FUN1(VAR4);
+VAR5.FUN2(VAR2->FUN3(), VAR4->FUN4());
+FUN5(VAR7) + FUN5(VAR10);
+const char *VAR11;
+VAR4 = (VAR8 *)((char *)VAR12 + VAR12->FUN6());
+VAR4 = (VAR8 *)(VAR11 + FUN7(VAR13->VAR14));
+!VAR4->FUN8())
+if (((char *)VAR4 + VAR4->FUN6()) > VAR15 ||
+return VAR9;
+return VAR4;
+FUN9 ((VAR4 = VAR3.FUN10(VAR4))) {
+VAR5.FUN2(VAR2->FUN3(), VAR4->FUN4());
+return FUN7(VAR16);
+VAR17 VAR5;
+VAR5.FUN2(VAR2->FUN3(), VAR4->FUN4());
+const char *VAR18 = VAR5.FUN11();
+VAR19<VAR20> VAR21;
+VAR22 = strstr(VAR18, "\n");
+} FUN9 (VAR22 && *(VAR18 = VAR22 + 1));
+VAR22 = strstr(VAR18, "\n");
+VAR20 VAR23;
+sscanf(VAR18, "%d %d %d", &VAR24, &VAR25, &VAR26) == 3) {
+} else if (sscanf(VAR18, "VAR27 %d %d %s",
+&VAR23.VAR28, &VAR23.VAR29, VAR23.VAR30)) {
+VAR21.FUN12(VAR23);
+for (VAR31 VAR32 = 0; VAR32 < VAR21.FUN13(); VAR32++) {
+VAR20 &VAR23 = VAR21[VAR32];
+char VAR33[256];
+FUN14(VAR33, sizeof(VAR33), "%s/", VAR23.VAR30);
+if (VAR34.FUN15(VAR33) ||

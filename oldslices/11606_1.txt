@@ -1,0 +1,6 @@
+void * *dataPtr2 = &data;
+void * data = *dataPtr2;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));
+free(dest);

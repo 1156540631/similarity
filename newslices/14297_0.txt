@@ -1,0 +1,3 @@
+VAR1& operator=(const VAR1 &VAR2)
+this->VAR3 = new char[strlen(VAR2.VAR3) + 1];
+strcpy(this->VAR3, VAR2.VAR3);

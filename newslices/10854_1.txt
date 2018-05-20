@@ -1,0 +1,5 @@
+VAR1 = VAR2;
+VAR1 = (char *)malloc(10*sizeof(char));
+strcpy(VAR1, VAR3);
+FUN1(VAR1);
+free(VAR1);

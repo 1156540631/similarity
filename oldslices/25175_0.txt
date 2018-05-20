@@ -1,0 +1,17 @@
+int mexico_shellmonger = 596;
+char *quebracho_archpriesthood;
+stonesoup_read_taint(&quebracho_archpriesthood,"9440",mexico_shellmonger);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+euktolite_yamshik = ((int )(strlen(quebracho_archpriesthood)));
+repousse_casavant = ((char *)(malloc(euktolite_yamshik + 1)));
+memset(repousse_casavant,0,euktolite_yamshik + 1);
+memcpy(repousse_casavant,quebracho_archpriesthood,euktolite_yamshik);
+gnathonize_riverway(hmm_semitropics,repousse_casavant);
+void gnathonize_riverway(int orthographize_overdoes,char *garibaldi_unpitifulness)
+scylla_rachitomy = ((char *)garibaldi_unpitifulness);
+stonesoup_heap_buff_64[63] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+stonesoup_buff_size = ((int )(strlen(scylla_rachitomy)));
+strncpy(stonesoup_heap_buff_64, scylla_rachitomy, 64);

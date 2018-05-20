@@ -1,0 +1,9 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data = goodG2BSource(data);
+static wchar_t * goodG2BSource(wchar_t * data)
+data[50-1] = L'\0';
+return data;
+data = goodG2BSource(data);
+wchar_t dest[50] = L"";
+wcsncpy(dest, data, wcslen(data));

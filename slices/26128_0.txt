@@ -1,0 +1,69 @@
+VAR62 -> VAR94 = 1;
+VAR62 = VAR63[VAR56];
+FUN17(VAR63[VAR132 -> VAR139 + VAR74]);
+VAR63[VAR56] -> VAR85 = 0;
+if (FUN45(VAR87) < 0) {
+if (!FUN18()) {
+VAR59 = FUN13();
+VAR62 = FUN19();
+if (FUN20()) {
+FUN12();
+VAR86 = FUN24();
+int64_t VAR87 = FUN24();
+VAR59 = FUN13();
+FUN14(0,VAR86,VAR87);
+FUN21();
+FUN22();
+FUN23();
+FUN14(1,VAR86,FUN24());
+VAR62 = VAR63[VAR56];
+VAR71 = VAR62 -> VAR71;
+VAR72 = (VAR114 > 1?VAR71 / VAR114 : 0);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+VAR67(&VAR68,"frame=%VAR83\n",VAR71);
+VAR79 = (VAR64 -> VAR80 * VAR64 -> VAR81) * 255.0 * 255.0 * VAR71;
+VAR82 = FUN10(VAR78 / VAR79);
+FUN21();
+FUN22();
+FUN23();
+FUN14(1,VAR86,FUN24());
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"L");
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"VAR61=%2.1f ",VAR61);
+VAR67(&VAR68,"stream_%d_%d_q=%.1f\n",VAR62 -> VAR69,VAR62 -> VAR70,VAR61);
+VAR71 = VAR62 -> VAR71;
+VAR72 = (VAR114 > 1?VAR71 / VAR114 : 0);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+VAR67(&VAR68,"frame=%VAR83\n",VAR71);
+VAR67(&VAR68,"stream_%d_%d_q=%.1f\n",VAR62 -> VAR69,VAR62 -> VAR70,VAR61);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+static void FUN14(int VAR140,int64_t VAR86,int64_t VAR87)
+float VAR114 = ((VAR87 - VAR86) / 1000000.0);
+VAR72 = (VAR114 > 1?VAR71 / VAR114 : 0);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+static double FUN10(double VAR83)
+return - 10.0 * FUN11(VAR83) / FUN11(10.0);
+VAR82 = FUN10(VAR78 / VAR79);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"%VAR13:%2.2f ",VAR77[VAR74],VAR82);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"*:%2.2f ",FUN10(VAR75 / VAR76));
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"VAR61=%2.1f ",VAR61);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+static void FUN17(STRUCT3 *VAR62)
+if (!FUN18()) {
+VAR59 = FUN13();
+VAR62 = FUN19();
+if (FUN20()) {
+FUN12();
+VAR59 = FUN13();
+FUN14(0,VAR86,VAR87);
+FUN21();
+FUN22();
+FUN23();
+FUN14(1,VAR86,FUN24());
+VAR62 = VAR63[VAR56];
+VAR71 = VAR62 -> VAR71;
+VAR72 = (VAR114 > 1?VAR71 / VAR114 : 0);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+VAR67(&VAR68,"frame=%VAR83\n",VAR71);
+snprintf(VAR55 + strlen(VAR55),sizeof(VAR55) - strlen(VAR55),"frame=%5d VAR72=%3.*f VAR61=%3.1f ",VAR71,VAR72 < 9.95,VAR72,VAR61);
+static int FUN45(int64_t VAR87)
+FUN14(0,VAR86,VAR87);

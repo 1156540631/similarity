@@ -1,0 +1,22 @@
+FUN1(&VAR1,"WITTE_ANAEROPLASTY");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+if (VAR5 != 0) {
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+if (*VAR2 != 0) {
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+if (VAR5 != 0) {
+fclose(VAR5);
+if (VAR1 != 0) {;
+VAR8 = ((int )(strlen(VAR1)));
+VAR9 = ((char *)(malloc(VAR8 + 1)));
+if (VAR9 == 0) {
+memset(VAR9,0,VAR8 + 1);
+memcpy(VAR9,VAR1,VAR8);
+if (VAR1 != 0)
+free(((char *)VAR1));
+VAR10 = FUN3(VAR9);

@@ -1,0 +1,8 @@
+VAR1 = FUN1("PROCUMBENT_OXBRAKE");
+if (VAR1 != 0) {;
+VAR2 = &VAR1;
+VAR3 = ((char *)( *VAR2));
+sprintf(VAR4,VAR3);
+FUN2(VAR5, VAR6, "VAR4", VAR4, "VAR7-VAR8");
+FUN3("%s\n",VAR4);
+void FUN3(char * VAR9, ...) {

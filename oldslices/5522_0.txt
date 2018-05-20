@@ -1,0 +1,5 @@
+void stonesoup_handle_taint(char *unplated_imperiling)
+hystericky_noselite[5] = unplated_imperiling;
+nonvariably_fasteners(hystericky_noselite);
+void nonvariably_fasteners(char **const obtunding_electrolyzer)
+free(((char *)((char **)obtunding_electrolyzer)[5]));

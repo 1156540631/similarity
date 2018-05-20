@@ -1,0 +1,15 @@
+char * VAR1;
+vector<char *> VAR26;
+VAR1 = NULL;
+VAR1 = new char[50];
+VAR1[0] = '\0';
+VAR26.insert(VAR26.end(), 1, VAR1);
+VAR26.insert(VAR26.end(), 1, VAR1);
+VAR26.insert(VAR26.end(), 1, VAR1);
+FUN4(VAR26);
+void FUN4(vector<char *> VAR26)
+char * VAR1 = VAR26[2];
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncat(VAR1, VAR3, 100);

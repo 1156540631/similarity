@@ -1,0 +1,5 @@
+chameleonlike_unpicketed = circularism_unplump(amidships_corrivalry);
+reacts_liana(closemouthed_nonintercepting,chameleonlike_unpicketed);
+reacts_liana(waynant_nonenvious,thanatophobia_wini);
+void reacts_liana(int waynant_nonenvious,char **thanatophobia_wini)
+free(((char *)thanatophobia_wini[53]));

@@ -1,0 +1,20 @@
+int VAR5 = 1;
+int VAR6 = 0;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(VAR5)
+size_t VAR3 = strlen(VAR1);
+if (100-VAR3 > 1)
+if (fgets(VAR1+VAR3, (int)(100-VAR3), stdin) != NULL)
+VAR3 = strlen(VAR1);
+if (VAR3 > 0 && VAR1[VAR3-1] == '\n')
+VAR1[VAR3-1] = '\0';
+else
+VAR1[VAR3] = '\0';
+if(VAR5)
+FUN1(VAR1, VAR1);
+static void FUN1(char * VAR1, ...)
+va_list VAR4;
+va_start(VAR4, VAR1);
+vfprintf(stdout, "%s", VAR4);
+va_end(VAR4);

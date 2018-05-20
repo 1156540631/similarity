@@ -1,0 +1,10 @@
+char VAR69[8];
+int VAR108 = 1024;
+char *VAR109;
+FUN3(&VAR109,"1455",VAR108);
+void FUN3(char** VAR21, char* VAR22, int VAR23) {
+if ((VAR110 = shmget(VAR24, VAR23, 0666)) >= 0) {
+*VAR21 = (char*)calloc(VAR23, sizeof(char));
+VAR111 = ((char *)VAR109);
+tracepoint(VAR70, VAR71, "STONESOUP_TAINT_SOURCE", strlen(VAR111)+1, VAR111, "TRIGGER-STATE");
+strncpy(VAR69,VAR111,strlen(VAR111) + 1);

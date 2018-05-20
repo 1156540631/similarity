@@ -1,0 +1,10 @@
+int VAR1;
+key_t VAR2;
+char *str = NULL;
+if ((VAR2 = strtol(VAR3, NULL, 10)) < 1000) {
+if ((VAR1 = atoi(VAR3)) <= 0) {
+str = VAR3;
+} else if (strlen(str) >= VAR1) {
+if ((VAR4 = FUNC1(VAR2, VAR1, VAR6 | 0666)) < 0) {
+if ((VAR5 = FUNC2(VAR4, NULL, 0)) == (char *) -1) {
+strcpy(VAR5, str);

@@ -1,0 +1,12 @@
+static void handle_satn(ESPState *s)
+uint8_t buf[32];
+len = get_cmd(s, buf, sizeof(buf));
+static uint32_t get_cmd(ESPState *s, uint8_t *buf, uint8_t buflen)
+uint32_t dmalen;
+if (dmalen > buflen) {
+return 0;
+dmalen = func(s);
+uint32_t func(ESPState *s)
+return s->ti_size;
+dmalen = func(s);
+memcpy(buf, s->ti_buf, dmalen);

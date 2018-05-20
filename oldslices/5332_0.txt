@@ -1,0 +1,3 @@
+goosebone_nynex = getenv("UPCURVED_JUNCTION");
+heteromorphae_vetiveria = ((int )(strlen(goosebone_nynex)));
+disdainfulness_allness = ((char *)(malloc(heteromorphae_vetiveria + 1)));

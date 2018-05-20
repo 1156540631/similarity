@@ -1,0 +1,5 @@
+CLASS1 *VAR6,
+VAR1       = FUN1(VAR6);
+VAR3    = calloc(VAR1, VAR6->VAR7);
+FUN2(VAR6, 0, VAR2, VAR6->VAR7, VAR3);
+free(VAR3);

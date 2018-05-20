@@ -1,0 +1,5 @@
+cups_image_t *img,
+bpp       = cupsImageGetDepth(img);
+pixels    = calloc(bpp, img->xsize);
+_cupsImagePutRow(img, 0, ypos, img->xsize, pixels);
+free(pixels);

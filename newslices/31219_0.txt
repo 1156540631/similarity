@@ -1,0 +1,11 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+static const int VAR3 = 1;
+static const int VAR4 = 0;
+char * VAR5;
+char VAR6[10];
+char VAR7[10+1];
+if(VAR3)
+VAR5 = VAR7;
+VAR5[0] = '\';
+char VAR8[10+1] = VAR2;
+memcpy(VAR5, VAR8, (strlen(VAR8) + 1) * sizeof(char));

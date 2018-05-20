@@ -1,0 +1,5 @@
+VAR252 = getenv("SILKWORKER_REFORMER");
+if (VAR252 != 0) {;
+VAR253 = VAR252;
+FUN76(1,VAR253);
+void FUN76(int VAR254,... );

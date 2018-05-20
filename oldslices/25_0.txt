@@ -1,0 +1,6 @@
+int rv = ReadMaintenanceServiceStrings(updaterINIPath, &serviceStrings);
+MaintenanceServiceStringTable *results)
+results->serviceDescription[MAX_TEXT_LEN - 1] = '\0';
+MaintenanceServiceStringTable serviceStrings;
+int rv = ReadMaintenanceServiceStrings(updaterINIPath, &serviceStrings);
+if (rv != OK || !strlen(serviceStrings.serviceDescription)) {

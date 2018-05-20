@@ -1,0 +1,3 @@
+VAR23 = split(VAR126[VAR24],"=",&VAR25);
+if (strcasecmp("VAR124",VAR23[1]) == 0) {
+VAR44 = strcpy((xmalloc(strlen(VAR23[1]) + 1)),VAR23[1]);

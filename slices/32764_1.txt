@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+wchar_t VAR2[10];
+VAR1 = VAR2;
+VAR1[0] = L'\0';
+CLASS18* CLASS6 = new CLASS17;
+void CLASS17::FUN13(wchar_t * VAR1)
+wchar_t VAR4[10+1] = VAR30;
+wcscpy(VAR1, VAR4);

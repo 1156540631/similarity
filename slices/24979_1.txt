@@ -1,0 +1,19 @@
+rewind(VAR54);
+VAR57 = fread(*VAR6,1,VAR56,VAR54);
+*VAR6 = NULL;
+char VAR63[64];
+char *VAR64;
+FUNC1(&VAR64,"WHOOPLAS_PLUFFY");
+VAR66 = ((char *)VAR64);
+memset(VAR63,0,64);
+FUNC18(VAR50, VAR67, "VAR63", VAR63, "INITIAL-STATE");
+strcpy(VAR63,VAR66);
+void FUNC1(char** VAR6, char* VAR55) {
+VAR53 = getenv(VAR55);
+VAR54 = fopen(VAR53,"rb");
+fseek(VAR54,0L,2);
+VAR56 = ftell(VAR54);
+*VAR6 = ((char *)(malloc(sizeof(char ) * (VAR56 + 1))));
+FUNC1(&VAR64,"WHOOPLAS_PLUFFY");
+VAR66 = ((char *)VAR64);
+strcpy(VAR63,VAR66);

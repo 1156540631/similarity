@@ -1,0 +1,14 @@
+#define VAR8 L"AAAAAAAAAA"
+typedef struct CLASS1
+wchar_t * VAR37;
+} CLASS2;
+wchar_t * VAR1;
+CLASS2 VAR38;
+VAR1 = NULL;
+VAR1 = (wchar_t *)malloc(10*sizeof(wchar_t));
+VAR38.VAR37 = VAR1;
+FUN2(VAR38);
+void FUN2(CLASS2 VAR38)
+wchar_t * VAR1 = VAR38.VAR37;
+wchar_t VAR9[10+1] = VAR8;
+wcsncpy(VAR1, VAR9, wcslen(VAR9) + 1);

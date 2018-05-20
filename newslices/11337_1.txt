@@ -1,0 +1,4 @@
+void VAR1::FUN1(char * VAR2)
+strncpy(VAR2, VAR3, strlen(VAR3) + 1);
+FUN2(VAR2);
+free(VAR2);

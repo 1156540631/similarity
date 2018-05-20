@@ -1,0 +1,7 @@
+void incognizable_jiggliest(void *ringed_antigene)
+estab_bondship = ((char *)((char *)ringed_antigene));
+stonesoup_fp = stonesoup_switch_func(estab_bondship);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

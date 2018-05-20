@@ -1,0 +1,14 @@
+#VAR1 VAR2 VAR3"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#VAR1 VAR4 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+VAR5 = VAR6;
+switch(6)
+case 6:
+VAR5 = (void *)VAR2;
+break;
+default:
+break;
+switch(7)
+case 7:
+VAR7 VAR8 = strlen((char *)VAR5);
+void * VAR9 = (void *)calloc(VAR8+1, 1);
+memcpy(VAR9, VAR5, (VAR8+1));

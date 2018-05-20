@@ -1,0 +1,6 @@
+main(int argc, char **argv)
+userstr = argv[1];
+if(strlen(userstr) < MAXSIZE - 3)
+test(userstr);
+test(char *str)
+sprintf(buf, "<%s>", str);

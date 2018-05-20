@@ -1,0 +1,5 @@
+char *VAR1 = calloc( VAR2, 1 );
+VAR2, VAR3, 0, VAR3, 0 )
+if( FUN1( VAR4, VAR5, VAR1,
+FUN2( VAR6, strdup( VAR1 ) );
+free( VAR1 );

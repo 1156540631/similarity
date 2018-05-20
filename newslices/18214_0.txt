@@ -1,0 +1,14 @@
+VAR1<char *> VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR4 = VAR3;
+memset(VAR4, '', 50-1);
+VAR4[50-1] = '\';
+VAR2.FUN2(VAR2.FUN3(), 1, VAR4);
+VAR2.FUN2(VAR2.FUN3(), 1, VAR4);
+VAR2.FUN2(VAR2.FUN3(), 1, VAR4);
+FUN4(VAR2);
+char VAR5[50] = "";
+strcpy(VAR5, VAR4);
+void FUN4(VAR1<char *> VAR2)
+char * VAR4 = VAR2[2];
+strcpy(VAR5, VAR4);

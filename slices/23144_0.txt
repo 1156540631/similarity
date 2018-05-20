@@ -1,0 +1,20 @@
+VAR1 = (getenv("VISUAL"));
+if (!VAR1) {
+if (!VAR1) {
+if (VAR1) {
+for (VAR2 = VAR1;  *VAR2; VAR2++)
+if (!( *VAR2)) {
+*VAR4 = VAR1;
+svn_error_t *VAR3 = FUNC2(&VAR4,VAR4_VAR7,VAR6);
+VAR7 = (FUNC41(VAR6,"%s %s",VAR4,VAR8));
+VAR5 = system(VAR7);
+if (VAR5) {
+return FUNC42(VAR4,((void *)0),(FUNC43("subversion","system('%s') returned %d")),VAR7,VAR5);
+svn_error_t *VAR3 = FUNC2(&VAR4,VAR4_VAR7,VAR6);
+VAR7 = (FUNC41(VAR6,"%s %s",VAR4,tmpVAR35_native));
+VAR5 = system(VAR7);
+if (VAR5 != 0) {
+VAR8 = FUNC42(VAR4,((void *)0),(FUNC43("subversion","system('%s') returned %d")),VAR7,VAR5);
+if (!VAR8 && VAR9) {
+return VAR8;
+static svn_error_t *FUNC2(const char **VAR4,const char *VAR4_VAR7,apr_hash_t *VAR6)

@@ -1,0 +1,24 @@
+stonesoup_read_taint(&rld_bushido,"REVERTIBILITY_MER");
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+if (stonesoup_tainted_file != 0) {
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+if (*stonesoup_tainted_buff != 0) {
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+if (rld_bushido != 0) {;
+cotuit_propos[10] = rld_bushido;
+vallecula_serc = cotuit_propos;
+barnful_admixture(brennschluss_janok,vallecula_serc);
+void barnful_admixture(int sauncier_sizably,char **dampcourse_cetiosauria)
+extund_quantitively = ((char *)dampcourse_cetiosauria[10]);
+stonesoup_my_buff_size = ((int )(strlen(extund_quantitively)));
+for (; stonesoup_ss_i < stonesoup_my_buff_size; ++stonesoup_ss_i){
+stonesoup_printf("%c",stonesoup_stack_buff_64[stonesoup_ss_i]);
+if (dampcourse_cetiosauria[10] != 0)
+free(((char *)dampcourse_cetiosauria[10]));

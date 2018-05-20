@@ -1,0 +1,2 @@
+char* VAR1="VAR2 VAR3";
+for(VAR4=0;VAR4<strlen(VAR1);VAR4++)

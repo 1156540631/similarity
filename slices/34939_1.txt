@@ -1,0 +1,16 @@
+char * VAR1;
+VAR1 = NULL;
+VAR1 = new char[50];
+VAR1[0] = '\0';
+FUN10(VAR1);
+void FUN10(char * VAR1)
+FUN11(VAR1);
+void FUN11(char * VAR1)
+FUN13(VAR1);
+void FUN13(char * VAR1)
+FUN14(VAR1);
+void FUN14(char * VAR1)
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+SNPRINTF(VAR1, 100, "%s", VAR3);

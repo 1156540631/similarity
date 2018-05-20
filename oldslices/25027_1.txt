@@ -1,0 +1,4 @@
+void salmonellae_brachycranic(char **quercetum_besa)
+squushy_admonitory = ((char *)quercetum_besa[34]);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(squushy_admonitory)+1, squushy_admonitory, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, squushy_admonitory, strlen(squushy_admonitory) + 1);

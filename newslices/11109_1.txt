@@ -1,0 +1,4 @@
+VAR1 = VAR2;
+VAR1=5;
+return VAR1;
+VAR3 = (CLASS1 * )malloc(FUN1(0)*sizeof( CLASS1 ));

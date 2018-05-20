@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+minorage_roger = ((int )(strlen(salep_retransmited)));
+glutinose_mesolgion = ((char *)(malloc(minorage_roger + 1)));
+memset(glutinose_mesolgion,0,minorage_roger + 1);
+memcpy(glutinose_mesolgion,salep_retransmited,minorage_roger);
+worldman_taxables = &glutinose_mesolgion;
+free(((char *)( *worldman_taxables)));
+void stonesoup_handle_taint(char *salep_retransmited)
+minorage_roger = ((int )(strlen(salep_retransmited)));
+memcpy(glutinose_mesolgion,salep_retransmited,minorage_roger);
+worldman_taxables = &glutinose_mesolgion;
+free(((char *)( *worldman_taxables)));

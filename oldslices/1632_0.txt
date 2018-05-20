@@ -1,0 +1,5 @@
+char *deseret_muhlenberg = 0;
+feture_tanta(indigenismo_unquested,deseret_muhlenberg);
+feture_tanta(azoblack_backchain,paraxial_huelessness);
+void feture_tanta(int azoblack_backchain,char *paraxial_huelessness)
+free(((char *)paraxial_huelessness));

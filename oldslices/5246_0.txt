@@ -1,0 +1,6 @@
+data[0] = '\0';
+return data;
+data = goodG2BSource(data);
+strncat(data, source, 100);
+printLine(data);
+free(data);

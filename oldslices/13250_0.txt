@@ -1,0 +1,38 @@
+static void * AnimationThread(void *)
+do {
+end = strstr(line, "\n");
+AnimationPart part;
+if (headerRead &&
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+headerRead = false;
+} else if (part.ReadFromString(line)) {
+parts.push_back(part);   }
+} while (end && *(line = end + 1));
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+entry = nullptr;
+char search[256];
+snprintf(search, sizeof(search), "%s/", part.path);
+while ((entry = reader.GetNextEntry(entry))) {
+string name = reader.GetEntryName(entry);
+if (name.find(search) ||
+!entry->GetDataSize() ||
+name.length() >= 256)
+continue;
+part.frames.push_back();
+AnimationFrame &frame = part.frames.back();
+strcpy(frame.path, name.c_str());
+frame.file = reader.GetLocalEntry(entry);
+sort(part.frames.begin(), part.frames.end());}
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+uint32_t j = 0;
+while (sRunAnimation && (!part.count || j++ < part.count)) {
+for (uint32_t k = 0; k < part.frames.size(); k++) {
+AnimationFrame &frame = func(part, &k);
+AnimationFrame func(AnimationPart& part, uint32_t *k)
+return part.frames[*k];
+AnimationFrame &frame = func(part, &k);
+ANativeWindowBuffer *buf = display->DequeueBuffer();
+wchar_t bgfill = AsBackgroundFill(frame.bgcolor, format);
+wmemset((wchar_t*)vaddr, bgfill, (buf->height * buf->stride * frame.bytepp) / sizeof(wchar_t));

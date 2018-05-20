@@ -1,0 +1,6 @@
+char **sbuffer,
+char **buffer,
+assert(*sbuffer != NULL || buffer != NULL);
+memcpy(*buffer, *sbuffer, *currlen);
+*sbuffer = NULL;
+assert(*sbuffer != NULL);

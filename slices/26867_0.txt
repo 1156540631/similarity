@@ -1,0 +1,2 @@
+VAR392 = 0;
+printf("include: read error: %VAR1\VAR7", errstring(VAR392));

@@ -1,0 +1,11 @@
+data = 20;
+dataArray[2] = data;
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_66b_goodG2BSink(dataArray);
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_66b_goodG2BSink(int dataArray[])
+int data = dataArray[2];
+intPointer = (int*)malloc(data * sizeof(int));
+printIntLine(intPointer[0]);
+free(intPointer);

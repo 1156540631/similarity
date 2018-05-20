@@ -1,0 +1,4 @@
+int *buf=(int*) calloc(5,sizeof(int));
+buf[i]=1;
+ret = buf[0];
+printf("%d",ret);

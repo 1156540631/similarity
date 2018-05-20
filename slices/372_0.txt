@@ -1,0 +1,6 @@
+! memcmp( &VAR3.VAR1[1], "FLAC", 4 ) &&
+! memcmp( &VAR3.VAR1[9], "fLaC", 4 ) )
+! memcmp( VAR3.VAR1, "\x80theora", 7 ) )
+! memcmp( VAR3.VAR1, "\x01vorbis", 7 ) )
+! memcmp( VAR3.VAR1, "Speex", 5 ) )
+! memcmp( VAR3.VAR1, "fLaC", 4 ) )

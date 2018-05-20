@@ -1,0 +1,36 @@
+s = p+3;
+&& isxdigit(*p) && isxdigit(*q) &&
+isxdigit(*r) && isxdigit(*s)) {
+punct = s + 1;
+if (is_byte_sep(*punct)) {
+p = punct;
+else if (*q && isxdigit(*p) && isxdigit(*q)) {
+punct = q + 1;
+p = punct;
+p = q;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+if (is_byte_sep(*punct)) {
+else if (*q && isxdigit(*p) && is_byte_sep(*q)) {
+p = q;
+&& isxdigit(*p) && isxdigit(*q) &&
+hex_str_to_bytes(const char *hex_str, GByteArray *bytes, gboolean force_separators) {
+p = (const guchar *)hex_str;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+p = q + 1;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+is_byte_sep(guint8 c)
+if (is_byte_sep(*punct)) {
+p = punct;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+if (is_byte_sep(*punct)) {
+p = punct;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&
+else if (*q && isxdigit(*p) && is_byte_sep(*q)) {
+p = q;
+q = p+1;
+&& isxdigit(*p) && isxdigit(*q) &&

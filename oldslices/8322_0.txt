@@ -1,0 +1,5 @@
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+good1();
+good2();
+if(staticReturnsTrue())
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));

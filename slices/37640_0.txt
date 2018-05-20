@@ -1,0 +1,4 @@
+fscanf(stdin, "%d", &VAR1);
+CLASS2.FUN1(VAR1);
+if (VAR1 >= 0 && VAR1 < (10))
+VAR2[VAR1] = 1;

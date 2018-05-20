@@ -1,0 +1,4 @@
+data[0] = L'\0';
+wcscpy(data, source);
+printWLine(data);
+free(data);

@@ -1,0 +1,13 @@
+static int Read( stream_t *s, void *p_read, unsigned int i_read )
+unsigned * dataArray[5]
+dataArray[2] = i_len;
+stream_sys_t *p_sys = s->p_sys;
+if( Fill( s ) )
+return -1;
+i_len = badSouce(dataArray)
+void badSouce(int *dataArray[])
+unsigned * i_len = dataArray[2]
+unsigned i_len = __MIN( i_read, p_sys->i_len - p_sys->i_pos );
+return i_len
+if( p_read )
+memcpy( p_read, p_sys->psz_xspf + p_sys->i_pos, i_len );

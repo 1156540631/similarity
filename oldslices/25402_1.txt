@@ -1,0 +1,13 @@
+arided_devotionalist = getenv("MADEGASSY_DEVOTIONALITY");
+if (arided_devotionalist != 0) {;
+tylosoid_keeve = ((char *)arided_devotionalist);
+stonesoup_fp = stonesoup_switch_func(tylosoid_keeve);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+if (var_len == 0) {
+else if (var_len == 1) {
+sscanf(param,"%p",&fct_ptr_addr);
+return fct_ptr_addr;
+stonesoup_fp = stonesoup_switch_func(tylosoid_keeve);
+tracepoint(stonesoup_trace, variable_address, "stonesoup_fp", stonesoup_fp, "TRIGGER-STATE");
+stonesoup_cmp_flag = ( *stonesoup_fp)(stonesoup_rand_word,tylosoid_keeve);

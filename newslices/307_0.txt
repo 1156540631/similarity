@@ -1,0 +1,46 @@
+unsigned short VAR1;
+FUN1(VAR2, VAR1);
+VAR3->FUN2(VAR3, 1, VAR4, VAR2, VAR1, VAR3->VAR5);
+if (!FUN3(VAR2, VAR1)) {
+if (!FUN4(VAR3, VAR2, VAR1, VAR6))
+if (FUN5(VAR3, VAR2, VAR1, VAR6))
+VAR2 += VAR1;
+FUN1(VAR2, VAR4);
+FUN1(VAR2, VAR1);
+unsigned char *VAR7 = VAR2;
+int VAR8 = *(VAR7++);
+FUN6(VAR8)) == VAR9) {
+VAR8);
+int FUN7(CLASS1 *VAR3, unsigned char **VAR10, unsigned char *VAR11,
+unsigned char *VAR2 = *VAR10;
+FUN1(VAR2, VAR12);
+FUN1(VAR2, VAR4);
+FUN1(VAR2, VAR1);
+unsigned char *VAR7 = VAR2;
+int VAR8 = *(VAR7++);
+FUN6(VAR8)) == VAR9) {
+VAR8);
+!VAR3->FUN8(VAR3, VAR2, VAR1,
+VAR2 += VAR1;
+FUN1(VAR2, VAR4);
+FUN1(VAR2, VAR1);
+unsigned char *VAR7 = VAR2;
+int VAR8 = *(VAR7++);
+FUN6(VAR8)) == VAR9) {
+VAR8);
+static char FUN3(unsigned char *VAR11, unsigned VAR13)
+VAR14->FUN9(VAR3, &VAR15, &VAR16, VAR2,
+FUN1(VAR2, VAR4);
+FUN1(VAR2, VAR1);
+unsigned char *VAR7 = VAR2;
+int VAR8 = *(VAR7++);
+FUN6(VAR8)) == VAR9) {
+VAR8);
+VAR1,
+VAR2 += VAR1;
+FUN1(VAR2, VAR4);
+FUN1(VAR2, VAR1);
+unsigned char *VAR7 = VAR2;
+int VAR8 = *(VAR7++);
+FUN6(VAR8)) == VAR9) {
+VAR8);

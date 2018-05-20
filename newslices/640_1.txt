@@ -1,0 +1,11 @@
+VAR1 VAR2[VAR3 + 1];
+if (!FUN1(VAR4"PostUpdateWin", VAR4"ExeArg", VAR5, VAR2,
+VAR1 VAR6[14];
+FUN2(VAR6, VAR4"argv0ignored ");
+VAR7 VAR8 = FUN3(VAR2) + FUN3(VAR6);
+VAR1 *VAR9 = (VAR1 *) malloc((VAR8 + 1) * sizeof(VAR1));
+FUN2(VAR9, VAR6);
+FUN4(VAR9, VAR2);
+VAR9,
+VAR9,
+free(VAR9);

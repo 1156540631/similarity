@@ -1,0 +1,5 @@
+int * buffer = (int *)malloc(10 * sizeof(int));
+buffer[i] = 0;
+buffer[data] = 1;
+printIntLine(buffer[i]);
+free(buffer);

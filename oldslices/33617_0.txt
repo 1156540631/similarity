@@ -1,0 +1,11 @@
+wchar_t * data;
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataGoodBuffer;
+data[0] = L'\0';
+dataArray[2] = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_66b_goodG2BSink(dataArray);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_declare_ncpy_66b_goodG2BSink(wchar_t * dataArray[])
+wchar_t * data = dataArray[2];
+wcsncpy(data, source, 100-1);

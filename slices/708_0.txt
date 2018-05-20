@@ -1,0 +1,22 @@
+rewind(VAR1);
+VAR4 = fread(*VAR2,1,VAR3,VAR1);
+*VAR2 = NULL;
+char *VAR5;
+FUN1(&VAR5,"CASUISTICAL_RESTIACEOUS");
+VAR6 = ((void *)VAR5);
+VAR7[5] = VAR6;
+VAR8 = 5;
+VAR9 = &VAR8;
+VAR10 =  *(VAR7 +  *VAR9);
+free(((char *)((char *)VAR10)));
+void FUN1(char** VAR2, char* VAR11) {
+VAR12 = getenv(VAR11);
+VAR1 = fopen(VAR12,"rb");
+fseek(VAR1,0L,2);
+VAR3 = ftell(VAR1);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR3 + 1))));
+FUN1(&VAR5,"CASUISTICAL_RESTIACEOUS");
+VAR6 = ((void *)VAR5);
+VAR7[5] = VAR6;
+VAR10 =  *(VAR7 +  *VAR9);
+free(((char *)((char *)VAR10)));

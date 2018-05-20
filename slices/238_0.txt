@@ -1,0 +1,3 @@
+char FUN2[400];
+PR_snprintf(FUN2, sizeof(FUN2),
+printf("%FUN2\n", FUN2);

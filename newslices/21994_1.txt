@@ -1,0 +1,3 @@
+VAR1[sizeof VAR1 - 1] = '\';
+strncat(VAR1, " = ", sizeof VAR1 - strlen(VAR1) - 1);
+strcat(VAR1, VAR2[2]);

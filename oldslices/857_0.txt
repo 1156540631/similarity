@@ -1,0 +1,5 @@
+void badSink(vector<char *> dataVector)
+char * data = dataVector[2];
+strncpy(dest, data, strlen(data));
+printLine(data);
+free(data);

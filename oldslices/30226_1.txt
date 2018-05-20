@@ -1,0 +1,15 @@
+int data;
+int dataArray[5];
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+dataArray[2] = data;
+CWE126_Buffer_Overread__CWE129_connect_socket_66b_badSink(dataArray);
+void CWE126_Buffer_Overread__CWE129_connect_socket_66b_badSink(int dataArray[])
+int data = dataArray[2];
+int buffer[10] = { 0 };
+if (data >= 0)
+printIntLine(buffer[data]);

@@ -1,0 +1,9 @@
+myelomatosis_bilbao = getenv("FAILURES_DEHISCES");
+if (myelomatosis_bilbao != 0) {;
+ebcdic_aralu = ((char *)myelomatosis_bilbao);
+for (stonesoup_i = 0; stonesoup_i < strlen(ebcdic_aralu); ++stonesoup_i) {
+s
+ebcdic_aralu[stonesoup_i],
+stonesoup_data->buffer[(int) ebcdic_aralu[stonesoup_i]]);
+tracepoint(stonesoup_trace, variable_signed_integral, "((int) STONESOUP_TAINT_SOURCE[stonesoup_i])", ((int) ebcdic_aralu[stonesoup_i]), &(ebcdic_aralu[stonesoup_i]), "TRIGGER-STATE");
+void stonesoup_printf(char * format, ...) {

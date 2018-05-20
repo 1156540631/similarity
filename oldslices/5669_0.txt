@@ -1,0 +1,13 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int bullboat_saccharulmin = 20;
+char *masuren_berendo;;
+stonesoup_read_taint(&masuren_berendo,"2967",bullboat_saccharulmin);
+limace_worthier[22] = masuren_berendo;
+free(((char *)limace_worthier[22]));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&masuren_berendo,"2967",bullboat_saccharulmin);
+limace_worthier[22] = masuren_berendo;
+free(((char *)limace_worthier[22]));

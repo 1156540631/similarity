@@ -1,0 +1,10 @@
+#define SRC_STRING "AAAAAAAAAA"
+static const int STATIC_CONST_FIVE = 5;
+char * data;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+if(STATIC_CONST_FIVE==5)
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

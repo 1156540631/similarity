@@ -1,0 +1,11 @@
+CWE122_Heap_Based_Buffer_Overflow__CWE135_67_structType myStruct;
+dataBadBuffer[50-1] = L'\0';
+data = (void *)dataBadBuffer;
+myStruct.structFirst = data;
+CWE122_Heap_Based_Buffer_Overflow__CWE135_67b_goodB2GSink(myStruct);
+void CWE122_Heap_Based_Buffer_Overflow__CWE135_67b_goodB2GSink(CWE122_Heap_Based_Buffer_Overflow__CWE135_67_structType myStruct)
+void * data = myStruct.structFirst;
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+free(dest);

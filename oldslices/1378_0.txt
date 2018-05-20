@@ -1,0 +1,28 @@
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+rewind(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *valeted_epitaphize;
+stonesoup_read_taint(&valeted_epitaphize,"NONIMMIGRANT_QUINCUNXES");
+overtaxation_tantaluses = ((int )(strlen(valeted_epitaphize)));
+gloom_ungnawed = ((char *)(malloc(overtaxation_tantaluses + 1)));
+memset(gloom_ungnawed,0,overtaxation_tantaluses + 1);
+memcpy(gloom_ungnawed,valeted_epitaphize,overtaxation_tantaluses);
+acondylose_cigarillos = &gloom_ungnawed;
+SAGGIER_OUTRAKE(acondylose_cigarillos);
+void relata_watertightness(char **bentonville_semisilica)
+free(((char *)( *bentonville_semisilica)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&valeted_epitaphize,"NONIMMIGRANT_QUINCUNXES");
+overtaxation_tantaluses = ((int )(strlen(valeted_epitaphize)));
+memcpy(gloom_ungnawed,valeted_epitaphize,overtaxation_tantaluses);
+acondylose_cigarillos = &gloom_ungnawed;
+SAGGIER_OUTRAKE(acondylose_cigarillos);

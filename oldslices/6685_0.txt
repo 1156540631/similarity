@@ -1,0 +1,21 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+union colloquialize_phillipp bloomington_natureliked;
+starer_angelizing[5] = bloomington_natureliked;
+caryville_barge = 5;
+mucidity_whelms = &caryville_barge;
+taylorsville_urodele =  *(starer_angelizing +  *mucidity_whelms);
+free(((char *)taylorsville_urodele . postramus_trueblue));
+void stonesoup_handle_taint(char *middleness_maelstrom)
+bloomington_natureliked . postramus_trueblue = middleness_maelstrom;
+taylorsville_urodele =  *(starer_angelizing +  *mucidity_whelms);
+free(((char *)taylorsville_urodele . postramus_trueblue));

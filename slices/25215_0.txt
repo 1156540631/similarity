@@ -1,0 +1,10 @@
+char VAR35[1025];
+VAR36 = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR37 = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR18 = strcpy((xmalloc(strlen(VAR1[1]) + 1)),VAR1[1]);
+VAR37 = strcpy((xmalloc(strlen("\033[") + 1)),"\033[");
+VAR18 = strcpy((xmalloc(strlen("m") + 1)),"m");
+VAR36 = strcpy((xmalloc(strlen("00") + 1)),"00");
+VAR4 = strcpy((xmalloc(strlen(VAR35) + 1)),VAR35);
+sprintf(VAR35,"%VAR12%VAR12%VAR12",VAR37,VAR36,VAR18);
+VAR4 = strcpy((xmalloc(strlen(VAR35) + 1)),VAR35);

@@ -1,0 +1,5 @@
+detonate_dishonorably = getenv("MYOXIDAE_DEVOUTLESSNESS");
+if (detonate_dishonorably != 0) {;
+reverdure_akutagawa = ((void *)detonate_dishonorably);
+illiteracy_shivery(reverdure_akutagawa);
+void illiteracy_shivery(void *unshattered_sauterne);

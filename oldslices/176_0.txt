@@ -1,0 +1,37 @@
+path->data = NULL;
+path->size = 0;
+path->data = NULL;
+path->size = 0;
+err = v9fs_co_open(pdu, f, f->open_flags);
+err = v9fs_co_opendir(pdu, f);
+for (f = s->fid_list; f; f = f->next) {
+BUG_ON(f->clunked);
+f->ref++;
+err = v9fs_reopen_fid(pdu, f);
+return NULL;
+f->flags |= FID_REFERENCED;
+return f;
+return NULL;
+fidp = get_fid(pdu, fid);
+err = v9fs_co_lstat(pdu, &fidp->path, &stbuf);
+err = stat_to_v9stat(pdu, &fidp->path, &stbuf, &v9stat);
+V9fsPath path;
+v9fs_path_init(&path);
+err = stat_to_v9stat(pdu, &path, &stbuf, &v9stat);
+v9fs_path_free(&path);
+err = v9fs_co_lstat(pdu, &path, &stbuf);
+err = v9fs_co_name_to_path(pdu, &fidp->path, dent->d_name, &path);
+v9fs_path_init(&path);
+static int stat_to_v9stat(V9fsPDU *pdu, V9fsPath *name,
+str = strrchr(name->data, '/');
+void v9fs_path_init(V9fsPath *path)
+v9fs_path_init(&path);
+err = stat_to_v9stat(pdu, &path, &stbuf, &v9stat);
+static int v9fs_reopen_fid(V9fsPDU *pdu, V9fsFidState *f)
+err = v9fs_reopen_fid(pdu, f);
+return f;
+fidp = get_fid(pdu, fid);
+err = stat_to_v9stat(pdu, &fidp->path, &stbuf, &v9stat);
+void v9fs_path_free(V9fsPath *path)
+v9fs_path_free(&path);
+err = stat_to_v9stat(pdu, &path, &stbuf, &v9stat);

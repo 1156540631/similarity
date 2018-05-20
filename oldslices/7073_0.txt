@@ -1,0 +1,4 @@
+void shinbone_luxembourg(void **oothecal_semiresiny)
+shorteners_fungated(oothecal_semiresiny);
+void shorteners_fungated(void **bargainee_trehala)
+free(((char *)((char *)( *(bargainee_trehala - 5)))));

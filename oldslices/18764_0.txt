@@ -1,0 +1,7 @@
+data = NULL;
+if(STATIC_CONST_TRUE)
+printLine("Benign, fixed string");
+else
+data = new char[10+1];
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

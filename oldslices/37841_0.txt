@@ -1,0 +1,10 @@
+void * data;
+void (*funcPtr) (void *) = CWE122_Heap_Based_Buffer_Overflow__CWE135_65b_goodG2BSink;
+data = NULL;
+char * dataGoodBuffer = (char *)malloc(50*sizeof(char));
+memset(dataGoodBuffer, 'A', 50-1);
+dataGoodBuffer[50-1] = '\0';
+data = (void *)dataGoodBuffer;
+funcPtr(data);
+void CWE122_Heap_Based_Buffer_Overflow__CWE135_65b_goodG2BSink(void * data)
+size_t dataLen = strlen((char *)data);

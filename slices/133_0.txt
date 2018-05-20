@@ -1,0 +1,7 @@
+void FUN1( CLASS1 *VAR1 )
+CLASS2 *VAR2 = VAR1->VAR2;
+FUN2( VAR2->VAR3 );
+free( VAR2->VAR4 );
+free( VAR2->VAR5 );
+free( VAR2->VAR16 );
+free( VAR2 );

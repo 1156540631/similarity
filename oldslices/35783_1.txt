@@ -1,0 +1,7 @@
+wchar_t dataBuffer[100];
+data = dataBuffer;
+data[100-1] = L'\0';
+wchar_t * dataCopy = data;
+wchar_t * data = dataCopy;
+wchar_t dest[50] = L"";
+wcsncat(dest, data, wcslen(data));

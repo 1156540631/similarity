@@ -1,0 +1,16 @@
+static void parse_forced_key_frames(char *kf,OutputStream *ost,AVCodecContext *avctx)
+pts[index++] = av_rescale_q(c -> start,c -> time_base,avctx -> time_base) + t;
+char error[1024];
+ost = output_streams[i];
+ist = get_input_stream(ost);
+ost -> enc = avcodec_find_encoder(codec -> codec_id);
+snprintf(error,sizeof(error),"Encoder (codec %s) not found for output stream #%d:%d",avcodec_get_name(ost -> st -> codec -> codec_id),ost -> file_index,ost -> index);
+int idx = av_find_nearest_q_idx(ost -> frame_rate,ost -> enc -> supported_framerates);
+ist = get_input_stream(ost);
+parse_forced_key_frames(ost -> forced_keyframes,ost,ost -> st -> codec);
+snprintf(error,sizeof(error),"Encoder (codec %s) not found for output stream #%d:%d",avcodec_get_name(ost -> st -> codec -> codec_id),ost -> file_index,ost -> index);
+if (!strcmp(ost -> enc -> name,"libx264")) {
+ist = get_input_stream(ost);
+static InputStream *get_input_stream(OutputStream *ost)
+ist = get_input_stream(ost);
+snprintf(error,sizeof(error),"Encoder (codec %s) not found for output stream #%d:%d",avcodec_get_name(ost -> st -> codec -> codec_id),ost -> file_index,ost -> index);

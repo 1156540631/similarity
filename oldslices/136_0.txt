@@ -1,0 +1,9 @@
+! memcmp( &oggpacket.packet[1], "kate\0\0\0", 7 ) )
+! memcmp( oggpacket.packet, "\x01vorbis", 7 ) )
+! memcmp( oggpacket.packet, "Speex", 5 ) )
+! memcmp( oggpacket.packet, "fLaC", 4 ) )
+! memcmp( oggpacket.packet, "\x80theora", 7 ) )
+! memcmp( oggpacket.packet, "KW-DIRAC\x00", 9 ) ) )
+! memcmp( oggpacket.packet, "BBCD\x00", 5 ) ) ||
+! memcmp( oggpacket.packet, "Annodex", 7 ) )
+! memcmp( oggpacket.packet, "AnxData", 7 ) )

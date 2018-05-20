@@ -1,0 +1,8 @@
+data = (char *)malloc((10+1)*sizeof(char));
+CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_ncpy_64b_goodG2BSink(&data);
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_ncpy_64b_goodG2BSink(void * dataVoidPtr)
+char * * dataPtr = (char * *)dataVoidPtr;
+char * data = (*dataPtr);
+strncpy(data, source, strlen(source) + 1);
+printLine(data);
+free(data);

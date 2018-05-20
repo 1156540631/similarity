@@ -1,0 +1,13 @@
+#define SRC_STRING "AAAAAAAAAA"
+static int staticReturnsTrue()
+return 1;
+static int staticReturnsFalse()
+return 0;
+char * data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+if(staticReturnsTrue())
+data = dataBadBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));

@@ -1,0 +1,5 @@
+unsigned char VAR1[8];
+memcpy(VAR1, VAR2->VAR3->VAR4,
+memcpy(VAR2->VAR3->VAR4, VAR2->VAR5->VAR6,
+memcpy(VAR2->VAR5->VAR6, VAR2->VAR3->VAR4,
+memcpy(VAR2->VAR3->VAR4, VAR1,

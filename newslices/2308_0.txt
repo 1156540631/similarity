@@ -1,0 +1,10 @@
+void FUN1(union VAR1 VAR2)
+free(((char *)VAR2 . VAR3));
+void FUN2(char *VAR4)
+union VAR1 VAR5;
+VAR5 . VAR3 = VAR4;
+VAR6[5] = VAR5;
+VAR7 = 5;
+VAR8 = &VAR7;
+VAR9 =  *(VAR6 +  *VAR8);
+FUN3(VAR9);

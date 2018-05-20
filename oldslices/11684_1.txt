@@ -1,0 +1,4 @@
+char *str = "This is a string";
+null_pointer_015_func_001(strlen(str));
+void null_pointer_015_func_001 (int len)
+null_pointer_015_gbl_ptr= malloc(sizeof(char) * (len+1));

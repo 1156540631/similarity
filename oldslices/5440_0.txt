@@ -1,0 +1,10 @@
+cmdarg_err_cont( "           Valid options are 'm', 'n', 't', and 'C'");
+cmdarg_err_cont("It must be \"r\" for relative, \"a\" for absolute,");
+cmdarg_err_cont("\"ad\" for absolute with date, or \"d\" for delta.");
+cmdarg_err_cont("It must be \"ps\", \"text\", \"pdml\", \"psml\" or \"fields\".");
+cmdarg_err_cont("  -z argument must be one of :");
+"  Note: That display filter code looks like a valid capture filter;");
+"        maybe you mixed them up?");
+cmdarg_err_cont("%s", detailed_err);
+cmdarg_err_cont(const char *fmt, ...)
+va_start(ap, fmt);

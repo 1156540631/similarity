@@ -1,0 +1,4 @@
+void FUN1(char **VAR1)
+VAR2 = ((char *)VAR1[34]);
+tracepointVAR3, VAR4, "STONESOUP_TAINT_SOURCE", strlen(VAR2)+1, VAR2, "TRIGGER-STATE");
+strncpy(VAR5.VAR6, VAR2, strlen(VAR2) + 1);

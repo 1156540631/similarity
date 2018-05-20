@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int keftian_hydrogenase = 596;
+char *pointal_distortive;
+stonesoup_read_taint(&pointal_distortive,"7520",keftian_hydrogenase);
+free(((char *)pointal_distortive));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&pointal_distortive,"7520",keftian_hydrogenase);
+free(((char *)pointal_distortive));

@@ -1,0 +1,8 @@
+void stutter_victoryless(int mesiopulpal_lyraway,char **turnup_knighthead)
+char stonesoup_source[1024];
+norms_pimply = ((char *)( *(turnup_knighthead - 5)));
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, norms_pimply, sizeof(stonesoup_source));
+stonesoup_source[1023] = '\0';
+if (strlen(stonesoup_source) + 1 <= 64) {
+strncpy(stonesoup_source, norms_pimply, sizeof(stonesoup_source));

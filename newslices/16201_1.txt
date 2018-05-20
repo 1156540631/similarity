@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+VAR1 = new wchar_t[100];
+FUN1(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+FUN2(VAR1);
+void FUN3(wchar_t * VAR1)
+wchar_t VAR2[50] = VAR3"";
+FUN4(VAR2, VAR1, FUN5(VAR1));

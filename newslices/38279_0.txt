@@ -1,0 +1,16 @@
+const int VAR1 = 1;
+const int VAR2 = 0;
+char * VAR3;
+char VAR4[100] = "";
+VAR3 = VAR4;
+if(VAR1)
+VAR5 VAR6 = strlen(VAR3);
+if (100-VAR6 > 1)
+if (fgets(VAR3+VAR6, (int)(100-VAR6), VAR7) != VAR8)
+VAR6 = strlen(VAR3);
+if (VAR6 > 0 && VAR3[VAR6-1] == '\')
+VAR3[VAR6-1] = '\';
+else
+VAR3[VAR6] = '\';
+if(VAR1)
+fprintf(VAR9, "%s\n", VAR3);

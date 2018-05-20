@@ -1,0 +1,16 @@
+rewind(VAR1);
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+*VAR3 = VAR5;
+char *VAR6;
+FUN1(&VAR6,"ENTHRONIZING_CONVERTER");
+VAR7 = VAR6;
+free(((char *)VAR7));
+void FUN1(char** VAR3, char* VAR8) {
+VAR9 = FUN2(VAR8);
+VAR1 = fopen(VAR9,"rb");
+fseek(VAR1,0L,2);
+VAR4 = ftell(VAR1);
+*VAR3 = ((char *)(malloc(sizeof(char ) * (VAR4 + 1))));
+FUN1(&VAR6,"ENTHRONIZING_CONVERTER");
+VAR7 = VAR6;
+free(((char *)VAR7));

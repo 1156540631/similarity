@@ -1,0 +1,13 @@
+VAR1 = FUN1("MADEGASSY_DEVOTIONALITY");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = FUN2(VAR2);
+VAR4 FUN2(char *VAR5)
+VAR6 = strlen(VAR5) % 3;
+if (VAR6 == 0) {
+else if (VAR6 == 1) {
+sscanf(VAR5,"%p",&VAR7);
+return VAR7;
+VAR3 = FUN2(VAR2);
+FUN3(VAR8, VAR9, "VAR3", VAR3, "VAR10-VAR11");
+VAR12 = ( *VAR3)(VAR13,VAR2);

@@ -1,0 +1,18 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+struct jumpmaster_agraphias diffraction_unhermitically;
+int pharyngobranch_subvocally = 20;
+char *balloters_restudies;
+stonesoup_read_taint(&balloters_restudies,"2655",pharyngobranch_subvocally);
+diffraction_unhermitically . mayoralties_algaeologist = ((char *)balloters_restudies);
+lenitive_faculative[ *( *( *( *( *( *( *( *( *( *aftaba_lairdship)))))))))] = diffraction_unhermitically;
+cravened_erogenesis = lenitive_faculative[ *( *( *( *( *( *( *( *( *( *aftaba_lairdship)))))))))];
+free(((char *)cravened_erogenesis . mayoralties_algaeologist));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&balloters_restudies,"2655",pharyngobranch_subvocally);
+diffraction_unhermitically . mayoralties_algaeologist = ((char *)balloters_restudies);
+cravened_erogenesis = lenitive_faculative[ *( *( *( *( *( *( *( *( *( *aftaba_lairdship)))))))))];
+free(((char *)cravened_erogenesis . mayoralties_algaeologist));

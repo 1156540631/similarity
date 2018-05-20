@@ -1,0 +1,22 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int diplomatology_rorifluent = 40;
+char *calamiferous_cumming;;
+stonesoup_read_taint(&calamiferous_cumming,"5630",diplomatology_rorifluent);
+bedrugged_aripeka = calamiferous_cumming;
+conoscenti_aims[5] = bedrugged_aripeka;
+lepidium_taels = 5;
+cuttanee_unmitigatedly = &lepidium_taels;
+surpluses_hyson =  *(conoscenti_aims +  *cuttanee_unmitigatedly);
+whipper_larkin(darnall_billowier,surpluses_hyson);
+whipper_larkin(taalbond_cyclograph,principalship_autorhythmus);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&calamiferous_cumming,"5630",diplomatology_rorifluent);
+bedrugged_aripeka = calamiferous_cumming;
+conoscenti_aims[5] = bedrugged_aripeka;
+surpluses_hyson =  *(conoscenti_aims +  *cuttanee_unmitigatedly);
+whipper_larkin(darnall_billowier,surpluses_hyson);
+void whipper_larkin(int taalbond_cyclograph,toadlet_rewet principalship_autorhythmus)
+free(((char *)principalship_autorhythmus));

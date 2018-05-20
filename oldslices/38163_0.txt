@@ -1,0 +1,13 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+const CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_81_base& baseObject = CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_81_goodG2B();
+baseObject.action(data);
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_81_goodG2B::action(char * data) const
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, data, args);

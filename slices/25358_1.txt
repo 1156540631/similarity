@@ -1,0 +1,18 @@
+VAR136 = getenv("SPHERULA_STOMATOTOMIES");
+if (VAR136 != 0) {;
+VAR137 = ((int )(strlen(VAR136)));
+VAR138 = ((char *)(malloc(VAR137 + 1)));
+if (VAR138 == 0) {
+memset(VAR138,0,VAR137 + 1);
+memcpy(VAR138,VAR136,VAR137);
+VAR139 = &VAR138;
+VAR140 = VAR139 + 5;
+VAR141 = ((char *)( *(VAR140 - 5)));
+tracepoint(VAR70, VAR100, "STONESOUP_TAINT_SOURCE", VAR141, "INITIAL-STATE");
+for (VAR73 = 0; VAR73 < strlen(VAR141); ++VAR73) {
+VAR12
+VAR141[VAR73],
+VAR74.VAR75[(int) VAR141[VAR73]]);
+tracepoint(VAR70, VAR78, "((int) STONESOUP_TAINT_SOURCE[VAR73])", ((int) VAR141[VAR73]), &(VAR141[VAR73]), "TRIGGER-STATE");
+if ( *(VAR140 - 5) != 0)
+free(((char *)( *(VAR140 - 5))));

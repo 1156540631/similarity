@@ -1,0 +1,21 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+size_t VAR3 = strlen(VAR1);
+if (100-VAR3 > 1)
+if (fgets(VAR1+VAR3, (int)(100-VAR3), stdin) != NULL)
+VAR3 = strlen(VAR1);
+if (VAR3 > 0 && VAR1[VAR3-1] == '\n')
+VAR1[VAR3-1] = '\0';
+else
+VAR1[VAR3] = '\0';
+const CLASS1& VAR5 = CLASS2();
+VAR5.FUN1(VAR1);
+void CLASS2::FUN1(char * VAR1) const
+char VAR4[100] = "";
+SNPRINTF(VAR4, 100-1, VAR1);

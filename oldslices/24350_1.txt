@@ -1,0 +1,7 @@
+char stonesoup_buffer_stack[128] = {0};
+stonesoup_read_taint(&tyrocidin_discussible,"6256",overcritically_puzzlepate);
+connections_bonetail = &tyrocidin_discussible;
+vinaigretted_reimprint = &connections_bonetail;
+adoniad_sinigrin = ((char *)( *( *vinaigretted_reimprint)));
+sprintf(stonesoup_buffer_stack,adoniad_sinigrin);
+stonesoup_printf("%s\n",stonesoup_buffer_stack);

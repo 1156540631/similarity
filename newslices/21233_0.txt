@@ -1,0 +1,4 @@
+int FUN1(int VAR1, char *VAR2[])
+if(VAR1 > 1)
+VAR3[1] = VAR2[1];
+int VAR4 = FUN2(&VAR5[0], VAR6, VAR7, (void *)VAR3);

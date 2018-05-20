@@ -1,0 +1,18 @@
+typedef struct _CWE127_Buffer_Underread__char_alloca_ncpy_67_structType
+char * structFirst;
+} CWE127_Buffer_Underread__char_alloca_ncpy_67_structType;
+char * data;
+CWE127_Buffer_Underread__char_alloca_ncpy_67_structType myStruct;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+memset(dataBuffer, 'A', 100-1);
+dataBuffer[100-1] = '\0';
+data = dataBuffer - 8;
+myStruct.structFirst = data;
+CWE127_Buffer_Underread__char_alloca_ncpy_67b_badSink(myStruct);
+void CWE127_Buffer_Underread__char_alloca_ncpy_67b_badSink(CWE127_Buffer_Underread__char_alloca_ncpy_67_structType myStruct)
+char * data = myStruct.structFirst;
+char dest[100];
+memset(dest, 'C', 100-1);
+dest[100-1] = '\0';
+strncpy(dest, data, strlen(dest));
+dest[100-1] = '\0';

@@ -1,0 +1,5 @@
+int main(int argc, char **argv)
+buf = (char *)malloc(BUFSIZE);
+if (argc > 1 && strlen(argv[1]) < BUFSIZE)
+strcpy(buf, argv[1]);
+printf("buf = %s\n", buf);

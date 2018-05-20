@@ -1,0 +1,6 @@
+char *VAR1;
+printf("FUN1(%s): ", VAR1);
+if ((VAR2 = FUN2(VAR1)) != VAR3)
+*VAR4 = tolower(*VAR4);
+for (VAR4 = VAR1; *VAR4 != '\'; VAR4++)
+if (isascii(*VAR4) && FUN3(*VAR4))

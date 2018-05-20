@@ -1,0 +1,2 @@
+GETSHORT(type, p);
+printf("query type = %d\n", type);

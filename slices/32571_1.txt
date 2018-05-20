@@ -1,0 +1,7 @@
+wchar_t * VAR1;
+wchar_t * VAR2 = (wchar_t *)ALLOCA((10)*sizeof(wchar_t));
+if(FUN12())
+VAR1 = VAR2;
+VAR1[0] = L'\0';
+wchar_t VAR4[10+1] = VAR5;
+wcscpy(VAR1, VAR4);

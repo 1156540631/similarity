@@ -1,0 +1,4 @@
+fprintf(stderr, "ERROR: Missing value on line %d of %s!\n", linenum,
+fprintf(stderr,
+fprintf(stderr, "ERROR: Unknown directive %s on line %d of %s!\n",
+fprintf(stderr,

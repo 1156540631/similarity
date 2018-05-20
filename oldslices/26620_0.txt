@@ -1,0 +1,22 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+char stonesoup_source[1024];
+int dutchy_muscle = 91;
+char *beadings_piranhas;;
+stonesoup_read_taint(&beadings_piranhas,"7594",dutchy_muscle);
+mcevoy_begartered = ((void *)beadings_piranhas);
+featherwood_arbitratorship = 1;
+propos_unstainableness = &mcevoy_begartered;
+boeke_wadi = ((void **)(((unsigned long )propos_unstainableness) * featherwood_arbitratorship * featherwood_arbitratorship)) + 5;
+tetramorph_subitem = ((char *)((char *)( *(boeke_wadi - 5))));
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, tetramorph_subitem, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&beadings_piranhas,"7594",dutchy_muscle);
+mcevoy_begartered = ((void *)beadings_piranhas);
+propos_unstainableness = &mcevoy_begartered;
+boeke_wadi = ((void **)(((unsigned long )propos_unstainableness) * featherwood_arbitratorship * featherwood_arbitratorship)) + 5;
+tetramorph_subitem = ((char *)((char *)( *(boeke_wadi - 5))));
+strncpy(stonesoup_source, tetramorph_subitem, sizeof(stonesoup_source));

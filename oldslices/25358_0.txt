@@ -1,0 +1,8 @@
+se_packet_mem . debug_verify_pointers = getenv("WIRESHARK_SE_VERIFY_POINTERS") != ((void *)0);
+emem_init_chunk(&se_packet_mem);
+static void emem_init_chunk(emem_header_t *mem)
+if (mem -> debug_use_canary) {
+emem_canary_init(mem -> canary);
+if (mem -> debug_use_chunks) {
+mem -> memory_alloc = emem_alloc_chunk;
+mem -> memory_alloc = emem_alloc_glib;

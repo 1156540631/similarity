@@ -1,0 +1,7 @@
+void pyretic_gunmen(int borocarbide_lituite,char **monomya_graving)
+pyretic_gunmen(borocarbide_lituite,monomya_graving);
+free(((char *)monomya_graving[7]));
+void stonesoup_handle_taint(char *attemperator_goodly)
+enviroment_peripheroceptor[7] = attemperator_goodly;
+dogfishes_panspermatist = enviroment_peripheroceptor;
+pyretic_gunmen(topotaxis_limmu,dogfishes_panspermatist);

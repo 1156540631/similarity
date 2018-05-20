@@ -1,0 +1,19 @@
+unsigned short size;
+n2s(data, size);
+fprintf(stderr, "Received extension type %d size %d\n", type, size);
+s->tlsext_debug_cb(s, 0, type, data, size, s->tlsext_debug_arg);
+size -= 2;
+!s->tls_session_ticket_ext_cb(s, data, size,
+if (!ssl_parse_clienthello_renegotiate_ext(s, data, size, al))
+size -= 2;
+size--;
+size -= 2;
+size -= 2 + idsize;
+size -= 2;
+if (ssl_parse_clienthello_use_srtp_ext(s, data, size, al))
+data += size;
+n2s(data, type);
+n2s(data, size);
+s->srp_ctx.login[len] = '\0';
+if (strlen(s->srp_ctx.login) != len)
+memcpy(s->srp_ctx.login, &data[1], len);

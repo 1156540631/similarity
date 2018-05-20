@@ -1,0 +1,10 @@
+const int GLOBAL_CONST_FIVE = 5; 
+data = -1;
+if(GLOBAL_CONST_FIVE==5)
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+if(GLOBAL_CONST_FIVE==5)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

@@ -1,0 +1,13 @@
+char * VAR1;
+CLASS18 CLASS4;
+char VAR5[100];
+VAR1 = VAR5;
+VAR1[0] = '\0';
+CLASS4.VAR14 = VAR1;
+CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_67b_FUN5(CLASS4);
+void CWE121_Stack_Based_Buffer_Overflow__CWE805_char_declare_ncat_67b_FUN5(CLASS18 CLASS4)
+char * VAR1 = CLASS4.VAR14;
+char VAR4[100];
+memset(VAR4, 'C', 100-1);
+VAR4[100-1] = '\0';
+strncat(VAR1, VAR4, 100);

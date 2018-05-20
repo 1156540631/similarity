@@ -1,0 +1,11 @@
+data.list.next = head.next;
+data.list.prev = head.prev;
+head.next = &data.list;
+head.prev = &data.list;
+badSource(data);
+static void badSource(badStruct &data)
+if (fgets((char*)&data, sizeof(data), stdin) == NULL)
+linkedListPrev = data.list.prev;
+linkedListNext = data.list.next;
+linkedListPrev->next = linkedListNext;
+linkedListNext->prev = linkedListPrev;

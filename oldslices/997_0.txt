@@ -1,0 +1,8 @@
+if (fread((&format_id),1,sizeof(format_id),fpin) != sizeof(format_id) || format_id != 0x01A5BC9A) {
+FreeFile(fpin);
+if (fread((&myGlobalStats),1,sizeof(myGlobalStats),fpin) != sizeof(myGlobalStats)) {
+FreeFile(fpin);
+*ts = myGlobalStats . stats_timestamp;
+FreeFile(fpin);
+if (pgstat_read_statsfile_timestamp(((bool )0),&file_ts) && file_ts >= min_ts) {
+static bool pgstat_read_statsfile_timestamp(bool permanent,TimestampTz *ts)

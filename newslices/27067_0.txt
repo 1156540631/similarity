@@ -1,0 +1,8 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+FUN2(VAR3);
+FUN2(char *VAR4)
+char VAR5[VAR6];
+if(strlen(VAR4) >= VAR6 - 3)
+FUN3(VAR5, 1024, "<%s>", VAR4);
+printf("VAR7: %s\n", VAR5);

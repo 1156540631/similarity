@@ -1,0 +1,8 @@
+wchar_t VAR1[100];
+VAR2 = VAR1;
+VAR2[100-1] = '\';
+CLASS1* VAR3 = new VAR4;
+VAR3->FUN1(VAR2);
+void VAR4::FUN1(wchar_t * VAR2)
+wchar_t VAR5[50] = VAR6"";
+FUN2(VAR5, VAR2, FUN3(VAR2));

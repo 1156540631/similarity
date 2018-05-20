@@ -1,0 +1,9 @@
+char * data;
+data = new char[100];
+data = goodG2BSource(data);
+char * goodG2BSource(char * data)
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+return data;
+char dest[50] = "";
+SNPRINTF(dest, strlen(data), "%s", data);

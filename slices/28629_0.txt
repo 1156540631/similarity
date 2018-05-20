@@ -1,0 +1,11 @@
+char * VAR1;
+VAR1 = NULL;
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[0] = '\0';
+const CLASS3& VAR39 = FUN2();
+VAR39.FUN10(VAR1);
+void FUN2::FUN10(char * VAR1) const
+char VAR9[100];
+memset(VAR9, 'C', 100-1);
+VAR9[100-1] = '\0';
+strcat(VAR1, VAR9);

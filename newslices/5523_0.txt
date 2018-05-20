@@ -1,0 +1,6 @@
+VAR1[0] = '\';
+FUN1(VAR1);
+void FUN1(wchar_t * VAR1)
+FUN2(VAR1, 100, VAR2"%s", VAR3);
+FUN3(VAR1);
+free(VAR1);

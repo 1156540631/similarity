@@ -1,0 +1,3 @@
+char dataBuffer[100];
+data = dataBuffer;
+memset(data, 'A', 50-1);

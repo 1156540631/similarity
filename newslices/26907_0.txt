@@ -1,0 +1,30 @@
+VAR1[VAR2+1] = VAR3;
+VAR4->VAR5 = (char *) malloc(strlen(VAR1) * sizeof(char) + 1);
+strcpy(VAR4->VAR5, VAR1);
+FUN1(VAR1, VAR6, VAR7);
+char ** FUN1(VAR1, VAR6, VAR7)
+char *VAR1;
+VAR8 = FUN2(VAR1, VAR6, VAR9, sizeof VAR9, VAR7, VAR10, VAR11);
+char ** FUN2(VAR1, VAR6, VAR9, VAR12, VAR7, VAR13, VAR11)
+char *VAR1;
+VAR14 = VAR15;
+VAR16 = VAR1;
+VAR14 = (*VAR16++) & 0x00ff;
+VAR14 = '"';
+VAR14 = ')';
+VAR14 = '>';
+VAR16--;
+VAR14 = '>';
+VAR16--;
+VAR14 = VAR15;
+VAR14 = VAR15;
+VAR14 = VAR15;
+VAR14 = VAR15;
+VAR14 = VAR15;
+else if (VAR6 == ' ' && isascii(VAR14) && isspace(VAR14))
+VAR14 = ' ';
+if (isascii(VAR14) && isprint(VAR14))
+printf("653 VAR17 VAR18 %VAR14", VAR14);
+printf("653 VAR17 VAR18 0x%02x", VAR14);
+VAR14 = VAR15;
+printf("VAR19 %VAR14 VAR20 VAR21!\n", VAR14);

@@ -1,0 +1,3 @@
+static int init_input_stream(int ist_index,char *error,int error_len)
+InputStream *ist = input_streams[ist_index];
+snprintf(error,error_len,"Error while opening decoder for input stream #%d:%d",ist -> file_index,ist -> st -> index);

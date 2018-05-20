@@ -1,0 +1,3 @@
+static int FUNC1(int VAR1,char *VAR8,int VAR9)
+InputStream *VAR10 = VAR13[VAR1];
+snprintf(VAR8,VAR9,"Error while opening decoder for input stream #%d:%d",VAR10 -> VAR3,VAR10 -> VAR11 -> VAR12);

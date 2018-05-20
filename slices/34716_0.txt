@@ -1,0 +1,11 @@
+char * VAR1;
+CLASS2 CLASS1;
+VAR1 = NULL;
+VAR1 = new char[100];
+VAR1[0] = '\0';
+CLASS1.VAR17 = VAR1;
+char * VAR1 = CLASS1.VAR16;
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncat(VAR1, VAR3, 100);

@@ -1,0 +1,6 @@
+VAR1 = FUN1("SEMIDIGESTED_MACHINEMEN");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = ((int )(strlen(VAR2)));
+strncpy(VAR4, VAR2, 64);
+for (; VAR5 < VAR3; ++VAR5){

@@ -1,0 +1,9 @@
+void (*funcPtr) (char *) = goodG2BSink;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+funcPtr(data);
+static void goodG2BSink(char * data)
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

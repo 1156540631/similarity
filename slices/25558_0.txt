@@ -1,0 +1,3 @@
+VAR28 -> VAR29 = strcpy((xmalloc(strlen((VAR23[0] + 1)) + 1)),(VAR23[0] + 1));
+VAR28 -> VAR30 = strcpy((xmalloc(strlen(VAR23[1]) + 1)),VAR23[1]);
+VAR28 -> VAR29 = strcpy((xmalloc(strlen((VAR23[0] + 1)) + 1)),(VAR23[0] + 1));

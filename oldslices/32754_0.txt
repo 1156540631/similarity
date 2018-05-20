@@ -1,0 +1,7 @@
+wchar_t * data;
+void (*funcPtr) (wchar_t *) = CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_cpy_65b_goodG2BSink;
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_wchar_t_declare_cpy_65b_goodG2BSink(wchar_t * data)
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);
+data = dataGoodBuffer;
+data[0] = L'\0';

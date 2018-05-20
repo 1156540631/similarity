@@ -1,0 +1,34 @@
+VAR1 = FUN1(VAR2, FUN4(VAR2));
+uint32_t VAR3)
+return FUN2(VAR4, VAR3);
+VAR5 = 0;
+VAR1 = FUN3(VAR6.get(), VAR7, 0, 0);
+VAR1 = FUN1(VAR2, FUN4(VAR2));
+VAR1 = FUN1(VAR13, FUN4(VAR13));
+int32_t VAR3)
+VAR8 = (char16_t *) malloc(sizeof(char16_t) * 4096);
+int32_t VAR10 = 0;
+VAR5 += VAR9;
+int32_t VAR9 = VAR11 - VAR5;
+VAR9 = VAR3;
+memcpy(&VAR8[VAR5],VAR12 + VAR10, sizeof(char16_t) * VAR9);
+VAR3 -= VAR9;
+VAR11 += VAR3;
+VAR10 += VAR9;
+memcpy(&VAR8[VAR5],VAR12 + VAR10, sizeof(char16_t) * VAR9);
+VAR8 = (char16_t *) realloc(VAR8, sizeof(char16_t) * VAR11);
+CLASS1::FUN5(const char16_t* VAR2,
+FUN6(VAR14 && VAR13 && VAR2, "Check arguments!!!");
+VAR1 = FUN1(VAR2, FUN4(VAR2));
+uint32_t VAR3)
+return FUN2(VAR4, VAR3);
+int32_t VAR3)
+VAR11 += VAR3;
+VAR8 = (char16_t *) realloc(VAR8, sizeof(char16_t) * VAR11);
+CLASS1::FUN1(const char16_t *VAR4,
+return FUN2(VAR4, VAR3);
+CLASS1::FUN2(const char16_t* VAR12,
+memcpy(&VAR8[VAR5],VAR12 + VAR10, sizeof(char16_t) * VAR9);
+VAR8 = (char16_t *) realloc(VAR8, sizeof(char16_t) * VAR11);
+CLASS1::FUN7(const char16_t *VAR4, uint32_t VAR3)
+return FUN2(VAR4, VAR3);

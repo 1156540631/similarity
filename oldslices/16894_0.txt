@@ -1,0 +1,5 @@
+data = NULL;
+goodG2BSource(data);
+static void goodG2BSource(twoIntsStruct * &data)
+data = (twoIntsStruct *)malloc(sizeof(*data));
+printStructLine(data);

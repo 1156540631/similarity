@@ -1,0 +1,3 @@
+data[100-1] = L'\0';
+wchar_t dest[50] = L"";
+SNPRINTF(dest, wcslen(data), L"%s", data);

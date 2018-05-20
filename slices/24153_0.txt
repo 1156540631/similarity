@@ -1,0 +1,8 @@
+VAR235 . VAR242 = getenv("VAR256") != ((void *)0);
+FUNC48(&VAR235);
+static void FUNC48(emem_header_t *VAR255)
+if (VAR255 -> VAR245) {
+FUNC52(VAR255 -> VAR246);
+if (VAR255 -> VAR237) {
+FUNC48(&VAR235);
+static void FUNC52(guint8 *VAR246)

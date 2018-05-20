@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+VAR1 = new wchar_t[100];
+wmemset(VAR1, L'A', 50-1);
+VAR1[50-1] = L'\0';
+VAR3.FUN1(VAR1);
+void CWE122_Heap_Based_Buffer_Overflow__cpp_CWE806_wchar_t_snprintf_81_goodG2B::FUN1(wchar_t * VAR1) const
+wchar_t VAR2[50] = L"";
+snprintf(VAR2, wcslen(VAR1), L"%s", VAR1);

@@ -1,0 +1,6 @@
+buf[line_len] = '\0';
+c_data_port = c_mon_port = 0;
+if ((tmp = strstr(buf, rtsp_sps))) {
+if ((tmp = strstr(buf, rtsp_cps))) {
+tmp += strlen(rtsp_cps);
+if (sscanf(tmp, "%u-%u", &c_data_port, &c_mon_port) < 1) {

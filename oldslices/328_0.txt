@@ -1,0 +1,12 @@
+if ((bytes = recvfrom(fd, buffer, sizeof(buffer), 0, (void *)&addr,
+&addrlen)) < 0)
+bytes, addrname);
+if (asn1_decode_snmp(buffer, bytes, &packet))
+static int		asn1_decode_snmp(unsigned char *buffer, size_t len,
+asn1_debug(buffer, bytes, 0);
+asn1_debug(buffer, bytes, 0);
+hex_debug(buffer, bytes);
+static void		debug_printf(const char *format, ...);
+static void		hex_debug(unsigned char *buffer, size_t len);
+static void		asn1_debug(unsigned char *buffer, size_t len,
+hex_debug(buffer, bytes);

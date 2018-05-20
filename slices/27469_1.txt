@@ -1,0 +1,13 @@
+#define VAR278 "AAAAAAAAAA"
+typedef STRUCT15
+char * VAR300;
+char * VAR301;
+} STRUCT16;
+char * VAR154;
+STRUCT16 VAR302;
+VAR154 = NULL;
+VAR154 = (char *)malloc(10*sizeof(char));
+VAR302.VAR300 = VAR154;
+char * VAR154 = VAR302.VAR301;
+char VAR279[10+1] = VAR278;
+strcpy(VAR154, VAR279);

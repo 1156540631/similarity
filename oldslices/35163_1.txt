@@ -1,0 +1,5 @@
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+char dest[50] = "";
+strncat(dest, data, strlen(data));

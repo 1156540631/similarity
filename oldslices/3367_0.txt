@@ -1,0 +1,3 @@
+header->h_field = (char *) malloc(sizeof(char) * 100);
+header->h_value = (char *) malloc(sizeof(char) * 100);
+e->e_id = (char *) malloc(sizeof(char) * 50);

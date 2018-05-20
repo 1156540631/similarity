@@ -1,0 +1,4 @@
+VAR492 = getenv("BORESOMENESS_TEETY");
+VAR493 = ((char *)VAR492);
+VAR29 = malloc((strlen(VAR493) + 1) * sizeof(char ));
+strcpy(VAR29,VAR493);

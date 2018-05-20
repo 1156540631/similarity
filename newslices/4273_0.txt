@@ -1,0 +1,6 @@
+for (VAR1 = 0; VAR1 < VAR2; VAR1++) {
+char		VAR3[80];
+sprintf(VAR3, "|VAR4-VAR5-VAR6-VAR7-VAR8-%02d",
+VAR1);
+VAR9 = strlen(VAR3) * 32 * (VAR1+1);
+VAR10 = malloc(VAR9);

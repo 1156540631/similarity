@@ -1,0 +1,4 @@
+int **ptr = (int**) malloc(5*sizeof(int*));
+ptr[i]=(int*) malloc(5*sizeof(int));
+ptr[i] = NULL;
+free(ptr);

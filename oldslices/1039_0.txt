@@ -1,0 +1,3 @@
+void *unpurported_scandalmonging = 0;
+lorianne_cadillac(&unpurported_scandalmonging);
+free(((char *)((char *)unpurported_scandalmonging)));

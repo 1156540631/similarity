@@ -1,0 +1,9 @@
+char dataBuffer[100];
+data = dataBuffer;
+data = badSource(data);
+static char * badSource(char * data)
+data[100-1] = '\0';
+return data;
+data = badSource(data);
+char dest[50] = "";
+SNPRINTF(dest, strlen(data), "%s", data);

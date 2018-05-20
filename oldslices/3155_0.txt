@@ -1,0 +1,3 @@
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+wmemset(data, L'A', 100-1);

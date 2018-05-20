@@ -1,0 +1,3 @@
+void CWE124_Buffer_Underwrite__wchar_t_declare_ncpy_82_goodG2B::action(wchar_t * data)
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

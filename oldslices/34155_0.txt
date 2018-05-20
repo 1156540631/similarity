@@ -1,0 +1,5 @@
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memmove_01_good();
+good1();
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+structCharVoid->voidSecond = (void *)SRC_STR;
+memmove(structCharVoid->charFirst, SRC_STR, sizeof(structCharVoid->charFirst));

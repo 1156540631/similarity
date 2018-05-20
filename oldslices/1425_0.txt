@@ -1,0 +1,19 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int acapulco_verisimility = 596;
+char *unhomologized_inwork;;
+stonesoup_read_taint(&unhomologized_inwork,"5097",acapulco_verisimility);
+sadly_gammerel[5] = unhomologized_inwork;
+saccharomycete_regardfully[1] = 5;
+shivered_semipalmation =  *(sadly_gammerel + saccharomycete_regardfully[1]);
+assentingly_unexaminable(trachiniae_glaciates,shivered_semipalmation);
+assentingly_unexaminable(unmaddened_chronons,unctious_bination);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&unhomologized_inwork,"5097",acapulco_verisimility);
+sadly_gammerel[5] = unhomologized_inwork;
+shivered_semipalmation =  *(sadly_gammerel + saccharomycete_regardfully[1]);
+assentingly_unexaminable(trachiniae_glaciates,shivered_semipalmation);
+void assentingly_unexaminable(int unmaddened_chronons,char *unctious_bination)
+free(((char *)unctious_bination));

@@ -1,0 +1,3 @@
+const BlockDebugFlags* bdf = gFlags;
+for (; bdf < end; bdf++) {
+printf("  %s\n", bdf->name);

@@ -1,0 +1,11 @@
+uint32_t (*funcPtr)(NetworkParams) = badSource;
+CommandResult NetworkUtils::setDNS(NetworkParams& aOptions)
+uint32_t length = funcPtr(aOptions);
+uint32_t badSource(NetworkParams aOptions)
+return aOptions.mDnses.Length();
+uint32_t length = funcPtr(aOptions);
+if (length > 0) {
+for (uint32_t i = 0; i < length; i++) {
+NS_ConvertUTF16toUTF8 autoDns(aOptions.mDnses[i]);
+char dns_prop_key[PROPERTY_VALUE_MAX];
+snprintf(dns_prop_key, sizeof dns_prop_key, "net.dns%d", i+1);

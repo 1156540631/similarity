@@ -1,0 +1,10 @@
+VAR1[50-1] = '\';
+VAR2 = (void *)VAR1;
+FUN1(&VAR2);
+void FUN1(void * VAR3)
+void * * VAR4 = (void * *)VAR3;
+void * VAR2 = (*VAR4);
+VAR5 VAR6 = FUN2((wchar_t *)VAR2);
+void * VAR7 = (void *)calloc(VAR6+1, sizeof(wchar_t));
+memcpy(VAR7, VAR2, (VAR6+1)*sizeof(wchar_t));
+free(VAR7);

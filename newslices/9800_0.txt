@@ -1,0 +1,5 @@
+FUN1(const char *VAR1, CLASS1 *VAR2)
+VAR3 = &VAR1[0];
+VAR4 = *VAR3++;
+if (isspace(VAR4))
+if (!isxdigit(VAR4)) {

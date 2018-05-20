@@ -1,0 +1,7 @@
+static void DumpLine(const nsBlockReflowState& aState, nsLineBox* aLine,
+nscoord aDeltaY, int32_t aDeltaIndent) {
+nsRect ovis(aLine->GetVisualOverflowArea());
+nsRect oscr(aLine->GetScrollableOverflowArea());
+static_cast<void*>(aLine), aState.mY,
+aLine->IsDirty() ? "yes" : "no",
+aDeltaY, aState.mPrevBottomMargin.get(), aLine->GetChildCount());

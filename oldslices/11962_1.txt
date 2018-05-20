@@ -1,0 +1,95 @@
+dissect_ldss (tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree)
+return dissect_ldss_transfer(tvb, pinfo, tree);
+dissect_ldss_transfer (tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree)
+guint offset = 0;
+tvb, 0, tvb_reported_length(tvb), FALSE);
+while (offset < tvb_reported_length(tvb)) {
+gint next_offset;
+linelen = tvb_find_line_end(tvb, offset,
+FALSE);
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+ti = proto_tree_add_text(ldss_tree, tvb, offset, linelen,
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+tvb_format_text(tvb, offset, next_offset-offset));
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+tvb, offset+6, linelen-6, transfer_info->req->size);
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+tvb, offset+7, linelen-7, transfer_info->req->offset);
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+else if (strncmp(line, "Compression: ", 13)==0) {
+transfer_info->req->compression = (gint8)strtol(line+13, NULL, 10);
+tvb, offset+13, linelen-13, transfer_info->req->compression);
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+else if (strncmp(line, "Compression: ", 13)==0) {
+transfer_info->req->compression = (gint8)strtol(line+13, NULL, 10);
+ti = proto_tree_add_text(line_tree, tvb, offset, linelen,
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+else if (strncmp(line, "Compression: ", 13)==0) {
+transfer_info->req->compression = (gint8)strtol(line+13, NULL, 10);
+tvb_get_ptr(tvb, offset+digest_type_len, linelen-digest_type_len),
+while (offset < tvb_reported_length(tvb)) {
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+else if (strncmp(line, "Compression: ", 13)==0) {
+transfer_info->req->compression = (gint8)strtol(line+13, NULL, 10);
+tvb, offset, digest_type_len, transfer_info->file->digest_type);
+tvb, offset+digest_type_len, linelen-digest_type_len,
+tvb_ensure_length_remaining(tvb, offset), &next_offset,
+digest_bytes, FALSE);
+FALSE);
+offset = next_offset;
+linelen = tvb_find_line_end(tvb, offset,
+line = tvb_memdup(tvb, offset, linelen+1);
+if (strncmp(line,"md5:",4)==0) {
+else if (strncmp(line, "sha1:", 5)==0) {
+else if (strncmp(line, "sha256:", 7)==0) {
+else if (strncmp(line, "unknown:", 8)==0) {
+else if (strncmp(line, "Size: ", 6)==0) {
+else if (strncmp(line, "Start: ", 7)==0) {
+else if (strncmp(line, "Compression: ", 13)==0) {
+transfer_info->req->compression = (gint8)strtol(line+13, NULL, 10);

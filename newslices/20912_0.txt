@@ -1,0 +1,14 @@
+int FUN1(char *VAR1,int VAR2,const char *VAR3,const char *VAR4,const char *VAR5,int VAR6,const char *VAR7,... )
+VAR1[0] = '\';
+FUN2(VAR1,VAR2,"%s:
+FUN2(VAR1,VAR2,"%s@",VAR4);
+FUN3(VAR1,"[",VAR2);
+FUN3(VAR1,VAR5,VAR2);
+FUN3(VAR1,"]",VAR2);
+FUN3(VAR1,VAR5,VAR2);
+FUN3(VAR1,VAR5,VAR2);
+FUN2(VAR1,VAR2,":%d",VAR6);
+VAR8 VAR9;
+int VAR10 = (strlen(VAR1));
+FUN4(VAR9,VAR7);
+FUN5(VAR1 + VAR10,(VAR2 > VAR10?VAR2 - VAR10 : 0),VAR7,VAR9);

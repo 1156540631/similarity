@@ -1,0 +1,12 @@
+VAR8 = -1;
+fscanf(stdin, "%d", &VAR8);
+FUN88(VAR8);
+void FUN88(int VAR8)
+FUN89(VAR8);
+void FUN89(int VAR8)
+FUN90(VAR8);
+void FUN90(int VAR8)
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

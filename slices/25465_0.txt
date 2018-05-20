@@ -1,0 +1,6 @@
+char VAR124[64];
+char VAR125[256];
+char VAR126[256] = {(0)};
+double VAR127;
+VAR34[VAR24] = 0;
+if (VAR128 > 0 && (VAR25 = sscanf(VAR34,"%63[^ ] %lf %255[^ ] %255[^\VAR25]",VAR124,&VAR127,VAR125,VAR126)) >= 3) {

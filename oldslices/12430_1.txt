@@ -1,0 +1,4 @@
+va_list ap;
+va_start(ap,fmt);
+g_vsnprintf(here, sizeof(here), fmt, ap);
+va_end(ap);

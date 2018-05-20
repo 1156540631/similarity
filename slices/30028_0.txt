@@ -1,0 +1,14 @@
+wchar_t * VAR3;
+wchar_t * *VAR5 = &VAR3;
+wchar_t * *VAR6 = &VAR3;
+wchar_t VAR1[100];
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+wchar_t * VAR3 = *VAR5;
+VAR3 = VAR1;
+*VAR5 = VAR3;
+wchar_t * VAR3 = *VAR6;
+wchar_t VAR2[100];
+wmemset(VAR2, L'C', 100-1);
+VAR2[100-1] = L'\0';
+wcscpy(VAR3, VAR2);

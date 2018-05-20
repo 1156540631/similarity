@@ -1,0 +1,3 @@
+CLASS1* VAR1= malloc(10*sizeof(CLASS1));
+VAR1[VAR28].VAR2[VAR28]='VAR15';
+free(VAR1);

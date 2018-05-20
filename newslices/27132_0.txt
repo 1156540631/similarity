@@ -1,0 +1,3 @@
+int *VAR1, VAR2;
+VAR2 = *(VAR1+1);
+printf("%d",VAR2);

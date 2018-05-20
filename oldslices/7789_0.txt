@@ -1,0 +1,16 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *aquatints_tumbrils;
+stonesoup_read_taint(&aquatints_tumbrils,"WITTE_ANAEROPLASTY");
+crass_pyroborate = ((int )(strlen(aquatints_tumbrils)));
+adelomorphous_montparnasse = ((char *)(malloc(crass_pyroborate + 1)));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&aquatints_tumbrils,"WITTE_ANAEROPLASTY");
+crass_pyroborate = ((int )(strlen(aquatints_tumbrils)));
+adelomorphous_montparnasse = ((char *)(malloc(crass_pyroborate + 1)));

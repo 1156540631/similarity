@@ -1,0 +1,5 @@
+void ff_make_absolute_url(char *buf, int size, const char *base,
+av_strlcpy(buf, base, size);
+sep = strstr(buf, ":
+sep += 3;
+sep = strchr(sep, '/');

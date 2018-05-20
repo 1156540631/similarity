@@ -1,0 +1,5 @@
+fprintf(stderr, "VAR30: Missing VAR7 on VAR17 %VAR1 of %VAR6!\VAR2", VAR2,
+fprintf(stderr,
+fprintf(stderr, "VAR30: Unknown directive %VAR6 on VAR17 %VAR1 of %VAR6!\VAR2",
+fprintf(stderr,
+fputs("VAR9: Using default SNMP VAR4 public\VAR2", stderr);

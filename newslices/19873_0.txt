@@ -1,0 +1,11 @@
+VAR1<int, int *> VAR2;
+VAR3 = VAR4;
+VAR3 = new int[100];
+VAR2[0] = VAR3;
+VAR2[1] = VAR3;
+VAR2[2] = VAR3;
+FUN1(VAR2);
+void FUN1(VAR1<int, int *> VAR2)
+int * VAR3 = VAR2[2];
+int VAR5[100] = {0};
+memcpy(VAR3, VAR5, 100*sizeof(int));

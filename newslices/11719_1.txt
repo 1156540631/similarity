@@ -1,0 +1,4 @@
+void VAR1::FUN1(wchar_t * VAR2) const
+FUN2(VAR2, VAR3);
+FUN3(VAR2);
+free(VAR2);

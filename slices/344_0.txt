@@ -1,0 +1,8 @@
+CLASS1 VAR1;
+VAR5 = g_malloc(sizeof(struct CLASS2));
+VAR2 = FUN1(VAR15, VAR16, VAR5, &VAR3);
+VAR10 = VAR2(sizeof(VAR5->VAR7), sizeof(VAR1.VAR4));
+VAR1.VAR6 = 0;
+VAR1.VAR8 = 0;
+&VAR1, VAR5->VAR9,
+memcpy(&VAR1.VAR4, &VAR5->VAR7, VAR10);

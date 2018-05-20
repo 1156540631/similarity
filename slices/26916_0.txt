@@ -1,0 +1,2 @@
+VAR360 = (STRUCT18 *) xalloc(sizeof(*VAR360));
+memset(VAR360, 0, sizeof(*VAR360));

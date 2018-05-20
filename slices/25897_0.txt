@@ -1,0 +1,9 @@
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);
+VAR34 += VAR439;
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);
+VAR336 = (VAR336 > VAR439?VAR336 - VAR439 : 0);
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);
+char VAR458[32];
+FUN108(VAR458,sizeof(VAR458),VAR156 -> VAR456);
+STRUCT335 FUN108(char *VAR34,STRUCT335 VAR336,unsigned int VAR456)
+VAR439 = snprintf(VAR34,VAR336,(((VAR456 & 0xff) >= 48 && (VAR456 & 0xff) <= '9' || (VAR456 & 0xff) >= 'a' && (VAR456 & 0xff) <= 'z' || (VAR456 & 0xff) >= 'A' && (VAR456 & 0xff) <= 'Z' || ((VAR456 & 0xff) == '.' || (VAR456 & 0xff) == 32 || (VAR456 & 0xff) == '-' || (VAR456 & 0xff) == '_')?"%VAR23" : "[%VAR219]")),VAR456 & 0xff);

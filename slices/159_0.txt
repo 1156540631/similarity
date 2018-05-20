@@ -1,0 +1,12 @@
+FUN1(VAR14, VAR1, VAR2 + 4);
+FUN1(VAR14, VAR1, VAR2 + 4);
+int           VAR2)
+fprintf(stderr, "DEBUG: %*sBOOLEAN %d VAR9 %d\n", VAR2, "",
+fprintf(stderr, "DEBUG: %*sINTEGER %d VAR9 %d\n", VAR2, "",
+fprintf(stderr, "DEBUG: %*sOCTET STRING %d VAR9 \"%VAR1\"\n", VAR2, "",
+fprintf(stderr, "DEBUG: %*sOID %d VAR9 ", VAR2, "",
+FUN1(VAR14, VAR1, VAR2 + 4);
+fprintf(stderr, ".%d", VAR3[VAR11]);
+putc('\n', stderr);
+fprintf(stderr, "DEBUG: %*sGet-Response-PDU %d VAR9\n", VAR2, "",
+fprintf(stderr, "DEBUG: %*sGet-Request-PDU %d VAR9\n", VAR2, "",

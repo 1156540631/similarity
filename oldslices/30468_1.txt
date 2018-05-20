@@ -1,0 +1,11 @@
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_64b_badSink(&data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE129_connect_socket_64b_badSink(void * dataVoidPtr)
+int * dataPtr = (int *)dataVoidPtr;
+int data = (*dataPtr);
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

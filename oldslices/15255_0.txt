@@ -1,0 +1,15 @@
+twoIntsStruct * data;
+vector<twoIntsStruct *> dataVector;
+twoIntsStruct * dataBadBuffer = (twoIntsStruct *)ALLOCA(50*sizeof(twoIntsStruct));
+twoIntsStruct * dataGoodBuffer = (twoIntsStruct *)ALLOCA(100*sizeof(twoIntsStruct));
+data = dataGoodBuffer;
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memcpy(data, source, 100*sizeof(twoIntsStruct));
+void goodG2BSink(vector<twoIntsStruct *> dataVector)
+twoIntsStruct * data = dataVector[2];
+memcpy(data, source, 100*sizeof(twoIntsStruct));

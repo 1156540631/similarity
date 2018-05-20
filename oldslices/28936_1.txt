@@ -1,0 +1,9 @@
+int globalTrue = 1;
+int globalFalse = 0;
+char * data;
+data = (char *)malloc(100*sizeof(char));
+if(globalTrue)
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+char dest[50] = "";
+strcpy(dest, data);

@@ -1,0 +1,15 @@
+char * VAR1;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(1)
+size_t VAR7 = strlen(VAR1);
+if (100-VAR7 > 1)
+if (fgets(VAR1+VAR7, (int)(100-VAR7), stdin) != NULL)
+VAR7 = strlen(VAR1);
+if (VAR7 > 0 && VAR1[VAR7-1] == '\n')
+VAR1[VAR7-1] = '\0';
+else
+VAR1[VAR7] = '\0';
+if(0){}
+else
+fprintf(stdout, "%s\n", VAR1);

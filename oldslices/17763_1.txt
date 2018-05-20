@@ -1,0 +1,3 @@
+data[100-1] = '\0';
+char dest[50] = "";
+strncpy(dest, data, strlen(data));

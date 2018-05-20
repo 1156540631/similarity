@@ -1,0 +1,18 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+VAR5 = (struct CLASS1*) malloc(sizeof(struct CLASS1));
+memset(VAR5->VAR6,0,64);
+FUN3(VAR7, VAR8, "VAR5->VAR6", VAR5->VAR6, "VAR9-VAR10");
+strcpy(VAR5->VAR6, VAR11);
+void FUN2(char *VAR12)
+VAR11 = ((char *)VAR12);
+strcpy(VAR5->VAR6, VAR11);

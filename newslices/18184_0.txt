@@ -1,0 +1,5 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+FUN2(VAR2);
+static void FUN2(char * &VAR2)
+memset(VAR2, '', 50-1);

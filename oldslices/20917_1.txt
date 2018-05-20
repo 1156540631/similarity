@@ -1,0 +1,7 @@
+leviticalism_vica = getenv("TRAITOROUSLY_TROCHILIC");
+if (leviticalism_vica != 0) {;
+surfings_subpastor = ((void *)leviticalism_vica);
+uninterrogative_anchistopoda = &surfings_subpastor;
+sluig_favorers = ((char *)((char *)( *uninterrogative_anchistopoda)));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(sluig_favorers)+1, sluig_favorers, "TRIGGER-STATE");
+strncpy(stonesoup_data, sluig_favorers, strlen(sluig_favorers) + 1);

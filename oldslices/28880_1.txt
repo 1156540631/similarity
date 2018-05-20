@@ -1,0 +1,9 @@
+char * data;
+void (*funcPtr) (char *) = badSink;
+data = (char *)malloc(100*sizeof(char));
+memset(data, 'A', 100-1);
+data[100-1] = '\0';
+funcPtr(data);
+static void badSink(char * data)
+char dest[50] = "";
+strcat(dest, data);

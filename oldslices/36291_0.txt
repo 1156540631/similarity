@@ -1,0 +1,8 @@
+data = (char *)malloc(100*sizeof(char));
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_22_goodG2B2Source(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_22_goodG2B2Source(char * data)
+data[50-1] = '\0';
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_22_goodG2B2Source(data);
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

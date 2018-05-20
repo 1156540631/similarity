@@ -1,0 +1,10 @@
+vector<twoIntsStruct *> dataVector;
+data = NULL;
+data = (twoIntsStruct *)malloc(sizeof(data));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+badSink(dataVector);
+void badSink(vector<twoIntsStruct *> dataVector)
+twoIntsStruct * data = dataVector[2];
+printStructLine(data);

@@ -1,0 +1,4 @@
+void noncognizantly_monostich(char **overtorturing_tumps)
+spences_gutium(overtorturing_tumps);
+void spences_gutium(char **stationery_gryllotalpa)
+free(((char *)( *(stationery_gryllotalpa - 5))));

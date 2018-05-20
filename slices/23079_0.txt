@@ -1,0 +1,17 @@
+VAR1[i] -> VAR2 = 0;
+VAR3();
+ret = FUNC1();
+FUNC2(0,timer_start,cur_time);
+VAR5 = VAR1[i];
+VAR4 = VAR5 -> VAR4;
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"frame=%5d fps=%3.*f q=%3.1f ",VAR4,VAR8 < 9.95,VAR8,q);
+av_bprintf(&VAR7,"frame=%d\n",VAR4);
+VAR11 = (VAR12 -> VAR13 * VAR12 -> VAR14) * 255.0 * 255.0 * VAR4;
+VAR9 = FUNC3(VAR18 / VAR19);
+static double FUNC3(double d)
+return - 10.0 * log(d) / log(10.0);
+VAR9 = FUNC3(VAR18 / VAR19);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"%c:%2.2f ",VAR15[j],VAR9);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"*:%2.2f ",FUNC3(VAR16 / VAR17));
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"q=%2.1f ",VAR10);
+snprintf(VAR6 + strlen(VAR6),sizeof(VAR6) - strlen(VAR6),"size=N/A time=");

@@ -1,0 +1,7 @@
+char stonesoup_source[1024];
+odonate_bonapartist linon_nola = 0;
+cucumariidae_haematopus(&linon_nola);
+intarsia_unprogressively = &linon_nola;
+desalinator_snapshoot = ((char *)( *intarsia_unprogressively));
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, desalinator_snapshoot, sizeof(stonesoup_source));

@@ -1,0 +1,12 @@
+unsigned int VAR1;
+VAR2 = fopen("/VAR3/VAR4", "rb");
+if(fread(&VAR1, sizeof VAR1, 1, VAR2) != 1)
+return VAR1;
+VAR5[VAR6] = (short)(FUN1() % 256);
+VAR5 = VAR7;
+printf("%d ",VAR5[VAR6]);
+free(VAR5);
+if (!(VAR5 = (short *)calloc(3,sizeof(short))))
+FUN2(VAR5);
+void FUN2(short *VAR5)
+free(VAR5);

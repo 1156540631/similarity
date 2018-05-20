@@ -1,0 +1,7 @@
+FUN1(CLASS1 *VAR1, int VAR2, const guchar *VAR17,
+const guchar *VAR3   = VAR17;
+while (VAR3 < VAR7 && !isspace(*VAR3))
+VAR3++;
+while (VAR3 < VAR7 && isspace(*VAR3))
+VAR3++;
+while (VAR3 < VAR7 && isspace(*VAR3))

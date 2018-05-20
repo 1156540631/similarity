@@ -1,0 +1,14 @@
+c = *p++;
+p--;
+c = '"';
+c = ')';
+c = '>';
+c = '>';
+c = NOCHAR;
+c = NOCHAR;
+c = NOCHAR;
+c = NOCHAR;
+c = NOCHAR;
+else if (delim == ' ' && isascii(c) && isspace(c))
+c = ' ';
+if (isascii(c) && isprint(c))

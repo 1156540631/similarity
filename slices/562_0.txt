@@ -1,0 +1,3 @@
+void CLASS1::FUN3(CLASS2* VAR6,
+if (!FUN4(VAR1).FUN5() && !FUN4(VAR2).FUN5()) {
+uint32_t VAR6 = FUN1(FUN2(VAR2));

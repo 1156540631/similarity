@@ -1,0 +1,17 @@
+VAR1 = FUN1("COALFIELD_COMIQUE");
+if (VAR1 != 0) {;
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+if (VAR3 == 0) {
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = FUN2(VAR3);
+char *FUN2(char *VAR5)
+return VAR5;
+VAR4 = FUN2(VAR3);
+VAR6 = ((char *)VAR4);
+VAR7 = ((int )(strlen(VAR6)));
+strncpy(VAR8, VAR6, 64);
+for (; VAR9 < VAR7; ++VAR9){
+if (VAR4 != 0)
+free(((char *)VAR4));

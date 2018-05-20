@@ -1,0 +1,12 @@
+FILE            *fp,
+fread(buf, 13, 1, fp);
+if (gif_read_cmap(fp, ncolors, cmap, &gray))
+fclose(fp);
+buf[0] = getc(fp);
+gif_get_block(fp, buf);
+while (gif_get_block(fp, buf) != 0);
+static int	gif_read_cmap(FILE *fp, int ncolors, gif_cmap_t cmap,
+fclose(fp);
+static int	gif_get_block(FILE *fp, unsigned char *buffer);
+fclose(fp);
+while (gif_get_block(fp, buf) != 0);

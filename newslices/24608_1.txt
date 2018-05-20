@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char* VAR2[])
+char VAR3[VAR4];
+VAR5 = atoi(VAR2[1]);
+if (VAR5 < VAR4)
+memcpy(VAR3, VAR2[2], VAR5);

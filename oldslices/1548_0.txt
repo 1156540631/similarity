@@ -1,0 +1,6 @@
+data[50-1] = L'\0';
+return data;
+data = goodG2BSource(data);
+wcsncpy(dest, data, wcslen(data));
+printWLine(data);
+free(data);

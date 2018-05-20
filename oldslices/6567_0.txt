@@ -1,0 +1,3 @@
+jmp_buf diruption_lycaon;
+usurpress_melammdim = setjmp(diruption_lycaon);
+longjmp(diruption_lycaon,1);

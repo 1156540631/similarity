@@ -1,0 +1,21 @@
+void NetworkUtils::modifyRouteOnInterface(CommandChain* aChain,
+CommandCallback aCallback,
+NetworkResultOptions& aResult,
+bool aDoAdd)
+char command[MAX_COMMAND_SIZE];
+nsCString ipOrSubnetIp = NS_ConvertUTF16toUTF8(GET_FIELD(mIp));
+nsCString gatewayOrEmpty;
+const char* legacyOrEmpty = "legacy 0 ";
+if (GET_FIELD(mGateway).IsEmpty()) {
+ipOrSubnetIp = getSubnetIp(ipOrSubnetIp, GET_FIELD(mPrefixLength));
+nsCString NetworkUtils::getSubnetIp(const nsCString& aIp, int aPrefixLength)
+return nsCString();
+ipOrSubnetIp = getSubnetIp(ipOrSubnetIp, GET_FIELD(mPrefixLength));
+const char* action = func(bool aDoAdd);
+const char* func(bool aDoAdd)
+return aDoAdd ? "add" : "remove";
+const char* action = func(bool aDoAdd);
+snprintf(command, MAX_COMMAND_SIZE - 1, "network route %s%s %d %s %s/%d%s",
+legacyOrEmpty, action,
+GET_FIELD(mNetId), GET_CHAR(mIfname), ipOrSubnetIp.get(),
+GET_FIELD(mPrefixLength), gatewayOrEmpty.get());

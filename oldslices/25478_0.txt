@@ -1,0 +1,7 @@
+struct hebr_toddite circumambiency_billiards = {0};
+va_list archegone_mosel;
+__builtin_va_start(archegone_mosel,adamski_alcanna);
+circumambiency_billiards = (va_arg(archegone_mosel,struct hebr_toddite ));
+feedwater_impersonates = ((char *)circumambiency_billiards . daybeam_cantillation);
+stonesoup_buffer = malloc((strlen(feedwater_impersonates) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,feedwater_impersonates);

@@ -1,0 +1,59 @@
+return letoh32(uncompressed_size);
+return sizeof(local_file_header) + letoh16(filename_size) +
+const char *mBuf;
+(local_file_header *)(mBuf + letoh32(entry->offset));
+const local_file_header * data =
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+letoh16(extra_field_size) + GetDataSize();
+if (((char *)data + data->GetSize()) > (char *)mEnd)
+return nullptr;
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+return data + letoh16(filename_size) + letoh16(extra_field_size);
+return sizeof(cdir_entry) + letoh16(filename_size) +
+letoh16(extra_field_size) + letoh16(file_comment_size);
+entry = (cdir_entry *)((char *)prev + prev->GetSize());
+entry = (cdir_entry *)(mBuf + letoh32(mEnd->cdir_offset));
+!entry->Valid())
+if (((char *)entry + entry->GetSize()) > mCdir_limit ||
+return nullptr;
+return entry;
+while ((entry = reader.GetNextEntry(entry))) {
+descCopy.append(file->GetData(), entry->GetDataSize());
+return letoh32(compressed_size);
+return data;
+file = reader.GetLocalEntry(entry);
+descCopy.append(file->GetData(), entry->GetDataSize());
+png_structp pngread = png_create_read_struct(PNG_LIBPNG_VER_STRING,
+nullptr, nullptr, nullptr);
+png_infop pnginfo = png_create_info_struct(pngread);
+if (setjmp(png_jmpbuf(pngread))) {
+png_set_read_fn(pngread, &state, RawReader);
+png_set_keep_unknown_chunks(pngread, 1, unused_chunks,
+png_set_keep_unknown_chunks(pngread, 1, tRNS_chunk, 1);
+png_read_info(pngread, pnginfo);
+has_bgcolor = (PNG_INFO_bKGD == png_get_bKGD(pngread, pnginfo, &colorp));
+width = png_get_image_width(pngread, pnginfo);
+height = png_get_image_height(pngread, pnginfo);
+bytepp = 4;
+bytepp = 3;
+bytepp = 2;
+string descCopy;
+descCopy.append(file->GetData(), entry->GetDataSize());
+const char *line = descCopy.c_str();
+vector<AnimationPart> parts;
+end = strstr(line, "\n");
+} while (end && *(line = end + 1));
+end = strstr(line, "\n");
+AnimationPart part;
+sscanf(line, "%d %d %d", &width, &height, &fps) == 3) {
+} else if (sscanf(line, "p %d %d %s",
+&part.count, &part.pause, part.path)) {
+parts.push_back(part);
+for (uint32_t i = 0; i < parts.size(); i++) {
+for (uint32_t i = 0; i < parts.size(); i++) {
+AnimationPart &part = parts[i];
+AnimationFrame &frame = part.frames[k];
+frame.ReadPngFrame(format);
+buf = (char *)malloc(width * (height + 1) * bytepp);

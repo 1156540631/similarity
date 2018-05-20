@@ -1,0 +1,13 @@
+const int VAR2 = 1;
+const int VAR3 = 0;
+wchar_t * VAR9;
+wchar_t VAR1[100];
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+if(VAR3) { }
+else
+VAR9 = VAR1;
+wchar_t VAR8[100];
+wmemset(VAR8, L'C', 100-1);
+VAR8[100-1] = L'\0';
+wcsncpy(VAR9, VAR8, 100-1);

@@ -1,0 +1,28 @@
+static void v9fs_write(void *opaque)
+uint32_t count;
+size_t offset = 7;
+V9fsPDU *pdu = opaque;
+QEMUIOVector qiov_full;
+v9fs_init_qiov_from_pdu(&qiov_full, pdu, offset, count, true);
+size_t skip, size_t size,
+qemu_iovec_concat(qiov, &elem, skip, size);
+trace_v9fs_write(pdu->tag, pdu->id, fid, off, count, qiov_full.niov);
+err = v9fs_xattr_write(s, pdu, fidp, off, count,qiov_full.iov, qiov_full.niov);
+static int v9fs_xattr_write(V9fsState *s, V9fsPDU *pdu, V9fsFidState *fidp,
+uint64_t off, uint32_t count,
+struct iovec *sg, int cnt)
+int i, to_copy;
+int write_count;
+int dataArray[5];
+uint64_t  write_count;
+write_count = xattr_len - off;
+if (write_count > count) {
+write_count = count;
+err = pdu_marshal(pdu, offset, "d", write_count);
+dataArray[2] = write_count;
+to_copy = func(dataArray);
+int func(int dataArray[])
+int write_count = dataArray[2];
+return write_count;
+to_copy = func(dataArray);
+memcpy((char *)fidp->fs.xattr.value + off, sg[i].iov_base, to_copy);

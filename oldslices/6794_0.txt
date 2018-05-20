@@ -1,0 +1,5 @@
+char * *dataPtr2 = &data;
+char * data = *dataPtr2;
+SNPRINTF(data, 100, "%s", source);
+printLine(data);
+free(data);

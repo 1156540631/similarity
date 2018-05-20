@@ -1,0 +1,24 @@
+VAR1 = FUN1("MINONG_MARSUPIALISING");
+if (VAR1 != 0) {;
+VAR2 = ((void *)VAR1);
+FUN2(VAR2);
+void FUN2(void *const VAR3)
+VAR4 = ((char *)((char *)((void *)VAR3)));
+VAR5[7] = VAR4;
+VAR6 = ((int )(strlen(VAR4)));
+FUN3(VAR7, VAR8, "VAR5", VAR5, "VAR9-VAR10");
+for (; VAR6 >= 0; (--VAR11 , --VAR6)) {
+VAR12[VAR11] = VAR4[VAR6];
+FUN3(VAR7, VAR8, "VAR12", VAR12, "VAR13-VAR10");
+VAR12[VAR14] = FUN4(VAR12[VAR14]);
+FUN5("%s\n",VAR12);
+FUN5("strlen VAR15 = %d\n",strlen(VAR4));
+FUN5("strlen VAR15 = %d\n",strlen(VAR5[7]));
+void FUN5(char * VAR16, ...) {
+FUN5("strlen VAR15 = %d\n",strlen(VAR5[7]));
+FUN3(VAR7, VAR8, "VAR12", VAR12, "VAR17-VAR10");
+int FUN4(int VAR18)
+if (VAR18 >= 97 && VAR18 <= 122) {
+return VAR18 - 32;
+return VAR18;
+VAR12[VAR14] = FUN4(VAR12[VAR14]);

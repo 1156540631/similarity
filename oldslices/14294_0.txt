@@ -1,0 +1,3 @@
+GoodClass(const char *data)
+this->data = new char[strlen(data) + 1];
+strcpy(this->data, data);

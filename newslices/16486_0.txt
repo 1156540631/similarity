@@ -1,0 +1,5 @@
+FUN1(VAR1);
+static void FUN1(CLASS1 * &VAR1)
+VAR1 = (CLASS1 *)malloc(100*sizeof(CLASS1));
+CLASS1 VAR2[100] = {0};
+memcpy(VAR1, VAR2, 100*sizeof(CLASS1));

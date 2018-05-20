@@ -1,0 +1,12 @@
+char* VAR21;
+int VAR159 = 1000;
+VAR21 = (char*) malloc(VAR159 * sizeof(char));
+VAR160 = FUN14(VAR161, "data", VAR21, VAR159 * sizeof(char));
+VAR159 = VAR159 * 2;
+free(VAR21);
+FUN15(VAR21);
+void FUN15(char *VAR162)
+char VAR67[1024];
+VAR163 = ((char *)VAR162);
+memset(VAR67,0,1024);
+strncpy(VAR67,VAR163,sizeof(VAR67));

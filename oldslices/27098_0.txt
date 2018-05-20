@@ -1,0 +1,7 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+char buf[MAXSIZE];
+sprintf(buf, "<%.29s>", str);
+printf("result: %s\n", buf);

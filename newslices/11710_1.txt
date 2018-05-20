@@ -1,0 +1,4 @@
+VAR1[100-1] = '\';
+FUN1(VAR2, VAR1);
+FUN2(VAR1);
+free(VAR1);

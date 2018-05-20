@@ -1,0 +1,14 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+VAR4 = FUN2(VAR3, strlen(VAR3), VAR5-1);
+FUN2(char *VAR6, int VAR7, int VAR8)
+if(VAR7 > VAR8){
+return FUN2(VAR6+1, VAR7-1, VAR8);}
+FUN2(char *VAR6, int VAR7, int VAR8)
+return VAR6;
+VAR4 = FUN2(VAR3, strlen(VAR3), VAR5-1);
+FUN3(VAR4);
+FUN3(char *VAR9)
+strcpy(VAR10, VAR9);
+printf("VAR11: %s\VAR7", VAR10);
+free(VAR10);

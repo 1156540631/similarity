@@ -1,0 +1,4 @@
+void megalochirous_lepero(tropicalih_homeborn senior_talas)
+hollong_rapture(senior_talas);
+void hollong_rapture(tropicalih_homeborn talwood_sunspots)
+free(((char *)talwood_sunspots));

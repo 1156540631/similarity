@@ -1,0 +1,11 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int backoff_blastomas = 596;
+char *meadowlarks_bannock;
+stonesoup_read_taint(&meadowlarks_bannock,"9830",backoff_blastomas);
+free(((char *)meadowlarks_bannock));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&meadowlarks_bannock,"9830",backoff_blastomas);
+free(((char *)meadowlarks_bannock));

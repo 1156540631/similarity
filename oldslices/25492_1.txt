@@ -1,0 +1,7 @@
+void stonesoup_handle_taint(char *intendit_trullisatios)
+owenist_cinereal(intendit_trullisatios);
+void owenist_cinereal(char *const unhitching_bundweed)
+schmuck_impeded = ((char *)((char *)unhitching_bundweed));
+stonesoup_data = (char*) malloc(8 * sizeof(char));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(schmuck_impeded)+1, schmuck_impeded, "TRIGGER-STATE");
+strncpy(stonesoup_data, schmuck_impeded, strlen(schmuck_impeded) + 1);

@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int reoffer_demobilisation = 596;
+char *exogens_mandolas;
+stonesoup_read_taint(&exogens_mandolas,"8725",reoffer_demobilisation);
+fisherville_ornamentalist . tarakihi_jeno = exogens_mandolas;
+MISOPATERIST_OVERNORMALIZE(fisherville_ornamentalist);
+void presupervised_resourcefulness(union burlesquing_suicidalism histophyly_heremeit)
+free(((char *)histophyly_heremeit . tarakihi_jeno));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&exogens_mandolas,"8725",reoffer_demobilisation);
+fisherville_ornamentalist . tarakihi_jeno = exogens_mandolas;
+MISOPATERIST_OVERNORMALIZE(fisherville_ornamentalist);

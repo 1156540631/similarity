@@ -1,0 +1,10 @@
+dataBadBuffer[50-1] = L'\0';
+data = (void *)dataBadBuffer;
+CWE122_Heap_Based_Buffer_Overflow__CWE135_64b_goodB2GSink(&data);
+void CWE122_Heap_Based_Buffer_Overflow__CWE135_64b_goodB2GSink(void * dataVoidPtr)
+void * * dataPtr = (void * *)dataVoidPtr;
+void * data = (*dataPtr);
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));
+free(dest);

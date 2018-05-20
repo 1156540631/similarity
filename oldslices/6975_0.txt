@@ -1,0 +1,4 @@
+va_list argptr;
+va_start(argptr, format);
+vfprintf(stonesoup_printf_context, format, argptr);
+va_end(argptr);

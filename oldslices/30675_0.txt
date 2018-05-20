@@ -1,0 +1,11 @@
+static const int STATIC_CONST_TRUE = 1;
+static const int STATIC_CONST_FALSE = 0;
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+data = NULL;
+if(STATIC_CONST_TRUE)
+data = (void *)WIDE_STRING;
+if(STATIC_CONST_FALSE) {}
+else{
+size_t dataLen = wcslen((wchar_t *)data);
+void * dest = (void *)calloc(dataLen+1, sizeof(wchar_t));
+memcpy(dest, data, (dataLen+1)*sizeof(wchar_t));

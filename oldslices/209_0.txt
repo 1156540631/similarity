@@ -1,0 +1,7 @@
+void NetworkUtils::setAccessPoint(CommandChain* aChain,
+nsCString ssid(GET_CHAR(mSsid));
+nsCString key(GET_CHAR(mKey));
+escapeQuote(key);
+aString.ReplaceSubstring("\\", "\\\\");
+}
+key.get());

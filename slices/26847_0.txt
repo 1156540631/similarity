@@ -1,0 +1,2 @@
+VAR445 = VAR446 = VAR447 = false;
+printf("VAR445 = %d\VAR7", VAR445);

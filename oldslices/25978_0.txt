@@ -1,0 +1,17 @@
+static void dissect_client_transport_info(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree,
+guint offset, guint length_remaining)
+char    protocol[3+1] = "";
+guint   ipaddr[4];
+guint   port;
+proto_tree_add_item(tree, hf_msmms_command_prefix1, tvb, offset, 4, ENC_LITTLE_ENDIAN);
+offset += 4;
+proto_tree_add_item(tree, hf_msmms_command_prefix2, tvb, offset, 4, ENC_LITTLE_ENDIAN);
+offset += 4;
+offset += 4;
+offset += 4;
+offset += 4;
+transport_info = tvb_get_ephemeral_unicode_string(tvb, offset, length_remaining - 20, ENC_LITTLE_ENDIAN);
+transport_info, "Transport: (%s)", transport_info);
+fields_matched = sscanf(transport_info, "%*c%*c%u.%u.%u.%u%*c%3s%*c%u",
+&ipaddr[0], &ipaddr[1], &ipaddr[2], &ipaddr[3],
+protocol, &port);

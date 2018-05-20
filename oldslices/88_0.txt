@@ -1,0 +1,9 @@
+const char *old_make_model,
+if (!strncasecmp(old_make_model, "Hewlett-Packard", 15))
+mmptr = (char *)old_make_model + 15;
+while (isspace(*mmptr & 255))
+mmptr ++;
+if (!strncasecmp(mmptr, "hp", 2))
+mmptr += 2;
+mmptr ++;
+while (isspace(*mmptr & 255))

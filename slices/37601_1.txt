@@ -1,0 +1,10 @@
+wchar_t * VAR1;
+void (*VAR4) (wchar_t *) = FUN1;
+wchar_t VAR2[100];
+VAR1 = VAR2;
+wmemset(VAR1, L'A', 100-1);
+VAR1[100-1] = L'\0';
+VAR4(VAR1);
+static void FUN1(wchar_t * VAR1)
+wchar_t VAR3[50] = L"";
+wcscpy(VAR3, VAR1);

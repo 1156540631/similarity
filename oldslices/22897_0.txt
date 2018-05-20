@@ -1,0 +1,4 @@
+void alniresinol_poeticising(char *discretely_pivotmen)
+czaric_nudenesses = ((char *)discretely_pivotmen);
+stonesoup_buffer = malloc((strlen(czaric_nudenesses) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,czaric_nudenesses);

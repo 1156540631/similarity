@@ -1,0 +1,10 @@
+data = NULL;
+data = goodG2BSource(data);
+wchar_t * goodG2BSource(wchar_t * data)
+data = new wchar_t[100];
+data[0] = L'\0';
+return data;
+data = badSource(data);
+data = badSource(data);
+source[100-1] = L'\0';
+wcsncpy(data, source, 100-1);

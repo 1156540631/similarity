@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+goodG2BStatic = 1;
+goodG2BSink(data);
+static void goodG2BSink(char * data)
+if(goodG2BStatic)
+printf(data);

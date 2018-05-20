@@ -1,0 +1,8 @@
+char * VAR1 = (char *)FUN1(100*sizeof(char));
+VAR2 = VAR1;
+memset(VAR2, '', 100-1);
+VAR2[100-1] = '\';
+FUN2(VAR2);
+void FUN3(char * VAR2)
+char VAR3[50] = "";
+strncat(VAR3, VAR2, strlen(VAR2));

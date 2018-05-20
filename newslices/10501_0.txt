@@ -1,0 +1,11 @@
+VAR1<int *> VAR2;
+VAR3 = (int *)malloc(100*sizeof(int));
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+FUN3(VAR2);
+void FUN3(VAR1<int *> VAR2)
+int * VAR3 = VAR2[2];
+memmove(VAR3, VAR4, 100*sizeof(int));
+FUN4(VAR3[0]);
+free(VAR3);

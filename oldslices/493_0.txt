@@ -1,0 +1,42 @@
+unsigned char *ssl_add_clienthello_tlsext(SSL *s, unsigned char *buf,
+unsigned char *ret = buf;
+ret += 2;
+long lenmax;
+strlen(s->tlsext_hostname)) > (unsigned long)lenmax)
+s2n(TLSEXT_TYPE_server_name, ret);
+s2n(size_str + 5, ret);
+s2n(size_str + 3, ret);
+*(ret++) = (unsigned char)TLSEXT_NAMETYPE_host_name;
+s2n(size_str, ret);
+memcpy(ret, s->tlsext_hostname, size_str);
+ret += size_str;
+int el;
+if (!ssl_add_clienthello_renegotiate_ext(s, 0, &el, 0)) {
+s2n(TLSEXT_TYPE_renegotiate, ret);
+s2n(el, ret);
+if (!ssl_add_clienthello_renegotiate_ext(s, ret, &el, el)) {
+ret += el;
+int login_len = strlen(s->srp_ctx.login);
+s2n(TLSEXT_TYPE_srp, ret);
+s2n(login_len + 1, ret);
+(*ret++) = (unsigned char)login_len;
+memcpy(ret, s->srp_ctx.login, login_len);
+ret += login_len;
+s2n(TLSEXT_TYPE_ec_point_formats, ret);
+s2n(s->tlsext_ecpointformatlist_length + 1, ret);
+*(ret++) = (unsigned char)s->tlsext_ecpointformatlist_length;
+memcpy(ret, s->tlsext_ecpointformatlist,
+s->tlsext_ecpointformatlist_length);
+ret += s->tlsext_ecpointformatlist_length;
+s2n(TLSEXT_TYPE_elliptic_curves, ret);
+s2n(s->tlsext_ellipticcurvelist_length + 2, ret);
+s2n(s->tlsext_ellipticcurvelist_length, ret);
+memcpy(ret, s->tlsext_ellipticcurvelist,
+s->tlsext_ellipticcurvelist_length);
+ret += s->tlsext_ellipticcurvelist_length;
+ticklen = s->tlsext_session_ticket->length;
+s->session->tlsext_tick = OPENSSL_malloc(ticklen);
+memcpy(s->session->tlsext_tick,
+s2n(TLSEXT_TYPE_session_ticket, ret);
+s2n(ticklen, ret);
+memcpy(ret, s->session->tlsext_tick, ticklen);

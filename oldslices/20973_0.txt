@@ -1,0 +1,5 @@
+khandait_amidid = getenv("TRANEEN_MOCMAIN");
+if (khandait_amidid != 0) {;
+haematozoon_orlich . polychromasia_hughie = khandait_amidid;
+unprimness_affectible = herrington_mollities(haematozoon_orlich);
+union pacemake_hypobaropathy herrington_mollities(union pacemake_hypobaropathy adelaja_touret);

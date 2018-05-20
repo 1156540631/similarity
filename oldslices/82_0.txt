@@ -1,0 +1,5 @@
+if (!(ptr = strchr(key, '=')))
+ptr++;
+for (; *ptr && !(isspace(*ptr) || *ptr == ','); ptr++)
+key = ptr;
+if (!(ptr = strchr(key, '=')))

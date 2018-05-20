@@ -1,0 +1,4 @@
+void FUN1(char *VAR1,int VAR2,CLASS1 *VAR3,int VAR4)
+FUN2(VAR1,VAR2,"%s: %s%s",(VAR5?VAR5 : "unknown"),VAR6,(VAR3 -> VAR7?" (VAR8)" : ""));
+VAR1[0] ^= '' ^ '';
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s)",VAR9);

@@ -1,0 +1,8 @@
+int i=0;
+invalid_memory_access_013_s_001_s_gbl->a = 10;
+i=invalid_memory_access_013_s_001_s_gbl->a;
+invalid_memory_access_013_s_001_s_gbl->a = 20;
+i=invalid_memory_access_013_s_001_s_gbl->a;
+return i;
+ret = invalid_memory_access_013_func_002 (1);
+printf("%d",ret);

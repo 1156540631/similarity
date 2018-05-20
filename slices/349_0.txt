@@ -1,0 +1,4 @@
+const char *VAR1)
+FUN4 (*VAR1++) {
+if (*VAR1++ == ':') {
+int VAR13, VAR2 = strtol(VAR1, NULL, 0);

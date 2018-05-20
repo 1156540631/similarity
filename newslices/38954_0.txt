@@ -1,0 +1,7 @@
+char VAR1[100] = "";
+VAR2 = VAR1;
+strcpy(VAR2, "fixedstringtest");
+CLASS1* VAR3 = new VAR4;
+VAR3->FUN1(VAR2);
+void VAR4::FUN1(char * VAR2)
+printf(VAR2);

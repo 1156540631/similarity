@@ -1,0 +1,7 @@
+VAR77 = getenv("OPENSSL_CONF");
+if (VAR77) {
+return FUN7(VAR77);
+VAR77 = FUN6();
+if (!VAR77) {
+if (FUN8(VAR78,VAR77,((void *)0)) <= 0) {
+FUN9(VAR77);

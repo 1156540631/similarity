@@ -1,0 +1,3 @@
+WriteStatusFailure(LPCWSTR updateDirPath, int errorCode)
+WCHAR updateStatusFilePath[MAX_PATH + 1];
+wcscpy(updateStatusFilePath, updateDirPath);

@@ -1,0 +1,61 @@
+WCHAR updateStatusFilePath[MAX_PATH + 1] = {L'\0'};
+wcsncpy(updateStatusFilePath, updateDirPath, MAX_PATH);
+wcsncpy(aResultDir, argvTmp[2], MAX_PATH);
+bool backgroundUpdate = IsUpdateBeingStaged(argcTmp, argvTmp);
+if (!PathRemoveFileSpecW(serviceUpdaterPath)) {
+if (!PathAppendSafe(serviceUpdaterPath, L"update")) {
+CreateDirectoryW(serviceUpdaterPath, NULL);
+if (!PathAppendSafe(serviceUpdaterPath, L"updater.exe")) {
+result = DeleteFileW(serviceUpdaterPath);
+serviceUpdaterPath));
+if (PathGetSiblingFilePath(updaterINIPath, serviceUpdaterPath,
+WCHAR secureUpdaterPath[MAX_PATH + 1] = { L'\0' };
+result = GetSecureUpdaterPath(secureUpdaterPath);
+oldUpdaterPath, secureUpdaterPath));
+DeleteSecureUpdater(secureUpdaterPath);
+argv[3] = secureUpdaterPath;
+result = ProcessSoftwareUpdateCommand(argc - 3, argv + 3);
+ProcessSoftwareUpdateCommand(DWORD argc, LPWSTR *argv)
+if (!GetInstallationDir(argc, argv, installDir)) {
+GetInstallationDir(int argcTmp, LPWSTR *argvTmp, WCHAR aResultDir[MAX_PATH + 1])
+if (!IsLocalFile(argv[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(argv[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(argv[0], installDirUpdater,
+HMODULE updaterModule = LoadLibraryEx(argv[0], NULL,
+argv[0]);
+if (StartUpdateProcess(argc, argv, installDir,
+LPWSTR *argv,
+LPWSTR cmdLine = MakeCommandLine(argc, argv);
+PRUnichar* MakeCommandLine(int argc, PRUnichar **argv);
+PathGetSiblingFilePath(updaterINITemp, argv[0], L"updater.tmp")) {
+BOOL PathGetSiblingFilePath(LPWSTR destinationBuffer,  LPCWSTR siblingFilePath,
+if (PathGetSiblingFilePath(updaterINI, argv[0], L"updater.ini") &&
+processStarted = CreateProcessW(argv[0], cmdLine,
+if (IsStatusApplying(argv[1], isApplying) && isApplying) {
+result = CopyFileW(oldUpdaterPath, secureUpdaterPath, FALSE);
+argv[3] = secureUpdaterPath;
+result = ProcessSoftwareUpdateCommand(argc - 3, argv + 3);
+BOOL PathGetSiblingFilePath(LPWSTR destinationBuffer,  LPCWSTR siblingFilePath,
+processStarted = CreateProcessW(argv[0], cmdLine,
+if (IsStatusApplying(argv[1], isApplying) && isApplying) {
+IsStatusApplying(LPCWSTR updateDirPath, BOOL &isApplying)
+wcsncpy(updateStatusFilePath, updateDirPath, MAX_PATH);
+DeleteSecureUpdater(WCHAR serviceUpdaterPath[MAX_PATH + 1])
+result = CopyFileW(oldUpdaterPath, secureUpdaterPath, FALSE);
+argv[3] = secureUpdaterPath;
+result = ProcessSoftwareUpdateCommand(argc - 3, argv + 3);
+GetSecureUpdaterPath(WCHAR serviceUpdaterPath[MAX_PATH + 1])
+if (!GetModuleFileNameW(NULL, serviceUpdaterPath, MAX_PATH)) {
+argv[3] = secureUpdaterPath;
+result = ProcessSoftwareUpdateCommand(argc - 3, argv + 3);
+IsUpdateBeingStaged(int argc, LPWSTR *argv)
+return argc == 4 && !wcscmp(argv[3], L"-1");
+bool replaceRequest = (argcTmp >= 4 && wcsstr(argvTmp[3], L"/replace"));
+if (!IsLocalFile(argv[0], isLocal) || !isLocal) {
+nsAutoHandle noWriteLock(CreateFileW(argv[0], GENERIC_READ, FILE_SHARE_READ,
+if (result && !VerifySameFiles(argv[0], installDirUpdater,
+HMODULE updaterModule = LoadLibraryEx(argv[0], NULL,
+argv[0]);
+if (StartUpdateProcess(argc, argv, installDir,
+LPWSTR *argv,
+LPWSTR cmdLine = MakeCommandLine(argc, argv);

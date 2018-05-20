@@ -1,0 +1,10 @@
+data = new wchar_t[10+1];
+return data;
+data = NULL;
+data = goodG2B2Source(data);
+wchar_t source[10+1] = SRC_STRING;
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));
+static wchar_t * goodG2B2Source(wchar_t * data)
+return data;
+data = goodG2B2Source(data);
+memmove(data, source, (wcslen(source) + 1) * sizeof(wchar_t));

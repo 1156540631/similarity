@@ -1,0 +1,12 @@
+struct netmon_hdr hdr;
+struct tm tm;
+bytes_read = file_read(&hdr, sizeof hdr, wth->fh);
+if (bytes_read != sizeof hdr) {
+tm.tm_year = pletohs(&hdr.ts_year) - 1900;
+tm.tm_mon = pletohs(&hdr.ts_month) - 1;
+tm.tm_mday = pletohs(&hdr.ts_day);
+tm.tm_hour = pletohs(&hdr.ts_hour);
+tm.tm_min = pletohs(&hdr.ts_min);
+tm.tm_sec = pletohs(&hdr.ts_sec);
+tm.tm_isdst = -1;
+netmon->start_secs = mktime(&tm);

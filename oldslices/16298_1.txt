@@ -1,0 +1,10 @@
+vector<char *> dataVector;
+data = (char *)malloc(10*sizeof(char));
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+badSink(dataVector);
+void badSink(vector<char *> dataVector)
+char * data = dataVector[2];
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

@@ -1,0 +1,12 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+char * VAR3;
+char * VAR4 = (char *)FUN1((10)*sizeof(char));
+char * VAR5 = (char *)FUN1((10+1)*sizeof(char));
+VAR3 = VAR5;
+VAR3[0] = '\';
+FUN2(VAR3);
+void FUN2(char * VAR3)
+FUN3(VAR3);
+void FUN3(char * VAR3)
+char VAR6[10+1] = VAR2;
+memmove(VAR3, VAR6, (strlen(VAR6) + 1) * sizeof(char));

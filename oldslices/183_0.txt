@@ -1,0 +1,46 @@
+return av_guess_format("image2", NULL, NULL);
+char buf[1024];
+return filename && (av_get_frame_filename(buf, sizeof(buf), filename, 1)>=0);
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+const char *filename, void *logctx,
+if ((ret = avio_open2(&s->pb, filename, AVIO_FLAG_READ | s->avio_flags,
+return av_probe_input_buffer(s->pb, &s->iformat, filename, s, 0, s->probesize);
+const char *filename, void *logctx,
+if (!av_filename_number_test(filename)) {
+oformat = av_guess_format(format, NULL, NULL);
+AVOutputFormat *oformat, const char *filename)
+int ret = avformat_alloc_output_context2(&avctx, oformat, format, filename);
+const char *format, const char *filename)
+oformat = av_guess_format(NULL, filename, NULL);
+char *q, buf1[20], c;
+nd = 0;
+while (isdigit(*p)) {
+c = *p++;
+nd = nd * 10 + *p++ - '0';
+memcpy(q, buf1, len);
+snprintf(buf1, sizeof(buf1), "%0*d", nd, number);
+len = strlen(buf1);
+memcpy(q, buf1, len);
+int av_filename_number_test(const char *filename)
+return filename && (av_get_frame_filename(buf, sizeof(buf), filename, 1)>=0);
+const char *path, int number)
+p = path;
+c = *p++;
+nd = nd * 10 + *p++ - '0';
+snprintf(buf1, sizeof(buf1), "%0*d", nd, number);
+len = strlen(buf1);
+memcpy(q, buf1, len);
+q += len;
+memcpy(q, buf1, len);
+*q++ = c;
+memcpy(q, buf1, len);
+AVOutputFormat *av_guess_format(const char *short_name, const char *filename,
+ff_guess_image2_codec(filename) != AV_CODEC_ID_NONE) {
+av_filename_number_test(filename) &&
+int av_get_frame_filename(char *buf, int buf_size,
+q = buf;
+memcpy(q, buf1, len);
+int avformat_open_input(AVFormatContext **ps, const char *filename, AVInputFormat *fmt, AVDictionary **options)
+if ((ret = init_input(s, filename, &tmp)) < 0)
+static int init_input(AVFormatContext *s, const char *filename, AVDictionary **options)
+if (!av_filename_number_test(filename)) {

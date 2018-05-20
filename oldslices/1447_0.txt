@@ -1,0 +1,6 @@
+char dataBuffer[100] = "";
+data = dataBuffer;
+strcpy(data, "fixedstringtest");
+CWE134_Uncontrolled_Format_String__char_console_vfprintf_22_goodG2BVaSink(data, data);
+void CWE134_Uncontrolled_Format_String__char_console_vfprintf_22_goodG2BVaSink(char * data, ...)
+va_start(args, data);

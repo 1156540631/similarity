@@ -1,0 +1,5 @@
+void FUN151(void **VAR578)
+char VAR107[1024];
+VAR579 = ((char *)((char *)( *(VAR578 - 5))));
+memset(VAR107, 0, 1024);
+strncpy(VAR107, VAR579, sizeof(VAR107));

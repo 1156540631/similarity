@@ -1,0 +1,3 @@
+ung_isopolite = getenv("SKAGEN_HIGHFALUTINISM");
+ethicoaesthetic_escrime = ((int )(strlen(ung_isopolite)));
+overpeck_elzevir = ((char *)(malloc(ethicoaesthetic_escrime + 1)));

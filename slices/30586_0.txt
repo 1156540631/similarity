@@ -1,0 +1,13 @@
+static int VAR9 = 5;
+VAR5 = -1;
+if(VAR9==5)
+VAR12 = recv(VAR55, VAR14, VAR15 - 1, 0);
+if (VAR12 == VAR17 || VAR12 == 0)
+break;
+VAR14[VAR12] = '\0';
+VAR5 = atoi(VAR14);
+if(VAR9!=5){}
+else
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

@@ -1,0 +1,40 @@
+unsigned char *buf = NULL;
+unsigned char *bitmask = NULL;
+frag = (hm_fragment *)OPENSSL_malloc(sizeof(hm_fragment));
+return NULL;
+return NULL;
+frag->fragment = buf;
+(unsigned char *)OPENSSL_malloc(RSMBLY_BITMASK_SIZE(frag_len));
+bitmask =
+return NULL;
+memset(bitmask, 0, RSMBLY_BITMASK_SIZE(frag_len));
+frag->reassembly = bitmask;
+return frag;
+frag = dtls1_hm_fragment_new(frag_len, 0);
+memcpy(&(frag->msg_header), msg_hdr, sizeof(*msg_hdr));
+unsigned char wire[DTLS1_HM_HEADER_LENGTH];
+struct hm_header_st msg_hdr;
+i = s->method->ssl_read_bytes(s, SSL3_RT_HANDSHAKE, wire,
+dtls1_get_message_header(wire, &msg_hdr);
+n2l3(data, msg_hdr->msg_len);
+n2s(data, msg_hdr->seq);
+n2l3(data, msg_hdr->frag_off);
+n2l3(data, msg_hdr->frag_len);
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_process_out_of_seq_message(s, &msg_hdr, ok);
+dtls1_process_out_of_seq_message(SSL *s, const struct hm_header_st *msg_hdr,
+unsigned long frag_len = msg_hdr->frag_len;
+frag = dtls1_hm_fragment_new(frag_len, 0);
+static hm_fragment *dtls1_hm_fragment_new(unsigned long frag_len,
+buf = (unsigned char *)OPENSSL_malloc(frag_len);
+frag->fragment = buf;
+return frag;
+frag = dtls1_hm_fragment_new(frag_len, 0);
+memcpy(&(frag->msg_header), msg_hdr, sizeof(*msg_hdr));
+dtls1_get_message_header(unsigned char *data, struct hm_header_st *msg_hdr)
+memset(msg_hdr, 0x00, sizeof(struct hm_header_st));
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_process_out_of_seq_message(s, &msg_hdr, ok);
+msg_hdr->type = *(data++);
+dtls1_get_message_header(wire, &msg_hdr);
+return dtls1_process_out_of_seq_message(s, &msg_hdr, ok);

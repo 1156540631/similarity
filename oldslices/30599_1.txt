@@ -1,0 +1,10 @@
+const int GLOBAL_CONST_FIVE = 5; 
+data = -1;
+if(GLOBAL_CONST_FIVE==5)
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+if(GLOBAL_CONST_FIVE==5)
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

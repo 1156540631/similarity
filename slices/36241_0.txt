@@ -1,0 +1,4 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+VAR1[50-1] = '\0';
+char dest[50] = "";
+memcpy(dest, VAR1, strlen(VAR1)*sizeof(char));

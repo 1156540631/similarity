@@ -1,0 +1,2 @@
+char * FUN2(char * VAR1)
+size_t VAR7 = strlen(VAR1);

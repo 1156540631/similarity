@@ -1,0 +1,9 @@
+VAR1 = VAR2;
+VAR1 = (CLASS1 *)malloc(100*sizeof(CLASS1));
+VAR3[2] = VAR1;
+FUN1(VAR3);
+void FUN1(VAR4<int, CLASS1 *> VAR3)
+CLASS1 * VAR1 = VAR3[2];
+memcpy(VAR1, VAR5, 100*sizeof(CLASS1));
+FUN2(&VAR1[0]);
+free(VAR1);

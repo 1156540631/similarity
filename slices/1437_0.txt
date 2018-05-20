@@ -1,0 +1,7 @@
+VAR1 = (CLASS1 *)malloc(100*sizeof(CLASS1));
+static void FUN1(CLASS1 * &VAR1)
+VAR1 = NULL;
+FUN1(VAR1);
+memmove(VAR1, VAR2, 100*sizeof(CLASS1));
+FUN1(&VAR1[0]);
+free(VAR1);

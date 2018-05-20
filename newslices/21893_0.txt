@@ -1,0 +1,11 @@
+VAR1 = FUN1("TERNAR_REFINDS");
+if (VAR1 != 0) {;
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+if (VAR3 == 0) {
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+VAR4 = &VAR3;
+VAR5 = VAR4 + 5;
+FUN2(VAR6,VAR5);
+void FUN2(int VAR7,char **VAR8);

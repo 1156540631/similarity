@@ -1,0 +1,7 @@
+*VAR1 = VAR2;
+*VAR1 = VAR3;
+FUN1("VAR4 VAR5 VAR6 short VAR7 VAR8\n");
+}
+FUN1("VAR9 VAR5 false\n");
+void FUN2(int VAR10, CLASS1 * VAR1) {
+FUN1("VAR9 VAR5 false\n");

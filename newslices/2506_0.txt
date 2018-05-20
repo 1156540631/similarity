@@ -1,0 +1,7 @@
+wchar_t * VAR1 = (wchar_t *)malloc(50*sizeof(wchar_t));
+VAR1[50-1] = '\';
+VAR2 = (void *)VAR1;
+VAR3 VAR4 = FUN1((wchar_t *)VAR2);
+void * VAR5 = (void *)calloc(VAR4+1, sizeof(wchar_t));
+memcpy(VAR5, VAR2, (VAR4+1)*sizeof(wchar_t));
+free(VAR5);

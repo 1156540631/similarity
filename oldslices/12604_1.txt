@@ -1,0 +1,6 @@
+data[0] = '\0';
+return data;
+data = badSource(data);
+strcat(data, source);
+printLine(data);
+free(data);

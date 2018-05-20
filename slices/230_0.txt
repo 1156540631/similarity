@@ -1,0 +1,21 @@
+CLASS1 VAR3;
+FUN4( VAR3, VAR4 );
+char *VAR5;
+int VAR16 = vasprintf( &VAR5, VAR4, VAR3 );
+int VAR2 = strlen( *VAR7 ) + strlen( VAR5 ) + 1;
+strcat( VAR10, VAR5 );
+free( VAR5 );
+if( FUN1( &VAR8, "%VAR1", VAR12 ) < 0 ) return -1;
+if( FUN1( &VAR14, "%VAR1", VAR9 ) < 0 ) return -1;
+"  <track>\n"
+" </trackList>\n"
+if( FUN1( VAR11, " </VAR6>\n</playlist>\n" ) < 0 ) return -1;
+if( FUN1( VAR11, "  <vlc:node title=\"%VAR1\">\n", VAR15->VAR23 ) < 0 )
+if( FUN1( VAR11, "   <vlc:item tid=\"%d\" />\n", VAR13->VAR2 ) < 0 )
+if( FUN1( VAR11, "  </vlc:node>\n" ) < 0 )
+static int FUN1( char **VAR7, const char *VAR4, ... )
+FUN4( VAR3, VAR4 );
+int VAR16 = vasprintf( &VAR5, VAR4, VAR3 );
+int VAR2 = strlen( *VAR7 ) + strlen( VAR5 ) + 1;
+strcat( VAR10, VAR5 );
+free( VAR5 );

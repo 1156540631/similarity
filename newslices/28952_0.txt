@@ -1,0 +1,8 @@
+char * VAR1;
+VAR1 = (char *)malloc(100*sizeof(char));
+FUN1(1)
+memset(VAR1, '', 100-1);
+VAR1[100-1] = '\';
+break;
+char VAR2[50] = "";
+strcpy(VAR2, VAR1);

@@ -1,0 +1,6 @@
+return VAR1;
+VAR2[VAR3] = '\';
+return VAR2;
+char *VAR2 = FUN1();
+strncpy(VAR4,VAR2,25*sizeof(char));
+free(VAR2);

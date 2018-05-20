@@ -1,0 +1,9 @@
+data = NULL;
+data = (int64_t *)malloc(sizeof(*data));
+*data = 2147483643LL;
+dataMap[2] = data;
+goodG2BSink(dataMap);
+void goodG2BSink(map<int, int64_t *> dataMap)
+int64_t * data = dataMap[2];
+printLongLongLine(*data);
+free(data);

@@ -1,0 +1,14 @@
+bool (*funcPtr))(int , int ) = badSource;
+static char *
+asn1_get_string(
+unsigned char **buffer,
+unsigned char *bufend,
+int           length,
+char          *string,
+int           strsize)
+bool flag = funcPtr(length, strsize);
+bool badSource(int length, int strsize)
+return length < strsize;
+bool flag = funcPtr(length, strsize)
+if (flag)
+memcpy(string, *buffer, length);

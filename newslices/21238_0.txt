@@ -1,0 +1,9 @@
+VAR1 = FUN1("PORPHYRIZED_AREAD");
+if (VAR1 != 0) {;
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+if (VAR3 == 0) {
+memset(VAR3,0,VAR2 + 1);
+memcpy(VAR3,VAR1,VAR2);
+FUN2(VAR3);
+void FUN2(char *const VAR4);

@@ -1,0 +1,3 @@
+bassus_agrestian = getenv("PORPHYRIZED_AREAD");
+foreprize_chiromegaly = ((int )(strlen(bassus_agrestian)));
+alcaldes_scevor = ((char *)(malloc(foreprize_chiromegaly + 1)));

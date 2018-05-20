@@ -1,0 +1,3 @@
+VAR1 = (char *) malloc(VAR2);
+free(VAR1);
+free(VAR1);

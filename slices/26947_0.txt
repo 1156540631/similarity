@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+if(argc > 1) {
+VAR44 = argv[1];
+if(VAR44[0] == '!')
+FUN8("<%VAR1>", VAR44);
+FUN8("[%VAR1]", VAR44);
+FUN8(char *VAR41, char *VAR14)
+printf(VAR41, VAR14);

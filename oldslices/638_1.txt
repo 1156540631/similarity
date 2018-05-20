@@ -1,0 +1,34 @@
+rv = HandleCharacterData(aErrorText, NS_strlen(aErrorText));
+uint32_t aLength)
+return AddText(aData, aLength);
+mTextLength = 0;
+rv = HandleStartElement(parsererror.get(), noAtts, 0, 0);
+rv = HandleCharacterData(aErrorText, NS_strlen(aErrorText));
+rv = HandleCharacterData(aSourceText, NS_strlen(aSourceText));
+int32_t aLength)
+mText = (char16_t *) malloc(sizeof(char16_t) * 4096);
+int32_t offset = 0;
+mTextLength += amount;
+int32_t amount = mTextSize - mTextLength;
+amount = aLength;
+memcpy(&mText[mTextLength],aText + offset, sizeof(char16_t) * amount);
+aLength -= amount;
+mTextSize += aLength;
+offset += amount;
+memcpy(&mText[mTextLength],aText + offset, sizeof(char16_t) * amount);
+mText = (char16_t *) realloc(mText, sizeof(char16_t) * mTextSize);
+XULContentSinkImpl::ReportError(const char16_t* aErrorText,
+NS_PRECONDITION(aError && aSourceText && aErrorText, "Check arguments!!!");
+rv = HandleCharacterData(aErrorText, NS_strlen(aErrorText));
+uint32_t aLength)
+return AddText(aData, aLength);
+int32_t aLength)
+mTextSize += aLength;
+mText = (char16_t *) realloc(mText, sizeof(char16_t) * mTextSize);
+XULContentSinkImpl::HandleCharacterData(const char16_t *aData,
+return AddText(aData, aLength);
+XULContentSinkImpl::AddText(const char16_t* aText,
+memcpy(&mText[mTextLength],aText + offset, sizeof(char16_t) * amount);
+mText = (char16_t *) realloc(mText, sizeof(char16_t) * mTextSize);
+XULContentSinkImpl::HandleCDataSection(const char16_t *aData, uint32_t aLength)
+return AddText(aData, aLength);

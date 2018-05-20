@@ -1,0 +1,8 @@
+void stonesoup_handle_taint(char *baronetise_tudesque)
+xylinid_cornific . batzen_montanist = baronetise_tudesque;
+BACHELORLY_BRONGNIARDITE(xylinid_cornific);
+void stomachful_supernotable(union yuri_quedful scat_quotieties)
+faham_bacilliparous = ((char *)scat_quotieties . batzen_montanist);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof (struct stonesoup_struct));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(faham_bacilliparous)+1, faham_bacilliparous, "TAINTED-SOURCE");
+strncpy(stonesoup_data->buffer, faham_bacilliparous, strlen(faham_bacilliparous) + 1);

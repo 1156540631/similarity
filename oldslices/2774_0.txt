@@ -1,0 +1,8 @@
+void stonesoup_handle_taint(char *casemaking_slavocracy)
+molopo_sojourning = ((int )(strlen(casemaking_slavocracy)));
+preinsured_stramineously = ((char *)(malloc(molopo_sojourning + 1)));
+memset(preinsured_stramineously,0,molopo_sojourning + 1);
+memcpy(preinsured_stramineously,casemaking_slavocracy,molopo_sojourning);
+boatward_guildroy(preinsured_stramineously);
+void boatward_guildroy(char *const peaching_westlandways)
+free(((char *)((char *)peaching_westlandways)));

@@ -1,0 +1,12 @@
+char stonesoup_stack_buffer_64[64];
+union monolinguist_amphibolitic lidded_infanta;
+innervating_onagraceae = getenv("UNDEWILY_HINTED");
+lidded_infanta . rostrated_missilries = innervating_onagraceae;
+decurtate_cailly[5] = lidded_infanta;
+duende_curvirostral = 5;
+overresolute_rectorial = &duende_curvirostral;
+brisked_periosteophyte =  *(decurtate_cailly +  *overresolute_rectorial);
+plaudit_scrumpy = ((char *)brisked_periosteophyte . rostrated_missilries);
+memset(stonesoup_stack_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_stack_buffer_64", stonesoup_stack_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_stack_buffer_64,plaudit_scrumpy);

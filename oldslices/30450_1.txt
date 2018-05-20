@@ -1,0 +1,10 @@
+data = -1;
+data = badSource(data);
+static int badSource(int data)
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+return data;
+int buffer[10] = { 0 };
+if (data >= 0)
+buffer[data] = 1;

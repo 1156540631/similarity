@@ -1,0 +1,2 @@
+FUN79(VAR360->VAR369.VAR370, VAR138);
+printf("Record type queried = %d\VAR7",VAR360->VAR369.VAR370);

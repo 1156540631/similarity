@@ -1,0 +1,13 @@
+wchar_t * data;
+wchar_t dataBuffer[100];
+wmemset(dataBuffer, L'A', 100-1);
+dataBuffer[100-1] = L'\0';
+data = dataBuffer;
+const CWE127_Buffer_Underread__wchar_t_declare_ncpy_81_base& baseObject = CWE127_Buffer_Underread__wchar_t_declare_ncpy_81_goodG2B();
+baseObject.action(data);
+void CWE127_Buffer_Underread__wchar_t_declare_ncpy_81_goodG2B::action(wchar_t * data) const
+wchar_t dest[100];
+wmemset(dest, L'C', 100-1);
+dest[100-1] = L'\0';
+wcsncpy(dest, data, wcslen(dest));
+dest[100-1] = L'\0';

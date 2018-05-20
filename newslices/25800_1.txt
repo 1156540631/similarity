@@ -1,0 +1,5 @@
+int FUN1(int VAR1, char **VAR2) {
+char *VAR3;
+VAR3 = (char *) malloc(VAR4);
+free(VAR3);
+strncpy(VAR3, VAR2[1], VAR4-1);

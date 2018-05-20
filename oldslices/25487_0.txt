@@ -1,0 +1,4 @@
+thomasite_siruelas = getenv("GRANDNEPHEWS_OUTBEGGED");
+if (thomasite_siruelas != 0) {;
+statolithic_subscript . cowpoke_snogs = ((char *)thomasite_siruelas);
+unkindlily_dimberdamber = &statolithic_subscript;

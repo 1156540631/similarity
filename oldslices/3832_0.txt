@@ -1,0 +1,3 @@
+newstr(size_t len, int needpanic) {
+assert(len <= 65536);
+buf = (u_char *)malloc(2 + len + 1);

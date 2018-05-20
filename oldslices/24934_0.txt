@@ -1,0 +1,10 @@
+ung_isopolite = getenv("SKAGEN_HIGHFALUTINISM");
+if (ung_isopolite != 0) {;
+ethicoaesthetic_escrime = ((int )(strlen(ung_isopolite)));
+overpeck_elzevir = ((char *)(malloc(ethicoaesthetic_escrime + 1)));
+if (overpeck_elzevir == 0) {
+memset(overpeck_elzevir,0,ethicoaesthetic_escrime + 1);
+memcpy(overpeck_elzevir,ung_isopolite,ethicoaesthetic_escrime);
+underreamer_semicircularity = &overpeck_elzevir;
+onegite_holoplanktonic = underreamer_semicircularity + 5;
+whuttering_whitling(onegite_holoplanktonic);

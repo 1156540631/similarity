@@ -1,0 +1,9 @@
+const int VAR1 = 1;
+const int VAR2 = 0;
+VAR3 = -1;
+if(VAR1)
+fscanf(VAR4, "%d", &VAR3);
+int *VAR5;
+VAR5 = (int*)malloc(VAR3 * sizeof(int));
+for (VAR6 = 0; VAR6 < (VAR7)VAR3; VAR6++)
+VAR5[VAR6] = 0;

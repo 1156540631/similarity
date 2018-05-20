@@ -1,0 +1,4 @@
+void badSink(map<int, wchar_t *> dataMap)
+wchar_t * data = dataMap[2];
+wchar_t dest[50] = L"";
+wcscat(dest, data);

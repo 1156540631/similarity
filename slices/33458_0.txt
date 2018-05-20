@@ -1,0 +1,8 @@
+wchar_t * VAR1 = VAR34;
+wchar_t VAR4[100];
+VAR1[0] = L'\0';
+VAR34 = VAR1;
+FUN5();
+wchar_t * VAR1 = VAR34;
+VAR4[100-1] = L'\0';
+SNPRINTF(VAR1, 100, L"%s", VAR4);

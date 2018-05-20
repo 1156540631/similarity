@@ -1,0 +1,23 @@
+FUN3(&VAR151,"MIMICKER_CUNNINGHAMIA");
+void FUN3(char** VAR21, char* VAR54) {
+VAR55 = getenv(VAR54);
+VAR56 = fopen(VAR55,"rb");
+if (VAR56 != 0) {
+fseek(VAR56,0L,2);
+VAR57 = ftell(VAR56);
+rewind(VAR56);
+*VAR21 = ((char *)(malloc(sizeof(char ) * (VAR57 + 1))));
+if (*VAR21 != 0) {
+VAR58 = fread(*VAR21,1,VAR57,VAR56);
+if (VAR56 != 0) {
+fclose(VAR56);
+if (VAR151 != 0) {;
+VAR152 = ((void *)VAR151);
+VAR153 = FUN13(VAR152);
+VAR154 = ((char *)((char *)VAR153));
+VAR155 = ((int )(strlen(VAR154)));
+strncpy(VAR156, VAR154, 64);
+for (; VAR157 < VAR155; ++VAR157){
+FUN5("%02x",VAR156[VAR157]);
+if (((char *)VAR153) != 0)
+free(((char *)((char *)VAR153)));

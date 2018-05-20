@@ -1,0 +1,5 @@
+fputs("DEBUG: Hex dump of VAR3:\n", stderr);
+fprintf(stderr, "DEBUG: %04X ", VAR35);
+fprintf(stderr, " %02X", *VAR1);
+putc('\n', stderr);
+putc('\n', stderr);

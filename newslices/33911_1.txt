@@ -1,0 +1,9 @@
+void (*VAR1) (char *) = VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR4 = VAR3;
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+VAR1(VAR4);
+static void VAR2(char * VAR4)
+char VAR5[50] = "";
+strncat(VAR5, VAR4, strlen(VAR4));

@@ -1,0 +1,4 @@
+data = new char[10+1];
+goodG2BSink(data);
+void goodG2BSink(char * data)
+strncpy(data, source, strlen(source) + 1);

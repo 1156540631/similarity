@@ -1,0 +1,16 @@
+char* VAR5;
+int VAR1 = 1000;
+VAR2 = FUNC1(VAR3, "data", VAR5, VAR1 * sizeof(char));
+VAR5 = (char*) malloc(VAR1 * sizeof(char));
+VAR2 = FUNC1(VAR3, "data", VAR5, VAR1 * sizeof(char));
+VAR1 = VAR1 * 2;
+VAR5 = (char*) malloc(VAR1 * sizeof(char));
+VAR2 = FUNC1(VAR3, "data", VAR5, VAR1 * sizeof(char));
+free(VAR5);
+VAR6(VAR5);
+char VAR7[8];
+strncpy(VAR7,VAR8,strlen(VAR8) + 1);
+void VAR6(char *VAR9)
+VAR8 = ((char *)VAR9);
+FUNC2(VAR6, VAR7, "VAR8", strlen(VAR8)+1, VAR8, "VAR9");
+strncpy(VAR7,VAR8,strlen(VAR8) + 1);

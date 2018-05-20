@@ -1,0 +1,4 @@
+char * VAR1 = VAR3;
+strncat(VAR1, VAR2, 100);
+FUN2(VAR1);
+free(VAR1);

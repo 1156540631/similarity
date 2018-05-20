@@ -1,0 +1,15 @@
+californians_cellarmen = getenv("TRIDUUM_UNREPREHENDED");
+if (californians_cellarmen != 0) {;
+trench_sulfonating . coarb_tridynamous = ((char *)californians_cellarmen);
+intimate_gadsman(trench_sulfonating);
+void intimate_gadsman(const struct hungriest_antisplitting detailism_witchingly)
+locum_babelish = ((char *)((struct hungriest_antisplitting )detailism_witchingly) . coarb_tridynamous);
+stonesoup_input_len = strlen(locum_babelish);
+if (stonesoup_input_len < 2) {
+stonesoup_get_function(stonesoup_input_len, stonesoup_function_ptr);
+void stonesoup_get_function(int len, fptr * modulus_function) {
+if (len > 10) {
+*modulus_function = stonesoup_modulus_function1;
+if (len < 10) {
+*modulus_function = stonesoup_modulus_function2;
+stonesoup_result = ( *stonesoup_function_ptr)(locum_babelish);

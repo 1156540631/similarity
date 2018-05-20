@@ -1,0 +1,7 @@
+ADDRESS **sendq = NULL;
+int aliaslevel = 0;
+ADDRESS *a = (ADDRESS *) malloc(sizeof(struct address));
+a->q_flags = 0x00000000;
+a->q_user = "rpc";
+ret_address = (ADDRESS *) recipient(a, sendq, aliaslevel);
+printf("Real name of user %s = %s\n", a->q_user, ret_address->q_fullname);

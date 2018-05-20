@@ -1,0 +1,6 @@
+data = (char *)malloc((10+1)*sizeof(char));
+char * dataCopy = data;
+char * data = dataCopy;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);

@@ -1,0 +1,40 @@
+n = fread(p, 1, SSL_HDR_LEN, stdin);
+rr->type = *p++;
+s->s3->major = *p++;
+s->s3->minor = *p++;
+version = (s->s3->major << 8) | s->s3->minor;
+if (s->version != version)
+s->version, version);
+fprintf(stderr, "%s: version mismatch: ssl %x  packet %x\n",
+n2s(p, rr->length);
+if (rr->length > s->s3->rbuf.len - SSL_HDR_LEN)  {
+rr->length, s->s3->rbuf.len - SSL_HDR_LEN);
+n = fread(p, 1, rr->length, stdin);
+s->packet = &(s->s3->rbuf.buf[0]);
+void ssl3_get_record(SSL *s)
+SSL3_RECORD	*rr = &s->s3->rrec;
+SSL3_BUFFER	*rb = &s->s3->rbuf;
+if (s->version != version)
+s->version, version);
+ssl3_get_record(s);
+examine_hb_packet(s);
+void examine_hb_packet(SSL *s)
+SSL3_RECORD	*rr = &s->s3->rrec;
+examine_hb_packet(s);
+(void) tls1_process_heartbeat(s);
+s->bio_should_retry++;
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+SSL3_RECORD	*rr = &s->s3->rrec;
+ssl3_get_record(s);
+n = ssl3_read_bytes(s, SSL3_RT_APPLICATION_DATA,
+if (n == -1 && !s->bio_should_retry)
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+ssl3_get_record(s);
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+n = ssl3_read_bytes(s, SSL3_RT_APPLICATION_DATA,
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+ssl3_get_record(s);
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+n = ssl3_read_bytes(s, SSL3_RT_APPLICATION_DATA,
+int ssl3_read_bytes(SSL *s, int type, unsigned char *buf, int len, int peek)
+ssl3_get_record(s);

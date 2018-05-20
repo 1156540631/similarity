@@ -1,0 +1,4 @@
+va_list aq;
+va_copy(aq, ap);
+res = vsnprintf((*buf)->__AST_STR_STR + offset, (*buf)->__AST_STR_LEN - offset, fmt, aq);
+va_end(aq);

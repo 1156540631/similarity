@@ -1,0 +1,4 @@
+wchar_t * data;
+data[0] = L'\0';
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);

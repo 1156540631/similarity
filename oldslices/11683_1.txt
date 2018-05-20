@@ -1,0 +1,10 @@
+null_pointer_015_gbl_ptr=NULL;
+char *str = "This is a string";
+null_pointer_015_func_001(strlen(str));
+strcpy(null_pointer_015_gbl_ptr,str);
+free(null_pointer_015_gbl_ptr);
+void null_pointer_015_func_001 (int len)
+null_pointer_015_gbl_ptr= malloc(sizeof(char) * (len+1));
+null_pointer_015_func_001(strlen(str));
+strcpy(null_pointer_015_gbl_ptr,str);
+free(null_pointer_015_gbl_ptr);

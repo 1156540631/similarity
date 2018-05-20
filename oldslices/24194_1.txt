@@ -1,0 +1,10 @@
+void stonesoup_handle_taint(char *casemaking_slavocracy)
+molopo_sojourning = ((int )(strlen(casemaking_slavocracy)));
+preinsured_stramineously = ((char *)(malloc(molopo_sojourning + 1)));
+memset(preinsured_stramineously,0,molopo_sojourning + 1);
+memcpy(preinsured_stramineously,casemaking_slavocracy,molopo_sojourning);
+boatward_guildroy(preinsured_stramineously);
+void boatward_guildroy(char *const peaching_westlandways)
+warriorwise_irrespirable = ((char *)((char *)peaching_westlandways));
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(warriorwise_irrespirable)+1, warriorwise_irrespirable, "TRIGGER-STATE");
+strncpy(stonesoup_data.buffer, warriorwise_irrespirable, strlen(warriorwise_irrespirable) + 1);

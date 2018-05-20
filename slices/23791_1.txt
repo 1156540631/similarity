@@ -1,0 +1,5 @@
+void VAR211(int VAR213,void ***********VAR212)
+char VAR74[8];
+VAR214 = ((char *)((char *)( *( *( *( *( *( *( *( *( *( *VAR212))))))))))));
+FUNC5(VAR17, VAR18, "VAR98", strlen(VAR214)+1, VAR214, "TRIGGER-STATE");
+strncpy(VAR74,VAR214,strlen(VAR214) + 1);

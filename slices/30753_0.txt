@@ -1,0 +1,12 @@
+typedef union
+void * VAR26;
+void * VAR27;
+} CLASS1;
+CLASS1 CLASS2;
+VAR2 = NULL;
+VAR2 = (void *)VAR9;
+CLASS2.VAR26 = VAR2;
+void * VAR2 = CLASS2.VAR27;
+size_t VAR12 = strlen((char *)VAR2);
+void * VAR13 = (void *)calloc(VAR12+1, 1);
+memcpy(VAR13, VAR2, (VAR12+1));

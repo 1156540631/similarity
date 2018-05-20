@@ -1,0 +1,6 @@
+const BlockDebugFlags* bdf = gFlags;
+const BlockDebugFlags* end = gFlags + NUM_DEBUG_FLAGS;
+*(bdf->on) = true;
+for (; bdf < end; bdf++) {
+if (PL_strcasecmp(bdf->name, flags) == 0) {
+printf("nsBlockFrame: setting %s debug flag on\n", bdf->name);

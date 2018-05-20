@@ -1,0 +1,3 @@
+jmp_buf soldier_taratantarize;
+bilharzia_subtransparent = setjmp(soldier_taratantarize);
+longjmp(soldier_taratantarize,1);

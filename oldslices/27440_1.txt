@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+int globalReturnsTrue()
+return 1;
+int globalReturnsFalse()
+return 0;
+char * data;
+data = NULL;
+if(globalReturnsTrue())
+data = (char *)malloc(10*sizeof(char));
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

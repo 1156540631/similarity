@@ -1,0 +1,4 @@
+int main(int argc, char *argv[])
+if(argc > 1)
+tin[1] = argv[1];
+int rc = pthread_create(&tids[0], NULL, foo, (void *)tin);

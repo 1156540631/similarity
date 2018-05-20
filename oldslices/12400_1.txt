@@ -1,0 +1,14 @@
+static void dissect_sdp_media_attribute(tvbuff_t *tvb, packet_info *pinfo, proto_item * ti, int length, transport_info_t *transport_info) {
+colon_offset = tvb_find_guint8(tvb, offset, -1, ':');
+tvb, offset, tokenlen, ENC_ASCII|ENC_NA);
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+static gint find_sdp_media_attribute_names(tvbuff_t *tvb, int offset, guint len)
+sdp_media_attrbute_code = find_sdp_media_attribute_names(tvb, offset, tokenlen);
+offset = tvb_skip_wsp(tvb, offset, tvb_length_remaining(tvb, offset));
+attribute_value = tvb_get_ephemeral_string(tvb, offset, tvb_length_remaining(tvb, offset));
+next_offset = tvb_find_guint8(tvb, offset, -1, ' ');
+tokenlen = next_offset - offset;
+proto_tree_add_item(sdp_media_attribute_tree, hf_media_format, tvb,
+offset, tokenlen, ENC_ASCII|ENC_NA);
+payload_type = tvb_get_ephemeral_string(tvb, offset, tokenlen);
+pt = atoi((char*)payload_type);

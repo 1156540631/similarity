@@ -1,0 +1,13 @@
+VAR1<int> VAR2;
+VAR3 = -1;
+char VAR4[VAR5] = "";
+if (fgets(VAR4, VAR5, VAR6) != VAR7)
+VAR3 = atoi(VAR4);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+VAR2.FUN1(VAR2.FUN2(), 1, VAR3);
+FUN3(VAR2);
+void FUN3(VAR1<int> VAR2)
+int VAR3 = VAR2[2];
+if (VAR3 < 10)
+VAR8[VAR3] = 1;

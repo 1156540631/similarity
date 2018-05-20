@@ -1,0 +1,3 @@
+fprintf(VAR1, "VAR2 VAR3 VAR4\n");
+fprintf(VAR1, "VAR2 VAR5 VAR4\n");
+fprintf(VAR1, "VAR2 VAR6 VAR4\n");

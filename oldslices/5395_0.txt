@@ -1,0 +1,5 @@
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_34_unionType myUnion;
+char * data = myUnion.unionSecond;
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_start(args, data);

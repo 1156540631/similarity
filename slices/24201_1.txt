@@ -1,0 +1,20 @@
+char* VAR6;
+int VAR38 = 1000;
+VAR39 = FUNC16(VAR40, "data", VAR6, VAR38 * sizeof(char));
+VAR38 = VAR38 * 2;
+VAR6 = (char*) malloc(VAR38 * sizeof(char));
+VAR39 = FUNC16(VAR40, "data", VAR6, VAR38 * sizeof(char));
+free(VAR6);
+FUNC17(VAR6);
+VAR41[1] = 5;
+VAR42 =  *(VAR47 + VAR41[1]);
+VAR43 = ((char *)((char *)VAR42));
+VAR44 = malloc((strlen(VAR43) + 1) * sizeof(char ));
+strcpy(VAR44,VAR43);
+void FUNC17(char *VAR45)
+VAR46 = ((void *)VAR45);
+VAR47[5] = VAR46;
+VAR42 =  *(VAR47 + VAR41[1]);
+VAR43 = ((char *)((char *)VAR42));
+VAR44 = malloc((strlen(VAR43) + 1) * sizeof(char ));
+strcpy(VAR44,VAR43);

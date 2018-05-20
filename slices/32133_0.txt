@@ -1,0 +1,14 @@
+wchar_t * VAR1;
+wchar_t * VAR6 = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+wmemset(VAR6, L'A', 100-1);
+VAR6[100-1] = L'\0';
+switch(5)
+case 6:
+break;
+default:
+VAR1 = VAR6;
+break;
+wchar_t VAR8[100*2];
+wmemset(VAR8, L'C', 100*2-1);
+VAR8[100*2-1] = L'\0';
+wcscpy(VAR8, VAR1);

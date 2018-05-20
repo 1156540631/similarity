@@ -1,0 +1,35 @@
+char* VAR1;
+int VAR2 = 1000;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+VAR2 = VAR2 * 2;
+VAR1 = (char*) malloc(VAR2 * sizeof(char));
+VAR3 = FUN1(VAR4, "data", VAR1, VAR2 * sizeof(char));
+free(VAR1);
+FUN2(VAR1);
+return VAR5 - 32;
+VAR6 = (char*) malloc(64 * sizeof(char));
+memset(VAR6,0,64);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR9-VAR10");
+strcpy(VAR6, VAR11);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR12-VAR10");
+VAR13 = strlen( VAR6);
+VAR6[VAR14] = FUN4(VAR6[VAR14]);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR15-VAR16");
+FUN5("%s\n",VAR6);
+void FUN5(char * VAR17, ...) {
+free(VAR6);
+void FUN2(char *VAR18)
+VAR11 = ((char *)VAR18);
+strcpy(VAR6, VAR11);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR12-VAR10");
+VAR13 = strlen( VAR6);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR15-VAR16");
+FUN5("%s\n",VAR6);
+int FUN4(int VAR5)
+return VAR5;
+VAR6[VAR14] = FUN4(VAR6[VAR14]);
+FUN3(VAR7, VAR8, "VAR6", VAR6, "VAR15-VAR16");
+FUN5("%s\n",VAR6);

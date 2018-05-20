@@ -1,0 +1,10 @@
+char * VAR1;
+char VAR2[100];
+VAR1 = VAR2;
+memset(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+const VAR3& VAR4 = FUN1();
+VAR4.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+char VAR5[50] = "";
+strcpy(VAR5, VAR1);

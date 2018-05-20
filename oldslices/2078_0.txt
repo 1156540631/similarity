@@ -1,0 +1,6 @@
+char *name;
+printf("finduser(%s): ", name);
+if ((pw = sm_getpwnam(name)) != NULL)
+*p = tolower(*p);
+for (p = name; *p != '\0'; p++)
+if (isascii(*p) && isupper(*p))

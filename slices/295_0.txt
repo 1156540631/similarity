@@ -1,0 +1,4 @@
+char VAR1[VAR3];
+FUN1("net.VAR1", VAR1, "0");
+char VAR2[VAR3];
+snprintf(VAR2, VAR3 - 1, "%VAR39", VAR4(VAR1) + 1);

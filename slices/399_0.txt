@@ -1,0 +1,3 @@
+VAR2++;
+VAR2++;
+char *VAR15 = malloc( VAR2 + 3*FUN2 + 2 );

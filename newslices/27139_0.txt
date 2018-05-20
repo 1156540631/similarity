@@ -1,0 +1,2 @@
+VAR1 = (char *)malloc(100*sizeof(char));
+memset(VAR1, '', 100-1);

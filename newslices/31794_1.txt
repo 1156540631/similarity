@@ -1,0 +1,13 @@
+char * VAR1;
+VAR1 = VAR2;
+char * VAR3 = (char *)malloc(100*sizeof(char));
+memset(VAR3, '', 100-1);
+VAR3[100-1] = '\';
+VAR1 = VAR3 - 8;
+const VAR4& VAR5 = FUN1();
+VAR5.FUN2(VAR1);
+void FUN1::FUN2(char * VAR1) const
+char VAR6[100*2];
+memset(VAR6, '', 100*2-1);
+VAR6[100*2-1] = '\';
+strcpy(VAR6, VAR1);

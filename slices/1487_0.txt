@@ -1,0 +1,11 @@
+*CLASS2 = NULL;
+*CLASS2 = NULL;
+int VAR1 = 40;
+char *VAR2;
+FUN1(&VAR2,"7410",VAR1);
+free(((char *)VAR2));
+void FUN1(char** CLASS2, char* VAR4, int VAR5) {
+if ((VAR7 = FUN2(VAR6, VAR5, 0666)) >= 0) {
+*CLASS2 = (char*)calloc(VAR5, sizeof(char));
+FUN1(&VAR2,"7410",VAR1);
+free(((char *)VAR2));

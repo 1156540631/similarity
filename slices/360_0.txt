@@ -1,0 +1,3 @@
+FUN2(CLASS1 *VAR2)
+for (VAR1 = (char *)FUN1(VAR2); VAR1; VAR1 = (char *)VAR30(VAR2))
+free(VAR1);

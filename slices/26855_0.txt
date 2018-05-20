@@ -1,0 +1,4 @@
+scanf("%d", &VAR453);
+VAR435 = FUN105(VAR434);
+!VAR452 && !VAR453)
+if (VAR4 == ';' && VAR449 <= 0 && !VAR453)

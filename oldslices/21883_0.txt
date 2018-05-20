@@ -1,0 +1,8 @@
+evinces_cowan = getenv("TRAINMASTER_ANTIFOULING");
+if (evinces_cowan != 0) {;
+stiacciato_snorkeler = ((int )(strlen(evinces_cowan)));
+nonperceptional_deployed = ((char *)(malloc(stiacciato_snorkeler + 1)));
+if (nonperceptional_deployed == 0) {
+memset(nonperceptional_deployed,0,stiacciato_snorkeler + 1);
+memcpy(nonperceptional_deployed,evinces_cowan,stiacciato_snorkeler);
+*acousmatic_turtlelike = nonperceptional_deployed;

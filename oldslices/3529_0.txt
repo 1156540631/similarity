@@ -1,0 +1,4 @@
+format_text_wsp(const guchar *string, size_t len)
+c = *string++;
+if (isprint(c)) {
+} else if  (isspace(c)) {

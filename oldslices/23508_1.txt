@@ -1,0 +1,6 @@
+fscanf(stdin, "%s", filename);
+f = fopen(filename, "r");
+if (f == NULL) {
+sprintf(format, "Error opening file %s\n",filename);
+fprintf(stderr, format);
+fclose(f);

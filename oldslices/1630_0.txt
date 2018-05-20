@@ -1,0 +1,4 @@
+data[50-1] = '\0';
+strcpy(dest, data);
+printLine(data);
+free(data);

@@ -1,0 +1,15 @@
+static_cast<void*>((VAR1.FUN1() != FUN2() ? VAR1.FUN1().FUN3() : VAR2)),
+VAR1->FUN4() ? "block" : "inline",
+VAR1->FUN5() ? "VAR3-break-VAR4 " : "",
+VAR1->FUN6() ? "VAR3-VAR5 " : "",
+VAR1->FUN7() ? "impacted " : "",
+VAR1->FUN8(), VAR1->FUN9(),
+VAR1->FUN7() ||
+VAR1->FUN10() ||
+((VAR6 || !VAR1->FUN11()) && !VAR7) ||
+(!VAR6 && !VAR1->FUN5()) ||
+VAR1->FUN6() ||
+if (VAR1->FUN4() ||
+if (!VAR1->FUN4()) {
+if (VAR8 && !VAR1->FUN12()) {
+static_cast<void*>(VAR1.FUN3()),

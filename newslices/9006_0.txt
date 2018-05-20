@@ -1,0 +1,5 @@
+VAR1 = (struct CLASS1 *) malloc (sizeof (struct CLASS1));
+memset(VAR1->VAR2, 0, 128);
+VAR1->VAR3[VAR4] = 5555;
+VAR1->VAR5[VAR4] = 5555;
+free (VAR1);

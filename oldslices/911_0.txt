@@ -1,0 +1,3 @@
+ambulatory_palaeonemertea = getenv("PORTAGE_HIPMI");
+ldp_sinuosely = ((int )(strlen(ambulatory_palaeonemertea)));
+extratabular_vamp = ((char *)(malloc(ldp_sinuosely + 1)));

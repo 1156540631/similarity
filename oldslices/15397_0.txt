@@ -1,0 +1,4 @@
+data = new char[100];
+data = badSource(data);
+char * badSource(char * data)
+memset(data, 'A', 100-1);

@@ -1,0 +1,11 @@
+int globalReturnsTrue() 
+return 1;
+int globalReturnsFalse() 
+return 0;
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+if(globalReturnsTrue())
+strcpy(data, "fixedstringtest");
+if(globalReturnsTrue())
+fprintf(stdout, data);

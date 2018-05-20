@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+data = NULL;
+switch(5)
+case 6:
+break;
+default:
+data = (char *)malloc((10+1)*sizeof(char));
+break;
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

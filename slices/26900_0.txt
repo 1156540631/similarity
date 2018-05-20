@@ -1,0 +1,2 @@
+u_char VAR320[VAR319];
+printf("VAR320 = %VAR1\VAR7",VAR320);

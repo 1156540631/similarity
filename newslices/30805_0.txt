@@ -1,0 +1,9 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+char * VAR3 = (char *)FUN1((10)*sizeof(char));
+char * VAR4 = (char *)FUN1((10+1)*sizeof(char));
+if(0) { }
+else
+VAR5 = VAR4;
+VAR5[0] = '\';
+char VAR6[10+1] = VAR2;
+strcpy(VAR5, VAR6);

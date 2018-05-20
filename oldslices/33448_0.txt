@@ -1,0 +1,6 @@
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataGoodBuffer;
+wchar_t * *dataPtr2 = &data;
+wchar_t * data = *dataPtr2;
+source[100-1] = L'\0';
+SNPRINTF(data, 100, L"%s", source);

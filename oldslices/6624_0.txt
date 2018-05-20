@@ -1,0 +1,9 @@
+ss_tc_root = getenv("SS_TC_ROOT");
+size_dirpath = strlen(ss_tc_root) + strlen("testData") + 2;
+dirpath = (char*) malloc (size_dirpath * sizeof(char));
+sprintf(dirpath, "%s/%s", ss_tc_root, "testData");
+if (stat(dirpath, &st) == -1) {
+retval = mkdir(dirpath, 0700);
+size_filepath = strlen(dirpath) + strlen("logfile.txt") + 2;
+sprintf(filepath, "%s/%s", dirpath, "logfile.txt");
+free(dirpath);

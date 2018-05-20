@@ -1,0 +1,35 @@
+VAR1 = getenv("VAR2");
+if (VAR1 != NULL) {
+VAR3 = strlen(VAR1) + strlen("testData") + 2;
+VAR4 = (char*) malloc (VAR3 * sizeof(char));
+if (VAR4 != NULL) {
+sprintf(VAR4, "%s/%s", VAR1, "testData");
+if (stat(VAR4, &st) == -1) {
+VAR5 = mkdir(VAR4, 0700);
+if (VAR5 == 0) {
+VAR6 = strlen(VAR4) + strlen("logfile.txt") + 2;
+VAR7 = (char*) malloc (VAR6 * sizeof(char));
+if (VAR7 != NULL) {
+sprintf(VAR7, "%s/%s", VAR4, "logfile.txt");
+VAR8 = fopen(VAR7, "w");
+free(VAR7);
+free(VAR4);
+if (VAR8 == NULL) {
+FUNC1();
+VAR109[VAR33] = FUNC2(VAR109[VAR33]);
+FUNC3("%s\n",VAR109);
+vfprintf(VAR8, format, VAR65);
+fflush(VAR8);
+FUNC3("%s\n",VAR109);
+FUNC3("strlen size = %d\n",strlen(VAR106));
+vfprintf(VAR8, format, VAR65);
+fflush(VAR8);
+FUNC3("strlen size = %d\n",strlen(VAR106));
+FUNC3("strlen size = %d\n",strlen(VAR107[7]));
+vfprintf(VAR8, format, VAR65);
+fflush(VAR8);
+FUNC3("strlen size = %d\n",strlen(VAR107[7]));
+FUNC4();
+if (VAR8 != NULL &&
+VAR8 != stderr) {
+fclose(VAR8);

@@ -1,0 +1,6 @@
+data = (char *)malloc(100*sizeof(char));
+badSource(data);
+void badSource(char * &data);
+strcat(dest, data);
+printLine(data);
+free(data);

@@ -1,0 +1,12 @@
+int VAR43[5];
+VAR5 = -1;
+VAR12 = recv(VAR55, VAR14, VAR15 - 1, 0);
+VAR14[VAR12] = '\0';
+VAR5 = atoi(VAR14);
+VAR43[2] = VAR5;
+FUN106(VAR43);
+void FUN106(int VAR43[])
+int VAR5 = VAR43[2];
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

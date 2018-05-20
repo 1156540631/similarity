@@ -1,0 +1,21 @@
+char *VAR1;
+FUN1(&VAR1,"CASUISTICAL_RESTIACEOUS");
+void FUN1(char** VAR2, char* VAR3) {
+VAR4 = FUN2(VAR3);
+VAR5 = fopen(VAR4,"rb");
+fseek(VAR5,0L,2);
+VAR6 = ftell(VAR5);
+rewind(VAR5);
+*VAR2 = ((char *)(malloc(sizeof(char ) * (VAR6 + 1))));
+VAR7 = fread(*VAR2,1,VAR6,VAR5);
+*VAR2 = VAR8;
+VAR9 = ((void *)VAR1);
+VAR10[5] = VAR9;
+VAR11 = 5;
+VAR12 = &VAR11;
+VAR13 =  *(VAR10 +  *VAR12);
+VAR14 = ((char *)((char *)VAR13));
+VAR15 = (char*) malloc(64 * sizeof(char));
+memset(VAR15,0,64);
+FUN3(VAR16, VAR17, "VAR15", VAR15, "VAR18-VAR19");
+strcpy(VAR15, VAR14);

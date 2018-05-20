@@ -1,0 +1,6 @@
+fscanf(VAR1, "%s", VAR2);
+VAR3 = fopen(VAR2, "r");
+if (VAR3 == VAR4) {
+sprintf(VAR5, "VAR6 VAR7 VAR8 %s\n",VAR2);
+fprintf(VAR9, VAR5);
+fclose(VAR3);

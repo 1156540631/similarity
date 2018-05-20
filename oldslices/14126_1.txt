@@ -1,0 +1,16 @@
+static char *
+asn1_get_string(
+unsigned char **buffer,
+unsigned char *bufend,
+int           length,
+char          *string,
+int           strsize)
+unionType myUnion;
+myUnion.unionFirst = length;
+bool flag = func(myUnion, strsize);
+bool func(unionType myUnion, int strsize)
+int length = myUnion.unionSecond;
+return length < strsize;
+bool flag = func(myUnion, strsize)
+if (flag)
+memcpy(string, *buffer, length);

@@ -1,0 +1,14 @@
+#define SRC_STRING "AAAAAAAAAA"
+int globalReturnsTrue() 
+return 1;
+} 
+int globalReturnsFalse() 
+return 0;
+char * data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+if(globalReturnsTrue())
+data = dataGoodBuffer;
+data[0] = '\0';
+char source[10+1] = SRC_STRING;
+strcpy(data, source);

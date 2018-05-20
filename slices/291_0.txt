@@ -1,0 +1,14 @@
+void FUN1(const char *VAR34, CLASS1 VAR1,
+const char *VAR17 = VAR34;
+while (*VAR17 && (isspace(*VAR17) || *VAR17 == ','))
+VAR17++;
+VAR4 = VAR17;
+if (!(VAR17 = strchr(VAR4, '=')))
+VAR17++;
+VAR17 += 2;
+VAR17++;
+VAR17++;
+VAR4 = VAR17;
+if (!(VAR17 = strchr(VAR4, '=')))
+VAR17++;
+for (; *VAR17 && !(isspace(*VAR17) || *VAR17 == ','); VAR17++)

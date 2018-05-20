@@ -1,0 +1,16 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char * VAR1;
+char * VAR5[5];
+char VAR2[100] = "";
+VAR1 = VAR2;
+strcpy(VAR1, "fixedstringtest");
+VAR5[2] = VAR1;
+FUN1(VAR5);
+void FUN1(char * VAR5[])
+char * VAR1 = VAR5[2];
+char VAR4[100] = "";
+SNPRINTF(VAR4, 100-1, VAR1);

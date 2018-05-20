@@ -1,0 +1,24 @@
+VAR1 = (char *) malloc(sizeof(char) * 500);
+VAR1[VAR2+1] = VAR3;
+VAR4->VAR5 = (char *) malloc(strlen(VAR1) * sizeof(char) + 1);
+strcpy(VAR4->VAR5, VAR1);
+FUN1(VAR1, VAR6, VAR7);
+char *VAR1;
+VAR8 = FUN2(VAR1, VAR6, VAR9, sizeof VAR9, VAR7, VAR10, VAR11);
+char *VAR1;
+VAR12 = VAR1;
+VAR12--;
+VAR12--;
+VAR13 = (*VAR12++) & 0x00ff;
+VAR13 = '"';
+VAR13 = ')';
+VAR13 = '>';
+VAR13 = '>';
+VAR13 = VAR14;
+VAR13 = VAR14;
+VAR13 = VAR14;
+VAR13 = VAR14;
+VAR13 = VAR14;
+else if (VAR6 == ' ' && isascii(VAR13) && isspace(VAR13))
+VAR13 = ' ';
+if (isascii(VAR13) && isprint(VAR13))

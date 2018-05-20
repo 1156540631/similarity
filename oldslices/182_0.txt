@@ -1,0 +1,37 @@
+v9fs_string_init(&stat->name);
+v9fs_string_init(&stat->uid);
+v9fs_string_init(&stat->gid);
+v9fs_string_init(&stat->muid);
+v9fs_string_init(&stat->extension);
+V9fsString name;
+v9fs_string_init(&name);
+err = pdu_unmarshal(pdu, offset, "dds", &fid, &newdirfid, &name);
+err = v9fs_complete_rename(pdu, fidp, newdirfid, &name);
+V9fsStat v9stat;
+v9fs_stat_init(&v9stat);
+err = pdu_unmarshal(pdu, offset, "dwS", &fid, &unused, &v9stat);
+v9stat.mode, v9stat.atime, v9stat.mtime);
+if (donttouch_stat(&v9stat)) {
+err = v9fs_complete_rename(pdu, fidp, -1, &v9stat.name);
+int32_t newdirfid, V9fsString *name)
+old_name = fidp->path.data;
+end = strrchr(old_name, '/');
+end++;
+end = old_name;
+new_name = g_malloc0(end - old_name + name->size + 1);
+strncat(new_name, old_name, end - old_name);
+strncat(new_name + (end - old_name), name->data, name->size);
+static void v9fs_stat_init(V9fsStat *stat)
+v9fs_stat_init(&v9stat);
+err = v9fs_complete_rename(pdu, fidp, -1, &v9stat.name);
+int32_t newdirfid, V9fsString *name)
+new_name = g_malloc0(end - old_name + name->size + 1);
+strncat(new_name, old_name, end - old_name);
+strncat(new_name + (end - old_name), name->data, name->size);
+static int donttouch_stat(V9fsStat *stat)
+if (donttouch_stat(&v9stat)) {
+err = v9fs_complete_rename(pdu, fidp, -1, &v9stat.name);
+int32_t newdirfid, V9fsString *name)
+new_name = g_malloc0(end - old_name + name->size + 1);
+strncat(new_name, old_name, end - old_name);
+strncat(new_name + (end - old_name), name->data, name->size);

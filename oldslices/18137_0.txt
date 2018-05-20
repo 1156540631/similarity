@@ -1,0 +1,7 @@
+wchar_t * &dataRef = data;
+wchar_t * dataBadBuffer = (wchar_t *)ALLOCA(50*sizeof(wchar_t));
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataGoodBuffer;
+wchar_t * data = dataRef;
+source[100-1] = L'\0';
+wcscpy(data, source);

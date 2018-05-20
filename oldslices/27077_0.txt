@@ -1,0 +1,3 @@
+char buf[MAXSIZE];
+snprintf(buf, 1024, "<%*.*s>", MAXSIZE-3, MAXSIZE-3, str);
+printf("result: %s\n", buf);

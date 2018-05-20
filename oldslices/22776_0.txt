@@ -1,0 +1,8 @@
+diplomates_cavalero = getenv("SLAUGHTERHOUSE_STEEVED");
+if (diplomates_cavalero != 0) {;
+merribush_smoulder . serosal_semimarking = diplomates_cavalero;
+resinated_postdepressive = &merribush_smoulder;
+creekfishes_stenotaphrum = ((union triadelphous_russify *)(((unsigned long )resinated_postdepressive) * uninferable_ipso * uninferable_ipso)) + 5;
+theorbist_ptt(monopectinate_myospasmia,creekfishes_stenotaphrum);
+void theorbist_ptt(int cavelet_goosebone,union triadelphous_russify *labourism_sextettes)
+theorbist_ptt(cavelet_goosebone,labourism_sextettes);

@@ -1,0 +1,4 @@
+VAR419 = getenv("STRINGLEN_OK");
+if (VAR419 != NULL)
+VAR5 = strlen(VAR419);
+if (VAR5 > 9)

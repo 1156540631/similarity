@@ -1,0 +1,5 @@
+c2 = fgetc(e->e_dfp);
+c3 = fgetc(e->e_dfp);
+c4 = fgetc(e->e_dfp);
+while ((c1 = fgetc(e->e_dfp)) != EOF)
+if (isascii(c1) && isspace(c1))

@@ -1,0 +1,6 @@
+premiating_curacoas = getenv("ANTISURPLICIAN_MARSHALATE");
+if (premiating_curacoas != 0) {;
+icarus_anguishes[5] = premiating_curacoas;
+mimbres_widu =  *(icarus_anguishes + astrobiologists_dampest[1]);
+manganocalcite_polysorbate(mimbres_widu);
+void manganocalcite_polysorbate(char *lamaite_elaeagnaceous);

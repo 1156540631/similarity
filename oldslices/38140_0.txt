@@ -1,0 +1,24 @@
+char * data;
+char * dataArray[5];
+char dataBuffer[100] = "";
+data = dataBuffer;
+recvResult = recv(connectSocket, (char *)(data + dataLen), sizeof(char) * (100 - dataLen - 1), 0);
+if (recvResult == SOCKET_ERROR || recvResult == 0)
+break;
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+if (replace)
+*replace = '\0';
+replace = strchr(data, '\n');
+if (replace)
+*replace = '\0';
+dataArray[2] = data;
+CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_66b_goodB2GSink(dataArray);
+void CWE134_Uncontrolled_Format_String__char_connect_socket_w32_vsnprintf_66b_goodB2GSink(char * dataArray[])
+char * data = dataArray[2];
+goodB2GVaSink(data, data);
+static void goodB2GVaSink(char * data, ...)
+char dest[100] = "";
+va_list args;
+va_start(args, data);
+vsnprintf(dest, 100-1, "%s", args);

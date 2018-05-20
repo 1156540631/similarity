@@ -1,0 +1,33 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+return c - 32;
+int hybridity_unpublishably = 596;
+char *sisterhood_baghla;;
+stonesoup_read_taint(&sisterhood_baghla,"8709",hybridity_unpublishably);
+euclidian_gunstocker = sisterhood_baghla;
+HOPI_CLIMBINGFISH(euclidian_gunstocker);
+stonesoup_heap_buff_64[64 - 1] = '\0';
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "CROSSOVER-STATE");
+stonesoup_heap_buff_64[stonesoup_i] = stonesoup_toupper(stonesoup_heap_buff_64[stonesoup_i]);
+stonesoup_printf("%s\n",&(stonesoup_heap_buff_64[stonesoup_buff_size+1]));
+free(stonesoup_heap_buff_64);
+void heteroauxin_snowproof(amassers_hypolite huckstery_canapes)
+trichinopoly_iconically = ((char *)huckstery_canapes);
+stonesoup_taint_len = ((int )(strlen(trichinopoly_iconically)));
+stonesoup_heap_buff_64[stonesoup_buff_size] = trichinopoly_iconically[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buff_64", stonesoup_heap_buff_64, "CROSSOVER-STATE");
+free(stonesoup_heap_buff_64);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&sisterhood_baghla,"8709",hybridity_unpublishably);
+euclidian_gunstocker = sisterhood_baghla;
+HOPI_CLIMBINGFISH(euclidian_gunstocker);
+void stonesoup_printf(char * format, ...) {
+stonesoup_printf("%s\n",&(stonesoup_heap_buff_64[stonesoup_buff_size+1]));
+free(stonesoup_heap_buff_64);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_heap_buff_64[stonesoup_i] = stonesoup_toupper(stonesoup_heap_buff_64[stonesoup_i]);
+free(stonesoup_heap_buff_64);

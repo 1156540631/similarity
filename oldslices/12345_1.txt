@@ -1,0 +1,7 @@
+unsigned int **ptr = (unsigned int**) malloc(MAX*sizeof(unsigned int*));
+ptr[i]=(unsigned int*) malloc(MAX_VAL*sizeof(unsigned int));
+for(i=0;i<5;i++)
+for(j=0;j<5;j++)
+*(*(ptr+i)+j)=i;
+free(ptr[i]);
+free(ptr);

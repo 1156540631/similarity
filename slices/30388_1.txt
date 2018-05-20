@@ -1,0 +1,13 @@
+VAR8 = -1;
+char VAR5[VAR6] = "";
+if (fgets(VAR5, VAR6, stdin) != NULL)
+VAR8 = atoi(VAR5);
+CLASS38* CLASS11 = new CLASS39;
+CLASS11->FUN42(VAR8);
+void CLASS39::FUN42(int VAR8)
+VAR45 = VAR8 * sizeof(int);
+VAR22 = (int*)new char[VAR45];
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+
+delete CLASS11;

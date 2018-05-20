@@ -1,0 +1,5 @@
+nsBlockFrame::List(FILE* out, int32_t aIndent, uint32_t aFlags) const
+IndentBy(out, aIndent);
+ListTag(out);
+fprintf(out, " [parent=%p]", mParent);
+fprintf(out, " [view=%p]", static_cast<void*>(GetView()));

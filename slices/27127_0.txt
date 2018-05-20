@@ -1,0 +1,4 @@
+int *VAR39=(int*) calloc(5,sizeof(int));
+VAR39[VAR5]=1;
+VAR43 = VAR39[0];
+printf("%d",VAR43);

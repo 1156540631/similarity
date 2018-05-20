@@ -1,0 +1,3 @@
+char* VAR39=(char*) calloc(25, sizeof(char));
+char* VAR235= "This is VAR396 string";
+memcpy(VAR39,VAR235,11);

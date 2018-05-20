@@ -1,0 +1,4 @@
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+good1();
+good2();
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));

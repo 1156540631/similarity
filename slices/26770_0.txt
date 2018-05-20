@@ -1,0 +1,4 @@
+VAR315 = getenv("ARISTOGENICS_PREINDULGE");
+if (VAR315 != 0) {;
+VAR316 . VAR317 = ((char *)VAR315);
+*VAR318 = VAR316;

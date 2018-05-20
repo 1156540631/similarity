@@ -1,0 +1,7 @@
+void NetworkUtils::setDnsForwarders(CommandChain* aChain,CommandCallback aCallback, NetworkResultOptions& aResult)
+char command[MAX_COMMAND_SIZE];
+char *dataType = command;
+if (SDK_VERSION >= 20) {
+char *command = dataType;
+PR_snprintf(command, MAX_COMMAND_SIZE - 1, "tether dns set %d %s %s",
+GET_FIELD(mNetId), GET_CHAR(mDns1), GET_CHAR(mDns2));

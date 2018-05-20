@@ -1,0 +1,4 @@
+int FUN1(int VAR1, char *VAR2[])
+char VAR3[10];
+if ((VAR1 < 5) || (atoi(VAR2[2]) > 10))
+VAR3[atoi(VAR2[2])] = '';

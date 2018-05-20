@@ -1,0 +1,13 @@
+vector<char *> dataVector;
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+data = dataGoodBuffer;
+data[0] = '\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+char source[10+1] = SRC_STRING;
+strcpy(data, source);
+void goodG2BSink(vector<char *> dataVector)
+char * data = dataVector[2];
+strcpy(data, source);

@@ -1,0 +1,6 @@
+int FUN1(int VAR1, char * VAR2[])
+if (VAR1 < 2) {
+FUN2(VAR2[0]);
+void FUN2(char *VAR3)
+FUN3(VAR4, 1024, "VAR5: %s <VAR6>\n", VAR3);
+printf(VAR4);

@@ -1,0 +1,15 @@
+#define WIDE_STRING L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+#define CHAR_STRING "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+typedef struct _CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType
+void * structFirst;
+} CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType myStruct;
+data = NULL;
+data = (void *)CHAR_STRING;
+myStruct.structFirst = data;
+CWE121_Stack_Based_Buffer_Overflow__CWE135_67b_goodG2BSink(myStruct);
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_67b_goodG2BSink(CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType myStruct)
+void * data = myStruct.structFirst;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

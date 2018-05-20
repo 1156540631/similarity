@@ -1,0 +1,11 @@
+int VAR1 = 20;
+char *VAR2;
+FUN1(&VAR2,"8966",VAR1);
+VAR3 = ((int )(strlen(VAR2)));
+VAR4 = ((char *)(malloc(VAR3 + 1)));
+void FUN1(char** VAR5, char* VAR6, int VAR7) {
+if ((VAR8 = FUN2(VAR9, VAR7, 0666)) >= 0) {
+*VAR5 = (char*)calloc(VAR7, sizeof(char));
+FUN1(&VAR2,"8966",VAR1);
+VAR3 = ((int )(strlen(VAR2)));
+VAR4 = ((char *)(malloc(VAR3 + 1)));

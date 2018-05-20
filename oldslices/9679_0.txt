@@ -1,0 +1,9 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&bipartisanism_surlier,"TERNED_TORTUOUSNESS");
+if (bipartisanism_surlier != 0) {;
+molten_equally = ((char *)bipartisanism_surlier);
+strncpy(stonesoup_source, molten_equally, sizeof(stonesoup_source));
+if (bipartisanism_surlier != 0)
+free(((char *)bipartisanism_surlier));

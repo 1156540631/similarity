@@ -1,0 +1,2 @@
+fprintf(stderr, "Error opening file\n");
+fprintf(stderr, "Error reading file\n");

@@ -1,0 +1,10 @@
+map<int, int *> dataMap;
+data = (int *)malloc(50*sizeof(int));
+dataMap[0] = data;
+dataMap[1] = data;
+dataMap[2] = data;
+badSink(dataMap);
+void badSink(map<int, int *> dataMap)
+int * data = dataMap[2];
+int source[100] = {0};
+memmove(data, source, 100*sizeof(int));

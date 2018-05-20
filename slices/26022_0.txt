@@ -1,0 +1,18 @@
+VAR20 = getenv(VAR21);
+VAR22 = fopen(VAR20,"VAR359");
+if (VAR22 != 0) {
+fseek(VAR22,0L,2);
+VAR23 = ftell(VAR22);
+rewind(VAR22);
+*VAR24 = ((char *)(malloc(sizeof(char ) * (VAR23 + 1))));
+if (*VAR24 != 0) {
+VAR25 = fread(*VAR24,1,VAR23,VAR22);
+if (VAR22 != 0) {
+fclose(VAR22);
+FUN1(&VAR387,"GITONIN_SUBSTANTIABLE");
+if (VAR387 != 0) {;
+VAR388 = VAR387;
+VAR389 = &VAR388;
+VAR390 = ((STRUCT21 *)(((unsigned long )VAR389) * VAR391 * VAR391)) + 5;
+FUN109(VAR392,VAR390);
+void FUN109(int VAR393,STRUCT21 *VAR394);

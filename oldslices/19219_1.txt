@@ -1,0 +1,5 @@
+data = badSource(data);
+if(badStatic)
+data = new wchar_t[10];
+wchar_t source[10+1] = SRC_STRING;
+wcscpy(data, source);

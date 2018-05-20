@@ -1,0 +1,33 @@
+void FUN1(char *VAR1,int VAR2,CLASS1 *VAR3,int VAR4)
+FUN2(VAR1,VAR2,"%s: %s%s",(VAR5?VAR5 : "unknown"),VAR6,(VAR3 -> VAR7?" (VAR8)" : ""));
+char VAR9[32];
+FUN3(VAR9,sizeof(VAR9),VAR3 -> VAR10);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR11 1");
+VAR12 FUN3(char *VAR1,VAR12 VAR2,unsigned int VAR10)
+VAR13 = FUN2(VAR1,VAR2,(((VAR10 & 0xff) >= 48 && (VAR10 & 0xff) <= '' || (VAR10 & 0xff) >= '' && (VAR10 & 0xff) <= '' || (VAR10 & 0xff) >= '' && (VAR10 & 0xff) <= '' || ((VAR10 & 0xff) == '.' || (VAR10 & 0xff) == 32 || (VAR10 & 0xff) == '-' || (VAR10 & 0xff) == '')?"%c" : "[%d]")),VAR10 & 0xff);
+VAR1 += VAR13;
+VAR10 >>= 8;
+const char *VAR14 = ((void *)0);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s / 0x%04X)",VAR9,VAR3 -> VAR10);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %s",FUN4(VAR3 -> VAR15));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR11 1");
+return ((void *)0);
+return ((void *)0);
+VAR14 = FUN5(VAR16,VAR3 -> VAR14);
+VAR1[0] ^= '' ^ '';
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s)",VAR14);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%s / 0x%04X)",VAR9,VAR3 -> VAR10);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %s",FUN4(VAR3 -> VAR15));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," (%d VAR17)",VAR3 -> VAR18);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %dx%d",VAR3 -> VAR19,VAR3 -> VAR20);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1)," [VAR21 %d:%d VAR22 %d:%d]",VAR3 -> VAR23 . VAR24,VAR3 -> VAR23 . VAR25,VAR26 . VAR24,VAR26 . VAR25);
+int VAR27 = (FUN6(VAR3 -> VAR28 . VAR24,VAR3 -> VAR28 . VAR25));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d/%d",VAR3 -> VAR28 . VAR24 / VAR27,VAR3 -> VAR28 . VAR25 / VAR27);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR29=%d-%d",VAR3 -> VAR30,VAR3 -> VAR31);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d VAR32",VAR3 -> VAR33);
+FUN7(VAR1,", ",VAR2);
+FUN8(VAR1 + strlen(VAR1),(VAR2 - strlen(VAR1)),VAR3 -> VAR34,VAR3 -> VAR35);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %s",FUN9(VAR3 -> VAR36));
+int VAR27 = (FUN6(VAR3 -> VAR28 . VAR24,VAR3 -> VAR28 . VAR25));
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", %d/%d",VAR3 -> VAR28 . VAR24 / VAR27,VAR3 -> VAR28 . VAR25 / VAR27);
+FUN2(VAR1 + strlen(VAR1),VAR2 - strlen(VAR1),", VAR11 1");

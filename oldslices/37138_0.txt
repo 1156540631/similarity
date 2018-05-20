@@ -1,0 +1,9 @@
+char * data;
+char * dataBuffer = (char *)ALLOCA(100*sizeof(char));
+data = dataBuffer;
+data = CWE121_Stack_Based_Buffer_Overflow__src_char_alloca_cat_61b_goodG2BSource(data);
+memset(data, 'A', 50-1);
+data[50-1] = '\0';
+return data;
+char dest[50] = "";
+strcat(dest, data);

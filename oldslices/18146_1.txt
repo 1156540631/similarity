@@ -1,0 +1,14 @@
+wchar_t * data;
+list<wchar_t *> dataList;
+wchar_t * dataBadBuffer = (wchar_t *)ALLOCA(50*sizeof(wchar_t));
+wchar_t * dataGoodBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+* buffer in various memory copying functions using a "large" source buffer. */
+data = dataBadBuffer;
+data[0] = L'\0';
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+void badSink(list<wchar_t *> dataList)
+wchar_t * data = dataList.back();
+source[100-1] = L'\0';
+wcscpy(data, source);

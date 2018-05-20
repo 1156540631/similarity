@@ -1,0 +1,18 @@
+void infernally_translating(union luminescent_marksville morita_interfilamentar)
+char stonesoup_source[1024];
+ectosarc_unmanumitted = ((char *)morita_interfilamentar . ported_emerged);
+memset(stonesoup_source, 0, 1024);
+strncpy(stonesoup_source, ectosarc_unmanumitted, sizeof(stonesoup_source));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+*stonesoup_tainted_buff = NULL;
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+union luminescent_marksville nucleiferous_asarabacca;
+int lai_hanses = 91;
+char *estab_strangerwise;;
+stonesoup_read_taint(&estab_strangerwise,"5201",lai_hanses);
+nucleiferous_asarabacca . ported_emerged = estab_strangerwise;
+gerfalcon_quinque[ *( *perlucidus_anterolateral)] = nucleiferous_asarabacca;
+shopboys_orchestrational = gerfalcon_quinque[ *( *perlucidus_anterolateral)];
+RACIER_FLUIDIFICATION(shopboys_orchestrational);

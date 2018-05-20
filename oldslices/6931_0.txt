@@ -1,0 +1,3 @@
+jmp_buf magniloquently_dartmoor;
+raywick_mccready = setjmp(magniloquently_dartmoor);
+longjmp(magniloquently_dartmoor,1);

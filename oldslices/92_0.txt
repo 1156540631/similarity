@@ -1,0 +1,3 @@
+if(strcmp(s->iformat->name, "mov,mp4,m4a,3gp,3g2,mj2"))
+!strcmp(s->iformat->name, "mpegts"))){
+&& (!strcmp(s->iformat->name, "mpeg") ||

@@ -1,0 +1,13 @@
+VAR1 = FUN1("CABOOSE_WHANGEE");
+if (VAR1 != 0) {;
+VAR2 = ((char *)VAR1);
+VAR3 = strlen(VAR2) + 1;
+VAR4 = VAR5 < VAR3 ? VAR5 : VAR3;
+for (VAR6 = 0; VAR6 < VAR4; VAR6++) {
+VAR2[VAR3 - VAR6 - 1];
+VAR7[VAR5 - VAR6 - 1] =
+for (VAR6 = 0; VAR6 < VAR3; VAR6++) {
+FUN2("%02x",VAR7[VAR5 - VAR6 - 1]);
+free (VAR7);
+FUN3(VAR8, VAR9, "VAR3", VAR3, &VAR3, "VAR10-VAR11");
+void FUN2(char * VAR12, ...) {

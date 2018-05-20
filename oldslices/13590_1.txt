@@ -1,0 +1,18 @@
+static int SnifferDecompress(unsigned char *inbuf, size_t inlen, unsigned char *outbuf,
+size_t outlen, int *err)
+unsigned char * pout = outbuf;
+unsigned char * pin  = inbuf;
+if ( 0 == bit_mask )              {
+bit_value = pletoh16(pin);
+bit_mask  = 0x8000;
+pin += 2;
+if ( !(bit_mask & bit_value) ){
+*(pout++) = *(pin++);}
+*(pout++) = *(pin++);
+code_type = (unsigned int) ((*pin) >> 4 ) & 0xF;
+code_low  = (unsigned int) ((*pin) & 0xF );
+pin++;
+bit_value = pletoh16(pin);
+length = code_low + 3;
+*(pout++) = *(pin++);
+memset( pout, *pin++, length );

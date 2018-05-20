@@ -1,0 +1,4 @@
+static void badSink(char * data)
+strncat(dest, data, strlen(data));
+printLine(data);
+free(data);

@@ -1,0 +1,16 @@
+PRINT("stream #%d:\n", pkt->stream_index);
+PRINT("  keyframe=%d\n", ((pkt->flags & AV_PKT_FLAG_KEY) != 0));
+PRINT("  duration=%0.3f\n", pkt->duration * av_q2d(time_base));
+PRINT("  dts=");
+PRINT("N/A");
+PRINT("%0.3f", pkt->dts * av_q2d(time_base));
+PRINT("  pts=");
+PRINT("%0.3f", pkt->pts * av_q2d(time_base));
+pkt_dump_internal(avcl, NULL, level, pkt, dump_payload, tb);
+pkt_dump_internal(avcl, NULL, level, pkt, dump_payload, st->time_base);
+static void pkt_dump_internal(void *avcl, FILE *f, int level, AVPacket *pkt, int dump_payload, AVRational time_base)
+PRINT("%0.3f", pkt->pts * av_q2d(time_base));
+void av_pkt_dump2(FILE *f, AVPacket *pkt, int dump_payload, AVStream *st)
+pkt_dump_internal(NULL, f, 0, pkt, dump_payload, st->time_base);
+void av_pkt_dump(FILE *f, AVPacket *pkt, int dump_payload)
+pkt_dump_internal(NULL, f, 0, pkt, dump_payload, tb);

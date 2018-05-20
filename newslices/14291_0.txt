@@ -1,0 +1,6 @@
+int FUN1(int VAR1, const char *VAR2[])
+if (VAR1 > 1){
+const char *VAR3=VAR2[1];
+FUN2(VAR3);
+void FUN2 (const char *VAR4) {
+{VAR5[strlen(VAR4)%BUFSIZE]='';

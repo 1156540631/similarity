@@ -1,0 +1,26 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+*stonesoup_tainted_buff = NULL;
+union mucocellulosic_seated tires_yaakov;
+int zeugobranchia_overbar = 44;
+char *axiolite_scumboard;;
+stonesoup_read_taint(&axiolite_scumboard,"2674",zeugobranchia_overbar);
+tires_yaakov . classicalities_perioesophageal = axiolite_scumboard;
+majestical_overmuches[ *( *( *( *( *( *( *( *( *( *cheirotherium_carbin)))))))))] = tires_yaakov;
+tweedles_quomodos = majestical_overmuches[ *( *( *( *( *( *( *( *( *( *cheirotherium_carbin)))))))))];
+pruss_bibliopolic = ((char *)tweedles_quomodos . classicalities_perioesophageal);
+stonesoup_buffer = malloc((strlen(pruss_bibliopolic) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,pruss_bibliopolic);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&axiolite_scumboard,"2674",zeugobranchia_overbar);
+tires_yaakov . classicalities_perioesophageal = axiolite_scumboard;
+tweedles_quomodos = majestical_overmuches[ *( *( *( *( *( *( *( *( *( *cheirotherium_carbin)))))))))];
+pruss_bibliopolic = ((char *)tweedles_quomodos . classicalities_perioesophageal);
+stonesoup_buffer = malloc((strlen(pruss_bibliopolic) + 1) * sizeof(char ));
+strcpy(stonesoup_buffer,pruss_bibliopolic);
+stonesoup_printf("Index of first char: %i\n",stonesoup_process_buffer(stonesoup_buffer));

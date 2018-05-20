@@ -1,0 +1,15 @@
+char * VAR1;
+list<char *> VAR27;
+VAR1 = NULL;
+VAR1 = new char[50];
+VAR1[0] = '\0';
+VAR27.push_back(VAR1);
+VAR27.push_back(VAR1);
+VAR27.push_back(VAR1);
+FUN4(VAR27);
+void FUN4(list<char *> VAR27)
+char * VAR1 = VAR27.back();
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncat(VAR1, VAR3, 100);

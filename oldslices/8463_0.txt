@@ -1,0 +1,15 @@
+*stonesoup_tainted_buff = NULL;
+*stonesoup_tainted_buff = NULL;
+int petrescence_noncommitted = 596;
+char *rocketers_beeregar;
+stonesoup_read_taint(&rocketers_beeregar,"6271",petrescence_noncommitted);
+shootee_pseudobia . krakow_dorados = ((char *)rocketers_beeregar);
+coliseum_anfractuousness(shootee_pseudobia);
+void coliseum_anfractuousness(const struct renaming_anguillulidae studley_hesychastic)
+free(((char *)((struct renaming_anguillulidae )studley_hesychastic) . krakow_dorados));
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));
+stonesoup_read_taint(&rocketers_beeregar,"6271",petrescence_noncommitted);
+shootee_pseudobia . krakow_dorados = ((char *)rocketers_beeregar);
+coliseum_anfractuousness(shootee_pseudobia);

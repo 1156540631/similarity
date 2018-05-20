@@ -1,0 +1,4 @@
+char test[]="This is STRING";
+char *newTest= (char*) malloc(15*sizeof(char));
+memcpy (newTest,test,15);
+free(newTest);

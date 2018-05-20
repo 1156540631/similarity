@@ -1,0 +1,5 @@
+int main(int argc,char*argv[])
+VAR399 = atoi(argv[1]);
+VAR400 = (int)floor((double)VAR399/1000.0);
+VAR401 = (int)floor((int)VAR399%1000);
+printf("VAR400 = %d vflag_func = %d VAR399 =%d \VAR7" , VAR400, VAR401,VAR399);

@@ -1,0 +1,12 @@
+int main(int argc, char **argv){
+if(argc > 2){
+userstr = argv[1];
+userstr2 = argv[2];
+test(userstr,userstr2);
+void test(char *str, char *str2){
+if(strlen(str) < MAXSIZE)
+strcpy(buf, str);
+printf(" strcpy: %s%s%s\n", pre, buf, post);
+if(strlen(buf) + strlen(str2) <= MAXSIZE)
+strcat(buf, str2);
+printf("results: %s%s%s\n", pre, buf, post);

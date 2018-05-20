@@ -1,0 +1,9 @@
+VAR1 = (wchar_t *)malloc(50*sizeof(wchar_t));
+VAR1[0] = L'\0';
+FUN1(VAR1);
+void FUN1(wchar_t * VAR1)
+FUN2(VAR1);
+void FUN2(wchar_t * VAR1)
+wchar_t VAR2[100];
+VAR2[100-1] = L'\0';
+wcsncat(VAR1, VAR2, 100);

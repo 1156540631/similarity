@@ -1,0 +1,6 @@
+void stonesoup_handle_taint(char *ignominy_byrlawmen)
+reticularly_theromorphia = icecraft_milacre(ignominy_byrlawmen);
+char *icecraft_milacre(char *thrax_disprepare)
+return thrax_disprepare;
+reticularly_theromorphia = icecraft_milacre(ignominy_byrlawmen);
+free(((char *)reticularly_theromorphia));

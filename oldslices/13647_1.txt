@@ -1,0 +1,45 @@
+const unsigned char *p = s->buf + 16;
+const unsigned char *pb;
+if (frame_x || frame_y || (frame_width != s->avctx->width) || (frame_height != s->avctx->height))
+memcpy(s->frame.data[0], s->prev_frame.data[0],s->avctx->height * s->frame.linesize[0]);
+if (s->size >= 0)
+pb = p;
+meth = *pb++;
+if (meth & 0x80)
+lz_unpack(pb, s->unpack_buffer, s->unpack_buffer_size);
+meth &= 0x7F;
+pb = s->unpack_buffer;
+switch (meth)
+case 2:
+for (i = 0; i < frame_height; i++)
+memcpy(dp, pb, frame_width);
+pb += frame_width;
+case 1:
+for (i = 0; i < frame_height; i++)
+do
+len = *pb++;
+if (len & 0x80)
+len = (len & 0x7F) + 1;
+if (ofs + len > frame_width)
+return;
+memcpy(&dp[ofs], pb, len);
+pb += len;
+if (ofs + len + 1 > frame_width)
+return;
+memcpy(&dp[ofs], &pp[ofs], len + 1);
+case 3:
+for (i = 0; i < frame_height; i++)
+do
+len = *pb++;
+if (len & 0x80)
+len = (len & 0x7F) + 1;
+if (*pb++ == 0xFF)
+len = rle_unpack(pb, &dp[ofs], len, frame_width - ofs);
+else
+memcpy(&dp[ofs], pb, len);
+pb += len;
+ofs += len;
+else
+if (ofs + len + 1 > frame_width)
+return;
+memcpy(&dp[ofs], &pp[ofs], len + 1);

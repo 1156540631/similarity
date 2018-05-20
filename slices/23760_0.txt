@@ -1,0 +1,16 @@
+static void FUNC1(char *VAR15,OutputStream *VAR22,AVCodecContext *VAR16)
+VAR11[index++] = FUNC2(VAR3 -> VAR57,VAR3 -> VAR43,VAR16 -> VAR43) + t;
+char VAR8[1024];
+VAR22 = VAR5[i];
+VAR10 = FUNC3(VAR22);
+VAR22 -> VAR14 = avVAR7_find_VAR14oder(VAR7 -> VAR4);
+snprintf(VAR8,sizeof(VAR8),"Encoder (VAR7 %s) not found for output stream #%d:%d",avVAR7_get_name(VAR22 -> VAR36 -> VAR7 -> VAR4),VAR22 -> VAR3,VAR22 -> VAR23);
+int VAR13 = av_find_nearest_q_VAR13(VAR22 -> VAR18,VAR22 -> VAR14 -> VAR35);
+VAR10 = FUNC3(VAR22);
+FUNC1(VAR22 -> VAR34,VAR22,VAR22 -> VAR36 -> VAR7);
+snprintf(VAR8,sizeof(VAR8),"Encoder (VAR7 %s) not found for output stream #%d:%d",avVAR7_get_name(VAR22 -> VAR36 -> VAR7 -> VAR4),VAR22 -> VAR3,VAR22 -> VAR23);
+if (!strcmp(VAR22 -> VAR14 -> VAR35,"libx264")) {
+VAR10 = FUNC3(VAR22);
+static InputStream *FUNC3(OutputStream *VAR22)
+VAR10 = FUNC3(VAR22);
+snprintf(VAR8,sizeof(VAR8),"Encoder (VAR7 %s) not found for output stream #%d:%d",avVAR7_get_name(VAR22 -> VAR36 -> VAR7 -> VAR4),VAR22 -> VAR3,VAR22 -> VAR23);

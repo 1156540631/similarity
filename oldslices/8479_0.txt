@@ -1,0 +1,4 @@
+aneurysm_nasrol keita_praxinoscope = 0;
+yowlring_sandweed(&keita_praxinoscope);
+typotelegraphy_assertorically = &keita_praxinoscope;
+free(((char *)( *typotelegraphy_assertorically)));

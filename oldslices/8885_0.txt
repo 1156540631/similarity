@@ -1,0 +1,9 @@
+data = NULL;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_22_goodG2B2Source(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_22_goodG2B2Source(char * data)
+data[0] = '\0';
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE805_char_snprintf_22_goodG2B2Source(data);
+SNPRINTF(data, 100, "%s", source);
+printLine(data);
+free(data);

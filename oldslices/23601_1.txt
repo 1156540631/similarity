@@ -1,0 +1,38 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+char *melvie_asylabia;;
+stonesoup_read_taint(&melvie_asylabia,"VICTIMISE_WALLSEND");
+mopan_superhero[1] = melvie_asylabia;
+roofless_osphresiometry[ *( *( *( *( *( *( *( *( *( *mandyai_vouchees)))))))))] = mopan_superhero;
+aedoeology_enteroplasty = roofless_osphresiometry[ *( *( *( *( *( *( *( *( *( *mandyai_vouchees)))))))))];
+annalist_asphyxiation = ((char *)aedoeology_enteroplasty[1]);
+stonesoup_buffer_len = 4;
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);
+stonesoup_buffer[stonesoup_buffer_len - 1] = 0;
+stonesoup_printf("%s\n", stonesoup_buffer);
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_buffer_len", stonesoup_buffer_len, &stonesoup_buffer_len, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_address, "stonesoup_buffer", stonesoup_buffer, "CROSSOVER-STATE");
+stonesoup_main_first_char = stonesoup_process_buffer(stonesoup_buffer);
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&melvie_asylabia,"VICTIMISE_WALLSEND");
+mopan_superhero[1] = melvie_asylabia;
+roofless_osphresiometry[ *( *( *( *( *( *( *( *( *( *mandyai_vouchees)))))))))] = mopan_superhero;
+aedoeology_enteroplasty = roofless_osphresiometry[ *( *( *( *( *( *( *( *( *( *mandyai_vouchees)))))))))];
+annalist_asphyxiation = ((char *)aedoeology_enteroplasty[1]);
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);
+char stonesoup_process_buffer(char *buffer_param)
+free(buffer_param);
+tracepoint(stonesoup_trace, variable_address, "stonesoup_buffer", stonesoup_buffer, "TRIGGER-STATE");
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);
+void stonesoup_printf(char * format, ...) {
+tracepoint(stonesoup_trace, variable_address, "stonesoup_buffer", stonesoup_buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_address, "stonesoup_buffer", stonesoup_buffer, "TRIGGER-STATE");
+strncpy(stonesoup_buffer, annalist_asphyxiation, stonesoup_buffer_len);

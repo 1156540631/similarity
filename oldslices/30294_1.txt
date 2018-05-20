@@ -1,0 +1,13 @@
+int *dataPtr1 = &data;
+int *dataPtr2 = &data;
+data = -1;
+int data = *dataPtr1;
+char inputBuffer[CHAR_ARRAY_SIZE] = "";
+if (fgets(inputBuffer, CHAR_ARRAY_SIZE, stdin) != NULL)
+data = atoi(inputBuffer);
+*dataPtr1 = data;
+int data = *dataPtr2;
+int *intPointer;
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

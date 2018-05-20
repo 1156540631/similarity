@@ -1,0 +1,5 @@
+rtsp_get_content_length(const guchar *line_begin, size_t line_len)
+guchar  buf[256];
+if (line_len > sizeof(buf) - 1) {
+line_len = sizeof(buf) - 1;
+memcpy(buf, line_begin, line_len);

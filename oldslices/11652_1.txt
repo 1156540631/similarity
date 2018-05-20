@@ -1,0 +1,20 @@
+return c - 32;
+bobbinet_eleutherism = getenv("UNSTANDARDIZED_HALLOWS");
+sweatiest_tearaway = ((char *)bobbinet_eleutherism);
+stonesoup_data = (struct stonesoup_struct*) malloc(sizeof(struct stonesoup_struct));
+stonesoup_data->before = stonesoup_toupper;
+stonesoup_data->buffer[63] = '\0';
+stonesoup_data->after = stonesoup_toupper;
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->before", stonesoup_data->before, &stonesoup_data->before, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "INITIAL-STATE");
+tracepoint(stonesoup_trace, variable_signed_integral, "stonesoup_data->after", stonesoup_data->after, &stonesoup_data->after, "INITIAL-STATE");
+stonesoup_taint_len = ((int )(strlen(sweatiest_tearaway)));
+stonesoup_data->buffer[stonesoup_buff_size] = sweatiest_tearaway[stonesoup_taint_len];
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data->buffer", stonesoup_data->buffer, "CROSSOVER-STATE");
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+stonesoup_printf("%c",stonesoup_data->before(stonesoup_data->buffer[stonesoup_i]));
+free(stonesoup_data);
+int stonesoup_toupper(int c)
+return c;
+stonesoup_data->buffer[stonesoup_i] = stonesoup_toupper(stonesoup_data->buffer[stonesoup_i]);
+free(stonesoup_data);

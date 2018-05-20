@@ -1,0 +1,4 @@
+data = CWE134_Uncontrolled_Format_String__char_console_vfprintf_61b_goodG2BSource(data);
+goodG2BVaSink(data, data);
+static void goodG2BVaSink(char * data, ...)
+va_start(args, data);

@@ -1,0 +1,8 @@
+CLASS1 *FUN1(char *VAR1,VAR2 VAR3,const char *VAR4,int VAR5,const char *VAR6)
+FUN2(VAR1,VAR3,"%s%s/%s.VAR7",VAR8[VAR9],(VAR9 != 1?"" : "/.VAR10"),VAR4);
+VAR11 = fopen(VAR1,"r");
+FUN2(VAR1,VAR3,"%s%s/%s-%s.VAR7",VAR8[VAR9],(VAR9 != 1?"" : "/.VAR10"),VAR6,VAR4);
+VAR11 = fopen(VAR1,"r");
+FUN2(VAR1,VAR3,"%s%s/%s.VAR7",VAR8[VAR9],(VAR9 != 1?"" : "/.VAR10"),VAR4);
+VAR11 = fopen(VAR1,"r");
+FUN2(VAR1,VAR3,"%s%s/%s-%s.VAR7",VAR8[VAR9],(VAR9 != 1?"" : "/.VAR10"),VAR6,VAR4);

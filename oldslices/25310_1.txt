@@ -1,0 +1,12 @@
+void falconries_loured(char *const ambigenal_sphygmoid)
+fertileness_toscanini(vility_nasiei,ambigenal_sphygmoid);
+void fertileness_toscanini(int perceivers_scowlful,char *casease_outspokenly)
+fertileness_toscanini(perceivers_scowlful,casease_outspokenly);
+puture_saccorhiza = ((char *)((char *)casease_outspokenly));
+stonesoup_data.buffer[stonesoup_i] = 0;
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, puture_saccorhiza);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "CROSSOVER-STATE");
+stonesoup_opt_var = strlen( stonesoup_data.buffer);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_data.buffer", stonesoup_data.buffer, "INITIAL-STATE");
+strcpy(stonesoup_data.buffer, puture_saccorhiza);

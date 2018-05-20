@@ -1,0 +1,5 @@
+badSource(data);
+void badSource(char * &data)
+data = (char *)malloc(10*sizeof(char));
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

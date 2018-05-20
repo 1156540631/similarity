@@ -1,0 +1,11 @@
+char stonesoup_buffer[8];
+struct kaffiyehs_remunerates hypocreales_auguring = {0};
+quezals_plasmin(&hypocreales_auguring);
+duckier_wakikis = inhalant_hinson(hypocreales_auguring);
+strncpy(stonesoup_buffer,laxer_gibsons,strlen(laxer_gibsons) + 1);
+struct kaffiyehs_remunerates inhalant_hinson(struct kaffiyehs_remunerates scintillation_ungrabbing)
+return scintillation_ungrabbing;
+duckier_wakikis = inhalant_hinson(hypocreales_auguring);
+laxer_gibsons = ((char *)duckier_wakikis . vetanda_galantine);
+tracepoint(stonesoup_trace, variable_buffer_info, "STONESOUP_TAINT_SOURCE", strlen(laxer_gibsons)+1, laxer_gibsons, "TRIGGER-STATE");
+strncpy(stonesoup_buffer,laxer_gibsons,strlen(laxer_gibsons) + 1);

@@ -1,0 +1,8 @@
+VAR342 . VAR337 = getenv("WIRESHARK_SE_VERIFY_POINTERS") != ((void *)0);
+FUN94(&VAR342);
+static void FUN94(STRUCT16 *VAR338)
+if (VAR338 -> VAR339) {
+FUN95(VAR338 -> VAR340);
+if (VAR338 -> VAR341) {
+FUN94(&VAR342);
+static void FUN95(guint8 *VAR340)

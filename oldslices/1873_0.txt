@@ -1,0 +1,4 @@
+void preoverthrew_zilvia(void *forthcome_cathedras)
+traceable_unserene(forthcome_cathedras);
+void traceable_unserene(void *acetophenine_hornlike)
+free(((char *)((char *)((void *)acetophenine_hornlike))));

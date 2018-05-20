@@ -1,0 +1,1 @@
+if (getenv("TERM") == ((void *)0)) {

@@ -1,0 +1,5 @@
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_81_bad::action(int data) const
+intPointer = (int*)malloc(data * sizeof(int));
+intPointer[i] = 0;
+printIntLine(intPointer[0]);
+free(intPointer);

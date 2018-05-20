@@ -1,0 +1,5 @@
+int overlightheaded_iridization = 131;
+stonesoup_read_taint(&monospermal_desc,"4415",overlightheaded_iridization);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));

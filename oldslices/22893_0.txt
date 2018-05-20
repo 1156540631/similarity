@@ -1,0 +1,8 @@
+main(int argc, char **argv)
+userstr = argv[1];
+test(userstr);
+test(char *str)
+filter(str, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789: %");
+filter(char *str, const char *whitelist)
+char buf[MAXSIZE];
+snprintf(buf, sizeof buf, "<%s>", str);

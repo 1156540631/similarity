@@ -1,0 +1,3 @@
+VAR1 = new wchar_t[100];
+VAR1[50-1] = '\';
+FUN1(VAR2, FUN2(VAR1), VAR3"%s", VAR1);

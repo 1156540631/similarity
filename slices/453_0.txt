@@ -1,0 +1,81 @@
+unsigned short VAR6, VAR10;
+static const unsigned char VAR11[] = {
+VAR27 += 2;
+FUN8(VAR27, VAR6);
+FUN8(VAR27, VAR10);
+VAR27 += VAR10;
+const CLASS2 VAR9 = sizeof(VAR11);
+if (memcmp(VAR27, VAR11, VAR9) != 0)
+if (memcmp(VAR27 + VAR9, VAR12, VAR13) != 0)
+if (memcmp(VAR27, VAR11, VAR13) != 0)
+unsigned short VAR10;
+FUN1(VAR1, VAR27, VAR29);
+FUN8(VAR27, VAR13);
+VAR1->FUN2(VAR1, 0, VAR6, VAR27, VAR10, VAR1->VAR14);
+FUN8(VAR27, VAR8);
+VAR10 -= 2;
+memcpy(VAR1->VAR12.VAR13, &VAR27[1], VAR13);
+!VAR1->FUN3(VAR1, VAR27, VAR10,
+if (!FUN5(VAR1, VAR27, VAR10, VAR5))
+FUN8(VAR27, VAR8);
+VAR10 -= 2;
+if (!FUN6(VAR1, VAR27, VAR8))
+VAR1->FUN7 = *VAR27++;
+VAR10--;
+FUN8(VAR27, VAR8);
+VAR10 -= 2;
+int VAR2;
+FUN8(VAR27, VAR2);
+VAR10 -= 2 + VAR2;
+VAR41 = FUN9(NULL, &VAR4, VAR2);
+VAR27 += VAR2;
+FUN8(VAR27, VAR8);
+VAR10 -= 2;
+if (FUN10(VAR1, VAR27, VAR10, VAR5))
+VAR27 += VAR10;
+FUN8(VAR27, VAR6);
+FUN8(VAR27, VAR10);
+fprintf(stderr, "Received extension VAR6 %d VAR10 %d\n", VAR6, VAR10);
+VAR27 += VAR10;
+FUN8(VAR27, VAR10);
+fprintf(stderr, "%VAR3 ", *(VAR4++));
+fprintf(stderr, "\n");
+fprintf(stderr, "Received extension VAR6 %d VAR10 %d\n", VAR6, VAR10);
+unsigned char *VAR4 = VAR27;
+int VAR7 = (*(VAR4++) << 8);
+VAR7 += (*(VAR4++));
+FUN4(VAR7)) == NULL) {
+memcpy(VAR1->VAR21->VAR20, VAR4,
+fprintf(stderr,
+VAR4 = VAR1->VAR21->VAR20;
+fprintf(stderr, "%VAR3 ", *(VAR4++));
+int FUN6(CLASS1 *VAR1, const unsigned char *VAR27, int VAR8)
+FUN8(VAR27, VAR6);
+FUN8(VAR27, VAR10);
+unsigned char *VAR4 = VAR27;
+int VAR7 = (*(VAR4++) << 8);
+FUN4(VAR7)) == NULL) {
+memcpy(VAR1->VAR21->VAR20, VAR4,
+VAR4 = VAR1->VAR21->VAR20;
+fprintf(stderr, "%VAR3 ", *(VAR4++));
+static void FUN1(CLASS1 *VAR1, const unsigned char *VAR27,
+FUN8(VAR27, VAR13);
+FUN8(VAR27, VAR6);
+FUN8(VAR27, VAR10);
+unsigned char *VAR4 = VAR27;
+int VAR7 = (*(VAR4++) << 8);
+FUN4(VAR7)) == NULL) {
+memcpy(VAR1->VAR21->VAR20, VAR4,
+VAR4 = VAR1->VAR21->VAR20;
+fprintf(stderr, "%VAR3 ", *(VAR4++));
+int FUN11(CLASS1 *VAR1, unsigned char **VAR1,
+unsigned char *VAR27 = *VAR1;
+FUN8(VAR27, VAR13);
+FUN8(VAR27, VAR6);
+FUN8(VAR27, VAR10);
+unsigned char *VAR4 = VAR27;
+int VAR7 = (*(VAR4++) << 8);
+FUN4(VAR7)) == NULL) {
+memcpy(VAR1->VAR21->VAR20, VAR4,
+VAR4 = VAR1->VAR21->VAR20;
+fprintf(stderr, "%VAR3 ", *(VAR4++));

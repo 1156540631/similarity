@@ -1,0 +1,7 @@
+char VAR67[1024];
+VAR84 VAR85 = 0;
+FUN6(&VAR85);
+VAR86 = &VAR85;
+VAR87 = ((char *)( *VAR86));
+VAR67[VAR73] = 0;
+strncpy(VAR67, VAR87, sizeof(VAR67));

@@ -1,0 +1,34 @@
+char address[100];
+scanf("%99s", address);
+res_addr = crackaddr(address);
+char * crackaddr(addr)
+register char *addr;
+addr++;
+p = addrhead = addr;
+p++;
+while ((c = *p++) != '<')
+while ((c = *p++) != '\0')
+if ((c = *p++) == '\0')
+p--;
+p++;
+p++;
+while ((c = *p++) != ':')
+p++;
+SM_APPEND_CHAR(*p);
+bufhead = bp;
+bp = bufhead;
+addrhead = p;
+for (q = addrhead; q < p; )
+c = *q++;
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR(c);
+SM_APPEND_CHAR('\\');
+#define SM_APPEND_CHAR(c)                   \
+do                          \
+{                           \
+printf ("bp-obp = %d   buflim-obp=%d\n", (bp-obp), (buflim-obp)); \
+if (SM_HAVE_ROOM)               \
+*bp++ = (c);                \
+else                        \
+goto returng;               \
+} while (0)

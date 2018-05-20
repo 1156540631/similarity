@@ -1,0 +1,11 @@
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_06_bad();
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+charVoid * structCharVoid = (charVoid *)malloc(sizeof(charVoid));
+good1();
+good2();
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_06_good();
+CWE122_Heap_Based_Buffer_Overflow__char_type_overrun_memcpy_06_bad();
+structCharVoid->voidSecond = (void *)SRC_STR;
+memcpy(structCharVoid->charFirst, SRC_STR, sizeof(*structCharVoid));
+structCharVoid->charFirst[(sizeof(structCharVoid->charFirst)/sizeof(char))-1] = '\0';
+free(structCharVoid);

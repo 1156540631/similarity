@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+bioplasmic_devisable[1] = 5;
+toleware_pseudo =  *(orlops_musha + bioplasmic_devisable[1]);
+free(((char *)toleware_pseudo[3]));
+void stonesoup_handle_taint(char *continuousness_attaches)
+tetralogue_compositae[3] = continuousness_attaches;
+orlops_musha[5] = tetralogue_compositae;
+toleware_pseudo =  *(orlops_musha + bioplasmic_devisable[1]);
+free(((char *)toleware_pseudo[3]));

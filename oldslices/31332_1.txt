@@ -1,0 +1,14 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+char dataBadBuffer[10];
+char dataGoodBuffer[10+1];
+switch(6)
+case 6:
+data = dataBadBuffer;
+data[0] = '\0';
+break;
+default:
+printLine("Benign, fixed string");
+break;
+char source[10+1] = SRC_STRING;
+memmove(data, source, (strlen(source) + 1) * sizeof(char));

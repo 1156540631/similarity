@@ -1,0 +1,9 @@
+wcscpy(VAR3, VAR4[2]);
+WCHAR* VAR5 = wcsrchr(VAR3, VAR3'\\');
+return FUN1(VAR3);
+WCHAR VAR1[VAR2] = {VAR3'\0'};
+if (!FUN2(VAR6, VAR7, VAR1)) {
+WCHAR VAR8[VAR2 + 1] = {VAR3'\0'};
+wcsncpy(VAR8, VAR1, VAR2);
+FUN2(int VAR9, LPWSTR *VAR4, WCHAR VAR3[VAR2])
+wcsncpy(VAR8, VAR1, VAR2);

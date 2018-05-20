@@ -1,0 +1,11 @@
+VAR1 VAR2;
+char * VAR3 = (char *)FUN1(100*sizeof(char));
+VAR4 = VAR3;
+memset(VAR4, '', 50-1);
+VAR4[50-1] = '\';
+VAR2.VAR5 = VAR4;
+FUN2(VAR2);
+void FUN2(VAR1 VAR2)
+char * VAR4 = VAR2.VAR5;
+char VAR6[50] = "";
+FUN3(VAR6, strlen(VAR4), "%s", VAR4);

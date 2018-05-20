@@ -1,0 +1,4 @@
+void CWE121_Stack_Based_Buffer_Overflow__CWE135_67b_goodG2BSink(CWE121_Stack_Based_Buffer_Overflow__CWE135_67_structType myStruct)
+void * data = myStruct.structFirst;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);

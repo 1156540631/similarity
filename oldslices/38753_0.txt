@@ -1,0 +1,9 @@
+char * data;
+char dataBuffer[100] = "";
+data = dataBuffer;
+while(1)
+strcpy(data, "fixedstringtest");
+break;
+while(1)
+printf(data);
+break;

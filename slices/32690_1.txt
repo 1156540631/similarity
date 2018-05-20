@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+wchar_t * VAR2 = (wchar_t *)ALLOCA((10)*sizeof(wchar_t));
+VAR1 = VAR2;
+VAR1[0] = L'\0';
+const CLASS47& CLASS2 = CLASS48();
+void CLASS48::FUN2(wchar_t * VAR1) const
+wchar_t VAR4[10+1] = VAR5;
+wcsncpy(VAR1, VAR4, wcslen(VAR4) + 1);

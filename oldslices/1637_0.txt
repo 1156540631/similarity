@@ -1,0 +1,6 @@
+static PassRefPtr<CSSMutableStyleDeclaration> styleFromMatchedRulesForElement(Element* element, bool authorOnly = true)
+RefPtr<CSSRuleList> matchedRules = element->document()->styleSelector()->styleRulesForElement(element, authorOnly);
+for (unsigned i = 0; i < matchedRules->length(); i++) {
+if (matchedRules->item(i)->type() == CSSRule::STYLE_RULE) {
+RefPtr<CSSMutableStyleDeclaration> s = static_cast<CSSStyleRule*>(matchedRules->item(i))->style();
+style->merge(s.get(), true);

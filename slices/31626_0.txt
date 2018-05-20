@@ -1,0 +1,11 @@
+char * VAR4;
+char VAR2[100];
+memset(VAR2, 'A', 100-1);
+VAR2[100-1] = '\0';
+if(0){}
+else
+VAR4 = VAR2;
+char VAR5[100];
+memset(VAR5, 'C', 100-1);
+VAR5[100-1] = '\0';
+strncpy(VAR5, VAR4, strlen(VAR5));

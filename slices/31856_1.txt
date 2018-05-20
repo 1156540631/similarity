@@ -1,0 +1,17 @@
+typedef union
+char * VAR30;
+char * VAR31;
+} CLASS40;
+char * VAR1;
+CLASS40 CLASS11;
+VAR1 = NULL;
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6 - 8;
+CLASS11.VAR30 = VAR1;
+char * VAR1 = CLASS11.VAR31;
+char VAR8[100];
+memset(VAR8, 'C', 100-1);
+VAR8[100-1] = '\0';
+strncpy(VAR8, VAR1, strlen(VAR8));

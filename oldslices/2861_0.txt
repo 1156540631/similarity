@@ -1,0 +1,7 @@
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+if (stonesoup_tainted_file != 0) {
+fclose(stonesoup_tainted_file);
+stonesoup_read_taint(&palewise_flagstick,"NICKS_PRIORITIZED");
+if (palewise_flagstick != 0) {;
+rejuvenised_inviable = ((void *)palewise_flagstick);
+*flecken_ensheath = rejuvenised_inviable;

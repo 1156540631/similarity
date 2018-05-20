@@ -1,0 +1,14 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+static const int VAR4 = 1;
+static const int VAR5 = 0;
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(VAR4)
+strcpy(VAR1, "fixedstringtest");
+if(VAR4)
+char VAR4[100] = "";
+SNPRINTF(VAR4, 100-1, VAR1);

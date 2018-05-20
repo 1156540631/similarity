@@ -1,0 +1,8 @@
+void (*funcPtr) (int) = CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_65b_badSink;
+data = -1;
+fscanf(stdin, "%d", &data);
+funcPtr(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_65b_badSink(int data)
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

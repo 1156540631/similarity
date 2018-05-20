@@ -1,0 +1,16 @@
+char * VAR1;
+VAR1 = NULL;
+VAR1 = new char[100];
+VAR1[0] = '\0';
+FUN8(VAR1);
+void FUN8(char * VAR1)
+FUN9(VAR1);
+void FUN9(char * VAR1)
+FUN12(VAR1);
+void FUN12(char * VAR1)
+FUN15(VAR1);
+void FUN15(char * VAR1)
+char VAR3[100];
+memset(VAR3, 'C', 100-1);
+VAR3[100-1] = '\0';
+strncat(VAR1, VAR3, 100);

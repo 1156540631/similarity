@@ -1,0 +1,11 @@
+wchar_t * data;
+data = new wchar_t[100];
+badGlobal = 1;
+data = badSource(data);
+wchar_t * badSource(wchar_t * data)
+if(badGlobal)
+wmemset(data, L'A', 100-1);
+data[100-1] = L'\0';
+return data;
+wchar_t dest[50] = L"";
+memmove(dest, data, wcslen(data)*sizeof(wchar_t));

@@ -1,0 +1,6 @@
+return (CLASS1 * FUN1(CLASS1-1));
+FUN1 (5);
+int FUN1 (int CLASS1)
+VAR1 = (int *) calloc (CLASS1,sizeof(int));
+*(VAR1+(CLASS1-1)) = 5*CLASS1;
+free(VAR1);

@@ -1,0 +1,7 @@
+stonesoup_input_string = (signed char *) getenv("INPUT_STRING");
+tracepoint(stonesoup_trace, variable_buffer, "((char *)stonesoup_input_string)", ((char *)stonesoup_input_string), "INITIAL-STATE");
+if (stonesoup_input_string != 0) {
+for (stonesoup_ss_i = 0; stonesoup_ss_i < strlen((char *)stonesoup_input_string); ++stonesoup_ss_i) {
+if (stonesoup_input_string[stonesoup_ss_i] < 0)
+continue;
+++stonesoup_stack_buff[stonesoup_input_string[stonesoup_ss_i]];

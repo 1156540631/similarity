@@ -1,0 +1,2 @@
+container.foo.b[0] = 'S';
+printf("%s\n", container.foo.b);

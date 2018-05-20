@@ -1,0 +1,3 @@
+char VAR1[VAR2];
+FUN1("ro.moz.wifi.p2p_supported", VAR1, "0");
+return (0 == strcmp(VAR1, "1"));

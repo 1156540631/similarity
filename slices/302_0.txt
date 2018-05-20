@@ -1,0 +1,7 @@
+char       *VAR1,
+const char *VAR2,
+int        VAR3)
+if (!strncasecmp(VAR2, "Hewlett-Packard", 15))
+else if (!strncasecmp(VAR2, "deskjet", 7))
+else if (!strncasecmp(VAR2, "officejet", 9))
+snprintf(VAR1, VAR3, "HP OfficeJet%VAR1", VAR2 + 9);

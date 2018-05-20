@@ -1,0 +1,6 @@
+uninit_memory_access_010_s_001_arr_gbl = (uninit_memory_access_010_s_001 *) malloc (5*sizeof(uninit_memory_access_010_s_001));
+uninit_memory_access_010_s_001_arr_gbl->csr = READY;
+uninit_memory_access_010_s_001_arr_gbl->data = READY;
+uninit_memory_access_010_s_001_arr_gbl->csr = RESET;
+uninit_memory_access_010_func_001(5);
+free((void *)uninit_memory_access_010_s_001_arr_gbl);

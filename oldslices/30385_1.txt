@@ -1,0 +1,12 @@
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_82_base* baseObject = new CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_82_bad;
+baseObject->action(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_82_bad::action(int data)
+dataBytes = data * sizeof(int);
+intPointer = (int*)new char[dataBytes];
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;
+delete baseObject;

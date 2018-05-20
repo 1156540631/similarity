@@ -1,0 +1,15 @@
+int FUN1(int VAR1, char** VAR2) {
+switch (VAR1) {
+VAR3 = VAR2[VAR4++];
+VAR5 = VAR2[VAR4];
+fprintf(VAR6,"%s: VAR7 [VAR8] VAR9\n",VAR2[0]);
+VAR10 = FUN2(VAR3,VAR5,1);
+CLASS1* FUN2(const char* VAR11, const char* VAR12, int VAR13) {
+VAR14 = VAR11;
+VAR15 = FUN3(VAR14,VAR12);
+FUN4();
+static CLASS2* FUN3(const char*, const char*);
+FUN5(("VAR16 VAR17 open %s\n", VAR12));
+FUN5(("\n---------------\n%s\n------- %VAR10 -------\n",VAR18,VAR19));
+FUN4();
+static void FUN6(const char* VAR20, ...);

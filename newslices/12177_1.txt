@@ -1,0 +1,3 @@
+short *VAR1=(short*) calloc(5,sizeof(short));
+*(VAR1+5)=1;
+free(VAR1);

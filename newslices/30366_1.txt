@@ -1,0 +1,14 @@
+typedef union
+int VAR1;
+int VAR2;
+} CLASS1;
+CLASS1 VAR3;
+VAR4 = -1;
+VAR5 = FUN1(VAR6, VAR7, VAR8 - 1, 0);
+VAR7[VAR5] = '\';
+VAR4 = atoi(VAR7);
+VAR3.VAR1 = VAR4;
+int VAR4 = VAR3.VAR2;
+VAR9 = (int*)malloc(VAR4 * sizeof(int));
+for (VAR10 = 0; VAR10 < (VAR11)VAR4; VAR10++)
+VAR9[VAR10] = 0;

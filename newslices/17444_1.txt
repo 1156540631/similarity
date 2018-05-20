@@ -1,0 +1,19 @@
+char * VAR1;
+VAR2<int, char *> VAR3;
+VAR1 = VAR4;
+char * VAR5 = new char[100];
+memset(VAR5, '', 100-1);
+VAR5[100-1] = '\';
+VAR1 = VAR5 - 8;
+VAR3[0] = VAR1;
+VAR3[1] = VAR1;
+VAR3[2] = VAR1;
+FUN1(VAR3);
+void FUN1(VAR2<int, char *> VAR3)
+char * VAR1 = VAR3[2];
+VAR6 VAR7;
+char VAR8[100];
+memset(VAR8, '', 100-1);
+VAR8[100-1] = '\';
+for (VAR7 = 0; VAR7 < 100; VAR7++)
+VAR1[VAR7] = VAR8[VAR7];

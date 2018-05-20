@@ -1,0 +1,20 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char dataBuffer[100] = "";
+data = dataBuffer;
+switch(6)
+case 6:
+strcpy(data, "fixedstringtest");
+break;
+default:
+break;
+switch(7)
+case 7:
+char dest[100] = "";
+SNPRINTF(dest, 100-1, data);
+break;
+default:
+break;

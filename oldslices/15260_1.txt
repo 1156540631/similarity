@@ -1,0 +1,8 @@
+twoIntsStruct * data;
+twoIntsStruct * &dataRef = data;
+twoIntsStruct * dataBadBuffer = (twoIntsStruct *)ALLOCA(50*sizeof(twoIntsStruct));
+twoIntsStruct * dataGoodBuffer = (twoIntsStruct *)ALLOCA(100*sizeof(twoIntsStruct));
+data = dataBadBuffer;
+twoIntsStruct source[100];
+source[i].intOne = 0;
+memmove(data, source, 100*sizeof(twoIntsStruct));

@@ -1,0 +1,3 @@
+debug_printf(const char *format,
+va_start(ap, format);
+vfprintf(stderr, format, ap);

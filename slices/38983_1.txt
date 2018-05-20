@@ -1,0 +1,19 @@
+#ifdef _WIN32
+#define SNPRINTF _snprintf
+#else
+#define SNPRINTF snprintf
+#endif
+char VAR2[100] = "";
+VAR1 = VAR2;
+if(5==5)
+size_t VAR3 = strlen(VAR1);
+if (100-VAR3 > 1)
+if (fgets(VAR1+VAR3, (int)(100-VAR3), stdin) != NULL)
+VAR3 = strlen(VAR1);
+if (VAR3 > 0 && VAR1[VAR3-1] == '\n')
+VAR1[VAR3-1] = '\0';
+else
+VAR1[VAR3] = '\0';
+if(5==5)
+char VAR4[100] = "";
+SNPRINTF(VAR4, 100-1, VAR1);

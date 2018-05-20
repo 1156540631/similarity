@@ -1,0 +1,9 @@
+VAR1 = FUN1(VAR2, VAR3, VAR4 - 1, 0);
+if (VAR1 == VAR5 || VAR1 == 0)
+VAR3[VAR1] = '\';
+VAR6 = atoi(VAR3);
+FUN2(VAR7);
+void FUN2(VAR8<int> VAR7)
+int VAR6 = VAR7[2];
+if (VAR6 >= 0 && VAR6 < (10))
+VAR9[VAR6] = 1;

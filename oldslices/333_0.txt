@@ -1,0 +1,4 @@
+PROCESS_INFORMATION pi = {0};
+&pi);
+&pi);
+CloseHandle(pi.hThread);

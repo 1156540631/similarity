@@ -1,0 +1,3 @@
+VAR339[sizeof VAR339 - 1] = '\0';
+strncat(VAR339, " = ",   sizeof VAR339 - strlen(VAR339) - 1);
+strncat(VAR339, argv[2], sizeof VAR339 - strlen(VAR339) - 1);

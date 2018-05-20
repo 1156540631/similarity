@@ -1,0 +1,12 @@
+#VAR1 VAR2 "AAAAAAAAAA"
+char * VAR3;
+char VAR4[10];
+char VAR5[10+1];
+switch(5)
+case 6:break;
+default:
+VAR3 = VAR5;
+VAR3[0] = '\';
+break;
+char VAR6[10+1] = VAR2;
+strcpy(VAR3, VAR6);

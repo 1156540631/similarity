@@ -1,0 +1,14 @@
+int64_t * data;
+list<int64_t *> dataList;
+int64_t dataBadBuffer[50];
+int64_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+int64_t source[100] = {0};
+memcpy(data, source, 100*sizeof(int64_t));
+void goodG2BSink(list<int64_t *> dataList)
+int64_t * data = dataList.back();
+memcpy(data, source, 100*sizeof(int64_t));

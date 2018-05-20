@@ -1,0 +1,14 @@
+data = NULL;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22_goodG2B2Source(data);
+data = (char *)malloc((10+1)*sizeof(char));
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22_goodG2B2Source(data);
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);
+char * CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22_goodG2B2Source(char * data)
+return data;
+data = CWE122_Heap_Based_Buffer_Overflow__c_CWE193_char_memcpy_22_goodG2B2Source(data);
+memcpy(data, source, (strlen(source) + 1) * sizeof(char));
+printLine(data);
+free(data);

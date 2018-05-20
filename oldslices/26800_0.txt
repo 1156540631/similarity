@@ -1,0 +1,2 @@
+GETSHORT(type, cp);
+printf("type = %d\n", type);

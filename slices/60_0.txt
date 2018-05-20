@@ -1,0 +1,4 @@
+FUN1(CLASS1 *VAR1, unsigned char *VAR14, guint16 VAR2,
+static const char VAR3[] = "HDLC\nX.25\n";
+if (VAR2 < sizeof VAR3 - 1) {
+if (strncmp((char *)VAR14, VAR3, sizeof VAR3 - 1) == 0) {

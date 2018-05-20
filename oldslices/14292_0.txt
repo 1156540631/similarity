@@ -1,0 +1,4 @@
+BadClass(BadClass &badClassObject)
+BadClass badClassObject1("One"), badClassObject2("Two");
+this->data = new char[strlen(badClassObject.data) + 1];
+strcpy(this->data, badClassObject.data);

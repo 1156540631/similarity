@@ -1,0 +1,9 @@
+data = -1;
+recvResult = recv(acceptSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_41_badSink(data);
+void CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_listen_socket_41_badSink(int data)
+intPointer = (int*)malloc(data * sizeof(int));
+for (i = 0; i < (size_t)data; i++)
+intPointer[i] = 0;

@@ -1,0 +1,13 @@
+const int VAR15 = 1;
+const int VAR16 = 0;
+char * VAR1;
+VAR1 = NULL;
+if(VAR15)
+char * VAR6 = (char *)malloc(100*sizeof(char));
+memset(VAR6, 'A', 100-1);
+VAR6[100-1] = '\0';
+VAR1 = VAR6;
+char VAR8[100*2];
+memset(VAR8, 'C', 100*2-1);
+VAR8[100*2-1] = '\0';
+strcpy(VAR8, VAR1);

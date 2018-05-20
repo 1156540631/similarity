@@ -1,0 +1,7 @@
+data[50-1] = '\0';
+CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_45_goodG2BData = data;
+goodG2BSink();
+char * data = CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_memcpy_45_goodG2BData;
+memcpy(dest, data, strlen(data)*sizeof(char));
+printLine(data);
+free(data);

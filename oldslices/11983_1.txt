@@ -1,0 +1,4 @@
+stonesoup_printf("%c",stonesoup_data.before(stonesoup_data.buffer[stonesoup_i]));
+stonesoup_printf("\n");
+void stonesoup_printf(char * format, ...) {
+va_start(argptr, format);

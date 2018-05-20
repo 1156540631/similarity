@@ -1,0 +1,8 @@
+wchar_t * VAR1;
+void (*FUN4) (wchar_t *) = FUN3;
+static void FUN3(wchar_t * VAR1)
+wchar_t VAR4[10+1] = VAR30;
+wcsncpy(VAR1, VAR4, wcslen(VAR4) + 1);
+wchar_t VAR2[10];
+VAR1 = VAR2;
+VAR1[0] = L'\0';

@@ -1,0 +1,4 @@
+if ((count = getc(fp)) == EOF)
+else if (count == 0)
+else if (fread(buf, 1, count, fp) < count)
+return (count);

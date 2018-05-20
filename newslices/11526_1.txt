@@ -1,0 +1,4 @@
+VAR1 = VAR2;
+VAR1=5;
+return VAR1;
+VAR3 = (int *) calloc (FUN1(0),sizeof(int));

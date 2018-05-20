@@ -1,0 +1,37 @@
+CLASS1 *VAR2=NULL;
+while((VAR2=FUN3(VAR17, "", VAR2, VAR5))) {
+if(strcmp("language", VAR2->VAR3)){
+while((VAR2=FUN3(VAR17, "", VAR2, VAR5))) {
+const char *VAR6 = VAR2->VAR7;
+FUN4(VAR18, VAR19, "%VAR6  %-16s: ", VAR3, VAR2->VAR3);
+while((VAR2=FUN3(VAR17, "", VAR2, VAR5))) {
+const char *VAR6 = VAR2->VAR7;
+CLASS2 VAR13 = strcspn(VAR6, "\x8\xa\xb\xc\xd");
+FUN2(VAR3, VAR6, FUN1(sizeof(VAR3), VAR13+1));
+VAR6 += VAR13;
+CLASS2 VAR13 = strcspn(VAR6, "\x8\xa\xb\xc\xd");
+if (*VAR6) VAR6++;
+CLASS2 VAR13 = strcspn(VAR6, "\x8\xa\xb\xc\xd");
+uint8_t *VAR10 = VAR2->VAR8 ? FUN5(VAR2->VAR8) : NULL;
+FUN6(NULL, VAR2->VAR9, "  ");
+VAR1 = VAR2->VAR22 % VAR3;
+(100 * VAR1) / VAR3);
+VAR1 = abs(VAR2->VAR4 % VAR3);
+CLASS3 *VAR11 = VAR2->VAR12[VAR3];
+FUN6(NULL, VAR11->VAR9, "    ");
+FUN6(NULL, VAR2->VAR20[VAR28]->VAR9, "    ");
+FUN7(VAR2, VAR2->VAR20[VAR28]->VAR41[VAR16], VAR6, VAR14);
+static void FUN7(CLASS2 *VAR2, int VAR3, int VAR6, int VAR14)
+CLASS2 *VAR6 = VAR2->VAR4[VAR3];
+CLASS1 *VAR15 = FUN3(VAR6->VAR9, "language", NULL, 0);
+FUN6(NULL, VAR6->VAR9, "    ");
+FUN7(VAR2, VAR2->VAR20[VAR28]->VAR41[VAR16], VAR6, VAR14);
+static void FUN7(CLASS2 *VAR2, int VAR3, int VAR6, int VAR14)
+CLASS2 *VAR6 = VAR2->VAR4[VAR3];
+CLASS1 *VAR15 = FUN3(VAR6->VAR9, "language", NULL, 0);
+FUN6(NULL, VAR6->VAR9, "    ");
+static void FUN6(void *VAR18, CLASS4 *VAR17, const char *VAR3)
+if(VAR17 && !(FUN8(VAR17) == 1 && FUN3(VAR17, "language", NULL, 0))){
+while((VAR2=FUN3(VAR17, "", VAR2, VAR5))) {
+const char *VAR6 = VAR2->VAR7;
+CLASS2 VAR13 = strcspn(VAR6, "\x8\xa\xb\xc\xd");

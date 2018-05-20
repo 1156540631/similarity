@@ -1,0 +1,14 @@
+static const int VAR1 = 1;
+static const int VAR2 = 0;
+VAR3 = -1;
+if(VAR1)
+char VAR4[VAR5] = "";
+if (fgets(VAR4, VAR5, VAR6) != VAR7)
+VAR3 = atoi(VAR4);
+if(VAR2) {}
+else
+int * VAR8 = (int *)malloc(10 * sizeof(int));
+for (VAR9 = 0; VAR9 < 10; VAR9++)
+VAR8[VAR9] = 0;
+if (VAR3 >= 0 && VAR3 < (10))
+VAR8[VAR3] = 1;

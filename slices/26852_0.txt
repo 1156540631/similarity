@@ -1,0 +1,96 @@
+scanf("%99s", VAR434);
+VAR435 = FUN105(VAR434);
+char * FUN105(VAR349)
+register char *VAR349;
+while (*VAR349 != '\0' && FUN74((int)*VAR349) && FUN75((int)*VAR349))
+VAR349++;
+VAR138 = VAR439 = VAR349;
+while ((VAR4 = *VAR138++) != '\0')
+printf("VAR4 = %VAR4\VAR7", VAR4);
+FUN106(VAR4);
+if (VAR4 == '\\')
+if ((VAR4 = *VAR138++) == '\0')
+VAR138--;
+FUN106(VAR4);
+if (VAR4 == '"' && VAR448 <= 0)
+if (VAR449 > 0 && VAR443)
+if (VAR4 == '(')
+if (VAR443)
+if (VAR73 != VAR438)
+FUN106(' ');
+FUN106(VAR4);
+if (VAR4 == ')')
+if (VAR443)
+else if (VAR4 == ')')
+if (VAR449 > 0 && VAR443)
+VAR73--;
+if (VAR4 == '[')
+else if (VAR4 == ']')
+if (VAR4 == ':' && VAR450 <= 0 && VAR451 <= 0 &&
+!VAR452 && !VAR453)
+if (*VAR138 == ':' || *VAR138 == '.')
+FUN106(VAR4);
+FUN106(*VAR138);
+VAR138++;
+--VAR138;
+while (VAR138 > VAR349 && FUN74((int) *--VAR138) && FUN75((int) *VAR138))
+VAR138++;
+for (VAR440 = VAR439; VAR440 < VAR138; )
+VAR4 = *VAR440++;
+if (VAR454 && VAR4 == '"')
+FUN106(VAR4);
+FUN106('\\');
+FUN106(VAR4);
+if (VAR73 == &VAR438[1])
+VAR73--;
+FUN106('"');
+while ((VAR4 = *VAR138++) != ':')
+FUN106(VAR4);
+while (FUN74((int)*VAR138) && FUN75((int)*VAR138))
+FUN106(*VAR138);
+FUN106(VAR4);
+VAR138++;
+VAR438 = VAR73;
+if (VAR73 != VAR438)
+VAR73 = VAR438;
+FUN106('"');
+if (VAR73 == &VAR438[1])
+VAR439 = VAR138;
+if (VAR4 == ';' && VAR449 <= 0 && !VAR453)
+FUN106(VAR4);
+if (strchr(VAR441, VAR4) != NULL)
+if (VAR4 == '<')
+if (VAR443)
+VAR73 = VAR438;
+FUN106('"');
+--VAR138;
+while (VAR138 > VAR349 && FUN74((int)*--VAR138) && FUN75((int)*VAR138))
+VAR138++;
+for (VAR440 = VAR439; VAR440 < VAR138; )
+VAR4 = *VAR440++;
+if (VAR454 && VAR4 == '"')
+FUN106('\\');
+FUN106(VAR4);
+FUN106(VAR4);
+if (VAR73 == &VAR39[1])
+VAR73--;
+FUN106('"');
+while ((VAR4 = *VAR138++) != '<')
+FUN106(VAR4);
+if (VAR4 == '>')
+if (VAR443)
+else if (VAR443)
+VAR73--;
+FUN106(VAR4);
+if (VAR73 > VAR39 && VAR73[-1] == ')')
+FUN106(' ');
+FUN106(VAR442);
+FUN106('g');
+if (VAR446 && VAR73 < VAR437)
+*VAR73++ = '"';
+while (VAR455-- > 0 && VAR73 < VAR437)
+*VAR73++ = ')';
+if (VAR447 && VAR73 < VAR437)
+*VAR73++ = '>';
+*VAR73 = '\0';
+if (VAR73 < VAR437)

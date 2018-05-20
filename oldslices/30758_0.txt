@@ -1,0 +1,8 @@
+data = NULL;
+data = goodG2BSource(data);
+static void * goodG2BSource(void * data)
+data = (void *)CHAR_STRING;
+return data;
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);
+memcpy(dest, data, (dataLen+1));

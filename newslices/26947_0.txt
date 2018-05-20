@@ -1,0 +1,6 @@
+FUN1(char *VAR1, char *VAR2)
+printf(VAR1, VAR2);
+FUN2(int VAR3, char **VAR4)
+VAR5 = VAR4[1];
+FUN1("<%s>", VAR5);
+FUN1("[%s]", VAR5);

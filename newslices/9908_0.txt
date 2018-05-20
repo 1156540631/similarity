@@ -1,0 +1,8 @@
+VAR1[50-1] = '\';
+VAR2[2] = VAR1;
+FUN1(VAR2);
+void FUN1(char * VAR2[])
+char * VAR1 = VAR2[2];
+memcpy(VAR3, VAR1, strlen(VAR1)*sizeof(char));
+FUN2(VAR1);
+free(VAR1);

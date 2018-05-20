@@ -1,0 +1,11 @@
+list<int64_t *> dataList;
+data = (int64_t *)malloc(100*sizeof(int64_t));
+dataList.push_back(data);
+dataList.push_back(data);
+dataList.push_back(data);
+goodG2BSink(dataList);
+void goodG2BSink(list<int64_t *> dataList)
+int64_t * data = dataList.back();
+memmove(data, source, 100*sizeof(int64_t));
+printLongLongLine(data[0]);
+free(data);

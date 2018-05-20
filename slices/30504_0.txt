@@ -1,0 +1,14 @@
+static int FUN1()
+return 1;
+static int FUN2()
+return 0;
+VAR5 = -1;
+if(FUN1())
+char VAR14[VAR15] = "";
+if (fgets(VAR14, VAR15, stdin) != NULL)
+VAR5 = atoi(VAR14);
+if(FUN2()) {}
+else
+int VAR16[10] = { 0 };
+if (VAR5 >= 0 && VAR5 < (10))
+VAR16[VAR5] = 1;

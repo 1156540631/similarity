@@ -1,0 +1,5 @@
+data = NULL;
+data = (void *)CHAR_STRING;
+memcpy(dest, data, (dataLen+1));
+size_t dataLen = strlen((char *)data);
+void * dest = (void *)calloc(dataLen+1, 1);

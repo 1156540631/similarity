@@ -1,0 +1,6 @@
+VAR1 = FUN1("EQUABLE_UNCRINKLING");
+if (VAR1 != 0) {;
+VAR2 = VAR1;
+VAR3 = &VAR2;
+VAR4 = ((CLASS1 *)(((unsigned long )VAR3) * CLASS2 * CLASS2)) + 5;
+FUN2(VAR4);

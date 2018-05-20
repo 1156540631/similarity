@@ -1,0 +1,11 @@
+#define SRC_STRING "AAAAAAAAAA"
+char * data;
+void (*funcPtr) (char *) = CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_ncpy_65b_badSink;
+char * dataBadBuffer = (char *)ALLOCA((10)*sizeof(char));
+char * dataGoodBuffer = (char *)ALLOCA((10+1)*sizeof(char));
+data = dataBadBuffer;
+data[0] = '\0';
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE193_char_alloca_ncpy_65b_badSink(char * data)
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);

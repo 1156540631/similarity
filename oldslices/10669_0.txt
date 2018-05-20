@@ -1,0 +1,4 @@
+emem_tree_insert_string(emem_tree_t* se_tree, const gchar* k, void* v, guint32 flags)
+guint32 len = (guint32) strlen(k);
+ch = (unsigned char)k[i];
+if(isupper(ch)) {

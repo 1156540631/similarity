@@ -1,0 +1,24 @@
+static int SnifferDecompress(unsigned char *inbuf, size_t inlen, unsigned char *outbuf,
+size_t outlen, int *err)
+unsigned char * pin  = inbuf;
+unsigned char * pout = outbuf;
+if ( 0 == bit_mask )              {
+bit_mask  = 0x8000;
+bit_value = pletoh16(pin);
+pin += 2;
+if ( !(bit_mask & bit_value) ){
+*(pout++) = *(pin++);}
+*(pout++) = *(pin++);
+code_type = (unsigned int) ((*pin) >> 4 ) & 0xF;
+code_low  = (unsigned int) ((*pin) & 0xF );
+pin++;
+bit_value = pletoh16(pin);
+*(pout++) = *(pin++);
+unionType myUnion;
+myUnion.unionFirst = code_low;
+length = func(myUnion);
+unsigned func(unionType myUnion)
+unsigned int code_low = myUnion.unionSecond;
+return code_low + 3;
+length = func(myUnion);
+memset( pout, *pin++, length );

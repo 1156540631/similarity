@@ -1,0 +1,8 @@
+VAR254 = getenv("VIOLATER_PAPISTICAL");
+if (VAR254 != 0) {;
+VAR255[7] = VAR254;
+VAR256[5] = VAR255;
+VAR257 =  *(VAR256 + VAR258[1]);
+VAR259 = ((char *)VAR257[7]);
+if (strlen(VAR259) < 20) {
+realpath(VAR259,VAR260);

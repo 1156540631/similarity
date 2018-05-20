@@ -1,0 +1,4 @@
+dnptrs2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+comp_dn = (unsigned char *) malloc(200*sizeof(unsigned char));
+comp_size = dn_comp((const char *) exp_dn, comp_dn, 200, dnptrs, lastdnptr);
+printf("comp_size = %d\n", comp_size);

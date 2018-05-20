@@ -1,0 +1,14 @@
+int FUN1(char *VAR34, int VAR2, const char *VAR4,
+int VAR5, const char *VAR6, ...)
+VAR34[0] = '\0';
+FUN2(VAR34, VAR2, "%VAR1:
+FUN2(VAR34, VAR2, "%VAR1@", VAR8);
+FUN3(VAR34, "[", VAR2);
+FUN3(VAR34, VAR7, VAR2);
+FUN3(VAR34, "]", VAR2);
+FUN3(VAR34, VAR7, VAR2);
+FUN3(VAR34, VAR7, VAR2);
+FUN2(VAR34, VAR2, ":%d", VAR5);
+int VAR3 = strlen(VAR34);
+FUN4(VAR9, VAR6);
+vsnprintf(VAR34 + VAR3, VAR2 > VAR3 ? VAR2 - VAR3 : 0, VAR6, VAR9);

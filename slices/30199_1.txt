@@ -1,0 +1,15 @@
+int VAR20;
+int *VAR1 = &VAR20;
+int *VAR2 = &VAR20;
+VAR20 = -1;
+int VAR20 = *VAR1;
+VAR14 = FUN43(VAR15, VAR16, VAR17 - 1, 0);
+if (VAR14 == VAR18 || VAR14 == 0)
+break;
+VAR16[VAR14] = '\0';
+VAR20 = atoi(VAR16);
+*VAR1 = VAR20;
+int VAR20 = *VAR2;
+int VAR19[10] = { 0 };
+if (VAR20 >= 0)
+printIntLine(VAR19[VAR20]);

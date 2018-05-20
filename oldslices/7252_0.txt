@@ -1,0 +1,5 @@
+char **fourchette_mewled = 0;
+puranic_prepostorship(superhistoric_recrosses,fourchette_mewled);
+puranic_prepostorship(overreaches_noncredulously,triplum_parenthesis);
+void puranic_prepostorship(int overreaches_noncredulously,char **triplum_parenthesis)
+free(((char *)triplum_parenthesis[1]));

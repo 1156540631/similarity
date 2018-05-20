@@ -1,0 +1,8 @@
+void (*funcPtr) (char *) = badSink;
+char dataBuffer[100];
+data = dataBuffer;
+data[100-1] = '\0';
+funcPtr(data);
+static void badSink(char * data)
+char dest[50] = "";
+memcpy(dest, data, strlen(data)*sizeof(char));

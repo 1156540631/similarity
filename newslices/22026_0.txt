@@ -1,0 +1,72 @@
+static double FUN1(double VAR1)
+return - 10.0 * log(VAR1) / log(10.0);
+VAR2[0] = '\';
+VAR3 = VAR4[VAR5];
+VAR6 = (VAR7 -> VAR8 -> VAR9) / ((float )'');
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR6=%2.1f ",VAR6);
+VAR10 = VAR3 -> VAR10;
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR11=%5d VAR12=%3.*VAR13 VAR6=%3.1f ",VAR10,VAR12 < 9.95,VAR12,VAR6);
+FUN3(&VAR14,"VAR11=%VAR1\n",VAR10);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"L");
+VAR15[VAR16]++;
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"%X",((int )(FUN4((FUN5((VAR15[VAR17] + 1)))))));
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR18=");
+VAR19 = (VAR7 -> CLASS1 * VAR7 -> VAR20) * 255.0 * 255.0 * VAR10;
+VAR19 = (VAR7 -> CLASS1 * VAR7 -> VAR20) * 255.0 * 255.0;
+VAR19 /= 4;
+VAR21 += VAR22;
+VAR23 += VAR19;
+VAR24 = FUN1(VAR22 / VAR19);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"%c:%2.2f ",VAR25[VAR17],VAR24);
+VAR24 = FUN1(VAR21 / VAR23);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"*:%2.2f ",FUN1(VAR21 / VAR23));
+VAR4[VAR5] -> VAR26 = 0;
+FUN6();
+FUN7(VAR27,VAR28 . VAR29);
+VAR30 = FUN8(VAR27,(&VAR28));
+VAR30 = FUN9(VAR27 -> VAR31);
+VAR30 = FUN10();
+FUN11(0,VAR32,VAR33);
+VAR3 = VAR4[VAR5];
+VAR10 = VAR3 -> VAR10;
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR11=%5d VAR12=%3.*VAR13 VAR6=%3.1f ",VAR10,VAR12 < 9.95,VAR12,VAR6);
+FUN3(&VAR14,"VAR11=%VAR1\n",VAR10);
+VAR19 = (VAR7 -> CLASS1 * VAR7 -> VAR20) * 255.0 * 255.0 * VAR10;
+VAR24 = FUN1(VAR22 / VAR19);
+static double FUN1(double VAR1)
+return - 10.0 * log(VAR1) / log(10.0);
+float VAR6 = (- 1);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR6=%2.1f ",VAR6);
+FUN3(&VAR14,"VAR34%d_%d_q=%.1f\n",VAR3 -> VAR31,VAR3 -> VAR35,VAR6);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR6=%2.1f ",VAR6);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR11=%5d VAR12=%3.*VAR13 VAR6=%3.1f ",VAR10,VAR12 < 9.95,VAR12,VAR6);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR18=");
+VAR22 = VAR7 -> VAR22[VAR17];
+VAR22 = VAR7 -> VAR8 -> VAR22[VAR17];
+VAR21 += VAR22;
+VAR24 = FUN1(VAR21 / VAR23);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"*:%2.2f ",FUN1(VAR21 / VAR23));
+static double FUN1(double VAR1)
+return - 10.0 * log(VAR1) / log(10.0);
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"*:%2.2f ",FUN1(VAR21 / VAR23));
+static void FUN12(CLASS2 *VAR3)
+VAR3 -> VAR36 = 1;
+static int VAR15[''];
+if (VAR16 >= 0 && VAR16 < sizeof(VAR15) / sizeof(VAR15[0])) {
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"%X",((int )(FUN4((FUN5((VAR15[VAR17] + 1)))))));
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR18=");
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"*:%2.2f ",FUN1(VAR21 / VAR23));
+VAR4[VAR5] -> VAR26 = 0;
+FUN6();
+if (!FUN13()) {
+VAR30 = FUN10();
+VAR3 = FUN14();
+if (FUN15()) {
+VAR30 = FUN10();
+FUN11(0,VAR32,VAR33);
+VAR3 = VAR4[VAR5];
+VAR10 = VAR3 -> VAR10;
+FUN2(VAR2 + strlen(VAR2),sizeof(VAR2) - strlen(VAR2),"VAR11=%5d VAR12=%3.*VAR13 VAR6=%3.1f ",VAR10,VAR12 < 9.95,VAR12,VAR6);
+FUN3(&VAR14,"VAR11=%VAR1\n",VAR10);
+VAR19 = (VAR7 -> CLASS1 * VAR7 -> VAR20) * 255.0 * 255.0 * VAR10;
+VAR24 = FUN1(VAR22 / VAR19);

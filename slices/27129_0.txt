@@ -1,0 +1,4 @@
+char* VAR402="Test Code";
+char* VAR403=(char*) malloc(10*sizeof(char));
+for(VAR5=0;VAR5<strlen(VAR402);VAR5++)
+strncpy(&VAR403[VAR404],&VAR402[VAR404],1);

@@ -1,0 +1,12 @@
+VAR1 = FUN1("FRONTS_UNRESILIENTLY");
+if (VAR1 != 0) {;
+VAR2 = VAR1;
+VAR3 = &VAR2;
+VAR4 = ((CLASS1 *)(((unsigned long )VAR3) * CLASS2 * CLASS2)) + 5;
+if ( *(VAR4 - 5) != 0) {
+VAR5 = ((char *)( *(VAR4 - 5)));
+VAR6 = ((int )(strlen(VAR5)));
+memcpy(VAR7.VAR8, VAR5, 64);
+for (; VAR9 < VAR6; ++VAR9){
+FUN2("%x",VAR7.VAR8[VAR9]);
+FUN3(VAR10, VAR11, "VAR7.VAR8", VAR7.VAR8, "VAR12-VAR13");

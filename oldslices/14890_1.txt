@@ -1,0 +1,7 @@
+data = NULL;
+badSource(data);
+data = (int *)ALLOCA(10);
+int source[10] = {0};
+memmove(data, source, 10*sizeof(int));
+void badSource(int * &data);
+memmove(data, source, 10*sizeof(int));

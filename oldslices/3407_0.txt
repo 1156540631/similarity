@@ -1,0 +1,4 @@
+data[0] = '\0';
+strcpy(data, source);
+printLine(data);
+free(data);

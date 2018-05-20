@@ -1,0 +1,5 @@
+STRUCT6 *FUN32(const char *VAR20,long VAR200,STRUCT7 *VAR201,int VAR202)
+VAR203 = FUN33(VAR203,VAR20,0,(8 * 1024),(8 * 1024 * 1024));
+VAR204 = ((STRUCT6 *)(FUN34(sizeof(STRUCT6 ) + strlen(VAR20) + 1)));
+VAR204 -> VAR20 = ((char *)(VAR204 + 1));
+strcpy(VAR204 -> VAR20,VAR20);

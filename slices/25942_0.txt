@@ -1,0 +1,19 @@
+VAR91 = getenv(VAR90);
+VAR92 = fopen(VAR91,"rb");
+if (VAR92 != 0) {
+fseek(VAR92,0L,2);
+VAR93 = ftell(VAR92);
+rewind(VAR92);
+*VAR65 = ((char *)(malloc(sizeof(char ) * (VAR93 + 1))));
+if (*VAR65 != 0) {
+VAR94 = fread(*VAR65,1,VAR93,VAR92);
+if (VAR92 != 0) {
+fclose(VAR92);
+FUN5(&VAR544,"SURVEYAL_BEINKED");
+if (VAR544 != 0) {;
+VAR545[82] = VAR544;
+VAR546 = VAR545;
+VAR547 = ((char **)(((unsigned long )VAR546) * VAR548 * VAR548)) + 5;
+VAR549 = ((char *)(VAR547 - 5)[82]);
+if ((VAR547 - 5)[82] != 0)
+free(((char *)(VAR547 - 5)[82]));

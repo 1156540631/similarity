@@ -1,0 +1,10 @@
+wchar_t * VAR1;
+VAR1 = new wchar_t[100];
+FUN1(VAR1, '', 50-1);
+VAR1[50-1] = '\';
+VAR2 = VAR1;
+FUN2();
+static void FUN2()
+wchar_t * VAR1 = VAR2;
+wchar_t VAR3[50] = VAR4"";
+memcpy(VAR3, VAR1, FUN3(VAR1)*sizeof(wchar_t));

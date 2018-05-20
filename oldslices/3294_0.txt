@@ -1,0 +1,3 @@
+jmp_buf picknick_ulcer;
+bluelegs_chondric = setjmp(picknick_ulcer);
+longjmp(picknick_ulcer,1);

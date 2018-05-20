@@ -1,0 +1,8 @@
+char VAR39[VAR45];
+snprintf(VAR39, 1024, "<%VAR1>", VAR14);
+printf("result: %VAR1\VAR7", VAR39);
+FUN8("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+FUN8("aaaaaaaaaaaaa");
+FUN8(char *VAR14)
+snprintf(VAR39, 1024, "<%VAR1>", VAR14);
+printf("result: %VAR1\VAR7", VAR39);

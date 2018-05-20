@@ -1,0 +1,34 @@
+int VAR16[5];
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+VAR16[2] = VAR8;
+FUN56(VAR16);
+void FUN56(int VAR16[])
+int VAR8 = VAR16[2];
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+
+
+110350 1 CWE-680
+
+--------------------------------
+72 /Mixed/110351/CWE680_Integer_Overflow_to_VAR7_Overflow__malloc_connect_socket_67.c VAR7_Overflow_Indexes
+typedef struct _CLASS16
+int VAR17;
+} CLASS16;
+CLASS16 CLASS9;
+VAR3 = FUN1(VAR4, VAR5, VAR6 - 1, 0);
+if (VAR3 == VAR11 || VAR3 == 0)
+VAR5[VAR3] = '\0';
+VAR8 = atoi(VAR5);
+CLASS9.VAR17 = VAR8;
+FUN58(CLASS9);
+void FUN57(CLASS16 CLASS9)
+int VAR8 = CLASS9.VAR17;
+VAR22 = (int*)malloc(VAR8 * sizeof(int));
+for (VAR21 = 0; VAR21 < (size_t)VAR8; VAR21++)
+VAR22[VAR21] = 0;
+

@@ -1,0 +1,3 @@
+char propVersion[PROPERTY_VALUE_MAX];
+property_get("ro.build.version.sdk", propVersion, "0");
+mSdkVersion = strtol(propVersion, nullptr, 10);

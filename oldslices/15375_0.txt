@@ -1,0 +1,15 @@
+wchar_t * data;
+vector<wchar_t *> dataVector;
+wchar_t dataBadBuffer[50];
+wchar_t dataGoodBuffer[100];
+data = dataGoodBuffer;
+data[0] = L'\0';
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+dataVector.insert(dataVector.end(), 1, data);
+goodG2BSink(dataVector);
+source[100-1] = L'\0';
+wcsncat(data, source, 100);
+void goodG2BSink(vector<wchar_t *> dataVector)
+wchar_t * data = dataVector[2];
+wcsncat(data, source, 100);

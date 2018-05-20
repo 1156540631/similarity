@@ -1,0 +1,30 @@
+VAR349[VAR5+1] = VAR353;
+VAR354->VAR355 = (char *) malloc(strlen(VAR349) * sizeof(char) + 1);
+strcpy(VAR354->VAR355, VAR349);
+FUN73(VAR349, VAR350, VAR352);
+char ** FUN73(VAR349, VAR350, VAR352)
+char *VAR349;
+VAR348 = FUN72(VAR349, VAR350, VAR351, sizeof VAR351, VAR352, NULL, VAR327);
+char ** FUN72(VAR349, VAR350, VAR351, VAR356, VAR352, VAR357, VAR327)
+char *VAR349;
+VAR4 = VAR358;
+VAR138 = VAR349;
+VAR4 = (*VAR138++) & 0x00ff;
+VAR4 = '"';
+VAR4 = ')';
+VAR4 = '>';
+VAR138--;
+VAR4 = '>';
+VAR138--;
+VAR4 = VAR358;
+VAR4 = VAR358;
+VAR4 = VAR358;
+VAR4 = VAR358;
+VAR4 = VAR358;
+else if (VAR350 == ' ' && FUN74(VAR4) && FUN75(VAR4))
+VAR4 = ' ';
+if (FUN74(VAR4) && FUN76(VAR4))
+printf("653 Illegal character %VAR4", VAR4);
+printf("653 Illegal character 0x%02x", VAR4);
+VAR4 = VAR358;
+printf("Writing %VAR4 to q!\VAR7", VAR4);

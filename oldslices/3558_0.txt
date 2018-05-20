@@ -1,0 +1,6 @@
+GeoNotifierSet::const_iterator end = m_requestsAwaitingCachedPosition.end();
+for (GeoNotifierSet::const_iterator iter = m_requestsAwaitingCachedPosition.begin(); iter != end; ++iter) {
+GeoNotifier* notifier = iter->get();
+notifier->runSuccessCallback(m_positionCache->cachedPosition());
+if (m_oneShots.contains(notifier))
+m_oneShots.remove(notifier);

@@ -1,0 +1,4 @@
+void geocentrical_admonitioner(char **seat_demonstratively)
+semitesseral_brachiata(seat_demonstratively);
+void semitesseral_brachiata(char **superchery_nephromegaly)
+free(((char *)( *(superchery_nephromegaly - 5))));

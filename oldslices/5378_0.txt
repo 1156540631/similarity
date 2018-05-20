@@ -1,0 +1,8 @@
+data[dataLen + recvResult / sizeof(char)] = '\0';
+replace = strchr(data, '\r');
+replace = strchr(data, '\n');
+goodB2GSink(data);
+static void goodB2GSink(char * data)
+goodB2GVaSink(data, data);
+static void goodB2GVaSink(char * data, ...)
+va_start(args, data);

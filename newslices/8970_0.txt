@@ -1,0 +1,10 @@
+FUN1(const char *VAR1, CLASS1 *VAR2) {
+VAR3 = VAR1;
+if (!isdigit((VAR4)*VAR3) && (*VAR3 != '.')) return VAR5;
+VAR3++;
+VAR3 = VAR1;
+FUN2 (isdigit((VAR4)*VAR3)) {
+VAR3++;
+FUN2 (isdigit((VAR4)*VAR3)) {
+if (*VAR3) VAR3++;
+FUN2 (isdigit((VAR4)*VAR3)) {

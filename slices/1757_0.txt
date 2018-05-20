@@ -1,0 +1,8 @@
+VAR2 = fread(*VAR3,1,VAR4,VAR1);
+if (VAR1 != 0) {
+fclose(VAR1);
+FUN1(&VAR5,"MOUSIEST_SARCOCYSTIDEAN");
+if (VAR5 != 0) {;
+VAR6 . VAR7 = ((char *)VAR5);
+FUN2(VAR6);
+void FUN2(struct CLASS1 VAR8);

@@ -1,0 +1,9 @@
+char stonesoup_source[1024];
+char *ploesti_riveret = 0;
+unfemale_paranoiac(&ploesti_riveret);
+heterodera_foreconceive[5] = ploesti_riveret;
+bieennia_hydromechanics[1] = 5;
+raskolnik_schary =  *(heterodera_foreconceive + bieennia_hydromechanics[1]);
+july_nonconstruable = ((char *)raskolnik_schary);
+stonesoup_source[stonesoup_i] = 0;
+strncpy(stonesoup_source, july_nonconstruable, sizeof(stonesoup_source));

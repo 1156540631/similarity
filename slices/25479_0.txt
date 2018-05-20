@@ -1,0 +1,7 @@
+struct STRUCT13 VAR233 = {0};
+STRUCT14 VAR234;
+FUN64(VAR234,VAR235);
+VAR233 = (FUN65(VAR234,struct STRUCT13 ));
+VAR236 = ((char *)VAR233 . VAR237);
+VAR106 = malloc((strlen(VAR236) + 1) * sizeof(char ));
+strcpy(VAR106,VAR236);

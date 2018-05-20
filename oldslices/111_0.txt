@@ -1,0 +1,6 @@
+PROCESS_INFORMATION pi = {0};
+NULL, &si, &pi);
+DWORD waitRes = WaitForSingleObject(pi.hProcess, TIME_TO_WAIT_ON_UPDATER);
+TerminateProcess(pi.hProcess, 1);
+if (GetExitCodeProcess(pi.hProcess, &returnCode)) {
+CloseHandle(pi.hProcess);

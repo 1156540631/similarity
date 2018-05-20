@@ -1,0 +1,69 @@
+const unsigned char *p = s->buf + 16;
+const unsigned char *pb;
+if (frame_x || frame_y || (frame_width != s->avctx->width) || (frame_height != s->avctx->height))
+memcpy(s->frame.data[0], s->prev_frame.data[0],s->avctx->height * s->frame.linesize[0]);
+if (s->size > 0)
+pb = p;
+pb_size = s->buf + s->size - pb;
+if (pb_size < 1)
+return;
+meth = *pb++; pb_size--;
+if (meth & 0x80)
+lz_unpack(pb, pb_size, s->unpack_buffer, s->unpack_buffer_size);
+meth &= 0x7F;
+structType myStruct;
+myStruct.structFirst = pb;
+pb = badSource(myStruct);
+void badSource(structType myStruct)
+char * pb = myStruct.structFirst;
+pb = s->unpack_buffer;
+return pb
+pb_size = s->unpack_buffer_size;
+switch (meth)
+case 1:
+for (i = 0; i < frame_height; i++)
+do
+if (pb_size < 1)
+return;
+len = *pb++;
+if (len & 0x80)
+len = (len & 0x7F) + 1;
+if (ofs + len > frame_width || pb_size < len)
+return;
+memcpy(&dp[ofs], pb, len);
+pb += len;
+pb_size -= len;
+if (ofs + len + 1 > frame_width || !s->prev_frame.data[0])
+return;
+memcpy(&dp[ofs], &pp[ofs], len + 1);
+case 2:
+for (i = 0; i < frame_height; i++)
+if (pb_size < frame_width)
+return;
+memcpy(dp, pb, frame_width);
+pb += frame_width;
+pb_size -= frame_width;
+case 3:
+for (i = 0; i < frame_height; i++)
+do
+if (pb_size < 1)
+return;
+len = *pb++;
+pb_size--;
+if (len & 0x80)
+len = (len & 0x7F) + 1;
+if (pb_size < 1)
+return;
+if (*pb++ == 0xFF)
+len = rle_unpack(pb, &dp[ofs], len, pb_size, frame_width - ofs);
+else
+if (pb_size < len)
+return;
+memcpy(&dp[ofs], pb, len);
+pb += len;
+pb_size -= 1 + len;
+ofs += len;
+else
+if (ofs + len + 1 > frame_width || !s->prev_frame.data[0])
+return;
+memcpy(&dp[ofs], &pp[ofs], len + 1);

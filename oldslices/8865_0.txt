@@ -1,0 +1,4 @@
+int arr[]={3,8,9,10,4};
+int *ptr = malloc(sizeof(int)*5);
+ptr[i] = arr[i];
+free(ptr);

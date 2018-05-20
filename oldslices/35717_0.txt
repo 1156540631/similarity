@@ -1,0 +1,8 @@
+void (*funcPtr) (wchar_t *) = CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_snprintf_65b_goodG2BSink;
+wchar_t * dataBuffer = (wchar_t *)ALLOCA(100*sizeof(wchar_t));
+data = dataBuffer;
+data[50-1] = L'\0';
+funcPtr(data);
+void CWE121_Stack_Based_Buffer_Overflow__CWE806_wchar_t_alloca_snprintf_65b_goodG2BSink(wchar_t * data)
+wchar_t dest[50] = L"";
+SNPRINTF(dest, wcslen(data), L"%s", data);

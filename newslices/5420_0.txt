@@ -1,0 +1,15 @@
+*VAR1 = VAR2;
+*VAR1 = VAR2;
+int VAR3 = 596;
+char *VAR4;
+FUN1(&VAR4,"3798",VAR3);
+VAR5 = ((void *)VAR4);
+FUN2(VAR5);
+void FUN2(void *const VAR6)
+free(((char *)((char *)((void *)VAR6))));
+void FUN1(char** VAR1, char* VAR7, int VAR8) {
+if ((VAR9 = FUN3(VAR10, VAR8, 0666)) >= 0) {
+*VAR1 = (char*)calloc(VAR8, sizeof(char));
+FUN1(&VAR4,"3798",VAR3);
+VAR5 = ((void *)VAR4);
+FUN2(VAR5);

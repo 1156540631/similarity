@@ -1,0 +1,11 @@
+IsLocalFile(LPCWSTR file, BOOL &isLocal)
+structType myStruct;
+myStruct.structFirst = rootPath;
+rootPath = badSource(myStruct);
+void badSource(structType myStruct)
+WCHAR * rootPath = myStruct,structFirst;
+WCHAR rootPath[MAX_PATH + 1];
+return rootPath;
+if (wcslen(file) > MAX_PATH) {
+return FALSE;
+wcscpy(rootPath, file);

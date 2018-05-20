@@ -1,0 +1,8 @@
+goosebone_nynex = getenv("UPCURVED_JUNCTION");
+heteromorphae_vetiveria = ((int )(strlen(goosebone_nynex)));
+disdainfulness_allness = ((char *)(malloc(heteromorphae_vetiveria + 1)));
+memset(disdainfulness_allness,0,heteromorphae_vetiveria + 1);
+memcpy(disdainfulness_allness,goosebone_nynex,heteromorphae_vetiveria);
+mistetch_monobromized[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *domesticates_dolthead)))))))))))))))))))))))))))))))))))))))))))))))))] = disdainfulness_allness;
+purchased_whirlies = mistetch_monobromized[ *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *( *domesticates_dolthead)))))))))))))))))))))))))))))))))))))))))))))))))];
+free(((char *)purchased_whirlies));

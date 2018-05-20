@@ -1,0 +1,5 @@
+void FUN2(CLASS2<CLASS1 *> VAR3)
+CLASS1 * VAR1 = VAR3[2];
+memcpy(VAR1, VAR2, 100*sizeof(CLASS1));
+FUN1(&VAR1[0]);
+free(VAR1);

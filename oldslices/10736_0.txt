@@ -1,0 +1,5 @@
+int morita_fortescue = 1001;
+stonesoup_read_taint(&bystander_salsas,"1088",morita_fortescue);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_envKey, int stonesoup_shmsz) {
+if ((stonesoup_shmid = shmget(stonesoup_key, stonesoup_shmsz, 0666)) >= 0) {
+*stonesoup_tainted_buff = (char*)calloc(stonesoup_shmsz, sizeof(char));

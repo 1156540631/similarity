@@ -1,0 +1,7 @@
+stonesoup_fct_ptr fct_ptr_addr = (stonesoup_fct_ptr )0;
+sscanf(param,"%p",&fct_ptr_addr);
+patella_whoremonger = ((char *)( *(prote_recelebrated - 5)) . scramble_minimising);
+stonesoup_fp = stonesoup_switch_func(patella_whoremonger);
+stonesoup_fct_ptr stonesoup_switch_func(char *param)
+var_len = strlen(param) % 3;
+sscanf(param,"%p",&fct_ptr_addr);

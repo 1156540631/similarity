@@ -1,0 +1,7 @@
+VAR1 VAR2;
+VAR3 = VAR4;
+VAR3 = new int[50];
+VAR2.VAR5 = VAR3;
+int * VAR3 = VAR2.VAR6;
+int VAR7[100] = {0};
+memcpy(VAR3, VAR7, 100*sizeof(int));

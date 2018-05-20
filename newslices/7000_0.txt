@@ -1,0 +1,10 @@
+VAR1 = strlen(VAR2) + strlen("testData") + 2;
+VAR3 = (char*) malloc (VAR1 * sizeof(char));
+sprintf(VAR3, "%s/%s", VAR2, "testData");
+if (FUN1(VAR3, &VAR4) == -1) {
+VAR5 = mkdir(VAR3, 0700);
+VAR6 = strlen(VAR3) + strlen("VAR7.VAR8") + 2;
+VAR9 = (char*) malloc (VAR6 * sizeof(char));
+sprintf(VAR9, "%s/%s", VAR3, "VAR7.VAR8");
+VAR10 = fopen(VAR9, "w");
+free(VAR9);

@@ -1,0 +1,14 @@
+overwheel_orthopraxia = getenv("ALIUS_OVERTHICKNESS");
+if (overwheel_orthopraxia != 0) {;
+wittekind_supernaturally = ((int )(strlen(overwheel_orthopraxia)));
+sclerocornea_amygdalus = ((char *)(malloc(wittekind_supernaturally + 1)));
+if (sclerocornea_amygdalus == 0) {
+memset(sclerocornea_amygdalus,0,wittekind_supernaturally + 1);
+memcpy(sclerocornea_amygdalus,overwheel_orthopraxia,wittekind_supernaturally);
+misforms_procellose(sclerocornea_amygdalus);
+void misforms_procellose(char *coloristic_gadaria)
+myenteron_byspell = ((char *)coloristic_gadaria);
+if (strlen(myenteron_byspell) < 20) {
+realpath(myenteron_byspell, stonesoup_data.base_path);
+if (coloristic_gadaria != 0)
+free(((char *)coloristic_gadaria));

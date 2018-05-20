@@ -1,0 +1,3 @@
+NULL, 0, NULL);
+HANDLE thread = CreateThread(NULL, 0, EnsureProcessTerminatedThread,
+CloseHandle(thread);

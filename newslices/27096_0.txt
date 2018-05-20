@@ -1,0 +1,3 @@
+FUN1(int VAR1, char **VAR2)
+VAR3 = VAR2[1];
+if(strlen(VAR3) < VAR4 - 3)

@@ -1,0 +1,13 @@
+char *VAR1;;
+FUN1(&VAR1,"CASSANDRE_STEVINSON");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));
+void FUN1(char** VAR4, char* VAR5) {
+VAR6 = FUN2(VAR5);
+VAR7 = fopen(VAR6,"rb");
+fseek(VAR7,0L,2);
+VAR8 = ftell(VAR7);
+*VAR4 = ((char *)(malloc(sizeof(char ) * (VAR8 + 1))));
+FUN1(&VAR1,"CASSANDRE_STEVINSON");
+VAR2 = ((int )(strlen(VAR1)));
+VAR3 = ((char *)(malloc(VAR2 + 1)));

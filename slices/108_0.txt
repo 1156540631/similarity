@@ -1,0 +1,43 @@
+CLASS1 VAR2;
+FUN2( VAR2, VAR3 );
+char *VAR4;
+int VAR5 = vasprintf( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR8 ) + strlen( VAR4 ) + 1;
+char *VAR9 = realloc( *VAR8, VAR6 );
+strcat( VAR9, VAR4 );
+*VAR8 = VAR9;
+CLASS2 VAR11 = 0, VAR6 = 0;
+VAR6++;
+VAR6++;
+VAR11++;
+*VAR13 = malloc( VAR6 + 1 );
+memcpy( *VAR13, VAR14, VAR6 + 1 );
+char *VAR15 = malloc( VAR6 + 3*VAR11 + 2 );
+*VAR13 = VAR15;
+char *VAR10;
+FUN5( &VAR10, VAR17 );
+if( FUN1( &VAR10, "%VAR1", VAR12 ) < 0 ) return -1;
+int VAR20 = 0;
+VAR18 = FUN4( VAR18 ?
+char *VAR16 = strdup( VAR10 );
+if( FUN1( &VAR16, "%VAR1", VAR19 ) < 0 ) return -1;
+VAR16, VAR18, VAR20 ) < 0 ) return -1;
+VAR21->VAR22 = FUN3( VAR20 );
+VAR2->FUN2 = FUN3( VAR20 );
+inline static CLASS3* FUN3( int VAR23 )
+VAR16, VAR18, VAR20 ) < 0 ) return -1;
+static int FUN1( char **VAR8, const char *VAR3, ... )
+FUN2( VAR2, VAR3 );
+int VAR5 = vasprintf( &VAR4, VAR3, VAR2 );
+int VAR6 = strlen( *VAR8 ) + strlen( VAR4 ) + 1;
+strcat( VAR9, VAR4 );
+*VAR8 = VAR9;
+if( FUN1( &VAR10, "%VAR1", VAR12 ) < 0 ) return -1;
+char *VAR16 = strdup( VAR10 );
+if( FUN1( &VAR16, "%VAR1", VAR19 ) < 0 ) return -1;
+VAR16, VAR18, VAR20 ) < 0 ) return -1;
+free( VAR16 );
+static int FUN5( char **VAR13, const char *VAR14 )
+FUN5( &VAR10, VAR17 );
+char *VAR16 = strdup( VAR10 );
+VAR16, VAR18, VAR20 ) < 0 ) return -1;

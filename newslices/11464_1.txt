@@ -1,0 +1,5 @@
+void VAR1::FUN1(int VAR2) const
+VAR3 = (int*)malloc(VAR2 * sizeof(int));
+VAR3[VAR4] = 0;
+FUN2(VAR3[0]);
+free(VAR3);

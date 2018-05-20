@@ -1,0 +1,7 @@
+DumpStyleGeneaology(nsIFrame* aFrame, const char* gap)
+nsFrame::ListTag(stdout, aFrame);
+nsStyleContext* sc = aFrame->GetStyleContext();
+printf("%p ", sc);
+psc = sc->GetParent();
+sc = psc;
+printf("%p ", sc);

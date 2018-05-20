@@ -1,0 +1,5 @@
+goodG2BSource(data);
+static void goodG2BSource(int64_t * &data)
+data = (int64_t *)malloc(100*sizeof(int64_t));
+int64_t source[100] = {0};
+memmove(data, source, 100*sizeof(int64_t));

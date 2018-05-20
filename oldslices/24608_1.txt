@@ -1,0 +1,5 @@
+int main(int argc, char* argv[])
+char buf[BUFF_SIZE];
+len = atoi(argv[1]);
+if (len < BUFF_SIZE)
+memcpy(buf, argv[2], len);

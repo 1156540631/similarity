@@ -1,0 +1,4 @@
+VAR1 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR2 = (unsigned char **) malloc(2 * sizeof(unsigned char *));
+VAR3 = (unsigned char *) malloc(200*sizeof(unsigned char));
+VAR4 = (unsigned char *) malloc(200*sizeof(unsigned char));

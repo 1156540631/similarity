@@ -1,0 +1,13 @@
+char * VAR1;
+VAR1 = VAR2;
+VAR3 = 1;
+VAR1 = FUN1(VAR1);
+char * FUN1(char * VAR1)
+if(VAR3)
+VAR1 = new char[50];
+VAR1[0] = '\';
+return VAR1;
+char VAR4[100];
+memset(VAR4, '', 100-1);
+VAR4[100-1] = '\';
+memmove(VAR1, VAR4, 100*sizeof(char));

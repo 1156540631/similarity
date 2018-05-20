@@ -1,0 +1,3 @@
+if ((env = (getenv("FFREPORT"))) || idx) {
+init_report(env);
+static int init_report(const char *env);

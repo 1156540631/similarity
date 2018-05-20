@@ -1,0 +1,4 @@
+sizeof(s->s3->write_sequence));
+sizeof(s->s3->write_sequence));
+sizeof(s->s3->write_sequence));
+sizeof(s->s3->write_sequence));

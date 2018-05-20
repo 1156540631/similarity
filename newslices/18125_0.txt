@@ -1,0 +1,12 @@
+VAR1<int, char *> VAR2;
+char VAR3[50];
+char VAR4[100];
+VAR5 = VAR4;
+VAR5[0] = '\';
+VAR2[2] = VAR5;
+FUN1(VAR2);
+VAR6[100-1] = '\';
+strcpy(VAR5, VAR6);
+void FUN1(VAR1<int, char *> VAR2)
+char * VAR5 = VAR2[2];
+strcpy(VAR5, VAR6);

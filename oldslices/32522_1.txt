@@ -1,0 +1,8 @@
+char * data;
+void (*funcPtr) (char *) = badSink;
+static void badSink(char * data)
+char source[10+1] = SRC_STRING;
+strncpy(data, source, strlen(source) + 1);
+char dataBadBuffer[10];
+data = dataBadBuffer;
+data[0] = '\0';

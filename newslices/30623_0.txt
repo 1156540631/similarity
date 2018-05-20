@@ -1,0 +1,12 @@
+int *VAR1 = &VAR2;
+int *VAR3 = &VAR2;
+VAR2 = -1;
+int VAR2 = *VAR1;
+VAR4 = FUN1(VAR5, VAR6, VAR7 - 1, 0);
+VAR6[VAR4] = '\';
+VAR2 = atoi(VAR6);
+*VAR1 = VAR2;
+int VAR2 = *VAR3;
+int VAR8[10] = { 0 };
+if (VAR2 >= 0 && VAR2 < (10))
+VAR8[VAR2] = 1;

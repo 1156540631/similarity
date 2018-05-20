@@ -1,0 +1,3 @@
+for (VAR1 = (VAR16 *)FUN1(VAR2);
+VAR1 = (VAR16 *)FUN2(VAR2))
+free(VAR1->VAR3);

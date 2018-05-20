@@ -1,0 +1,4 @@
+char nbuf[MAXNAME + 1];
+buildfname(pw->pw_gecos, pw->pw_name, nbuf, sizeof(nbuf));
+printf("nbuf before call to buildfname = %s\n", nbuf);
+printf ("sizeof(nbuf) = %d\n", sizeof(nbuf));

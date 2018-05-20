@@ -1,0 +1,7 @@
+if (!GetBackupLogPath(newPath, basePath, i)) {
+BackupOldLogs(updatePath, LOGS_TO_KEEP);
+BackupOldLogs(LPCWSTR basePath, int numLogsToKeep)
+for (int i = numLogsToKeep; i >= 1; i--) {
+if (!GetBackupLogPath(oldPath, basePath, i -1)) {
+GetBackupLogPath(LPWSTR path, LPCWSTR basePath, int logNumber)
+L"maintenanceservice-%d.log", logNumber);

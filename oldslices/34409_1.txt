@@ -1,0 +1,13 @@
+char * data;
+data = NULL;
+data = badSource(data);
+static char * badSource(char * data)
+data = new char[50];
+data[0] = '\0';
+return data;
+char source[100];
+memset(source, 'C', 100-1);
+source[100-1] = '\0';
+for (i = 0; i < 100; i++)
+data[i] = source[i];
+data[100-1] = '\0';

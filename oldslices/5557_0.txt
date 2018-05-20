@@ -1,0 +1,6 @@
+data[0] = L'\0';
+return data;
+data = goodG2BSource(data);
+wcsncat(data, source, 100);
+printWLine(data);
+free(data);

@@ -1,0 +1,19 @@
+char* stonesoup_tainted_buff;
+int buffer_size = 1000;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+buffer_size = buffer_size * 2;
+stonesoup_tainted_buff = (char*) malloc(buffer_size * sizeof(char));
+data_size = mg_get_var(conn, "data", stonesoup_tainted_buff, buffer_size * sizeof(char));
+free(stonesoup_tainted_buff);
+stonesoup_handle_taint(stonesoup_tainted_buff);
+bobsleded_ephestia = 5;
+revocate_nonvariably = &bobsleded_ephestia;
+economizer_barber =  *(pommelion_valera +  *revocate_nonvariably);
+free(((char *)economizer_barber));
+void stonesoup_handle_taint(char *woldlike_laryngalgia)
+pommelion_valera[5] = woldlike_laryngalgia;
+economizer_barber =  *(pommelion_valera +  *revocate_nonvariably);
+free(((char *)economizer_barber));

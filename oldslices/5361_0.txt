@@ -1,0 +1,3 @@
+char *stonesoup_heap_buffer_64 = 0;
+kiswa_hunterian = &aditus_expropriates;
+staghunter_anathemata = setjmp(ultraterrene_tetradactylous);

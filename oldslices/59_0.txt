@@ -1,0 +1,4 @@
+process_rec_header2_v2(wtap *wth, unsigned char *buffer, guint16 length,
+static const char x_25_str[] = "HDLC\nX.25\n";
+if (length < sizeof x_25_str - 1) {
+if (strncmp((char *)buffer, x_25_str, sizeof x_25_str - 1) == 0) {

@@ -1,0 +1,17 @@
+void FUN1(char *VAR1,int VAR2,char *VAR3,int VAR4,char *VAR5,int VAR6,int *VAR7,char *VAR8,int VAR9,const char *VAR10)
+const char *VAR11;
+if (VAR12 = (strchr(VAR10,':'))) {
+VAR12++;
+VAR12++;
+VAR12++;
+VAR13 = (strchr(VAR12,'/'));
+VAR14 = (strchr(VAR12,63));
+VAR13 = VAR14;
+VAR13 = (VAR13 > VAR14?VAR14 : VAR13);
+FUN2(VAR8,VAR13,VAR9);
+VAR13 = &VAR12[strlen(VAR12)];
+FUN3((VAR11 = (strchr(VAR12,'@'))) && VAR11 < VAR13){
+VAR12 = VAR11 + 1;
+FUN3((VAR11 = (strchr(VAR12,'@'))) && VAR11 < VAR13){
+if (( *VAR12) == '[' && (brk = (strchr(VAR12,']'))) && brk < VAR13) {
+*VAR7 = atoi(brk + 2);

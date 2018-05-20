@@ -1,0 +1,21 @@
+rewind(stonesoup_tainted_file);
+stonesoup_result = fread(*stonesoup_tainted_buff,1,stonesoup_lsize,stonesoup_tainted_file);
+*stonesoup_tainted_buff = NULL;
+union forrard_shetrit clitellar_anthropotomy;
+char *inguinocrural_portionless;
+stonesoup_read_taint(&inguinocrural_portionless,"LENTISCUS_TETRADACTYLY");
+clitellar_anthropotomy . enterocentesis_seminule = inguinocrural_portionless;
+nonstrictness_tramcars = biramose_switchback(clitellar_anthropotomy);
+void stonesoup_read_taint(char** stonesoup_tainted_buff, char* stonesoup_env_var_name) {
+stonesoup_tainted_file_name = getenv(stonesoup_env_var_name);
+stonesoup_tainted_file = fopen(stonesoup_tainted_file_name,"rb");
+fseek(stonesoup_tainted_file,0L,2);
+stonesoup_lsize = ftell(stonesoup_tainted_file);
+*stonesoup_tainted_buff = ((char *)(malloc(sizeof(char ) * (stonesoup_lsize + 1))));
+stonesoup_read_taint(&inguinocrural_portionless,"LENTISCUS_TETRADACTYLY");
+clitellar_anthropotomy . enterocentesis_seminule = inguinocrural_portionless;
+nonstrictness_tramcars = biramose_switchback(clitellar_anthropotomy);
+union forrard_shetrit biramose_switchback(union forrard_shetrit tetraselenodont_unhabitually)
+return tetraselenodont_unhabitually;
+nonstrictness_tramcars = biramose_switchback(clitellar_anthropotomy);
+free(((char *)nonstrictness_tramcars . enterocentesis_seminule));

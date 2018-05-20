@@ -1,0 +1,37 @@
+*pkt_buf_end = NULL;
+free_packet_buffer(&s->raw_packet_buffer, &s->raw_packet_buffer_end);
+a = - 1;
+m = (a + b) >> 1;
+b = m;
+a = m;
+m= (flags & AVSEEK_FLAG_BACKWARD) ? a : b;
+m += (flags & AVSEEK_FLAG_BACKWARD) ? -1 : 1;
+return -1;
+return  m;
+return ff_index_search_timestamp(st->index_entries, st->nb_index_entries,
+index= av_index_search_timestamp(st, target_ts, flags & ~AVSEEK_FLAG_BACKWARD);
+assert(index < st->nb_index_entries);
+static void free_packet_buffer(AVPacketList **pkt_buf, AVPacketList **pkt_buf_end)
+free_packet_buffer(&s->raw_packet_buffer, &s->raw_packet_buffer_end);
+static void flush_packet_queue(AVFormatContext *s)
+flush_packet_queue(s);
+void ff_read_frame_flush(AVFormatContext *s)
+ff_read_frame_flush(s);
+return ff_seek_frame_binary(s, stream_index, timestamp, flags);
+int ff_seek_frame_binary(AVFormatContext *s, int stream_index, int64_t target_ts, int flags)
+st= s->streams[stream_index];
+index= av_index_search_timestamp(st, target_ts, flags | AVSEEK_FLAG_BACKWARD);
+int av_index_search_timestamp(AVStream *st, int64_t wanted_timestamp,
+return ff_index_search_timestamp(st->index_entries, st->nb_index_entries,
+index= av_index_search_timestamp(st, target_ts, flags | AVSEEK_FLAG_BACKWARD);
+index= av_index_search_timestamp(st, target_ts, flags & ~AVSEEK_FLAG_BACKWARD);
+int av_index_search_timestamp(AVStream *st, int64_t wanted_timestamp,
+return ff_index_search_timestamp(st->index_entries, st->nb_index_entries,
+int ff_index_search_timestamp(const AVIndexEntry *entries, int nb_entries,
+b = nb_entries;
+a= b-1;
+m= (flags & AVSEEK_FLAG_BACKWARD) ? a : b;
+return  m;
+return ff_index_search_timestamp(st->index_entries, st->nb_index_entries,
+index= av_index_search_timestamp(st, target_ts, flags & ~AVSEEK_FLAG_BACKWARD);
+assert(index < st->nb_index_entries);

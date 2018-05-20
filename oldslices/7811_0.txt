@@ -1,0 +1,5 @@
+void CWE122_Heap_Based_Buffer_Overflow__c_CWE806_char_ncpy_66b_badSink(char * dataArray[])
+char * data = dataArray[2];
+strncpy(dest, data, strlen(data));
+printLine(data);
+free(data);

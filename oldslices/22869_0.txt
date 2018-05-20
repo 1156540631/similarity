@@ -1,0 +1,5 @@
+nominalness_violater = getenv("KORI_COAGRICULTURIST");
+if (nominalness_violater != 0) {;
+semiproof_hellions = nominalness_violater;
+gabion_massicots = inquilinism_aurita(semiproof_hellions);
+trialogue_wovens inquilinism_aurita(trialogue_wovens appositely_thackless);

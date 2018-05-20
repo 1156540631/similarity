@@ -1,0 +1,4 @@
+const char *spec)
+char *endptr;
+spec += 2;
+prog_id = strtol(spec, &endptr, 0);

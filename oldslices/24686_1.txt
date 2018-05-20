@@ -1,0 +1,6 @@
+void paeon_gigantesque(int dramatical_hydrogenator,void *quadrophonics_grots)
+archidome_topotypic = ((char *)((char *)quadrophonics_grots));
+stonesoup_heap_buffer_64 = (char*) malloc(64 * sizeof(char));
+memset(stonesoup_heap_buffer_64,0,64);
+tracepoint(stonesoup_trace, variable_buffer, "stonesoup_heap_buffer_64", stonesoup_heap_buffer_64, "INITIAL-STATE");
+strcpy(stonesoup_heap_buffer_64, archidome_topotypic);

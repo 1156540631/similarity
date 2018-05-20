@@ -1,0 +1,13 @@
+static int goodB2G1Static = 0;
+data = -1;
+recvResult = recv(connectSocket, inputBuffer, CHAR_ARRAY_SIZE - 1, 0);
+inputBuffer[recvResult] = '\0';
+data = atoi(inputBuffer);
+goodB2G1Static = 0;
+goodB2G1Sink(data);
+static void goodB2G1Sink(int data)
+if(goodB2G1Static){ }
+else
+int buffer[10] = { 0 };
+if (data >= 0 && data < (10))
+buffer[data] = 1;

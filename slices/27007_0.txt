@@ -1,0 +1,7 @@
+VAR14[0] = 'S';
+if ((VAR14 = (char *)malloc(256*sizeof(char))) != NULL)
+strcpy(VAR14, "Falut!");
+FUN20(VAR14);
+printf("%VAR1\VAR7", VAR14);
+void FUN20(char *VAR14)
+printf("%VAR1\VAR7", VAR14);
