@@ -11,7 +11,7 @@ import numpy as np
 import os
 import random
 
-num_lstm = 128
+num_lstm = 32
 num_dense = 64
 rate_drop_lstm = 0.1
 rate_drop_dense = 0.1
@@ -107,11 +107,27 @@ nb_words = len(word_index)
 print('word_index is:',word_index)
 print(sequences[0])
 print('Found %s unique tokens.' % len(word_index))
+
+
+
+print("start padding")
+pad_sequence = []
 for i in range(len(sequences)):
+    if len(sequences[i]) > MAX_SEQUENCE_LENGTH:
+        continue
+    w2v = []
     for j in range(len(sequences[i])):
-        sequences[i][j] = str(sequences[i][j])
+        w2v.append(sequences[i][j])
+    while len(w2v) < MAX_SEQUENCE_LENGTH:
+        w2v.append(0)
+    pad_sequence.append(w2v)
+print("padding OK")
+
+for i in range(len(pad_sequence)):
+    for j in range(len(pad_sequence[i])):
+        pad_sequence[i][j] = str(pad_sequence[i][j])
 print("start word2vec")
-model = word2vec.Word2Vec(sequences, min_count=1, size=EMBEDDING_DIM)
+model = word2vec.Word2Vec(pad_sequence, min_count=1, size=EMBEDDING_DIM)
 model.save("word.model")
 
 model = word2vec.Word2Vec.load("word.model")
@@ -130,18 +146,6 @@ for word, i in word_index.items():
     if embedding_vector is not None:
         embedding_matrix[i] = embedding_vector
 
-print("start padding")
-pad_sequence = []
-for i in range(len(sequences)):
-    if len(sequences[i]) > MAX_SEQUENCE_LENGTH:
-        continue
-    w2v = []
-    for j in range(len(sequences[i])):
-        w2v.append(sequences[i][j])
-    while len(w2v) < MAX_SEQUENCE_LENGTH:
-        w2v.append(0)
-    pad_sequence.append(w2v)
-print("padding OK")
 print("example of sequence after padding",pad_sequence[0])
 pos = []
 neg = []
@@ -215,7 +219,7 @@ def get_model():
                                 weights=[embedding_matrix],
                                 input_length=MAX_SEQUENCE_LENGTH,
                                 trainable=False)
-    first_lstm_layer = Bidirectional(LSTM(100, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
+    first_lstm_layer = Bidirectional(LSTM(64, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
     second_lstm_layer = Bidirectional(LSTM(num_lstm, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm))
 
     input_1 = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
