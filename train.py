@@ -102,7 +102,7 @@ for i in range(len(data)):
             word_start_index = j+1
     sequences.append(one_sequence)
 
-nb_words = len(word_index)
+nb_words = len(word_index)+1
 
 print('word_index is:',word_index)
 print(sequences[0])
@@ -224,13 +224,13 @@ def get_model():
 
     input_1 = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
     embedded_sequences_1 = embedding_layer(input_1)
-    sequence_1_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,100))(embedded_sequences_1)
+    sequence_1_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,EMBEDDING_DIM))(embedded_sequences_1)
     first_y1 = first_lstm_layer(sequence_1_input)
     y1 = second_lstm_layer(first_y1)
 
     input_2 = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
     embedded_sequences_2 = embedding_layer(input_2)
-    sequence_2_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,100))(embedded_sequences_2)
+    sequence_2_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,EMBEDDING_DIM))(embedded_sequences_2)
     first_y2 = first_lstm_layer(sequence_2_input)
     y2 = second_lstm_layer(first_y2)
 
