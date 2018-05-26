@@ -10,13 +10,15 @@ from gensim.models import word2vec
 import numpy as np
 import os
 import random
-
-num_lstm = 32
+num_lstm1 = 64
+num_lstm2 = 32
+num_lstm3 = 32
+num_lstm4 = 32
 num_dense = 64
 rate_drop_lstm = 0.1
 rate_drop_dense = 0.1
 MAX_SEQUENCE_LENGTH = 300
-EMBEDDING_DIM = 100
+EMBEDDING_DIM = 50
 split_number = 48000
 data = []
 label = []
@@ -219,20 +221,29 @@ def get_model():
                                 weights=[embedding_matrix],
                                 input_length=MAX_SEQUENCE_LENGTH,
                                 trainable=False)
-    first_lstm_layer = Bidirectional(LSTM(64, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
-    second_lstm_layer = Bidirectional(LSTM(num_lstm, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm))
+    first_lstm_layer = Bidirectional(LSTM(num_lstm1, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
+    second_lstm_layer = Bidirectional(LSTM(num_lstm2, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
+    third_lstm_layer = Bidirectional(LSTM(num_lstm3, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm,return_sequences=True))
+    fourth_lstm_layer = Bidirectional(LSTM(num_lstm4, dropout=rate_drop_lstm, recurrent_dropout=rate_drop_lstm))
+
 
     input_1 = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
     embedded_sequences_1 = embedding_layer(input_1)
     sequence_1_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,EMBEDDING_DIM))(embedded_sequences_1)
     first_y1 = first_lstm_layer(sequence_1_input)
-    y1 = second_lstm_layer(first_y1)
+    second_y1 = second_lstm_layer(first_y1)
+    third_y1 = third_lstm_layer(second_y1)
+    y1 = fourth_lstm_layer(third_y1)
+    y1 = Dense(num_lstm4,activation = 'relu')(y1)
 
     input_2 = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
     embedded_sequences_2 = embedding_layer(input_2)
     sequence_2_input = Masking(mask_value=0, input_shape=(MAX_SEQUENCE_LENGTH,EMBEDDING_DIM))(embedded_sequences_2)
     first_y2 = first_lstm_layer(sequence_2_input)
-    y2 = second_lstm_layer(first_y2)
+    second_y2 = second_lstm_layer(first_y2)
+    third_y2 = third_lstm_layer(second_y2)
+    y2 = fourth_lstm_layer(third_y2)
+    y2 = Dense(num_lstm4,activation = 'relu')(y2)
 
     merged = Concatenate(axis = -1)([y1, y2])
     merged = Dropout(rate_drop_dense)(merged)
@@ -259,6 +270,6 @@ print(x_train_1.shape)
 model = get_model()
 model.fit([x_train_1, x_train_2], y_train,
           batch_size=128,
-          epochs=8,
+          epochs=20,
           validation_data=([x_test_1,x_test_2], y_test))
 model.save('bilstm_model.h5')
