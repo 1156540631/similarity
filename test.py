@@ -234,16 +234,17 @@ FP = 0
 FN = 0
 
 for i in range(len(target_sequence)):
-    if (vul_or_not(i) == 1 and target_label[i] == 1): 
+    result = vul_or_not(i)
+    if (result == 1 and target_label[i] == 1): 
         TP += 1
         print(i," real:1,  predict:1, TP")
-    elif (vul_or_not(i) == 1 and target_label[i] == 0):
+    elif (result == 1 and target_label[i] == 0):
         FP += 1
         print(i," real:0,  predict:1, FP")
-    elif (vul_or_not(i) == 0 and target_label[i] == 0):
+    elif (result == 0 and target_label[i] == 0):
         TN += 1
         print(i," real:0,  predict:0, TN")
-    elif (vul_or_not(i) == 0 and target_label[i] == 1):
+    elif (result == 0 and target_label[i] == 1):
         FN += 1
         print(i," real:1,  predict:0, FN")
 #FPR为误报率 TPR为真正类率
