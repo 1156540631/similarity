@@ -1,4 +1,0 @@
-FUN1("%s\n", VAR1->VAR2);
-FUN1("%s\n", VAR1->VAR3);
-void FUN1(char * VAR4, ...) {
-FUN2(VAR5, VAR4);

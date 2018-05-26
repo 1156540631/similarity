@@ -10,8 +10,9 @@ import numpy as np
 import os
 import random
 
-judge_score = 60
-num_test_data = 2000
+judge_score = 50
+#num_test_data实际上是所用测试数据的一半
+num_test_data = 1000
 
 model = load_model('bilstm_model.h5')
 MAX_SEQUENCE_LENGTH = 300
@@ -126,7 +127,26 @@ for i in range(len(pad_sequence)):
     for j in range(len(pad_sequence[i])):
         pad_sequence[i][j] = str(pad_sequence[i][j])
 
-pad_sequence = random.sample(pad_sequence,num_test_data)
+
+pos = []
+neg = []
+for i in range(len(pad_sequence)):
+    if label[i] == 0:
+        neg.append(pad_sequence[i])
+    else:
+        pos.append(pad_sequence[i])
+
+p_sample = random.sample(pos, num_test_data)
+n_sample = random.sample(neg, num_test_data)
+#从数据集中随机抽2000个
+target_sequence = []
+target_label = []
+for i in range(num_test_data):
+    target_sequence.append(p_sample[i])
+    target_label.append(1)
+for i in range(num_test_data):
+    target_sequence.append(n_sample[i])
+    target_label.append(0)
 
 #process of test data
 for root, _, files in os.walk(testpath):
@@ -187,11 +207,19 @@ def vul_or_not(i):
     pairs_2 = []
     score = []
     for j in range(len(test_pad_sequence)):
-        pairs_1.append(pad_sequence[i])
+        pairs_1.append(target_sequence[i])
         pairs_2.append(test_pad_sequence[j])
     pairs_1 = np.array(pairs_1)
     pairs_2 = np.array(pairs_2)
     score_list = model.predict([pairs_1,pairs_2], batch_size=100, verbose=0)
+#    print(score_list)
+    score_list = score_list.reshape(-1)
+#    print(type(score_list))
+    for i in range(len(score_list)):
+        if score_list[i]>0.5:
+            score_list[i] = 1
+        elif score_list[i]<=0.5:
+            score_list[i] = 0
 #    print(score_list)
     score = sum(score_list)
 #    print(score)
@@ -205,17 +233,17 @@ TN = 0
 FP = 0
 FN = 0
 
-for i in range(len(pad_sequence)):
-    if (vul_or_not(i) == 1 and label[i] == 1): 
+for i in range(len(target_sequence)):
+    if (vul_or_not(i) == 1 and target_label[i] == 1): 
         TP += 1
         print(i," real:1,  predict:1, TP")
-    elif (vul_or_not(i) == 1 and label[i] == 0):
+    elif (vul_or_not(i) == 1 and target_label[i] == 0):
         FP += 1
         print(i," real:0,  predict:1, FP")
-    elif (vul_or_not(i) == 0 and label[i] == 0):
+    elif (vul_or_not(i) == 0 and target_label[i] == 0):
         TN += 1
         print(i," real:0,  predict:0, TN")
-    elif (vul_or_not(i) == 0 and label[i] == 1):
+    elif (vul_or_not(i) == 0 and target_label[i] == 1):
         FN += 1
         print(i," real:1,  predict:0, FN")
 #FPR为误报率 TPR为真正类率

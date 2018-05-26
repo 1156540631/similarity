@@ -1,5 +1,0 @@
-char * *VAR1 = &VAR2;
-char * VAR2 = *VAR1;
-strcat(VAR2, VAR3);
-FUN1(VAR2);
-free(VAR2);

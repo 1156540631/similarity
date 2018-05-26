@@ -1,0 +1,2 @@
+if(FUN1(VAR1))
+printf("VAR2: %s\n", VAR1);

@@ -1,0 +1,7 @@
+CLASS1 *VAR1, VAR2;
+VAR1 = (CLASS1*)calloc(1,sizeof(CLASS1));
+VAR1->VAR3 = 10;
+VAR1->VAR4 = 20;
+VAR1->VAR5[VAR6]= false;
+memcpy(&VAR2, VAR1, sizeof(CLASS1));
+free(VAR1);

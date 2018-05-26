@@ -1,4 +1,0 @@
-void VAR1::FUN1(wchar_t * VAR2)
-FUN2(VAR2, VAR3, 100);
-FUN3(VAR2);
-free(VAR2);

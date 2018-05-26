@@ -1,3 +1,0 @@
-wchar_t VAR1[100];
-VAR2 = VAR1;
-FUN1(VAR2, '', 100-1);

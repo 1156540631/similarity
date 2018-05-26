@@ -1,3 +1,0 @@
-char* VAR1= (char*) malloc(sizeof(char));
-free(VAR1);
-free(VAR1);

@@ -1,0 +1,2 @@
+char VAR1[VAR2];
+strcpy(VAR1, VAR3[1]);
