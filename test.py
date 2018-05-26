@@ -237,16 +237,16 @@ for i in range(len(target_sequence)):
     result = vul_or_not(i)
     if (result == 1 and target_label[i] == 1): 
         TP += 1
-        print(i," real:1,  predict:1, TP")
+        print(i," real:1,  predict:1, TP\n")
     elif (result == 1 and target_label[i] == 0):
         FP += 1
-        print(i," real:0,  predict:1, FP")
+        print(i," real:0,  predict:1, FP\n")
     elif (result == 0 and target_label[i] == 0):
         TN += 1
-        print(i," real:0,  predict:0, TN")
+        print(i," real:0,  predict:0, TN\n")
     elif (result == 0 and target_label[i] == 1):
         FN += 1
-        print(i," real:1,  predict:0, FN")
+        print(i," real:1,  predict:0, FN\n")
 #FPR为误报率 TPR为真正类率
 accuracy = (TP+TN)/(float(TP+TN+FP+FN))
 TPR = TP/(float(TP+FN))

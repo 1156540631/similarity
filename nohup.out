@@ -8155,3 +8155,22 @@ Epoch 20/20
 47872/48000 [============================>.] - ETA: 15s - loss: 0.6168 - acc: 0.6555
 48000/48000 [==============================] - 6032s 126ms/step - loss: 0.6169 - acc: 0.6555 - val_loss: 0.6187 - val_acc: 0.6531
 Using TensorFlow backend.
+2018-05-27 05:43:09.962024: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-27 05:43:09.962077: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-27 05:43:09.962087: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-27 05:43:09.962093: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-27 05:43:09.962100: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-27 05:43:10.663305: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-27 05:43:10.664341: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080
+major: 6 minor: 1 memoryClockRate (GHz) 1.7335
+pciBusID 0000:0b:00.0
+Total memory: 7.92GiB
+Free memory: 7.81GiB
+2018-05-27 05:43:10.664369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2018-05-27 05:43:10.664377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2018-05-27 05:43:10.664390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080, pci bus id: 0000:0b:00.0)
+2018-05-27 05:44:04.350444: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 65476 get requests, put_count=65386 evicted_count=1000 eviction_rate=0.0152938 and unsatisfied allocation rate=0.0181746
+2018-05-27 05:44:04.350515: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+2018-05-27 05:46:18.368401: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 392669 get requests, put_count=392715 evicted_count=1000 eviction_rate=0.00254638 and unsatisfied allocation rate=0.0024881
+2018-05-27 05:46:18.368478: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 256 to 281
