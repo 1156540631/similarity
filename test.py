@@ -12,7 +12,7 @@ import random
 
 judge_score = 50
 #num_test_data实际上是所用测试数据的一半
-num_test_data = 1000
+num_test_data = 100
 
 model = load_model('bilstm_model.h5')
 MAX_SEQUENCE_LENGTH = 300
@@ -113,6 +113,7 @@ print('Found %s unique tokens.' % len(word_index))
 
 print("start padding")
 pad_sequence = []
+pad_label = []
 for i in range(len(sequences)):
     if len(sequences[i]) > MAX_SEQUENCE_LENGTH:
         continue
@@ -122,6 +123,7 @@ for i in range(len(sequences)):
     while len(w2v) < MAX_SEQUENCE_LENGTH:
         w2v.append(0)
     pad_sequence.append(w2v)
+    pad_label.append(label[i])
 print("padding OK")
 for i in range(len(pad_sequence)):
     for j in range(len(pad_sequence[i])):
@@ -131,7 +133,7 @@ for i in range(len(pad_sequence)):
 pos = []
 neg = []
 for i in range(len(pad_sequence)):
-    if label[i] == 0:
+    if pad_label[i] == 0:
         neg.append(pad_sequence[i])
     else:
         pos.append(pad_sequence[i])
@@ -187,6 +189,7 @@ for i in range(len(test_data)):
 
 print("start padding")
 test_pad_sequence = []
+test_pad_label = []
 for i in range(len(test_sequences)):
     if len(test_sequences[i]) > MAX_SEQUENCE_LENGTH:
         continue
@@ -196,11 +199,12 @@ for i in range(len(test_sequences)):
     while len(w2v) < MAX_SEQUENCE_LENGTH:
         w2v.append(0)
     test_pad_sequence.append(w2v)
+    test_pad_label.append(test_label[i])
 print("padding OK")
 for i in range(len(test_pad_sequence)):
     for j in range(len(test_pad_sequence[i])):
         test_pad_sequence[i][j] = str(test_pad_sequence[i][j])
-
+print("number of test_pad_sequence",len(test_pad_sequence))
 
 def vul_or_not(i):
     pairs_1 = []
@@ -211,18 +215,18 @@ def vul_or_not(i):
         pairs_2.append(test_pad_sequence[j])
     pairs_1 = np.array(pairs_1)
     pairs_2 = np.array(pairs_2)
-    score_list = model.predict([pairs_1,pairs_2], batch_size=100, verbose=0)
-#    print(score_list)
+    score_list = model.predict([pairs_1,pairs_2], batch_size=1, verbose=0)
     score_list = score_list.reshape(-1)
+    print(score_list)
 #    print(type(score_list))
-    for i in range(len(score_list)):
-        if score_list[i]>0.5:
-            score_list[i] = 1
-        elif score_list[i]<=0.5:
-            score_list[i] = 0
+#    for i in range(len(score_list)):
+#        if score_list[i]>0.5:
+#            score_list[i] = 1
+#        elif score_list[i]<=0.5:
+#            score_list[i] = 0
 #    print(score_list)
     score = sum(score_list)
-#    print(score)
+    print("score is:",score)
     if score>judge_score:
         return 1
     else:
